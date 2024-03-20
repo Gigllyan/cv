@@ -1,14 +1,12 @@
-# Portfolio Responsive Complete
-## [Watch it on youtube](https://youtu.be/AKNvTxWOdKw)
+# Portfolio
+## [gigllyan.github.io](https://gigllyan.github.io/cv)
 ### Portfolio Responsive Complete
 
-- Responsive Personal Portfolio Website HTML CSS & JavaScript.
-- Contains animations when scrolling.
-- Smooth scrolling in each section.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+- Formado em administração. 
+- Inglês intermediário.
+- Técnico em computação/Webdesigner.
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/@Bedimcode)
+💙 Veja meus projetos. [Gigllyan](https://gigllyan.github.io/cv/projetos)
 
 ![preview img](/preview.png)
 
