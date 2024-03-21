@@ -214,12 +214,12 @@
                 <h2 class="section-title">Contato</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="http://clinsp.com.br/teste.php" method="POST" class="contact__form contactForm" onsubmit="return validarFormulario()">
-                        <input type="text" placeholder="Nome" class="contact__input" name="nome" required>
-                        <input type="mail" placeholder="Email" class="contact__input" name="email" required>
+                    <form action="http://clinsp.com.br/teste.php" method="POST" class="contact__form" name="contactForm" onsubmit="return validarFormulario()">
+                        <input type="text" placeholder="Nome" class="contact__input" name="nome">
+                        <input type="mail" placeholder="Email" class="contact__input" name="email">
                         <input type="text" placeholder="Telefone: (11) 9-9999-9999" class="contact__input" name="telefone">
                         <input type="text" placeholder="Assunto" class="contact__input" name="assunto">
-                        <textarea name="mensagem" id="" cols="0" rows="10" class="contact__input" required></textarea>
+                        <textarea name="mensagem" id="" cols="0" rows="10" class="contact__input"></textarea>
 
 
           <input type="submit" name="BTEnvia" value="Enviar" class="contact__button button"> <br/>
@@ -234,13 +234,29 @@
       var telefone = document.forms["contactForm"]["telefone"].value;
       var assunto = document.forms["contactForm"]["assunto"].value;
       var mensagem = document.forms["contactForm"]["mensagem"].value;
+      
 
-      if (nome == "" || email == "" || mensagem == "") {
-        alert("Por favor, preencha todos os campos.");
+      var camposNaoPreenchidos = [];
+      if (nome == "") {
+        camposNaoPreenchidos.push("Nome");
+      }
+      if (email == "") {
+        camposNaoPreenchidos.push("Email");
+      }
+      
+      if (mensagem == "") {
+        camposNaoPreenchidos.push("Mensagem");
+      }
+
+      if (camposNaoPreenchidos.length > 0) {
+        alert("Por favor, os campos a seguir devem ser preenchidos:\n" + camposNaoPreenchidos.join("\n"));
         return false;
       }
 
-      // Validação adicional, se necessário...
+      // Validação adicional, se necessário
+       else {
+         alert("Dados ("+nome+" - "+telefone+" - "+email+")\nAssunto: "+assunto+"\nMensagem: "+mensagem);
+       }
 
       return true;
     }
