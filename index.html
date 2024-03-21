@@ -241,16 +241,26 @@
         camposNaoPreenchidos.push("Nome");
         document.forms["contactForm"]["nome"] .classList.add("required");
       }
+      if (nome != "") {
+        document.forms["contactForm"]["nome"] .classList.remove("required");
+      } 
+      
       if (email == "") {
         camposNaoPreenchidos.push("Email");
-
         document.forms["contactForm"]["email"] .classList.add("required");
       }
+      if (email != "") {
+        document.forms["contactForm"]["email"] .classList.remove("required");
+      } 
       
       if (mensagem == "") {
         camposNaoPreenchidos.push("Mensagem");
         document.forms["contactForm"]["mensagem"] .classList.add("required");
       }
+      if (mensagem != "") {
+        document.forms["contactForm"]["mensagem"] .classList.remove("required");
+      } 
+
 
       if (camposNaoPreenchidos.length > 0) {
         alert("Por favor, os campos são obrigatórios:\n" + camposNaoPreenchidos.join("\n"));
