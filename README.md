@@ -6,7 +6,7 @@
 - Inglês intermediário.
 - Técnico em computação/Webdesigner.
 
-💙 Veja meus projetos. [Gigllyan](https://gigllyan.github.io/cv/#works)
+💙 Veja meus projetos. [Gigllyan](https://gigllyan.github.io/cv/#work)
 
 ![preview img](/preview.png)
 
