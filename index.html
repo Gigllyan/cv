@@ -239,13 +239,17 @@
       var camposNaoPreenchidos = [];
       if (nome == "") {
         camposNaoPreenchidos.push("Nome");
+        document.forms["contactForm"]["nome"] .classList.add("required");
       }
       if (email == "") {
         camposNaoPreenchidos.push("Email");
+
+        document.forms["contactForm"]["email"] .classList.add("required");
       }
       
       if (mensagem == "") {
         camposNaoPreenchidos.push("Mensagem");
+        document.forms["contactForm"]["mensagem"] .classList.add("required");
       }
 
       if (camposNaoPreenchidos.length > 0) {
@@ -261,6 +265,11 @@
       return true;
     }
   </script>
+  <style>
+    .required {
+      border: 2px solid red;
+    }
+  </style>
 
 
 
