@@ -299,8 +299,14 @@ img {
 .skills__js {
   width: 65%;
 }
-.skills__ux {
-  width: 85%;
+.skills__php {
+  width: 70%;
+}
+.skills__joomla {
+  width: 95%;
+}
+.skills__wordpress {
+  width: 80%;
 }
 .skills__img {
   border-radius: 0.5rem;
