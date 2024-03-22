@@ -350,7 +350,7 @@ img{
         margin-bottom: var(--mb-4);
     }
     &__button{
-        display: block;
+        display: inline-block;
         border: none;
         outline: none;
         font-size: var(--normal-font-size);
