@@ -234,8 +234,8 @@
         document.forms["contactForm"]["nome"] .classList.remove("required");
       } 
       
-      if (email == "") {
-        camposNaoPreenchidos.push("Email");
+      if (email == "" || telefone == "" ) {
+        camposNaoPreenchidos.push("Email/Telefone");
         document.forms["contactForm"]["email"] .classList.add("required");
       }
       if (email != "") {
@@ -269,7 +269,8 @@ function clearInput() {
   document.forms["contactForm"]["nome"].value = "";
   document.forms["contactForm"]["email"].value = "";
   document.forms["contactForm"]["telefone"].value = ""; 
-  document.forms["contactForm"]["assunto"].value = "";document.forms["contactForm"]["mensagem"].value = "";
+  document.forms["contactForm"]["assunto"].value = "";
+  document.forms["contactForm"]["mensagem"].value = "";
 }
   </script>
   <style>
