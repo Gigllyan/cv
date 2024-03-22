@@ -229,24 +229,21 @@
       if (nome == "") {
         camposNaoPreenchidos.push("Nome");
         document.forms["contactForm"]["nome"] .classList.add("required");
-      }
-      if (nome != "") {
+      } else {
         document.forms["contactForm"]["nome"] .classList.remove("required");
       } 
       
       if (email == "" || telefone == "" ) {
         camposNaoPreenchidos.push("Email/Telefone");
         document.forms["contactForm"]["email"] .classList.add("required");
-      }
-      if (email != "") {
+      } else {
         document.forms["contactForm"]["email"] .classList.remove("required");
       } 
       
       if (mensagem == "") {
         camposNaoPreenchidos.push("Mensagem");
         document.forms["contactForm"]["mensagem"] .classList.add("required");
-      }
-      if (mensagem != "") {
+      } else {
         document.forms["contactForm"]["mensagem"] .classList.remove("required");
       } 
 
