@@ -225,7 +225,7 @@
   var telefone = document.forms["contactForm"]["telefone"].value;
   var assunto = document.forms["contactForm"]["assunto"].value;
   var mensagem = document.forms["contactForm"]["mensagem"].value;
-var mensagemResumida = mensagem.length > 20 ? mensagem.substring(0, 20) + "(...)" : mensagem;
+var mensagemResumida = mensagem.length > 20 ? mensagem.substring(0, 40) + "(...)" : mensagem;
   
   var camposNaoPreenchidos = [];
   if (nome == "") {
