@@ -5,7 +5,7 @@
   var telefone = document.forms["contactForm"]["telefone"].value;
   var assunto = document.forms["contactForm"]["assunto"].value;
   var mensagem = document.forms["contactForm"]["mensagem"].value;
-var mensagemResumida = mensagem.length > 20 ? mensagem.substring(0, 60) + "(...)" : mensagem;
+var mensagemResumida = mensagem.length > 20 ? mensagem.substring(0, 60) + " (...)" : mensagem;
   
   var camposNaoPreenchidos = [];
   if (nome == "") {
@@ -51,7 +51,7 @@ var mensagemResumida = mensagem.length > 20 ? mensagem.substring(0, 60) + "(...)
     return false;
   }
 
-var confirmacao = confirm("Tem certeza que deseja enviar o email?\n\n("+nome+"  - "+telefone+" - "+email+")\n\nAssunto: "+assunto+"\nMensagem: "+mensagemResumida);
+var confirmacao = confirm("Tem certeza que deseja enviar o email?\n\n["+nome+"  - "+telefone+" - "+email+"]\n\nAssunto: "+assunto+"\nMensagem: "+mensagemResumida);
 if (!confirmacao) {
   return false;
 }
