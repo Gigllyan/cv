@@ -10,6 +10,8 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio complete</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -206,7 +208,7 @@
                     <form action="http://clinsp.com.br/teste.php" method="POST" class="contact__form" name="contactForm" onsubmit="return validarFormulario()">
                         <input type="text" placeholder="Nome" class="contact__input" name="nome">
                         <input type="mail" placeholder="Email" class="contact__input" name="email">
-                        <input type="text" placeholder="Telefone: (11) 9-9999-9999" class="contact__input" name="telefone">
+                        <input id="telefone" type="text" placeholder="Telefone: (11) 9-9999-9999" class="contact__input" name="telefone">
                         <input type="text" placeholder="Assunto" class="contact__input" name="assunto">
                         <textarea name="mensagem" id="" cols="0" rows="10" class="contact__input" placeholder="Mensagem..."></textarea>
 
@@ -218,50 +220,63 @@
 
   <script>
     function validarFormulario() {
-      var nome = document.forms["contactForm"]["nome"].value;
-      var email = document.forms["contactForm"]["email"].value;
-      var telefone = document.forms["contactForm"]["telefone"].value;
-      var assunto = document.forms["contactForm"]["assunto"].value;
-      var mensagem = document.forms["contactForm"]["mensagem"].value;
-      
+  var nome = document.forms["contactForm"]["nome"].value;
+  var email = document.forms["contactForm"]["email"].value;
+  var telefone = document.forms["contactForm"]["telefone"].value;
+  var assunto = document.forms["contactForm"]["assunto"].value;
+  var mensagem = document.forms["contactForm"]["mensagem"].value;
+  
+  var camposNaoPreenchidos = [];
+  if (nome == "") {
+    camposNaoPreenchidos.push("Nome");
+    document.forms["contactForm"]["nome"].classList.add("required");
+  } else {
+    document.forms["contactForm"]["nome"].classList.remove("required");
+  } 
+  
+  // Validar email
+  if (email != "" && !isValidEmail(email)) {
+    alert("Por favor, insira um email válido.");
+    document.forms["contactForm"]["email"].classList.add("required");
+    return false;
+  } else {
+    document.forms["contactForm"]["email"].classList.remove("required");
+  }
+  
+  // Validar telefone
+  if (telefone != "" && telefone.length < 14) {
+    camposNaoPreenchidos.push("Telefone (mínimo 10 caracteres)");
+    document.forms["contactForm"]["telefone"].classList.add("required");
+  } else {
+    document.forms["contactForm"]["telefone"].classList.remove("required");
+  }
 
-      var camposNaoPreenchidos = [];
-      if (nome == "") {
-        camposNaoPreenchidos.push("Nome");
-        document.forms["contactForm"]["nome"] .classList.add("required");
-      } else {
-        document.forms["contactForm"]["nome"] .classList.remove("required");
-      } 
-      
-      if (email == "" && telefone == "" ) {
-        camposNaoPreenchidos.push("Email ou Telefone");
-        document.forms["contactForm"]["email"] .classList.add("required");
-        document.forms["contactForm"]["telefone"] .classList.add("required");
-      } else {
-        document.forms["contactForm"]["email"] .classList.remove("required");
-        document.forms["contactForm"]["telefone"] .classList.remove("required");
-      } 
-      
-      if (mensagem == "") {
-        camposNaoPreenchidos.push("Mensagem");
-        document.forms["contactForm"]["mensagem"] .classList.add("required");
-      } else {
-        document.forms["contactForm"]["mensagem"] .classList.remove("required");
-      } 
+  // Verificar se pelo menos um dos campos (telefone ou email) foi preenchido
+  if (email == "" && telefone == "") {
+    camposNaoPreenchidos.push("Email ou Telefone");
+    document.forms["contactForm"]["email"].classList.add("required");
+    document.forms["contactForm"]["telefone"].classList.add("required");
+  }
 
+  if (mensagem == "") {
+    camposNaoPreenchidos.push("Mensagem");
+    document.forms["contactForm"]["mensagem"].classList.add("required");
+  } else {
+    document.forms["contactForm"]["mensagem"].classList.remove("required");
+  } 
 
-      if (camposNaoPreenchidos.length > 0) {
-        alert("Por favor, os campos são obrigatórios:\n" + camposNaoPreenchidos.join("\n"));
-        return false;
-      }
+  if (camposNaoPreenchidos.length > 0) {
+    alert("Por favor, os campos são obrigatórios:\n" + camposNaoPreenchidos.join("\n"));
+    return false;
+  }
 
-      // Validação adicional, se necessário
-       else {
-         alert("Enviando e-mail... \n \n Dados ("+nome+" - "+telefone+" - "+email+")\nAssunto: "+assunto+"\nMensagem: "+mensagem);
-       }
+  // Validação adicional, se necessário
+  else {
+    alert("Enviando e-mail... \n \n Dados ("+nome+" - "+telefone+" - "+email+")\nAssunto: "+assunto+"\nMensagem: "+mensagem);
+  }
 
-      return true;
-    }
+  return true;
+}
 
 // Função para limpar o campo de entrada
 function clearInput() {
@@ -270,6 +285,12 @@ function clearInput() {
   document.forms["contactForm"]["telefone"].value = ""; 
   document.forms["contactForm"]["assunto"].value = "";
   document.forms["contactForm"]["mensagem"].value = "";
+}
+
+// Função para validar o formato do email
+function isValidEmail(email) {
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 }
   </script>
   <style>
@@ -312,5 +333,14 @@ function clearInput() {
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+$(document).ready(function() {
+    $('#telefone').inputmask({
+        mask: ['(99) 9999-9999', '(99) 9-9999-9999'],
+        keepStatic: true,
+        placeholder: ''
+    });
+});
+</script>
     </body>
 </html>
