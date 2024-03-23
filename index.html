@@ -269,12 +269,11 @@
     alert("Por favor, os campos são obrigatórios:\n" + camposNaoPreenchidos.join("\n"));
     return false;
   }
-
-  // Exibir alerta com botões OK e Cancelar
-  var confirmacao = confirm("Tem certeza que deseja enviar o email?\n\n("+nome+"  - "+telefone+" - "+email+")\n\nAssunto: "+assunto+"\nMensagem: "+mensagem);
-  if (!confirmacao) {
-    return false;
-  }
+var mensagemResumida = mensagem.length > 20 ? mensagem.substring(0, 20) + "(...)" : mensagem;
+var confirmacao = confirm("Tem certeza que deseja enviar o email?\n\n("+nome+"  - "+telefone+" - "+email+")\n\nAssunto: "+assunto+"\nMensagem: "+mensagemResumida);
+if (!confirmacao) {
+  return false;
+}
   // Validação adicional, se necessário
   else {
     alert("Enviando e-mail... \n \n Dados ("+nome+" - "+telefone+" - "+email+")\nAssunto: "+assunto+"\nMensagem: "+mensagem);
