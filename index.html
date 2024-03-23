@@ -270,6 +270,11 @@
     return false;
   }
 
+  // Exibir alerta com botões OK e Cancelar
+  var confirmacao = confirm("Tem certeza que deseja enviar o email?\n\n("+nome+"  - "+telefone+" - "+email+")\n\nAssunto: "+assunto+"\nMensagem: "+mensagem);
+  if (!confirmacao) {
+    return false;
+  }
   // Validação adicional, se necessário
   else {
     alert("Enviando e-mail... \n \n Dados ("+nome+" - "+telefone+" - "+email+")\nAssunto: "+assunto+"\nMensagem: "+mensagem);
@@ -307,9 +312,6 @@ function isValidEmail(email) {
   color: red;
 }
   </style>
-
-
-
                 </div>
             </section>
         </main>
