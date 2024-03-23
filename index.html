@@ -233,11 +233,13 @@
         document.forms["contactForm"]["nome"] .classList.remove("required");
       } 
       
-      if (email == "" || telefone == "" ) {
-        camposNaoPreenchidos.push("Email/Telefone");
+      if (email == "" && telefone == "" ) {
+        camposNaoPreenchidos.push("Email ou Telefone");
         document.forms["contactForm"]["email"] .classList.add("required");
+        document.forms["contactForm"]["telefone"] .classList.add("required");
       } else {
         document.forms["contactForm"]["email"] .classList.remove("required");
+        document.forms["contactForm"]["telefone"] .classList.remove("required");
       } 
       
       if (mensagem == "") {
