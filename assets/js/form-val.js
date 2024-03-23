@@ -80,12 +80,3 @@ function isValidEmail(email) {
 
 
 
-
-// Função para mask o formato do telefone
-$(document).ready(function() {
-    $('#telefone').inputmask({
-        mask: ['(99) 9999-9999', '(99) 9-9999-9999'],
-        keepStatic: true,
-        placeholder: ''
-    });
-});
