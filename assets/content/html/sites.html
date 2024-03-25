@@ -1,0 +1,136 @@
+
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                  Veja alguns dos nossos projetos
+                </div>
+
+                <div class="home__social">
+                <a href="https://facebook.com/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://instagram.com/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://wa.me/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="../assets/img/header.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="http://clinsp.com.br" class="work__img" target="_blank">
+                        <img src="../assets/img/work1.jpg" alt=""><b>Clinica saúde e psicologia</b>
+                    </a>
+                    <a href="http://pokexgames-tutoriais.blogspot.com" class="work__img" target="_blank">
+                        <img src="../assets/img/work2.jpg" alt=""><b>PokeXGames Tutoriais</b>
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contato</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="http://clinsp.com.br/teste.php" method="POST" class="contact__form" name="contactForm" onsubmit="return validarFormulario()">
+                        <input type="text" placeholder="Nome" class="contact__input" name="nome">
+                        <input type="mail" placeholder="Email" class="contact__input" name="email">
+                        <input type="text" placeholder="Telefone: (11) 9-9999-9999" class="contact__input" name="telefone">
+                        <input type="text" placeholder="Assunto" class="contact__input" name="assunto">
+                        <textarea name="mensagem" id="" cols="0" rows="10" class="contact__input" placeholder="Mensagem..."></textarea>
+
+
+          <input type="submit" name="BTEnvia" value="Enviar" class="contact__button button"> <br/>
+   <input type="reset" name="BTApaga" value="Apagar" class="contact__button button" style="background-color:red;" onclick="clearInput()">
+                    </form>
+
+
+  <script>
+    function validarFormulario() {
+      var nome = document.forms["contactForm"]["nome"].value;
+      var email = document.forms["contactForm"]["email"].value;
+      var telefone = document.forms["contactForm"]["telefone"].value;
+      var assunto = document.forms["contactForm"]["assunto"].value;
+      var mensagem = document.forms["contactForm"]["mensagem"].value;
+      
+
+      var camposNaoPreenchidos = [];
+      if (nome == "") {
+        camposNaoPreenchidos.push("Nome");
+        document.forms["contactForm"]["nome"] .classList.add("required");
+      }
+      if (nome != "") {
+        document.forms["contactForm"]["nome"] .classList.remove("required");
+      } 
+      
+      if (email == "") {
+        camposNaoPreenchidos.push("Email");
+        document.forms["contactForm"]["email"] .classList.add("required");
+      }
+      if (email != "") {
+        document.forms["contactForm"]["email"] .classList.remove("required");
+      } 
+      
+      if (mensagem == "") {
+        camposNaoPreenchidos.push("Mensagem");
+        document.forms["contactForm"]["mensagem"] .classList.add("required");
+      }
+      if (mensagem != "") {
+        document.forms["contactForm"]["mensagem"] .classList.remove("required");
+      } 
+
+
+      if (camposNaoPreenchidos.length > 0) {
+        alert("Por favor, os campos são obrigatórios:\n" + camposNaoPreenchidos.join("\n"));
+        return false;
+      }
+
+      // Validação adicional, se necessário
+       else {
+         alert("Enviando e-mail... \n \n Dados ("+nome+" - "+telefone+" - "+email+")\nAssunto: "+assunto+"\nMensagem: "+mensagem);
+       }
+
+      return true;
+    }
+
+// Função para limpar o campo de entrada
+function clearInput() {
+  document.forms["contactForm"]["nome"].value = "";
+  document.forms["contactForm"]["email"].value = "";
+  document.forms["contactForm"]["telefone"].value = ""; 
+  document.forms["contactForm"]["assunto"].value = "";document.forms["contactForm"]["mensagem"].value = "";
+}
+  </script>
+  <style>
+    .required {
+      border: 2px solid red;
+  color: red;
+    }
+.required::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+.required::-ms-input-placeholder { /* Edge 12 -18 */
+  color: red;
+}
+  </style>
+
+
+
+                </div>
+            </section>
