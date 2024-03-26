@@ -63,36 +63,9 @@ sr.reveal('.skills__data, .work__img, .contact__input, .contact__button',{interv
 
 
 
-// Get the modal
-
 
 
 // Get the modal
-// Get all elements with class "skills__data"
-var skillItems = document.querySelectorAll(".skills__data");
-
-// Loop through each skill item
-skillItems.forEach(function(item) {
-  // Add click event listener to each skill item
-  item.addEventListener("click", function() {
-    // Get data from the data attribute
-    var dados = this.getAttribute("data-dados");
-    var titulo = this.querySelector(".skills__name").innerText;
-    var modalContent = document.getElementById("modalContent");
-    var modalTitle = document.getElementById("modalTitle");
-
-    // Replace [a] with <a> and [/a] with </a> in the content
-    dados = dados.replace(/\[a href='([^']*)' title='([^']*)'\]/g, "<a href='$1' title='$2'>");
-    dados = dados.replace(/\[\/a\]/g, "</a>");
-
-    // Set modal content dynamically
-    modalContent.innerHTML = dados;
-    modalTitle.innerText = titulo;
-
-    // Display the modal
-    modal.style.display = "block";
-  });
-});
 // Get all elements with class "skills__data"
 var skillItems = document.querySelectorAll(".skills__data");
 
