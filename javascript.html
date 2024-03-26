@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio complete</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">Gigllyan</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active-link">Início</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="index.html#skills" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="index.html#work" class="nav__link">Projetos</a><ul><li>aa
+                    </li></ul></li>
+                        <li class="nav__item"><a href="index.html#contact" class="nav__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="L-main content" data-src="assets/content/pages/javascript.html">
+
+
+
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Gigllyan</p>
+            <div class="footer__social">
+                <a href="https://facebook.com/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://instagram.com/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://github.com/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://wa.me/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+            </div>
+            <p class="footer__copy">&#169;  gigllyan.github.io. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+ 
+
+        <!--===== LOAD CONTENT =====-->
+        <script src="assets/js/load-content.js"></script>
+
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+        <!--===== VALIDAR FORMULÁRIO JS =====-->
+        <script src="assets/js/form-val.js"></script>
+
+
+
+        
+<script>
+// Função para mask o formato do telefone
+$(document).ready(function() {
+    $('#telefone').inputmask({
+        mask: ['(99) 9999-9999', '(99) 9-9999-9999'],
+        keepStatic: true,
+        placeholder: ''
+    });
+}); 
+</script>
+    </body>
+</html>
