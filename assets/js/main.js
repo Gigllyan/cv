@@ -60,6 +60,7 @@ sr.reveal('.skills__data, .work__img, .contact__input, .contact__button',{interv
 
 
 
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
