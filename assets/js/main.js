@@ -60,12 +60,24 @@ sr.reveal('.skills__data, .work__img, .contact__input, .contact__button',{interv
 
 
 
-
-
-
-
-
 // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 // Get all elements with class "skills__data"
 var skillItems = document.querySelectorAll(".skills__data");
 
@@ -78,7 +90,6 @@ skillItems.forEach(function(item) {
     var titulo = this.querySelector(".skills__name").innerText;
     var modalContent = document.getElementById("modalContent");
     var modalTitle = document.getElementById("modalTitle");
-
     // Replace [a] with <a> and [/a] with </a> in the content
     dados = dados.replace(/\[a href='([^']*)' title='([^']*)'\]/g, "<a href='$1' title='$2'>");
     dados = dados.replace(/\[\/a\]/g, "</a>");
