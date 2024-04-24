@@ -1,0 +1,43 @@
+All projects
+https://www.geeksforgeeks.org/tag/javascript-projects/page/5/?type=popular
+
+
+snake game
+https://www.geeksforgeeks.org/create-a-snake-game-using-html-css-and-javascript/
+
+Dragon world game
+https://www.geeksforgeeks.org/design-dragons-world-game-using-html-css-and-javascript/
+
+calculator
+https://www.geeksforgeeks.org/javascript-calculator/
+
+Cronometro
+https://www.geeksforgeeks.org/how-to-create-stopwatch-using-html-css-and-javascript/
+
+Todo List
+https://www.geeksforgeeks.org/javascript-project-on-todo-list/
+
+Shrink header on scroll
+https://www.geeksforgeeks.org/how-to-create-shrink-header-on-scroll-using-html-css-and-javascript/
+
+store data in firebase
+https://www.geeksforgeeks.org/create-a-website-using-html-css-and-javascript-that-stores-data-in-firebase/
+
+jogo da velha (tik tak toe)
+https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/
+
+editor de imagem
+https://www.geeksforgeeks.org/creating-a-simple-image-editor-using-javascript/
+
+Todo app
+https://www.geeksforgeeks.org/how-to-create-todo-app-using-html-css-js-and-bootstrap/
+
+Notes App
+https://www.geeksforgeeks.org/how-to-build-notes-app-using-html-css-javascript/
+
+Chat em node.js
+https://www.geeksforgeeks.org/real-time-chat-application-in-javascript/
+
+Snackbar ( usando browsersync e npm)
+https://www.geeksforgeeks.org/how-to-create-a-snackbar-using-hmtl-css-javascript/
+
