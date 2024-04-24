@@ -1,5 +1,5 @@
 // Get the folder path
-const folderPath = 'files';
+const folderPath = 'files/test';
 
 // Get the file list
 const files = [];
