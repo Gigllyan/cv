@@ -1,6 +1,6 @@
 // header.js
 function loadHeader() {
-  const headerHTML = fetch('header.htm').then(response => response.text());
+  const headerHTML = fetch('header.html').then(response => response.text());
   return headerHTML;
 }
 
