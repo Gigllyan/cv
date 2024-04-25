@@ -12,42 +12,50 @@
     <script>
     const usuario = 'gigllyan';
 const repositorio = 'cv';
+const repositorio2 = 'projetos/readfolder/files';
 
 const bRepo = document.getElementById('brepo');
 
+let repoUrl;
+
+
+    // Formata a URL da API do repositório
+    repoUrl = `https://api.github.com/repos/${usuario}/${repositorio}/contents/${repositorio2}/`;
+
+
+// Função para buscar e exibir a lista de arquivos
+async function fetchFiles() {
+    try {
+        const response = await fetch(repoUrl);
+        const data = await response.json();
         
-        // URL do seu repositório no GitHub
-        const repoUrl = 'https://api.github.com/repos/'+usuario+'/'+repositorio+'/contents/';
+        // Limpa a lista de arquivos
+        const fileList = document.getElementById('fileList');
+        fileList.innerHTML = '';
 
-        // Função para buscar e exibir a lista de arquivos
-        async function fetchFiles() {
-            try {
-                const response = await fetch(repoUrl);
-                const data = await response.json();
+        // Adiciona cada arquivo à lista
+        data.forEach(file => {
+            if (file.type === 'file') {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
                 
-                // Limpa a lista de arquivos
-                const fileList = document.getElementById('fileList');
-                fileList.innerHTML = '';
-
-                // Adiciona cada arquivo à lista
-                data.forEach(file => {
-                    if (file.type === 'file') {
-                        const listItem = document.createElement('li');
-                        const link = document.createElement('a');
-                        link.href = `https://${usuario}.github.io/${repositorio}/${file.path}`;
-                        link.textContent = file.name;
-                        listItem.appendChild(link);
-                        fileList.appendChild(listItem);
-                    }
-                });
-            } catch (error) {
-                console.error('Erro ao buscar arquivos:', error);
+                
+                    // Formata o link sem modificar o repositório
+                    link.href = `https://${usuario}.github.io/${repositorio}/${file.path}`;
+                
+                link.textContent = file.name;
+                listItem.appendChild(link);
+                fileList.appendChild(listItem);
             }
-        }
+        });
+    } catch (error) {
+        console.error('Erro ao buscar arquivos:', error);
+    }
+}
 
-        // Chama a função para buscar os arquivos ao carregar a página
-        fetchFiles();
-        bRepo.innerHTML = usuario +'/'+ repositorio;
+// Chama a função para buscar os arquivos ao carregar a página
+fetchFiles();
+bRepo.innerHTML = usuario + '/' + repositorio + '/' + repositorio2;
     </script>
 </body>
 </html>
