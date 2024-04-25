@@ -6,7 +6,7 @@
     <title>Listar Arquivos do GitHub</title>
 </head>
 <body>
-    <h1>Arquivos no Repositório</h1>
+    <h1>Arquivos no Repositório <b id="brepo"></b></h1>
     <ul id="fileList"></ul>
 
     <script>
@@ -21,7 +21,10 @@
             try {
                 const response = await fetch(repoUrl);
                 const data = await response.json();
-                
+
+                const bRepo = document.getElementById('brepo');
+
+bRepo.appendChild(usuario'+ / +'repositorio);
                 // Limpa a lista de arquivos
                 const fileList = document.getElementById('fileList');
                 fileList.innerHTML = '';
