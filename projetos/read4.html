@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Arquivos do GitHub</title>
+</head>
+<body>
+    <h1>Arquivos no Repositório</h1>
+    <ul id="fileList"></ul>
+
+    <script>
+        const usuario = 'gigllyan';
+        const repositorio = 'cv';
+
+        // URL do seu repositório no GitHub
+        const repoUrl = 'https://api.github.com/repos/'+usuario+'/'+repositorio+'/contents/';
+
+        // Função para buscar e exibir a lista de arquivos
+        async function fetchFiles() {
+            try {
+                const response = await fetch(repoUrl);
+                const data = await response.json();
+                
+                // Limpa a lista de arquivos
+                const fileList = document.getElementById('fileList');
+                fileList.innerHTML = '';
+
+                // Adiciona cada arquivo à lista
+                data.forEach(file => {
+                    if (file.type === 'file') {
+                        const listItem = document.createElement('li');
+                        const link = document.createElement('a');
+                        link.href = `https://${usuario}.github.io/${repositorio}/${file.path}`;
+                        link.textContent = file.name;
+                        listItem.appendChild(link);
+                        fileList.appendChild(listItem);
+                    }
+                });
+            } catch (error) {
+                console.error('Erro ao buscar arquivos:', error);
+            }
+        }
+
+        // Chama a função para buscar os arquivos ao carregar a página
+        fetchFiles();
+    </script>
+</body>
+</html>
