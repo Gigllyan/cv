@@ -10,8 +10,11 @@
     <ul id="fileList"></ul>
 
     <script>
+        const usuario = 'gigllyan';
+        const repositorio = 'cv';
+
         // URL do seu repositório no GitHub
-        const repoUrl = 'https://api.github.com/repos/gigllyan/cv/contents/';
+        const repoUrl = 'https://api.github.com/repos/'+usuario+'/'+repositorio+'/contents/';
 
         // Função para buscar e exibir a lista de arquivos
         async function fetchFiles() {
@@ -28,7 +31,7 @@
                     if (file.type === 'file') {
                         const listItem = document.createElement('li');
                         const link = document.createElement('a');
-                        link.href = `https://gigllyan.github.io.io/cv/${file.path}`;
+                        link.href = `https://'+usuario+'.github.io.io/'+repositorio+'/${file.path}`;
                         link.textContent = file.name;
                         listItem.appendChild(link);
                         fileList.appendChild(listItem);
