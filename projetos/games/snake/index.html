@@ -13,6 +13,9 @@
             height: 100px;
             background-color: gray;
             border-radius: 50%;
+			position:absolute;
+			top:0;
+			left:0;
         }
     </style>
 </head>
@@ -22,7 +25,7 @@
     <div id="top">
         <b id="score">Pontuação: 0</b>
         <b id="level">Nível: 0</b>
-        <b id="bestscore">Maior Pontuação: 0</b>
+        <b id="bestscore">Recorde: 0</b>
         <button id="reset">Reiniciar</button>
     </div>
     <canvas id="board"></canvas>
@@ -214,7 +217,7 @@
                 let bestScore = localStorage.getItem("bestScore");
                 if (!bestScore || score > parseInt(bestScore)) {
                     localStorage.setItem("bestScore", score);
-                    document.getElementById("bestscore").textContent = "Maior Pontuação: " + score;
+                    document.getElementById("bestscore").textContent = "Recorde: " + score;
                 }
             }
 
@@ -279,10 +282,10 @@
                 // Load best score from localStorage
                 let bestScore = localStorage.getItem("bestScore");
                 if (bestScore) {
-                    document.getElementById("bestscore").textContent = "Maior Pontuação: " + bestScore;
+                    document.getElementById("bestscore").textContent = "Recorde: " + bestScore;
                 }
             };
-            foodImage.src = "food.png";
+            foodImage.src = "imgs/food.png";
         }
     </script>
 </body>
