@@ -3,161 +3,285 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport",
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="snakegame.js"></script>
 </head>
 
 <body>
     <h1>Snake Game</h1>
-    <b id="score">Pontuação: 0</b>
-    <canvas id="board"></canvas>
-    <b id="reset">Reiniciar</b>
+	<div id="top">
+		<b id="score">Pontuação: 0</b>
+		<b id="level">Nível: 1</b>
+		<button id="reset">Reiniciar</button>
+	</div>
+	<canvas id="board"></canvas>
 
     <script>
-        let blockSize = 25;
-        let total_row = 17; //total row number
-        let total_col = 17; //total column number
-        let board;
-        let context;
+		let blockSize = 20;
+		let total_row = 25; //total row number
+		let total_col = 25; //total column number
+		let board;
+		let context;
 
-        let snakeX = blockSize * 5;
-        let snakeY = blockSize * 5;
+		let snakeX = blockSize * 5;
+		let snakeY = blockSize * 5;
 
-        // Set the total number of rows and columns
-        let speedX = 0; //speed of snake in x coordinate.
-        let speedY = 0; //speed of snake in Y coordinate.
+		// Set the total number of rows and columns
+		let speedX = 0; //speed of snake in x coordinate.
+		let speedY = 0; //speed of snake in Y coordinate.
 
-        let snakeBody = [];
+		let snakeBody = [];
 
-        let foodX;
-        let foodY;
+		let foodX;
+		let foodY;
+		let foodImage;
 
-        let gameOver = false;
-        let score = 0;
+		let gameOver = false;
+		let score = 0;
+		let level = 1;
+		let interval = 200; // Velocidade inicial
+		let intervalId;
 
-        window.onload = function () {
-            // Set board height and width
-            board = document.getElementById("board");
-            board.height = total_row * blockSize;
-            board.width = total_col * blockSize;
-            context = board.getContext("2d");
+window.onload = function () {
+    // Set board height and width
+    board = document.getElementById("board");
+    board.height = total_row * blockSize;
+    board.width = total_col * blockSize;
+    context = board.getContext("2d");
 
-            placeFood();
-            document.addEventListener("keyup", changeDirection); //for movements
-            // Set snake speed
-            setInterval(update, 1000 / 10);
+    // Load food image
+    foodImage = new Image();
+    foodImage.onload = function() {
+        placeFood();
+        document.addEventListener("keyup", changeDirection); //for movements
+        // Set snake speed
+        intervalId = setInterval(update, interval); // Define o intervalo de acordo com a velocidade
 
-            // Adiciona evento de clique ao botão de reiniciar
-            document.getElementById("reset").addEventListener("click", resetGame);
+        // Adiciona evento de clique ao botão de reiniciar
+        document.getElementById("reset").addEventListener("click", resetGame);
+    };
+    foodImage.src = "food.png";
+}
+
+
+// Check if snake hits the wall and adjust its position
+function checkWallCollision() {
+    if (snakeX < 0) {
+        snakeX = total_col * blockSize - blockSize; // Move snake to the right edge
+    } else if (snakeX >= total_col * blockSize) {
+        snakeX = 0; // Move snake to the left edge
+    } else if (snakeY < 0) {
+        snakeY = total_row * blockSize - blockSize; // Move snake to the bottom edge
+    } else if (snakeY >= total_row * blockSize) {
+        snakeY = 0; // Move snake to the top edge
+    }
+}
+
+let foodImages = ["food.png", "food2.png", "food3.png", "food4.png", "food5.png"];
+
+function loadFoodImage() {
+    // Seleciona aleatoriamente um índice para carregar na matriz foodImages
+    let randomIndex = Math.floor(Math.random() * foodImages.length);
+    foodImage.src = foodImages[randomIndex];
+}
+
+let isSuperFood = false;
+
+function placeFood() {
+    foodX = Math.floor(Math.random() * total_col) * blockSize;
+    foodY = Math.floor(Math.random() * total_row) * blockSize;
+
+    // Adiciona uma chance de 20% de ser um super food
+    if (Math.random() < 1) {
+        isSuperFood = true;
+        foodImage.onload = function() {
+            context.drawImage(foodImage, foodX, foodY, blockSize * 1.5, blockSize * 1.5);
+        };
+    } else {
+        isSuperFood = false;
+        foodImage.onload = function() {
+            context.drawImage(foodImage, foodX, foodY, blockSize, blockSize);
+        };
+    }
+
+    loadFoodImage();
+}
+
+
+function update() {
+    if (gameOver) {
+        return;
+    }
+
+    // Check if snake hits the wall and adjust its position
+    checkWallCollision();
+	
+    // Background of a Game
+    context.fillStyle = "green";
+    context.fillRect(0, 0, board.width, board.height);
+
+    // Set food color and position
+    context.drawImage(foodImage, foodX, foodY, blockSize, blockSize);
+
+    if (snakeX == foodX && snakeY == foodY) {
+        snakeBody.push([foodX, foodY]);
+        placeFood();
+        if (isSuperFood) {
+            score += 2; // Pontuação aumentada em 2 para super food
+        } else {
+            score++; // Aumenta a pontuação quando a cobra come um alimento normal
         }
+        document.getElementById("score").textContent = "Pontuação: " + score;
 
-        function update() {
-            if (gameOver) {
-                return;
-            }
-
-            // Background of a Game
-            context.fillStyle = "green";
-            context.fillRect(0, 0, board.width, board.height);
-
-            // Set food color and position
-            context.fillStyle = "red";
-            context.fillRect(foodX, foodY, blockSize, blockSize);
-
-            if (snakeX == foodX && snakeY == foodY) {
-                snakeBody.push([foodX, foodY]);
-                placeFood();
-                score++; // Aumenta a pontuação quando a cobra come um alimento
-                document.getElementById("score").textContent = "Pontuação: " + score;
-            }
-
-            // body of snake will grow
-            for (let i = snakeBody.length - 1; i > 0; i--) {
-                // it will store previous part of snake to the current part
-                snakeBody[i] = snakeBody[i - 1];
-            }
-            if (snakeBody.length) {
-                snakeBody[0] = [snakeX, snakeY];
-            }
-
-            context.fillStyle = "white";
-            snakeX += speedX * blockSize; //updating Snake position in X coordinate.
-            snakeY += speedY * blockSize; //updating Snake position in Y coordinate.
-            context.fillRect(snakeX, snakeY, blockSize, blockSize);
-            for (let i = 0; i < snakeBody.length; i++) {
-                context.fillRect(snakeBody[i][0], snakeBody[i][1], blockSize, blockSize);
-            }
-
-            if (snakeX < 0 ||
-                snakeX > total_col * blockSize ||
-                snakeY < 0 ||
-                snakeY > total_row * blockSize) {
-
-                // Out of bound condition
-                gameOver = true;
-                alert("Game Over");
-            }
-
-            for (let i = 0; i < snakeBody.length; i++) {
-                if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
-
-                    // Snake eats own body
-                    gameOver = true;
-                    alert("Game Over");
-                }
-            }
+        // Verifica se o jogador atingiu um novo nível
+        if (score % 10 == 0) {
+            level++;
+            document.getElementById("level").textContent = "Nível: " + level;
+            updateSpeed(); // Atualiza a velocidade de acordo com o novo nível
         }
+    }
 
-        // Movement of the Snake - We are using addEventListener
-        function changeDirection(e) {
-            if (e.code == "ArrowUp" && speedY != 1) {
-                // If up arrow key pressed with this condition...
-                // snake will not move in the opposite direction
-                speedX = 0;
-                speedY = -1;
-            }
-            else if (e.code == "ArrowDown" && speedY != -1) {
-                //If down arrow key pressed
-                speedX = 0;
-                speedY = 1;
-            }
-            else if (e.code == "ArrowLeft" && speedX != 1) {
-                //If left arrow key pressed
-                speedX = -1;
-                speedY = 0;
-            }
-            else if (e.code == "ArrowRight" && speedX != -1) {
-                //If Right arrow key pressed
-                speedX = 1;
-                speedY = 0;
-            }
+    // body of snake will grow
+    for (let i = snakeBody.length - 1; i > 0; i--) {
+        // it will store previous part of snake to the current part
+        snakeBody[i] = snakeBody[i - 1];
+    }
+    if (snakeBody.length) {
+        snakeBody[0] = [snakeX, snakeY];
+    }
+
+    context.fillStyle = "white";
+    snakeX += speedX * blockSize; //updating Snake position in X coordinate.
+    snakeY += speedY * blockSize; //updating Snake position in Y coordinate.
+    context.fillRect(snakeX, snakeY, blockSize, blockSize);
+	
+// Desenhar o corpo da cobra com borda
+for (let i = 0; i < snakeBody.length; i++) {
+    let segmentX = snakeBody[i][0];
+    let segmentY = snakeBody[i][1];
+
+    // Desenhar preenchimento branco para o segmento da cobra
+    context.fillStyle = "white";
+    context.fillRect(segmentX, segmentY, blockSize, blockSize);
+
+    // Verificar se o segmento deve ter borda
+    if (isBorderSegment(segmentX, segmentY)) {
+        // Desenhar borda preta ao redor do segmento
+        context.strokeStyle = "black";
+        context.strokeRect(segmentX, segmentY, blockSize, blockSize);
+    }
+}
+
+
+
+
+function isBorderSegment(segmentX, segmentY) {
+    // Verificar se o segmento faz contato com a área verde do jogo
+    if (segmentX % blockSize === 0 && segmentY % blockSize === 0) {
+        return true; // O segmento faz contato com a área verde
+    }
+    
+    // Verificar se o segmento faz contato com outro segmento da cobra
+    for (let i = 0; i < snakeBody.length; i++) {
+        if (segmentX === snakeBody[i][0] && segmentY === snakeBody[i][1]) {
+            return true; // O segmento faz contato com outro segmento da cobra
         }
+    }
 
-        // Randomly place food
-        function placeFood() {
+    // O segmento não está na borda
+    return false;
+}
 
-            // in x coordinates.
-            foodX = Math.floor(Math.random() * total_col) * blockSize;
 
-            //in y coordinates.
-            foodY = Math.floor(Math.random() * total_row) * blockSize;
+
+
+
+    if (snakeX < 0 ||
+        snakeX > total_col * blockSize ||
+        snakeY < 0 ||
+        snakeY > total_row * blockSize) {
+
+        // Out of bound condition
+        gameOver = true;
+        alert("Game Over");
+    }
+
+    for (let i = 0; i < snakeBody.length; i++) {
+        if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
+
+            // Snake eats own body
+            gameOver = true;
+            alert("Game Over");
         }
+    }
+}
 
-        // Função para reiniciar o jogo
-        function resetGame() {
-            snakeX = blockSize * 5;
-            snakeY = blockSize * 5;
-            speedX = 0;
-            speedY = 0;
-            snakeBody = [];
-            score = 0;
-            gameOver = false;
-            document.getElementById("score").textContent = "Pontuação: " + score;
-        }
-    </script>
+// Atualiza a velocidade de acordo com o nível atual
+function updateSpeed() {
+    // Aumenta a velocidade a cada novo nível
+    interval -= 5; // Diminui o intervalo em 5ms
+    clearInterval(intervalId); // Limpa o intervalo atual
+    intervalId = setInterval(update, interval); // Define o novo intervalo
+}
+
+
+// Movement of the Snake - We are using addEventListener
+function changeDirection(e) {
+    if ((e.code == "ArrowUp" || e.key == "w") && speedY != 1) {
+        // If up arrow key or W key pressed with this condition...
+        // snake will not move in the opposite direction
+        speedX = 0;
+        speedY = -1;
+    }
+    else if ((e.code == "ArrowDown" || e.key == "s") && speedY != -1) {
+        // If down arrow key or S key pressed
+        speedX = 0;
+        speedY = 1;
+    }
+    else if ((e.code == "ArrowLeft" || e.key == "a") && speedX != 1) {
+        // If left arrow key or A key pressed
+        speedX = -1;
+        speedY = 0;
+    }
+    else if ((e.code == "ArrowRight" || e.key == "d") && speedX != -1) {
+        // If right arrow key or D key pressed
+        speedX = 1;
+        speedY = 0;
+    }
+    else if (e.code == "Space") {
+        // If space key pressed, reset the game
+        resetGame();
+    }
+}
+
+
+// Randomly place food
+function placeFood() {
+
+    // in x coordinates.
+    foodX = Math.floor(Math.random() * total_col) * blockSize;
+
+    //in y coordinates.
+    foodY = Math.floor(Math.random() * total_row) * blockSize;
+}
+
+
+// Função para reiniciar o jogo
+function resetGame() {
+    snakeX = blockSize * 5;
+    snakeY = blockSize * 5;
+    speedX = 0;
+    speedY = 0;
+    snakeBody = [];
+    score = 0;
+    level = 1;
+    gameOver = false;
+    document.getElementById("score").textContent = "Pontuação: " + score;
+    document.getElementById("level").textContent = "Nível: " + level;
+}
+
+   </script>
 </body>
 
 </html>
