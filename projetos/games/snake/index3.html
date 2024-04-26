@@ -82,9 +82,11 @@
                     foodImage.onload = function () {
                         context.drawImage(foodImage, foodX, foodY, blockSize * 1.5, blockSize * 1.5);
                     };
+alert("superfood");
                 } else {
                     foodImage.onload = function () {
                         context.drawImage(foodImage, foodX, foodY, blockSize, blockSize);
+alert("notsuper");
                     };
                 }
 
