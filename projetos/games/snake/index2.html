@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
+
+<style>
+  #joystick {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50%;
+  }
+</style>
 </head>
 
 <body>
@@ -17,6 +26,69 @@
 	</div>
 	<canvas id="board"></canvas>
 
+<div id="joystick"></div>
+
+
+<script>
+  const joystick = document.getElementById('joystick');
+
+  joystick.addEventListener('touchstart', handleTouchStart);
+  joystick.addEventListener('touchmove', handleTouchMove);
+  joystick.addEventListener('touchend', handleTouchEnd);
+
+  let startX, startY;
+
+  function handleTouchStart(event) {
+    startX = event.touches[0].clientX;
+    startY = event.touches[0].clientY;
+  }
+
+  function handleTouchMove(event) {
+    event.preventDefault();
+    let endX = event.touches[0].clientX;
+    let endY = event.touches[0].clientY;
+
+    let deltaX = endX - startX;
+    let deltaY = endY - startY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaX > 0) {
+        // Simulate right arrow key press
+        simulateKeyPress(39);
+        alert("right press");
+      } else {
+        // Simulate left arrow key press
+        simulateKeyPress(37);
+        alert("left press");
+      }
+    } else {
+      if (deltaY > 0) {
+        // Simulate down arrow key press
+        simulateKeyPress(40);
+        alert("down press");
+      } else {
+        // Simulate up arrow key press
+        simulateKeyPress(38);
+        alert("up press");
+      }
+    }
+  }
+
+  function handleTouchEnd(event) {
+    // Simulate arrow key release
+    simulateKeyRelease();
+  }
+
+  function simulateKeyPress(keyCode) {
+    const event = new KeyboardEvent('keydown', { keyCode: keyCode });
+    document.dispatchEvent(event);
+  }
+
+  function simulateKeyRelease() {
+    const event = new KeyboardEvent('keyup');
+    document.dispatchEvent(event);
+  }
+</script>
     <script>
 		let blockSize = 20;
 		let total_row = 25; //total row number
