@@ -10,16 +10,23 @@
 
 <body>
     <h1>Snake Game</h1>
-    <div id="top">
-        <b id="score">Pontuação: 0</b>
-        <b id="level">Nível: 0</b>
-        <b id="bestscore">Recorde: 0</b>
-        <button id="reset">Reiniciar</button>
-    </div>
     <div id="top-canvas">
+		<div id="top">
+			<b id="score">Pontuação: 0</b>
+			<b id="level">Nível: 0</b>
+			<b id="bestscore">Recorde: 0</b>
+		</div>
 		<canvas id="board"></canvas>
 		<div id="joystick"></div>
+		<!-- Div para exibir a tela de Game Over -->
+		<div id="gameOverScreen" style="display: none;">
+			<h2 style="color: red">Game Over</h2>
+			<p>Pontuação: <span id="gameOverScore">0</span></p>
+			<p>Recorde: <span id="gameOverBestScore">0</span></p>
+			<button id="restart">Reiniciar</button> ou aperte a tecla espaço
+		</div>
     </div>
+	<button id="reset">Reiniciar</button>
 
 
     <script>
@@ -56,10 +63,20 @@
             let interval = 200; // Initial speed
             let intervalId;
             let isSuperFood = false; // Flag to indicate if the food is a superfood
+			let paused = false;    // Variável para controlar se o jogo está pausado
+    
 
             // Load food images
             let foodImages = ["imgs/food.png", "imgs/food2.png", "imgs/food3.png", "imgs/food4.png", "imgs/food5.png"];
 
+		
+
+    // Load food image
+    foodImage = new Image();
+    foodImage.onload = function () {
+        placeFood(); // Chame a função aqui
+    };
+    foodImage.src = "imgs/food.png"; // Iniciar com uma imagem regular
             // Load food image
             function loadFoodImage() {
                 // Select a random index to load in the foodImages array
@@ -104,10 +121,13 @@
 				}
 
 				// Draw the food on the board
-				context.drawImage(foodImage, foodX, foodY, isSuperFood ? blockSize * 1.5 : blockSize * 0.8, isSuperFood ? blockSize * 1.5 : blockSize * 0.8);
+				context.drawImage(foodImage, foodX, foodY, isSuperFood ? blockSize * 1 : blockSize * 0.95, isSuperFood ? blockSize * 1 : blockSize * 0.95);
 
+				
 				// Load food image for the next food
-				loadFoodImage();
+				if (!isSuperFood) {
+					loadFoodImage();
+				}
 
 				return scoreForSuperFood;
 			}
@@ -116,6 +136,13 @@
 			// Update game state
 			function update() {
 				if (gameOver) {
+					 updateBestScore(); // Atualizar o melhor recorde
+					// Exibir tela de Game Over
+					document.getElementById("gameOverScore").textContent = score;
+					let bestScore = localStorage.getItem("bestScore");
+					document.getElementById("gameOverBestScore").textContent = bestScore ? bestScore : 0;
+					document.getElementById("gameOverScreen").style.display = "block";
+
 					return;
 				}
 
@@ -124,7 +151,6 @@
 				for (let i = 0; i < snakeBody.length; i++) {
 					if (snakeX === snakeBody[i][0] && snakeY === snakeBody[i][1]) {
 						gameOver = true;
-						alert("Game Over");
 						updateBestScore();
 						return; // Exit early to prevent further updates
 					}
@@ -202,23 +228,38 @@
 				intervalId = setInterval(update, interval);
 			}
 
-			function changeDirection(e) {
-				if ((e.code === "ArrowUp" || e.key === "w") && speedY !== 1) {
-					speedX = 0;
-					speedY = -1;
-				} else if ((e.code === "ArrowDown" || e.key === "s") && speedY !== -1) {
-					speedX = 0;
-					speedY = 1;
-				} else if ((e.code === "ArrowLeft" || e.key === "a") && speedX !== 1) {
-					speedX = -1;
-					speedY = 0;
-				} else if ((e.code === "ArrowRight" || e.key === "d") && speedX !== -1) {
-					speedX = 1;
-					speedY = 0;
-				} else if (e.code === "Space") {
-					resetGame();
-				}
-			}
+
+    function changeDirection(e) {
+        if (!gameOver) {
+            if ((e.code === "ArrowUp" || e.key === "w") && speedY !== 1) {
+                speedX = 0;
+                speedY = -1;
+            } else if ((e.code === "ArrowDown" || e.key === "s") && speedY !== -1) {
+                speedX = 0;
+                speedY = 1;
+            } else if ((e.code === "ArrowLeft" || e.key === "a") && speedX !== 1) {
+                speedX = -1;
+                speedY = 0;
+            } else if ((e.code === "ArrowRight" || e.key === "d") && speedX !== -1) {
+                speedX = 1;
+                speedY = 0;
+            } else if (e.code === "Space") {
+                if (paused) {
+                    // Se estiver pausado, continue o jogo
+                    intervalId = setInterval(update, interval);
+                    paused = false;
+                } else {
+                    // Se não estiver pausado, pause o jogo
+                    clearInterval(intervalId);
+                    paused = true;
+                }
+            }
+        } else {
+            if (e.code === "Space") {
+                resetGame();
+            }
+        }
+    }
 
 			function resetGame() {
 				snakeX = blockSize * 5;
@@ -231,6 +272,9 @@
 				gameOver = false;
 				document.getElementById("score").textContent = "Pontuação: " + score;
 				document.getElementById("level").textContent = "Nível: " + level;
+				
+                document.getElementById("gameOverScreen").style.display = "none"; // Esconder tela de Game Over
+
 			}
 
 			function updateBestScore() {
@@ -298,6 +342,7 @@
 				document.addEventListener("keyup", changeDirection);
 				intervalId = setInterval(update, interval);
 				document.getElementById("reset").addEventListener("click", resetGame);
+				document.getElementById("restart").addEventListener("click", resetGame);
 				
 				// Load best score from localStorage
 				let bestScore = localStorage.getItem("bestScore");
