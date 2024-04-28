@@ -20,7 +20,7 @@
       <canvas id="board"></canvas>
 		<div id="joystick"></div>	
 		</div>
-		     <button id="reset">Reiniciar</button>
+		     <button id="reset">Pausar</button>
 		<!-- Div para exibir a tela de Game Over -->
 		<div id="gameOverScreen" style="display: none;">
 			<h2 style="color: red">Game Over</h2>
@@ -38,8 +38,8 @@
 			if (screenWidth < 768) {
 				// Pequeno, ajuste o tamanho do bloco e o número de linhas e colunas
 				blockSize = 10;
-				totalRows = 20;
-				totalCols = 25;
+				totalRows = 30;
+				totalCols = 35;
 			} else if (screenWidth > 768) {
 				// Grande, use os valores padrão
 				blockSize = 20;
@@ -63,6 +63,7 @@
             let interval = 200; // Initial speed
             let intervalId;
             let isSuperFood = false; // Flag to indicate if the food is a superfood
+            let paused = false;    // Variável para controlar se o jogo está pausado
             
             // Load food images
             let foodImages = ["imgs/food.png", "imgs/food2.png", "imgs/food3.png", "imgs/food4.png", "imgs/food5.png"];
@@ -106,7 +107,7 @@
 				}
 
 				// Draw the food on the board
-								context.drawImage(foodImage, foodX, foodY, isSuperFood ? blockSize * 1.5 : blockSize * 0.8, isSuperFood ? blockSize * 1.5 : blockSize * 0.8);
+								context.drawImage(foodImage, foodX, foodY, isSuperFood ? blockSize * 1 : blockSize * 0.95, isSuperFood ? blockSize * 1 : blockSize * 0.95);
 												// Load food image for the next food
 												loadFoodImage();
 																return scoreForSuperFood;
@@ -142,7 +143,7 @@
 				checkWallCollision();
 				context.fillStyle = "green";
 				context.fillRect(0, 0, board.width, board.height);
-				context.drawImage(foodImage, foodX, foodY, isSuperFood ? blockSize * 1.5 : blockSize * 0.8, isSuperFood ? blockSize * 1.5 : blockSize * 0.8);
+				context.drawImage(foodImage, foodX, foodY, isSuperFood ? blockSize * 1 : blockSize * 0.95, isSuperFood ? blockSize * 1 : blockSize * 0.95);
 				if (snakeX === foodX && snakeY === foodY) {
 					snakeBody.push([foodX, foodY]);
 					placeFood();
@@ -210,17 +211,33 @@
 			}
 			
 			function resetGame() {
-				snakeX = blockSize * 5;
+
+				//resetf
+				if (!gameOver) {
+                if (paused) {
+                    // Se estiver pausado, continue o jogo
+                    intervalId = setInterval(update, interval);
+                    paused = false;
+                } else {
+                    // Se não estiver pausado, pause o jogo
+                    clearInterval(intervalId);
+                    paused = true;
+                }
+} else {
+  snakeX = blockSize * 5;
+
 				snakeY = blockSize * 5;
+
 				speedX = 0;
 				speedY = 0;
 				snakeBody = [];
 				score = 0;
 				level = 0;
 				gameOver = false;
-				document.getElementById("score").textContent = "Pontuação: " + score;
-				document.getElementById("level").textContent = "Nível: " + level;
-				                document.getElementById("gameOverScreen").style.display = "none"; // Esconder tela de Game Over
+            document.getElementById("score").textContent = "Pontuação: " + score;
+            document.getElementById("level").textContent = "Nível: " + level;
+            document.getElementById("gameOverScreen").style.display = "none"; // Esconder tela de Game Over
+  }
 
 			}
 
