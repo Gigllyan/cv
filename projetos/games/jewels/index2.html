@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Jogo Jewels Avançado</title>
+<style>
+
+
+.header {
+  overflow: hidden;
+  background-color: #333;
+  padding: 20px 10px;
+}
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.header a.active {
+  background-color: #666;
+  color: white;
+}
+.header-right {
+  float: right;
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+#hintButton {
+  display: block;       /* Faz o botão preencher a largura total do elemento pai */
+  width: 100%;          /* Define a largura para 100% do elemento pai */
+  padding: 10px 20px;   /* Adiciona um pouco de espaço interno para torná-lo mais alto e largo */
+  font-size: 1.2em;     /* Aumenta o tamanho da fonte */
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white;         /* Cor do texto branco */
+  border: none;         /* Remove a borda */
+  border-radius: 5px;   /* Adiciona bordas arredondadas */
+  cursor: pointer;      /* Muda o cursor para indicar que é clicável */
+  margin: 10px 0;       /* Adiciona margem acima e abaixo do botão */
+}
+
+#hintButton:hover {
+  background-color: #45a049; /* Escurece a cor do botão quando passa o mouse */
+}
+
+#newrecord, 
+#newrecord2 {
+  background-color:red;
+  color:white;
+  border-radius: 5px;
+}
+
+  .selected {
+    background-color: #aaf;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+    max-width: 90vw; /* Limita a largura máxima do grid */
+    margin: auto; /* Centraliza o grid horizontalmente */
+  }
+
+  .cell {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative; /* Posicionamento relativo para os filhos absolutos */
+  }
+
+  .cell::before {
+    content: '';
+    display: block;
+    padding-top: 100%; /* Isso cria uma célula quadrada */
+  }
+
+  .cell img {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute; /* Posiciona a imagem absolutamente dentro da célula */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza a imagem na célula */
+  }
+
+  .combo {
+    animation: pulse 1s;
+  }
+
+  @keyframes pulse {
+    0%, 100% { background-color: #ddd; }
+    50% { background-color: #f0e; }
+  }
+
+  .hint {
+    animation: hint-animation 3s infinite;
+    border:1px solid #000;
+  }
+
+  @keyframes hint-animation {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    
+    
+    
+<div class="header">
+  <a href="#default" class="logo">Jewels by: GKO</a> 
+  <div class="header-right">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <p>Combo x<span id="comboAtual">0</span></p>  
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">
+          <p>Total Combos: <span id="comboTotal">0</span></p>
+        </a>
+        <a href="#">Submenu 2</a>
+        <a href="#">Submenu 3</a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">
+        <p>Multi x<span id="multiplicadorTotal">0</span></p> 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">
+        <p>Multiplicador combos: <span id="multiplicadorCombos">0</span></p> 
+        </a>
+        <a href="#">
+         <p>Multiplicador atual: <span id="multiplicadorAtual">0</span></p>  
+        </a>
+        <a href="#">
+          <p>Multiplicador de joias: <span id="multiplicadorJoias">0</span></p>  
+        </a>
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn">
+        <p>Pontos:<span id="score">0 </span><b id="newrecord" style="display:none;"> Novo</b></p>  
+          
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">
+          <p><b id="newrecord2" style="display:none;">Novo </b >Recorde: <span id="highScore">0</span></p> 
+        </a>
+        <a href="#">Submenu 3.2</a>
+        <a href="#">Submenu 3.3</a>
+      </div>
+    </div> 
+  </div>
+</div>
+    
+    
+  </header>
+  
+<div id="game" class="grid"></div>
+
+<button id="hintButton">Dicas</button>
+
+<script>
+const grid = document.getElementById('game');
+const scoreDisplay = document.getElementById('score');
+const highScoreDisplay = document.getElementById('highScore');
+const rows = 8;
+const cols = 8;
+const jewels = ['ruby', 'diamond', 'emerald', 'sapphire', 'amethyst', 'topaz'];
+let score = 0;
+let highScore = 0;
+let board = [];
+let selectedCell = null;
+
+
+// Função para salvar o recorde no local storage
+function saveHighScore() {
+  localStorage.setItem('highScore', highScore);
+}
+
+// Função para carregar o recorde do local storage ao carregar a página
+function loadHighScore() {
+  const savedHighScore = localStorage.getItem('highScore');
+  if (savedHighScore !== null) {
+    highScore = parseInt(savedHighScore);
+    highScoreDisplay.textContent = highScore;
+  }
+}
+// Chame a função para carregar o recorde quando a página for carregada
+window.addEventListener('load', loadHighScore);
+
+function createBoard() {
+  for (let i = 0; i < rows * cols; i++) {
+    const cell = document.createElement('div');
+    cell.classList.add('cell');
+    cell.dataset.index = i;
+    cell.addEventListener('click', selectCell);
+    grid.appendChild(cell);
+    board.push(cell);
+  }
+  fillBoard();
+}
+
+function fillBoard() {
+  board.forEach(cell => {
+    const jewelType = jewels[Math.floor(Math.random() * jewels.length)];
+    const img = document.createElement('img');
+    img.src = 'imgs/' + jewelType + '.png';
+    img.alt = jewelType;
+    cell.appendChild(img);
+    cell.dataset.jewel = jewelType;
+  });
+  checkAndRemoveCombos();
+}
+
+function selectCell() {
+  if (selectedCell) {
+    if (this === selectedCell) {
+      this.classList.remove('selected');
+      selectedCell = null;
+    } else {
+      swapJewels(this, selectedCell);
+      selectedCell.classList.remove('selected');
+      selectedCell = null;
+    }
+  } else {
+    this.classList.add('selected');
+    selectedCell = this;
+  }
+}
+let comboChecked = false; // Atua
+let comboCurrent =1;
+function swapJewels(cell1, cell2) {
+  const index1 = parseInt(cell1.dataset.index);
+  const index2 = parseInt(cell2.dataset.index);
+
+  const isAdjacent = Math.abs(index1 - index2) === 1 || Math.abs(index1 - index2) === cols;
+  if (!isAdjacent) return;
+
+  const img1 = cell1.querySelector('img');
+  const img2 = cell2.querySelector('img');
+  const src1 = img1.src;
+  const src2 = img2.src;
+  img1.src = src2;
+  img2.src = src1;
+
+  const jewel1 = cell1.dataset.jewel;
+  const jewel2 = cell2.dataset.jewel;
+  cell1.dataset.jewel = jewel2;
+  cell2.dataset.jewel = jewel1;
+
+
+  const combo = checkForCombos();
+  if (combo.length > 0) {
+    
+    updateScore(combo.length);
+    removeJewels(combo);
+    setTimeout(dropJewels, 500);
+    comboChecked = true; // Atualiza a variável de controle
+  } else {
+    comboChecked = false;
+    comboCurrent = 0; // Reinicia o contador de combos atual
+    
+    img1.src = src1;
+    img2.src = src2;
+    cell1.dataset.jewel = jewel1;
+    cell2.dataset.jewel = jewel2;
+  }
+}
+
+let isCheckingCombos = false; // Variável de controle para evitar verificações duplicadas
+  
+  function checkForCombos() {
+    if (isCheckingCombos) return; // Sai da função se já estiver verificando combos
+    isCheckingCombos = true; // Define que está verificando Combos
+  
+  let combos = [];
+  board.forEach(cell => cell.classList.remove('combo'));
+
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols - 2; j++) {
+      let start = i * cols + j;
+      if (board[start].dataset.jewel === board[start + 1].dataset.jewel &&
+          board[start].dataset.jewel === board[start + 2].dataset.jewel) {
+        board[start].classList.add('combo');
+        board[start + 1].classList.add('combo');
+        board[start + 2].classList.add('combo');
+        combos.push(start, start + 1, start + 2);
+      }
+    }
+  }
+  for (let j = 0; j < cols; j++) {
+    for (let i = 0; i < rows - 2; i++) {
+      let start = i * cols + j;
+      if (board[start].dataset.jewel === board[start + cols].dataset.jewel &&
+          board[start].dataset.jewel === board[start + 2 * cols].dataset.jewel) {
+        board[start].classList.add('combo');
+        board[start + cols].classList.add('combo');
+        board[start + 2 * cols].classList.add('combo');
+        combos.push(start, start + cols, start + 2 * cols);
+      }
+    }
+  }
+
+  if (combos.length > 0) {
+    setTimeout(() => {
+      comboCurrent++;
+      comboCount++; // Incrementa o contador de combos total
+      updateScore(combos.length);
+      removeJewels(combos);
+      setTimeout(dropJewels, 1000);
+      isCheckingCombos = false; // Permite novas verificações após o término do processo atual
+    }, 1500);
+  } else {
+   comboCurrent = 1;
+   isCheckingCombos = false; // Permite novas verificações após o término do processo atual
+  }
+
+  return combos;
+}
+let comboCount = 0; // Contador de combos total que não é reiniciado
+
+
+function updateScore(points) {
+  let comboMultiplier = comboCount * 1.5; // Multiplicador baseado no contador de combos total
+  let currentMultiplier = comboCurrent * 1.5; // Multiplicador baseado no contador de combos atual
+  let jewelMultiplier = points === 3 ? 1.5 : points - 2; // Multiplicador baseado na quantidade de joias
+  let totalMultiplier = comboMultiplier * currentMultiplier * jewelMultiplier; // Multiplicador total
+  score += points * totalMultiplier;
+  scoreDisplay.textContent = Math.round(score);
+
+  const comboTotalDisplay = document.getElementById('comboTotal');
+  comboTotalDisplay.textContent = comboCount;
+  
+  const comboAtualDisplay = document.getElementById('comboAtual');
+  comboAtualDisplay.textContent = comboCurrent;
+  
+  const comboMultiplicadorDisplay = document.getElementById('multiplicadorCombos');
+  comboMultiplicadorDisplay.textContent = comboMultiplier;
+  
+  
+  const multiplicadorAtualDisplay = document.getElementById('multiplicadorAtual');
+  multiplicadorAtualDisplay.textContent = currentMultiplier;
+  
+  
+  const multiplicadorJoiasDisplay = document.getElementById('multiplicadorJoias');
+  multiplicadorJoiasDisplay.textContent = jewelMultiplier;
+  
+  
+  const multiplicadorTotalDisplay = document.getElementById('multiplicadorTotal');
+  multiplicadorTotalDisplay.textContent = Math.round(totalMultiplier);
+  
+  
+  
+  console.log("combo total: " + comboCount + ", combo atual: " + comboCurrent + ", combo multiplier(combo total*1.5): " + comboMultiplier + ", current multiplier(combo atual*1.5): " + currentMultiplier + ", jewel multiplier (qtd joias*1.5): " + jewelMultiplier + ", total multiplier (total*atual*joias) : " + totalMultiplier + ", score: " + score);
+  
+  if (score > highScore) {
+    
+    document.getElementById('newrecord').style.display = 'block';
+    document.getElementById('newrecord2').style.display = 'block';
+
+
+    highScore = Math.round(score);
+    highScoreDisplay.textContent = highScore;
+    saveHighScore(); // Salva o recorde atualizado
+  } else {
+    document.getElementById('newrecord').style.display = 'none';
+    document.getElementById('newrecord2').style.display = 'none';
+
+  } 
+}
+
+
+function removeJewels(combos) {
+  combos.forEach(index => {
+    const cell = board[index];
+    const img = cell.querySelector('img');
+    if (img && cell.contains(img)) {
+      cell.removeChild(img);
+    }
+    cell.dataset.jewel = '';
+  });
+  setTimeout(dropJewels, 500);
+}
+
+function dropJewels() {
+  for (let i = 0; i < cols; i++) {
+    for (let j = rows - 1; j >= 0; j--) {
+      const cell = board[j * cols + i];
+      if (!cell.dataset.jewel) {
+        for (let k = j - 1; k >= 0; k--) {
+          const aboveCell = board[k * cols + i];
+          if (aboveCell.dataset.jewel) {
+            const aboveImg = aboveCell.querySelector('img');
+            if (aboveImg) {
+              cell.appendChild(aboveImg);
+            }
+            cell.dataset.jewel = aboveCell.dataset.jewel;
+            aboveCell.dataset.jewel = '';
+            break;
+          }
+        }
+      }
+    }
+  }
+  setTimeout(refillBoard, 500);
+}
+
+function refillBoard() {
+  board.forEach(cell => {
+    if (!cell.dataset.jewel) {
+      const jewelType = jewels[Math.floor(Math.random() * jewels.length)];
+      const img = document.createElement('img');
+      img.src = 'imgs/' + jewelType + '.png';
+      img.alt = jewelType;
+      img.style.opacity = '0';
+      cell.appendChild(img);
+      setTimeout(() => {
+        img.style.opacity = '1';
+      }, 250);
+      cell.dataset.jewel = jewelType;
+    }
+  });
+  checkAndRemoveCombos();
+}
+
+function applyComboAnimation(combos) {
+  combos.forEach(index => {
+    board[index].classList.add('combo');
+  });
+}
+
+function showHints() {
+  const hints = findHints();
+  hints.forEach(index => {
+    board[index].classList.add('hint');
+  });
+
+  setTimeout(() => {
+    board.forEach(cell => cell.classList.remove('hint'));
+  }, 3000);
+}
+
+function findHints() {
+  let hints = [];
+
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      const index = i * cols + j;
+      // Verifica movimentos horizontais e verticais sem fazer trocas reais
+      if (j < cols - 1 && canSwap(index, index + 1)) {
+        hints.push(index, index + 1);
+      }
+      if (i < rows - 1 && canSwap(index, index + cols)) {
+        hints.push(index, index + cols);
+      }
+    }
+  }
+
+  return hints;
+}
+
+
+function canSwap(index1, index2) {
+  // Faz uma cópia temporária do tabuleiro
+  let tempBoard = board.map(cell => {
+    return {
+      jewel: cell.dataset.jewel,
+      imgSrc: cell.querySelector('img').src
+    };
+  });
+
+  // Troca as joias na cópia temporária
+  let temp = tempBoard[index1];
+  tempBoard[index1] = tempBoard[index2];
+  tempBoard[index2] = temp;
+
+  // Verifica se a troca resultaria em uma combinação
+  return checkCombos(tempBoard).length > 0;
+}
+
+
+function checkCombos(tempBoard) {
+  let combos = [];
+
+  // Verifica combinações horizontais
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols - 2; j++) {
+      let start = i * cols + j;
+      if (tempBoard[start].jewel === tempBoard[start + 1].jewel &&
+          tempBoard[start].jewel === tempBoard[start + 2].jewel) {
+        combos.push(start, start + 1, start + 2);
+      }
+    }
+  }
+
+  // Verifica combinações verticais
+  for (let j = 0; j < cols; j++) {
+    for (let i = 0; i < rows - 2; i++) {
+      let start = i * cols + j;
+      if (tempBoard[start].jewel === tempBoard[start + cols].jewel &&
+          tempBoard[start].jewel === tempBoard[start + 2 * cols].jewel) {
+        combos.push(start, start + cols, start + 2 * cols);
+      }
+    }
+  }
+
+  // Retorna os índices das joias que formam combinações
+  return combos;
+}
+
+
+function checkAndRemoveCombos() {
+  const combos = checkForCombos();
+  if (combos && combos.length > 1) {
+    applyComboAnimation(combos);
+    setTimeout(() => {
+      updateScore(combos.length);
+      removeJewels(combos);
+      setTimeout(dropJewels, 500);
+    }, 1500); // Atraso para mostrar a animação de combinação
+  } else {
+    // Se não houver combinações, permite novos movimentos
+    enableBoardInteractions();
+  }
+}
+
+
+function enableBoardInteractions() {
+  // Remove qualquer efeito visual de combinação
+  board.forEach(cell => cell.classList.remove('combo'));
+
+  // Reabilita os eventos de clique nas células
+  board.forEach(cell => cell.addEventListener('click', selectCell));
+
+  // Se necessário, remova a seleção atual
+  if (selectedCell) {
+    selectedCell.classList.remove('selected');
+    selectedCell = null;
+  }
+}
+
+document.getElementById('hintButton').addEventListener('click', showHints);
+
+createBoard();
+
+</script>
+
+</body>
+</html> 
