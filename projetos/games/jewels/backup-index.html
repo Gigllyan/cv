@@ -65,7 +65,7 @@
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url('imgs/seta.gif'); /* Substitua pelo caminho correto da imagem da seta */
+  background-image: url('https://gigllyan.github.io/cv/projetos/games/jewels/imgs/seta.gif'); /* Substitua pelo caminho correto da imagem da seta */
   background-size: contain; /* Isso fará com que a imagem se ajuste ao tamanho do elemento */
   background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
@@ -128,7 +128,7 @@ function fillBoard() {
   board.forEach(cell => {
     const jewelType = jewels[Math.floor(Math.random() * jewels.length)];
     const img = document.createElement('img');
-    img.src = 'imgs/' + jewelType + '.png';
+    img.src = 'https://gigllyan.github.io/cv/projetos/games/jewels/imgs/' + jewelType + '.png';
     img.alt = jewelType;
     cell.appendChild(img);
     cell.dataset.jewel = jewelType;
@@ -277,7 +277,7 @@ function refillBoard() {
     if (!cell.dataset.jewel) {
       const jewelType = jewels[Math.floor(Math.random() * jewels.length)];
       const img = document.createElement('img');
-      img.src = 'imgs/' + jewelType + '.png';
+      img.src = 'https://gigllyan.github.io/cv/projetos/games/jewels/imgs/' + jewelType + '.png';
       img.alt = jewelType;
       img.style.opacity = '0';
       cell.appendChild(img);
