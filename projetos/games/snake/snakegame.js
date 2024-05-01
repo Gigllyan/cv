@@ -1,4 +1,5 @@
-window.onload = function () {
+
+            window.onload = function () {
 			// Detect screen size
 			let screenWidth = window.innerWidth;
 			let screenHeight = window.innerHeight;
@@ -272,4 +273,4 @@ window.onload = function () {
 			};
 			// Load food image for the next food
 			loadFoodImage(); // Chame a função aqui
-			}
+        }
