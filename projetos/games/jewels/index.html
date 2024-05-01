@@ -219,7 +219,7 @@ function checkForCombos() {
     setTimeout(() => {
       updateScore(combos.length);
       removeJewels(combos);
-      setTimeout(dropJewels, 1000);
+      setTimeout(dropJewels, 500);
     }, 1500);
   }
 
@@ -283,7 +283,7 @@ function refillBoard() {
       cell.appendChild(img);
       setTimeout(() => {
         img.style.opacity = '1';
-      }, 250);
+      }, 350);
       cell.dataset.jewel = jewelType;
     }
   });
