@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>App Version Checker</title>
+</head>
+<body>
+    <div id="appversion">1.0</div>
+    <!-- O conteúdo do app será injetado aqui se necessário -->
+    <script>
+        // Mantém a versão do app em uma variável
+        let appVersion = document.getElementById('appversion').textContent;
+        const urlCompleta = "paginasecundaria.html";
+        let htmlCompleto = [];
+        let cssCompleto = [];
+        let scriptCompleto = [];
+
+        function atualizarConteudo(urlCompleta) {
+            // Verifica se o usuário está online
+            if (navigator.onLine) {
+                fetch(urlCompleta)
+                    .then(response => {
+                        if (response.ok) return response.text();
+                        throw new Error('Falha ao carregar a página.');
+                    })
+                    .then(html => {
+                        const doc = new DOMParser().parseFromString(html, 'text/html');
+                        const appVersionElement = doc.getElementById('appversion');
+
+                        // Compara as versões do app
+                        if (appVersionElement && appVersion <= appVersionElement.textContent) {
+                            // Atualiza os caminhos relativos para absolutos
+                            const baseUri = `${new URL(urlCompleta).origin}/`;
+                            htmlCompleto = doc.querySelector('body').innerHTML
+                                .replace(/src="([^"]*)"/g, `src="${baseUri}$1"`)
+                                .replace(/href="([^"]*)"/g, `href="${baseUri}$1"`);
+                            cssCompleto = doc.querySelector('style').textContent;
+                            scriptCompleto = doc.querySelector('script').textContent;
+
+                            // Salva o HTML, CSS e JavaScript separadamente
+                            localStorage.setItem('htmlSalvo', htmlCompleto);
+                            localStorage.setItem('cssSalvo', cssCompleto);
+                            localStorage.setItem('scriptSalvo', scriptCompleto);
+
+                            // Carrega o conteúdo atualizado
+                            document.body.innerHTML = htmlCompleto;
+                            carregarCSS(cssCompleto);
+                            carregarScript(scriptCompleto);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erro ao atualizar o conteúdo:', error);
+                    });
+            } else {
+                // Carrega o conteúdo do localStorage se estiver offline
+                carregarConteudoSalvo();
+            }
+        }
+
+        function carregarCSS(css) {
+            const styleElement = document.createElement('style');
+            styleElement.textContent = css;
+            document.head.appendChild(styleElement);
+        }
+
+        function carregarScript(script) {
+  // Remove qualquer script existente com o mesmo id para evitar duplicatas
+  const oldScript = document.getElementById('dynamic-script');
+  if (oldScript) {
+    oldScript.remove();
+  }
+
+  // Cria um novo elemento script
+  const scriptElement = document.createElement('script');
+  scriptElement.id = 'dynamic-script';
+  scriptElement.type = 'text/javascript';
+
+  // Usa 'text' para definir o conteúdo do script
+  try {
+    scriptElement.appendChild(document.createTextNode(script));
+  } catch (e) {
+    scriptElement.text = script;
+  }
+
+  // Adiciona o script ao body
+  document.body.appendChild(scriptElement);
+}
+
+
+        function carregarConteudoSalvo() {
+            const htmlSalvo = localStorage.getItem('htmlSalvo');
+            const cssSalvo = localStorage.getItem('cssSalvo');
+            const scriptSalvo = localStorage.getItem('scriptSalvo');
+
+            if (htmlSalvo && cssSalvo && scriptSalvo) {
+                document.body.innerHTML = htmlSalvo;
+                carregarCSS(cssSalvo);
+                carregarScript(scriptSalvo);
+            }
+        }
+
+        // Inicializa o processo de atualização
+        atualizarConteudo(urlCompleta);
+    </script>
+</body>
+</html>
