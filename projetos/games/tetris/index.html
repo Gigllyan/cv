@@ -40,6 +40,15 @@ canvas {
   z-index: 10; /* Isso garante que o joystick fique acima de todos os outros elementos */
   width: 100%;
 }
+#joystick-canvas {
+  position: absolute;
+  top:10px;
+  bottom:10px ;
+  right:10px;
+  left:10px;
+  z-index: 10; /* Isso garante que o joystick fique acima de todos os outros elementos */
+  width:100%;
+}
 
 .button {
   display: inline-block;
@@ -61,7 +70,7 @@ canvas {
 }
   </style>
 </head>
-<body>  <br/><br/>
+<body>  <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/>
 <div id="botoes">
 
 <button id="restart-button" style="display: none;">Reiniciar</button>
@@ -69,14 +78,24 @@ canvas {
 <button id="pause">Pausar/Continuar</button>
 <b id="score" style="">Pontuação: 0</b>
 <b id="level" style="">Nível: 1</b>
+<b id="highScore">High Score: 0</b>
   
 </div>
 <div class="canvas">
+<!-- Adicione um novo joystick -->
+<div id="joystick-canvas"></div> 
   <canvas width="320" height="640" id="game"></canvas>
 <canvas id="next-piece" width="100" height="100"></canvas>
-
   </div>
     
+  
+  <div id="dados-usuario">
+      olá,
+    <div id="nome" contenteditable="true">Guest#</div>
+    <div id="deviceId"></div>
+    <div id="userId"></div>
+    <div id="fingerPrint">fingerprint</div>
+  </div>
   
 <div id="next-piece"></div>
   <div class="joystick">
@@ -186,11 +205,38 @@ let lines = 0;
 let level = 1;
 let isPaused = false;
 
+// Função para atualizar e exibir o highScore
+function updateHighScore() {
+  // Verifica se há um highScore salvo no localStorage
+  let highScore = localStorage.getItem("highScore");
+
+  // Se não houver, define o highScore como 0
+  if (!highScore) {
+    highScore = 0;
+  }
+
+  // Converte o highScore para número
+  highScore = parseInt(highScore);
+
+  // Verifica se o score atual é maior que o highScore
+  if (score > highScore) {
+    // Atualiza o highScore com o novo valor
+    highScore = score;
+
+    // Salva o novo highScore no localStorage
+    localStorage.setItem("highScore", highScore);
+
+    // Exibe o novo highScore na div com id highScore
+    
+  }
+  document.getElementById("highScore").textContent = "High Score: " + highScore;
+  
+}
 
 function updateScore(linesCleared) {
   // Pontos por linha: 100, 300, 500, 800 para 1, 2, 3, 4 linhas respectivamente
   const points = [0, 100, 300, 500, 800];
-  score += points[linesCleared];
+  score += points[linesCleared]*level;
   lines += linesCleared;
 
   // Aumenta o nível a cada 10 linhas limpas
@@ -201,20 +247,51 @@ function updateScore(linesCleared) {
     updateDropSpeed();
   }
 
+// Chamada da função para atualizar e exibir o highScore
+updateHighScore();
   // Atualiza a pontuação e o nível na tela
   document.getElementById('score').textContent = 'Pontuação: ' + score;
   document.getElementById('level').textContent = 'Nível: ' + level;
 }
 
 // Função para ajustar a velocidade de queda com base no nível
+// Função para ajustar a velocidade de queda com base no nível
 function updateDropSpeed() {
   // Ajuste a velocidade com base no nível atual
   // Por exemplo, diminuir o intervalo de queda a cada nível
+
+  // Defina um intervalo de queda inicial
+  let dropInterval = 1000; // 1 segundo
+
+  // Diminua o intervalo de queda com base no nível atual
+  // Quanto maior o nível, mais rápido as peças caem
+  dropInterval -= (level - 1) * 100; // Diminui 100ms a cada nível
+
+  // Certifique-se de que o intervalo de queda mínimo seja 100ms
+  if (dropInterval < 100) {
+    dropInterval = 100; // Define o mínimo para 100ms
+  }
+
+  // Atualize o intervalo de queda das peças
+  clearInterval(moveInterval); // Limpa o intervalo de movimento atual
+  moveInterval = setInterval(moveDown, dropInterval); // Define o novo intervalo de queda
 }
+
 let nextTetromino = getNextTetromino(); 
 // Obtém a próxima peça
 // Função para mostrar a próxima peça
 function showNextPiece() {
+  
+  if (score > highScore) {
+    // Atualiza o highScore com o novo valor
+    highScore = score;
+
+    // Salva o novo highScore no localStorage
+    localStorage.setItem("highScore", highScore);
+
+    // Exibe o novo highScore na div com id highScore
+    document.getElementById("highScore").textContent = "High Score: " + highScore;
+  }
   const nextPieceCanvas = document.getElementById('next-piece');
   if (nextPieceCanvas instanceof HTMLCanvasElement) {
   const nextPieceContext = nextPieceCanvas.getContext('2d');
@@ -280,6 +357,10 @@ function restartGame() {
 
   // Esconde o botão de reinício e continua o loop do jogo
   document.getElementById('restart-button').style.display = 'none';
+  
+  // Atualize a velocidade de queda das peças para a velocidade inicial
+  updateDropSpeed();
+  
   rAF = requestAnimationFrame(loop);
 }
 
@@ -573,14 +654,193 @@ document.getElementById('rotate').addEventListener('mouseup', stopMoving);
 
 document.getElementById('down').addEventListener('mousedown', startMovingDown);
 document.getElementById('down').addEventListener('mouseup', stopMoving);
+// Adicione event listeners para o novo joystick
+const joystick2 = document.getElementById('joystick-canvas');
+joystick2.addEventListener('touchstart', handleTouchStart);
+joystick2.addEventListener('touchmove', handleTouchMove);
+joystick2.addEventListener('touchend', handleTouchEnd);
+
+let startX, startY;
+
+function handleTouchStart(event) {
+    startX = event.touches[0].clientX;
+    startY = event.touches[0].clientY;
+}
+
+function handleTouchMove(event) {
+    event.preventDefault();
+    let endX = event.touches[0].clientX;
+    let endY = event.touches[0].clientY;
+    let deltaX = endX - startX;
+    let deltaY = endY - startY;
+
+    // Defina um limite para considerar o movimento horizontal
+    const horizontalThreshold = 20;
+
+    // Defina um atraso para o movimento ao desligar o dedo (em milissegundos)
+    const releaseDelay = 200; // 200ms
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        // Se o movimento for horizontal
+        if (deltaX > horizontalThreshold) { 
+            // Movimento para a direita
+            movePieceRight();
+        } else if (deltaX < -horizontalThreshold) {
+            // Movimento para a esquerda
+            movePieceLeft();
+        }
+    } else {
+        // Se o movimento for vertical
+        if (deltaY > 0) {
+            // Movimento para baixo
+            movePieceDown();
+        } else if (deltaY < 0) {
+            // Movimento para cima (rotação)
+            rotatePiece();
+        }
+    }
+
+    // Função para mover a peça para a direita
+    function movePieceRight() {
+        const col = tetromino.col + 1;
+        if (isValidMove(tetromino.matrix, tetromino.row, col)) {
+            tetromino.col = col;
+        }
+    }
+
+    // Função para mover a peça para a esquerda
+    function movePieceLeft() {
+        const col = tetromino.col - 1;
+        if (isValidMove(tetromino.matrix, tetromino.row, col)) {
+            tetromino.col = col;
+        }
+    }
+
+    // Função para mover a peça para baixo
+    function movePieceDown() {
+        const row = tetromino.row + 1;
+        if (!isValidMove(tetromino.matrix, row, tetromino.col)) {
+            tetromino.row = row - 1;
+            placeTetromino();
+            return;
+        }
+        tetromino.row = row;
+    }
+
+    // Função para rotacionar a peça
+    function rotatePiece() {
+        const matrix = rotate(tetromino.matrix);
+        if (isValidMove(matrix, tetromino.row, tetromino.col)) {
+            tetromino.matrix = matrix;
+        }
+    }
+
+    // Adicionar um atraso ao desligar o dedo
+    setTimeout(() => {
+        // Limpe os valores de startX e startY após o atraso
+        startX = null;
+        startY = null;
+    }, releaseDelay);
+}
+
+function handleTouchEnd(event) {
+    
+}
+
+
+
 
 
 // start the game
 rAF = requestAnimationFrame(loop);
 // No final da sua função de inicialização ou no início da função loop
 nextTetromino = getNextTetromino(); // Define a próxima peça
-showNextPiece(); // Mostra a próxima peça
 
+showNextPiece(); // Mostra a próxima peça
+updateHighScore();
 </script>
+
+
+
+
+
+
+
+    <script>
+    
+    let fingerprint = navigator.userAgent + "|" + screen.width + "x" + screen.height + "|" + navigator.language;
+    
+        document.addEventListener("DOMContentLoaded", function() {
+          
+          
+            // Verifica se existem dados salvos no localStorage
+            let userData = JSON.parse(localStorage.getItem("userData"));
+
+            if (!userData) {
+                // Gera userId e deviceId únicos
+                let userId = generateUniqueId();
+                let deviceId = localStorage.getItem("deviceId");
+
+            if (!deviceId) {
+                // Se não houver, gera um novo hash baseado nas características do navegador e dispositivo
+                deviceId = generateDeviceId();
+                localStorage.setItem("deviceId", deviceId);
+            }
+            
+
+                // Preenche o campo nome com o nome padrão
+                let nome = "Guest#" + userId;
+
+                // Salva os dados no localStorage
+                userData = { userId, deviceId, nome, fingerprint};
+                localStorage.setItem("userData", JSON.stringify(userData));
+            }
+
+            // Preenche os campos com os dados do localStorage
+            document.getElementById("nome").textContent = userData.nome;
+            document.getElementById("deviceId").textContent = "Device ID: " + userData.deviceId;
+            document.getElementById("userId").textContent = "User ID: " + userData.userId;
+            fingerprint = navigator.userAgent + "|" + screen.width + "x" + screen.height + "|" + navigator.language;
+           document.getElementById("fingerPrint").textContent = "FingerPrint: " + userData.fingerprint;
+
+            // Adiciona evento de clique para alterar o nome
+            document.getElementById("nome").addEventListener("click", function() {
+                let newName = prompt("Digite um novo nome:");
+                if (newName !== null && newName.trim() !== "") {
+                    // Atualiza o nome no localStorage e na div
+                    userData.nome = newName;
+                    localStorage.setItem("userData", JSON.stringify(userData));
+                    document.getElementById("nome").textContent = newName;
+                }
+            });
+        });
+
+        // Função para gerar um ID único
+        function generateUniqueId() {
+            return Date.now().toString(36) + Math.random().toString(36).substr(2);
+        }
+        function generateDeviceId() {
+            
+            
+        return hashString(fingerprint);
+        }
+ 
+
+        // Função para calcular o hash de uma string
+        function hashString(str) {
+            let hash = 0, i, chr;
+            if (str.length === 0) return hash;
+            for (i = 0; i < str.length; i++) {
+                chr   = str.charCodeAt(i);
+                hash  = ((hash << 5) - hash) + chr;
+                hash |= 0; // Convert to 32bit integer
+            }
+            return hash;
+        }
+    </script>
+
+
+
+
 </body>
 </html>
