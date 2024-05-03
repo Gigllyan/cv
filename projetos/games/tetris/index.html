@@ -55,14 +55,15 @@ canvas {
 }
 #restart-button {
   position:absolute;
-  top:0px;
+  top:60%;
   left:50%;
+  z-index: 6; /* Isso garante que o canvas fique acima dos botões */
 }
   </style>
 </head>
 <body>  <br/><br/>
 <div id="botoes">
-<button id="restart"></button>
+
 <button id="restart-button" style="display: none;">Reiniciar</button>
 
 <button id="pause">Pausar/Continuar</button>
@@ -252,17 +253,26 @@ function togglePause() {
 // Função para reiniciar o jogo
 
 function restartGame() {
-  // Reinicializa as variáveis do jogo
-  score = 0;
-  lines = 0;
-  level = 1;
-  gameOver = false;
-  playfield = Array.from({ length: 20 }, () => Array(10).fill(0));
+  // Certifique-se de que todas as variáveis que podem mudar sejam declaradas com 'let'
+  let score = 0;
+  let lines = 0;
+  let level = 1;
+  let gameOver = false;
+  //let playfield = []; // Limpa o campo de jogo
+
+  // Popula o campo de jogo novamente
+  for (let row = -2; row < 20; row++) {
+    playfield[row] = [];
+    for (let col = 0; col < 10; col++) {
+      playfield[row][col] = 0;
+    }
+  }
 
   // Reinicia a sequência de tetrominos e define a próxima peça
   tetrominoSequence = [];
   tetromino = getNextTetromino();
   nextTetromino = getNextTetromino();
+  showNextPiece(); // Mostra a nova próxima peça
 
   // Atualiza a pontuação e o nível na tela
   document.getElementById('score').textContent = 'Pontuação: ' + score;
@@ -273,12 +283,12 @@ function restartGame() {
   rAF = requestAnimationFrame(loop);
 }
 
+
 // Adiciona o evento de clique ao botão de reinício
 document.getElementById('restart-button').addEventListener('click', restartGame);
 
 
-// Event listeners para os botões
-document.getElementById('restart').addEventListener('click', restartGame);
+
 document.getElementById('pause').addEventListener('click', togglePause);
 
 
