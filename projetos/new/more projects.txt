@@ -8,6 +8,18 @@ https://www.geeksforgeeks.org/create-a-snake-game-using-html-css-and-javascript/
 Dragon world game
 https://www.geeksforgeeks.org/design-dragons-world-game-using-html-css-and-javascript/
 
+Tetris
+https://gist.github.com/straker/3c98304f8a6a9174efd8292800891ea1
+
+Ping pong game
+https://gist.github.com/straker/81b59eecf70da93af396f963596dfdc5 
+
+Bomberman
+https://gist.github.com/straker/769fb461e066147ea16ac2cb9463beae 
+
+Sokoban
+https://gist.github.com/straker/2fddb507d4bb6bec54ea2fdb022d020c 
+
 calculator
 https://www.geeksforgeeks.org/javascript-calculator/
 
