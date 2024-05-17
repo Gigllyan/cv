@@ -249,7 +249,7 @@ document.getElementById('high-score').textContent = 'High Score: ' + highScore;
     }
     
     // Move the snake in the direction
-	// AKI CHATGPT VEJA ESSA FUNCTION
+	
     // Move the snake in the direction
 Snake.prototype.move = function() {
     // Move each segment to the position of the segment in front of it
@@ -292,10 +292,10 @@ Snake.prototype.move = function() {
     function init() {
         // Load images
         images = loadImages([
-          "snake-graphics.png", 
-          "snake-graphics2.png", 
-          "snake-graphics3.png", 
-          "snake-graphics4.png"
+          "imgs/snake-graphics.png", 
+          "imgs/snake-graphics2.png", 
+          "imgs/snake-graphics3.png", 
+          "imgs/snake-graphics4.png"
         ]);
         
         tileimage = images[0];
