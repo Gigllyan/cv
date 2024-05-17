@@ -1,1 +1,833 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+</head>
+<body>
+  <header>
+      <button id="level">Level: 1</button>
+      <button id="score">Score: 0</button>
+      <button id="high-score">HighScore: 0</button>
+      <button class="expand" onclick="toggleContent(this)">Opções </button>
+      <div style="display:none;">
+          <button class="expand skins" onclick="toggleContent(this)">skins</button>
+          <div id="skinscontainer" style="display:none;">conteúdo oculto 1</div>
+      
+          <button class="expand" onclick="toggleContent(this)">botão 2</button>
+          <div style="display:none;">conteúdo oculto 2</div>
+     </div>
+
+    <script>
+        function toggleContent(button) {
+            var content = button.nextElementSibling;
+
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+  </header>
+  
+    <canvas id="viewport" width="640" height="480"></canvas>
+
+        <div id="dados-usuario" style="width: 100%;">
+            Olá,
+            <div id="nome" contenteditable="true">Guest#</div>
+            <div id="deviceId">Device ID: </div>
+            <div id="userId">User ID: </div>
+            <div id="fingerPrint">FingerPrint: </div>
+        </div>
+        
+        
+        
+        
+    <script>
+        let fingerprint = navigator.userAgent + "|" + screen.width + "x" + screen.height + "|" + navigator.language;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let userData = JSON.parse(localStorage.getItem("userData"));
+
+            if (!userData) {
+                let userId = generateUniqueId();
+                let deviceId = localStorage.getItem("deviceId");
+
+                if (!deviceId) {
+                    deviceId = generateDeviceId();
+                    localStorage.setItem("deviceId", deviceId);
+                }
+
+                let nome = "Guest#" + userId;
+                userData = { userId, deviceId, nome, fingerprint };
+                localStorage.setItem("userData", JSON.stringify(userData));
+            }
+
+            document.getElementById("nome").textContent = userData.nome;
+            document.getElementById("deviceId").textContent += userData.deviceId;
+            document.getElementById("userId").textContent += userData.userId;
+            document.getElementById("fingerPrint").textContent += fingerprint;
+
+            document.getElementById("nome").addEventListener("click", function() {
+                let newName = prompt("Digite um novo nome:");
+                if (newName !== null && newName.trim() !== "") {
+                    userData.nome = newName;
+                    localStorage.setItem("userData", JSON.stringify(userData));
+                    document.getElementById("nome").textContent = newName;
+                }
+            });
+        });
+
+        function generateUniqueId() {
+            return Date.now().toString(36) + Math.random().toString(36).substr(2);
+        }
+
+        function generateDeviceId() {
+            return hashString(fingerprint);
+        }
+
+        function hashString(str) {
+            let hash = 0, i, chr;
+            if (str.length === 0) return hash;
+            for (i = 0; i < str.length; i++) {
+                chr = str.charCodeAt(i);
+                hash = ((hash << 5) - hash) + chr;
+                hash |= 0;
+            }
+            return hash;
+        }
+
+    </script>
+	
+	
+	
+	
+	
+    <script>
+window.onload = function() {
+    // Get the canvas and context
+    var canvas = document.getElementById("viewport"); 
+    var context = canvas.getContext("2d");
+    
+    // Timing and frames per second
+    var lastframe = 0;
+    var fpstime = 0;
+    var framecount = 0;
+    var fps = 0;
+    
+    var initialized = false;
+    
+    // Images
+    var images = [];
+    var foodmages = [];
+    var tileimage;
+    
+    // Image loading global variables
+    var loadcount = 0;
+    var loadtotal = 0;
+    var preloaded = false;
+var currentSkin = 1;
+var score = 0;
+var currentLevel = [];
+let highScore = parseInt(localStorage.getItem('highScore')) || 0;
+document.getElementById('high-score').textContent = 'High Score: ' + highScore;
+    
+    // Load images
+    function loadImages(imagefiles) {
+        // Initialize variables
+        loadcount = 0;
+        loadtotal = imagefiles.length;
+        preloaded = false;
+        
+        // Load the images
+        var loadedimages = [];
+        for (var i=0; i<imagefiles.length; i++) {
+            // Create the image object
+            var image = new Image();
+            
+            // Add onload event handler
+            image.onload = function () {
+                loadcount++;
+                if (loadcount == loadtotal) {
+                    // Done loading
+                    preloaded = true;
+                }
+            };
+            
+            // Set the source url of the image
+            image.src = imagefiles[i];
+            
+            // Save to the image array
+            loadedimages[i] = image;
+        }
+        
+        // Return an array of images
+        return loadedimages;
+    }
+    
+    // Level properties
+    var Level = function (columns, rows, tilewidth, tileheight) {
+        this.columns = columns;
+        this.rows = rows;
+        this.tilewidth = tilewidth;
+        this.tileheight = tileheight;
+        
+        // Initialize tiles array
+        this.tiles = [];
+        for (var i=0; i<this.columns; i++) {
+            this.tiles[i] = [];
+            for (var j=0; j<this.rows; j++) {
+                this.tiles[i][j] = 0;
+            }
+        }
+    };
+    
+    // Generate a default level with walls
+    Level.prototype.generate = function() {
+        for (var i=0; i<this.columns; i++) {
+            for (var j=0; j<this.rows; j++) {
+                if (i == 0 || i == this.columns-1 ||
+                    j == 0 || j == this.rows-1) {
+                    // Add walls at the edges of the level
+                    this.tiles[i][j] = 1;
+                } else {
+                    // Add empty space
+                    this.tiles[i][j] = 0;
+                }
+            }
+        }
+    };
+    
+    
+    // Snake
+    var Snake = function() {
+        this.init(0, 0, 1, 10, 1);
+    }
+    
+    // Direction table: Up, Right, Down, Left
+    Snake.prototype.directions = [[0, -1], [1, 0], [0, 1], [-1, 0]];
+    
+    // Initialize the snake at a location
+    Snake.prototype.init = function(x, y, direction, speed, numsegments) {
+        this.x = x;
+        this.y = y;
+        this.direction = direction; // Up, Right, Down, Left
+        this.speed = speed;         // Movement speed in blocks per second
+        this.movedelay = 0;
+        
+        // Reset the segments and add new ones
+        this.segments = [];
+        this.growsegments = 0;
+        for (var i=0; i<numsegments; i++) {
+            this.segments.push({x:this.x - i*this.directions[direction][0],
+                                y:this.y - i*this.directions[direction][1]});
+        }
+    }
+    
+    // Increase the segment count
+    Snake.prototype.grow = function() {
+        this.growsegments++;
+    };
+    
+    // Check we are allowed to move
+    Snake.prototype.tryMove = function(dt) {
+        this.movedelay += dt;
+        var maxmovedelay = 1 / this.speed;
+        if (this.movedelay > maxmovedelay) {
+            return true;
+        }
+        return false;
+    };
+    
+    // Get the position of the next move
+    Snake.prototype.nextMove = function() {
+        var nextx = this.x + this.directions[this.direction][0];
+        var nexty = this.y + this.directions[this.direction][1];
+        return {x:nextx, y:nexty};
+    }
+    
+    // Move the snake in the direction
+	// AKI CHATGPT VEJA ESSA FUNCTION
+    // Move the snake in the direction
+Snake.prototype.move = function() {
+    // Move each segment to the position of the segment in front of it
+    for (var i = this.segments.length - 1; i > 0; i--) {
+        this.segments[i].x = this.segments[i - 1].x;
+        this.segments[i].y = this.segments[i - 1].y;
+    }
+
+    // The head segment moves to the new location (this.x, this.y)
+    this.segments[0].x = this.x;
+    this.segments[0].y = this.y;
+
+    // If the snake needs to grow, add a new segment at the end
+    if (this.growsegments > 0) {
+        var lastSeg = this.segments[this.segments.length - 1];
+        var secondLastSeg = this.segments[this.segments.length - 2];
+        var newSeg = {x: lastSeg.x - (secondLastSeg.x - lastSeg.x),
+                      y: lastSeg.y - (secondLastSeg.y - lastSeg.y)};
+        
+        this.segments.push(newSeg);
+        this.growsegments--;
+    }
+
+    // Reset move delay
+    this.movedelay = 0;
+};
+
+
+    // Create objects
+    var snake = new Snake();
+    var level = new Level(20, 15, 32, 32);
+    
+    // Variables
+    var score = 0;              // Score
+    var gameover = true;        // Game is over
+    var gameovertime = 1;       // How long we have been game over
+    var gameoverdelay = 0.5;    // Waiting time after game over
+    
+    // Initialize the game
+    function init() {
+        // Load images
+        images = loadImages([
+          "snake-graphics.png", 
+          "snake-graphics2.png", 
+          "snake-graphics3.png", 
+          "snake-graphics4.png"
+        ]);
+        
+        tileimage = images[0];
+        
+        foodImages = loadImages([ 
+            'imgs/food1.png',
+            'imgs/food2.png',
+            'imgs/food3.png',
+            'imgs/food4.png',
+            'imgs/food5.png'
+        ]);
+    
+        // Add mouse events
+        canvas.addEventListener("mousedown", onMouseDown);
+        
+        // Add keyboard events
+        document.addEventListener("keydown", onKeyDown);
+        
+        // New game
+        newGame();
+        gameover = true;
+    
+        // Enter main loop
+        main(0);
+    }
+    
+    // Check if we can start a new game
+    function tryNewGame() {
+        if (gameovertime > gameoverdelay) {
+            newGame();
+            gameover = false;
+        }
+    }
+    
+    function newGame() {
+        // Initialize the snake (posx, posy, right, speed, segments)
+        snake.init(10, 10, 1, 5, 2);
+        
+        // Generate the default level
+        level.generate();
+        
+        // Add an apple
+        addApple();
+        
+        // Initialize the score
+        score = 0;
+        
+        // Initialize variables
+        gameover = false;
+    }
+    
+    // Add an apple to the level at an empty position
+    function addApple() {
+        // Loop until we have a valid apple
+        var valid = false;
+        while (!valid) {
+            // Get a random position
+            var ax = randRange(0, level.columns-1);
+            var ay = randRange(0, level.rows-1);
+            
+            // Make sure the snake doesn't overlap the new apple
+            var overlap = false;
+            for (var i=0; i<snake.segments.length; i++) {
+                // Get the position of the current snake segment
+                var sx = snake.segments[i].x;
+                var sy = snake.segments[i].y;
+                
+                // Check overlap
+                if (ax == sx && ay == sy) {
+                    overlap = true;
+                    break;
+                }
+            }
+            
+            // Tile must be empty
+            if (!overlap && level.tiles[ax][ay] == 0) {
+                // Add an apple at the tile position
+                level.tiles[ax][ay] = 2;
+                valid = true;
+            }
+        }
+    }
+    
+    // Main loop
+    function main(tframe) {
+        // Request animation frames
+        window.requestAnimationFrame(main);
+        
+        if (!initialized) {
+            // Preloader
+            
+            // Clear the canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw a progress bar
+            var loadpercentage = loadcount/loadtotal;
+            context.strokeStyle = "#ff8080";
+            context.lineWidth=3;
+            context.strokeRect(18.5, 0.5 + canvas.height - 51, canvas.width-37, 32);
+            context.fillStyle = "#ff8080";
+            context.fillRect(18.5, 0.5 + canvas.height - 51, loadpercentage*(canvas.width-37), 32);
+            
+            // Draw the progress text
+            var loadtext = "Loaded " + loadcount + "/" + loadtotal + " images";
+            context.fillStyle = "#000000";
+            context.font = "16px Verdana";
+            context.fillText(loadtext, 18, 0.5 + canvas.height - 63);
+            
+            if (preloaded) {
+                initialized = true;
+            }
+        } else {
+            // Update and render the game
+            update(tframe);
+            render();
+        }
+    }
+    
+    // Update the game state
+    function update(tframe) {
+        var dt = (tframe - lastframe) / 1000;
+        lastframe = tframe;
+        
+        // Update the fps counter
+        updateFps(dt);
+        
+        if (!gameover) {
+            updateGame(dt);
+        } else {
+            gameovertime += dt;
+        }
+    }
+    
+	
+	// AKI CHATGPT VEJA ESSA FUNCTION
+	// Update game score and skin
+	function updateScore() {
+	  document.getElementById('score').textContent = 'Score: ' + score;
+	  
+	  
+	  var currentLevel = 1;
+	  // Check for skin unlocks
+	  
+	  // lvl 2
+	  if (score >= 20 && currentSkin < 2) {
+	    currentSkin = 2;
+	    currentLevel = 2;
+	  } // lvl 3
+	  else if (score >= 50 && currentSkin < 3) {
+	    currentSkin = 3;
+	    currentLevel = 3;
+	  } // lvl 4
+	  else if (score >= 90 && currentSkin < 4) {
+	    currentSkin = 4;
+	    currentLevel = 4;
+	 	  } // lvl 5
+	 	else if (score > 150) {
+	    currentLevel = 5;
+	  } else if (highScore >= 20 && currentSkin < 2) {
+	    currentSkin = 2;
+	    
+	  } // lvl 3
+	  else if (highScore >= 50 && currentSkin < 3) {
+	    currentSkin = 3;
+	    
+	  } // lvl 4
+	  else if (highScore >= 90 && currentSkin < 4) {
+	    currentSkin = 4;
+	    
+	 	  } 
+	
+	  document.getElementById('level').textContent = 'Level: ' + currentLevel;
+	
+	  // Update high score if needed
+	  if (score > highScore) {
+	    highScore = score;
+	    localStorage.setItem('highScore', highScore.toString());
+	    document.getElementById('high-score').textContent = 'High Score: ' + highScore;
+	  }
+	
+	  // Add preview image and click event to change snake skin
+	  var skinsContainer = document.getElementById('skinscontainer');
+	  skinsContainer.innerHTML = ''; // Clear previous skins
+	
+	  for (var i = 1; i <= currentSkin; i++) {
+	    var skinPreview = document.createElement('img');
+	    skinPreview.src = 'snake-graphics' + i + '.png'; // Assuming the skin images are named like snake-graphics1.png, snake-graphics2.png, etc.
+	    skinPreview.alt = 'Skin ' + i + ' Preview';
+	    skinPreview.addEventListener('click', function() {
+	      currentSkin = i;
+	      // Update snake skin here
+	    });
+	    skinsContainer.appendChild(skinPreview);
+	  }
+	}
+    function updateGame(dt) {
+    // Move the snake
+    if (snake.tryMove(dt)) {
+        // Check snake collisions
+
+        // Get the coordinates of the next move
+        var nextmove = snake.nextMove();
+        var nx = nextmove.x;
+        var ny = nextmove.y;
+
+        // Wrap the snake around the canvas in the X direction
+        if (nx >= level.columns) {
+            nx = 0; // Move to the opposite side
+        } else if (nx < 0) {
+            nx = level.columns - 1; // Move to the opposite side
+        }
+
+        // Wrap the snake around the canvas in the Y direction
+        if (ny >= level.rows) {
+            ny = 0; // Move to the opposite side
+        } else if (ny < 0) {
+            ny = level.rows - 1; // Move to the opposite side
+        }
+
+        // Update the snake's position
+        snake.x = nx;
+        snake.y = ny;
+
+        // Collisions with the snake itself
+        for (var i = 0; i < snake.segments.length; i++) {
+            var sx = snake.segments[i].x;
+            var sy = snake.segments[i].y;
+
+            if (nx == sx && ny == sy) {
+                // Found a snake part
+                gameover = true;
+                break;
+            }
+        }
+
+        if (!gameover) {
+            // The snake is allowed to move
+
+            // Move the snake
+            snake.move();
+
+            // Check collision with an apple
+            if (level.tiles[nx][ny] == 2) {
+                // Remove the apple
+                level.tiles[nx][ny] = 0;
+
+                // Add a new apple
+                addApple();
+
+                // Grow the snake
+                snake.grow();
+
+                // Add a point to the score
+                score++;
+                
+                updateScore();
+            }
+        }
+           // Update high score if needed
+                    if (score > highScore) {
+                        highScore = score;
+                        localStorage.setItem('highScore', highScore);
+                    }
+
+        if (gameover) {
+            gameovertime = 0;
+        }
+    }
+}
+    
+    function updateFps(dt) {
+        if (fpstime > 0.25) {
+            // Calculate fps
+            fps = Math.round(framecount / fpstime);
+            
+            // Reset time and framecount
+            fpstime = 0;
+            framecount = 0;
+        }
+        
+        // Increase time and framecount
+        fpstime += dt;
+        framecount++;
+    }
+    
+    // Render the game
+    function render() {
+        // Draw background
+        context.fillStyle = "#577ddb";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        
+        drawLevel();
+        drawSnake();
+            
+        // Game over
+        if (gameover) {
+            context.fillStyle = "rgba(0, 0, 0, 0.5)";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            
+            context.fillStyle = "#ffffff";
+            context.font = "24px Verdana";
+            drawCenterText("Press any key to start!", 0, canvas.height/2, canvas.width);
+        }
+    }
+    
+    // Draw the level tiles
+    function drawLevel() {
+        for (var i=0; i<level.columns; i++) {
+            for (var j=0; j<level.rows; j++) {
+                // Get the current tile and location
+                var tile = level.tiles[i][j];
+                var tilex = i*level.tilewidth;
+                var tiley = j*level.tileheight;
+                
+                // Draw tiles based on their type
+                if (tile == 0) {
+                    // Empty space
+                    context.fillStyle = "green";
+                    context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+                } else if (tile == 1) {
+                    // Wall
+                    context.fillStyle = "#bcae76";
+                    context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+                } else if (tile == 2) {
+                    // Apple
+                    
+                    // Draw apple background
+                    context.fillStyle = "green";
+                    context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+                    
+                    // Draw the apple image
+                    var tx = 0;
+                    var ty = 3;
+                    var tilew = 64;
+                    var tileh = 64;
+					
+var appleImage = images[currentSkin - 1]; // Adjust for 0-based array
+var foodImage;
+context.drawImage(appleImage, tx*tilew, ty*tileh, tilew, tileh, tilex, tiley, level.tilewidth, level.tileheight);
+
+
+
+                }
+            }
+        }
+    }
+    
+    // Draw the snake
+    
+	//AKI GPT VEJA A FUNCTION ABAIXO
+
+// Draw the snake
+function drawSnake() {
+    for (var i = 0; i < snake.segments.length; i++) {
+        var segment = snake.segments[i];
+        var segx = segment.x;
+        var segy = segment.y;
+        var tilex = segx * level.tilewidth;
+        var tiley = segy * level.tileheight;
+        
+        // Sprite column and row that gets calculated
+        var tx = 0;
+        var ty = 0;
+        
+        if (i == 0) {
+            // Head; Determine the correct image based on the second segment to determine direction
+            var nseg = snake.segments[i + 1]; // Next segment
+            if (segy < nseg.y && Math.abs(segy - nseg.y) < level.rows - 1) {
+                // Up
+                tx = 3; ty = 0;
+            } else if (segx > nseg.x && Math.abs(segx - nseg.x) < level.columns - 1) {
+                // Right
+                tx = 4; ty = 0;
+            } else if (segy > nseg.y && Math.abs(segy - nseg.y) < level.rows - 1) {
+                // Down
+                tx = 4; ty = 1;
+            } else if (segx < nseg.x && Math.abs(segx - nseg.x) < level.columns - 1) {
+                // Left
+                tx = 3; ty = 1;
+            } else if (segy - nseg.y === level.rows - 1) {
+                // Wrap Up to Down
+                tx = 4; ty = 1;
+            } else if (nseg.y - segy === level.rows - 1) {
+                // Wrap Down to Up
+                tx = 3; ty = 0;
+            } else if (segx - nseg.x === level.columns - 1) {
+                // Wrap Left to Right
+                tx = 4; ty = 0;
+            } else if (nseg.x - segx === level.columns - 1) {
+                // Wrap Right to Left
+                tx = 3; ty = 1;
+            }
+        } else if (i == snake.segments.length - 1) {
+            // Tail; Determine the correct image based on the second last segment
+            var pseg = snake.segments[i - 1]; // Previous segment
+            if (pseg.y < segy && Math.abs(pseg.y - segy) < level.rows - 1) {
+                // Up
+                tx = 3; ty = 2;
+            } else if (pseg.x > segx && Math.abs(pseg.x - segx) < level.columns - 1) {
+                // Right
+                tx = 4; ty = 2;
+            } else if (pseg.y > segy && Math.abs(pseg.y - segy) < level.rows - 1) {
+                // Down
+                tx = 4; ty = 3;
+            } else if (pseg.x < segx && Math.abs(pseg.x - segx) < level.columns - 1) {
+                // Left
+                tx = 3; ty = 3;
+            } else if (segy - pseg.y === level.rows - 1) {
+                // Wrap Up to Down
+                tx = 4; ty = 3;
+            } else if (pseg.y - segy === level.rows - 1) {
+                // Wrap Down to Up
+                tx = 3; ty = 2;
+            } else if (segx - pseg.x === level.columns - 1) {
+                // Wrap Left to Right
+                tx = 4; ty = 2;
+            } else if (pseg.x - segx === level.columns - 1) {
+                // Wrap Right to Left
+                tx = 3; ty = 3;
+            }
+        } else {
+            // Body; Determine the correct image
+            var pseg = snake.segments[i - 1]; // Previous segment
+            var nseg = snake.segments[i + 1]; // Next segment
+            if (pseg.x < segx && nseg.x > segx || nseg.x < segx && pseg.x > segx) {
+                // Horizontal Left-Right
+                tx = 1; ty = 0;
+            } else if (pseg.x < segx && nseg.y > segy || nseg.x < segx && pseg.y > segy) {
+                // Angle Left-Down
+                tx = 2; ty = 0;
+            } else if (pseg.y < segy && nseg.y > segy || nseg.y < segy && pseg.y > segy) {
+                // Vertical Up-Down
+                tx = 2; ty = 1;
+            } else if (pseg.y < segy && nseg.x < segx || nseg.y < segy && pseg.x < segx) {
+                // Angle Top-Left
+                tx = 2; ty = 2;
+            } else if (pseg.x > segx && nseg.y < segy || nseg.x > segx && pseg.y < segy) {
+                // Angle Right-Up
+                tx = 0; ty = 1;
+            } else if (pseg.y > segy && nseg.x > segx || nseg.y > segy && pseg.x > segx) {
+                // Angle Down-Right
+                tx = 0; ty = 0;
+            }
+        }
+        
+        // Draw the image of the snake part
+        var snakeImage = images[currentSkin - 1]; // Adjust for 0-based array
+        
+            context.drawImage(snakeImage, tx*64, ty*64, 64, 64, tilex, tiley,
+                              level.tilewidth, level.tileheight);
+      }
+}
+    
+    // Draw text that is centered
+    function drawCenterText(text, x, y, width) {
+        var textdim = context.measureText(text);
+        context.fillText(text, x + (width-textdim.width)/2, y);
+    }
+    
+    // Get a random int between low and high, inclusive
+    function randRange(low, high) {
+        return Math.floor(low + Math.random()*(high-low+1));
+    }
+    
+    // Mouse event handlers
+    function onMouseDown(e) {
+        // Get the mouse position
+        var pos = getMousePos(canvas, e);
+        
+        if (gameover) {
+            // Start a new game
+            tryNewGame();
+        } else {
+            // Change the direction of the snake
+            snake.direction = (snake.direction + 1) % snake.directions.length;
+        }
+    }
+    
+    // Keyboard event handler
+    function onKeyDown(e) {
+        if (gameover) {
+            tryNewGame();
+        } else {
+            if (e.keyCode == 37 || e.keyCode == 65) {
+                // Left or A
+                if (snake.direction != 1)  {
+                    snake.direction = 3;
+                }
+            } else if (e.keyCode == 38 || e.keyCode == 87) {
+                // Up or W
+                if (snake.direction != 2)  {
+                    snake.direction = 0;
+                }
+            } else if (e.keyCode == 39 || e.keyCode == 68) {
+                // Right or D
+                if (snake.direction != 3)  {
+                    snake.direction = 1;
+                }
+            } else if (e.keyCode == 40 || e.keyCode == 83) {
+                // Down or S
+                if (snake.direction != 0)  {
+                    snake.direction = 2;
+                }
+            }
+            
+            // Grow for demonstration purposes
+            if (e.keyCode == 32) {
+                snake.grow();
+            }
+        }
+    }
+    
+    // Get the mouse position
+    function getMousePos(canvas, e) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+            x: Math.round((e.clientX - rect.left)/(rect.right - rect.left)*canvas.width),
+            y: Math.round((e.clientY - rect.top)/(rect.bottom - rect.top)*canvas.height)
+        };
+    }
+    
+    // Call init to start the game
+    init();
+
+
+
+
+
+
+};
+</script>
+</body>
+</html>
+
+
