@@ -289,20 +289,20 @@ Snake.prototype.move = function() {
     function init() {
         // Load images
         images = loadImages([
-          "imgs/snake-graphics.png", 
-          "imgs/snake-graphics2.png", 
-          "imgs/snake-graphics3.png", 
-          "imgs/snake-graphics4.png"
+          "imgs/skins/snake-graphics1.png", 
+          "imgs/skins/snake-graphics2.png",
+          "imgs/skins/snake-graphics3.png",
+          "imgs/skins/snake-graphics4.png"
         ]);
         
         tileimage = images[0];
         
         foodImages = loadImages([ 
-            'imgs/food1.png',
-            'imgs/food2.png',
-            'imgs/food3.png',
-            'imgs/food4.png',
-            'imgs/food5.png'
+            'imgs/foods/food1.png',
+            'imgs/foods/food2.png',
+            'imgs/foods/food3.png',
+            'imgs/foods/food4.png',
+            'imgs/foods/food5.png'
         ]);
     
         // Add mouse events
@@ -345,6 +345,7 @@ Snake.prototype.move = function() {
     }
     
     // Add an apple to the level at an empty position
+    // Add an apple to the level at an empty position
     var foodImageIndexes = {}; // Object to store food image indexes
     
     function addApple() {
@@ -373,6 +374,40 @@ Snake.prototype.move = function() {
       }
     }
     
+    // Draw the level tiles
+    function drawLevel() {
+      for (var i = 0; i < level.columns; i++) {
+        for (var j = 0; j < level.rows; j++) {
+          var tile = level.tiles[i][j];
+          var tilex = i * level.tilewidth;
+          var tiley = j * level.tileheight;
+    
+          if (tile == 0) {
+            context.fillStyle = "green";
+            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+          } else if (tile == 1) {
+            context.fillStyle = "#bcae76";
+            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+          } else if (tile == 2 || tile == 3) {
+            context.fillStyle = "green";
+            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+    
+            if (tile == 3) {
+              var superFoodImage = images[currentSkin - 1];
+              var tx = 0;
+              var ty = 3;
+              var tilew = 64;
+              var tileh = 64;
+              context.drawImage(superFoodImage, tx * tilew, ty * tileh, tilew, tileh, tilex, tiley, level.tilewidth, level.tileheight);
+            } else {
+              var foodIndex = foodImageIndexes[i + ',' + j];
+              var randomFoodImage = foodImages[foodIndex];
+              context.drawImage(randomFoodImage, tilex, tiley, level.tilewidth, level.tileheight);
+            }
+          }
+        }
+      }
+    }
     // Main loop
     function main(tframe) {
         // Request animation frames
@@ -427,32 +462,20 @@ Snake.prototype.move = function() {
 	// Update game score and skin
 	function updateScore() {
 	  document.getElementById('score').textContent = 'Score: ' + score;
-	  
-	  
-	  var currentLevel = 1;
-	  // Check for skin unlocks
-	  
-	  // define níveis 
+	
+	  // Define níveis
 	  if (score >= 150) {
-	    currentLevel = 5; 
-	  } // lvl 5
-	  
-	  else if (score >= 90) {
+	    currentLevel = 5;
+	  } else if (score >= 90) {
 	    currentLevel = 4;
-	  } // lvl 4
-	  
-	  else if (score >= 50) {
+	  } else if (score >= 50) {
 	    currentLevel = 3;
-	 	  } // lvl 3
-	 	  
-	 	else if (score >= 20) {
+	  } else if (score >= 20) {
 	    currentLevel = 2;
-	  }  // lvl 2
-	  
-	  
-	  
-	  
-	   if (highScore >= 90 && currentSkin < 4) {
+	  } else {
+	    currentLevel = 1;
+	  }
+	  if (highScore >= 90 && currentSkin < 4) {
 	    currentSkin = 4;
 	    
 	  } // lvl 3
@@ -466,7 +489,6 @@ Snake.prototype.move = function() {
 	 	  } 
 	
 	  document.getElementById('level').textContent = 'Level: ' + currentLevel;
-	  
 	
 	  // Update high score if needed
 	  if (score > highScore) {
@@ -479,8 +501,8 @@ Snake.prototype.move = function() {
 	  var skinsContainer = document.getElementById('skinscontainer');
 	  skinsContainer.innerHTML = ''; // Clear previous skins
 	
-	  for (var i = 1; i <= currentSkin; i++) {
-	    var skinPreview = document.createElement('img');
+	  for (let i = 1; i <= currentSkin; i++) {
+	    let skinPreview = document.createElement('img');
 	    skinPreview.src = 'snake-graphics' + i + '.png'; // Assuming the skin images are named like snake-graphics1.png, snake-graphics2.png, etc.
 	    skinPreview.alt = 'Skin ' + i + ' Preview';
 	    skinPreview.addEventListener('click', function() {
@@ -492,79 +514,46 @@ Snake.prototype.move = function() {
 	}
 	
     function updateGame(dt) {
-    // Move the snake
-    if (snake.tryMove(dt)) {
+      // Move the snake
+      if (snake.tryMove(dt)) {
         // Check snake collisions
-
-        // Get the coordinates of the next move
         var nextmove = snake.nextMove();
         var nx = nextmove.x;
         var ny = nextmove.y;
-
-        // Wrap the snake around the canvas in the X direction
-        if (nx >= level.columns) {
-            nx = 0; // Move to the opposite side
-        } else if (nx < 0) {
-            nx = level.columns - 1; // Move to the opposite side
+    
+        // Wrap the snake around the canvas
+        nx = (nx + level.columns) % level.columns;
+        ny = (ny + level.rows) % level.rows;
+    
+        // Check collision with the snake itself
+        for (var i = 0; i < snake.segments.length; i++) {
+          if (nx == snake.segments[i].x && ny == snake.segments[i].y) {
+            gameover = true;
+            gameovertime = 0;
+            return;
+          }
         }
-
-        // Wrap the snake around the canvas in the Y direction
-        if (ny >= level.rows) {
-            ny = 0; // Move to the opposite side
-        } else if (ny < 0) {
-            ny = level.rows - 1; // Move to the opposite side
-        }
-
-        // Update the snake's position
+    
+        // Move the snake
         snake.x = nx;
         snake.y = ny;
-
-        // Collisions with the snake itself
-        for (var i = 0; i < snake.segments.length; i++) {
-            var sx = snake.segments[i].x;
-            var sy = snake.segments[i].y;
-
-            if (nx == sx && ny == sy) {
-                // Found a snake part
-                gameover = true;
-                break;
-            }
+        snake.move();
+    
+        // Check collision with an apple
+        if (level.tiles[nx][ny] == 2 || level.tiles[nx][ny] == 3) {
+          if (level.tiles[nx][ny] == 3) {
+            score += 2; // Superfood gives double points
+          } else {
+            score++;
+          }
+    
+          level.tiles[nx][ny] = 0;
+          addApple();
+          snake.grow();
+          updateScore();
         }
-
-        if (!gameover) {
-            // The snake is allowed to move
-
-            // Move the snake
-            snake.move();
-
-            // Check collision with an apple
-            if (level.tiles[nx][ny] == 2 || level.tiles[nx][ny] == 3) {
-                // Remove the apple
-                level.tiles[nx][ny] = 0;
-
-                // Add a new apple
-                addApple();
-
-                // Grow the snake
-                snake.grow();
-
-                // Add a point to the score
-                score++;
-                
-                updateScore();
-            }
-        }
-           // Update high score if needed
-                    if (score > highScore) {
-                        highScore = score;
-                        localStorage.setItem('highScore', highScore);
-                    }
-
-        if (gameover) {
-            gameovertime = 0;
-        }
+      }
     }
-}
     
     function updateFps(dt) {
         if (fpstime > 0.25) {
@@ -602,50 +591,7 @@ Snake.prototype.move = function() {
     }
     
     // Draw the level tiles
-    function drawLevel() {
-         // Selecione uma posição aleatória para a comida
-    var foodX = Math.floor(Math.random() * level.columns);
-    var foodY = Math.floor(Math.random() * level.rows);
-
-    // Selecione uma imagem aleatória para a comida
-    var randomFoodImage = foodImages[Math.floor(Math.random() * foodImages.length)];
     
-      for (var i = 0; i < level.columns; i++) {
-        for (var j = 0; j < level.rows; j++) {
-          var tile = level.tiles[i][j];
-          var tilex = i * level.tilewidth;
-          var tiley = j * level.tileheight;
-    
-          if (tile == 0) {
-            context.fillStyle = "green";
-            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
-          } else if (tile == 1) {
-            context.fillStyle = "#bcae76";
-            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
-          } else if (tile == 2 || tile == 3) {
-            context.fillStyle = "green";
-            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
-            
-            //superfood level
-            if (tile == 3) {
-              var superFoodImage = images[currentSkin - 1];
-              var tx = 0;
-              var ty = 3;
-              var tilew = 64;
-              var tileh = 64;
-              context.drawImage(superFoodImage, tx * tilew, ty * tileh, tilew, tileh, tilex, tiley, level.tilewidth, level.tileheight);
-              //alert("super");
-            } else {
-              
-            //normalfood level
-              context.drawImage(randomFoodImage, tilex, tiley, level.tilewidth, level.tileheight);
-            }
-          }
-        }
-      }
-    }
-    
-
 
 // Draw the snake
 function drawSnake() {
