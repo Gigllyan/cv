@@ -8,6 +8,14 @@
   <header>
       <button id="level">Level: 1</button>
       <button id="score">Score: 0</button>
+      <button id="configButton">
+        <img id="configOpen" src="imgs/configopen.png" alt="config" style="width: auto;height: 20px;" />
+        <img id="configClosed" src="imgs/configclosed.png" alt="configX" style="display: none;width: auto;height: 20px;" />
+      </button>
+      <button id="pauseButton">
+        <img id="pauseIcon" src="imgs/pause.png" alt="Pause" style="width: auto;height: 20px;" />
+        <img id="playIcon" src="imgs/play.png" alt="Play" style="display: none;width: auto;height: 20px;" />
+      </button>
       <button id="high-score">HighScore: 0</button>
       <button class="expand" onclick="toggleContent(this)">Opções </button>
       <div style="display:none;">
@@ -386,7 +394,7 @@ Snake.prototype.move = function() {
             context.fillStyle = "green";
             context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
           } else if (tile == 1) {
-            context.fillStyle = "#bcae76";
+            context.fillStyle = "lime";
             context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
           } else if (tile == 2 || tile == 3) {
             context.fillStyle = "green";
@@ -762,6 +770,150 @@ function drawSnake() {
             y: Math.round((e.clientY - rect.top)/(rect.bottom - rect.top)*canvas.height)
         };
     }
+    
+    // Variável para controlar o estado de pausa
+// Variável para controlar o estado de pausa
+var paused = false;
+
+// Função para pausar e retomar o jogo
+function togglePause() {
+  paused = !paused;
+
+  // Trocar ícones
+  var pauseIcon = document.getElementById('pauseIcon');
+  var playIcon = document.getElementById('playIcon');
+  if (paused) {
+    pauseIcon.style.display = 'none';
+    playIcon.style.display = 'inline-block';
+  } else {
+    pauseIcon.style.display = 'inline-block';
+    playIcon.style.display = 'none';
+  }
+}
+
+// Adicionar evento de clique ao botão de pausa
+document.getElementById('pauseButton').addEventListener('click', function() {
+  togglePause();
+});
+
+var configOpen = false;
+
+function toggleConfig() {
+  configOpen = !configOpen;
+//togglePause();
+  // Trocar ícones
+  var configOpenIcon = document.getElementById('configOpen');
+  var configClosedIcon = document.getElementById('configClosed');
+  if (configOpen) {
+    configOpenIcon.style.display = 'none';
+    configClosedIcon.style.display = 'inline-block';
+  } else {
+    configOpenIcon.style.display = 'inline-block';
+    configClosedIcon.style.display = 'none';
+  }
+}
+document.getElementById('configButton').addEventListener('click', function() {
+  toggleConfig();
+});
+
+// Atualização do jogo
+function update(tframe) {
+  var dt = (tframe - lastframe) / 1000;
+  lastframe = tframe;
+
+  // Atualizar contador de FPS
+  updateFps(dt);
+
+  // Verificar se o jogo está pausado
+  if (!paused) {
+    if (!gameover) {
+      updateGame(dt);
+    } else {
+      gameovertime += dt;
+    }
+  }
+}
+
+// Desenhar o jogo na tela
+function render() {
+  // Limpar o fundo
+  context.fillStyle = "#577ddb";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  drawLevel();
+  drawSnake();
+
+if (configOpen && paused) {
+  context.fillStyle = "rgba(0, 0, 0, 0.5)";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  context.fillStyle = "#ffffff";
+  context.font = "24px Verdana";
+  drawCenterText("Config Open", 0, canvas.height / 2 - 30, canvas.width);
+
+  // Display current score, level and highScore
+  context.font = "16px Verdana";
+  drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
+  drawCenterText("Level: " + currentLevel, 0, canvas.height / 2 + 20, canvas.width);
+  drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 40, canvas.width);
+}
+else if (configOpen && gameover) {
+  context.fillStyle = "rgba(0, 0, 0, 0.5)";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  context.fillStyle = "#ffffff";
+  context.font = "24px Verdana";
+  drawCenterText("Config Open", 0, canvas.height / 2 - 30, canvas.width);
+
+  // Display current score, level and highScore
+  context.font = "16px Verdana";
+  drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
+  drawCenterText("Level: " + currentLevel, 0, canvas.height / 2 + 20, canvas.width);
+  drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 40, canvas.width);
+}
+
+  // Verificar se o jogo está pausado
+  else if (paused) {
+  context.fillStyle = "rgba(0, 0, 0, 0.5)";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  context.fillStyle = "#ffffff";
+  context.font = "24px Verdana";
+  drawCenterText("Jogo Pausado", 0, canvas.height / 2 - 30, canvas.width);
+
+  // Display current score, level and highScore
+  context.font = "16px Verdana";
+  drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
+  drawCenterText("Level: " + currentLevel, 0, canvas.height / 2 + 20, canvas.width);
+  drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 40, canvas.width);
+}
+
+// Game over
+if (gameover && gameovertime > gameoverdelay && !paused && !configOpen) {
+  context.fillStyle = "rgba(0, 0, 0, 0.5)";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  context.fillStyle = "#ffffff";
+  context.font = "24px Verdana";
+  drawCenterText("Pressione qualquer tecla para iniciar!", 0, canvas.height / 2 - 30, canvas.width);
+
+  // Display final score and highScore
+  context.font = "16px Verdana";
+  drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
+  drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 20, canvas.width);
+}
+} 
+
+// Evento de tecla pressionada
+document.addEventListener("keydown", function(e) {
+  if (gameover && !paused) {
+    tryNewGame();
+  } else if (e.keyCode == 32) { // Código da tecla de espaço
+    togglePause();
+  } else {
+    snake.direction = (snake.direction + 1) % snake.directions.length;
+  }
+});
     
     // Call init to start the game
     init();
