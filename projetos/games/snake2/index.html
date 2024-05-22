@@ -3,28 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Snake Game</title>
+    	
+    <style>
+.bloqueado {
+  background-color: red;
+}
+#level {
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white; 
+} 
+#score {
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    margin-top: 10px; /* Adicione margem superior para espaçamento */
+}
+#top-canvas {
+  position: relative;
+  max-width:100%;
+}
+#dados-usuario {
+  position: absolute;
+  top:20%;
+  left:40%;
+  background-color: rgba(0, 0, 0, 0.2); /* Fundo transparente */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 20px; /* Espaçamento interno */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #fff;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
 </head>
 <body>
   <header>
       <button id="level">Level: 1</button>
       <button id="score">Score: 0</button>
-      <button id="configButton">
+      <button id="configButton" style="display: none">
         <img id="configOpen" src="imgs/configopen.png" alt="config" style="width: auto;height: 20px;" />
         <img id="configClosed" src="imgs/configclosed.png" alt="configX" style="display: none;width: auto;height: 20px;" />
       </button>
       <button id="pauseButton">
-        <img id="pauseIcon" src="imgs/pause.png" alt="Pause" style="width: auto;height: 20px;" />
-        <img id="playIcon" src="imgs/play.png" alt="Play" style="display: none;width: auto;height: 20px;" />
+        <img id="pauseIcon" src="imgs/configopen.png" alt="Pause" style="width: auto;height: 20px;" />
+        <img id="playIcon" src="imgs/configclosed.png" alt="Play" style="display: none;width: auto;height: 20px;" />
       </button>
       <button id="high-score">HighScore: 0</button>
-      <button class="expand" onclick="toggleContent(this)">Opções </button>
-      <div style="display:none;">
-          <button class="expand skins" onclick="toggleContent(this)">skins</button>
-          <div id="skinscontainer" style="display:none;">conteúdo oculto 1</div>
       
-          <button class="expand" onclick="toggleContent(this)">botão 2</button>
-          <div style="display:none;">conteúdo oculto 2</div>
-     </div>
 
     <script>
         function toggleContent(button) {
@@ -38,16 +107,27 @@
         }
     </script>
   </header>
-  
-    <canvas id="viewport" width="640" height="480"></canvas>
+  <br/>
+      <div id="top-canvas">
+        <canvas id="viewport" width="640" height="480"></canvas>
 
-        <div id="dados-usuario" style="width: 100%;">
-            Olá,
-            <div id="nome" contenteditable="true">Guest#</div>
+        <div id="dados-usuario" style="width: 90%;display:none;">
+          Olá,
+          <b id="nome" contenteditable="true">Guest#</b>
+          <button class="expand" onclick="toggleContent(this)">+ </button>
+          <div style="display:none;">
             <div id="deviceId">Device ID: </div>
             <div id="userId">User ID: </div>
             <div id="fingerPrint">FingerPrint: </div>
+          </div>
+          <hr/>
+          <div id="options-paused">
+             <button id="myBtn">Skins</button>
+          </div>
+          
         </div>
+        
+      </div>
         
         
         
@@ -57,6 +137,8 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             let userData = JSON.parse(localStorage.getItem("userData"));
+            
+
 
             if (!userData) {
                 let userId = generateUniqueId();
@@ -112,8 +194,55 @@
 	
 	
 	
-    <script>
-window.onload = function() {
+	
+	
+	
+	
+	
+	
+
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p>
+      
+          <div id="skinscontainer" style="">conteúdo oculto de skins</div>
+    </p>
+  </div>
+
+</div>
+
+<script> //modal
+document.addEventListener('DOMContentLoaded', (event) => {
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+});
+</script>
+	
+	
+	
+	
+	
+	
+<script> //game
+  window.onload = function() {
     // Get the canvas and context
     var canvas = document.getElementById("viewport"); 
     var context = canvas.getContext("2d");
@@ -138,7 +267,10 @@ window.onload = function() {
 var currentSkin = 1;
 var score = 0;
 var currentLevel = 1;
-let highScore = parseInt(localStorage.getItem('highScore')) || 0;
+let saveData = JSON.parse(localStorage.getItem("saveData")) || {};
+let savedLevel = saveData.level || 0;
+let highScore = saveData.highScore || 0;
+let savedSkin = saveData.skin || 0;
 document.getElementById('high-score').textContent = 'High Score: ' + highScore;
     
     // Load images
@@ -164,7 +296,10 @@ document.getElementById('high-score').textContent = 'High Score: ' + highScore;
             };
             
             // Set the source url of the image
-            image.src = imagefiles[i];
+            image.src = imagefiles[i].src;
+            image.level = imagefiles[i].level;
+            image.name = imagefiles[i].name;
+            image.description = imagefiles[i].description;
             
             // Save to the image array
             loadedimages[i] = image;
@@ -297,21 +432,43 @@ Snake.prototype.move = function() {
     function init() {
         // Load images
         images = loadImages([
-          "imgs/skins/snake-graphics1.png", 
-          "imgs/skins/snake-graphics2.png",
-          "imgs/skins/snake-graphics3.png",
-          "imgs/skins/snake-graphics4.png"
-        ]);
+          { src: "imgs/skins/snake-graphics1.png", 
+            level: "0", 
+            name: "Clássica", 
+            description: "Descrição da Skin 1"
+          },
+          { src: "imgs/skins/snake-graphics2.png", 
+            level: "2",
+            name: "Regulus",
+            description: "Descrição da Skin 2" 
+          },
+          { src: "imgs/skins/snake-graphics3.png",
+            level: "3",
+            name: "Gravina",
+            description: "Descrição da Skin 3"
+           },
+          { src: "imgs/skins/snake-graphics4.png", 
+            level: "4", 
+            name: "UFO",
+            description: "Descrição da Skin 4"
+           },
+          {
+            src: "imgs/skins/snake-graphics5.png",
+            level: "5",
+            name: "Jacko",
+            description: "Descrição da Skin 5"
+          },
+            ]);
         
-        tileimage = images[0];
+        tileimage = images[0].src;
         
-        foodImages = loadImages([ 
-            'imgs/foods/food1.png',
-            'imgs/foods/food2.png',
-            'imgs/foods/food3.png',
-            'imgs/foods/food4.png',
-            'imgs/foods/food5.png'
-        ]);
+        foodImages = loadImages([
+          { src: 'imgs/foods/food1.png' },
+          { src: 'imgs/foods/food2.png' },
+          { src: 'imgs/foods/food3.png' },
+          { src: 'imgs/foods/food4.png' },
+          { src: 'imgs/foods/food5.png' }
+            ]);
     
         // Add mouse events
         canvas.addEventListener("mousedown", onMouseDown);
@@ -325,6 +482,7 @@ Snake.prototype.move = function() {
     
         // Enter main loop
         main(0);
+        
     }
     
     // Check if we can start a new game
@@ -381,6 +539,9 @@ Snake.prototype.move = function() {
         }
       }
     }
+    
+    
+    
     
     // Draw the level tiles
     function drawLevel() {
@@ -466,59 +627,178 @@ Snake.prototype.move = function() {
         }
     }
     
-	
+	// Criação do array pontuação
+const pontuacao = [0];
+for (let i = 1; i < 100; i++) {
+    let nextValue = pontuacao[pontuacao.length - 1] + (pontuacao[pontuacao.length - 1] * 0.5 || 20); // Adiciona 20 inicialmente para evitar 0
+    let roundedValue = Math.ceil(nextValue / 5) * 5; // Arredonda para o próximo múltiplo de 5
+    pontuacao.push(roundedValue);
+}
+
+// Verificando os primeiros elementos do array
+console.log(pontuacao.slice(0, 20));
+
 	// Update game score and skin
 	function updateScore() {
 	  document.getElementById('score').textContent = 'Score: ' + score;
 	
-	  // Define níveis
-	  if (score >= 150) {
-	    currentLevel = 5;
-	  } else if (score >= 90) {
-	    currentLevel = 4;
-	  } else if (score >= 50) {
-	    currentLevel = 3;
-	  } else if (score >= 20) {
-	    currentLevel = 2;
-	  } else {
-	    currentLevel = 1;
-	  }
-	  if (highScore >= 90 && currentSkin < 4) {
-	    currentSkin = 4;
-	    
-	  } // lvl 3
-	  else if (highScore >= 50 && currentSkin < 3) {
-	    currentSkin = 3;
-	    
-	  } // lvl 4
-	  else if (highScore >= 20 && currentSkin < 2) {
-	    currentSkin = 2;
-	    
-	 	  } 
-	
-	  document.getElementById('level').textContent = 'Level: ' + currentLevel;
+for (let i = 0; i < pontuacao.length; i++) {
+        if (score >= pontuacao[i]) {
+            currentLevel = i + 1;
+        } else {
+            break;
+        }
+    }
+	  
+	 	  
+	if (currentLevel > savedLevel ) {
+	  saveData.skin = savedSkin;
+	  saveData.level = currentLevel;
+	  saveData.highScore = highScore;
+	  
+	  localStorage.setItem('saveData', JSON.stringify(saveData));
+	  
+	}
+	  
 	
 	  // Update high score if needed
 	  if (score > highScore) {
 	    highScore = score;
-	    localStorage.setItem('highScore', highScore.toString());
+	    saveData.skin = savedSkin;
+	    saveData.highScore = highScore;
+	    localStorage.setItem('saveData', JSON.stringify(saveData));
 	    document.getElementById('high-score').textContent = 'High Score: ' + highScore;
 	  }
+	  
+    // Calculate the percentage progress to the next level
+    let progressPercentage = 0;
+    if (currentLevel < pontuacao.length) {
+        let nextLevelScore = pontuacao[currentLevel];
+        let previousLevelScore = pontuacao[currentLevel - 1];
+        let levelRange = nextLevelScore - previousLevelScore;
+        let scoreInCurrentLevel = score - previousLevelScore;
+        progressPercentage = (scoreInCurrentLevel / levelRange) * 100;
+    } else {
+        progressPercentage = 100;
+    }
+
+    // Update the button color based on progressPercentage
+    let levelButton = document.getElementById('level');
+    levelButton.style.background = `linear-gradient(to right, green ${progressPercentage}%, white ${progressPercentage}%)`;
+    
+    // Update score button
+    //let scoreButton = document.getElementById('score');
+    //scoreButton.textContent = `Score ${score} / ${pontuacao[currentLevel]}`;
+document.getElementById('level').textContent = `Nível ${currentLevel} (${score} / ${pontuacao[currentLevel]}) `;
+//document.getElementById('level').textContent = 'Level: ' + currentLevel;
 	
 	  // Add preview image and click event to change snake skin
 	  var skinsContainer = document.getElementById('skinscontainer');
 	  skinsContainer.innerHTML = ''; // Clear previous skins
-	
-	  for (let i = 1; i <= currentSkin; i++) {
-	    let skinPreview = document.createElement('img');
-	    skinPreview.src = 'snake-graphics' + i + '.png'; // Assuming the skin images are named like snake-graphics1.png, snake-graphics2.png, etc.
-	    skinPreview.alt = 'Skin ' + i + ' Preview';
-	    skinPreview.addEventListener('click', function() {
-	      currentSkin = i;
-	      // Update snake skin here
-	    });
-	    skinsContainer.appendChild(skinPreview);
+	  
+	  function loadSkins() {
+    const playerLevel = savedLevel;
+    
+
+    images.forEach((image, index) => {
+        const imageLevel = parseInt(image.level, 10); // Converting string to number
+        if (playerLevel >= imageLevel) {
+            let skinPreview = document.createElement('div');
+            skinPreview.classList.add('skin-preview');
+
+            // Create a canvas element to draw the parts of the image
+            let canvas = document.createElement('canvas');
+            canvas.width = 3 * 64; // Width for three parts
+            canvas.height = 64; // Height for each part
+            let ctx = canvas.getContext('2d');
+
+            // Draw the tail
+            ctx.drawImage(image, 4*64, 2*64, 64, 64, 0, 0, 64, 64);
+
+            // Draw the head
+            ctx.drawImage(image, 4 * 64, 0*64, 64, 64, 64, 0, 64, 64);
+
+            // Draw the apple
+            ctx.drawImage(image, 0 * 64, 3*64, 64, 64, 2 * 64, 0, 64, 64);
+
+            // Append the canvas to the skinPreview div
+            skinPreview.appendChild(canvas);
+
+            // Add the skin name
+            let nameDiv = document.createElement('div');
+            nameDiv.textContent = image.name;
+            skinPreview.appendChild(nameDiv);
+
+            // Add click event to change the snake skin
+            skinPreview.addEventListener('click', function() {
+                 // Assuming index starts from 0
+                applySkin(index);
+            });
+
+            skinsContainer.appendChild(skinPreview);
+            
+        }
+        else  {
+            let skinPreview = document.createElement('div');
+            skinPreview.classList.add('skin-preview');
+            skinPreview.classList.add('bloqueado');
+
+            // Create a canvas element to draw the parts of the image
+            let canvas = document.createElement('canvas');
+            canvas.width = 3 * 64; // Width for three parts
+            canvas.height = 64; // Height for each part
+            let ctx = canvas.getContext('2d');
+
+            // Draw the tail
+            ctx.drawImage(image, 4*64, 2*64, 64, 64, 0, 0, 64, 64);
+
+            // Draw the head
+            ctx.drawImage(image, 4 * 64, 0*64, 64, 64, 64, 0, 64, 64);
+
+            // Draw the apple
+            ctx.drawImage(image, 0 * 64, 3*64, 64, 64, 2 * 64, 0, 64, 64);
+
+            // Append the canvas to the skinPreview div
+            skinPreview.appendChild(canvas);
+
+            // Add the skin name
+            let nameDiv = document.createElement('div');
+            nameDiv.textContent = image.name+" (nivel requerido: "+image.level+")";
+            skinPreview.appendChild(nameDiv);
+
+            // Add click event to change the snake skin
+            
+
+            skinsContainer.appendChild(skinPreview);
+            
+        } 
+    });
+}
+
+	  // Function to apply the selected skin
+	  function applySkin(index) {
+	    var modal = document.getElementById("myModal");
+	    modal.style.display = "none";
+	    const image = images[index];
+	    currentSkin = index + 1;
+	    //aplica a Skin de acordo com o indice
+	    //alert(`Applied ${image.name}`);
+	    savedSkin = index;
+	    saveData.skin = savedSkin;
+	    localStorage.setItem('saveData', JSON.stringify(saveData));
+	    // Implement your logic to apply the skin here
 	  }
+	  
+	  function loadSavedSkin() {
+	  const savedData = JSON.parse(localStorage.getItem('saveData'));
+	  if (savedData && savedData.skin !== undefined) {
+	    applySkin(savedData.skin);
+	  }
+	}
+    // Carregar a skin salva do localStorage
+    loadSavedSkin();
+	  loadSkins();
+	  
 	}
 	
     function updateGame(dt) {
@@ -550,7 +830,7 @@ Snake.prototype.move = function() {
         // Check collision with an apple
         if (level.tiles[nx][ny] == 2 || level.tiles[nx][ny] == 3) {
           if (level.tiles[nx][ny] == 3) {
-            score += 2; // Superfood gives double points
+            score += 3; // Superfood gives double points
           } else {
             score++;
           }
@@ -558,6 +838,7 @@ Snake.prototype.move = function() {
           level.tiles[nx][ny] = 0;
           addApple();
           snake.grow();
+          
           updateScore();
         }
       }
@@ -780,14 +1061,17 @@ function togglePause() {
   paused = !paused;
 
   // Trocar ícones
+  var dadosUsuarioDiv = document.getElementById('dados-usuario');
   var pauseIcon = document.getElementById('pauseIcon');
   var playIcon = document.getElementById('playIcon');
   if (paused) {
     pauseIcon.style.display = 'none';
     playIcon.style.display = 'inline-block';
+    dadosUsuarioDiv.style.display = "block";
   } else {
     pauseIcon.style.display = 'inline-block';
     playIcon.style.display = 'none';
+    dadosUsuarioDiv.style.display = "none";
   }
 }
 
@@ -818,6 +1102,7 @@ document.getElementById('configButton').addEventListener('click', function() {
 
 // Atualização do jogo
 function update(tframe) {
+  
   var dt = (tframe - lastframe) / 1000;
   lastframe = tframe;
 
@@ -842,54 +1127,31 @@ function render() {
 
   drawLevel();
   drawSnake();
-
-if (configOpen && paused) {
+if (paused) {
+  //context.clearRect(0, 0, canvas.width, canvas.height);
   context.fillStyle = "rgba(0, 0, 0, 0.5)";
   context.fillRect(0, 0, canvas.width, canvas.height);
 
+  // Título "Jogo Pausado" no topo
   context.fillStyle = "#ffffff";
   context.font = "24px Verdana";
-  drawCenterText("Config Open", 0, canvas.height / 2 - 30, canvas.width);
+  drawCenterText("Jogo Pausado", 0, 30, canvas.width);
 
-  // Display current score, level and highScore
+  // Score e High Score lado a lado
+  var scoreText = "Score: " + score;
+  var highScoreText = "High Score: " + highScore;
   context.font = "16px Verdana";
-  drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
-  drawCenterText("Level: " + currentLevel, 0, canvas.height / 2 + 20, canvas.width);
-  drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 40, canvas.width);
-}
-else if (configOpen && gameover) {
-  context.fillStyle = "rgba(0, 0, 0, 0.5)";
-  context.fillRect(0, 0, canvas.width, canvas.height);
+  var scoreWidth = context.measureText(scoreText).width;
+  var highScoreWidth = context.measureText(highScoreText).width;
+  var totalWidth = scoreWidth + highScoreWidth + 20; // 20 pixels de espaço entre os textos
 
-  context.fillStyle = "#ffffff";
-  context.font = "24px Verdana";
-  drawCenterText("Config Open", 0, canvas.height / 2 - 30, canvas.width);
+  drawCenterText(scoreText, canvas.width / 2 - totalWidth / 2, 60, scoreWidth);
+  drawCenterText(highScoreText, canvas.width / 2 + totalWidth / 2 - highScoreWidth, 60, highScoreWidth);
 
-  // Display current score, level and highScore
-  context.font = "16px Verdana";
-  drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
-  drawCenterText("Level: " + currentLevel, 0, canvas.height / 2 + 20, canvas.width);
-  drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 40, canvas.width);
-}
-
-  // Verificar se o jogo está pausado
-  else if (paused) {
-  context.fillStyle = "rgba(0, 0, 0, 0.5)";
-  context.fillRect(0, 0, canvas.width, canvas.height);
-
-  context.fillStyle = "#ffffff";
-  context.font = "24px Verdana";
-  drawCenterText("Jogo Pausado", 0, canvas.height / 2 - 30, canvas.width);
-
-  // Display current score, level and highScore
-  context.font = "16px Verdana";
-  drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
-  drawCenterText("Level: " + currentLevel, 0, canvas.height / 2 + 20, canvas.width);
-  drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 40, canvas.width);
 }
 
 // Game over
-if (gameover && gameovertime > gameoverdelay && !paused && !configOpen) {
+if (gameover && gameovertime > gameoverdelay && !paused) {
   context.fillStyle = "rgba(0, 0, 0, 0.5)";
   context.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -902,7 +1164,13 @@ if (gameover && gameovertime > gameoverdelay && !paused && !configOpen) {
   drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
   drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 20, canvas.width);
 }
-} 
+}
+
+
+
+
+
+
 
 // Evento de tecla pressionada
 document.addEventListener("keydown", function(e) {
@@ -917,6 +1185,7 @@ document.addEventListener("keydown", function(e) {
     
     // Call init to start the game
     init();
+    updateScore();
 
 
 
@@ -936,5 +1205,30 @@ document.addEventListener("keydown", function(e) {
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
