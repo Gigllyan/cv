@@ -5,12 +5,9 @@
     <title>Snake Game</title>
     	
     <style>
-.bloqueado {
-  background-color: red;
-}
 #level {
     
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     text-align: center;
     line-height: 30px;
@@ -31,15 +28,27 @@
   max-width:100%;
 }
 #dados-usuario {
-  position: absolute;
-  top:20%;
-  left:40%;
-  background-color: rgba(0, 0, 0, 0.2); /* Fundo transparente */
-            border-radius: 10px; /* Bordas arredondadas */
-            padding: 20px; /* Espaçamento interno */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+	position: absolute;
+	top:20%;
+	max-width: 500px;
+	left:40px;
+	background-color: rgba(0, 0, 0, 0.2); /* Fundo transparente */
+	border-radius: 10px; /* Bordas arredondadas */
+	padding: 20px; /* Espaçamento interno */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   color: #fff;
 }
+.skin-preview {
+    display: inline-flex;
+    cursor: grab;
+}
+.skin-preview.bloqueado {
+    cursor: not-allowed;
+  background-color: red;
+}
+
+
+
 
 
 .modal {
@@ -82,8 +91,9 @@
 </head>
 <body>
   <header>
-      <button id="level">Level: 1</button>
       <button id="score">Score: 0</button>
+      <button id="high-score">HighScore: 0</button>
+      <button id="level">Level: 1</button>
       <button id="configButton" style="display: none">
         <img id="configOpen" src="imgs/configopen.png" alt="config" style="width: auto;height: 20px;" />
         <img id="configClosed" src="imgs/configclosed.png" alt="configX" style="display: none;width: auto;height: 20px;" />
@@ -92,7 +102,6 @@
         <img id="pauseIcon" src="imgs/configopen.png" alt="Pause" style="width: auto;height: 20px;" />
         <img id="playIcon" src="imgs/configclosed.png" alt="Play" style="display: none;width: auto;height: 20px;" />
       </button>
-      <button id="high-score">HighScore: 0</button>
       
 
     <script>
@@ -206,10 +215,9 @@
 
   <div class="modal-content">
     <span class="close">×</span>
-    <p>
-      
-          <div id="skinscontainer" style="">conteúdo oculto de skins</div>
-    </p>
+		  <h2>Skins</h2>
+          <div id="skinscontainer" style="">conteúdo de skins</div>
+		  <span class="close">Fechar</span>
   </div>
 
 </div>
@@ -219,12 +227,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
 
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
 span.onclick = function() {
+  modal.style.display = "none";
+}
+span2.onclick = function() {
   modal.style.display = "none";
 }
 
@@ -470,11 +482,6 @@ Snake.prototype.move = function() {
           { src: 'imgs/foods/food5.png' }
             ]);
     
-        // Add mouse events
-        canvas.addEventListener("mousedown", onMouseDown);
-        
-        // Add keyboard events
-        document.addEventListener("keydown", onKeyDown);
         
         // New game
         newGame();
@@ -995,53 +1002,6 @@ function drawSnake() {
         return Math.floor(low + Math.random()*(high-low+1));
     }
     
-    // Mouse event handlers
-    function onMouseDown(e) {
-        // Get the mouse position
-        var pos = getMousePos(canvas, e);
-        
-        if (gameover) {
-            // Start a new game
-            tryNewGame();
-        } else {
-            // Change the direction of the snake
-            snake.direction = (snake.direction + 1) % snake.directions.length;
-        }
-    }
-    
-    // Keyboard event handler
-    function onKeyDown(e) {
-        if (gameover) {
-            tryNewGame();
-        } else {
-            if (e.keyCode == 37 || e.keyCode == 65) {
-                // Left or A
-                if (snake.direction != 1)  {
-                    snake.direction = 3;
-                }
-            } else if (e.keyCode == 38 || e.keyCode == 87) {
-                // Up or W
-                if (snake.direction != 2)  {
-                    snake.direction = 0;
-                }
-            } else if (e.keyCode == 39 || e.keyCode == 68) {
-                // Right or D
-                if (snake.direction != 3)  {
-                    snake.direction = 1;
-                }
-            } else if (e.keyCode == 40 || e.keyCode == 83) {
-                // Down or S
-                if (snake.direction != 0)  {
-                    snake.direction = 2;
-                }
-            }
-            
-            // Grow for demonstration purposes
-            if (e.keyCode == 32) {
-                snake.grow();
-            }
-        }
-    }
     
     // Get the mouse position
     function getMousePos(canvas, e) {
@@ -1171,17 +1131,89 @@ if (gameover && gameovertime > gameoverdelay && !paused) {
 
 
 
+// Movimentação pelo Teclado
+function onKeyDown(e) {
+	if (gameover  && !paused) {
+		tryNewGame();
+	} else {
+		var key = e.keyCode;
+		switch (key) {
+			case 37: // Seta esquerda
+			case 65: // A
+				if (snake.direction !== 1) {
+					snake.direction = 3; // Esquerda
+				}
+				break;
+			case 38: // Seta para cima
+			case 87: // W
+				if (snake.direction !== 2) {
+					snake.direction = 0; // Cima
+				}
+				break;
+			case 39: // Seta direita
+			case 68: // D
+				if (snake.direction !== 3) {
+					snake.direction = 1; // Direita
+				}
+				break;
+			case 40: // Seta para baixo
+			case 83: // S
+				if (snake.direction !== 0) {
+					snake.direction = 2; // Baixo
+				}
+				break;
+			case 32: // tecla espaço
+				togglePause();
+				break;
+			case 82: // Tecla R
+				togglePause();
+				break;
+		}
+    }
+}
+document.addEventListener("keydown", onKeyDown);
 
-// Evento de tecla pressionada
-document.addEventListener("keydown", function(e) {
-  if (gameover && !paused) {
-    tryNewGame();
-  } else if (e.keyCode == 32) { // Código da tecla de espaço
-    togglePause();
-  } else {
-    snake.direction = (snake.direction + 1) % snake.directions.length;
-  }
-});
+// Movimentação por Toque (Incluindo Deslizes)
+var touchStartX = 0;
+var touchStartY = 0;
+function onTouchStart(e) {
+    var touch = e.touches[0];
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+}
+function onTouchMove(e) {
+    if (!touchStartX || !touchStartY) return;
+
+    var touch = e.touches[0];
+    var touchEndX = touch.clientX;
+    var touchEndY = touch.clientY;
+
+    var dx = touchEndX - touchStartX;
+    var dy = touchEndY - touchStartY;
+
+    if (Math.abs(dx) > Math.abs(dy)) {
+        // Movimento horizontal
+        if (dx > 0 && snake.direction !== 3) {
+            snake.direction = 1; // Direita
+        } else if (dx < 0 && snake.direction !== 1) {
+            snake.direction = 3; // Esquerda
+        }
+    } else {
+        // Movimento vertical
+        if (dy > 0 && snake.direction !== 0) {
+            snake.direction = 2; // Baixo
+        } else if (dy < 0 && snake.direction !== 2) {
+            snake.direction = 0; // Cima
+        }
+    }
+
+    // Reseta valores após o deslize
+    touchStartX = 0;
+    touchStartY = 0;
+}
+canvas.addEventListener("touchstart", onTouchStart);
+canvas.addEventListener("touchmove", onTouchMove);
+
     
     // Call init to start the game
     init();
@@ -1205,30 +1237,3 @@ document.addEventListener("keydown", function(e) {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
