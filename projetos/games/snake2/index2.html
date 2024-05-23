@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    	
+    <style>
+#level {
+    
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white; 
+} 
+#score {
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    margin-top: 10px; /* Adicione margem superior para espaçamento */
+}
+#top-canvas {
+  position: relative;
+  max-width:100%;
+}
+#dados-usuario {
+	position: absolute;
+	top:20%;
+	max-width: 500px;
+	left:40px;
+	background-color: rgba(0, 0, 0, 0.2); /* Fundo transparente */
+	border-radius: 10px; /* Bordas arredondadas */
+	padding: 20px; /* Espaçamento interno */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #fff;
+}
+.skin-preview {
+    display: inline-flex;
+    cursor: grab;
+}
+.skin-preview.bloqueado {
+    cursor: not-allowed;
+  background-color: red;
+}
+
+
+
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+  <header>
+      <button id="score">Score: 0</button>
+      <button id="high-score">HighScore: 0</button>
+      <button id="level">Level: 1</button>
+      <button id="configButton" style="display: none">
+        <img id="configOpen" src="imgs/configopen.png" alt="config" style="width: auto;height: 20px;" />
+        <img id="configClosed" src="imgs/configclosed.png" alt="configX" style="display: none;width: auto;height: 20px;" />
+      </button>
+      <button id="pauseButton">
+        <img id="pauseIcon" src="imgs/configopen.png" alt="Pause" style="width: auto;height: 20px;" />
+        <img id="playIcon" src="imgs/configclosed.png" alt="Play" style="display: none;width: auto;height: 20px;" />
+      </button>
+      
+
+    <script>
+        function toggleContent(button) {
+            var content = button.nextElementSibling;
+
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+  </header>
+  <br/>
+      <div id="top-canvas">
+        <canvas id="viewport" width="640" height="480"></canvas>
+
+        <div id="dados-usuario" style="width: 90%;display:none;">
+          Olá,
+          <b id="nome" contenteditable="true">Guest#</b>
+          <button class="expand" onclick="toggleContent(this)">+ </button>
+          <div style="display:none;">
+            <div id="deviceId">Device ID: </div>
+            <div id="userId">User ID: </div>
+            <div id="fingerPrint">FingerPrint: </div>
+          </div>
+          <hr/>
+          <div id="options-paused">
+             <button id="myBtn">Skins</button>
+          </div>
+          
+        </div>
+        
+      </div>
+        
+        
+        
+        
+    <script>
+        let fingerprint = navigator.userAgent + "|" + screen.width + "x" + screen.height + "|" + navigator.language;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let userData = JSON.parse(localStorage.getItem("userData"));
+            
+
+
+            if (!userData) {
+                let userId = generateUniqueId();
+                let deviceId = localStorage.getItem("deviceId");
+
+                if (!deviceId) {
+                    deviceId = generateDeviceId();
+                    localStorage.setItem("deviceId", deviceId);
+                }
+
+                let nome = "Guest#" + userId;
+                userData = { userId, deviceId, nome, fingerprint };
+                localStorage.setItem("userData", JSON.stringify(userData));
+            }
+
+            document.getElementById("nome").textContent = userData.nome;
+            document.getElementById("deviceId").textContent += userData.deviceId;
+            document.getElementById("userId").textContent += userData.userId;
+            document.getElementById("fingerPrint").textContent += fingerprint;
+
+            document.getElementById("nome").addEventListener("click", function() {
+                let newName = prompt("Digite um novo nome:");
+                if (newName !== null && newName.trim() !== "") {
+                    userData.nome = newName;
+                    localStorage.setItem("userData", JSON.stringify(userData));
+                    document.getElementById("nome").textContent = newName;
+                }
+            });
+        });
+
+        function generateUniqueId() {
+            return Date.now().toString(36) + Math.random().toString(36).substr(2);
+        }
+
+        function generateDeviceId() {
+            return hashString(fingerprint);
+        }
+
+        function hashString(str) {
+            let hash = 0, i, chr;
+            if (str.length === 0) return hash;
+            for (i = 0; i < str.length; i++) {
+                chr = str.charCodeAt(i);
+                hash = ((hash << 5) - hash) + chr;
+                hash |= 0;
+            }
+            return hash;
+        }
+
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">×</span>
+		  <h2>Skins</h2>
+          <div id="skinscontainer" style="">conteúdo de skins</div>
+		  <span class="close">Fechar</span>
+  </div>
+
+</div>
+
+<script> //modal
+document.addEventListener('DOMContentLoaded', (event) => {
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span2.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+});
+</script>
+	
+	
+	
+	
+	
+	
+<script> //game
+  window.onload = function() {
+    // Get the canvas and context
+    var canvas = document.getElementById("viewport"); 
+    var context = canvas.getContext("2d");
+    
+    // Timing and frames per second
+    var lastframe = 0;
+    var fpstime = 0;
+    var framecount = 0;
+    var fps = 0;
+    
+    var initialized = false;
+    
+    // Images
+    var images = [];
+    var foodImages = [];
+    var tileimage;
+    
+    // Image loading global variables
+    var loadcount = 0;
+    var loadtotal = 0;
+    var preloaded = false;
+var currentSkin = 1;
+var score = 0;
+var currentLevel = 1;
+let saveData = JSON.parse(localStorage.getItem("saveData")) || {};
+let savedLevel = saveData.level || 0;
+let highScore = saveData.highScore || 0;
+let savedSkin = saveData.skin || 0;
+document.getElementById('high-score').textContent = 'High Score: ' + highScore;
+    
+    // Load images
+    function loadImages(imagefiles) {
+        // Initialize variables
+        loadcount = 0;
+        loadtotal = imagefiles.length;
+        preloaded = false;
+        
+        // Load the images
+        var loadedimages = [];
+        for (var i=0; i<imagefiles.length; i++) {
+            // Create the image object
+            var image = new Image();
+            
+            // Add onload event handler
+            image.onload = function () {
+                loadcount++;
+                if (loadcount == loadtotal) {
+                    // Done loading
+                    preloaded = true;
+                }
+            };
+            
+            // Set the source url of the image
+            image.src = imagefiles[i].src;
+            image.level = imagefiles[i].level;
+            image.name = imagefiles[i].name;
+            image.description = imagefiles[i].description;
+            
+            // Save to the image array
+            loadedimages[i] = image;
+        }
+        
+        // Return an array of images
+        return loadedimages;
+    }
+    
+    // Level properties
+    var Level = function (columns, rows, tilewidth, tileheight) {
+        this.columns = columns;
+        this.rows = rows;
+        this.tilewidth = tilewidth;
+        this.tileheight = tileheight;
+        
+        // Initialize tiles array
+        this.tiles = [];
+        for (var i=0; i<this.columns; i++) {
+            this.tiles[i] = [];
+            for (var j=0; j<this.rows; j++) {
+                this.tiles[i][j] = 0;
+            }
+        }
+    };
+    
+    // Generate a default level with walls
+    Level.prototype.generate = function() {
+        for (var i=0; i<this.columns; i++) {
+            for (var j=0; j<this.rows; j++) {
+                if (i == 0 || i == this.columns-1 ||
+                    j == 0 || j == this.rows-1) {
+                    // Add walls at the edges of the level
+                    this.tiles[i][j] = 1;
+                } else {
+                    // Add empty space
+                    this.tiles[i][j] = 0;
+                }
+            }
+        }
+    };
+    
+    
+    // Snake
+    var Snake = function() {
+        this.init(0, 0, 1, 10, 1);
+    }
+    
+    // Direction table: Up, Right, Down, Left
+    Snake.prototype.directions = [[0, -1], [1, 0], [0, 1], [-1, 0]];
+    
+    // Initialize the snake at a location
+    Snake.prototype.init = function(x, y, direction, speed, numsegments) {
+        this.x = x;
+        this.y = y;
+        this.direction = direction; // Up, Right, Down, Left
+        this.speed = speed;         // Movement speed in blocks per second
+        this.movedelay = 0;
+        
+        // Reset the segments and add new ones
+        this.segments = [];
+        this.growsegments = 0;
+        for (var i=0; i<numsegments; i++) {
+            this.segments.push({x:this.x - i*this.directions[direction][0],
+                                y:this.y - i*this.directions[direction][1]});
+        }
+    }
+    
+    // Increase the segment count
+    Snake.prototype.grow = function() {
+        this.growsegments++;
+    };
+    
+    // Check we are allowed to move
+    Snake.prototype.tryMove = function(dt) {
+        this.movedelay += dt;
+        var maxmovedelay = 1 / this.speed;
+        if (this.movedelay > maxmovedelay) {
+            return true;
+        }
+        return false;
+    };
+    
+    // Get the position of the next move
+    Snake.prototype.nextMove = function() {
+        var nextx = this.x + this.directions[this.direction][0];
+        var nexty = this.y + this.directions[this.direction][1];
+        return {x:nextx, y:nexty};
+    }
+    
+    // Move the snake in the direction
+Snake.prototype.move = function() {
+    // Move each segment to the position of the segment in front of it
+    for (var i = this.segments.length - 1; i > 0; i--) {
+        this.segments[i].x = this.segments[i - 1].x;
+        this.segments[i].y = this.segments[i - 1].y;
+    }
+
+    // The head segment moves to the new location (this.x, this.y)
+    this.segments[0].x = this.x;
+    this.segments[0].y = this.y;
+
+    // If the snake needs to grow, add a new segment at the end
+    if (this.growsegments > 0) {
+        var lastSeg = this.segments[this.segments.length - 1];
+        var secondLastSeg = this.segments[this.segments.length - 2];
+        var newSeg = {x: lastSeg.x - (secondLastSeg.x - lastSeg.x),
+                      y: lastSeg.y - (secondLastSeg.y - lastSeg.y)};
+        
+        this.segments.push(newSeg);
+        this.growsegments--;
+    }
+
+    // Reset move delay
+    this.movedelay = 0;
+};
+
+
+    // Create objects
+    var snake = new Snake();
+    var level = new Level(20, 15, 32, 32);
+    
+    // Variables
+    var score = 0;              // Score
+    var gameover = true;        // Game is over
+    var gameovertime = 1;       // How long we have been game over
+    var gameoverdelay = 0.5;    // Waiting time after game over
+    
+    // Initialize the game
+    function init() {
+        // Load images
+        images = loadImages([
+          { src: "imgs/skins/snake-graphics1.png", 
+            level: "0", 
+            name: "Clássica", 
+            description: "Descrição da Skin 1"
+          },
+          { src: "imgs/skins/snake-graphics2.png", 
+            level: "2",
+            name: "Regulus",
+            description: "Descrição da Skin 2" 
+          },
+          { src: "imgs/skins/snake-graphics3.png",
+            level: "3",
+            name: "Gravina",
+            description: "Descrição da Skin 3"
+           },
+          { src: "imgs/skins/snake-graphics4.png", 
+            level: "4", 
+            name: "UFO",
+            description: "Descrição da Skin 4"
+           },
+          {
+            src: "imgs/skins/snake-graphics5.png",
+            level: "5",
+            name: "Jacko",
+            description: "Descrição da Skin 5"
+          },
+            ]);
+        
+        tileimage = images[0].src;
+        
+        foodImages = loadImages([
+          { src: 'imgs/foods/food1.png' },
+          { src: 'imgs/foods/food2.png' },
+          { src: 'imgs/foods/food3.png' },
+          { src: 'imgs/foods/food4.png' },
+          { src: 'imgs/foods/food5.png' }
+            ]);
+    
+        loadSkins();
+		
+        // New game
+        newGame();
+        gameover = true;
+    
+        // Enter main loop
+        main(0);
+        
+    }
+	
+	// Carrega as skins disponíveis baseado no nível do jogador
+    function loadSkins() {
+        const playerLevel = savedLevel;
+
+        var skinsContainer = document.getElementById('skinscontainer');
+        skinsContainer.innerHTML = ''; // Limpa as skins anteriores
+
+        images.forEach((image, index) => {
+            const imageLevel = parseInt(image.level, 10); // Converte a string para número
+
+            if (playerLevel >= imageLevel) {
+                let skinPreview = document.createElement('div');
+                skinPreview.classList.add('skin-preview');
+
+                // Cria um elemento canvas para desenhar as partes da imagem
+                let canvas = document.createElement('canvas');
+                canvas.width = 3 * 64; // Largura para três partes
+                canvas.height = 64; // Altura para cada parte
+                let ctx = canvas.getContext('2d');
+
+                // Desenha a cauda
+                ctx.drawImage(image, 4 * 64, 2 * 64, 64, 64, 0, 0, 64, 64);
+
+                // Desenha a cabeça
+                ctx.drawImage(image, 4 * 64, 0 * 64, 64, 64, 64, 0, 64, 64);
+
+                // Desenha a maçã
+                ctx.drawImage(image, 0 * 64, 3 * 64, 64, 64, 2 * 64, 0, 64, 64);
+
+                // Adiciona o canvas à div skinPreview
+                skinPreview.appendChild(canvas);
+
+                // Adiciona o nome da skin
+                let nameDiv = document.createElement('div');
+                nameDiv.textContent = image.name;
+                skinPreview.appendChild(nameDiv);
+
+                // Adiciona o evento de clique para mudar a skin da snake
+                skinPreview.addEventListener('click', function () {
+                    applySkin(index);
+                });
+
+                skinsContainer.appendChild(skinPreview);
+            } else {
+                let skinPreview = document.createElement('div');
+                skinPreview.classList.add('skin-preview');
+                skinPreview.classList.add('bloqueado');
+
+                // Cria um elemento canvas para desenhar as partes da imagem
+                let canvas = document.createElement('canvas');
+                canvas.width = 3 * 64; // Largura para três partes
+                canvas.height = 64; // Altura para cada parte
+                let ctx = canvas.getContext('2d');
+
+                // Desenha a cauda
+                ctx.drawImage(image, 4 * 64, 2 * 64, 64, 64, 0, 0, 64, 64);
+
+                // Desenha a cabeça
+                ctx.drawImage(image, 4 * 64, 0 * 64, 64, 64, 64, 0, 64, 64);
+
+                // Desenha a maçã
+                ctx.drawImage(image, 0 * 64, 3 * 64, 64, 64, 2 * 64, 0, 64, 64);
+
+                // Adiciona o canvas à div skinPreview
+                skinPreview.appendChild(canvas);
+
+                // Adiciona o nome da skin
+                let nameDiv = document.createElement('div');
+                nameDiv.textContent = image.name + " (nivel requerido: " + image.level + ")";
+                skinPreview.appendChild(nameDiv);
+
+                skinsContainer.appendChild(skinPreview);
+            }
+        });
+    }
+
+    // Aplica a skin selecionada
+    function applySkin(index) {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+        const image = images[index];
+        currentSkin = index + 1;
+        savedSkin = index;
+        saveData.skin = savedSkin;
+        localStorage.setItem('saveData', JSON.stringify(saveData));
+        // Implemente sua lógica para aplicar a skin aqui
+    }
+    
+    // Check if we can start a new game
+    function tryNewGame() {
+        if (gameovertime > gameoverdelay) {
+            newGame();
+            gameover = false;
+        }
+    }
+    
+    function newGame() {
+        // Initialize the snake (posx, posy, right, speed, segments)
+        snake.init(10, 10, 1, 5, 2);
+        
+        // Generate the default level
+        level.generate();
+        
+        // Add an apple
+        addApple();
+        
+        // Initialize the score
+        score = 0;
+        
+        // Initialize variables
+        gameover = false;
+    }
+    
+    // Add an apple to the level at an empty position
+    // Add an apple to the level at an empty position
+    var foodImageIndexes = {}; // Object to store food image indexes
+    
+    function addApple() {
+      var valid = false;
+      while (!valid) {
+        var ax = randRange(0, level.columns - 1);
+        var ay = randRange(0, level.rows - 1);
+    
+        var overlap = false;
+        for (var i = 0; i < snake.segments.length; i++) {
+          var sx = snake.segments[i].x;
+          var sy = snake.segments[i].y;
+    
+          if (ax == sx && ay == sy) {
+            overlap = true;
+            break;
+          }
+        }
+    
+        if (!overlap && level.tiles[ax][ay] == 0) {
+          var isSuperFood = Math.random() < 0.2;
+          level.tiles[ax][ay] = isSuperFood ? 3 : 2; // 3 represents superfood
+          foodImageIndexes[ax + ',' + ay] = Math.floor(Math.random() * foodImages.length); // Store the index
+          valid = true;
+        }
+      }
+    }
+    
+    
+    
+    
+    // Draw the level tiles
+    function drawLevel() {
+      for (var i = 0; i < level.columns; i++) {
+        for (var j = 0; j < level.rows; j++) {
+          var tile = level.tiles[i][j];
+          var tilex = i * level.tilewidth;
+          var tiley = j * level.tileheight;
+    
+          if (tile == 0) {
+            context.fillStyle = "green";
+            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+          } else if (tile == 1) {
+            context.fillStyle = "lime";
+            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+          } else if (tile == 2 || tile == 3) {
+            context.fillStyle = "green";
+            context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
+    
+            if (tile == 3) {
+              var superFoodImage = images[currentSkin - 1];
+              var tx = 0;
+              var ty = 3;
+              var tilew = 64;
+              var tileh = 64;
+              context.drawImage(superFoodImage, tx * tilew, ty * tileh, tilew, tileh, tilex, tiley, level.tilewidth, level.tileheight);
+            } else {
+              var foodIndex = foodImageIndexes[i + ',' + j];
+              var randomFoodImage = foodImages[foodIndex];
+              context.drawImage(randomFoodImage, tilex, tiley, level.tilewidth, level.tileheight);
+            }
+          }
+        }
+      }
+    }
+    // Main loop
+    function main(tframe) {
+        // Request animation frames
+        window.requestAnimationFrame(main);
+        
+        if (!initialized) {
+            // Preloader
+            
+            // Clear the canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw a progress bar
+            var loadpercentage = loadcount/loadtotal;
+            context.strokeStyle = "#ff8080";
+            context.lineWidth=3;
+            context.strokeRect(18.5, 0.5 + canvas.height - 51, canvas.width-37, 32);
+            context.fillStyle = "#ff8080";
+            context.fillRect(18.5, 0.5 + canvas.height - 51, loadpercentage*(canvas.width-37), 32);
+            
+            // Draw the progress text
+            var loadtext = "Loaded " + loadcount + "/" + loadtotal + " images";
+            context.fillStyle = "#000000";
+            context.font = "16px Verdana";
+            context.fillText(loadtext, 18, 0.5 + canvas.height - 63);
+            
+            if (preloaded) {
+                initialized = true;
+            }
+        } else {
+            // Update and render the game
+            update(tframe);
+            render();
+        }
+    }
+    
+    // Update the game state
+    function update(tframe) {
+        var dt = (tframe - lastframe) / 1000;
+        lastframe = tframe;
+        
+        // Update the fps counter
+        updateFps(dt);
+        
+        if (!gameover) {
+            updateGame(dt);
+        } else {
+            gameovertime += dt;
+        }
+    }
+    
+	// Criação do array pontuação
+const pontuacao = [0];
+for (let i = 1; i < 100; i++) {
+    let nextValue = pontuacao[pontuacao.length - 1] + (pontuacao[pontuacao.length - 1] * 0.5 || 20); // Adiciona 20 inicialmente para evitar 0
+    let roundedValue = Math.ceil(nextValue / 5) * 5; // Arredonda para o próximo múltiplo de 5
+    pontuacao.push(roundedValue);
+}
+
+// Verificando os primeiros elementos do array
+console.log(pontuacao.slice(0, 20));
+
+	// Update game score and skin
+	function updateScore() {
+	  document.getElementById('score').textContent = 'Score: ' + score;
+	
+for (let i = 0; i < pontuacao.length; i++) {
+        if (score >= pontuacao[i]) {
+            currentLevel = i + 1;
+        } else {
+            break;
+        }
+    }
+	  
+	 	  
+	if (currentLevel > savedLevel ) {
+	  saveData.skin = savedSkin;
+	  saveData.level = currentLevel;
+	  saveData.highScore = highScore;
+	  
+	  localStorage.setItem('saveData', JSON.stringify(saveData));
+	  
+	}
+	  
+	
+	  // Update high score if needed
+	  if (score > highScore) {
+	    highScore = score;
+	    saveData.skin = savedSkin;
+	    saveData.highScore = highScore;
+	    localStorage.setItem('saveData', JSON.stringify(saveData));
+	    document.getElementById('high-score').textContent = 'High Score: ' + highScore;
+	  }
+	  
+    // Calculate the percentage progress to the next level
+    let progressPercentage = 0;
+    if (currentLevel < pontuacao.length) {
+        let nextLevelScore = pontuacao[currentLevel];
+        let previousLevelScore = pontuacao[currentLevel - 1];
+        let levelRange = nextLevelScore - previousLevelScore;
+        let scoreInCurrentLevel = score - previousLevelScore;
+        progressPercentage = (scoreInCurrentLevel / levelRange) * 100;
+    } else {
+        progressPercentage = 100;
+    }
+
+    // Update the button color based on progressPercentage
+    let levelButton = document.getElementById('level');
+    levelButton.style.background = `linear-gradient(to right, green ${progressPercentage}%, white ${progressPercentage}%)`;
+    
+    // Update score button
+    //let scoreButton = document.getElementById('score');
+    //scoreButton.textContent = `Score ${score} / ${pontuacao[currentLevel]}`;
+document.getElementById('level').textContent = `Nível ${currentLevel} (${score} / ${pontuacao[currentLevel]}) `;
+//document.getElementById('level').textContent = 'Level: ' + currentLevel;
+	
+	  // Add preview image and click event to change snake skin
+	  var skinsContainer = document.getElementById('skinscontainer');
+	  skinsContainer.innerHTML = ''; // Clear previous skins
+	  
+	  loadSkins();
+	  
+	}
+	
+    function updateGame(dt) {
+      // Move the snake
+      if (snake.tryMove(dt)) {
+        // Check snake collisions
+        var nextmove = snake.nextMove();
+        var nx = nextmove.x;
+        var ny = nextmove.y;
+    
+        // Wrap the snake around the canvas
+        nx = (nx + level.columns) % level.columns;
+        ny = (ny + level.rows) % level.rows;
+    
+        // Check collision with the snake itself
+        for (var i = 0; i < snake.segments.length; i++) {
+          if (nx == snake.segments[i].x && ny == snake.segments[i].y) {
+            gameover = true;
+            gameovertime = 0;
+            return;
+          }
+        }
+    
+        // Move the snake
+        snake.x = nx;
+        snake.y = ny;
+        snake.move();
+    
+        // Check collision with an apple
+        if (level.tiles[nx][ny] == 2 || level.tiles[nx][ny] == 3) {
+          if (level.tiles[nx][ny] == 3) {
+            score += 3; // Superfood gives double points
+          } else {
+            score++;
+          }
+    
+          level.tiles[nx][ny] = 0;
+          addApple();
+          snake.grow();
+          
+          updateScore();
+        }
+      }
+    }
+    
+    function updateFps(dt) {
+        if (fpstime > 0.25) {
+            // Calculate fps
+            fps = Math.round(framecount / fpstime);
+            
+            // Reset time and framecount
+            fpstime = 0;
+            framecount = 0;
+        }
+        
+        // Increase time and framecount
+        fpstime += dt;
+        framecount++;
+    }
+    
+    // Render the game
+    function render() {
+        // Draw background
+        context.fillStyle = "#577ddb";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        
+        drawLevel();
+        drawSnake();
+            
+        // Game over
+        if (gameover) {
+            context.fillStyle = "rgba(0, 0, 0, 0.5)";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            
+            context.fillStyle = "#ffffff";
+            context.font = "24px Verdana";
+            drawCenterText("Press any key to start!", 0, canvas.height/2, canvas.width);
+        }
+    }
+    
+    // Draw the level tiles
+    
+
+// Draw the snake
+function drawSnake() {
+    for (var i = 0; i < snake.segments.length; i++) {
+        var segment = snake.segments[i];
+        var segx = segment.x;
+        var segy = segment.y;
+        var tilex = segx * level.tilewidth;
+        var tiley = segy * level.tileheight;
+        
+        // Sprite column and row that gets calculated
+        var tx = 0;
+        var ty = 0;
+        
+        if (i == 0) {
+            // Head; Determine the correct image based on the second segment to determine direction
+            var nseg = snake.segments[i + 1]; // Next segment
+            if (segy < nseg.y && Math.abs(segy - nseg.y) < level.rows - 1) {
+                // Up
+                tx = 3; ty = 0;
+            } else if (segx > nseg.x && Math.abs(segx - nseg.x) < level.columns - 1) {
+                // Right
+                tx = 4; ty = 0;
+            } else if (segy > nseg.y && Math.abs(segy - nseg.y) < level.rows - 1) {
+                // Down
+                tx = 4; ty = 1;
+            } else if (segx < nseg.x && Math.abs(segx - nseg.x) < level.columns - 1) {
+                // Left
+                tx = 3; ty = 1;
+            } else if (segy - nseg.y === level.rows - 1) {
+                // Wrap Up to Down
+                tx = 4; ty = 1;
+            } else if (nseg.y - segy === level.rows - 1) {
+                // Wrap Down to Up
+                tx = 3; ty = 0;
+            } else if (segx - nseg.x === level.columns - 1) {
+                // Wrap Left to Right
+                tx = 4; ty = 0;
+            } else if (nseg.x - segx === level.columns - 1) {
+                // Wrap Right to Left
+                tx = 3; ty = 1;
+            }
+        } else if (i == snake.segments.length - 1) {
+            // Tail; Determine the correct image based on the second last segment
+            var pseg = snake.segments[i - 1]; // Previous segment
+            if (pseg.y < segy && Math.abs(pseg.y - segy) < level.rows - 1) {
+                // Up
+                tx = 3; ty = 2;
+            } else if (pseg.x > segx && Math.abs(pseg.x - segx) < level.columns - 1) {
+                // Right
+                tx = 4; ty = 2;
+            } else if (pseg.y > segy && Math.abs(pseg.y - segy) < level.rows - 1) {
+                // Down
+                tx = 4; ty = 3;
+            } else if (pseg.x < segx && Math.abs(pseg.x - segx) < level.columns - 1) {
+                // Left
+                tx = 3; ty = 3;
+            } else if (segy - pseg.y === level.rows - 1) {
+                // Wrap Up to Down
+                tx = 4; ty = 3;
+            } else if (pseg.y - segy === level.rows - 1) {
+                // Wrap Down to Up
+                tx = 3; ty = 2;
+            } else if (segx - pseg.x === level.columns - 1) {
+                // Wrap Left to Right
+                tx = 4; ty = 2;
+            } else if (pseg.x - segx === level.columns - 1) {
+                // Wrap Right to Left
+                tx = 3; ty = 3;
+            }
+        } else {
+            // Body; Determine the correct image
+            var pseg = snake.segments[i - 1]; // Previous segment
+            var nseg = snake.segments[i + 1]; // Next segment
+            if (pseg.x < segx && nseg.x > segx || nseg.x < segx && pseg.x > segx) {
+                // Horizontal Left-Right
+                tx = 1; ty = 0;
+            } else if (pseg.x < segx && nseg.y > segy || nseg.x < segx && pseg.y > segy) {
+                // Angle Left-Down
+                tx = 2; ty = 0;
+            } else if (pseg.y < segy && nseg.y > segy || nseg.y < segy && pseg.y > segy) {
+                // Vertical Up-Down
+                tx = 2; ty = 1;
+            } else if (pseg.y < segy && nseg.x < segx || nseg.y < segy && pseg.x < segx) {
+                // Angle Top-Left
+                tx = 2; ty = 2;
+            } else if (pseg.x > segx && nseg.y < segy || nseg.x > segx && pseg.y < segy) {
+                // Angle Right-Up
+                tx = 0; ty = 1;
+            } else if (pseg.y > segy && nseg.x > segx || nseg.y > segy && pseg.x > segx) {
+                // Angle Down-Right
+                tx = 0; ty = 0;
+            }
+        }
+        
+        // Draw the image of the snake part
+        var snakeImage = images[currentSkin - 1]; // Adjust for 0-based array
+        
+            context.drawImage(snakeImage, tx*64, ty*64, 64, 64, tilex, tiley,
+                              level.tilewidth, level.tileheight);
+      }
+}
+    
+    // Draw text that is centered
+    function drawCenterText(text, x, y, width) {
+        var textdim = context.measureText(text);
+        context.fillText(text, x + (width-textdim.width)/2, y);
+    }
+    
+    // Get a random int between low and high, inclusive
+    function randRange(low, high) {
+        return Math.floor(low + Math.random()*(high-low+1));
+    }
+    
+    
+    // Get the mouse position
+    function getMousePos(canvas, e) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+            x: Math.round((e.clientX - rect.left)/(rect.right - rect.left)*canvas.width),
+            y: Math.round((e.clientY - rect.top)/(rect.bottom - rect.top)*canvas.height)
+        };
+    }
+    
+    // Variável para controlar o estado de pausa
+// Variável para controlar o estado de pausa
+var paused = false;
+
+// Função para pausar e retomar o jogo
+function togglePause() {
+  paused = !paused;
+
+  // Trocar ícones
+  var dadosUsuarioDiv = document.getElementById('dados-usuario');
+  var pauseIcon = document.getElementById('pauseIcon');
+  var playIcon = document.getElementById('playIcon');
+  if (paused) {
+    pauseIcon.style.display = 'none';
+    playIcon.style.display = 'inline-block';
+    dadosUsuarioDiv.style.display = "block";
+  } else {
+    pauseIcon.style.display = 'inline-block';
+    playIcon.style.display = 'none';
+    dadosUsuarioDiv.style.display = "none";
+  }
+}
+
+// Adicionar evento de clique ao botão de pausa
+document.getElementById('pauseButton').addEventListener('click', function() {
+  togglePause();
+});
+
+var configOpen = false;
+
+function toggleConfig() {
+  configOpen = !configOpen;
+//togglePause();
+  // Trocar ícones
+  var configOpenIcon = document.getElementById('configOpen');
+  var configClosedIcon = document.getElementById('configClosed');
+  if (configOpen) {
+    configOpenIcon.style.display = 'none';
+    configClosedIcon.style.display = 'inline-block';
+  } else {
+    configOpenIcon.style.display = 'inline-block';
+    configClosedIcon.style.display = 'none';
+  }
+}
+document.getElementById('configButton').addEventListener('click', function() {
+  toggleConfig();
+});
+
+// Atualização do jogo
+function update(tframe) {
+  
+  var dt = (tframe - lastframe) / 1000;
+  lastframe = tframe;
+
+  // Atualizar contador de FPS
+  updateFps(dt);
+
+  // Verificar se o jogo está pausado
+  if (!paused) {
+    if (!gameover) {
+      updateGame(dt);
+    } else {
+      gameovertime += dt;
+    }
+  }
+}
+
+// Desenhar o jogo na tela
+function render() {
+  // Limpar o fundo
+  context.fillStyle = "#577ddb";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  drawLevel();
+  drawSnake();
+if (paused) {
+  //context.clearRect(0, 0, canvas.width, canvas.height);
+  context.fillStyle = "rgba(0, 0, 0, 0.5)";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Título "Jogo Pausado" no topo
+  context.fillStyle = "#ffffff";
+  context.font = "24px Verdana";
+  drawCenterText("Jogo Pausado", 0, 30, canvas.width);
+
+  // Score e High Score lado a lado
+  var scoreText = "Score: " + score;
+  var highScoreText = "High Score: " + highScore;
+  context.font = "16px Verdana";
+  var scoreWidth = context.measureText(scoreText).width;
+  var highScoreWidth = context.measureText(highScoreText).width;
+  var totalWidth = scoreWidth + highScoreWidth + 20; // 20 pixels de espaço entre os textos
+
+  drawCenterText(scoreText, canvas.width / 2 - totalWidth / 2, 60, scoreWidth);
+  drawCenterText(highScoreText, canvas.width / 2 + totalWidth / 2 - highScoreWidth, 60, highScoreWidth);
+
+}
+
+// Game over
+if (gameover && gameovertime > gameoverdelay && !paused) {
+  context.fillStyle = "rgba(0, 0, 0, 0.5)";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  context.fillStyle = "#ffffff";
+  context.font = "24px Verdana";
+  drawCenterText("Pressione qualquer tecla para iniciar!", 0, canvas.height / 2 - 30, canvas.width);
+
+  // Display final score and highScore
+  context.font = "16px Verdana";
+  drawCenterText("Score: " + score, 0, canvas.height / 2, canvas.width);
+  drawCenterText("High Score: " + highScore, 0, canvas.height / 2 + 20, canvas.width);
+}
+}
+
+
+
+
+
+
+// Movimentação pelo Teclado
+function onKeyDown(e) {
+	if (gameover  && !paused) {
+		tryNewGame();
+	} else {
+		var key = e.keyCode;
+		switch (key) {
+			case 37: // Seta esquerda
+			case 65: // A
+				if (snake.direction !== 1) {
+					snake.direction = 3; // Esquerda
+				}
+				break;
+			case 38: // Seta para cima
+			case 87: // W
+				if (snake.direction !== 2) {
+					snake.direction = 0; // Cima
+				}
+				break;
+			case 39: // Seta direita
+			case 68: // D
+				if (snake.direction !== 3) {
+					snake.direction = 1; // Direita
+				}
+				break;
+			case 40: // Seta para baixo
+			case 83: // S
+				if (snake.direction !== 0) {
+					snake.direction = 2; // Baixo
+				}
+				break;
+			case 32: // tecla espaço
+				togglePause();
+				break;
+			case 82: // Tecla R
+				togglePause();
+				break;
+		}
+    }
+}
+document.addEventListener("keydown", onKeyDown);
+
+// Movimentação por Toque (Incluindo Deslizes)
+var touchStartX = 0;
+var touchStartY = 0;
+function onTouchStart(e) {
+    var touch = e.touches[0];
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+}
+function onTouchMove(e) {
+    if (!touchStartX || !touchStartY) return;
+
+    var touch = e.touches[0];
+    var touchEndX = touch.clientX;
+    var touchEndY = touch.clientY;
+
+    var dx = touchEndX - touchStartX;
+    var dy = touchEndY - touchStartY;
+
+    if (Math.abs(dx) > Math.abs(dy)) {
+        // Movimento horizontal
+        if (dx > 0 && snake.direction !== 3) {
+            snake.direction = 1; // Direita
+        } else if (dx < 0 && snake.direction !== 1) {
+            snake.direction = 3; // Esquerda
+        }
+    } else {
+        // Movimento vertical
+        if (dy > 0 && snake.direction !== 0) {
+            snake.direction = 2; // Baixo
+        } else if (dy < 0 && snake.direction !== 2) {
+            snake.direction = 0; // Cima
+        }
+    }
+
+    // Reseta valores após o deslize
+    touchStartX = 0;
+    touchStartY = 0;
+}
+canvas.addEventListener("touchstart", onTouchStart);
+canvas.addEventListener("touchmove", onTouchMove);
+
+    
+    // Call init to start the game
+    init();
+    // Carregar a skin salva do localStorage
+    loadSavedSkin();
+    updateScore();
+
+
+
+
+
+
+};
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
