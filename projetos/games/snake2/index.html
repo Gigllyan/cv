@@ -265,6 +265,7 @@ input[type="radio"]:checked + label {
           <hr/>
           <div id="options-paused" style="display:block">
              <div id="">
+               <h2>Dificuldade</h2>
                <div class="toggle-group">
             <input type="radio" id="easy" name="toggle" value="easy" selected="true" selected>
             <label for="easy">Fácil 
@@ -286,8 +287,8 @@ input[type="radio"]:checked + label {
              <hr/>
              <div style="display:flex">
                
-             <button id="temas">Temas</button>
-             <button id="cores">Cores</button>
+             
+             <button id="cores">Temas e Cores</button>
              </div>
              
           </div>
@@ -462,6 +463,12 @@ window.onclick = function(event) {
 	
 <script> //game
   window.onload = function() {
+    
+    var foodCounterTotal = 0;
+    var foodCounterNormalFood = 0;
+    var foodCounterSuperFood = 0;
+    
+    
     var currentLevel = 1;
     let levelButton = document.getElementById('level');
     
@@ -483,79 +490,100 @@ window.onclick = function(event) {
 
     let saveData = JSON.parse(localStorage.getItem("saveData")) || {};
     
+    let savedLevel = saveData.level || 0;
+    let highScore = saveData.highScore || 0;
+    let savedSkin = saveData.skin || 0;
+    let savedTheme = saveData.temas || 0;
+    
     var snakeVelocidade = 3; //snake speed
     var snakeSegmentos = 3; //segmentos iniciais
     var colorTheme = "green";
     var colorTheme2 = "lime";
-    var azulButton = document.getElementById("blue");
-    var amareloButton = document.getElementById("yellow");
-    var rosaButton = document.getElementById("pink");
+    var azulButton = document.getElementById("azul");
+    var amareloButton = document.getElementById("amarelo");
+    var rosaButton = document.getElementById("rosa");
     var verdeButton = document.getElementById("default");
-function handleRadioChange(event) {
-  console.log("Selected difficulty:", event.target.value);
-  // Adicione aqui a função que você deseja acionar
-  if (event.target.value == "easy") {
-    alerta('dificuldade fácil selecionada', 3000);
-     snakeVelocidade = 3; //snake speed
-     snakeSegmentos = 3; //segmentos iniciais
-     saveData.dificuldade = event.target.value;
-  } else if (event.target.value == "medium") {
-    alerta('dificuldade médio selecionada', 3000);
-     snakeVelocidade = 5; //snake speed
-     snakeSegmentos = 5; //segmentos iniciais
-     saveData.dificuldade = event.target.value;
-  } else if (event.target.value == "hard") {
-    alerta('dificuldade difícil selecionada', 3000);
-     snakeVelocidade = 10; //snake speed
-     snakeSegmentos = 10; //segmentos iniciais
-     saveData.dificuldade = event.target.value;
+// Função para carregar configurações do localStorage
+
+function loadSettings() {
+  const savedData = JSON.parse(localStorage.getItem('saveData'));
+
+  if (savedData) {
+    // Aplicar dificuldade salva
+    const difficulty = savedData.dificuldade;
+    if (difficulty) {
+    document.querySelector(`input[name="toggle"][value="${difficulty}"]`).checked = true;
+      applySettings(difficulty);
+    }
+
+    // Aplicar tema salvo
+    const theme = savedData.temas;
+    if (theme) {
+      document.querySelector(`input[name="toggle"][value="${theme}"]`).checked = true;
+      applySettings(theme);
+    }
   }
-  
-  
-  if (event.target.value == "default") {
+}
+loadSettings();
+// Carregar configurações quando a página é carregada
+window.addEventListener('DOMContentLoaded', loadSettings);
+
+// Função para aplicar as configurações com base no valor
+function applySettings(value) {
+  let saveData = JSON.parse(localStorage.getItem('saveData')) || {};
+
+  if (value === "easy") {
+    alerta('dificuldade fácil selecionada', 3000);
+    snakeVelocidade = 3;
+    snakeSegmentos = 3;
+    saveData.dificuldade = value;
+  } else if (value === "medium") {
+    alerta('dificuldade médio selecionada', 3000);
+    snakeVelocidade = 5;
+    snakeSegmentos = 5;
+    saveData.dificuldade = value;
+  } else if (value === "hard") {
+    alerta('dificuldade difícil selecionada', 3000);
+    snakeVelocidade = 10;
+    snakeSegmentos = 10;
+    saveData.dificuldade = value;
+  } else if (value === "default") {
     alerta('tema padrão selecionado', 3000);
-     //color green (area de Jogo, mostrador de nivel, borda do jogo)
-     colorTheme = "green";
-     colorTheme2 = "lime";
-     verdeButton.classList.add('themegreen');
-     amareloButton.classList.add('themegreen');
-     azulButton.classList.add('themegreen');
-     rosaButton.classList.add('themegreen');
-     
-     
-     
-     
-     saveData.temas = event.target.value;
-  } else if (event.target.value == "azul") {
+    colorTheme = "green";
+    colorTheme2 = "lime";
+    verdeButton.classList.add('themegreen');
+    amareloButton.classList.add('themegreen');
+    azulButton.classList.add('themegreen');
+    rosaButton.classList.add('themegreen');
+    saveData.temas = value;
+  } else if (value === "azul") {
     alerta('tema azul selecionado', 3000);
-     //color blue (area de Jogo, mostrador de nivel, borda do jogo)
-     colorTheme = "blue";
-     colorTheme2 = "navy";
-     levelButton.classList.add('themeblue');
-     
-     saveData.temas = event.target.value;
-  } else if (event.target.value == "amarelo") {
+    colorTheme = "blue";
+    colorTheme2 = "navy";
+    levelButton.classList.add('themeblue');
+    saveData.temas = value;
+  } else if (value === "amarelo") {
     alerta('tema amarelo selecionado', 3000);
-     //color yellow (area de Jogo, mostrador de nivel, borda do jogo)
-     colorTheme = "yellow";
-     colorTheme2 = "gold";
-     levelButton.classList.add('themeyellow');
-     
-     saveData.temas = event.target.value;
-  } else if (event.target.value == "rosa") {
+    colorTheme = "yellow";
+    colorTheme2 = "gold";
+    levelButton.classList.add('themeyellow');
+    saveData.temas = value;
+  } else if (value === "rosa") {
     alerta('tema rosa selecionado', 3000);
-    //color pink (area de Jogo, mostrador de nivel, borda do jogo)
     colorTheme = "pink";
     colorTheme2 = "purple";
     levelButton.classList.add('themepink');
-  
-    saveData.temas = event.target.value;
+    saveData.temas = value;
   }
+
   levelButton.style.border = `4px solid ${colorTheme}`;
-  
-	  localStorage.setItem('saveData', JSON.stringify(saveData));
+  localStorage.setItem('saveData', JSON.stringify(saveData));
 }
 
+// Função handleRadioChange para lidar com as mudanças nos rádios
+function handleRadioChange(event) {
+  applySettings(event.target.value);
+}
 document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
   radio.addEventListener('change', handleRadioChange);
 });
@@ -612,9 +640,6 @@ document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
     var score = 0;
     
     
-    let savedLevel = saveData.level || 0;
-    let highScore = saveData.highScore || 0;
-    let savedSkin = saveData.skin || 0;
     document.getElementById('high-score').textContent = 'High Score: ' + highScore;
     
     // Load images
