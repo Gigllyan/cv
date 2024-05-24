@@ -83,6 +83,50 @@ header {
     object-fit: cover; /* Ajuste conforme necessário */
 }
 
+.toggle-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
+
+.themegreen input[type="radio"]:checked + label {
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
+
+.themeblue input[type="radio"]:checked + label {
+    background-color: blue;
+    color: #fff;
+    border-color: blue;
+}
+.themeyellow input[type="radio"]:checked + label {
+    background-color: yellow;
+    color: #000;
+    border-color: yellow;
+}
+.themepink input[type="radio"]:checked + label {
+    background-color: violet;
+    color: #fff;
+    border-color: violet;
+}
 
 #options-paused button {
     /* Estilize seu botão conforme necessário */
@@ -92,8 +136,30 @@ header {
 .current-level {
     font-weight: bold;
     color: red;
+    border: 1px solid red;
+    margin: 1px;
+    padding: 1px;
 }
 
+
+
+
+    #tempDiv {
+      position: fixed;
+      top: 20%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+    
+    
+    
+    
 
 
 
@@ -143,6 +209,18 @@ header {
       <button id="score">Score: 0</button>
       <button id="level" onclick="toggleContent(this)">Level: 1</button>
       <div class="menudrop">
+        <div id="statusAtual">
+          statusAtual
+          <div id="foodsCapturadas">
+            10 foods (x1)
+          </div>
+          <div id="superFoodsCapturadas">
+            3 superfoods (x3)
+          </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
         <div id="XP">
           xpoculto
         </div>
@@ -164,6 +242,7 @@ header {
 
             if (content.style.display === 'none' || content.style.display === '') {
                 content.style.display = 'block';
+                
             } else {
                 content.style.display = 'none';
             }
@@ -172,7 +251,7 @@ header {
   </header>
   <br/>
       <div id="top-canvas">
-        <canvas id="viewport" width="640" height="480"></canvas>
+        <canvas id="viewport"></canvas>
 
         <div id="dados-usuario" style="width: 90%;display:none;">
           Olá,
@@ -184,9 +263,33 @@ header {
             <div id="fingerPrint">FingerPrint: </div>
           </div>
           <hr/>
-          <div id="options-paused">
+          <div id="options-paused" style="display:block">
+             <div id="">
+               <div class="toggle-group">
+            <input type="radio" id="easy" name="toggle" value="easy" selected="true" selected>
+            <label for="easy">Fácil 
+            </label>
+
+            <input type="radio" id="medium" name="toggle" value="medium">
+            <label for="medium">Médio</label>
+
+            <input type="radio" id="hard" name="toggle" value="hard">
+            <label for="hard">Difícil</label>
+        </div>
+             </div>
+             <hr/>
+             <div style="display:flex">
+               
              <img id="preview-button" src="" style="width:64px;height:64px;"/>
              <button id="myBtn">Skins</button>
+             </div>
+             <hr/>
+             <div style="display:flex">
+               
+             <button id="temas">Temas</button>
+             <button id="cores">Cores</button>
+             </div>
+             
           </div>
           
         </div>
@@ -277,12 +380,52 @@ header {
 
 </div>
 
+<div id="myModalCores" class="modal">
+
+  <div class="modal-content">
+    <span class="close">×</span>
+		  <h2>Temas</h2>
+          <div id="temascontainer" style="">
+            
+          <div class="toggle-group">
+
+              <input type="radio" id="default" name="toggle" value="default">
+              <label for="default">Padrão</label>
+              
+              <input type="radio" id="azul" name="toggle" value="azul" selected="true" selected>
+              <label for="azul">Azul 
+              </label>
+
+              <input type="radio" id="amarelo" name="toggle" value="amarelo">
+              <label for="amarelo">Amarelo</label>
+
+              <input type="radio" id="rosa" name="toggle" value="rosa">
+              <label for="rosa">Rosa</label>
+          </div>
+        </div>
+          
+		  <h2>Avançado</h2>
+          <div id="corescontainer" style="">conteúdo de cores</div>
+		  <span class="close">Fechar</span>
+  </div>
+
+</div>
+
 <script> //modal
 document.addEventListener('DOMContentLoaded', (event) => {
+var coresModal = document.getElementById("myModalCores");
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
+var cores = document.getElementById("cores");
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close")[1];
+var span3 = document.getElementsByClassName("close")[2];
+var span4 = document.getElementsByClassName("close")[3];
+
+cores.onclick = function() {
+  coresModal.style.display = "block";
+}
+
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -294,10 +437,19 @@ span.onclick = function() {
 span2.onclick = function() {
   modal.style.display = "none";
 }
+span3.onclick = function() {
+  coresModal.style.display = "none";
+}
+span4.onclick = function() {
+  coresModal.style.display = "none";
+}
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+  if (event.target == coresModal) {
+    coresModal.style.display = "none";
   }
 }
 });
@@ -310,10 +462,135 @@ window.onclick = function(event) {
 	
 <script> //game
   window.onload = function() {
+    var currentLevel = 1;
+    let levelButton = document.getElementById('level');
+    
+    function alerta(message, duration) {
+  // Cria a div
+  const tempDiv = document.createElement('div');
+  tempDiv.id = 'tempDiv';
+  tempDiv.textContent = message;
+
+  // Adiciona a div ao body
+  document.body.appendChild(tempDiv);
+
+  // Remove a div após a duração especificada
+  setTimeout(() => {
+    document.body.removeChild(tempDiv);
+  }, duration);
+}
+
+
+    let saveData = JSON.parse(localStorage.getItem("saveData")) || {};
+    
+    var snakeVelocidade = 3; //snake speed
+    var snakeSegmentos = 3; //segmentos iniciais
+    var colorTheme = "green";
+    var colorTheme2 = "lime";
+    var azulButton = document.getElementById("blue");
+    var amareloButton = document.getElementById("yellow");
+    var rosaButton = document.getElementById("pink");
+    var verdeButton = document.getElementById("default");
+function handleRadioChange(event) {
+  console.log("Selected difficulty:", event.target.value);
+  // Adicione aqui a função que você deseja acionar
+  if (event.target.value == "easy") {
+    alerta('dificuldade fácil selecionada', 3000);
+     snakeVelocidade = 3; //snake speed
+     snakeSegmentos = 3; //segmentos iniciais
+     saveData.dificuldade = event.target.value;
+  } else if (event.target.value == "medium") {
+    alerta('dificuldade médio selecionada', 3000);
+     snakeVelocidade = 5; //snake speed
+     snakeSegmentos = 5; //segmentos iniciais
+     saveData.dificuldade = event.target.value;
+  } else if (event.target.value == "hard") {
+    alerta('dificuldade difícil selecionada', 3000);
+     snakeVelocidade = 10; //snake speed
+     snakeSegmentos = 10; //segmentos iniciais
+     saveData.dificuldade = event.target.value;
+  }
+  
+  
+  if (event.target.value == "default") {
+    alerta('tema padrão selecionado', 3000);
+     //color green (area de Jogo, mostrador de nivel, borda do jogo)
+     colorTheme = "green";
+     colorTheme2 = "lime";
+     verdeButton.classList.add('themegreen');
+     amareloButton.classList.add('themegreen');
+     azulButton.classList.add('themegreen');
+     rosaButton.classList.add('themegreen');
+     
+     
+     
+     
+     saveData.temas = event.target.value;
+  } else if (event.target.value == "azul") {
+    alerta('tema azul selecionado', 3000);
+     //color blue (area de Jogo, mostrador de nivel, borda do jogo)
+     colorTheme = "blue";
+     colorTheme2 = "navy";
+     levelButton.classList.add('themeblue');
+     
+     saveData.temas = event.target.value;
+  } else if (event.target.value == "amarelo") {
+    alerta('tema amarelo selecionado', 3000);
+     //color yellow (area de Jogo, mostrador de nivel, borda do jogo)
+     colorTheme = "yellow";
+     colorTheme2 = "gold";
+     levelButton.classList.add('themeyellow');
+     
+     saveData.temas = event.target.value;
+  } else if (event.target.value == "rosa") {
+    alerta('tema rosa selecionado', 3000);
+    //color pink (area de Jogo, mostrador de nivel, borda do jogo)
+    colorTheme = "pink";
+    colorTheme2 = "purple";
+    levelButton.classList.add('themepink');
+  
+    saveData.temas = event.target.value;
+  }
+  levelButton.style.border = `4px solid ${colorTheme}`;
+  
+	  localStorage.setItem('saveData', JSON.stringify(saveData));
+}
+
+document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
+  radio.addEventListener('change', handleRadioChange);
+});
+    
+   
+    
+    
+    
     // Get the canvas and context
     var canvas = document.getElementById("viewport"); 
     var context = canvas.getContext("2d");
     
+    
+        // Get the dimensions of the viewport
+    const viewportWidth = Math.min(window.innerWidth, 800); // Limit the size for very large screens
+    const viewportHeight = Math.min(window.innerHeight, 600); // Limit the size for very large screens
+    console.log(viewportWidth);
+    console.log(viewportHeight);
+    
+    //Define o tamanho do canvas
+    if (viewportWidth >= 700) {
+      //tela grande width="640" height="480" canvas#viewport
+      var numColunas = 20; //total de colunas
+      var numLinhas = 15; //total de linhas
+      canvas.width = 640;
+      canvas.height = 480;
+    
+    } else  {
+      //tela pequena
+      var numColunas = 15; //total de colunas
+      var numLinhas = 20; //total de linhas
+      canvas.width = 480;
+      canvas.height = 640;
+    
+     }
     // Timing and frames per second
     var lastframe = 0;
     var fpstime = 0;
@@ -333,8 +610,8 @@ window.onclick = function(event) {
     var preloaded = false;
     var currentSkin = 1;
     var score = 0;
-    var currentLevel = 1;
-    let saveData = JSON.parse(localStorage.getItem("saveData")) || {};
+    
+    
     let savedLevel = saveData.level || 0;
     let highScore = saveData.highScore || 0;
     let savedSkin = saveData.skin || 0;
@@ -487,7 +764,7 @@ window.onclick = function(event) {
 
     // Create objects
     var snake = new Snake();
-    var level = new Level(20, 15, 32, 32);
+    var level = new Level(numColunas, numLinhas, 32, 32);
     
     // Variables
     var score = 0;              // Score
@@ -500,28 +777,28 @@ window.onclick = function(event) {
         // Load images
         images = loadImages([
           { src: "imgs/skins/snake-graphics1.png", 
-            level: "0", 
+            level: 0, 
             name: "Clássica", 
             description: "Descrição da Skin 1"
           },
           { src: "imgs/skins/snake-graphics2.png", 
-            level: "2",
+            level: 2,
             name: "Regulus",
             description: "Descrição da Skin 2" 
           },
           { src: "imgs/skins/snake-graphics3.png",
-            level: "3",
+            level: 3,
             name: "Gravina",
             description: "Descrição da Skin 3"
            },
           { src: "imgs/skins/snake-graphics4.png", 
-            level: "4", 
+            level: 4, 
             name: "UFO",
             description: "Descrição da Skin 4"
            },
           {
             src: "imgs/skins/snake-graphics5.png",
-            level: "5",
+            level: 5,
             name: "Jacko",
             description: "Descrição da Skin 5"
           },
@@ -547,8 +824,189 @@ window.onclick = function(event) {
         
     }
     
+    
+// Criação do array pontuação por level
+const pontuacao = [0];
+for (let i = 1; i < 100; i++) {
+    let nextValue = pontuacao[pontuacao.length - 1] + (pontuacao[pontuacao.length - 1] * 0.5 || 20); // Adiciona 20 inicialmente para evitar 0
+    let roundedValue = Math.ceil(nextValue / 5) * 5; // Arredonda para o próximo múltiplo de 5
+    pontuacao.push(roundedValue);
+}
+
+// Verificando os primeiros elementos do array
+console.log("array pontuação (20 primeiros lvl) " + pontuacao.slice(0, 20));
+
+// Função para escrever na div XP
+function escreverPontuacao() {
+    const xpDiv = document.getElementById('XP');
+    xpDiv.innerHTML = '';
+
+    for (let i = 0; i < pontuacao.length; i++) {
+        const level = i + 1;
+        const pontos = pontuacao[i];
+        const isCurrent = level === currentLevel;
+
+        const levelDiv = document.createElement('div');
+        if (isCurrent) {
+            levelDiv.classList.add('current-level');
+            levelDiv.textContent = `Nível ${level}: ${pontos} (${score}) pontos`;
+        } else {
+            levelDiv.textContent = `Nível ${level}: ${pontos}`;
+        }
+
+        xpDiv.appendChild(levelDiv);
+    }
+}
+
+// Chama a função para escrever na div
+escreverPontuacao();
+
+   
+   
+    
+   	// Update game score level and skin
+  	function updateScore() {
+  	  
+	  document.getElementById('score').textContent = 'Score: ' + score;
+	
+    for (let i = 0; i < pontuacao.length; i++) {
+        if (score >= pontuacao[i]) {
+            currentLevel = i + 1;
+        } else {
+            break;
+        }
+    }
+
+  	if (currentLevel > savedLevel ) {
+  	  
+  	  alerta('nova Skin desbloqueada', 3000);
+	  saveData.skin = savedSkin;
+	  saveData.level = currentLevel;
+	  
+	  localStorage.setItem('saveData', JSON.stringify(saveData));
+	  savedLevel = currentLevel; 
+	  loadSkins();
+	  
+	}
+	  
+	
+	  // Update high score if needed
+	  if (score > highScore) {
+	    highScore = score;
+	    
+	    saveData.highScore = highScore;
+	    localStorage.setItem('saveData', JSON.stringify(saveData));
+	    document.getElementById('high-score').textContent = 'High Score: ' + highScore;
+	  }
+	  
+    // Calculate the percentage progress to the next level
+    let progressPercentage = 0;
+    if (currentLevel < pontuacao.length) {
+        let nextLevelScore = pontuacao[currentLevel];
+        let previousLevelScore = pontuacao[currentLevel - 1];
+        let levelRange = nextLevelScore - previousLevelScore;
+        let scoreInCurrentLevel = score - previousLevelScore;
+        progressPercentage = (scoreInCurrentLevel / levelRange) * 100;
+    } else {
+        progressPercentage = 100;
+    }
+
+    // Update the button color based on progressPercentage
+    
+    levelButton.style.background = `linear-gradient(to right, ${colorTheme}, ${progressPercentage}%, white ${progressPercentage}%)`;
+    
+    // Update score button
+    //let scoreButton = document.getElementById('score');
+    //scoreButton.textContent = `Score ${score} / ${pontuacao[currentLevel]}`;
+document.getElementById('level').textContent = `Nível ${currentLevel} (${score} / ${pontuacao[currentLevel]}) `;
+//document.getElementById('level').textContent = 'Level: ' + currentLevel;
+	  loadSkins();
+	  escreverPontuacao();
+	}
+	
+	
+    
+	// Carrega as skins disponíveis baseado no nível do jogador
+    function loadSkins() {
+        const playerLevel = savedLevel;
+
+        var skinsContainer = document.getElementById('skinscontainer');
+        skinsContainer.innerHTML = ''; // Limpa as skins anteriores
+//alert("skins loaded");
+        images.forEach((image, index) => {
+            const imageLevel = parseInt(image.level, 10); // Converte a string para número
+
+            if (playerLevel >= imageLevel) {
+                let skinPreview = document.createElement('div');
+                skinPreview.classList.add('skin-preview');
+
+                // Cria um elemento canvas para desenhar as partes da imagem
+                let canvas = document.createElement('canvas');
+                canvas.width = 3 * 64; // Largura para três partes
+                canvas.height = 64; // Altura para cada parte
+                let ctx = canvas.getContext('2d');
+
+                // Desenha a cauda
+                ctx.drawImage(image, 4 * 64, 2 * 64, 64, 64, 0, 0, 64, 64);
+
+                // Desenha a cabeça
+                ctx.drawImage(image, 4 * 64, 0 * 64, 64, 64, 64, 0, 64, 64);
+
+                // Desenha a maçã
+                ctx.drawImage(image, 0 * 64, 3 * 64, 64, 64, 2 * 64, 0, 64, 64);
+
+                // Adiciona o canvas à div skinPreview
+                skinPreview.appendChild(canvas);
+
+                // Adiciona o nome da skin
+                let nameDiv = document.createElement('div');
+                nameDiv.textContent = image.name;
+                skinPreview.appendChild(nameDiv);
+
+                // Adiciona o evento de clique para mudar a skin da snake
+                skinPreview.addEventListener('click', function () {
+                    applySkin(index);
+                });
+
+                skinsContainer.appendChild(skinPreview);
+            } else {
+                let skinPreview = document.createElement('div');
+                skinPreview.classList.add('skin-preview');
+                skinPreview.classList.add('bloqueado');
+
+                // Cria um elemento canvas para desenhar as partes da imagem
+                let canvas = document.createElement('canvas');
+                canvas.width = 3 * 64; // Largura para três partes
+                canvas.height = 64; // Altura para cada parte
+                let ctx = canvas.getContext('2d');
+
+                // Desenha a cauda
+                ctx.drawImage(image, 4 * 64, 2 * 64, 64, 64, 0, 0, 64, 64);
+
+                // Desenha a cabeça
+                ctx.drawImage(image, 4 * 64, 0 * 64, 64, 64, 64, 0, 64, 64);
+
+                // Desenha a maçã
+                ctx.drawImage(image, 0 * 64, 3 * 64, 64, 64, 2 * 64, 0, 64, 64);
+
+                // Adiciona o canvas à div skinPreview
+                skinPreview.appendChild(canvas);
+
+                // Adiciona o nome da skin
+                let nameDiv = document.createElement('div');
+                nameDiv.textContent = image.name + " (nivel requerido: " + image.level + ")";
+                skinPreview.appendChild(nameDiv);
+
+                skinsContainer.appendChild(skinPreview);
+            }
+        });
+    }
+    
+    
+    
     // Check if we can start a new game
     function tryNewGame() {
+      loadSkins();
         if (gameovertime > gameoverdelay) {
             newGame();
             gameover = false;
@@ -556,8 +1014,9 @@ window.onclick = function(event) {
     }
     
     function newGame() {
+      loadSkins();
         // Initialize the snake (posx, posy, right, speed, segments)
-        snake.init(10, 10, 1, 5, 2);
+        snake.init(10, 10, 1, snakeVelocidade, snakeSegmentos);
         
         // Generate the default level
         level.generate();
@@ -613,13 +1072,13 @@ window.onclick = function(event) {
           var tiley = j * level.tileheight;
     
           if (tile == 0) {
-            context.fillStyle = "green";
+            context.fillStyle = colorTheme;
             context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
           } else if (tile == 1) {
-            context.fillStyle = "lime";
+            context.fillStyle = colorTheme2;
             context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
           } else if (tile == 2 || tile == 3) {
-            context.fillStyle = "green";
+            context.fillStyle = colorTheme;
             context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
     
             if (tile == 3) {
@@ -688,180 +1147,11 @@ window.onclick = function(event) {
         }
     }
     
-// Criação do array pontuação
-const pontuacao = [0];
-for (let i = 1; i < 100; i++) {
-    let nextValue = pontuacao[pontuacao.length - 1] + (pontuacao[pontuacao.length - 1] * 0.5 || 20); // Adiciona 20 inicialmente para evitar 0
-    let roundedValue = Math.ceil(nextValue / 5) * 5; // Arredonda para o próximo múltiplo de 5
-    pontuacao.push(roundedValue);
-}
 
-// Verificando os primeiros elementos do array
-console.log("array pontuação (20 primeiros lvl) " + pontuacao.slice(0, 20));
 
-// Função para escrever na div XP
-function escreverPontuacao() {
-    const xpDiv = document.getElementById('XP');
-    xpDiv.innerHTML = '';
 
-    for (let i = 0; i < pontuacao.length; i++) {
-        const level = i + 1;
-        const pontos = pontuacao[i];
-        const isCurrent = level === currentLevel;
-
-        const levelDiv = document.createElement('div');
-        if (isCurrent) {
-            levelDiv.classList.add('current-level');
-            levelDiv.textContent = `Nível ${level}: ${pontos} (${score}) pontos`;
-        } else {
-            levelDiv.textContent = `Nível ${level}: ${pontos}`;
-        }
-
-        xpDiv.appendChild(levelDiv);
-    }
-}
-
-// Chama a função para escrever na div
-escreverPontuacao();
-
-   	// Update game score level and skin
-  	function updateScore() {
-  	  
-	  document.getElementById('score').textContent = 'Score: ' + score;
 	
-    for (let i = 0; i < pontuacao.length; i++) {
-        if (score >= pontuacao[i]) {
-            currentLevel = i + 1;
-        } else {
-            break;
-        }
-    }
-
-  	if (currentLevel > savedLevel ) {
-	  saveData.skin = savedSkin;
-	  saveData.level = currentLevel;
-	  saveData.highScore = highScore;
-	  
-	  localStorage.setItem('saveData', JSON.stringify(saveData));
-	  
-	}
-	  
-	
-	  // Update high score if needed
-	  if (score > highScore) {
-	    highScore = score;
-	    saveData.skin = savedSkin;
-	    saveData.highScore = highScore;
-	    localStorage.setItem('saveData', JSON.stringify(saveData));
-	    document.getElementById('high-score').textContent = 'High Score: ' + highScore;
-	  }
-	  
-    // Calculate the percentage progress to the next level
-    let progressPercentage = 0;
-    if (currentLevel < pontuacao.length) {
-        let nextLevelScore = pontuacao[currentLevel];
-        let previousLevelScore = pontuacao[currentLevel - 1];
-        let levelRange = nextLevelScore - previousLevelScore;
-        let scoreInCurrentLevel = score - previousLevelScore;
-        progressPercentage = (scoreInCurrentLevel / levelRange) * 100;
-    } else {
-        progressPercentage = 100;
-    }
-
-    // Update the button color based on progressPercentage
-    let levelButton = document.getElementById('level');
-    levelButton.style.background = `linear-gradient(to right, green ${progressPercentage}%, white ${progressPercentage}%)`;
-    
-    // Update score button
-    //let scoreButton = document.getElementById('score');
-    //scoreButton.textContent = `Score ${score} / ${pontuacao[currentLevel]}`;
-document.getElementById('level').textContent = `Nível ${currentLevel} (${score} / ${pontuacao[currentLevel]}) `;
-//document.getElementById('level').textContent = 'Level: ' + currentLevel;
-	
-	  // Add preview image and click event to change snake skin
-	  var skinsContainer = document.getElementById('skinscontainer');
-	  skinsContainer.innerHTML = ''; // Clear previous skins
-	  
-	  function loadSkins() {
-    const playerLevel = savedLevel;
-    
-
-    images.forEach((image, index) => {
-        const imageLevel = parseInt(image.level, 10); // Converting string to number
-        if (playerLevel >= imageLevel) {
-            let skinPreview = document.createElement('div');
-            skinPreview.classList.add('skin-preview');
-
-            // Create a canvas element to draw the parts of the image
-            let canvas = document.createElement('canvas');
-            canvas.width = 3 * 64; // Width for three parts
-            canvas.height = 64; // Height for each part
-            let ctx = canvas.getContext('2d');
-
-            // Draw the tail
-            ctx.drawImage(image, 4*64, 2*64, 64, 64, 0, 0, 64, 64);
-
-            // Draw the head
-            ctx.drawImage(image, 4 * 64, 0*64, 64, 64, 64, 0, 64, 64);
-
-            // Draw the apple
-            ctx.drawImage(image, 0 * 64, 3*64, 64, 64, 2 * 64, 0, 64, 64);
-
-            // Append the canvas to the skinPreview div
-            skinPreview.appendChild(canvas);
-
-            // Add the skin name
-            let nameDiv = document.createElement('div');
-            nameDiv.textContent = image.name+" (nivel: "+image.level+")";
-            skinPreview.appendChild(nameDiv);
-
-            // Add click event to change the snake skin
-            skinPreview.addEventListener('click', function() {
-                 // Assuming index starts from 0
-                applySkin(index);
-            });
-
-            skinsContainer.appendChild(skinPreview);
-            
-        }
-        else  {
-            let skinPreview = document.createElement('div');
-            skinPreview.classList.add('skin-preview');
-            skinPreview.classList.add('bloqueado');
-
-            // Create a canvas element to draw the parts of the image
-            let canvas = document.createElement('canvas');
-            canvas.width = 3 * 64; // Width for three parts
-            canvas.height = 64; // Height for each part
-            let ctx = canvas.getContext('2d');
-
-            // Draw the tail
-            ctx.drawImage(image, 4*64, 2*64, 64, 64, 0, 0, 64, 64);
-
-            // Draw the head
-            ctx.drawImage(image, 4 * 64, 0*64, 64, 64, 64, 0, 64, 64);
-
-            // Draw the apple
-            ctx.drawImage(image, 0 * 64, 3*64, 64, 64, 2 * 64, 0, 64, 64);
-
-            // Append the canvas to the skinPreview div
-            skinPreview.appendChild(canvas);
-
-            // Add the skin name
-            let nameDiv = document.createElement('div');
-            nameDiv.textContent = image.name+" (nivel: "+image.level+")";
-            skinPreview.appendChild(nameDiv);
-
-            // Add click event to change the snake skin
-            
-
-            skinsContainer.appendChild(skinPreview);
-            
-        } 
-    });
-}
-
-	  // Function to apply the selected skin
+	  // Function to apply the selected skin onclick preview
 	  function applySkin(index) {
 	    var modal = document.getElementById("myModal");
 	    modal.style.display = "none";
@@ -872,21 +1162,19 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
 	    savedSkin = index;
 	    saveData.skin = savedSkin;
 	    localStorage.setItem('saveData', JSON.stringify(saveData));
+	    alerta('nova skin selecionada', 3000);
 	    // Implement your logic to apply the skin here
 	  }
 	  
+    // Carregar a skin salva do localStorage
 	  function loadSavedSkin() {
 	  const savedData = JSON.parse(localStorage.getItem('saveData'));
 	  if (savedData && savedData.skin !== undefined) {
 	    applySkin(savedData.skin);
 	  }
 	}
-    // Carregar a skin salva do localStorage
     loadSavedSkin();
-	  loadSkins();
-	  escreverPontuacao();
-	}
-	
+	  
     function updateGame(dt) {
       // Move the snake
       if (snake.tryMove(dt)) {
@@ -1209,6 +1497,11 @@ if (gameover && gameovertime > gameoverdelay && !paused) {
 
 
 
+
+
+
+
+
     // Movimentação pelo Teclado
     function onKeyDown(e) {
 	if (gameover  && !paused) {
@@ -1309,10 +1602,19 @@ if (gameover && gameovertime > gameoverdelay && !paused) {
     canvas.addEventListener("touchmove", onTouchMove);
     canvas.addEventListener("mousedown", onMouseDown);
     
+    
+    
+    document.getElementById('level').addEventListener('click', function() {
+      if (!paused) {
+        togglePause();
+        loadSkins();
+      } 
+    });
+    
     // Call init to start the game
     init();
     updateScore();
-
+loadSkins();
 
 
 
