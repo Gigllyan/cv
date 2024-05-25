@@ -157,7 +157,52 @@ input[type="radio"]:checked + label {
       z-index: 1000;
     }
     
-    
+    .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="color"] {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .form-group .checkbox-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .form-group .checkbox-label span {
+            font-weight: normal;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
     
     
 
@@ -210,17 +255,21 @@ input[type="radio"]:checked + label {
       <button id="level" onclick="toggleContent(this)">Level: 1</button>
       <div class="menudrop">
         <div id="statusAtual">
-          statusAtual
-          <div id="foodsCapturadas">
-            10 foods (x1)
+          <h3>Estatísticas</h3>
+          <div id="normalFoodsCapturadas">
+            0 food
           </div>
           <div id="superFoodsCapturadas">
-            3 superfoods (x3)
+            0 superfood 
+          </div>
+          <div id="totalFoodsCapturados">
+            total: 0
           </div>
         </div>
         <br/>
         <hr/>
         <br/>
+        <h3>Tabela de XP por level</h3>
         <div id="XP">
           xpoculto
         </div>
@@ -279,6 +328,8 @@ input[type="radio"]:checked + label {
         </div>
              </div>
              <hr/>
+             
+               <h2>Personalização </h2>
              <div style="display:flex">
                
              <img id="preview-button" src="" style="width:64px;height:64px;"/>
@@ -388,6 +439,13 @@ input[type="radio"]:checked + label {
 		  <h2>Temas</h2>
           <div id="temascontainer" style="">
             
+            <div class="form-group">
+                <label for="modoNoturno">Modo Noturno</label>
+                <div class="checkbox-label">
+                    <input type="checkbox" id="modoNoturno">
+                    <span>Ativar Modo Noturno</span>
+                </div>
+            </div>
           <div class="toggle-group">
 
               <input type="radio" id="default" name="toggle" value="default">
@@ -406,7 +464,33 @@ input[type="radio"]:checked + label {
         </div>
           
 		  <h2>Avançado</h2>
-          <div id="corescontainer" style="">conteúdo de cores</div>
+          <div id="corescontainer" style="">
+            
+            <div class="form-group">
+                <label for="cor1">Cor 1</label>
+                <input type="color" id="cor1" name="toggle">
+            </div>
+            <div class="form-group">
+                <label for="cor2">Cor 2</label>
+                <input type="color" id="cor2" name="toggle">
+            </div>
+            <div class="form-group">
+                <label for="cortexto1">Cor Texto 1</label>
+                <input type="color" id="cortexto1" name="toggle">
+            </div>
+            <div class="form-group">
+                <label for="cortexto2">Cor Texto 2</label>
+                <input type="color" id="cortexto2" name="toggle">
+            </div>
+            <div class="form-group">
+                <label for="corlinks1">Cor Links 1</label>
+                <input type="color" id="corlinks1" name="toggle">
+            </div>
+            <div class="form-group">
+                <label for="corlinks2">Cor Links 2</label>
+                <input type="color" id="corlinks2" name="toggle">
+            </div>
+          </div>
 		  <span class="close">Fechar</span>
   </div>
 
@@ -464,9 +548,17 @@ window.onclick = function(event) {
 <script> //game
   window.onload = function() {
     
-    var foodCounterTotal = 0;
-    var foodCounterNormalFood = 0;
-    var foodCounterSuperFood = 0;
+        var foodCounterTotal = 0;
+        var foodCounterNormalFood = 0;
+        var foodCounterSuperFood = 0;
+        var foodTotalDiv = document.getElementById('totalFoodsCapturados');
+        var foodSuperFoodDiv = document.getElementById('superFoodsCapturadas');
+        var foodNormalFoodDiv = document.getElementById('normalFoodsCapturadas');
+    
+    
+    
+    
+    
     
     
     var currentLevel = 1;
@@ -488,23 +580,23 @@ window.onclick = function(event) {
 }
 
 
-    let saveData = JSON.parse(localStorage.getItem("saveData")) || {};
-    
-    let savedLevel = saveData.level || 0;
-    let highScore = saveData.highScore || 0;
-    let savedSkin = saveData.skin || 0;
-    let savedTheme = saveData.temas || 0;
-    
-    var snakeVelocidade = 3; //snake speed
-    var snakeSegmentos = 3; //segmentos iniciais
-    var colorTheme = "green";
-    var colorTheme2 = "lime";
-    var azulButton = document.getElementById("azul");
-    var amareloButton = document.getElementById("amarelo");
-    var rosaButton = document.getElementById("rosa");
-    var verdeButton = document.getElementById("default");
-// Função para carregar configurações do localStorage
+  let saveData = JSON.parse(localStorage.getItem("saveData")) || {};
 
+let savedLevel = saveData.level || 0;
+let highScore = saveData.highScore || 0;
+let savedSkin = saveData.skin || 0;
+let savedTheme = saveData.temas || 0;
+
+var snakeVelocidade = 3; //snake speed
+var snakeSegmentos = 3; //segmentos iniciais
+var colorTheme = "green";
+var colorTheme2 = "lime";
+var azulButton = document.getElementById("azul");
+var amareloButton = document.getElementById("amarelo");
+var rosaButton = document.getElementById("rosa");
+var verdeButton = document.getElementById("default");
+
+// Função para carregar configurações do localStorage
 function loadSettings() {
   const savedData = JSON.parse(localStorage.getItem('saveData'));
 
@@ -512,7 +604,7 @@ function loadSettings() {
     // Aplicar dificuldade salva
     const difficulty = savedData.dificuldade;
     if (difficulty) {
-    document.querySelector(`input[name="toggle"][value="${difficulty}"]`).checked = true;
+      document.querySelector(`input[name="toggle"][value="${difficulty}"]`).checked = true;
       applySettings(difficulty);
     }
 
@@ -522,12 +614,84 @@ function loadSettings() {
       document.querySelector(`input[name="toggle"][value="${theme}"]`).checked = true;
       applySettings(theme);
     }
+
+    // Aplicar modo noturno salvo
+    const modoNoturno = savedData.modoNoturno;
+    if (modoNoturno) {
+      document.getElementById('modoNoturno').checked = modoNoturno;
+      applySettings('modoNoturno');
+    }
+
+    // Aplicar cores salvas
+    const cor1 = savedData.cor1;
+    if (cor1) {
+      document.getElementById('cor1').value = cor1;
+      applySettings('cor1');
+    }
+
+    const cor2 = savedData.cor2;
+    if (cor2) {
+      document.getElementById('cor2').value = cor2;
+      applySettings('cor2');
+    }
+
+    const cortexto1 = savedData.cortexto1;
+    if (cortexto1) {
+      document.getElementById('cortexto1').value = cortexto1;
+      applySettings('cortexto1');
+    }
+
+    const cortexto2 = savedData.cortexto2;
+    if (cortexto2) {
+      document.getElementById('cortexto2').value = cortexto2;
+      applySettings('cortexto2');
+    }
+
+    const corlinks1 = savedData.corlinks1;
+    if (corlinks1) {
+      document.getElementById('corlinks1').value = corlinks1;
+      applySettings('corlinks1');
+    }
+
+    const corlinks2 = savedData.corlinks2;
+    if (corlinks2) {
+      document.getElementById('corlinks2').value = corlinks2;
+      applySettings('corlinks2');
+    }
   }
 }
 loadSettings();
+
+// Adicionando o evento onchange para os inputs por script
+document.getElementById('modoNoturno').onchange = function () {
+            applySettings('modoNoturno');
+        };
+document.getElementById('cor1').onchange = saveSettings;
+document.getElementById('cor2').onchange = saveSettings;
+document.getElementById('cortexto1').onchange = saveSettings;
+document.getElementById('cortexto2').onchange = saveSettings;
+document.getElementById('corlinks1').onchange = saveSettings;
+document.getElementById('corlinks2').onchange = saveSettings;
+
 // Carregar configurações quando a página é carregada
 window.addEventListener('DOMContentLoaded', loadSettings);
 
+// Função para salvar configurações no localStorage
+function saveSettings() {
+  let saveData = JSON.parse(localStorage.getItem('saveData')) || {};
+
+  saveData.cor1 = document.getElementById('cor1').value;
+  saveData.cor2 = document.getElementById('cor2').value;
+  saveData.cortexto1 = document.getElementById('cortexto1').value;
+  saveData.cortexto2 = document.getElementById('cortexto2').value;
+  saveData.corlinks1 = document.getElementById('corlinks1').value;
+  saveData.corlinks2 = document.getElementById('corlinks2').value;
+
+  localStorage.setItem('saveData', JSON.stringify(saveData));
+  applySettings('colorChange');
+} 
+
+  
 // Função para aplicar as configurações com base no valor
 function applySettings(value) {
   let saveData = JSON.parse(localStorage.getItem('saveData')) || {};
@@ -574,6 +738,17 @@ function applySettings(value) {
     colorTheme2 = "purple";
     levelButton.classList.add('themepink');
     saveData.temas = value;
+  } else if (value === "colorChange") {
+    // Aplicar as cores salvas como colorTheme e colorTheme2
+    colorTheme = document.getElementById('cor1').value;
+    colorTheme2 = document.getElementById('cor2').value;
+    alerta('cores personalizadas aplicadas', 3000);
+  } else if (value === "cor1") {
+    alerta('cor1 modificada', 3000);
+    colorTheme = document.getElementById('cor1').value;
+  } else if (value === "cor2") {
+    alerta('cor2 modificada', 3000);
+    colorTheme2 = document.getElementById('cor2').value;
   }
 
   levelButton.style.border = `4px solid ${colorTheme}`;
@@ -587,8 +762,6 @@ function handleRadioChange(event) {
 document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
   radio.addEventListener('change', handleRadioChange);
 });
-    
-   
     
     
     
@@ -1040,6 +1213,9 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
     
     function newGame() {
       loadSkins();
+            foodCounterTotal = 0;
+            foodCounterNormalFood = 0;
+            foodCounterSuperFood = 0;
         // Initialize the snake (posx, posy, right, speed, segments)
         snake.init(10, 10, 1, snakeVelocidade, snakeSegmentos);
         
@@ -1200,6 +1376,15 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
 	}
     loadSavedSkin();
 	  
+    // Definição inicial das variáveis
+    var foodCounterTotal = 0;
+    var foodCounterNormalFood = 0;
+    var foodCounterSuperFood = 0;
+    
+    var foodTotalDiv = document.getElementById('totalFoodsCapturados');
+    var foodSuperFoodDiv = document.getElementById('superFoodsCapturadas');
+    var foodNormalFoodDiv = document.getElementById('normalFoodsCapturadas');
+    
     function updateGame(dt) {
       // Move the snake
       if (snake.tryMove(dt)) {
@@ -1207,6 +1392,12 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
         var nextmove = snake.nextMove();
         var nx = nextmove.x;
         var ny = nextmove.y;
+        var wrapped = false;
+    
+        // Check if the snake wraps around the canvas
+        if (nx < 0 || nx >= level.columns || ny < 0 || ny >= level.rows) {
+          wrapped = true;
+        }
     
         // Wrap the snake around the canvas
         nx = (nx + level.columns) % level.columns;
@@ -1230,18 +1421,31 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
         if (level.tiles[nx][ny] == 2 || level.tiles[nx][ny] == 3) {
           if (level.tiles[nx][ny] == 3) {
             score += 3; // Superfood gives double points
+            foodCounterSuperFood++;
+            foodCounterTotal++;
           } else {
             score++;
+            foodCounterNormalFood++;
+            foodCounterTotal++;
           }
     
           level.tiles[nx][ny] = 0;
           addApple();
           snake.grow();
-          
+    
           updateScore();
+    
+          // Atualiza o texto das divs
+          foodNormalFoodDiv.textContent = foodCounterNormalFood + ' foods';
+          foodSuperFoodDiv.textContent = foodCounterSuperFood + ' superfood';
+          foodTotalDiv.textContent = 'total: ' + foodCounterTotal;
         }
+    
+        // Update snake segments with wrapped information
+        snake.segments[0].wrapped = wrapped;
       }
     }
+	
     
     function updateFps(dt) {
         if (fpstime > 0.25) {
@@ -1279,21 +1483,20 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
     }
     
     // Draw the level tiles
-    
-
-    // Draw the snake
-    function drawSnake() {
+ // 
+// Draw the snake
+function drawSnake() {
     for (var i = 0; i < snake.segments.length; i++) {
         var segment = snake.segments[i];
         var segx = segment.x;
         var segy = segment.y;
         var tilex = segx * level.tilewidth;
         var tiley = segy * level.tileheight;
-        
+
         // Sprite column and row that gets calculated
         var tx = 0;
         var ty = 0;
-        
+
         if (i == 0) {
             // Head; Determine the correct image based on the second segment to determine direction
             var nseg = snake.segments[i + 1]; // Next segment
@@ -1309,16 +1512,16 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
             } else if (segx < nseg.x && Math.abs(segx - nseg.x) < level.columns - 1) {
                 // Left
                 tx = 3; ty = 1;
-            } else if (segy - nseg.y === level.rows - 1) {
+            } else if ((segy - nseg.y === level.rows - 1) || (segy === 0 && nseg.y === level.rows - 1)) {
                 // Wrap Up to Down
                 tx = 4; ty = 1;
-            } else if (nseg.y - segy === level.rows - 1) {
+            } else if ((nseg.y - segy === level.rows - 1) || (segy === level.rows - 1 && nseg.y === 0)) {
                 // Wrap Down to Up
                 tx = 3; ty = 0;
-            } else if (segx - nseg.x === level.columns - 1) {
+            } else if ((segx - nseg.x === level.columns - 1) || (segx === 0 && nseg.x === level.columns - 1)) {
                 // Wrap Left to Right
                 tx = 4; ty = 0;
-            } else if (nseg.x - segx === level.columns - 1) {
+            } else if ((nseg.x - segx === level.columns - 1) || (segx === level.columns - 1 && nseg.x === 0)) {
                 // Wrap Right to Left
                 tx = 3; ty = 1;
             }
@@ -1337,16 +1540,16 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
             } else if (pseg.x < segx && Math.abs(pseg.x - segx) < level.columns - 1) {
                 // Left
                 tx = 3; ty = 3;
-            } else if (segy - pseg.y === level.rows - 1) {
+            } else if ((segy - pseg.y === level.rows - 1) || (segy === 0 && pseg.y === level.rows - 1)) {
                 // Wrap Up to Down
                 tx = 4; ty = 3;
-            } else if (pseg.y - segy === level.rows - 1) {
+            } else if ((pseg.y - segy === level.rows - 1) || (segy === level.rows - 1 && pseg.y === 0)) {
                 // Wrap Down to Up
                 tx = 3; ty = 2;
-            } else if (segx - pseg.x === level.columns - 1) {
+            } else if ((segx - pseg.x === level.columns - 1) || (segx === 0 && pseg.x === level.columns - 1)) {
                 // Wrap Left to Right
                 tx = 4; ty = 2;
-            } else if (pseg.x - segx === level.columns - 1) {
+            } else if ((pseg.x - segx === level.columns - 1) || (segx === level.columns - 1 && pseg.x === 0)) {
                 // Wrap Right to Left
                 tx = 3; ty = 3;
             }
@@ -1354,36 +1557,47 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
             // Body; Determine the correct image
             var pseg = snake.segments[i - 1]; // Previous segment
             var nseg = snake.segments[i + 1]; // Next segment
-            if (pseg.x < segx && nseg.x > segx || nseg.x < segx && pseg.x > segx) {
+            if ((pseg.x < segx && nseg.x > segx) || (nseg.x < segx && pseg.x > segx)) {
                 // Horizontal Left-Right
                 tx = 1; ty = 0;
-            } else if (pseg.x < segx && nseg.y > segy || nseg.x < segx && pseg.y > segy) {
+            } else if ((pseg.x < segx && nseg.y > segy) || (nseg.x < segx && pseg.y > segy)) {
                 // Angle Left-Down
                 tx = 2; ty = 0;
-            } else if (pseg.y < segy && nseg.y > segy || nseg.y < segy && pseg.y > segy) {
+            } else if ((pseg.y < segy && nseg.y > segy) || (nseg.y < segy && pseg.y > segy)) {
                 // Vertical Up-Down
                 tx = 2; ty = 1;
-            } else if (pseg.y < segy && nseg.x < segx || nseg.y < segy && pseg.x < segx) {
+            } else if ((pseg.y < segy && nseg.x < segx) || (nseg.y < segy && pseg.x < segx)) {
                 // Angle Top-Left
                 tx = 2; ty = 2;
-            } else if (pseg.x > segx && nseg.y < segy || nseg.x > segx && pseg.y < segy) {
+            } else if ((pseg.x > segx && nseg.y < segy) || (nseg.x > segx && pseg.y < segy)) {
                 // Angle Right-Up
                 tx = 0; ty = 1;
-            } else if (pseg.y > segy && nseg.x > segx || nseg.y > segy && pseg.x > segx) {
+            } else if ((pseg.y > segy && nseg.x > segx) || (nseg.y > segy && pseg.x > segx)) {
                 // Angle Down-Right
                 tx = 0; ty = 0;
+            } else if ((pseg.x - segx === level.columns - 1) || (segx === 0 && pseg.x === level.columns - 1) || (nseg.x - segx === level.columns - 1) || (segx === 0 && nseg.x === level.columns - 1)) {
+                // Wrap Left to Right (Body)
+                tx = 1; ty = 0;
+            } else if ((segx - pseg.x === level.columns - 1) || (segx === level.columns - 1 && pseg.x === 0) || (segx - nseg.x === level.columns - 1) || (segx === level.columns - 1 && nseg.x === 0)) {
+                // Wrap Right to Left (Body)
+                tx = 1; ty = 0;
+            } else if ((pseg.y - segy === level.rows - 1) || (segy === level.rows - 1 && pseg.y === 0) || (nseg.y - segy === level.rows - 1) || (segy === level.rows - 1 && nseg.y === 0)) {
+                // Wrap Up to Down (Body)
+                tx = 2; ty = 1;
+            } else if ((segy - pseg.y === level.rows - 1) || (segy === 0 && pseg.y === level.rows - 1) || (segy - nseg.y === level.rows - 1) || (segy === 0 && nseg.y === level.rows - 1)) {
+                // Wrap Down to Up (Body)
+                tx = 2; ty = 1;
             }
         }
-        
+
         // Draw the image of the snake part
         var snakeImage = images[currentSkin - 1]; // Adjust for 0-based array
-        
-            context.drawImage(snakeImage, tx*64, ty*64, 64, 64, tilex, tiley,
-                              level.tilewidth, level.tileheight);
-      }
+        context.drawImage(snakeImage, tx * 64, ty * 64, 64, 64, tilex, tiley, level.tilewidth, level.tileheight);
+    }
 }
-    
-    // Draw text that is centered
+
+
+// Draw text that is centered
     function drawCenterText(text, x, y, width) {
         var textdim = context.measureText(text);
         context.fillText(text, x + (width-textdim.width)/2, y);
