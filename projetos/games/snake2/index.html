@@ -5,6 +5,12 @@
     <title>Snake Game</title>
     	
     <style>
+    body {
+  --bg-color: #fff;
+  --text-color: #000;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 header {
     position: relative;
   
@@ -39,7 +45,7 @@ header {
 }
 #top-canvas {
   position: relative;
-  max-width:100%;
+  max-width:640px;
 }
 #dados-usuario {
 	position: absolute;
@@ -140,6 +146,23 @@ input[type="radio"]:checked + label {
     margin: 1px;
     padding: 1px;
 }
+
+#downloadData, #uploadData {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#uploadData {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
 
 
 
@@ -311,6 +334,7 @@ input[type="radio"]:checked + label {
             <div id="userId">User ID: </div>
             <div id="fingerPrint">FingerPrint: </div>
           </div>
+          
           <hr/>
           <div id="options-paused" style="display:block">
              <div id="">
@@ -332,7 +356,7 @@ input[type="radio"]:checked + label {
                <h2>Personalização </h2>
              <div style="display:flex">
                
-             <img id="preview-button" src="" style="width:64px;height:64px;"/>
+             <img id="preview-button" src="imgs/120522232_3395906680463827_15340082511600334_n.png" style="width:64px;height:64px;"/>
              <button id="myBtn">Skins</button>
              </div>
              <hr/>
@@ -344,10 +368,33 @@ input[type="radio"]:checked + label {
              
           </div>
           
+              
+          <div style="display:block;">
+            <br/>
+             <button class="expand" onclick="toggleContent(this)"> <h2>backup</h2></button>
+             <div style="display:none;">
+                <div style="display:flex">
+                  <button id="downloadData">Baixar Dados</button>
+                  <input type="file" id="uploadData" accept=".snk">
+                </div>
+             </div>
+          </div>
+          
         </div>
         
       </div>
         
+        
+ 
+
+
+
+
+
+
+
+
+
         
         
         
@@ -418,7 +465,6 @@ input[type="radio"]:checked + label {
 	
 	
 	
-	
 
 
 <div id="myModal" class="modal">
@@ -462,10 +508,11 @@ input[type="radio"]:checked + label {
               <label for="rosa">Rosa</label>
           </div>
         </div>
-          
-		  <h2>Avançado</h2>
-          <div id="corescontainer" style="">
-            
+         <br/>
+	<button id="advanced-options" onclick="toggleContent(this)">
+		  <h2>Opções Avançadas</h2> </button>
+      <div id="corescontainer" class="menudroop" style="display:none;margin-top: 20px;">
+        
             <div class="form-group">
                 <label for="cor1">Cor 1</label>
                 <input type="color" id="cor1" name="toggle">
@@ -490,6 +537,10 @@ input[type="radio"]:checked + label {
                 <label for="corlinks2">Cor Links 2</label>
                 <input type="color" id="corlinks2" name="toggle">
             </div>
+        
+      </div> 
+          <div style="">
+            
           </div>
 		  <span class="close">Fechar</span>
   </div>
@@ -538,6 +589,84 @@ window.onclick = function(event) {
   }
 }
 });
+
+
+
+
+
+
+const encryptionKey = "my-secret-key"; 
+        function xorEncryptDecrypt(data, key) {
+            let keyIndex = 0;
+            let output = '';
+
+            for (let i = 0; i < data.length; i++) {
+                output += String.fromCharCode(data.charCodeAt(i) ^ key.charCodeAt(keyIndex));
+                keyIndex = (keyIndex + 1) % key.length;
+            }
+
+            return output;
+        }
+document.getElementById('downloadData').addEventListener('click', downloadData);
+document.getElementById('uploadData').addEventListener('change', uploadData);
+
+function downloadData() {
+            const saveData = JSON.parse(localStorage.getItem('saveData')) || {};
+            let nome = document.getElementById("nome").textContent;
+            const dataStr = JSON.stringify(saveData, null, 2);
+            const encryptedData = xorEncryptDecrypt(dataStr, encryptionKey);
+            const blob = new Blob([encryptedData], { type: 'application/octet-stream' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = '' +nome+' - saveGame.snk';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+function uploadData(event) {
+    const file = event.target.files[0];
+    if (!file) {
+        return;
+    }
+
+    if (!file.name.endsWith('.snk')) {
+        alert('Por favor, carregue um arquivo com a extensão .snk');
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const encryptedData = e.target.result;
+            const decryptedData = xorEncryptDecrypt(encryptedData, encryptionKey);
+            const uploadedData = JSON.parse(decryptedData);
+            localStorage.setItem('saveData', JSON.stringify(uploadedData));
+            alert('Configurações carregadas com sucesso');
+            loadSave(); // Recarregar configurações após upload
+        } catch (error) {
+            alert('Erro ao carregar configurações. Verifique o arquivo.');
+        }
+    };
+    reader.readAsText(file);
+}
+
+function loadSave() {
+    const saveData = JSON.parse(localStorage.getItem('saveData'));
+    if (saveData) {
+        // Aplicar as configurações salvas
+        // Exemplo: document.getElementById('someElement').value = saveData.someSetting;
+        // Adicione aqui o código necessário para aplicar as configurações no seu formulário
+        console.log('Configurações aplicadas:', saveData);
+    } else {
+        console.log('Nenhuma configuração encontrada no localStorage.');
+    }
+}
+
+// Chama a função loadSettings quando a página é carregada
+window.onload = loadSave;
+
 </script>
 	
 	
@@ -598,67 +727,67 @@ var verdeButton = document.getElementById("default");
 
 // Função para carregar configurações do localStorage
 function loadSettings() {
-  const savedData = JSON.parse(localStorage.getItem('saveData'));
+    const savedData = JSON.parse(localStorage.getItem('saveData'));
 
-  if (savedData) {
-    // Aplicar dificuldade salva
-    const difficulty = savedData.dificuldade;
-    if (difficulty) {
-      document.querySelector(`input[name="toggle"][value="${difficulty}"]`).checked = true;
-      applySettings(difficulty);
-    }
+    if (savedData) {
+        // Aplicar dificuldade salva
+        const difficulty = savedData.dificuldade;
+        if (difficulty) {
+            document.querySelector(`input[name="toggle"][value="${difficulty}"]`).checked = true;
+            applySettings(difficulty);
+        }
 
-    // Aplicar tema salvo
-    const theme = savedData.temas;
-    if (theme) {
-      document.querySelector(`input[name="toggle"][value="${theme}"]`).checked = true;
-      applySettings(theme);
-    }
+        // Aplicar tema salvo
+        const theme = savedData.temas;
+        if (theme) {
+            document.querySelector(`input[name="toggle"][value="${theme}"]`).checked = true;
+            applySettings(theme);
+        }
 
-    // Aplicar modo noturno salvo
-    const modoNoturno = savedData.modoNoturno;
-    if (modoNoturno) {
-      document.getElementById('modoNoturno').checked = modoNoturno;
-      applySettings('modoNoturno');
-    }
+        // Aplicar modo noturno salvo
+        const modoNoturno = savedData.modoNoturno;
+        if (modoNoturno !== undefined) {
+            document.getElementById('modoNoturno').checked = modoNoturno;
+            applySettings('modoNoturno');
+        }
 
-    // Aplicar cores salvas
-    const cor1 = savedData.cor1;
-    if (cor1) {
-      document.getElementById('cor1').value = cor1;
-      applySettings('cor1');
-    }
+        // Aplicar cores salvas
+        const cor1 = savedData.cor1;
+        if (cor1) {
+            document.getElementById('cor1').value = cor1;
+            applySettings('cor1');
+        }
 
-    const cor2 = savedData.cor2;
-    if (cor2) {
-      document.getElementById('cor2').value = cor2;
-      applySettings('cor2');
-    }
+        const cor2 = savedData.cor2;
+        if (cor2) {
+            document.getElementById('cor2').value = cor2;
+            applySettings('cor2');
+        }
 
-    const cortexto1 = savedData.cortexto1;
-    if (cortexto1) {
-      document.getElementById('cortexto1').value = cortexto1;
-      applySettings('cortexto1');
-    }
+        const cortexto1 = savedData.cortexto1;
+        if (cortexto1) {
+            document.getElementById('cortexto1').value = cortexto1;
+            applySettings('cortexto1');
+        }
 
-    const cortexto2 = savedData.cortexto2;
-    if (cortexto2) {
-      document.getElementById('cortexto2').value = cortexto2;
-      applySettings('cortexto2');
-    }
+        const cortexto2 = savedData.cortexto2;
+        if (cortexto2) {
+            document.getElementById('cortexto2').value = cortexto2;
+            applySettings('cortexto2');
+        }
 
-    const corlinks1 = savedData.corlinks1;
-    if (corlinks1) {
-      document.getElementById('corlinks1').value = corlinks1;
-      applySettings('corlinks1');
-    }
+        const corlinks1 = savedData.corlinks1;
+        if (corlinks1) {
+            document.getElementById('corlinks1').value = corlinks1;
+            applySettings('corlinks1');
+        }
 
-    const corlinks2 = savedData.corlinks2;
-    if (corlinks2) {
-      document.getElementById('corlinks2').value = corlinks2;
-      applySettings('corlinks2');
+        const corlinks2 = savedData.corlinks2;
+        if (corlinks2) {
+            document.getElementById('corlinks2').value = corlinks2;
+            applySettings('corlinks2');
+        }
     }
-  }
 }
 loadSettings();
 
@@ -680,6 +809,7 @@ window.addEventListener('DOMContentLoaded', loadSettings);
 function saveSettings() {
   let saveData = JSON.parse(localStorage.getItem('saveData')) || {};
 
+  saveData.modoNoturno = document.getElementById('modoNoturno').checked;
   saveData.cor1 = document.getElementById('cor1').value;
   saveData.cor2 = document.getElementById('cor2').value;
   saveData.cortexto1 = document.getElementById('cortexto1').value;
@@ -716,9 +846,9 @@ function applySettings(value) {
     colorTheme = "green";
     colorTheme2 = "lime";
     verdeButton.classList.add('themegreen');
-    amareloButton.classList.add('themegreen');
-    azulButton.classList.add('themegreen');
-    rosaButton.classList.add('themegreen');
+    amareloButton.classList.add('themeyellow');
+    azulButton.classList.add('themeblue');
+    rosaButton.classList.add('themepink');
     saveData.temas = value;
   } else if (value === "azul") {
     alerta('tema azul selecionado', 3000);
@@ -750,7 +880,19 @@ function applySettings(value) {
     alerta('cor2 modificada', 3000);
     colorTheme2 = document.getElementById('cor2').value;
   }
-
+else if (value === "modoNoturno") {
+        if (document.getElementById('modoNoturno').checked) {
+            document.body.style.setProperty('--bg-color', '#000');
+           // document.body.style.setProperty('--text-color', '#fff');
+            alerta("[ON] modo noturno", 3000);
+            saveData.modoNoturno = true;
+        } else {
+            document.body.style.setProperty('--bg-color', '#fff');
+           // document.body.style.setProperty('--text-color', '#000');
+            alerta("[OFF] modo noturno", 3000);
+            saveData.modoNoturno = false;
+        }
+    }
   levelButton.style.border = `4px solid ${colorTheme}`;
   localStorage.setItem('saveData', JSON.stringify(saveData));
 }
@@ -999,7 +1141,7 @@ document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
             level: 5,
             name: "Jacko",
             description: "Descrição da Skin 5"
-          },
+          }
             ]);
         
         tileimage = images[0].src;
