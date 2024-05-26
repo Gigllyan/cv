@@ -49,7 +49,7 @@ header {
 }
 #dados-usuario {
 	position: absolute;
-	top:20%;
+	top:15%;
 	max-width: 500px;
 	left:40px;
 	background-color: rgba(0, 0, 0, 0.2); /* Fundo transparente */
@@ -268,6 +268,81 @@ input[type="radio"]:checked + label {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+#effect-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: particle-animation 1s ease-out;
+}
+
+@keyframes particle-animation {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5) translateY(-50px);
+  }
+}
+
+.superfood-effect {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 255, 0, 0.5);
+  border-radius: 50%;
+  animation: superfood-animation 1s ease-out;
+}
+
+@keyframes superfood-animation {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+#score-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  color: yellow;
+  pointer-events: none;
+  z-index: 1000;
+  display: none;
+}
+
+.score-effect-animation {
+  animation: score-effect-animation 1.5s ease-out;
+}
+
+@keyframes score-effect-animation {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
 </style>
 
 </head>
@@ -324,6 +399,8 @@ input[type="radio"]:checked + label {
   <br/>
       <div id="top-canvas">
         <canvas id="viewport"></canvas>
+        <div id="effect-container"></div>
+        <div id="score-effect"></div>
 
         <div id="dados-usuario" style="width: 90%;display:none;">
           Olá,
@@ -338,7 +415,7 @@ input[type="radio"]:checked + label {
           <hr/>
           <div id="options-paused" style="display:block">
              <div id="">
-               <h2>Dificuldade</h2>
+               <h3>Dificuldade</h3>
                <div class="toggle-group">
             <input type="radio" id="easy" name="toggle" value="easy" selected="true" selected>
             <label for="easy">Fácil 
@@ -350,10 +427,29 @@ input[type="radio"]:checked + label {
             <input type="radio" id="hard" name="toggle" value="hard">
             <label for="hard">Difícil</label>
         </div>
+               <h3>Área do jogo</h3>
+               <div id="tamanho" style="display:flex">
+               <div id="area1">
+                 20x15
+               </div>
+               <div id="area2">
+                 15x20
+               </div>
+               <div id="custom-area">
+                <label for="largura">Largura
+                </label>
+                 <input type="text" id="largura" name="tamanho" value="20">
+                
+                <label for="altura">Altura
+                </label>
+                 <input type="text" id="altura" name="tamanho" value="15">
+                 
+               </div>
+               </div> 
              </div>
              <hr/>
              
-               <h2>Personalização </h2>
+               <h3>Personalização </h3>
              <div style="display:flex">
                
              <img id="preview-button" src="imgs/120522232_3395906680463827_15340082511600334_n.png" style="width:64px;height:64px;"/>
@@ -471,7 +567,7 @@ input[type="radio"]:checked + label {
 
   <div class="modal-content">
     <span class="close">×</span>
-		  <h2>Skins</h2>
+		  <h2>Skins  <b id="nivelAtual">(nivel atual: 1)</b> </h2>
           <div id="skinscontainer" style="">conteúdo de skins</div>
 		  <span class="close">Fechar</span>
   </div>
@@ -514,6 +610,7 @@ input[type="radio"]:checked + label {
       <div id="corescontainer" class="menudroop" style="display:none;margin-top: 20px;">
         
             <div class="form-group">
+              <button id="resetColors">Resetar Cores</button>
                 <label for="cor1">Cor 1</label>
                 <input type="color" id="cor1" name="toggle">
             </div>
@@ -537,11 +634,10 @@ input[type="radio"]:checked + label {
                 <label for="corlinks2">Cor Links 2</label>
                 <input type="color" id="corlinks2" name="toggle">
             </div>
+          <div style="">
+          </div>
         
       </div> 
-          <div style="">
-            
-          </div>
 		  <span class="close">Fechar</span>
   </div>
 
@@ -595,77 +691,7 @@ window.onclick = function(event) {
 
 
 
-const encryptionKey = "my-secret-key"; 
-        function xorEncryptDecrypt(data, key) {
-            let keyIndex = 0;
-            let output = '';
 
-            for (let i = 0; i < data.length; i++) {
-                output += String.fromCharCode(data.charCodeAt(i) ^ key.charCodeAt(keyIndex));
-                keyIndex = (keyIndex + 1) % key.length;
-            }
-
-            return output;
-        }
-document.getElementById('downloadData').addEventListener('click', downloadData);
-document.getElementById('uploadData').addEventListener('change', uploadData);
-
-function downloadData() {
-            const saveData = JSON.parse(localStorage.getItem('saveData')) || {};
-            let nome = document.getElementById("nome").textContent;
-            const dataStr = JSON.stringify(saveData, null, 2);
-            const encryptedData = xorEncryptDecrypt(dataStr, encryptionKey);
-            const blob = new Blob([encryptedData], { type: 'application/octet-stream' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = '' +nome+' - saveGame.snk';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        }
-
-function uploadData(event) {
-    const file = event.target.files[0];
-    if (!file) {
-        return;
-    }
-
-    if (!file.name.endsWith('.snk')) {
-        alert('Por favor, carregue um arquivo com a extensão .snk');
-        return;
-    }
-
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        try {
-            const encryptedData = e.target.result;
-            const decryptedData = xorEncryptDecrypt(encryptedData, encryptionKey);
-            const uploadedData = JSON.parse(decryptedData);
-            localStorage.setItem('saveData', JSON.stringify(uploadedData));
-            alert('Configurações carregadas com sucesso');
-            loadSave(); // Recarregar configurações após upload
-        } catch (error) {
-            alert('Erro ao carregar configurações. Verifique o arquivo.');
-        }
-    };
-    reader.readAsText(file);
-}
-
-function loadSave() {
-    const saveData = JSON.parse(localStorage.getItem('saveData'));
-    if (saveData) {
-        // Aplicar as configurações salvas
-        // Exemplo: document.getElementById('someElement').value = saveData.someSetting;
-        // Adicione aqui o código necessário para aplicar as configurações no seu formulário
-        console.log('Configurações aplicadas:', saveData);
-    } else {
-        console.log('Nenhuma configuração encontrada no localStorage.');
-    }
-}
-
-// Chama a função loadSettings quando a página é carregada
-window.onload = loadSave;
 
 </script>
 	
@@ -821,7 +847,6 @@ function saveSettings() {
   applySettings('colorChange');
 } 
 
-  
 // Função para aplicar as configurações com base no valor
 function applySettings(value) {
   let saveData = JSON.parse(localStorage.getItem('saveData')) || {};
@@ -923,17 +948,14 @@ document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
       //tela grande width="640" height="480" canvas#viewport
       var numColunas = 20; //total de colunas
       var numLinhas = 15; //total de linhas
-      canvas.width = 640;
-      canvas.height = 480;
-    
     } else  {
       //tela pequena
       var numColunas = 15; //total de colunas
       var numLinhas = 20; //total de linhas
-      canvas.width = 480;
-      canvas.height = 640;
-    
      }
+     
+     canvas.width = numColunas * 32;
+     canvas.height = numLinhas * 32;
     // Timing and frames per second
     var lastframe = 0;
     var fpstime = 0;
@@ -1009,7 +1031,7 @@ document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
             }
         }
     };
-    
+    //aa
     // Generate a default level with walls
     Level.prototype.generate = function() {
         for (var i=0; i<this.columns; i++) {
@@ -1117,7 +1139,7 @@ document.querySelectorAll('input[name="toggle"]').forEach((radio) => {
         // Load images
         images = loadImages([
           { src: "imgs/skins/snake-graphics1.png", 
-            level: 0, 
+            level: 1, 
             name: "Clássica", 
             description: "Descrição da Skin 1"
           },
@@ -1206,61 +1228,61 @@ escreverPontuacao();
     
    	// Update game score level and skin
   	function updateScore() {
-  	  
 	  document.getElementById('score').textContent = 'Score: ' + score;
 	
-    for (let i = 0; i < pontuacao.length; i++) {
-        if (score >= pontuacao[i]) {
-            currentLevel = i + 1;
-        } else {
-            break;
-        }
-    }
-
-  	if (currentLevel > savedLevel ) {
-  	  
-  	  alerta('nova Skin desbloqueada', 3000);
-	  saveData.skin = savedSkin;
-	  saveData.level = currentLevel;
-	  
-	  localStorage.setItem('saveData', JSON.stringify(saveData));
-	  savedLevel = currentLevel; 
-	  loadSkins();
-	  
-	}
-	  
+	  for (let i = 0; i < pontuacao.length; i++) {
+	    if (score >= pontuacao[i]) {
+	      currentLevel = i + 1;
+	    } else {
+	      break;
+	    }
+	  }
 	
-	  // Update high score if needed
+	  // Verifica se existe uma nova skin disponível para o nível atual
+	  let novaSkinLiberada = images.some(image => image.level === currentLevel);
+	
+	  if (currentLevel > savedLevel) {
+	    if (novaSkinLiberada) {
+	      alerta('nova skin desbloqueada', 3000);
+	    } else {
+	      alerta('novo nível desbloqueado', 3000);
+	    }
+	
+	    saveData.skin = savedSkin;
+	    saveData.level = currentLevel;
+	    localStorage.setItem('saveData', JSON.stringify(saveData));
+	    savedLevel = currentLevel;
+	    loadSkins();
+	  }
+	
+	  // Atualiza o high score se necessário
 	  if (score > highScore) {
 	    highScore = score;
-	    
 	    saveData.highScore = highScore;
 	    localStorage.setItem('saveData', JSON.stringify(saveData));
 	    document.getElementById('high-score').textContent = 'High Score: ' + highScore;
 	  }
+	
+	  // Calcula a porcentagem de progresso para o próximo nível
+	  let progressPercentage = 0;
+	  if (currentLevel < pontuacao.length) {
+	    let nextLevelScore = pontuacao[currentLevel];
+	    let previousLevelScore = pontuacao[currentLevel - 1];
+	    let levelRange = nextLevelScore - previousLevelScore;
+	    let scoreInCurrentLevel = score - previousLevelScore;
+	    progressPercentage = (scoreInCurrentLevel / levelRange) * 100;
+	  } else {
+	    progressPercentage = 100;
+	  }
+	
+	  // Atualiza a cor do botão com base na porcentagem de progresso
+	  levelButton.style.background = `linear-gradient(to right, ${colorTheme}, ${progressPercentage}%, white ${progressPercentage}%)`;
+	
+	  // Atualiza a exibição do nível
+	  document.getElementById('level').textContent = `Nível ${currentLevel} (${score} / ${pontuacao[currentLevel]})`;
+	  document.getElementById('nivelAtual').textContent = `(Nível atual: ${savedLevel})`;
+	
 	  
-    // Calculate the percentage progress to the next level
-    let progressPercentage = 0;
-    if (currentLevel < pontuacao.length) {
-        let nextLevelScore = pontuacao[currentLevel];
-        let previousLevelScore = pontuacao[currentLevel - 1];
-        let levelRange = nextLevelScore - previousLevelScore;
-        let scoreInCurrentLevel = score - previousLevelScore;
-        progressPercentage = (scoreInCurrentLevel / levelRange) * 100;
-    } else {
-        progressPercentage = 100;
-    }
-
-    // Update the button color based on progressPercentage
-    
-    levelButton.style.background = `linear-gradient(to right, ${colorTheme}, ${progressPercentage}%, white ${progressPercentage}%)`;
-    
-    // Update score button
-    //let scoreButton = document.getElementById('score');
-    //scoreButton.textContent = `Score ${score} / ${pontuacao[currentLevel]}`;
-document.getElementById('level').textContent = `Nível ${currentLevel} (${score} / ${pontuacao[currentLevel]}) `;
-//document.getElementById('level').textContent = 'Level: ' + currentLevel;
-	  loadSkins();
 	  escreverPontuacao();
 	}
 	
@@ -1300,7 +1322,7 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
 
                 // Adiciona o nome da skin
                 let nameDiv = document.createElement('div');
-                nameDiv.textContent = image.name;
+                nameDiv.textContent = image.name + " (nivel: " + image.level + ")";
                 skinPreview.appendChild(nameDiv);
 
                 // Adiciona o evento de clique para mudar a skin da snake
@@ -1491,7 +1513,7 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
     }
     
 
-
+//bb
 
 	
 	  // Function to apply the selected skin onclick preview
@@ -1527,68 +1549,124 @@ document.getElementById('level').textContent = `Nível ${currentLevel} (${score}
     var foodSuperFoodDiv = document.getElementById('superFoodsCapturadas');
     var foodNormalFoodDiv = document.getElementById('normalFoodsCapturadas');
     
-    function updateGame(dt) {
-      // Move the snake
-      if (snake.tryMove(dt)) {
-        // Check snake collisions
-        var nextmove = snake.nextMove();
-        var nx = nextmove.x;
-        var ny = nextmove.y;
-        var wrapped = false;
-    
-        // Check if the snake wraps around the canvas
-        if (nx < 0 || nx >= level.columns || ny < 0 || ny >= level.rows) {
-          wrapped = true;
-        }
-    
-        // Wrap the snake around the canvas
-        nx = (nx + level.columns) % level.columns;
-        ny = (ny + level.rows) % level.rows;
-    
-        // Check collision with the snake itself
-        for (var i = 0; i < snake.segments.length; i++) {
-          if (nx == snake.segments[i].x && ny == snake.segments[i].y) {
-            gameover = true;
-            gameovertime = 0;
-            return;
-          }
-        }
-    
-        // Move the snake
-        snake.x = nx;
-        snake.y = ny;
-        snake.move();
-    
-        // Check collision with an apple
-        if (level.tiles[nx][ny] == 2 || level.tiles[nx][ny] == 3) {
-          if (level.tiles[nx][ny] == 3) {
-            score += 3; // Superfood gives double points
-            foodCounterSuperFood++;
-            foodCounterTotal++;
-          } else {
-            score++;
-            foodCounterNormalFood++;
-            foodCounterTotal++;
-          }
-    
-          level.tiles[nx][ny] = 0;
-          addApple();
-          snake.grow();
-    
-          updateScore();
-    
-          // Atualiza o texto das divs
-          foodNormalFoodDiv.textContent = foodCounterNormalFood + ' foods';
-          foodSuperFoodDiv.textContent = foodCounterSuperFood + ' superfood';
-          foodTotalDiv.textContent = 'total: ' + foodCounterTotal;
-        }
-    
-        // Update snake segments with wrapped information
-        snake.segments[0].wrapped = wrapped;
+const TILE_SIZE = 32;
+
+function updateGame(dt) {
+  // Move the snake
+  if (snake.tryMove(dt)) {
+    // Check snake collisions
+    var nextmove = snake.nextMove();
+    var nx = nextmove.x;
+    var ny = nextmove.y;
+    var wrapped = false;
+
+    // Check if the snake wraps around the canvas
+    if (nx < 0 || nx >= level.columns || ny < 0 || ny >= level.rows) {
+      wrapped = true;
+    }
+
+    // Wrap the snake around the canvas
+    nx = (nx + level.columns) % level.columns;
+    ny = (ny + level.rows) % level.rows;
+
+    // Check collision with the snake itself
+    for (var i = 0; i < snake.segments.length; i++) {
+      if (nx == snake.segments[i].x && ny == snake.segments[i].y) {
+        gameover = true;
+        gameovertime = 0;
+        return;
       }
     }
-	
-    
+
+    // Move the snake
+    snake.x = nx;
+    snake.y = ny;
+    snake.move();
+
+    // Check collision with an apple
+    if (level.tiles[nx][ny] == 2 || level.tiles[nx][ny] == 3) {
+      var pointsEarned = 0;
+      if (level.tiles[nx][ny] == 3) {
+        pointsEarned = currentLevel * 3 + currentLevel; // Superfood gives double points
+        foodCounterSuperFood++;
+        foodCounterTotal++;
+        showSuperFoodEffect(nx, ny); // Mostrar efeito para superfood
+      } else {
+        pointsEarned = Math.floor(currentLevel / 2 + currentLevel);
+        foodCounterNormalFood++;
+        foodCounterTotal++;
+        showNormalFoodEffect(nx, ny); // Mostrar efeito para food normal
+      }
+
+      // Mostrar efeito de pontos
+      showScoreEffect(nx, ny, pointsEarned);
+
+      score += pointsEarned;
+
+      level.tiles[nx][ny] = 0;
+      addApple();
+      snake.grow();
+
+      updateScore();
+
+      // Atualiza o texto das divs
+      foodNormalFoodDiv.textContent = foodCounterNormalFood + ' foods';
+      foodSuperFoodDiv.textContent = foodCounterSuperFood + ' superfood';
+      foodTotalDiv.textContent = 'total: ' + foodCounterTotal;
+    }
+
+    // Update snake segments with wrapped information
+    snake.segments[0].wrapped = wrapped;
+  }
+}
+
+function showNormalFoodEffect(x, y) {
+  const effectContainer = document.getElementById('effect-container');
+  const superfoodEffect = document.createElement('div');
+  superfoodEffect.className = 'superfood-effect';
+  superfoodEffect.style.left = (x * TILE_SIZE + TILE_SIZE / 2 - 25) + 'px'; // Centralizar o efeito
+  superfoodEffect.style.top = (y * TILE_SIZE + TILE_SIZE / 2 - 25) + 'px'; // Centralizar o efeito
+  effectContainer.appendChild(superfoodEffect);
+
+  // Remover efeito após a animação
+  superfoodEffect.addEventListener('animationend', () => {
+    effectContainer.removeChild(superfoodEffect);
+  });
+}
+
+
+function showSuperFoodEffect(x, y) {
+  const effectContainer = document.getElementById('effect-container');
+  for (let i = 0; i < 10; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.left = (x * TILE_SIZE + Math.random() * TILE_SIZE) + 'px';
+    particle.style.top = (y * TILE_SIZE + Math.random() * TILE_SIZE) + 'px';
+    effectContainer.appendChild(particle);
+
+    // Remover partícula após a animação
+    particle.addEventListener('animationend', () => {
+      effectContainer.removeChild(particle);
+    });
+  }
+}
+
+function showScoreEffect(x, y, points) {
+  const scoreEffect = document.getElementById('score-effect');
+  scoreEffect.textContent = '+' + points;
+  scoreEffect.style.left = (x * TILE_SIZE + TILE_SIZE / 16) + 'px';
+  scoreEffect.style.top = (y * TILE_SIZE + TILE_SIZE / 16) + 'px';
+  scoreEffect.classList.add('score-effect-animation');
+  scoreEffect.style.display = 'block';
+
+  // Remover efeito após a animação
+  scoreEffect.addEventListener('animationend', () => {
+    scoreEffect.classList.remove('score-effect-animation');
+    scoreEffect.style.display = 'none';
+  });
+}
+
+
     function updateFps(dt) {
         if (fpstime > 0.25) {
             // Calculate fps
@@ -1737,6 +1815,12 @@ function drawSnake() {
         context.drawImage(snakeImage, tx * 64, ty * 64, 64, 64, tilex, tiley, level.tilewidth, level.tileheight);
     }
 }
+
+
+
+
+
+
 
 
 // Draw text that is centered
@@ -1950,6 +2034,7 @@ if (gameover && gameovertime > gameoverdelay && !paused) {
     touchStartY = touch.clientY;
 }
     function onTouchMove(e) {
+      e.preventDefault();
     if (!touchStartX || !touchStartY) return;
 
     var touch = e.touches[0];
@@ -1982,6 +2067,106 @@ if (gameover && gameovertime > gameoverdelay && !paused) {
     canvas.addEventListener("touchstart", onTouchStart);
     canvas.addEventListener("touchmove", onTouchMove);
     canvas.addEventListener("mousedown", onMouseDown);
+    
+    
+    
+    
+    
+    
+    const encryptionKey = "my-secret-key"; 
+        function xorEncryptDecrypt(data, key) {
+            let keyIndex = 0;
+            let output = '';
+
+            for (let i = 0; i < data.length; i++) {
+                output += String.fromCharCode(data.charCodeAt(i) ^ key.charCodeAt(keyIndex));
+                keyIndex = (keyIndex + 1) % key.length;
+            }
+
+            return output;
+        }
+        document.getElementById('downloadData').addEventListener('click', downloadData);
+        document.getElementById('uploadData').addEventListener('change', uploadData);
+        document.getElementById('resetColors').addEventListener('click', resetColors);
+
+        function downloadData() {
+            const saveData = JSON.parse(localStorage.getItem('saveData')) || {};
+            let nome = document.getElementById("nome").textContent;
+            const dataStr = JSON.stringify(saveData, null, 2);
+            const encryptedData = xorEncryptDecrypt(dataStr, encryptionKey);
+            const blob = new Blob([encryptedData], { type: 'application/octet-stream' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = '' +nome+' - saveGame.snk';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function uploadData(event) {
+    const file = event.target.files[0];
+    if (!file) {
+        return;
+    }
+
+    if (!file.name.endsWith('.snk')) {
+        alert('Por favor, carregue um arquivo com a extensão .snk');
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const encryptedData = e.target.result;
+            const decryptedData = xorEncryptDecrypt(encryptedData, encryptionKey);
+            const uploadedData = JSON.parse(decryptedData);
+            localStorage.setItem('saveData', JSON.stringify(uploadedData));
+            alert('Configurações carregadas com sucesso');
+            loadSave(); // Recarregar configurações após upload
+        } catch (error) {
+            alert('Erro ao carregar configurações. Verifique o arquivo.');
+        }
+    };
+    reader.readAsText(file);
+}
+
+        function resetColors() {
+            const saveData = JSON.parse(localStorage.getItem('saveData')) || {};
+            delete saveData.cor1;
+            delete saveData.cor2;
+            delete saveData.cortexto1;
+            delete saveData.cortexto2;
+            delete saveData.corlinks1;
+            delete saveData.corlinks2;
+            
+            delete saveData.modoNoturno;
+            saveData.temas = "default";
+            localStorage.setItem('saveData', JSON.stringify(saveData));
+            alert('Cores resetadas com sucesso');
+            loadSave(); // Recarregar configurações após reset
+        }
+
+        function loadSave() {
+    const saveData = JSON.parse(localStorage.getItem('saveData'));
+    if (saveData) {
+       loadSettings();
+        // Aplicar as configurações salvas
+        // Exemplo: document.getElementById('someElement').value = saveData.someSetting;
+        // Adicione aqui o código necessário para aplicar as configurações no seu formulário
+        console.log('Configurações aplicadas:', saveData);
+    } else {
+        console.log('Nenhuma configuração encontrada no localStorage.');
+    }
+}
+
+        // Chama a função loadSettings quando a página é carregada
+        window.onload = loadSave;
+    
+    
+    
+    
+    
     
     
     
