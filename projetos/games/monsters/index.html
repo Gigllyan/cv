@@ -369,7 +369,7 @@ small.type {
 
 
 <!-- Modal Container -->
-<div id="modalContainer" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);z-index:1002;">
+<div id="modalContainer" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);z-index:1004;">
 </div>
 
 
@@ -786,6 +786,7 @@ class Monster extends Sprite {
         this.health = 100;
       }
   
+      this.vida = this.health;
       this.isShiny = isShiny;
       this.isEnemy = isEnemy;
       this.isPlayer = isPlayer;
@@ -825,142 +826,158 @@ class Monster extends Sprite {
     fairy: { fire: 0.5, fighting: 2, poison: 0.5, dragon: 2, dark: 2, steel: 0.5 }
   };
 
-    function getEffectivenessMultiplier(attackType, defenderTypes) {
-      let multiplier = 1;
-      defenderTypes.forEach(type => {
-        if (typeEffectiveness[attackType] && typeEffectiveness[attackType][type] !== undefined) {
-          multiplier *= typeEffectiveness[attackType][type];
-        }
-      });
-      return multiplier;
-    }
-
-    let effectivenessMessage;
-    let effectivenessMultiplier;
-
-    function calcularDano(atacanteType, defensorType, danoBase, danoType) {
-      const atacanteTypes = atacanteType.split(',');
-      const defensorTypes = defensorType.split(',');
-
-      let stabBonus = 1;
-      if (atacanteTypes.includes(danoType)) {
-        stabBonus = 1.5;
+  function getEffectivenessMultiplier(attackType, defenderTypes) {
+    let multiplier = 1;
+    defenderTypes.forEach(type => {
+      if (typeEffectiveness[attackType] && typeEffectiveness[attackType][type] !== undefined) {
+        multiplier *= typeEffectiveness[attackType][type];
       }
-
-      effectivenessMultiplier = getEffectivenessMultiplier(danoType, defensorTypes);
-      if (effectivenessMultiplier > 1 && danoBase > 0) {
-        effectivenessMessage = " super effective!";
-      } else if (effectivenessMultiplier < 1 && effectivenessMultiplier > 0) {
-        effectivenessMessage = " not very effective...";
-      } else if (effectivenessMultiplier === 0) {
-        effectivenessMessage = " doesn't affect the enemy...";
-        return 0; 
-      }
-
-      const danoFinal = danoBase * stabBonus * effectivenessMultiplier;
-      return danoFinal;
-    }
-
-    let typeBuddy, ataqueBuddy, defesaBuddy, hpBuddy, levelBuddy;
-    if (this.isPlayer) {
-      typeBuddy = this.types;
-      ataqueBuddy = this.attackk;
-      defesaBuddy = this.defense;
-      hpBuddy = this.hp;
-      levelBuddy = this.level;
-    }  else {
-      typeBuddy = emby.types;
-      ataqueBuddy = emby.attackk;
-      defesaBuddy = emby.defense;
-      hpBuddy = emby.hp;
-      levelBuddy = emby.level;
-    }
-
-    let typeEnemy = draggle.types;
-    const ataqueEnemy = draggle.attackk;
-    const defesaEnemy = draggle.defense;
-    const hpEnemy = draggle.hp;
-    const levelEnemy = draggle.level;
-
-    const critChance = 0.1;
-    const critMultiplier = 2;
-
-    let dano, danoBase;
-    let danoCritico;
-    let atacanteType;
-    let defensorType;
-
-    let monsters = loadMonsters() || [];
-
-    // Carregar a vida corretamente ao iniciar
-    if (recipient.isPlayer) {
-      recipient.health = monsters[0]?.vida || 100;
-    }
-
-    if (!recipient.isPlayer) {
-      const nivelDiferenca = Math.log2(Math.max(levelBuddy, 1) / Math.max(levelEnemy, 1));
-      danoBase = (Math.random() * 0.2 + 0.5) * (attack.damage * ataqueBuddy * (1 + nivelDiferenca * 0.5) / defesaEnemy) / hpEnemy * 100;
-      if (Math.random() < critChance) {
-        danoBase *= critMultiplier;
-      }
-      dano = calcularDano(typeBuddy, typeEnemy, danoBase, attack.type);
-    } else {
-      const nivelDiferenca = Math.log2(Math.max(levelEnemy, 1) / Math.max(levelBuddy, 1));
-      danoBase = (Math.random() * 0.2 + 0.5) * (attack.damage * ataqueEnemy * (1 + nivelDiferenca * 0.5) / defesaBuddy) / hpBuddy * 100;
-      if (Math.random() < critChance) {
-        danoBase *= critMultiplier;
-        danoCritico = true;
-      }
-      dano = calcularDano(typeEnemy, typeBuddy, danoBase, attack.type);
-    }
-
-    let message = '';
-
-    if (danoCritico && danoBase > 5) {
-      message += "critical";
-    }
-
-    if (effectivenessMultiplier != 1 && danoBase > 5) {
-      if (message) {
-        message += ' and ';
-      }
-      message += effectivenessMessage;
-    }
-
-    if (message) {
-      document.querySelector("#dialogueBox").textContent = message;
-    }
-
-    recipient.health -= dano;
-
-    // Salvar a vida corretamente após calcular o dano
-    if (recipient.isPlayer) {
-      monsters[0] = monsters[0] || {};
-      monsters[0].vida = recipient.health;
-      saveMonsters(monsters);
-    }
-
-    let healthBar = recipient.isPlayer ? '#playerHealthBar' : '#enemyHealthBar';
-    gsap.to(healthBar, {
-      width: Math.max(0, Math.min(recipient.health, recipient.isPlayer ? monsters[0].vida : '100')) + '%'
     });
+    return multiplier;
+  }
 
-    gsap.to(recipient.position, {
-      x: recipient.position.x + 10,
-      yoyo: true,
-      repeat: 5,
-      duration: 0.08
-    });
+  let effectivenessMessage;
+  let effectivenessMultiplier;
 
-    gsap.to(recipient, {
-      opacity: 0,
-      repeat: 5,
-      yoyo: true,
-      duration: 0.08
-    });
+  function calcularDano(atacanteType, defensorType, danoBase, danoType) {
+    const atacanteTypes = atacanteType.split(',');
+    const defensorTypes = defensorType.split(',');
 
-    saveMonsters(monsters);
+    let stabBonus = 1;
+    let stab = "normal(NO stab)";
+    if (atacanteTypes.includes(danoType)) {
+      stabBonus = 1.5;
+      stab ="STAB"
+    }
+    console.log(stab);
+
+    effectivenessMultiplier = getEffectivenessMultiplier(danoType, defensorTypes);
+    if (effectivenessMultiplier > 1 && danoBase > 0) {
+      effectivenessMessage = " super effective!";
+    } else if (effectivenessMultiplier < 1 && effectivenessMultiplier > 0) {
+      effectivenessMessage = " not very effective...";
+    } else if (effectivenessMultiplier === 0) {
+      effectivenessMessage = " doesn't affect the enemy...";
+      return 0; 
+    }
+    const message = effectivenessMessage ? effectivenessMessage : "no effectiveness"; 
+console.log(message)
+    const danoFinal = danoBase * stabBonus * effectivenessMultiplier;
+    console.log(danoFinal);
+    return danoFinal;
+  }
   
+
+  let typeBuddy, ataqueBuddy, defesaBuddy, hpBuddy, levelBuddy;
+  if (this.isPlayer) {
+    typeBuddy = this.types;
+    ataqueBuddy = this.attackk;
+    defesaBuddy = this.defense;
+    hpBuddy = this.hp;
+    levelBuddy = this.level;
+  }  else {
+    typeBuddy = emby.types;
+    ataqueBuddy = emby.attackk;
+    defesaBuddy = emby.defense;
+    hpBuddy = emby.hp;
+    levelBuddy = emby.level;
+  }
+
+  let typeEnemy = draggle.types;
+  const ataqueEnemy = draggle.attackk;
+  const defesaEnemy = draggle.defense;
+  const hpEnemy = draggle.hp;
+  const levelEnemy = draggle.level;
+
+  const critChance = 0.1;
+  const critMultiplier = 2;
+
+  let dano, danoBase;
+  let danoCritico;
+  let atacanteType;
+  let defensorType;
+
+  let monsters = loadMonsters() || [];
+
+  // Carregar a vida corretamente ao iniciar
+  if (recipient.isPlayer) {
+    recipient.health = monsters[0]?.vida || 100;
+  }
+
+  if (!recipient.isPlayer) {
+    const nivelDiferenca = Math.log2(Math.max(levelBuddy, 1) / Math.max(levelEnemy, 1));
+    danoBase = (Math.random() * 0.2 + 0.5) * (attack.damage * ataqueBuddy * (1 + nivelDiferenca * 0.5) / defesaEnemy) / hpEnemy * 100;
+    if (Math.random() < critChance) {
+      danoBase *= critMultiplier;
+    }
+    dano = calcularDano(typeBuddy, typeEnemy, danoBase, attack.type);
+  } else {
+    const nivelDiferenca = Math.log2(Math.max(levelEnemy, 1) / Math.max(levelBuddy, 1));
+    danoBase = (Math.random() * 0.2 + 0.5) * (attack.damage * ataqueEnemy * (1 + nivelDiferenca * 0.5) / defesaBuddy) / hpBuddy * 100;
+    if (Math.random() < critChance) {
+      danoBase *= critMultiplier;
+      danoCritico = true;
+      console.log("dano crítico")
+    }
+    dano = calcularDano(typeEnemy, typeBuddy, danoBase, attack.type);
+  }
+
+  let message = '';
+
+  if (danoCritico && danoBase > 5) {
+    message += "critical";
+  }
+
+  if (effectivenessMultiplier != 1 && danoBase > 5) {
+    if (message) {
+      message += ' and ';
+    }
+    message += effectivenessMessage;
+  }
+
+  if (message) {
+    document.querySelector("#dialogueBox").textContent = message;
+  }
+
+
+   monsters = loadMonsters() || [];
+
+  // Carregar a vida corretamente ao iniciar
+  if (recipient.isPlayer) {
+    recipient.health = monsters[0]?.vida || 100;
+  } 
+  
+  recipient.health -= dano;
+  console.log(dano);
+
+  
+  // Salvar a vida corretamente após calcular o dano
+  if (recipient.isPlayer) {
+    monsters[0] = monsters[0] || {};
+    monsters[0].vida = recipient.health;
+    saveMonsters(monsters);
+  }
+
+  let healthBar = recipient.isPlayer ? '#playerHealthBar' : '#enemyHealthBar';
+  gsap.to(healthBar, {
+    width: Math.max(0, Math.min(recipient.health, recipient.isPlayer ? monsters[0].vida : '100')) + '%'
+  });
+
+  gsap.to(recipient.position, {
+    x: recipient.position.x + 10,
+    yoyo: true,
+    repeat: 5,
+    duration: 0.08
+  });
+
+  gsap.to(recipient, {
+    opacity: 0,
+    repeat: 5,
+    yoyo: true,
+    duration: 0.08
+  });
+
+  saveMonsters(monsters);
 }
 
   faint() {
@@ -24355,14 +24372,7 @@ createMonster('blastoise', 5,
     { move: 'thunder', level: '0' }
   ]
 });
-// Testando a função createMonster
-// Cria um Emby com level e atributos aleatórios
-//createMonster('Emby', 100); // Cria um Emby level 50 com atributos aleatórios
-//createMonster('Emby', 150, { attackk: 10, defense: 8, speed: 12, hp: 9 }); // Cria um Emby com atributos específicos
-//createMonster('Emby', 50, { attackk: 10,  defense: 8, speed: 10, hp: 9 });
-//createMonster('Draggle', 80, { attackk: 12,  defense: 7, speed: 8, hp: 12 });
 
-  
     console.log('adicionou itens e pokes ao seu inventário do jogo');
     dialogueBox.innerHTML = "<p>...</p><p>adicionou itens e pokes ao seu inventário do jogo</p>";
     dialogueBox.style.display = 'block';
@@ -24475,248 +24485,255 @@ function loadMonstersInventory() {
     return savedInventory;
   }
 
-// Função para carregar os monstros do localStorage
-function loadMonsters() {
-  const savedMonsters = localStorage.getItem('monsters');
-  return savedMonsters ? JSON.parse(savedMonsters) : [];
+  // Atualizar exibição do inventário
+  function updateMonstersInventoryDisplay() {
+    let monstros = loadMonstersInventory();
+    const monstrosDiv = document.getElementById('user-monsters');
+const centroPkDiv = document.getElementById('centro-user-monsters');
+const centroPkPagination = document.getElementById('centro-pk-pagination');
+const canvas = document.querySelector('canvas'); // Assuming you have a canvas element
+
+let currentPage = 1;
+const itemsPerPage = 10;
+
+function saveMonstros() {
+  localStorage.setItem('monsters', JSON.stringify(monstros));
 }
 
-// Função para salvar os monstros no localStorage
-function saveMonsters(monsters) {
-  localStorage.setItem('monsters', JSON.stringify(monsters));
+function loadMonstros() {
+  const savedMonstros = loadMonsters();
+  return savedMonstros ? JSON.parse(savedMonstros) : [];
 }
 
-// Função para atualizar a exibição do inventário de monstros
-function updateMonstersInventoryDisplay() {
-  let monstros = loadMonsters();
-  const monstrosDiv = document.getElementById('user-monsters');
-  const centroPkDiv = document.getElementById('centro-user-monsters');
-  const centroPkPagination = document.getElementById('centro-pk-pagination');
-  const canvas = document.querySelector('canvas'); // Assuming you have a canvas element
 
-  let currentPage = 1;
-  const itemsPerPage = 10;
 
-  function saveMonstros() {
-    saveMonsters(monstros);
+function handleDragOver(event) {
+  event.preventDefault();
+}
+
+function handleDrop(event, targetDiv) {
+  event.preventDefault();
+  
+  
+  const itemData = event.dataTransfer.getData('text/plain');
+  const item = JSON.parse(itemData);
+  
+  if (emby?.vida > 0 || emby?.vida === undefined) {
+      document.querySelector('#playerHealthBar').style.width = (emby?.vida || 100) + "%";
+      
+    } 
+    
+
+  // Remove o item do contêiner original
+  const index = monstros.findIndex(m => m.id === item.id);
+  if (index !== -1) {
+    monstros.splice(index, 1);
   }
 
-  function loadMonstros() {
-    return loadMonsters();
+  // Determina o índice de queda
+  const rect = targetDiv.getBoundingClientRect();
+  const y = event.clientY - rect.top;
+  const dropIndex = Array.from(targetDiv.children).findIndex(child => child.getBoundingClientRect().top > y);
+
+  // Adiciona o item ao novo contêiner no índice de queda
+  if (dropIndex === -1) {
+    monstros.push(item);
+  } else {
+    monstros.splice(dropIndex, 0, item);
   }
 
-  function handleDragOver(event) {
-    event.preventDefault();
-  }
+  // Atualiza o array de monstros no localStorage
+  
+  const monsters = loadMonsters() || [];
+  const updatedMonsters = monsters.map(mon => mon.name === item.name ? item : mon);
+  saveMonsters(monsters);
 
-  function handleDrop(event, targetDiv) {
-    event.preventDefault();
+  saveMonstros();
+  renderMonstros();
+  displayMonsterData();
+  getSpritSheet();
+  
 
-    const monsters = loadMonsters();
-    const itemData = event.dataTransfer.getData('text/plain');
-    const item = JSON.parse(itemData);
-
-    // Verificar a vida do primeiro monstro
-    if (monsters[0]?.vida > 0 || monsters[0]?.vida === undefined) {
-      document.querySelector('#playerHealthBar').style.width = (monsters[0]?.vida || 100) + "%";
-      alert("monstro[0] > 0 ou !=undefined === monstro vivo");
-    } else {
-      callNextMonster();
-      alert("monstro morto");
-    }
-
-    // Remove o item do contêiner original
-    const index = monstros.findIndex(m => m.id === item.id);
-    if (index !== -1) {
-      monstros.splice(index, 1);
-    }
-
-    // Determina o índice de queda
-    const rect = targetDiv.getBoundingClientRect();
-    const y = event.clientY - rect.top;
-    const dropIndex = Array.from(targetDiv.children).findIndex(child => child.getBoundingClientRect().top > y);
-
-    // Adiciona o item ao novo contêiner no índice de queda
-    if (dropIndex === -1) {
-      monstros.push(item);
-    } else {
-      monstros.splice(dropIndex, 0, item);
-    }
-
-    // Atualiza o array de monstros no localStorage
-    saveMonstros();
-
-    // Funções de atualização
-    renderMonstros();
-    displayMonsterData();
-    getSpritSheet();
-    updateBuddyImage();
+  // Atualiza o buddy com base no primeiro monstro do localStorage
+  updateBuddyImage();
+  
+  
+  
+  
+    // Atualizar o localStorage com a nova ordem
+    //saveMonsters(monsters);
+    
+    // Atualiza as informações do monstro selecionado
     updateMonstersInventoryDisplay();
+    
     updateMonsterInfo();
+}
+
+
+function handleDropOnGround(event) {
+  event.preventDefault();
+  const itemData = event.dataTransfer.getData('text/plain');
+  const item = JSON.parse(itemData);
+
+  // Remove the item from the monstros array
+  const index = monstros.findIndex(m => m.id === item.id);
+  if (index !== -1) {
+    monstros.splice(index, 1);
   }
 
-  function handleDropOnGround(event) {
-    event.preventDefault();
-    const itemData = event.dataTransfer.getData('text/plain');
-    const item = JSON.parse(itemData);
+  // Show the drop hint (e.g., add it to the canvas)
+  renderDroppedItems(item);
+  saveMonstros();
+  renderMonstros();
+}
 
-    // Remove o item do array de monstros
-    const index = monstros.findIndex(m => m.id === item.id);
-    if (index !== -1) {
-      monstros.splice(index, 1);
+function renderMonstros() {
+  monstrosDiv.innerHTML = '';
+  centroPkDiv.innerHTML = '';
+  centroPkPagination.innerHTML = '';
+
+  // Render the first up to 6 items in monstrosDiv
+  monstros.slice(0, 6).forEach(item => {
+    // Encontrar o objeto correspondente em allMonsters
+    const monster = allMonsters.find(m => m.name === item.name);
+    
+    
+    let vidaPercentage = 100;
+    if (item.vida !== undefined) {
+      vidaPercentage = Math.floor(item.vida <= 0 ? 0 : item.vida);
     }
-
-    // Exibe o item solto (por exemplo, adiciona ao canvas)
-    renderDroppedItems(item);
-    saveMonstros();
-    renderMonstros();
-  }
-
-  function renderMonstros() {
-    monstrosDiv.innerHTML = '';
-    centroPkDiv.innerHTML = '';
-    centroPkPagination.innerHTML = '';
-
-    // Renderiza os primeiros até 6 itens em monstrosDiv
-    monstros.slice(0, 6).forEach(item => {
-      // Encontrar o objeto correspondente em allMonsters
-      const monster = allMonsters.find(m => m.name === item.name);
-
-      let vidaPercentage = 100;
-      if (item.vida !== undefined) {
-        vidaPercentage = Math.floor(item.vida <= 0 ? 0 : item.vida);
-      }
-
+    
+      // Calcular a porcentagem de vida
+      
+    
       // Calcular a porcentagem de XP
       const currentXP = item.xp;
       const nextLevelXP = pontuacao[item.level] || 0;
       const currentLevelXP = pontuacao[item.level - 1] || 0;
-
+    
       let xpPercentage = 0;
       if (nextLevelXP !== currentLevelXP) {
         xpPercentage = Math.floor(((currentXP - currentLevelXP) / (nextLevelXP - currentLevelXP)) * 100);
       }
-
-      if (monster) {
-        const itemDiv = document.createElement('div');
-
-        function createCardHTML(item, monster, vidaPercentage, xpPercentage) {
-          const isDead = item.vida <= 0;
-          const imageUrl = item.isShiny ? monster.shiny_front_image : monster.front_image;
-          const shinyClass = item.isShiny ? '<img src="img/shining.png" style="width:20px;"> ' : '';
-
-          return `
-            <div class="poke-card ${isDead ? 'dead' : ''}" style="z-index:800">
-              <div style="text-align: center; margin-bottom: 5px;">
-                <small>${shinyClass} ${item.name} (${item.level})</small>
-              </div>
-              <div style="display: flex; align-items: center;">
-                <img src="${imageUrl}" style="float:left;" />
-                <div>
-                  <div class="bar-container">
-                    <small>HP</small>
-                    <div class="bar">
-                      <div class="bar-inner hp-bar" style="width: ${vidaPercentage.toFixed(0)}%;"></div>
-                    </div>
-                    <p style="font-size: 0.8em;">${vidaPercentage.toFixed(0)}%</p>
-                  </div>
-                  <div class="bar-container">
-                    <small>XP</small>
-                    <div class="bar">
-                      <div class="bar-inner xp-bar" style="width: ${xpPercentage.toFixed(0)}%;"></div>
-                    </div>
-                    <p style="font-size: 0.8em;">${xpPercentage.toFixed(0)}%</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          `;
-        }
-
-        itemDiv.innerHTML = createCardHTML(item, monster, vidaPercentage, xpPercentage);
-
-        itemDiv.draggable = true; // Tornar o item arrastável
-        itemDiv.addEventListener('dragstart', (event) => {
-          event.dataTransfer.setData('text/plain', JSON.stringify(item));
-        });
-        itemDiv.addEventListener('drop', (event) => handleDrop(event, monstrosDiv));
-        itemDiv.addEventListener('dragover', handleDragOver);
-        monstrosDiv.appendChild(itemDiv);
-      } else {
-        console.error(`Monstro '${item.name}' não encontrado em allMonsters.`);
-      }
-    });
-
-    // Get the items for the current page in centroPkDiv
-    const start = (currentPage - 1) * itemsPerPage + 6;
-    const end = start + itemsPerPage;
-    const paginatedItems = monstros.slice(start, end);
-
-    paginatedItems.forEach(item => {
+  
+    if (monster) {
       const itemDiv = document.createElement('div');
-      itemDiv.textContent = `
-         ${item.isShiny ? `shiny ` : ''} ${item.name} (level ${item.level})`;
+      
+      
+function createCardHTML(item, monster, vidaPercentage, xpPercentage) {
+  const isDead = item.vida <= 0;
+  const imageUrl = item.isShiny ? monster.shiny_front_image : monster.front_image;
+  const shinyClass = item.isShiny ? '<img src="img/shining.png" style="width:20px;"> ' : '';
+  
+  return `
+    <div class="poke-card ${isDead ? 'dead' : ''}" style="z-index:800">
+      <div style="text-align: center; margin-bottom: 5px;">
+        <small>${shinyClass} ${item.name} (${item.level})</small>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <img src="${imageUrl}" style="float:left;" />
+        <div>
+          <div class="bar-container">
+            <small>HP</small>
+            <div class="bar">
+              <div class="bar-inner hp-bar" style="width: ${vidaPercentage.toFixed(0)}%;"></div>
+            </div>
+            <p style="font-size: 0.8em;">${vidaPercentage.toFixed(0)}%</p>
+          </div>
+          <div class="bar-container">
+            <small>XP</small>
+            <div class="bar">
+              <div class="bar-inner xp-bar" style="width: ${xpPercentage.toFixed(0)}%;"></div>
+            </div>
+            <p style="font-size: 0.8em;">${xpPercentage.toFixed(0)}%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+
+  itemDiv.innerHTML = createCardHTML(item, monster, vidaPercentage, xpPercentage);
+
       itemDiv.draggable = true; // Tornar o item arrastável
       itemDiv.addEventListener('dragstart', (event) => {
         event.dataTransfer.setData('text/plain', JSON.stringify(item));
       });
-      itemDiv.addEventListener('drop', (event) => handleDrop(event, centroPkDiv));
+      itemDiv.addEventListener('drop', (event) => handleDrop(event, monstrosDiv));
       itemDiv.addEventListener('dragover', handleDragOver);
-      centroPkDiv.appendChild(itemDiv);
+      monstrosDiv.appendChild(itemDiv);
+    } else {
+      console.error(`Monstro '${item.name}' não encontrado em allMonsters.`);
+    }
+  });
+
+  // Get the items for the current page in centroPkDiv
+  const start = (currentPage - 1) * itemsPerPage + 6;
+  const end = start + itemsPerPage;
+  const paginatedItems = monstros.slice(start, end);
+
+  paginatedItems.forEach(item => {
+    
+    const itemDiv = document.createElement('div');
+    itemDiv.textContent = `
+       ${item.isShiny ? `shiny ` : ''} ${item.name} (level ${item.level})`;
+    itemDiv.draggable = true; // Tornar o item arrastável
+    itemDiv.addEventListener('dragstart', (event) => {
+      event.dataTransfer.setData('text/plain', JSON.stringify(item));
     });
+    itemDiv.addEventListener('drop', (event) => handleDrop(event, centroPkDiv));
+    itemDiv.addEventListener('dragover', handleDragOver);
+    centroPkDiv.appendChild(itemDiv);
+  });
 
-    // Add pagination info and buttons
-    const totalPages = Math.ceil((monstros.length - 6) / itemsPerPage);
+  // Add pagination info and buttons
+  const totalPages = Math.ceil((monstros.length - 6) / itemsPerPage);
 
-    const pageInfo = document.createElement('div');
-    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-    centroPkPagination.appendChild(pageInfo);
+  const pageInfo = document.createElement('div');
+  pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+  centroPkPagination.appendChild(pageInfo);
 
-    if (currentPage > 1) {
-      const prevButton = document.createElement('button');
-      prevButton.textContent = 'Previous';
-      prevButton.addEventListener('click', () => {
-        currentPage--;
-        renderMonstros();
-      });
-      centroPkPagination.appendChild(prevButton);
-    }
-
-    if (currentPage < totalPages) {
-      const nextButton = document.createElement('button');
-      nextButton.textContent = 'Next';
-      nextButton.addEventListener('click', () => {
-        currentPage++;
-        renderMonstros();
-      });
-      centroPkPagination.appendChild(nextButton);
-    }
-
-    if (totalPages > 1) {
-      const middleButton = document.createElement('button');
-      middleButton.textContent = 'Go to Page ' + Math.ceil(totalPages / 2);
-      middleButton.addEventListener('click', () => {
-        currentPage = Math.ceil(totalPages / 2);
-        renderMonstros();
-      });
-      centroPkPagination.appendChild(middleButton);
-    }
+  if (currentPage > 1) {
+    const prevButton = document.createElement('button');
+    prevButton.textContent = 'Previous';
+    prevButton.addEventListener('click', () => {
+      currentPage--;
+      renderMonstros();
+    });
+    centroPkPagination.appendChild(prevButton);
   }
 
-  // Set up event listener for dropping items on the ground
-  canvas.addEventListener('drop', handleDropOnGround);
-  canvas.addEventListener('dragover', handleDragOver);
+  if (currentPage < totalPages) {
+    const nextButton = document.createElement('button');
+    nextButton.textContent = 'Next';
+    nextButton.addEventListener('click', () => {
+      currentPage++;
+      renderMonstros();
+    });
+    centroPkPagination.appendChild(nextButton);
+  }
 
-  // Inicializa a renderização dos monstros
-  renderMonstros();
+  if (totalPages > 1) {
+    const middleButton = document.createElement('button');
+    middleButton.textContent = 'Go to Page ' + Math.ceil(totalPages / 2);
+    middleButton.addEventListener('click', () => {
+      currentPage = Math.ceil(totalPages / 2);
+      renderMonstros();
+    });
+    centroPkPagination.appendChild(middleButton);
+  }
 }
 
-// Função chamada ao carregar a página
-window.onload = function () {
-  updateMonstersInventoryDisplay();
-};
+// Set up event listener for dropping items on the ground
+canvas.addEventListener('drop', handleDropOnGround);
+canvas.addEventListener('dragover', handleDragOver);
 
-// Suas outras funções como displayMonsterData, getSpritSheet, updateBuddyImage, updateMonsterInfo, renderDroppedItems, callNextMonster devem estar definidas aqui
+  
+renderMonstros();
+} 
+
+
 
 
 
@@ -24894,6 +24911,8 @@ addItemToInventory({ id: generateUniqueId(), name: 'Max-Revive', quantity: 5 });
 addItemToInventory({ id: generateUniqueId(), name: 'PokeBall', quantity: 10 });
 addItemToInventory({ id: generateUniqueId(), name: 'UltraBall', quantity: 5 });
 });
+
+/////////
 });
 </script>
 <!--- scrip q cria monstros e add ao localstorage --->
@@ -24993,14 +25012,15 @@ function getMonsterMoves(name, level) {
 // Função para criar um monstro com os atributos passados
 function createMonster(name, level = getRandomValue(1, 100), optionalAttributes = {}) {
   const defaultAttributes = {
-    hp: getRandomValue(60, 120),
-    speed: getRandomValue(30, 70),
-    defense: getRandomValue(40, 80),
-    attackk: getRandomValue(50, 100),
-    spdefense: getRandomValue(40, 80),
-    spattack: getRandomValue(50, 100),
+    hp: isShiny ? getRandomValue(80, 150) : getRandomValue(60, 120),
+    speed: isShiny ? getRandomValue(50, 100) : getRandomValue(30, 70),
+    defense: isShiny ? getRandomValue(60, 120) : getRandomValue(40, 80),
+    attackk: isShiny ? getRandomValue(80, 140) : getRandomValue(50, 100),
+    spdefense: isShiny ? getRandomValue(60, 120) : getRandomValue(40, 80),
+    spattack: isShiny ? getRandomValue(70, 140) : getRandomValue(50, 100),
     isShiny: false, 
     //types: getTypes(name)
+    
   };
 
   // Verificar se moves não foram especificados e buscar em allMonsters
@@ -25618,6 +25638,7 @@ function loadMonsterFromLocalStorage() {
        },
        frames: monsterDetails.frames || { max: 1, hold: 30 },
        animate: true,
+       vida: monstersData[0].vida,
        name: monsterName,
        attacks: moves,
        level: monsterLevel,
@@ -25765,6 +25786,9 @@ let generatedMonstersLog = [];
 
   // Criar o monstro gerado
   let generatedEnemy = {
+    isEnemy: true,
+    isPlayer: false,
+    vida: this.health,
     position: { x: 700, y: -30 },
     velocity: { x: 0, y: 0 },
     image: {
@@ -25866,7 +25890,7 @@ function bagOption() {
   inventory.forEach((item, index) => {
     const itemInfo = document.createElement('div');
     itemInfo.innerHTML = `
-      <p onclick="useItem(${index})">${item.name} (${item.quantity})</p>
+      <p onclick="useItem(${index})" style="margin:10px;padding:10px;">${item.name} (${item.quantity})</p>
       <button onclick="useItem(${index})">Usar</button>
     `;
     bagDiv.appendChild(itemInfo);
@@ -26065,7 +26089,7 @@ function showReviveOptions(reviveType) {
   firstSixMonsters.forEach((monster, index) => {
     const monsterInfo = document.createElement('div');
     monsterInfo.innerHTML = `
-      <p onclick="useRevive('${reviveType}', ${index})">${monster.name} - Vida: ${monster.vida !== undefined ? Math.round(monster.vida) + '%' : '100%'}</p>
+      <p onclick="useRevive('${reviveType}', ${index})" style="margin:10px;padding:10px;">${monster.name} - Vida: ${monster.vida !== undefined ? Math.round(monster.vida) + '%' : '100%'}</p>
     `;
     reviveDiv.appendChild(monsterInfo);
   });
@@ -26188,7 +26212,7 @@ function showCureOptions(potionType) {
   firstSixMonsters.forEach((monster, index) => {
     const monsterInfo = document.createElement('div');
     monsterInfo.innerHTML = `
-      <p onclick="usePotion ('${potionType}', ${index})">${monster.name} - Vida: ${monster.vida !== undefined ? Math.round(monster.vida) + '%' : '100%'}</p>
+      <p style="margin:10px;padding:10px;" onclick="usePotion ('${potionType}', ${index})">${monster.name} - Vida: ${monster.vida !== undefined ? Math.round(monster.vida) + '%' : '100%'}</p>
     `;
     reviveDiv.appendChild(monsterInfo);
   });
@@ -26245,8 +26269,7 @@ function usePotion(potionType, index) {
     
     if (selectedMonster.name == monsters[0].name) {
     const healthBarElement = document.querySelector('#playerHealthBar');
-    healthBarElement.style.width = (selectedMonster?.vida || 100) + "%";
-    
+    healthBarElement.style.width = `${selectedMonster.vida}%`;
     }
 
   } else {
@@ -26505,22 +26528,6 @@ function monstersOption() {
 
 
 
-// Função para atualizar as informações do monstro no DOM
-function updateMonsterInfoDOM(emby) {
-    document.querySelector('#partner-level').innerHTML = emby.level;
-    document.querySelector('#partner-name').innerHTML = (emby.isShiny ? '<img src="img/shining.png" style="width:20px;"> ' : '') + emby.name;
-    
-
-    const healthBarElement = document.querySelector('#playerHealthBar');
-    healthBarElement.style.width = `${emby.vida}%`;
-    
-    
-    document.querySelector('#playerType').innerHTML = emby.type;
-    document.querySelector('#playerHp').innerHTML = emby.hp;
-    document.querySelector('#playerAttack').innerHTML = emby.attackk;
-    document.querySelector('#playerDefense').innerHTML = emby.defense;
-    document.querySelector('#playerSpeed').innerHTML = emby.speed;
-}
 
 
 // Função para inicializar o monstro
@@ -26579,7 +26586,7 @@ function selectMonster(index) {
         emby.isPlayer = true;
     }
 
-    player.monster = emby;
+    
     emby.isPlayer = true;
      isShiny = emby.isShiny;
     const monsterDetails = allMonsters.find(monster => monster.name === emby.name);
@@ -26598,6 +26605,7 @@ function selectMonster(index) {
         scale: 4,
         types: getTypes(emby.name),
         isShiny: isShiny,
+        vida: emby.vida,
         hp: emby.hp,
         speed: emby.speed,
         attackk: emby.attackk,
@@ -26627,6 +26635,7 @@ function selectMonster(index) {
 }
 
 function initBattle() {
+  const monsters = loadMonsters();
   // Resetar a flag usedInBattle para os primeiros 6 monstros
   monsters.slice(0, 6).forEach(monster => monster.usedInBattle = false);
 
@@ -26639,7 +26648,6 @@ function initBattle() {
   document.querySelector('#userInterface').style.display = 'block';
   document.querySelector('#dialogueBox').style.display = 'none';
   document.querySelector('#enemyHealthBar').style.width = '100%';
-  document.querySelector('#playerHealthBar').style.width = (monsters[0]?.vida || 100) + "%";
   
   document.querySelector('#attacksBox').style.display = 'none';
   document.querySelector('#attackType').style.display = 'none';
@@ -26650,44 +26658,44 @@ function initBattle() {
   draggle = new Monster({ ...randomEnemy, isPlayer: false, isShiny: enemyIsShiny });
   
   const enemyIsShinyy = draggle.isShiny;
-  const calculateWidth = (value, min, max) => {
+const calculateWidth = (value, min, max) => {
     return ((value - min) / (max - min)) * 100;
   };
   
-  const hpMax = enemyIsShinyy ? 150 : 120;
-  const defenseMax = enemyIsShinyy ? 120 : 80;
-  const attackMax = enemyIsShinyy ? 140 : 100;
-  const speedMax = enemyIsShinyy ? 100 : 70;
-  const spDefenseMax = enemyIsShinyy ? 120 : 80;
-  const spAttackMax = enemyIsShinyy ? 140 : 100;
+const hpMax = enemyIsShinyy ? 150 : 120;
+const defenseMax = enemyIsShinyy ? 120 : 80;
+const attackMax = enemyIsShinyy ? 140 : 100;
+const speedMax = enemyIsShinyy ? 100 : 70;
+const spDefenseMax = enemyIsShinyy ? 120 : 80;
+const spAttackMax = enemyIsShinyy ? 140 : 100;
 
-  const hpWidth = calculateWidth(draggle.hp, enemyIsShinyy ? 80 : 60, hpMax);
-  const defenseWidth = calculateWidth(draggle.defense, enemyIsShinyy ? 60 : 40, defenseMax);
-  const attackWidth = calculateWidth(draggle.attackk, enemyIsShinyy ? 80 : 50, attackMax);
-  const speedWidth = calculateWidth(draggle.speed, enemyIsShinyy ? 50 : 30, speedMax);
-  const spDefenseWidth = calculateWidth(draggle.spdefense, enemyIsShinyy ? 60 : 40, spDefenseMax);
-  const spAttackWidth = calculateWidth(draggle.spattack, enemyIsShinyy ? 70 : 50, spAttackMax);
+const hpWidth = calculateWidth(draggle.hp, enemyIsShinyy ? 80 : 60, hpMax);
+const defenseWidth = calculateWidth(draggle.defense, enemyIsShinyy ? 60 : 40, defenseMax);
+const attackWidth = calculateWidth(draggle.attackk, enemyIsShinyy ? 80 : 50, attackMax);
+const speedWidth = calculateWidth(draggle.speed, enemyIsShinyy ? 50 : 30, speedMax);
+const spDefenseWidth = calculateWidth(draggle.spdefense, enemyIsShinyy ? 60 : 40, spDefenseMax);
+const spAttackWidth = calculateWidth(draggle.spattack, enemyIsShinyy ? 70 : 50, spAttackMax);
 
-  // Definir um limite de "próximo do máximo" como 80%
-  const threshold = 0.8;
-  let attributesNearMax = 0;
 
-  if (draggle.hp >= hpMax * threshold) attributesNearMax++;
-  if (draggle.defense >= defenseMax * threshold) attributesNearMax++;
-  if (draggle.attackk >= attackMax * threshold) attributesNearMax++;
-  if (draggle.speed >= speedMax * threshold) attributesNearMax++;
-  if (draggle.spdefense >= spDefenseMax * threshold) attributesNearMax++;
-  if (draggle.spattack >= spAttackMax * threshold) attributesNearMax++;
+// Definir um limite de "próximo do máximo" como 80%
+const threshold = 0.8;
+let attributesNearMax = 0;
 
-  const enemyElement = document.getElementById("inimigo");
+if (draggle.hp >= hpMax * threshold) attributesNearMax++;
+if (draggle.defense >= defenseMax * threshold) attributesNearMax++;
+if (draggle.attackk >= attackMax * threshold) attributesNearMax++;
+if (draggle.speed >= speedMax * threshold) attributesNearMax++;
+if (draggle.spdefense >= spDefenseMax * threshold) attributesNearMax++;
+if (draggle.spattack >= spAttackMax * threshold) attributesNearMax++;
+const enemyElement = document.getElementById("inimigo");
 
-  if (attributesNearMax <= 2 && attributesNearMax >= 0) {
-    enemyElement.style.borderColor = "black";
-  } else if (attributesNearMax > 2 && attributesNearMax <= 4) {
-    enemyElement.style.borderColor = "yellow";
-  } else {
-    enemyElement.style.borderColor = "red";
-  }
+if (attributesNearMax <= 2 && attributesNearMax >= 0) {
+  enemyElement.style.borderColor = "black";
+} else if (attributesNearMax > 2 && attributesNearMax <= 4) {
+  enemyElement.style.borderColor = "yellow";
+} else {
+  enemyElement.style.borderColor = "red";
+}
 
   emby = loadMonsterFromLocalStorage();
   if (!emby) {
@@ -26699,9 +26707,14 @@ function initBattle() {
 
   renderedSprites = [draggle, emby];
   queue = [];
+  
+  //emby.vida = (monsters[0]?.vida || 100) + "%";
 
   document.querySelector('#enemy-level').innerHTML = draggle.level;
   document.querySelector('#enemy-name').innerHTML = (draggle.isShiny ? '<img src="img/shining.png" style="width:20px;"> ' : '') + draggle.name;
+  updateMonsterInfoDOM(emby);
+  
+  
 
   emby.attacks.forEach((attack) => {
     const button = createAttackButton(attack, true);
@@ -26744,7 +26757,7 @@ function showEnemyModal(draggle) {
         <p id="modalEnemyTypes">Types: ${types}</p>
         <div id="modalEnemyHealthBar" style="background-color:#ccc; width:100%; height:20px;">
             <div id="modalEnemyHealth" style="background-color:green; height:100%; width:${enemyHealthBarWidth}">
-                ${draggle.vida}%
+                ${Math.round(draggle.health) }%
             </div>
         </div>
         <p><b>Attack:</b></p>
@@ -26785,7 +26798,7 @@ function showEnemyModal(draggle) {
         </div>
         <p><b>Moves:</b></p>
         <ul id="modalEnemyMoves">
-          ${draggle.attacks.map(attack => `<li>${attack.name}</li>`).join('')}
+          ${draggle.attacks.map(attack => `<li style="margin:10px;padding:10px;">${attack.name} ${attack.damage}  <small class="${attack.type} type" style="margin:10px;padding:10px;">  ${attack.type}</small></li>`).join('')}
         </ul>
     </div>
   `;
@@ -26832,7 +26845,7 @@ function showPlayerModal(emby) {
         <p id="modalEnemyTypes">Types: ${types}</p>
         <div id="modalEnemyHealthBar" style="background-color:#ccc; width:100%; height:20px;">
             <div id="modalEnemyHealth" style="background-color:green; height:100%; width:${playerHealthBarWidth}">
-                ${emby.vida}%
+                ${Math.round(emby.health)}%
             </div>
         </div>
         <p><b>Attack:</b></p>
@@ -26872,8 +26885,9 @@ function showPlayerModal(emby) {
             </div>
         </div>
         <p><b>Moves:</b></p>
+        
         <ul id="modalEnemyMoves">
-          ${emby.attacks.map(attack => `<li>${attack.name}</li>`).join('')}
+          ${emby.attacks.map(attack => `<li style="margin:10px;padding:10px;">${attack.name} ${attack.damage}  <small class="${attack.type} type" style="margin:10px;padding:10px;">  ${attack.type}</small></li>`).join('')}
         </ul>
     </div>
   `;
@@ -26893,7 +26907,7 @@ document.getElementById('inimigo').addEventListener('click', function() {
 });
 
 document.getElementById('jogador').addEventListener('click', function() {
-  // 
+  // Assumindo que `draggle` é a variável global com as informações do inimigo
   showPlayerModal(emby);
 });
 
@@ -26912,11 +26926,13 @@ function updateMonsterInfoDOM(emby) {
 
     const monsters = loadMonsters();
     if (document.querySelector('#playerHealthBar')) {
-        document.querySelector('#playerHealthBar').style.width = (monsters[0]?.vida || 100) + "%";
+        document.querySelector('#playerHealthBar').style.width = `${monsters[0]?.vida || 100}%`;
     }
     if (document.querySelector('#playerType')) {
         document.querySelector('#playerType').innerHTML = emby.type;
     }
+    
+    
     if (document.querySelector('#playerAttack')) {
         document.querySelector('#playerAttack').innerHTML = emby.attack;
     }
@@ -27461,19 +27477,3 @@ canvas.addEventListener('touchend', onTouchEnd);
 
     
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
- 
