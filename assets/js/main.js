@@ -103,3 +103,59 @@ skillItems.forEach(function(item) {
     modal.style.display = "block";
   });
 });
+
+async function loadProjects() {
+  const workContainer = document.querySelector('.work__container');
+  try {
+    const response = await fetch('assets/js/projects.js');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const projects = await response.json();
+
+    projects.forEach(project => {
+      const projectElement = `
+        <div class="work__item">
+          <a href="${project.project_url}" target="_blank" class="work__img">
+            <img src="${project.image_url}" alt="${project.title}">
+            <b>${project.title}</b>
+          </a>
+          <p class="work__description">${project.description}</p>
+        </div>
+      `;
+      workContainer.innerHTML += projectElement;
+    });
+  } catch (error) {
+    console.error('Failed to load projects:', error);
+    workContainer.innerHTML = '<p class="error-message">Failed to load projects.</p>';
+  }
+}
+
+loadProjects();
+
+async function loadExperiences() {
+  const experienceContainer = document.querySelector('.experience__container');
+  try {
+    const response = await fetch('assets/js/experiences.js');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const experiences = await response.json();
+
+    experiences.forEach(experience => {
+      const experienceElement = `
+        <div class="experience__item">
+          <h3 class="experience__title">${experience.title}</h3>
+          <p class="experience__company">${experience.company} (${experience.duration})</p>
+          <p class="experience__description">${experience.description}</p>
+        </div>
+      `;
+      experienceContainer.innerHTML += experienceElement;
+    });
+  } catch (error) {
+    console.error('Failed to load experiences:', error);
+    experienceContainer.innerHTML = '<p class="error-message">Failed to load experiences.</p>';
+  }
+}
+
+loadExperiences();
