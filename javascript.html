@@ -16,48 +16,14 @@
     </head>
     <body>
         <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="index.html" class="nav__logo">Gigllyan</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link active-link">Início</a></li>
-                        <li class="nav__item"><a href="index.html#about" class="nav__link">Sobre</a></li>
-                        <li class="nav__item"><a href="index.html#skills" class="nav__link">Habilidades</a></li>
-                        <li class="nav__item"><a href="index.html#work" class="nav__link">Projetos</a><ul><li>aa
-                    </li></ul></li>
-                        <li class="nav__item"><a href="index.html#contact" class="nav__link">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+        <header class="l-header content" data-src="assets/content/html/header.html"></header>
 
         <main class="L-main content" data-src="assets/content/pages/javascript.html">
-
-
-
-
+            <!-- Main content for javascript.html page will be loaded here by load-content.js -->
         </main>
 
         <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Gigllyan</p>
-            <div class="footer__social">
-                <a href="https://facebook.com/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://instagram.com/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://twitter.com/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://github.com/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://wa.me/gigllyan" class="footer__icon" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
-            </div>
-            <p class="footer__copy">&#169;  gigllyan.github.io. All rigths reserved</p>
-        </footer>
+        <footer class="footer content" data-src="assets/content/html/footer.html"></footer>
 
 
         <!--===== SCROLL REVEAL =====-->
@@ -70,6 +36,9 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        
+        <!--===== DYNAMIC LOADER JS =====-->
+        <script src="assets/js/dynamic-loader.js"></script>
 
         <!--===== VALIDAR FORMULÁRIO JS =====-->
         <script src="assets/js/form-val.js"></script>
