@@ -1,0 +1,98 @@
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.toolbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#saveChangesBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#saveChangesBtn:hover {
+    background-color: #45a049;
+}
+
+.container {
+    max-width: 960px;
+    margin: 70px auto 20px auto; /* Adjusted margin for fixed toolbar */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.cms-section {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px dashed #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.cms-section[contenteditable="true"]:focus-within,
+.cms-section[contenteditable="true"]:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.25);
+}
+
+/* Specific styling for example sections */
+#pageHeader h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+#pageNav {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+#pageNav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+#pageNav a:hover {
+    text-decoration: underline;
+}
+
+#pageFooter {
+    text-align: center;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+
+/* General contenteditable styles */
+[contenteditable="true"] {
+    outline: none; /* Removes default browser outline */
+}
+
+[contenteditable="true"] h1,
+[contenteditable="true"] h2,
+[contenteditable="true"] p,
+[contenteditable="true"] li {
+    cursor: text;
+}

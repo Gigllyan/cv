@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="saveChangesBtn">Save Changes</button>
+    </div>
+    <div class="container">
+        <header class="cms-section" id="pageHeader" contenteditable="true">
+            <h1>Editable Page Title</h1>
+        </header>
+
+        <nav class="cms-section" id="pageNav" contenteditable="true">
+            <p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">Contact</a></p>
+        </nav>
+
+        <main>
+            <section class="cms-section" id="sectionOne" contenteditable="true">
+                <h2>Editable Section 1</h2>
+                <p>This is the first editable paragraph. Click here to edit the text.</p>
+            </section>
+
+            <section class="cms-section" id="sectionTwo" contenteditable="true">
+                <h2>Editable Section 2</h2>
+                <p>This is another editable paragraph. Customize it as you wish.</p>
+                <ul>
+                    <li>Editable list item 1</li>
+                    <li>Editable list item 2</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="cms-section" id="pageFooter" contenteditable="true">
+            <p>&copy; 2023 Your Website. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
