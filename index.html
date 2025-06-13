@@ -16,10 +16,230 @@
     </head>
     <body>
         <!--===== HEADER =====-->
-        <header class="l-header content" data-src="assets/content/html/header.html"></header>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="/cv/" class="nav__logo">Gigllyan</a>
+                </div>
 
-        <main class="L-main content" id="main-content-area" data-src="assets/content/html/home-section.html">
-            <!-- Content will be loaded here by load-content.js -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Início</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projetos</a><ul><li>aa
+                    </li></ul></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="L-main content-s" data-src="assets/content/html/home.html">
+
+
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Olá, eu<br>sou <span class="home__title-color">Gigllyan</span><br> Web Designer</h1>
+
+                    <a href="#contact" class="button">Contato</a>
+                </div>
+
+                <div class="home__social">
+                <a href="https://facebook.com/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://instagram.com/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://wa.me/gigllyan" class="home__social-icon" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/header.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Sobre</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about2.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle"></h2>
+                        <p class="about__text">👨‍💼 Formado em Administração e apaixonado por tecnologia e desenvolvimento web. Especializado na criação de sites e sistemas web, com um toque de criatividade e eficiência. 💻🌐</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Habilidades</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle"></h2>
+                        <p class="skills__text">Conhecimento em desenvolvimento web em várias linguagens, sistemas exclusivos e sistemas de gerenciamento de conteúdo.<br/></p>
+
+<div class="skills__data" data-dados="HTML, significa HyperText Markup Language, é a linguagem básica usada para criar páginas da web. <br><br> [a href='html.html' title='html']veja mais[/a]">
+    <div class="skills__names">
+        <i class='bx bxl-html5 skills__icon'></i>
+        <span class="skills__name">HTML5</span>
+    </div>
+    <div class="skills__bar skills__html">
+    </div>
+    <div>
+        <span class="skills__percentage">90%</span>
+    </div>
+</div>
+                        
+                        
+                        <div class="skills__data" data-dados="CSS, ou Cascading Style Sheets, é uma linguagem usada para estilizar e formatar o conteúdo HTML de uma página web. Ele permite controlar a aparência visual dos elementos HTML, como cores, fontes, espaçamento, layout e muito mais. [a href='css.html' title='css']veja mais[/a]">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="skills__data" data-dados="JavaScript é uma linguagem de programação amplamente usada para adicionar interatividade e dinamismo às páginas da web. Ela é executada no navegador do usuário, permitindo que você manipule elementos HTML, responda a eventos do usuário e altere o conteúdo da página em tempo real.
+
+Com JavaScript, você pode realizar uma variedade de tarefas, como validar formulários, criar animações, fazer requisições para servidores web (AJAX), criar jogos e muito mais. Sua versatilidade e ubiquidade fazem dele uma das ferramentas mais importantes para o desenvolvimento web moderno.. [a href='javascript.html' title='javascript']veja mais[/a]">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        
+                        
+
+                        <div class="skills__data" data-dados="PHP é uma linguagem de programação frequentemente usada para criar sites dinâmicos e interativos. Em termos simples, PHP é uma ferramenta que os desenvolvedores web utilizam para fazer com que seus sites façam coisas como enviar e-mails, acessar bancos de dados para armazenar informações, processar formulários e criar páginas personalizadas para diferentes usuários. [a href='php.html' title='html']veja mais[/a]">
+
+                            <div class="skills__names">
+                                <i class='bx bxl-php skills__icon'></i>
+                                <span class="skills__name">PHP</span>
+                            </div>
+                            <div class="skills__bar skills__php">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data" data-dados="O Joomla é um sistema de gerenciamento de conteúdo (CMS) que permite criar e gerenciar sites de forma eficiente. Funciona de maneira semelhante ao WordPress, fornecendo uma interface intuitiva para criar e atualizar conteúdo sem a necessidade de conhecimento técnico em programação.  [a href='joomla.html' title='joomla']veja mais[/a]">
+                            <div class="skills__names">
+                                <i class='bx bxl-joomla skills__icon'></i>
+                                <span class="skills__name">Joomla</span>
+                            </div>
+                            <div class="skills__bar skills__joomla">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        
+                        
+                        
+
+                        <div class="skills__data" data-dados="O WordPress é uma plataforma de gerenciamento de conteúdo (CMS) que permite criar e gerenciar facilmente sites, blogs e até lojas online. Ele funciona fornecendo uma interface amigável, onde os usuários podem criar, editar e publicar conteúdo sem a necessidade de conhecimento técnico em programação.  [a href='wordpress.html' title='wordpress']veja mais[/a]">
+
+                            <div class="skills__names">
+                                <i class='bx bxl-wordpress skills__icon'></i>
+                                <span class="skills__name">Wordpress</span>
+                            </div>
+                            <div class="skills__bar skills__wordpress">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                   
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalContent"></p>
+    </div>
+</di v>
+                    
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Trabalhos</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="sites/" class="work__img">
+                        <img src="assets/img/work1.jpg" alt=""><b>Sites</b>
+                    </a>
+                    <a href="projetos/" class="work__img">
+                        <img src="assets/img/work2.jpg" alt=""><b>Projetos</b>
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contato</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="http://clinsp.com.br/teste.php" method="POST" class="contact__form" name="contactForm" onsubmit="return validarFormulario()">
+                        <input type="text" placeholder="Nome" class="contact__input" name="nome">
+                        <input type="mail" placeholder="Email" class="contact__input" name="email">
+                        <input id="telefone" type="text" placeholder="Telefone: (11) 9-9999-9999" class="contact__input" name="telefone">
+                        <input type="text" placeholder="Assunto" class="contact__input" name="assunto">
+                        <textarea name="mensagem" id="" cols="0" rows="10" class="contact__input" placeholder="Mensagem..."></textarea>
+
+
+          <input type="submit" name="BTEnvia" value="Enviar" class="contact__button button"> 
+   <input type="reset" name="BTApaga" value="Apagar" class="contact__button button" style="background-color:red;" onclick="clearInput()">
+                    </form>
+
+
+  
+  
+                </div>
+            </section>
+
         </main>
 
         <!--===== FOOTER =====-->
