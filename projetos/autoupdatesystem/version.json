@@ -1,0 +1,14 @@
+{
+    "version": "1.1",
+    "update_url": "https://raw.githubusercontent.com/gigllyan/cv/main/",
+    "changelog": [
+        "Melhorias na interface",
+        "Correções de bugs",
+        "Otimizações de performance"
+    ],
+    "files": [
+        "index.php",
+        "style.css", 
+        "script.js"
+    ]
+}
