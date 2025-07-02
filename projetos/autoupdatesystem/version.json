@@ -1,14 +1,25 @@
 {
-    "version": "1.1",
-    "update_url": "https://raw.githubusercontent.com/gigllyan/cv/main/",
-    "changelog": [
-        "Melhorias na interface",
-        "Correções de bugs",
-        "Otimizações de performance"
-    ],
-    "files": [
-        "index.php",
-        "style.css", 
-        "script.js"
-    ]
+  "version": "1.2.0",
+  "description": "Sistema de Portfolio - Atualização com novo design e funcionalidades",
+  "release_date": "2025-07-02",
+  "files": [
+    {
+      "name": "index.php",
+      "description": "Página principal do portfolio",
+      "type": "php"
+    }
+    
+  ],
+  "changelog": [
+    "Novo design responsivo",
+    "Melhorias na performance",
+    "Correção de bugs menores",
+    "Adição de novas seções"
+  ],
+  "requirements": {
+    "php": ">=7.4",
+    "modules": ["json", "curl"]
+  },
+  "backup": true,
+  "force_update": false
 }
