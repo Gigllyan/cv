@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +10,7 @@
     <div class="container">
         <header>
             <h1>Minha Aplicação Web</h1>
-            <p class="version">Versão: <?php echo isset($updater) ? $updater->getCurrentVersion() : '1.0'; ?></p>
+            <p class="version">Versão: <?php echo isset($updater) ? $updater->getCurrentVersion() : '1.0.3'; ?></p>
         </header>
         
         <main>
@@ -39,7 +38,8 @@
     </div>
     
     <script src="script.js"></script>
-     document.addEventListener('DOMContentLoaded', function() {
+    <script >
+        document.addEventListener('DOMContentLoaded', function() {
     console.log('Sistema Auto-Atualizável carregado - Versão 1.0');
     
     // Verifica o status da conexão
