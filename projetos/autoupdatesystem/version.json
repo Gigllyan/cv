@@ -1,6 +1,6 @@
 {
-  "version": "1.2.1",
-  "description": "Sistema de Portfolio - Atualização com novo design e funcionalidades",
+  "version": "1.2.2",
+  "description": "Sistema de Portfolio2 - Atualização com novo design e funcionalidades",
   "release_date": "2025-07-03",
   "files": [
     {
@@ -11,10 +11,10 @@
     
   ],
   "changelog": [
-    "Novo design responsivo",
-    "Melhorias na performance",
-    "Correção de bugs menores",
-    "Adição de novas seções"
+    "Novo design responsivo2",
+    "Melhorias na performance2",
+    "Correção de bugs menores2",
+    "Adição de novas seções2"
   ],
   "requirements": {
     "php": ">=7.4",
