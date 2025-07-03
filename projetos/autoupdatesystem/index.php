@@ -10,7 +10,7 @@
     <div class="container">
         <header>
             <h1>Minha Aplicação Web</h1>
-            <p class="version">Versão: <?php echo isset($updater) ? $updater->getCurrentVersion() : '1.0.3'; ?></p>
+            <p class="version">Versão: <?php echo isset($updater) ? $updater->getCurrentVersion() : '1.2.3'; ?></p>
         </header>
         
         <main>
