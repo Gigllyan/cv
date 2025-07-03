@@ -1,7 +1,7 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Sistema de Portfolio - Atualização com novo design e funcionalidades",
-  "release_date": "2025-07-02",
+  "release_date": "2025-07-03",
   "files": [
     {
       "name": "index.php",
