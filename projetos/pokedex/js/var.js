@@ -81,7 +81,7 @@ const pokesarray = [
       { min: 1, max: 1, item: "leaves", rar: "32%" },
       { min: 1, max: 1, item: "bag of pollem", rar: "12%" },
     ],
-    evoStone: "Leaf stone",
+    evoStone: "Leaf stone (2x)",
     boost: 7,
     booStone: "Leaf stone",
     habilidades: "Cut, Headbutt",
@@ -205,7 +205,7 @@ const pokesarray = [
       { min: 1, max: 1, item: "Fire stone", rar: "Raro" },
       { min: 1, max: 1, item: "pot of lava", rar: "22%" },
     ],
-    evoStone: "Fire stone",
+    evoStone: "Fire stone (2x)",
     boost: 7,
     booStone: "Fire stone",
     habilidades: "Cut, Headbutt",
@@ -329,7 +329,7 @@ const pokesarray = [
       { min: 1, max: 1, item: "Water stone", rar: "Raro" },
       { min: 1, max: 1, item: "water pendant", rar: "27%" },
     ],
-    evoStone: "Water stone",
+    evoStone: "Water stone (2x)",
     boost: 7,
     booStone: "Water stone",
     habilidades: "Surf, Headbutt",
@@ -2819,6 +2819,8 @@ const pokesarray = [
     dificuldade: "Difícil",
     xpcaught: 50000,
     pricenpc: 12500,
+    shiny: "yes",
+    fast: "yes",
     preevo: "Ponyta",
     mapas: [],
     moves: [
@@ -14586,7 +14588,9 @@ const pokesarray = [
 
 
 
-var efetividadeArray = [
+
+
+var efetividadeArrayOriginal = [
     {tipo: "Normal", forca: [], fraqueza: ["Pedra", "Metal"], nulo: ["Fantasma"]},
     {tipo: "Fogo", forca: ["Grama", "Gelo", "Inseto", "Metal"], fraqueza: ["Água", "Pedra", "Dragão", "Fogo"], nulo: []},
     {tipo: "Água", forca: ["Fogo", "Terra", "Pedra"], fraqueza: ["Água", "Grama", "Dragão"], nulo: []},
@@ -14600,11 +14604,49 @@ var efetividadeArray = [
     {tipo: "Psiquico", forca: ["Lutador", "Venenoso"], fraqueza: ["Metal", "Psiquico"], nulo: ["Noturno"]},
     {tipo: "Inseto", forca: ["Grama", "Psiquico", "Noturno"], fraqueza: ["Fogo", "Lutador", "Voador", "Fantasma", "Metal", "Fada"], nulo: []},
     {tipo: "Pedra", forca: ["Fogo", "Gelo", "Voador", "Inseto"], fraqueza: ["Lutador", "Terra", "Metal"], nulo: []},
+    
+    {tipo: "Crystal", forca: ["Fogo", "Gelo", "Voador", "Inseto"], fraqueza: ["Lutador", "Terra", "Metal"], nulo: []},
+ 
+    
     {tipo: "Fantasma", forca: ["Psiquico", "Fantasma"], fraqueza: ["Noturno", "Metal"], nulo: ["Normal", "Lutador"]},
     {tipo: "Dragão", forca: ["Dragão"], fraqueza: ["Metal"], nulo: ["Fada"]},
     {tipo: "Metal", forca: ["Gelo", "Pedra", "Fada"], fraqueza: ["Fogo", "Água", "Elétrico", "Metal"], nulo: []},
     {tipo: "Noturno", forca: ["Psiquico", "Fantasma"], fraqueza: ["Lutador", "Fada", "Noturno"], nulo: []},
     {tipo: "Fada", forca: ["Lutador", "Dragão", "Noturno"], fraqueza: ["Fogo", "Venenoso", "Metal"], nulo: []}
+];
+var efetividadeArray = [
+    {tipo: "Normal",   forca: [],                                    fraqueza: ["Crystal", "Lutador", "Pedra", "Metal"],                   resistencia: ["Fantasma"],                     nulo: []},
+    {tipo: "Fogo",     forca: ["Crystal", "Grama", "Gelo", "Inseto", "Metal"],  fraqueza: ["Água", "Pedra", "Dragão", "Fogo"],             resistencia: [],                               nulo: []},
+    {tipo: "Água",     forca: ["Fogo", "Terra", "Pedra"],            fraqueza: ["Crystal", "Elétrico", "Grama", "Dragão"],                resistencia: [],                               nulo: []},
+    {tipo: "Grama",    forca: ["Crystal", "Água", "Terra", "Pedra"],            fraqueza: ["Fogo", "Gelo", "Venenoso", "Voador", "Inseto"], resistencia: [],                               nulo: []},
+    {tipo: "Elétrico", forca: ["Água", "Voador"],                    fraqueza: ["Terra"],                                       resistencia: ["Elétrico", "Voador", "Metal"], nulo: ["Crystal"]},
+    {tipo: "Gelo",     forca: ["Grama", "Terra", "Voador", "Dragão"],fraqueza: ["Crystal", "Fogo", "Lutador", "Pedra", "Metal"],            resistencia: ["Gelo"],                         nulo: []},
+    
+    {tipo: "Lutador",  forca: ["Crystal", "Normal", "Gelo", "Pedra", "Noturno", "Metal"], fraqueza: ["Voador", "Psiquico", "Fada"],                resistencia: ["Inseto", "Pedra", "Noturno"],  nulo: ["Fantasma"]},
+    {tipo: "Venenoso", forca: ["Crystal", "Grama", "Fada"],                       fraqueza: ["Terra", "Psiquico"],                           resistencia: ["Lutador", "Venenoso", "Inseto", "Grama", "Fada"], nulo: []},
+    {tipo: "Terra",    forca: ["Crystal", "Fogo", "Elétrico", "Venenoso", "Pedra", "Metal"], fraqueza: ["Água", "Grama", "Gelo"],                   resistencia: ["Venenoso", "Pedra"],         nulo: ["Elétrico"]},
+    {tipo: "Voador",   forca: ["Grama", "Lutador", "Inseto"],        fraqueza: ["Crystal", "Elétrico", "Gelo", "Pedra"],                   resistencia: ["Lutador", "Inseto", "Grama"],   nulo: ["Terra"]},
+    {tipo: "Psiquico", forca: ["Lutador", "Venenoso"],               fraqueza: ["Crystal", "Inseto", "Fantasma", "Noturno"],                resistencia: ["Lutador", "Psiquico"],         nulo: []},
+    {tipo: "Inseto",   forca: ["Grama", "Psiquico", "Noturno"],       fraqueza: ["Fogo", "Voador", "Pedra"],                      resistencia: ["Lutador", "Terra", "Grama"],    nulo: []},
+    {tipo: "Pedra",    forca: ["Fogo", "Gelo", "Voador", "Inseto"], fraqueza: ["Crystal", "Água", "Grama", "Lutador", "Terra", "Metal"],  resistencia: ["Normal", "Fogo", "Venenoso", "Voador"], nulo: []},
+    {tipo: "Fantasma", forca: ["Psiquico", "Fantasma"],              fraqueza: ["Fantasma", "Noturno"],                         resistencia: ["Venenoso", "Inseto"],          nulo: ["Normal"]},
+    {tipo: "Dragão",   forca: ["Dragão"],                            fraqueza: ["Crystal", "Gelo", "Dragão", "Fada"],                       resistencia: ["Fogo", "Água", "Grama", "Elétrico"], nulo: []},
+    {tipo: "Noturno",  forca: ["Psiquico", "Fantasma"],              fraqueza: ["Lutador", "Inseto", "Fada"],                    resistencia: ["Fantasma", "Noturno"],         nulo: ["Psiquico"]},
+    {tipo: "Metal",    forca: ["Crystal", "Gelo", "Pedra", "Fada"],             fraqueza: ["Fogo", "Lutador", "Terra"],                     resistencia: ["Normal", "Grama", "Gelo", "Voador", "Psiquico", "Inseto", "Pedra", "Dragão", "Fada", "Metal"], nulo: ["Venenoso"]},
+    {tipo: "Fada",     forca: ["Lutador", "Dragão", "Noturno"],       fraqueza: ["Venenoso", "Metal"],                           resistencia: ["Lutador", "Inseto", "Noturno"], nulo: ["Dragão"]},
+
+    // ──────── TIPO CRYSTAL CORRIGIDO ────────
+    {
+        tipo: "Crystal",
+        // Crystal é super efetivo contra:
+        forca: ["Fogo", "Gelo", "Voador", "Inseto"],
+        // Crystal leva dano 2× de:
+        fraqueza: ["Fogo", "Lutador", "Terra", "Metal", "Venenoso", "Grama"],
+        // Crystal resiste (leva 0.5× de):
+        resistencia: ["Normal", "Água", "Gelo", "Voador", "Psiquico", "Pedra", "Dragão", "Inseto"],
+        // Crystal é imune a:
+        nulo: ["Elétrico"]
+    }
 ];
 
 var ballsArray = [
@@ -14709,10 +14751,9 @@ ballsArray.find(b => b.ball === "Janguruball").tipos = ["Grama", "Venenoso"];
 
 
 const ShinysMegasArray = [
-  // === EXEMPLO JÁ CORRIGIDO (mantidos como referência) ===
   {
     nome: "Baby Bulbasaur",
-    numero: 1,
+    numero: "1-1",
     level: 1,
     clan: "Naturia",
     tipo: "Grama",
@@ -14753,7 +14794,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Venusaur",
+    
     mapas: [
       { top: 27, left: 43, text: "Jungle Island - (VIP)" },
       { top: 15, left: 40, text: "Green Island - (VIP)" }
@@ -14797,7 +14838,7 @@ const ShinysMegasArray = [
     pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Venusaur",
+    preevo: "Venusaur",
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Embedded Tower - (VIP)" }
@@ -14830,7 +14871,7 @@ const ShinysMegasArray = [
 
   {
     nome: "Baby Charmander",
-    numero: 4,
+    numero: "4-1",
     level: 1,
     clan: "Volcanic",
     tipo: "Fogo",
@@ -14871,7 +14912,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Charizard",
+    
     vip: "yes",
     mapas: [
       { top: 60, left: 20, text: "Volcano Area - (VIP)" },
@@ -14915,7 +14956,7 @@ const ShinysMegasArray = [
     pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Charizard",
+    preevo: "Charizard",
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Embedded Tower - (VIP)" }
@@ -14956,7 +14997,7 @@ const ShinysMegasArray = [
     pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Charizard",
+    preevo: "Charizard",
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Embedded Tower - (VIP)" }
@@ -14986,7 +15027,7 @@ const ShinysMegasArray = [
   },
   {
     nome: "Baby Squirtle",
-    numero: 7,
+    numero: "7-1",
     level: 1,
     clan: "Seavell",
     tipo: "Água",
@@ -15027,7 +15068,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Blastoise",
+    
     vip: "yes",
     mapas: [
       { top: 80, left: 70, text: "Seavell Island - (VIP)" },
@@ -15069,7 +15110,7 @@ const ShinysMegasArray = [
     pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Blastoise",
+    preevo: "Blastoise",
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Embedded Tower - (VIP)" }
@@ -15099,7 +15140,6 @@ const ShinysMegasArray = [
   },
 
   
-    // ==================== CONVERTIDOS CORRETAMENTE ====================
 
 {
     nome: "Shiny Butterfree",
@@ -15187,7 +15227,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Pidgeot",
+    
     mapas: [
       { top: 10, left: 80, text: "Sky Island - (VIP)" }
     ],
@@ -15242,6 +15282,7 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "bitten apple", rar: "25.0%" }
     ],
     boost: 20,
+    evo: "Shiny Raticate",
     booStone: "Heart stone",
     habilidades: "Headbutt"
   },
@@ -15276,6 +15317,7 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "rat tail", rar: "5.0%" },
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" }
     ],
+    preevo: "Shiny Rattata",
     boost: 8,
     booStone: "Heart stone",
     habilidades: "Dig, Cut, Headbutt"
@@ -15364,7 +15406,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Raichu",
+    
     mapas: [
       { top: 40, left: 60, text: "Power Plant - (VIP)" }
     ],
@@ -15439,7 +15481,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Ninetales",
+    
     mapas: [
       { top: 60, left: 20, text: "Volcano Area - (VIP)" }
     ],
@@ -15479,6 +15521,7 @@ const ShinysMegasArray = [
     xpcaught: 15000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Golbat",
     mapas: [
       { top: 31, left: 73, text: "Lost Island Cave - (VIP)" }
     ],
@@ -15511,6 +15554,8 @@ const ShinysMegasArray = [
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Caught",
+    preevo: "Shiny Zubat",
+    evo: "Shiny Crobat",
     xpcaught: 200000,
     pricenpc: "unseleable",
     shiny: "yes",
@@ -15573,6 +15618,8 @@ const ShinysMegasArray = [
     habilidades: "Cut"
   },
 
+
+
   {
     nome: "Shiny Vileplume",
     numero: "45-1",
@@ -15625,6 +15672,7 @@ const ShinysMegasArray = [
     xpcaught: 25000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Parasect", 
     mapas: [
       { top: 27, left: 43, text: "Jungle Island - (VIP)" }
     ],
@@ -15658,6 +15706,7 @@ const ShinysMegasArray = [
     xpcaught: 200000,
     pricenpc: "unseleable",
     shiny: "yes",
+    preevo: "Shiny Paras", 
     mapas: [
       { top: 27, left: 43, text: "Jungle Island - (VIP)" }
     ],
@@ -15698,6 +15747,7 @@ const ShinysMegasArray = [
     xpcaught: 40000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Venomoth",
     mapas: [
       { top: 27, left: 43, text: "Jungle Island - (VIP)" }
     ],
@@ -15735,7 +15785,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Venomoth",
+    preevo: "Shiny Venonat",
     mapas: [
       { top: 27, left: 43, text: "Jungle Island - (VIP)" }
     ],
@@ -15808,6 +15858,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     vip: "yes",
+    evo: "Shiny Arcanine",
     mapas: [
       { top: 60, left: 20, text: "Volcano Area - (VIP)" }
     ],
@@ -15847,7 +15898,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Arcanine",
+    preevo: "Shiny Growlithe",
     mapas: [
       { top: 60, left: 20, text: "Volcano Area - (VIP)" }
     ],
@@ -15887,6 +15938,7 @@ const ShinysMegasArray = [
     xpcaught: 800000,
     pricenpc: 0,
     shiny: "yes",
+    evo: "Light Abra", 
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Agatha Quest Area - (VIP)" }
@@ -15921,6 +15973,7 @@ const ShinysMegasArray = [
     xpcaught: 800000,
     pricenpc: 0,
     shiny: "yes",
+    preevo: "Dark Abra",
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Agatha Quest Area - (VIP)" }
@@ -15957,7 +16010,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Alakazam",
+    
     mapas: [
       { top: 40, left: 60, text: "Psychic Tower - (VIP)" }
     ],
@@ -15997,7 +16050,7 @@ const ShinysMegasArray = [
     pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Alakazam",
+    preevo: "Alakazam",
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Embedded Tower - (VIP)" }
@@ -16035,7 +16088,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Machamp",
+    
     mapas: [
       { top: 84, left: 35, text: "Fighting Dojo - (VIP)" }
     ],
@@ -16072,6 +16125,7 @@ const ShinysMegasArray = [
     xpcaught: 40000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Tentacruel",
     mapas: [
       { top: 90, left: 10, text: "Deep Sea - (VIP)" }
     ],
@@ -16110,7 +16164,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Tentacruel",
+    preevo: "Shiny Tentacool",
     mapas: [
       { top: 90, left: 10, text: "Deep Sea - (VIP)" }
     ],
@@ -16183,6 +16237,7 @@ const ShinysMegasArray = [
     xpcaught: 250000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Rapidash",
     mapas: [
       { top: 50, left: 50, text: "Dimensional Zone - (VIP)" }
     ],
@@ -16215,7 +16270,7 @@ const ShinysMegasArray = [
     pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Slowbro",
+    preevo: "Slowbro",
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Dimensional Zone - (VIP)" }
@@ -16368,6 +16423,7 @@ const ShinysMegasArray = [
     xpcaught: 40000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Muk",
     mapas: [
       { top: 31, left: 73, text: "Lost Island - (VIP)" }
     ],
@@ -16403,7 +16459,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Muk",
+    preevo: "Shiny Grimer",
     mapas: [
       { top: 31, left: 73, text: "Lost Island - (VIP)" }
     ],
@@ -16473,6 +16529,7 @@ const ShinysMegasArray = [
     xpcaught: 80000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Haunter",
     mapas: [
       { top: 31, left: 73, text: "Lost Island Cave - (VIP)" }
     ],
@@ -16504,6 +16561,7 @@ const ShinysMegasArray = [
     xpcaught: 220000,
     pricenpc: "unseleable",
     shiny: "yes",
+    preevo: "Shiny Gastly",
     mapas: [
       { top: 31, left: 73, text: "Lost Island Cave - (VIP)" }
     ],
@@ -16538,7 +16596,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Gengar",
+    
     mapas: [
       { top: 31, left: 73, text: "Lost Island Cave - (VIP)" }
     ],
@@ -16566,6 +16624,15 @@ const ShinysMegasArray = [
     booStone: "Darkness stone",
     habilidades: "Levitate, Control mind"
   },
+  
+  
+  
+  ////////
+  ////////corrigir evo e preevo a partir daki 
+
+  
+  
+  
 
   {
     nome: "Mega Gengar",
@@ -16580,7 +16647,7 @@ const ShinysMegasArray = [
     pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Gengar",
+    preevo: "Gengar",
     vip: "yes",
     mapas: [
       { top: 50, left: 50, text: "Embedded Tower - (VIP)" }
@@ -16726,6 +16793,7 @@ const ShinysMegasArray = [
     xpcaught: 25000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Kingler",
     mapas: [
       { top: 90, left: 10, text: "Deep Sea - (VIP)" }
     ],
@@ -16761,6 +16829,7 @@ const ShinysMegasArray = [
     xpcaught: 250000,
     pricenpc: "unseleable",
     shiny: "yes",
+    preevo: "Shiny Krabby",
     mapas: [
       { top: 90, left: 10, text: "Deep Sea - (VIP)" }
     ],
@@ -16797,6 +16866,7 @@ const ShinysMegasArray = [
     xpcaught: 45000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Electrode",
     mapas: [
       { top: 40, left: 60, text: "Power Plant - (VIP)" }
     ],
@@ -16830,6 +16900,7 @@ const ShinysMegasArray = [
     xpcaught: 350000,
     pricenpc: "unseleable",
     shiny: "yes",
+    preevo: "Shiny Voltorb",
     mapas: [
       { top: 40, left: 60, text: "Power Plant - (VIP)" }
     ],
@@ -16866,6 +16937,7 @@ const ShinysMegasArray = [
     xpcaught: 50000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Marowak",
     mapas: [
       { top: 84, left: 35, text: "Rock Tunnel - (VIP)" }
     ],
@@ -16904,7 +16976,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Marowak",
+    preevo: "Shiny Cubone",
     mapas: [
       { top: 84, left: 35, text: "Rock Tunnel - (VIP)" }
     ],
@@ -16943,6 +17015,7 @@ const ShinysMegasArray = [
     xpcaught: 900000,
     pricenpc: 1000000,
     shiny: "yes",
+    preevo: "Hitmonlee",
     heavy: "yes",
     mapas: [
       { top: 84, left: 35, text: "Fighting Dojo - (VIP)" }
@@ -16975,6 +17048,7 @@ const ShinysMegasArray = [
     xpcaught: 900000,
     pricenpc: 1000000,
     shiny: "yes",
+    preevo: "Hitmonchan",
     heavy: "yes",
     mapas: [
       { top: 84, left: 35, text: "Fighting Dojo - (VIP)" }
@@ -17050,7 +17124,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Tangela",
+    
     mapas: [
       { top: 15, left: 40, text: "Green Island - (VIP)" }
     ],
@@ -17088,6 +17162,7 @@ const ShinysMegasArray = [
     xpcaught: 950000,
     pricenpc: 0,
     shiny: "yes",
+    preeevo: "Kangaskhan",
     mega: "yes",
     vip: "yes",
     mapas: [
@@ -17126,6 +17201,7 @@ const ShinysMegasArray = [
     xpcaught: 30000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Seadra",
     mapas: [
       { top: 90, left: 10, text: "Deep Sea - (VIP)" }
     ],
@@ -17160,6 +17236,7 @@ const ShinysMegasArray = [
     xpcaught: 280000,
     pricenpc: "unseleable",
     shiny: "yes",
+    preevo: "Shiny Horsea",
     mapas: [
       { top: 90, left: 10, text: "Deep Sea - (VIP)" }
     ],
@@ -17308,7 +17385,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Scyther",
+    
     mapas: [
       { top: 27, left: 43, text: "Jungle Island - (VIP)" }
     ],
@@ -17349,7 +17426,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Jynx",
+    
     mapas: [
       { top: 70, left: 30, text: "Ice Island - (VIP)" }
     ],
@@ -17389,7 +17466,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Electabuzz",
+    
     mapas: [
       { top: 40, left: 60, text: "Power Plant - (VIP)" }
     ],
@@ -17430,7 +17507,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Magmar",
+    
     mapas: [
       { top: 60, left: 20, text: "Volcano Area - (VIP)" }
     ],
@@ -17470,7 +17547,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Pinsir",
+    
     mapas: [
       { top: 27, left: 43, text: "Jungle Island - (VIP)" }
     ],
@@ -17508,7 +17585,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Tauros",
+    
     mapas: [
       { top: 84, left: 35, text: "Safari Zone - (VIP)" }
     ],
@@ -17685,7 +17762,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Gyarados",
+    
     mapas: [
       { top: 90, left: 10, text: "Deep Sea - (VIP)" }
     ],
@@ -17947,6 +18024,7 @@ const ShinysMegasArray = [
     xpcaught: 300000,
     pricenpc: "unseleable",
     shiny: "yes",
+    evo: "Shiny Dragonair",
     mapas: [
       { top: 90, left: 10, text: "Dragon's Den - (VIP)" }
     ],
@@ -17982,7 +18060,7 @@ const ShinysMegasArray = [
     pricenpc: "unseleable",
     shiny: "yes",
     heavy: "yes",
-    preevo: "Dragonair",
+    preevo: "Shiny Dratini",
     mapas: [
       { top: 90, left: 10, text: "Dragon's Den - (VIP)" }
     ],
@@ -18007,6 +18085,14 @@ const ShinysMegasArray = [
     habilidades: "Fly, Headbutt"
   },
   
+  
+  
+  
+  
+  //////// 2 geração
+  
+  
+  
 {
     nome: "Shiny Meganium",
     numero: "154-1",
@@ -18021,7 +18107,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     heavy: "yes",
     vip: "yes",
-    preevo: "Meganium",
+    
     mapas: [
       { top: 15, left: 40, text: "Green Island - (VIP)" }
     ],
@@ -18061,7 +18147,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Typhlosion",
+    
     mapas: [
       { top: 60, left: 20, text: "Volcano Area - (VIP)" }
     ],
@@ -18102,7 +18188,7 @@ const ShinysMegasArray = [
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
-    preevo: "Feraligatr",
+    
     mapas: [
       { top: 90, left: 10, text: "Deep Sea - (VIP)" }
     ],
@@ -18213,7 +18299,10 @@ const ShinysMegasArray = [
     dificuldade: "Caught",
     xpcaught: 550000,
     pricenpc: "unseleable",
+    preevo: "Shiny Golbat",
+    
     shiny: "yes",
+    
     vip: "yes",
     mapas: [
       { top: 31, left: 73, text: "Lost Island Cave - (VIP)" }
@@ -19434,7 +19523,7 @@ const ShinysMegasArray = [
     habilidades: "Rock smash, Cut, Headbutt, Ride"
   },
   {
-    nome: "Shiny Manectric",
+    nome: "Mega Manectric",
     numero: "310-1",
     level: 100,
     clan: "Raibolt",
