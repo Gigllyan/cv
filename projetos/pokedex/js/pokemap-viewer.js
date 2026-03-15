@@ -93,7 +93,7 @@ function buildMapsContent(pokemon) {
            onmouseover="this.style.boxShadow='0 0 0 2px #4dd0e1,0 8px 30px rgba(0,0,0,.7)';this.style.transform='translateY(-2px)'"
            onmouseout="this.style.boxShadow='0 4px 20px rgba(0,0,0,.5)';this.style.transform=''">
 
-        <img id="pm-thumb-img" src="mapa.png" alt="Mapa"
+        <img id="pm-thumb-img" src="https://gigllyan.github.io/cv/projetos/pokedex/mapa.png" alt="Mapa"
              style="display:block;width:100%;object-fit:cover;object-position:center;max-height:220px;pointer-events:none">
 
         <!-- Thumbnail pins -->
