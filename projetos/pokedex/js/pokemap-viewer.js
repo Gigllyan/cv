@@ -225,7 +225,7 @@ function pmInjectModal() {
     <div id="pm-body">
       <div id="pm-grid"></div>
       <div id="pm-canvas">
-        <img id="pm-map-img" src="mapa.png" alt="Mapa" draggable="false">
+        <img id="pm-map-img" src="https://gigllyan.github.io/cv/projetos/pokedex/mapa.png" alt="Mapa" draggable="false">
         <div id="pm-pins"></div>
       </div>
       <div class="pm-hud" id="pm-hud-coord">top: — · left: —</div>
