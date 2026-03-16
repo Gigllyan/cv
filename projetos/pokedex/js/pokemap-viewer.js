@@ -196,12 +196,17 @@ function pmInjectModal() {
       background:transparent;border:none;cursor:pointer;color:#4A5168;font-size:.8rem;
       display:flex;align-items:center;justify-content:center}
     #pm-info .pi-x:hover{color:#E8637A}
-    /* showall btn */
-    #pm-showall{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:20;
+    /* show-all buttons */
+    #pm-showall-all{position:absolute;top:12px;right:14px;z-index:20;
       background:rgba(13,16,24,.88);border:1px solid rgba(255,255,255,.07);border-radius:20px;
-      padding:5px 16px;font-family:monospace;font-size:.7rem;color:#4A5168;
-      cursor:pointer;backdrop-filter:blur(4px);transition:color .15s,border-color .15s}
-    #pm-showall:hover{color:#D4A853;border-color:rgba(212,168,83,.35)}
+      padding:5px 14px;font-family:monospace;font-size:.7rem;color:#4A5168;
+      cursor:pointer;backdrop-filter:blur(4px);transition:color .15s,border-color .15s;white-space:nowrap}
+    #pm-showall-all:hover{color:#D4A853;border-color:rgba(212,168,83,.35)}
+    #pm-showsame{position:absolute;top:12px;left:14px;z-index:20;
+      background:rgba(0,217,196,.08);border:1px solid rgba(0,217,196,.25);border-radius:20px;
+      padding:5px 14px;font-family:monospace;font-size:.7rem;color:#00D9C4;
+      cursor:pointer;backdrop-filter:blur(4px);transition:color .15s,border-color .15s,background .15s;white-space:nowrap}
+    #pm-showsame:hover{background:rgba(0,217,196,.15);border-color:#00D9C4}
     /* grid overlay */
     #pm-grid{position:absolute;inset:0;pointer-events:none;
       background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
@@ -225,7 +230,8 @@ function pmInjectModal() {
     <div id="pm-body">
       <div id="pm-grid"></div>
       <div id="pm-canvas">
-        <img id="pm-map-img" src="https://gigllyan.github.io/cv/projetos/pokedex/mapa.png" alt="Mapa" draggable="false">
+        <img id="pm-map-img" src="https://gigllyan.github.io/cv/projetos/pokedex/mapa.png
+" alt="Mapa" draggable="false">
         <div id="pm-pins"></div>
       </div>
       <div class="pm-hud" id="pm-hud-coord">top: — · left: —</div>
@@ -236,7 +242,8 @@ function pmInjectModal() {
         <button class="pm-btn" id="pm-zo">－</button>
         <button class="pm-btn" id="pm-zf">⊡</button>
       </div>
-      <button id="pm-showall">⊙ Ver todos</button>
+      <button id="pm-showall-all">🗺 Ver todos</button>
+      <button id="pm-showsame" style="display:none">🔗 Mesma espécie</button>
       <div id="pm-info">
         <button class="pi-x" id="pm-info-close">✕</button>
         <div class="pi-loc" id="pm-info-loc"></div>
@@ -303,7 +310,53 @@ function pmInjectModal() {
   document.getElementById('pm-zi').onclick=()=>setZoom(zoom*1.3);
   document.getElementById('pm-zo').onclick=()=>setZoom(zoom/1.3);
   document.getElementById('pm-zf').onclick=fitMap;
-  document.getElementById('pm-showall').onclick=()=>{ activeIdx=null; updateActive(); fitMap(); hideInfo(); };
+
+  // "Ver todos" — show all pokemon that have mapas (from data.js + overrides)
+  document.getElementById('pm-showall-all').onclick = async () => {
+    const overrides = await getMapaOverrides();
+    // gather all pokes with mapas from both arrays
+    const allWithMapas = [];
+    function collectArray(arr, arrKey) {
+      if (!Array.isArray(arr)) return;
+      arr.forEach(p => {
+        const mapas = getEffectiveMapas(p, overrides, arrKey);
+        if (mapas.length) allWithMapas.push({ poke:p, mapas });
+      });
+    }
+    if (typeof ShinysMegasArray !== 'undefined') collectArray(ShinysMegasArray, 'shinys');
+    if (typeof pokesarray       !== 'undefined') collectArray(pokesarray,       'pokes');
+    // render all pins
+    pins.innerHTML='';
+    allWithMapas.forEach(({poke, mapas}) => mapas.forEach((m,i) => pins.appendChild(buildPin(m, i, poke))));
+    fitMap(); hideInfo(); activeIdx=null;
+    document.getElementById('pm-hdr-name').textContent = 'Todos os pontos';
+    document.getElementById('pm-hdr-img').src = '';
+  };
+
+  // "Mesma espécie" — show all variants with same base number
+  document.getElementById('pm-showsame').onclick = async () => {
+    if (!_currentPoke) return;
+    const base = String(_currentPoke.numero).split('-')[0];
+    const overrides = await getMapaOverrides();
+    const same = [];
+    function collectSame(arr, arrKey) {
+      if (!Array.isArray(arr)) return;
+      arr.forEach(p => {
+        if (String(p.numero).split('-')[0] !== base) return;
+        const mapas = getEffectiveMapas(p, overrides, arrKey);
+        if (mapas.length) same.push({ poke:p, mapas });
+      });
+    }
+    if (typeof ShinysMegasArray !== 'undefined') collectSame(ShinysMegasArray, 'shinys');
+    if (typeof pokesarray       !== 'undefined') collectSame(pokesarray,       'pokes');
+    pins.innerHTML='';
+    same.forEach(({poke, mapas}) => mapas.forEach((m,i) => pins.appendChild(buildPin(m, i, poke))));
+    const allMapas = same.flatMap(s => s.mapas);
+    fitMap(); if (allMapas.length) fitPins(allMapas);
+    hideInfo(); activeIdx=null;
+    const baseName = _currentPoke.nome.replace(/^(Shiny|Mega|Baby)\s+/i,'').trim();
+    document.getElementById('pm-hdr-name').textContent = `${baseName} — todas variações (${same.length})`;
+  };
 
   body.addEventListener('wheel',e=>{
     e.preventDefault();
@@ -402,6 +455,20 @@ function pmInjectModal() {
     const hdrImg = document.getElementById('pm-hdr-img');
     pmSetImg(hdrImg, poke.numero);
     document.getElementById('pm-hdr-name').textContent = `#${poke.numero} ${poke.nome}`;
+
+    // Show "Mesma espécie" only if other variants of this base number exist with mapas
+    const base = String(poke.numero).split('-')[0];
+    let sameCount = 0;
+    function countSame(arr, arrKey) {
+      if (!Array.isArray(arr)) return;
+      arr.forEach(p => {
+        if (String(p.numero).split('-')[0] !== base) return;
+        if (getEffectiveMapas(p, overrides, arrKey).length) sameCount++;
+      });
+    }
+    if (typeof ShinysMegasArray !== 'undefined') countSame(ShinysMegasArray, 'shinys');
+    if (typeof pokesarray       !== 'undefined') countSame(pokesarray,       'pokes');
+    document.getElementById('pm-showsame').style.display = sameCount > 1 ? '' : 'none';
 
     renderPins(poke, _currentMapas);
     div.classList.add('open');
