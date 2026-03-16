@@ -227,9 +227,9 @@ const pokesarray = [
       { top: 6.16, left: 10.94, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" },
       { top: 12, left: 31, text: "Charizard Valley - (VIP)" },
       { top: 32.99, left: 38.63, text: "Cinnabar Island - (VIP)" },
-      { top: 12.21, left: 32.5, text: "Valley" },
-      { top: 12.66, left: 35.38, text: "Valley" },
-      { top: 13.46, left: 29.76, text: "Valley" }
+      { top: 12.21, left: 32.5, text: "Charizard Valley - (VIP)" },
+      { top: 12.66, left: 35.38, text: "Charizard Valley - (VIP)" },
+      { top: 13.46, left: 29.76, text: "Charizard Valley - (VIP)" }
     ],
     vip: "yes",
     moves: [
@@ -695,7 +695,7 @@ const pokesarray = [
       { top: 15.21, left: 56.38, text: "Hurricane Island - (VIP)" },
       { top: 20.76, left: 58.41, text: "Floresta de Cerulean - (FREE)" },
       { top: 58.64, left: 35.71, text: "Floresta de Shamouti - (VIP)" },
-      { top: 2.15, left: 18.83, text: "Outland South - Saida a direita (VIP)" }
+      { top: 8.95, left: 14.39, text: "Outland South - Saida a direita (VIP)" }
     ],
     moves: [
       { "Quick attack": 80 },
@@ -734,7 +734,13 @@ const pokesarray = [
     pricenpc: 5,
     shiny: "yes",
     evo: "Raticate",
-    mapas: [],
+    mapas: [
+      { top: 21.68, left: 38.92, text: "subsolo proximo a saida sul de pewter - (FREE)" },
+      { top: 24.05, left: 51.95, text: "subsolo entre saffron e celadon - (FREE)" },
+      { top: 20.25, left: 56.13, text: "subsolo a esquerda de cerulean - (FREE)" },
+      { top: 31.87, left: 56.64, text: "subsolo em fuchsia - (FREE)" },
+      { top: 56.99, left: 36.01, text: "subsolo em shamouti - (FREE)" }
+    ],
     moves: [
       { "Quick attack": 1 },
       { "Bite": 1 },
@@ -1505,7 +1511,11 @@ const pokesarray = [
     pricenpc: 120,
     shiny: "yes",
     evo: "Golbat",
-    mapas: [],
+    mapas: [
+      { top: 58.62, left: 35.26, text: "subsolo em shamouti no caminho pro crobat - (FREE)" },
+      { top: 19.93, left: 41.07, text: "subsolo mt moon - (FREE)" },
+      { top: 23.29, left: 51.87, text: "subsolo entre saffron e celadon - (FREE)" }
+    ],
     moves: [
       { "Super sonic": 10 },
       { "Bite": 10 },
@@ -1903,7 +1913,10 @@ const pokesarray = [
     xpcaught: 10000,
     pricenpc: 300,
     evo: "Persian",
-    mapas: [],
+    mapas: [
+      { top: 24.69, left: 73.99, text: "Desert Island - Piramide ao Norte (entre as 3 maiores Piramides)" },
+      { top: 14, left: 31, text: "Charizard Valley - Parte externa" }
+    ],
     moves: [
       { "Slash": 20 },
       { "Scratch": 20 },
@@ -2398,7 +2411,11 @@ const pokesarray = [
     xpcaught: 10000,
     pricenpc: 2000,
     evo: "Machoke",
-    mapas: [],
+    mapas: [ 
+      { top: 19.77, left: 61.87, text: "Direita de Cerulean - Ultimo andar do Rock Tunel na parte aberta ao norte (VIP)" },
+      { top: 25.25, left: 33.62, text: "Esquerda de Viridian - (Subterrâneo) Ao norte do Coliseum (VIP)" },
+      { top: 56.17, left: 30.71, text: "Esquerda de Shamouti - Ao sul do Fight Club (FREE)" }
+    ],
     moves: [
       { "Triple punch": 20 },
       { "Mega punch": 20 },
@@ -2428,7 +2445,11 @@ const pokesarray = [
     pricenpc: 7000,
     preevo: "Machop",
     evo: "Machamp",
-    mapas: [],
+    mapas: [ 
+      { top: 19.77, left: 61.87, text: "Direita de Cerulean - Ultimo andar do Rock Tunel na parte aberta ao norte (VIP)" },
+      { top: 25.25, left: 33.62, text: "Esquerda de Viridian - (Subterrâneo) Ao norte do Coliseum (VIP)" },
+      { top: 56.17, left: 30.71, text: "Esquerda de Shamouti - Ao sul do Fight Club (FREE)" }
+    ],
     moves: [
       { "Triple punch": 42 },
       { "Mega punch": 40 },
@@ -5176,7 +5197,9 @@ const pokesarray = [
     xpcaught: 0,
     pricenpc: "unseleable",
     fast: "yes",
-    mapas: [],
+    mapas: [
+      { top: 66.53, left: 39.25, text: "Ice Island - (VIP)" }
+    ],
     vip: "yes",
     moves: [
       { "Peck": 200 },
@@ -5209,7 +5232,9 @@ const pokesarray = [
     xpcaught: 0,
     pricenpc: "unseleable",
     fast: "yes",
-    mapas: [],
+    mapas: [
+      { top: 66.86, left: 27.31, text: "Electric Island (VIP)" }
+    ],
     vip: "yes",
     moves: [
       { "Peck": 200 },
@@ -5242,7 +5267,9 @@ const pokesarray = [
     xpcaught: 0,
     pricenpc: "unseleable",
     fast: "yes",
-    mapas: [],
+    mapas: [
+      { top: 64.5, left: 49.6, text: "Fire Island (VIP)" }
+    ],
     vip: "yes",
     moves: [
       { "Peck": 200 },
