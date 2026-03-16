@@ -809,7 +809,10 @@ const pokesarray = [
     pricenpc: 100,
     fast: "yes",
     evo: "Fearow",
-    mapas: [],
+    mapas: [
+      { top: 22.27, left: 52.03, text: "Saída norte de saffron (FREE)" },
+      { top: 57.07, left: 37.58, text: "Lado direito de shamouti (FREE)" }
+    ],
     moves: [
       { "Peck": 10 },
       { "Sand attack": 10 },
@@ -842,7 +845,10 @@ const pokesarray = [
     shiny: "yes",
     fast: "yes",
     preevo: "Spearow",
-    mapas: [],
+    mapas: [
+      { top: 22.27, left: 52.03, text: "Saída norte de saffron (FREE)" },
+      { top: 57.07, left: 37.58, text: "Lado direito de shamouti (FREE)" }
+    ],
     moves: [
       { "Peck": 50 },
       { "Sand attack": 50 },
@@ -4368,7 +4374,7 @@ const pokesarray = [
     habilidades: "Surf",
   },//121
   {
-    nome: "Mr. Mime",
+    nome: "Mr Mime",
     numero: 122,
     level: 70,
     clan: "Psycraft",
