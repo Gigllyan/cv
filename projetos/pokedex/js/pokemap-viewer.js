@@ -68,20 +68,32 @@ function buildMapsContent(pokemon) {
     return '<div class="info-section"><p style="text-align:center;color:#ccc">Localização desconhecida.</p></div>';
   }
 
-  // Group locations by identical name (text), keeping the first index of each group
-  const groupMap = new Map(); // text -> { firstIndex, count }
+  // Group locations by identical name (text).
+  // Each group stores ALL indices that share that name, not just the first.
+  // Clicking cycles through all pins of the group in order.
+  const groupMap = new Map(); // text -> { indices: [], cyclePos: 0 }
   mapas.forEach((m, i) => {
     const key = (m.text || '').trim();
     if (!groupMap.has(key)) {
-      groupMap.set(key, { firstIndex: i, count: 1 });
+      groupMap.set(key, { indices: [i] });
     } else {
-      groupMap.get(key).count++;
+      groupMap.get(key).indices.push(i);
     }
   });
 
-  // Build the location list — one button per unique name
-  const listItems = [...groupMap.entries()].map(([text, { firstIndex, count }]) => `
-    <li onclick="pmGoToPin(${firstIndex})"
+  // Cycle-counter per group (persists while the list is rendered)
+  const cycleCounts = {};
+  [...groupMap.keys()].forEach(k => { cycleCounts[k] = 0; });
+
+  // Build the location list — one button per unique name, cycles on repeated clicks
+  const listItems = [...groupMap.entries()].map(([text, { indices }]) => {
+    const count = indices.length;
+    // Use a JS expression that reads and advances the cycle counter on each click
+    const onclickExpr = count === 1
+      ? `pmGoToPin(${indices[0]})`
+      : `pmGoToPinGroup(${JSON.stringify(indices)}, '${text.replace(/'/g,"\'")}')`;
+    return `
+    <li onclick="${onclickExpr}"
         style="background:#2a2a2a;margin-bottom:8px;padding:10px;border-radius:5px;
                border-left:4px solid #f08030;cursor:pointer;transition:background .2s;"
         onmouseover="this.style.background='#333'" onmouseout="this.style.background='#2a2a2a'">
@@ -91,7 +103,8 @@ function buildMapsContent(pokemon) {
              <span style="background:#f08030;color:#fff;border-radius:12px;padding:1px 8px;font-size:11px;font-weight:bold;">${count} locais</span>
            </div>`
         : ''}
-    </li>`).join('');
+    </li>`;
+  }).join('');
 
   return `
     <div class="info-section">
@@ -514,6 +527,21 @@ window.pmGoToPin = function(idx) {
   const poke = window._pmCurrentPoke;
   if (!poke) return;
   window._pmOpen(poke).then ? window._pmOpen(poke).then(()=>window._pmGoTo(idx)) : window._pmGoTo(idx);
+};
+
+// Cycles through all pins of a group each time the same button is clicked.
+// _pmGroupCycles maps groupKey -> current position in that group's indices array.
+window._pmGroupCycles = {};
+window.pmGoToPinGroup = function(indices, groupKey) {
+  const poke = window._pmCurrentPoke;
+  if (!poke) return;
+  // Advance cycle for this group
+  const pos = (window._pmGroupCycles[groupKey] || 0) % indices.length;
+  window._pmGroupCycles[groupKey] = pos + 1;
+  const idx = indices[pos];
+  window._pmOpen(poke).then
+    ? window._pmOpen(poke).then(() => window._pmGoTo(idx))
+    : window._pmGoTo(idx);
 };
 
 // ─── Thumbnail pin rendering ──────────────────────────────────────────────────

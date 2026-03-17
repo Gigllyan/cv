@@ -224,12 +224,18 @@ const pokesarray = [
     shiny: "yes",
     preevo: "Charmeleon",
     mapas: [
-      { top: 6.16, left: 10.94, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" },
+      { top: 6.59, left: 11.02, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" },
       { top: 12, left: 31, text: "Charizard Valley - (VIP)" },
       { top: 32.99, left: 38.63, text: "Cinnabar Island - (VIP)" },
       { top: 12.21, left: 32.5, text: "Charizard Valley - (VIP)" },
       { top: 12.66, left: 35.38, text: "Charizard Valley - (VIP)" },
-      { top: 13.46, left: 29.76, text: "Charizard Valley - (VIP)" }
+      { top: 13.46, left: 29.76, text: "Charizard Valley - (VIP)" },
+      { top: 7.87, left: 11.06, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" },
+      { top: 7.46, left: 10.48, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" },
+      { top: 8.3, left: 10.53, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" },
+      { top: 6.86, left: 10.36, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" },
+      { top: 33.43, left: 38.96, text: "Cinnabar Island - (VIP)" },
+      { top: 33.65, left: 38.02, text: "Cinnabar Island - (VIP)" }
     ],
     vip: "yes",
     moves: [
