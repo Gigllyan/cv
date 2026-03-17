@@ -68,16 +68,29 @@ function buildMapsContent(pokemon) {
     return '<div class="info-section"><p style="text-align:center;color:#ccc">Localização desconhecida.</p></div>';
   }
 
-  // Build the location list (same style as before, kept below the map)
-  const listItems = mapas.map((m, i) => `
-    <li onclick="pmGoToPin(${i})"
+  // Group locations by identical name (text), keeping the first index of each group
+  const groupMap = new Map(); // text -> { firstIndex, count }
+  mapas.forEach((m, i) => {
+    const key = (m.text || '').trim();
+    if (!groupMap.has(key)) {
+      groupMap.set(key, { firstIndex: i, count: 1 });
+    } else {
+      groupMap.get(key).count++;
+    }
+  });
+
+  // Build the location list — one button per unique name
+  const listItems = [...groupMap.entries()].map(([text, { firstIndex, count }]) => `
+    <li onclick="pmGoToPin(${firstIndex})"
         style="background:#2a2a2a;margin-bottom:8px;padding:10px;border-radius:5px;
                border-left:4px solid #f08030;cursor:pointer;transition:background .2s;"
         onmouseover="this.style.background='#333'" onmouseout="this.style.background='#2a2a2a'">
-      <strong style="color:#fff;font-size:1.05em">📍 ${m.text}</strong>
-      <div style="color:#bbb;font-size:12px;margin-top:4px">
-        Top ${m.top}% · Left ${m.left}%
-      </div>
+      <strong style="color:#fff;font-size:1.05em">📍 ${text}</strong>
+      ${count > 1
+        ? `<div style="color:#bbb;font-size:12px;margin-top:4px">
+             <span style="background:#f08030;color:#fff;border-radius:12px;padding:1px 8px;font-size:11px;font-weight:bold;">${count} locais</span>
+           </div>`
+        : ''}
     </li>`).join('');
 
   return `
