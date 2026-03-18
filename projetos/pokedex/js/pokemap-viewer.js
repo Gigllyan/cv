@@ -189,9 +189,9 @@ function pmInjectModal() {
       display:flex;align-items:center;justify-content:center;
       transition:border-color .15s;backdrop-filter:blur(4px)}
     .pm-btn:hover{border-color:#FF4B6E;color:#FF4B6E}
-    .pm-pin{position:absolute;transform:translate(-50%,-50%);z-index:20;cursor:pointer;
-      transition:transform .2s cubic-bezier(.34,1.56,.64,1),filter .2s}
-    .pm-pin:hover,.pm-pin.active{transform:translate(-50%,-50%) scale(1.35);z-index:30;filter:brightness(1.2)}
+    .pm-pin{position:absolute;transform:translate(-50%,-50%) scale(var(--s,1));z-index:20;cursor:pointer;
+      transition:transform .18s cubic-bezier(.34,1.56,.64,1),filter .18s}
+    .pm-pin:hover,.pm-pin.active{transform:translate(-50%,-50%) scale(calc(var(--s,1)*1.35));z-index:30;filter:brightness(1.2)}
     .pm-bubble{width:46px;height:46px;border-radius:50%;overflow:hidden;
       border:3px solid #fff;box-shadow:0 3px 14px rgba(0,0,0,.75);
       background:#1e2230;position:relative}
@@ -300,6 +300,18 @@ function pmInjectModal() {
   function applyT() {
     canvas.style.transform=`translate(${panX}px,${panY}px) scale(${zoom})`;
     document.getElementById('pm-hud-zoom').textContent=Math.round(zoom*100)+'%';
+    scalePins();
+  }
+
+  // Escala os pins inversamente ao zoom via CSS var --s:
+  // zoom baixo (longe) → pins maiores na tela; zoom alto (perto) → pins menores
+  // Tamanho visual alvo = 46 / zoom, travado entre 22px e 72px.
+  function scalePins() {
+    const target = Math.max(22, Math.min(72, 46 / zoom));
+    const s = (target / 46).toFixed(4);
+    pins.querySelectorAll('.pm-pin').forEach(pin => {
+      pin.style.setProperty('--s', s);
+    });
   }
   function setZoom(nz,cx,cy) {
     const r=body.getBoundingClientRect();
@@ -354,6 +366,7 @@ function pmInjectModal() {
     // render all pins
     pins.innerHTML='';
     allWithMapas.forEach(({poke, mapas}) => mapas.forEach((m,i) => pins.appendChild(buildPin(m, i, poke))));
+    scalePins();
     fitMap(); hideInfo(); activeIdx=null;
     document.getElementById('pm-hdr-name').textContent = 'Todos os pontos';
     document.getElementById('pm-hdr-img').src = '';
@@ -377,6 +390,7 @@ function pmInjectModal() {
     if (typeof pokesarray       !== 'undefined') collectSame(pokesarray,       'pokes');
     pins.innerHTML='';
     same.forEach(({poke, mapas}) => mapas.forEach((m,i) => pins.appendChild(buildPin(m, i, poke))));
+    scalePins();
     const allMapas = same.flatMap(s => s.mapas);
     fitMap(); if (allMapas.length) fitPins(allMapas);
     hideInfo(); activeIdx=null;
@@ -459,6 +473,7 @@ function pmInjectModal() {
   function renderPins(poke, mapas) {
     pins.innerHTML='';
     mapas.forEach((m,i)=>pins.appendChild(buildPin(m,i,poke)));
+    scalePins(); // aplica escala inicial baseada no zoom atual
   }
 
   // ── Open / Close ───────────────────────────────────────────────────────────
