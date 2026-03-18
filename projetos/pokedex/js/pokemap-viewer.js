@@ -305,9 +305,9 @@ function pmInjectModal() {
 
   // Escala os pins inversamente ao zoom via CSS var --s:
   // zoom baixo (longe) → pins maiores na tela; zoom alto (perto) → pins menores
-  // Tamanho visual alvo = 46 / zoom, travado entre 22px e 72px.
+  // Tamanho visual alvo = 46 / zoom, travado entre 16px e 110px.
   function scalePins() {
-    const target = Math.max(22, Math.min(72, 46 / zoom));
+    const target = Math.max(16, Math.min(110, 46 / zoom));
     const s = (target / 46).toFixed(4);
     pins.querySelectorAll('.pm-pin').forEach(pin => {
       pin.style.setProperty('--s', s);
