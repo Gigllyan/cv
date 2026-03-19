@@ -1,11 +1,11 @@
 const pokesarray = [
   // INICIO GERACAO 1
-  {
+            {
     nome: "Bulbasaur",
-    numero: 1,
+    numero: "1",
     level: 20,
-    clan: "Naturia, Malefic",
     tipo: "Grama, Venenoso",
+    clan: "Naturia, Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
@@ -13,6 +13,27 @@ const pokesarray = [
     pricenpc: 3000,
     shiny: "yes",
     evo: "Ivysaur",
+    evoStone: "Leaf stone",
+    boost: 10,
+    booStone: "Leaf stone",
+    habilidades: "Cut, Headbutt, Light, Strenght",
+    moves: [
+      { Tackle: 20 },
+      { "Razor leaf": 20 },
+      { "Vine whip": 20 },
+      { "Bullet seed": 20 },
+      { "Leech seed": 20 },
+      { "Solar beam": 20 },
+      { "Sleep powder": 20 },
+      { "Poison powder": 20 }
+    ],
+    loots: [
+      { item: "bulb", min: 1, max: 1, rar: "RARO" },
+      { item: "seed", min: 1, max: 5, rar: "80%" },
+      { item: "bottle of poison", min: 1, max: 5, rar: "80%" },
+      { item: "leaves", min: 1, max: 1, rar: "26%" },
+      { item: "bag of pollem", min: 1, max: 1, rar: "6%" }
+    ],
     mapas: [
       { top: 27.66, left: 44.52, text: "Jungle Island - (VIP)" },
       { top: 32.82, left: 75.85, text: "Lost Island - (VIP)" },
@@ -21,7 +42,7 @@ const pokesarray = [
       { top: 28.55, left: 42.27, text: "Jungle Island - (VIP)" },
       { top: 28.61, left: 42.76, text: "Jungle Island - (VIP)" },
       { top: 28.46, left: 44.65, text: "Jungle Island - (VIP)" },
-      { top: 28.83, left: 43.39, text: "Jungle Island - (VIP)" },
+      { top: 28.72, left: 43.62, text: "Jungle Island - (VIP)" },
       { top: 29.2, left: 43.45, text: "Jungle Island - (VIP)" },
       { top: 27.57, left: 42.09, text: "Jungle Island - (VIP)" },
       { top: 26.8, left: 42.94, text: "Jungle Island - (VIP)" },
@@ -75,30 +96,9 @@ const pokesarray = [
       { top: 84.51, left: 37.74, text: "Mandarin - Próximo ao deserto (FREE)" },
       { top: 85.52, left: 36.21, text: "Mandarin - Próximo ao deserto (FREE)" },
       { top: 85.53, left: 37.32, text: "Mandarin - Próximo ao deserto (FREE)" },
-      { top: 85.57, left: 40.36, text: "Mandarin - Próximo ao deserto (FREE)" }
-    ],
-    moves: [
-      { "Tackle": 20 },
-      { "Razor leaf": 20 },
-      { "Vine whip": 20 },
-      { "Bullet seed": 20 },
-      { "Leech seed": 20 },
-      { "Solar beam": 20 },
-      { "Sleep powder": 20 },
-      
-      { "Poison powder": 20 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "bulb", rar: "RARO" },
-      { min: 1, max: 5, item: "seed", rar: "80%" },
-      { min: 1, max: 5, item: "bottle of poison", rar: "80%" },
-      { min: 1, max: 1, item: "leaves", rar: "26%" },
-      { min: 1, max: 1, item: "bag of pollem", rar: "6%" },
-    ],
-    evoStone: "Leaf stone",
-    boost: 10,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Headbutt, Light, Strenght",
+      { top: 85.57, left: 40.36, text: "Mandarin - Próximo ao deserto (FREE)" },
+      { top: 26.53, left: 44.83, text: "Jungle Island - (VIP)" }
+    ]
   },
   {
     nome: "Ivysaur",
@@ -210,12 +210,12 @@ const pokesarray = [
     booStone: "Leaf stone",
     habilidades: "Cut, Headbutt, Light, Strength",
   },
-  {
+      {
     nome: "Venusaur",
-    numero: 3,
+    numero: "3",
     level: 80,
-    clan: "Naturia, Malefic",
     tipo: "Grama, Venenoso",
+    clan: "Naturia, Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Difícil",
@@ -223,7 +223,32 @@ const pokesarray = [
     pricenpc: 18000,
     shiny: "yes",
     heavy: "yes",
+    boost: 3,
+    booStone: "Leaf stone",
+    habilidades: "Cut, Ride, Headbutt, Rock smash, Light, Strenght",
     preevo: "Ivysaur",
+    moves: [
+      { Tackle: 80 },
+      { "Razor leaf": 80 },
+      { "Vine whip": 80 },
+      { Sludge: 80 },
+      { "Leech seed": 80 },
+      { "Bullet seed": 80 },
+      { "Solar beam": 80 },
+      { "Giga drain": 80 },
+      { "Petal blizzard": 80 },
+      { "Sleep powder": 80 },
+      { "Poison powder": 80 }
+    ],
+    loots: [
+      { item: "bulb", min: 1, max: 1, rar: "4.3%" },
+      { item: "seed", min: 1, max: 21, rar: "80%" },
+      { item: "bottle of poison", min: 1, max: 21, rar: "80%" },
+      { item: "leaves", min: 1, max: 1, rar: "45.5%" },
+      { item: "bag of pollem", min: 1, max: 1, rar: "25.5%" },
+      { item: "Leaf stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Venom stone", min: 1, max: 1, rar: "Raro" }
+    ],
     mapas: [
       { top: 28.25, left: 43.44, text: "Jungle Island - (VIP)" },
       { top: 15.57, left: 42.3, text: "Green Island - (VIP)" },
@@ -331,7 +356,7 @@ const pokesarray = [
       { top: 3.7, left: 15.41, text: "Outland north - saída da direita (VIP)" },
       { top: 4.23, left: 14.91, text: "Outland north - saída da direita (VIP)" },
       { top: 4.66, left: 14.64, text: "Outland north - saída da direita (VIP)" },
-      { top: 4.72, left: 14.05, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.31, left: 13.47, text: "Outland north - saída da direita (VIP)" },
       { top: 4.44, left: 13.71, text: "Outland north - saída da direita (VIP)" },
       { top: 4.17, left: 14.07, text: "Outland north - saída da direita (VIP)" },
       { top: 4.06, left: 13.68, text: "Outland north - saída da direita (VIP)" },
@@ -356,39 +381,25 @@ const pokesarray = [
       { top: 4.29, left: 14.06, text: "Outland north - saída da direita (VIP)" },
       { top: 3.89, left: 14.37, text: "Outland north - saída da direita (VIP)" },
       { top: 4.59, left: 15.04, text: "Outland north - saída da direita (VIP)" },
-      { top: 4.72, left: 13.94, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.34, left: 13.39, text: "Outland north - saída da direita (VIP)" },
       { top: 4.23, left: 14.79, text: "Outland north - saída da direita (VIP)" },
       { top: 4.34, left: 13.8, text: "Outland north - saída da direita (VIP)" },
       { top: 3.66, left: 15.06, text: "Outland north - saída da direita (VIP)" },
       { top: 4.12, left: 15.29, text: "Outland north - saída da direita (VIP)" },
-      { top: 4.06, left: 14.16, text: "Outland north - saída da direita (VIP)" }
-    ],
-    moves: [
-      { "Tackle": 80 },
-      { "Razor leaf": 80 },
-      { "Vine whip": 80 },
-      { "Sludge": 80 },
-      { "Leech seed": 80 },
-      { "Bullet seed": 80 },
-      { "Solar beam": 80 },
-      { "Giga drain": 80 },
-      { "Petal blizzard": 80 },
-      { "Sleep powder": 80 },
-      { "Poison powder": 80 },
-      
-    ],
-    loots: [
-      { min: 1, max: 1, item: "bulb", rar: "4.3%" },
-      { min: 1, max: 21, item: "seed", rar: "80%" },
-      { min: 1, max: 21, item: "bottle of poison", rar: "80%" },
-      { min: 1, max: 1, item: "leaves", rar: "45.5%" },
-      { min: 1, max: 1, item: "bag of pollem", rar: "25.5%" },
-      { min: 1, max: 1, item: "Leaf stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
-    ],
-    boost: 3,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Ride, Headbutt, Rock smash, Light, Strenght",
+      { top: 4.06, left: 14.16, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.48, left: 14.3, text: "Outland north - saída da direita (VIP)" },
+      { top: 3.78, left: 14.36, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.26, left: 14.02, text: "Outland north - saída da direita (VIP)" },
+      { top: 3.86, left: 14.83, text: "Outland north - saída da direita (VIP)" },
+      { top: 3.93, left: 13.56, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.46, left: 15, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.48, left: 14.03, text: "Outland north - saída da direita (VIP)" },
+      { top: 3.71, left: 14.12, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.34, left: 14.17, text: "Outland north - saída da direita (VIP)" },
+      { top: 3.82, left: 12.96, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.15, left: 12.86, text: "Outland north - saída da direita (VIP)" },
+      { top: 4.08, left: 13.17, text: "Outland north - saída da direita (VIP)" }
+    ]
   },
   
   {
@@ -405,48 +416,8 @@ const pokesarray = [
     shiny: "yes",
     evo: "Charmeleon",
     mapas: [
-      { top: 13.25, left: 33.32, text: "Charizard Valley - (VIP)" },
-      { top: 33.63, left: 36.87, text: "Cinnabar Island - (VIP)" },
-      { top: 13.25, left: 32.55, text: "Charizard Valley - (VIP)" },
-      { top: 12.88, left: 33.22, text: "Charizard Valley - (VIP)" },
-      { top: 12.83, left: 32.77, text: "Charizard Valley - (VIP)" },
-      { top: 12.15, left: 34.29, text: "Charizard Valley - (VIP)" },
-      { top: 11.78, left: 33.8, text: "Charizard Valley - (VIP)" },
-      { top: 11.75, left: 34.79, text: "Charizard Valley - (VIP)" },
-      { top: 33.07, left: 35.04, text: "Cinnabar Island - (VIP)" },
-      { top: 32.74, left: 35.26, text: "Cinnabar Island - (VIP)" },
-      { top: 33.73, left: 37.59, text: "Cinnabar Island - (VIP)" },
-      { top: 33.37, left: 37.63, text: "Cinnabar Island - (VIP)" },
-      { top: 32.46, left: 35.85, text: "Cinnabar Island - (VIP)" },
-      { top: 32.22, left: 36.6, text: "Cinnabar Island - (VIP)" },
-      { top: 32.58, left: 36.66, text: "Cinnabar Island - (VIP)" },
-      { top: 32.8, left: 36.13, text: "Cinnabar Island - (VIP)" },
-      { top: 33.07, left: 35.93, text: "Cinnabar Island - (VIP)" },
-      { top: 32.99, left: 36.91, text: "Cinnabar Island - (VIP)" },
-      { top: 32.7, left: 37.34, text: "Cinnabar Island - (VIP)" },
-      { top: 32.27, left: 37.12, text: "Cinnabar Island - (VIP)" },
-      { top: 32.95, left: 36.61, text: "Cinnabar Island - (VIP)" },
-      { top: 33.45, left: 36.2, text: "Cinnabar Island - (VIP)" },
-      { top: 32.48, left: 38.21, text: "Cinnabar Island - (VIP)" },
-      { top: 32.08, left: 39.59, text: "Cinnabar Island - (VIP)" },
-      { top: 32.06, left: 40.98, text: "Cinnabar Island - (VIP)" },
-      { top: 31.75, left: 40.05, text: "Cinnabar Island - (VIP)" },
-      { top: 32.73, left: 41.39, text: "Cinnabar Island - (VIP)" },
-      { top: 32.82, left: 40.08, text: "Cinnabar Island - (VIP)" },
-      { top: 32.93, left: 39.46, text: "Cinnabar Island - (VIP)" },
-      { top: 33.15, left: 38.81, text: "Cinnabar Island - (VIP)" },
-      { top: 33.46, left: 40.65, text: "Cinnabar Island - (VIP)" },
-      { top: 33.58, left: 39.71, text: "Cinnabar Island - (VIP)" },
-      { top: 32.29, left: 40.4, text: "Cinnabar Island - (VIP)" },
-      { top: 32.39, left: 39.17, text: "Cinnabar Island - (VIP)" },
-      { top: 32.77, left: 41.07, text: "Cinnabar Island - (VIP)" },
-      { top: 32.2, left: 41.5, text: "Cinnabar Island - (VIP)" },
-      { top: 33.57, left: 39.06, text: "Cinnabar Island - (VIP)" },
-      { top: 31.61, left: 39.26, text: "Cinnabar Island - (VIP)" },
-      { top: 32.51, left: 39.35, text: "Cinnabar Island - (VIP)" },
-      { top: 32.79, left: 38.41, text: "Cinnabar Island - (VIP)" },
-      { top: 32.6, left: 40.39, text: "Cinnabar Island - (VIP)" },
-      { top: 32.79, left: 39.79, text: "Cinnabar Island - (VIP)" }
+      { top: 14.41, left: 31.61, text: "Charizard Valley - (VIP)" },
+      { top: 33.63, left: 36.87, text: "Cinnabar Island - (VIP)" }
     ],
     vip: "yes",
     moves: [
@@ -14927,12 +14898,7 @@ const pokesarray = [
     boost: 7,
     booStone: "Mirror stone",
     habilidades: "Dig",
-  },
-
-  
-
-
-];
+  }];
 
 
 
@@ -15145,7 +15111,11 @@ const ShinysMegasArray = [
     shiny: "yes",
     heavy: "yes",
     
-    mapas: [],
+    mapas: [
+      { top: 3.74, left: 17.1, text: "Outland north caminho para artefato - saída da direita (VIP)" },
+      { top: 3.53, left: 16.71, text: "Outland north caminho para artefato - saída da direita (VIP)" },
+      { top: 3.38, left: 19.51, text: "Outland north caminho para artefato - saída da direita (VIP)" }
+    ],
     moves: [
       { "Tackle": 100 },
       { "Razor leaf": 100 },
@@ -15172,47 +15142,35 @@ const ShinysMegasArray = [
     booStone: "Leaf stone",
     habilidades: "Cut, Ride, Headbutt"
   },
-  {
+    {
     nome: "Mega Venusaur",
     numero: "3-2",
     level: 80,
-    clan: "Naturia, Malefic",
     tipo: "Grama, Venenoso",
+    clan: "Naturia, Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Embedded tower",
-    xpcaught: 800000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo: "Venusaur",
     vip: "yes",
-    mapas: [
-      { top: 94.55, left: 80.4, text: "Embedded Tower - (VIP)" }
-    ],
+    preevo: "Venusaur",
     moves: [
-      { "Tackle": 80 },
+      { Tackle: 80 },
       { "Razor leaf": 80 },
       { "Vine whip": 80 },
-      { "Headbutt": 80 },
+      { Headbutt: 80 },
       { "Leech seed": 80 },
-      { "Bulldoze": 80 },
+      { Bulldoze: 80 },
       { "Solar beam": 80 },
-      { "Earthquake": 80 },
+      { Earthquake: 80 },
       { "Sunny day": 92 },
       { "Leaf storm": 90 },
       { "Thick fat": "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Venusaurite", rar: "100%" },
-      { min: 1, max: 25, item: "seed", rar: "80%" },
-      { min: 1, max: 1, item: "leaves", rar: "70%" },
-      { min: 1, max: 1, item: "bag of pollem", rar: "30%" },
-      { min: 1, max: 1, item: "Leaf stone", rar: "Raro" }
-    ],
-    boost: 1,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Ride, Headbutt"
+    mapas: [
+      { top: 94.55, left: 80.4, text: "Embedded Tower - (VIP)" }
+    ]
   },
 
 
@@ -15285,87 +15243,65 @@ const ShinysMegasArray = [
     booStone: "Fire stone",
     habilidades: "Cut, Fly, Headbutt, Ride"
   },
-  {
+    {
     nome: "Mega Charizard (X)",
     numero: "6-2",
     level: 80,
-    clan: "Volcanic",
     tipo: "Fogo, Dragão",
+    clan: "Volcanic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Embedded tower",
-    xpcaught: 900000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo: "Charizard",
     vip: "yes",
-    mapas: [
-      { top: 95.08, left: 79.61, text: "Embedded Tower - (VIP)" }
-    ],
+    preevo: "Charizard",
     moves: [
-      { "Ember": 80 },
-      { "Flamethrower": 80 },
-      { "Fireball": 80 },
+      { Ember: 80 },
+      { Flamethrower: 80 },
+      { Fireball: 80 },
       { "Dragon claw": 80 },
       { "Dragon tail": 80 },
       { "Dragon flight": 80 },
       { "Dragon breath": 82 },
       { "Flame burst": 80 },
       { "Fire blast": 80 },
-      { "Outrage": 95 },
+      { Outrage: 95 },
       { "Tough claws": "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Charizardite X", rar: "100%" },
-      { min: 1, max: 30, item: "coal", rar: "80%" },
-      { min: 1, max: 1, item: "dragon tooth", rar: "50%" },
-      { min: 1, max: 1, item: "Fire 오늘", rar: "Raro" }
-    ],
-    boost: 1,
-    booStone: "Fire stone",
-    habilidades: "Cut, Fly, Headbutt, Ride"
+    mapas: [
+      { top: 95.08, left: 79.61, text: "Embedded Tower - (VIP)" }
+    ]
   },
-  {
+    {
     nome: "Mega Charizard (Y)",
     numero: "6-3",
     level: 80,
-    clan: "Wingeon",
     tipo: "Fogo, Voador",
+    clan: "Wingeon",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Embedded tower",
-    xpcaught: 900000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo: "Charizard",
     vip: "yes",
-    mapas: [
-      { top: 94.76, left: 79.26, text: "Embedded Tower - (VIP)" }
-    ],
+    preevo: "Charizard",
     moves: [
-      { "Ember": 80 },
-      { "Flamethrower": 80 },
-      { "Fireball": 80 },
-      { "Whirlwind": 80 },
+      { Ember: 80 },
+      { Flamethrower: 80 },
+      { Fireball: 80 },
+      { Whirlwind: 80 },
       { "Flame burst": 80 },
       { "Fire blast": 80 },
       { "Air slash": 83 },
       { "Solar beam": 80 },
       { "Aerial ace": 84 },
       { "Sunny day": 92 },
-      { "Drought": "Passiva" }
+      { Drought: "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Charizardite Y", rar: "100%" },
-      { min: 1, max: 30, item: "coal", rar: "80%" },
-      { min: 1, max: 1, item: "feather", rar: "60%" },
-      { min: 1, max: 1, item: "Fire stone", rar: "Raro" }
-    ],
-    boost: 1,
-    booStone: "Fire stone",
-    habilidades: "Cut, Fly, Headbutt, Ride"
+    mapas: [
+      { top: 94.76, left: 79.26, text: "Embedded Tower - (VIP)" }
+    ]
   },
   {
     nome: "Baby Squirtle",
@@ -15434,46 +15370,35 @@ const ShinysMegasArray = [
     booStone: "Water stone",
     habilidades: "Surf, Headbutt, Ride"
   },
-  {
+    {
     nome: "Mega Blastoise",
     numero: "9-2",
     level: 80,
-    clan: "Seavell",
     tipo: "Água",
+    clan: "Seavell",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Embedded tower",
-    xpcaught: 900000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo: "Blastoise",
     vip: "yes",
-    mapas: [
-      { top: 94.84, left: 78.96, text: "Embedded Tower - (VIP)" }
-    ],
+    preevo: "Blastoise",
     moves: [
-      { "Headbutt": 80 },
-      { "Bubbles": 80 },
+      { Headbutt: 80 },
+      { Bubbles: 80 },
       { "Hand water gun": 80 },
       { "Giant water gun": 80 },
       { "Water pulse": 80 },
-      { "Brine": 80 },
+      { Brine: 80 },
       { "Hydro cannon": 80 },
       { "Skull bash": 85 },
-      { "Hydropump": 90 },
+      { Hydropump: 90 },
       { "Rain dance": 80 },
       { "Mega launcher": "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Blastoisinite", rar: "100%" },
-      { min: 1, max: 30, item: "water gem", rar: "80%" },
-      { min: 1, max: 1, item: "water pendant", rar: "60%" },
-      { min: 1, max: 1, item: "Water stone", rar: "Raro" }
-    ],
-    boost: 1,
-    booStone: "Water stone",
-    habilidades: "Surf, Headbutt, Ride"
+    mapas: [
+      { top: 94.84, left: 78.96, text: "Embedded Tower - (VIP)" }
+    ]
   },
 
   
@@ -16331,41 +16256,33 @@ const ShinysMegasArray = [
     habilidades: "Teleport, Light, Control mind, Blink"
   },
 
-  {
+    {
     nome: "Mega Alakazam",
     numero: "65-2",
     level: 80,
-    clan: "Psycraft",
     tipo: "Psiquico",
+    clan: "Psycraft",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Embedded tower",
-    xpcaught: 900000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo: "Alakazam",
     vip: "yes",
-    mapas: [
-      { top: 95.34, left: 79.35, text: "Embedded tower" }
-    ],
+    preevo: "Alakazam",
     moves: [
-      { "Psybeam": 80 },
+      { Psybeam: 80 },
       { "Psy pulse": 80 },
-      { "Kinesis": 80 },
-      { "Confusion": 80 },
-      { "Psychic": 80 },
+      { Kinesis: 80 },
+      { Confusion: 80 },
+      { Psychic: 80 },
       { "Future sight": 90 },
       { "Instant teleportation": 80 },
-      { "Reflect": 85 },
-      { "Restore": 85 }
+      { Reflect: 85 },
+      { Restore: 85 }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Alakazite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Enigma stone",
-    habilidades: "Teleport, Light, Control mind, Blink"
+    mapas: [
+      { top: 95.34, left: 79.35, text: "Embedded tower" }
+    ]
   },
   
   
@@ -16543,43 +16460,35 @@ const ShinysMegasArray = [
     habilidades: "Ride, Headbutt"
   },
 
-  {
+    {
     nome: "Mega Slowbro",
     numero: "80-1",
     level: 80,
-    clan: "Seavell, Psycraft",
     tipo: "Água, Psiquico",
+    clan: "Seavell, Psycraft",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Dimensional zone",
-    xpcaught: 900000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo: "Slowbro",
     vip: "yes",
-    mapas: [
-      { top: 19.87, left: 53.48, text: "Dimensional Zone - (VIP)" }
-    ],
+    preevo: "Slowbro",
     moves: [
       { "Aqua tail": 80 },
       { "Water gun": 80 },
-      { "Withdraw": 84 },
-      { "Scald": 82 },
+      { Withdraw: 84 },
+      { Scald: 82 },
       { "Zen headbutt": 80 },
-      { "Surf": 85 },
+      { Surf: 85 },
       { "Calm mind": 80 },
       { "Dream eater": 80 },
-      { "Yawn": 86 },
-      { "Amnesia": "Passiva" },
-      { "Regenerator": "Passiva" }
+      { Yawn: 86 },
+      { Amnesia: "Passiva" },
+      { Regenerator: "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Slowbronite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Water stone",
-    habilidades: "Surf"
+    mapas: [
+      { top: 19.87, left: 53.48, text: "Dimensional Zone - (VIP)" }
+    ]
   },
 
   {
@@ -16906,42 +16815,34 @@ const ShinysMegasArray = [
   
   
 
-  {
+    {
     nome: "Mega Gengar",
     numero: "94-2",
     level: 80,
-    clan: "Malefic",
     tipo: "Fantasma, Venenoso",
+    clan: "Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Embedded tower",
-    xpcaught: 950000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo: "Gengar",
     vip: "yes",
-    mapas: [
-      { top: 95.16, left: 79.92, text: "Embedded Tower - (VIP)" }
-    ],
+    preevo: "Gengar",
     moves: [
       { "Sucker punch": 83 },
       { "Shadow punch": 84 },
       { "Night shade": 80 },
       { "Scary face": 82 },
       { "Shadow storm": 86 },
-      { "Hex": 85 },
-      { "Nightmare": 80 },
-      { "Hypnosis": 80 },
+      { Hex: 85 },
+      { Nightmare: 80 },
+      { Hypnosis: 80 },
       { "Shadow tag": 80 },
-      { "Levitate": "Passiva" }
+      { Levitate: "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Gengarite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Darkness stone",
-    habilidades: "Levitate"
+    mapas: [
+      { top: 95.16, left: 79.92, text: "Embedded Tower - (VIP)" }
+    ]
   },
 
   {
@@ -17402,43 +17303,35 @@ const ShinysMegasArray = [
     habilidades: "Cut"
   },
 
-  {
+    {
     nome: "Mega Kangaskhan",
     numero: "115-1",
     level: 80,
-    clan: "Gardestrike",
     tipo: "Normal",
+    clan: "Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Embedded tower",
-    xpcaught: 950000,
-    pricenpc: 0,
     shiny: "yes",
-    preeevo: "Kangaskhan",
     mega: "yes",
     vip: "yes",
-    mapas: [
-      { top: 95.1, left: 79.22, text: "Embedded Tower - (VIP)" }
-    ],
+    preeevo: "Kangaskhan",
     moves: [
-      { "Bite": 80 },
+      { Bite: 80 },
       { "Dizzy punch": 80 },
-      { "Headbutt": 80 },
+      { Headbutt: 80 },
       { "Mega punch": 80 },
-      { "Crunch": 80 },
+      { Crunch: 80 },
       { "Sucker punch": 83 },
       { "Comet punch": 80 },
-      { "Epicenter": 94 },
-      { "Rage": 80 },
-      { "Groundshock": "Passiva" },
+      { Epicenter: 94 },
+      { Rage: 80 },
+      { Groundshock: "Passiva" },
       { "Parental bond": "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Kangaskhanite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Heart stone",
-    habilidades: "Rock smash, Headbutt"
+    mapas: [
+      { top: 95.1, left: 79.22, text: "Embedded Tower - (VIP)" }
+    ]
   },
 
   {
@@ -18646,25 +18539,20 @@ const ShinysMegasArray = [
     habilidades: "Light, Headbutt"
   },
 
-  {
+    {
     nome: "Mega Ampharos",
     numero: "181-2",
     level: 80,
-    clan: "Raibolt, Wingeon",
     tipo: "Elétrico, Dragão",
+    clan: "Raibolt, Wingeon",
     regiao: "Johto",
     geracao: "2",
     dificuldade: "Embedded tower",
-    xpcaught: 950000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
     vip: "yes",
-    mapas: [
-      { top: 95.32, left: 79.93, text: "Embedded Tower - (VIP)" }
-    ],
     moves: [
-      { "Charge": 80 },
+      { Charge: 80 },
       { "Dragon tail": 80 },
       { "Cotton spore": 80 },
       { "Thunder bolt": 80 },
@@ -18673,14 +18561,11 @@ const ShinysMegasArray = [
       { "Dragon mist": 85 },
       { "Dragon pulse": 85 },
       { "Electro field": 90 },
-      { "Outrage": 95 }
+      { Outrage: 95 }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Ampharosite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Thunder stone",
-    habilidades: "Light"
+    mapas: [
+      { top: 95.32, left: 79.93, text: "Embedded Tower - (VIP)" }
+    ]
   },
 
   {
@@ -18826,41 +18711,33 @@ const ShinysMegasArray = [
     habilidades: "Teleport, Blink"
   },
 
-  {
+    {
     nome: "Mega Steelix",
     numero: "208-1",
     level: 100,
-    clan: "Orebound, Ironhard",
     tipo: "Terra, Metal",
+    clan: "Orebound, Ironhard",
     regiao: "Johto",
     geracao: "2",
     dificuldade: "Dimensional zone",
-    xpcaught: 1100000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
     vip: "yes",
-    mapas: [
-      { top: 20.03, left: 53.04, text: "Dimensional Zone - (VIP)" }
-    ],
     moves: [
-      { "Roar": 110 },
+      { Roar: 110 },
       { "Iron tail": 100 },
       { "Iron head": 100 },
-      { "Bind": 100 },
-      { "Autotomize": 100 },
+      { Bind: 100 },
+      { Autotomize: 100 },
       { "Earth power": 105 },
-      { "Fissure": 110 },
-      { "Earthquake": 107 },
-      { "Sandstorm": 100 },
+      { Fissure: 110 },
+      { Earthquake: 107 },
+      { Sandstorm: 100 },
       { "Stealth rock": 110 }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Steelixite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Metal stone",
-    habilidades: "Dig, Rock smash, Ride, Headbutt"
+    mapas: [
+      { top: 20.03, left: 53.04, text: "Dimensional Zone - (VIP)" }
+    ]
   },
 
   {
@@ -18896,45 +18773,40 @@ const ShinysMegasArray = [
     habilidades: "Headbutt"
   },
 
-  {
+    {
     nome: "Mega Scizor",
     numero: "212-1",
     level: 100,
-    clan: "Naturia, Ironhard",
     tipo: "Inseto, Metal",
+    clan: "Naturia, Ironhard",
     regiao: "Johto",
     geracao: "2",
     dificuldade: "Drop",
-    xpcaught: 1200000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
     vip: "yes",
-    mapas: [],
     moves: [
-      { "Swift": 100 },
+      { Swift: 100 },
       { "Iron head": 100 },
       { "Compass slash": 100 },
       { "Metal claw": 107 },
       { "Bullet punch": 100 },
-      { "Pursuit": 100 },
+      { Pursuit: 100 },
       { "X scissor": 105 },
       { "Steel wing": 108 },
       { "Iron defense": 104 },
-      { "Evasion": "Passiva" }
+      { Evasion: "Passiva" }
     ],
     loots: [
-      { min: 1, max: 1, item: "scizor claw", rar: "Raro" },
-      { min: 1, max: 25, item: "piece of steel", rar: "80.0%" },
-      { min: 1, max: 25, item: "bug gosme", rar: "80.0%" },
-      { min: 1, max: 1, item: "Metal stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Cocoon stone", rar: "Raro" },
-      { min: 1, max: 1, item: "pot of moss bug", rar: "90.0%" },
-      { min: 1, max: 1, item: "Scizorite", rar: "Raro" }
+      { item: "scizor claw", min: 1, max: 1, rar: "Raro" },
+      { item: "piece of steel", min: 1, max: 25, rar: "80.0%" },
+      { item: "bug gosme", min: 1, max: 25, rar: "80.0%" },
+      { item: "Metal stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Cocoon stone", min: 1, max: 1, rar: "Raro" },
+      { item: "pot of moss bug", min: 1, max: 1, rar: "90.0%" },
+      { item: "Scizorite", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 1,
-    booStone: "Metal stone",
-    habilidades: "Cut, Fly"
+    mapas: []
   },
 
   {
@@ -19393,101 +19265,85 @@ const ShinysMegasArray = [
     booStone: "Ancient stone",
     habilidades: "Dig, Rock smash, Cut, Headbutt"
   },
-  {
+    {
     nome: "Mega Tyranitar",
     numero: "248-1",
     level: 100,
-    clan: "Orebound, Malefic",
     tipo: "Pedra, Noturno",
+    clan: "Orebound, Malefic",
     regiao: "Johto",
     geracao: "2",
     dificuldade: "Embedded tower",
-    xpcaught: 1500000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Tyranitar",
     vip: "yes",
-    mapas: [
-      { top: 95.27, left: 79.16, text: "Embedded Tower - (VIP)" }
-    ],
+    preevo1: "Tyranitar",
     moves: [
-      { "Bite": 100 },
-      { "Shadow wave": "100" },
-      { "Crunch": 100 },
+      { Bite: 100 },
+      { "Shadow wave": 100 },
+      { Crunch: 100 },
       { "Dark pulse": 100 },
       { "Rock slide": 100 },
       { "Stone edge": 100 },
-      { "Assurance": 108 },
+      { Assurance: 108 },
       { "Hyper beam": 110 },
-      { "Epicenter": 114 },
-      { "Sandstorm": 100 }
+      { Epicenter: 114 },
+      { Sandstorm: 100 }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Tyranitarite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Ancient stone",
-    habilidades: "Dig, Rock smash, Cut, Headbutt, Ride"
+    mapas: [
+      { top: 95.27, left: 79.16, text: "Embedded Tower - (VIP)" }
+    ]
   },
-  {
+    {
     nome: "Mega Sceptile",
     numero: "254-1",
     level: 80,
-    clan: "Naturia, Wingeon",
     tipo: "Grama, Dragão",
+    clan: "Naturia, Wingeon",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Drop",
-    xpcaught: 900000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Sceptile",
     vip: "yes",
-    mapas: [],
+    preevo1: "Sceptile",
     moves: [
       { "Leaf blade": 80 },
       { "Magical leaf": 80 },
       { "Fury cutter": 85 },
       { "Dragon claw": 80 },
-      { "Bulldoze": 83 },
+      { Bulldoze: 83 },
       { "X scissor": 80 },
       { "Dual chop": 80 },
-      { "Outrage": 95 },
+      { Outrage: 95 },
       { "Frenzy plant": 90 },
-      { "Agility": 80 }
+      { Agility: 80 }
     ],
     loots: [
-      { min: 1, max: 43, item: "seed", rar: "100.0%" },
-      { min: 1, max: 1, item: "Leaf stone", rar: "Raro" },
-      { min: 1, max: 1, item: "leaves", rar: "100.0%" },
-      { min: 1, max: 1, item: "greens", rar: "21.3%" },
-      { min: 1, max: 1, item: "Sceptilite", rar: "Raro" }
+      { item: "seed", min: 1, max: 43, rar: "100.0%" },
+      { item: "Leaf stone", min: 1, max: 1, rar: "Raro" },
+      { item: "leaves", min: 1, max: 1, rar: "100.0%" },
+      { item: "greens", min: 1, max: 1, rar: "21.3%" },
+      { item: "Sceptilite", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 1,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Ride"
+    mapas: []
   },
-  {
+    {
     nome: "Mega Blaziken",
     numero: "257-1",
     level: 80,
-    clan: "Volcanic, Gardestrike",
     tipo: "Fogo, Lutador",
+    clan: "Volcanic, Gardestrike",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Drop",
-    xpcaught: 950000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Blaziken",
     vip: "yes",
-    mapas: [],
+    preevo1: "Blaziken",
     moves: [
       { "Low kick": 80 },
-      { "Ember": 80 },
+      { Ember: 80 },
       { "Mega kick": 80 },
       { "Fire fist": 80 },
       { "Blaze kick": 80 },
@@ -19496,193 +19352,165 @@ const ShinysMegasArray = [
       { "Blast burn": 95 },
       { "Flare blitz": 90 },
       { "Bulk up": 80 },
-      { "Evasion": "Passiva" }
+      { Evasion: "Passiva" }
     ],
     loots: [
-      { min: 1, max: 1, item: "fire feather", rar: "59.5%" },
-      { min: 1, max: 21, item: "band aid", rar: "100.0%" },
-      { min: 1, max: 21, item: "essence of fire", rar: "100.0%" },
-      { min: 1, max: 1, item: "Fire stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Punch stone", rar: "Raro" },
-      { min: 1, max: 1, item: "pot of lava", rar: "100.0%" },
-      { min: 1, max: 1, item: "Blazikenite", rar: "Raro" }
+      { item: "fire feather", min: 1, max: 1, rar: "59.5%" },
+      { item: "band aid", min: 1, max: 21, rar: "100.0%" },
+      { item: "essence of fire", min: 1, max: 21, rar: "100.0%" },
+      { item: "Fire stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Punch stone", min: 1, max: 1, rar: "Raro" },
+      { item: "pot of lava", min: 1, max: 1, rar: "100.0%" },
+      { item: "Blazikenite", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 1,
-    booStone: "Fire stone",
-    habilidades: "Rock smash, Cut, Headbutt"
+    mapas: []
   },
-  {
+    {
     nome: "Mega Swampert",
     numero: "260-1",
     level: 80,
-    clan: "Seavell, Orebound",
     tipo: "Água, Terrestre",
+    clan: "Seavell, Orebound",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Drop",
-    xpcaught: 950000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Swampert",
     vip: "yes",
-    mapas: [],
+    preevo1: "Swampert",
     moves: [
       { "Mega punch": 80 },
       { "Water gun": 80 },
-      { "Waterball": 80 },
+      { Waterball: 80 },
       { "Aqua tail": 80 },
-      { "Bulldoze": 83 },
+      { Bulldoze: 83 },
       { "Earth power": 80 },
       { "Hammer arm": 80 },
-      { "Magnitude": 90 },
-      { "Hydropump": 90 },
+      { Magnitude: 90 },
+      { Hydropump: 90 },
       { "Rain dance": 80 },
       { "Swift swim": "Passiva" }
     ],
     loots: [
-      { min: 1, max: 1, item: "black fins", rar: "21.3%" },
-      { min: 1, max: 21, item: "earth ball", rar: "100.0%" },
-      { min: 1, max: 21, item: "water gem", rar: "100.0%" },
-      { min: 1, max: 1, item: "water pendant", rar: "68.3%" },
-      { min: 1, max: 1, item: "Water stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Earth stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Swampertite", rar: "Raro" }
+      { item: "black fins", min: 1, max: 1, rar: "21.3%" },
+      { item: "earth ball", min: 1, max: 21, rar: "100.0%" },
+      { item: "water gem", min: 1, max: 21, rar: "100.0%" },
+      { item: "water pendant", min: 1, max: 1, rar: "68.3%" },
+      { item: "Water stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Earth stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Swampertite", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 1,
-    booStone: "Water stone",
-    habilidades: "Dig, Rock smash, Surf, Waterfall"
+    mapas: []
   },
-  {
+    {
     nome: "Mega Gardevoir",
     numero: "282-1",
     level: 100,
-    clan: "Psycraft",
     tipo: "Psíquico, Fada",
+    clan: "Psycraft",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Drop",
-    xpcaught: 1200000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Gardevoir",
     vip: "yes",
-    mapas: [],
+    preevo1: "Gardevoir",
     moves: [
-      { "Charm": 100 },
+      { Charm: 100 },
       { "Dazzling gleam": 104 },
       { "Instant teleportation": 100 },
       { "Disarming voice": 100 },
-      { "Psychic": 100 },
+      { Psychic: 100 },
       { "Stored power": 110 },
       { "Healing wish": 102 },
-      { "Moonblast": 112 },
+      { Moonblast: 112 },
       { "Misty terrain": 100 },
       { "Miracle eye": 101 }
     ],
     loots: [
-      { min: 1, max: 1, item: "cure flower", rar: "63.8%" },
-      { min: 1, max: 1, item: "comb", rar: "25.0%" },
-      { min: 1, max: 43, item: "enchanted gem", rar: "100.0%" },
-      { min: 1, max: 1, item: "future orb", rar: "100.0%" },
-      { min: 1, max: 1, item: "Enigma stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Crystal stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Gardevoirite", rar: "Raro" }
+      { item: "cure flower", min: 1, max: 1, rar: "63.8%" },
+      { item: "comb", min: 1, max: 1, rar: "25.0%" },
+      { item: "enchanted gem", min: 1, max: 43, rar: "100.0%" },
+      { item: "future orb", min: 1, max: 1, rar: "100.0%" },
+      { item: "Enigma stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Crystal stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Gardevoirite", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 1,
-    booStone: "Crystal stone",
-    habilidades: "Flash, Teleport"
+    mapas: []
   },
-  {
+    {
     nome: "Mega Sableye",
     numero: "302-1",
     level: 80,
-    clan: "Malefic",
     tipo: "Noturno, Fantasma",
+    clan: "Malefic",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Drop",
-    xpcaught: 800000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Sableye",
     vip: "yes",
-    mapas: [],
+    preevo1: "Sableye",
     moves: [
       { "Shadow ball": 80 },
       { "Fury swipes": 80 },
       { "Shadow sphere": 80 },
       { "Sucker punch": 83 },
       { "Night shade": 80 },
-      { "Astonish": 80 },
+      { Astonish: 80 },
       { "Dark pulse": 80 },
       { "Shadow claw": 80 }
     ],
     loots: [
-      { min: 1, max: 1, item: "big crystal", rar: "6.5%" },
-      { min: 1, max: 20, item: "ghost essence", rar: "100.0%" },
-      { min: 1, max: 1, item: "Darkness stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Sablenite", rar: "Raro" }
+      { item: "big crystal", min: 1, max: 1, rar: "6.5%" },
+      { item: "ghost essence", min: 1, max: 20, rar: "100.0%" },
+      { item: "Darkness stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Sablenite", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 1,
-    booStone: "Darkness stone",
-    habilidades: "Cut, Flash"
+    mapas: []
   },
-  {
+    {
     nome: "Mega Mawile",
     numero: "303-1",
     level: 80,
-    clan: "Ironhard, Psycraft",
     tipo: "Aço, Fada",
+    clan: "Ironhard, Psycraft",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Embedded tower",
-    xpcaught: 850000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Mawile",
     vip: "yes",
-    mapas: [
-      { top: 95.1, left: 79.77, text: "Embedded Tower - (VIP)" }
-    ],
+    preevo1: "Mawile",
     moves: [
-      { "Bite": 80 },
+      { Bite: 80 },
       { "Fairy wind": 88 },
       { "Play rough": 80 },
-      { "Impale": 83 },
+      { Impale: 83 },
       { "Flash cannon": 88 },
       { "Spit up": 83 },
-      { "Swallow": 83 },
-      { "Stockpile": 83 },
+      { Swallow: 83 },
+      { Stockpile: 83 },
       { "Fake tears": 86 },
       { "Clear pile": "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Mawilite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Metal stone",
-    habilidades: "Rock smash, Cut"
+    mapas: [
+      { top: 95.1, left: 79.77, text: "Embedded Tower - (VIP)" }
+    ]
   },
-  {
+    {
     nome: "Mega Aggron",
     numero: "306-1",
     level: 100,
-    clan: "Ironhard",
     tipo: "Aço",
+    clan: "Ironhard",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Drop",
-    xpcaught: 1100000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Aggron",
     vip: "yes",
-    mapas: [],
+    preevo1: "Aggron",
     moves: [
       { "Iron head": 100 },
       { "Iron tail": 100 },
@@ -19692,83 +19520,44 @@ const ShinysMegasArray = [
       { "Metal claw": 107 },
       { "Meteor mash": 100 },
       { "Flash cannon": 108 },
-      { "Harden": 100 },
-      { "Sturdy": "Passiva" }
+      { Harden: 100 },
+      { Sturdy: "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Aggronite", rar: "100%" }
-    ],
-    boost: 1,
-    booStone: "Metal stone",
-    habilidades: "Rock smash, Cut, Headbutt, Ride"
+    mapas: []
   },
-  {
+
+    {
     nome: "Mega Manectric",
     numero: "310-1",
-    level: 100,
-    clan: "Raibolt",
-    tipo: "Elétrico",
-    regiao: "Hoenn",
-    geracao: "3",
-    dificuldade: "Dimensional zone",
-    xpcaught: 700000,
-    pricenpc: "unseleable",
-    shiny: "yes",
-    vip: "yes",
-    mapas: [],
-    moves: [
-      { "Roar": 110 },
-      { "Swift": 100 },
-      { "Volt fang": 100 },
-      { "Spark": 100 },
-      { "Ice fang": 100 },
-      { "Thunder": 100 },
-      { "Discharge": 105 },
-      { "Mamaragan": 110 },
-      { "Magnetic flux": 100 }
-    ],
-    loots: [],
-    boost: 2,
-    booStone: "Mirror stone",
-    habilidades: "Cut"
-  },
-  {
-    nome: "Mega Manectric",
-    numero: "310-2",
     level: 80,
-    clan: "Raibolt",
     tipo: "Elétrico",
+    clan: "Raibolt",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Drop",
-    xpcaught: 850000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Manectric",
     vip: "yes",
-    mapas: [],
+    preevo1: "Manectric",
     moves: [
-      { "Roar": 90 },
-      { "Spark": 80 },
-      { "Swift": 80 },
+      { Roar: 90 },
+      { Spark: 80 },
+      { Swift: 80 },
       { "Thunder fang": 80 },
       { "Electro ball": 80 },
-      { "Shockwave": 80 },
+      { Shockwave: 80 },
       { "Hyper beam": 88 },
-      { "Discharge": 85 },
+      { Discharge: 85 },
       { "Electric terrain": 80 }
     ],
     loots: [
-      { min: 1, max: 1, item: "shock topknot", rar: "21.3%" },
-      { min: 1, max: 43, item: "screw", rar: "100.0%" },
-      { min: 1, max: 1, item: "electric box", rar: "100.0%" },
-      { min: 1, max: 1, item: "Thunder stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Manectite", rar: "Raro" }
+      { item: "shock topknot", min: 1, max: 1, rar: "21.3%" },
+      { item: "screw", min: 1, max: 43, rar: "100.0%" },
+      { item: "electric box", min: 1, max: 1, rar: "100.0%" },
+      { item: "Thunder stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Manectite", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 1,
-    booStone: "Thunder stone",
-    habilidades: "Cut, Flash"
+    mapas: []
   },
   
   
@@ -19803,82 +19592,67 @@ const ShinysMegasArray = [
     booStone: "Thunder stone",
     habilidades: "Flash"
   },
-  {
+    {
     nome: "Mega Camerupt",
     numero: "323-1",
     level: 80,
-    clan: "Volcanic, Orebound",
     tipo: "Fogo, Terrestre",
+    clan: "Volcanic, Orebound",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Drop",
-    xpcaught: 950000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Camerupt",
     vip: "yes",
-    mapas: [],
+    preevo1: "Camerupt",
     moves: [
       { "Volcano shot": 80 },
       { "Body slam": 84 },
       { "Mud bomb": 80 },
-      { "Bulldoze": 80 },
-      { "Eruption": 80 },
-      { "Earthquake": 90 },
-      { "Fissure": 90 },
+      { Bulldoze: 80 },
+      { Eruption: 80 },
+      { Earthquake: 90 },
+      { Fissure: 90 },
       { "Solar beam": 80 },
       { "Scary face": 82 },
       { "Focus energy": 87 },
       { "Solid rock": "Passiva" }
     ],
     loots: [
-      { min: 1, max: 1, item: "Cameruptite", rar: "Raro" },
-      { min: 1, max: 30, item: "essence of fire", rar: "100.0%" },
-      { min: 1, max: 25, item: "earth ball", rar: "100.0%" },
-      { min: 1, max: 1, item: "pot of lava", rar: "80.0%" }
+      { item: "Cameruptite", min: 1, max: 1, rar: "Raro" },
+      { item: "essence of fire", min: 1, max: 30, rar: "100.0%" },
+      { item: "earth ball", min: 1, max: 25, rar: "100.0%" },
+      { item: "pot of lava", min: 1, max: 1, rar: "80.0%" }
     ],
-    boost: 1,
-    booStone: "Fire stone",
-    habilidades: "Rock smash, Ride, Headbutt"
+    mapas: []
   },
-  {
+    {
     nome: "Mega Altaria",
     numero: "334-1",
     level: 80,
-    clan: "Wingeon, Psycraft",
     tipo: "Dragão, Fada",
+    clan: "Wingeon, Psycraft",
     regiao: "Hoenn",
     geracao: "3",
     dificuldade: "Dimensional zone",
-    xpcaught: 1000000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Altaria",
     vip: "yes",
-    mapas: [],
+    preevo1: "Altaria",
     moves: [
-      { "Attract": 80 },
+      { Attract: 80 },
       { "Dazzling gleam": 84 },
       { "Dragon claw": 80 },
       { "Dragon breath": 82 },
       { "Dragon mist": 85 },
       { "Dragon pulse": 85 },
-      { "Mist": 90 },
-      { "Tailwind": 80 },
+      { Mist: 90 },
+      { Tailwind: 80 },
       { "Draco meteor": 95 },
-      { "Safeguard": 90 },
+      { Safeguard: 90 },
       { "Cloud nine": "Passiva" }
     ],
-    loots: [
-      { min: 1, max: 1, item: "Altarianite", rar: "Raro" },
-      { min: 1, max: 1, item: "cure flower", rar: "60.0%" },
-      { min: 1, max: 1, item: "future orb", rar: "100.0%" }
-    ],
-    boost: 1,
-    booStone: "Crystal stone",
-    habilidades: "Fly, Ride"
+    mapas: []
   },
   {
     nome: "Fire Castform",
@@ -20117,41 +19891,36 @@ const ShinysMegasArray = [
     booStone: "Punch stone",
     habilidades: "Rock smash, Flash, Headbutt"
   },
-  {
+    {
     nome: "Mega Lucario",
     numero: "448-2",
     level: 80,
-    clan: "Ironhard, Gardestrike",
     tipo: "Aço, Lutador",
+    clan: "Ironhard, Gardestrike",
     regiao: "Sinnoh",
     geracao: "4",
     dificuldade: "Drop",
-    xpcaught: 1100000,
-    pricenpc: 0,
     shiny: "yes",
     mega: "yes",
-    preevo1: "Lucario",
     vip: "yes",
-    mapas: [],
+    preevo1: "Lucario",
     moves: [
       { "Iron head": 80 },
-      { "Extremespeed": 80 },
+      { Extremespeed: 80 },
       { "Circle throw": 80 },
       { "Metal claw": 80 },
       { "Bullet punch": 80 },
       { "Aura sphere": 80 },
       { "Vacuum wave": 95 },
       { "Mind reader": 80 },
-      { "Evasion": "Passiva" },
-      { "Superpower": "Passiva" },
-      { "Foresight": "Passiva" }
+      { Evasion: "Passiva" },
+      { Superpower: "Passiva" },
+      { Foresight: "Passiva" }
     ],
     loots: [
-      { min: 1, max: 1, item: "Lucarionite", rar: "Raro" }
+      { item: "Lucarionite", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 1,
-    booStone: "Punch stone",
-    habilidades: "Rock smash, Flash, Headbutt"
+    mapas: []
   },
   {
     nome: "Shiny Leafeon",
