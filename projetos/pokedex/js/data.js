@@ -14211,7 +14211,7 @@ const pokesarray = [
     loots: [],
     habilidades: "Dig,Rock smash,Light,Headbutt",
   },
-        {
+          {
     nome: "Simisear",
     numero: "514",
     level: 80,
@@ -14235,14 +14235,14 @@ const pokesarray = [
       { "Solar beam": 80 },
       { Leer: 80 },
       { Protect: 80 },
-      { "Sunny Day": 80 },
+      { "Sunny day": 80 },
       { Gluttony: 80 }
     ],
     loots: [
       { item: "Compressed fire", min: 1, max: 10, rar: "80%" }
     ],
     mapas: [],
-    updatedAt: "19/03/2026, 18:47:35"
+    updatedAt: "19/03/2026, 20:16:46"
   },
   {
     nome: "Blitzle",
@@ -20448,6 +20448,12 @@ const ShinysMegasArray = [
 
     
 const movesArray = [
+    
+     { move: "Solar power", type: "Fogo", desc: "O pokemon é imune ao efeito de slow, está habilidade não afeta pokemon selvagem.", 
+   aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "",
+   nevermiss: "", paralyze: "", passive: "yes", poison: "", self: "yes", slow: "", stun: "", target: "", 
+   healing: "", silence: "", freeze: "", knockback: "", },
+ 
  
  { move: "Ancient armor", type: "Normal", desc: "aumenta a defesa e dobra a velocidade de ataque fisico do pokemon por 12 segundos.", 
    aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "",
@@ -20525,6 +20531,7 @@ const movesArray = [
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
    target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
+   
  
  { move: "Thick fat", type: "Pedra", desc: "o pokemon recebe metade do dano (inefetivo) de pokemons do tipo fogo e gelo", 
    aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
