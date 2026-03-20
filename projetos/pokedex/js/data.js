@@ -809,7 +809,7 @@ const pokesarray = [
     updatedAt: "20/03/2026, 00:11:57",
     updateHistory: [ { date: "20/03/2026, 00:11:57", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Water pulse (Lv 45), Muddy water (Lv 48)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Brine (Lv 45), Hidro cannon (Lv 48), Skull bash (Lv 45)</strong>" ] } ]
   },
-    {
+      {
     nome: "Blastoise",
     numero: "9",
     level: 80,
@@ -824,7 +824,7 @@ const pokesarray = [
     vip: "yes",
     boost: 3,
     booStone: "Water stone",
-    habilidades: "Surf, Headbutt",
+    habilidades: "Rock Smash, Surf, Dig, Headbutt",
     preevo: "Wartortle",
     moves: [
       { Headbutt: 80 },
@@ -851,78 +851,82 @@ const pokesarray = [
       { top: 23.12, left: 43.71, text: "Tropical Island - (VIP)" },
       { top: 74.95, left: 57.18, text: "Kinnow Island - (VIP)" }
     ],
-    updatedAt: "20/03/2026, 00:15:57",
-    updateHistory: [ { date: "20/03/2026, 00:15:57", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Muddy water (Lv 80), Withdraw (Lv 80), Hydropump (Lv 80), Protector (Lv Passiva)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Brine (Lv 80), Skull bash (Lv 85), Hydropump (Lv 90)</strong>" ] } ]
+    updateHistory: [ { date: "20/03/2026, 10:30:33", changes: [ "✏️ <strong>habilidades</strong>: de \"Surf, Headbutt\" ➔ \"Rock Smash, Surf, Dig, Headbutt\"" ] }, { date: "20/03/2026, 00:15:57", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Muddy water (Lv 80), Withdraw (Lv 80), Hydropump (Lv 80), Protector (Lv Passiva)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Brine (Lv 80), Skull bash (Lv 85), Hydropump (Lv 90)</strong>" ] } ],
+    updatedAt: "20/03/2026, 10:30:33"
   },
-  {
+    {
     nome: "Caterpie",
-    numero: 10,
+    numero: "10",
     level: 1,
-    clan: "Naturia",
     tipo: "Inseto",
+    clan: "Naturia",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
     xpcaught: 500,
     pricenpc: 5,
     evo: "Metapod",
+    evoStone: "Cocoon stone",
+    boost: 30,
+    booStone: "Cocoon stone",
+    habilidades: "",
+    moves: [
+      { Headbutt: 1 },
+      { "String shot": 1 },
+      { "Bug bite": 1 }
+    ],
+    loots: [
+      { item: "butterfly wing", min: 1, max: 1, rar: "Raro" },
+      { item: "bug gosme", min: 1, max: 5, rar: "80%" },
+      { item: "pot of moss bug", min: 1, max: 1, rar: "15.3%" }
+    ],
     mapas: [
       { top: 21.86, left: 36.71, text: "Floresta de Viridian - (FREE)" },
       { top: 24.96, left: 51.08, text: "Floresta de Vermilion - (FREE)" },
       { top: 23.48, left: 58.11, text: "Floresta de Lavender - (FREE)" },
       { top: 83.04, left: 77.85, text: "Murcott Island - (VIP)" }
     ],
-    moves: [
-      { "Headbutt": 1 },
-      { "String shot": 1 },
-      { "Bug bite": 1 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "butterfly wing", rar: "Raro" },
-      { min: 1, max: 5, item: "bug gosme", rar: "80%" },
-      { min: 1, max: 1, item: "pot of moss bug", rar: "15.3%" },
-    ],
-    evoStone: "Cocoon stone",
-    boost: 30,
-    booStone: "Cocoon stone",
-    habilidades: "",
+    updatedAt: "20/03/2026, 13:18:01",
+    updateHistory: [  ]
   },
-  {
+    {
     nome: "Metapod",
-    numero: 11,
+    numero: "11",
     level: 10,
-    clan: "Naturia",
     tipo: "Inseto",
+    clan: "Naturia",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
     xpcaught: 3000,
     pricenpc: 250,
-    preevo: "Caterpie",
     evo: "Butterfree",
+    evoStone: "Cocoon stone",
+    boost: 15,
+    booStone: "Cocoon stone",
+    habilidades: "",
+    preevo: "Caterpie",
+    moves: [
+      { "String shot": 10 },
+      { Headbutt: 10 },
+      { Harden: 10 },
+      { "Bug bite": 10 }
+    ],
+    loots: [
+      { item: "butterfly wing", min: 1, max: 1, rar: "2.1%" },
+      { item: "bug gosme", min: 1, max: 5, rar: "80%" },
+      { item: "pot of moss bug", min: 1, max: 1, rar: "19.5%" }
+    ],
     mapas: [
       { top: 22.05, left: 34.6, text: "Floresta de Viridian - (FREE)" },
       { top: 23.87, left: 51.79, text: "Floresta de Vermilion - (FREE)" },
       { top: 23.55, left: 57.37, text: "Floresta de Lavender - (FREE)" },
       { top: 83.63, left: 77.91, text: "Murcott Island - (VIP)" }
     ],
-    moves: [
-      { "String shot": 10 },
-      { "Headbutt": 10 },
-      { "Harden": 10 },
-      { "Bug bite": 10 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "butterfly wing", rar: "2.1%" },
-      { min: 1, max: 5, item: "bug gosme", rar: "80%" },
-      { min: 1, max: 1, item: "pot of moss bug", rar: "19.5%" },
-    ],
-    evoStone: "Cocoon stone",
-    boost: 15,
-    booStone: "Cocoon stone",
-    habilidades: "",
+    updatedAt: "20/03/2026, 13:17:56",
+    updateHistory: [  ]
   },
-    {
+      {
     nome: "Butterfree",
     numero: "12",
     level: 30,
@@ -937,7 +941,7 @@ const pokesarray = [
     fast: "yes",
     boost: 10,
     booStone: "Cocoon stone",
-    habilidades: "",
+    habilidades: "Light",
     preevo: "Metapod",
     moves: [
       { "Super sonic": 30 },
@@ -964,83 +968,87 @@ const pokesarray = [
       { top: 86.32, left: 44.93, text: "Floresta de Mandarin - (FREE)" },
       { top: 82.93, left: 74.88, text: "Murcott Island - (VIP)" }
     ],
-    updatedAt: "20/03/2026, 00:40:23",
-    updateHistory: [ { date: "20/03/2026, 00:40:23", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Air slash (Lv 30), Psybeam (Lv 30), Air cutter (Lv 30), Safeguard (Lv 30)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Whirlwind (Lv 30), Psybeam (Lv 32), Air cutter (Lv 34), Safeguard (Lv 36)</strong>" ] } ]
+    updateHistory: [ { date: "20/03/2026, 10:32:22", changes: [ "✨ <strong>habilidades</strong> definido como: \"Light\"" ] }, { date: "20/03/2026, 00:40:23", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Air slash (Lv 30), Psybeam (Lv 30), Air cutter (Lv 30), Safeguard (Lv 30)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Whirlwind (Lv 30), Psybeam (Lv 32), Air cutter (Lv 34), Safeguard (Lv 36)</strong>" ] } ],
+    updatedAt: "20/03/2026, 10:32:22"
   },
-  {
+    {
     nome: "Weedle",
-    numero: 13,
+    numero: "13",
     level: 1,
-    clan: "Naturia, Malefic",
     tipo: "Inseto, Venenoso",
+    clan: "Naturia, Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
     xpcaught: 500,
     pricenpc: 5,
     evo: "Kakuna",
+    evoStone: "Cocoon stone",
+    boost: 30,
+    booStone: "Cocoon stone",
+    habilidades: "",
+    moves: [
+      { "Horn attack": 1 },
+      { "String shot": 1 },
+      { "Poison sting": 1 }
+    ],
+    loots: [
+      { item: "bee sting", min: 1, max: 1, rar: "Raro" },
+      { item: "bug gosme", min: 1, max: 3, rar: "80%" },
+      { item: "bottle of poison", min: 1, max: 3, rar: "80%" },
+      { item: "pot of moss bug", min: 1, max: 1, rar: "15.3%" }
+    ],
     mapas: [
       { top: 19.92, left: 44.8, text: "Esquerda de Cerulean - Próximo ao pântano - (FREE)" },
       { top: 23.47, left: 57.84, text: "Floresta a direita de Saffron (FREE)" },
       { top: 23.05, left: 36.83, text: "Floresta de Viridian (FREE)" }
     ],
-    moves: [
-      { "Horn attack": 1 },
-      { "String shot": 1 },
-      { "Poison sting": 1 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "bee sting", rar: "Raro" },
-      { min: 1, max: 3, item: "bug gosme", rar: "80%" },
-      { min: 1, max: 3, item: "bottle of poison", rar: "80%" },
-      { min: 1, max: 1, item: "pot of moss bug", rar: "15.3%" },
-    ],
-    evoStone: "Cocoon stone",
-    boost: 30,
-    booStone: "Cocoon stone",
-    habilidades: "",
+    updatedAt: "20/03/2026, 13:17:51",
+    updateHistory: [  ]
   },
-  {
+    {
     nome: "Kakuna",
-    numero: 14,
+    numero: "14",
     level: 10,
-    clan: "Naturia, Malefic",
     tipo: "Inseto, Venenoso",
+    clan: "Naturia, Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
     xpcaught: 3000,
     pricenpc: 250,
-    preevo: "Weedle",
     evo: "Beedrill",
+    evoStone: "Cocoon stone",
+    boost: 15,
+    booStone: "Cocoon stone",
+    habilidades: "",
+    preevo: "Weedle",
+    moves: [
+      { "String shot": 10 },
+      { Headbutt: 10 },
+      { Harden: 10 },
+      { "Bug bite": 10 }
+    ],
+    loots: [
+      { item: "bee sting", min: 1, max: 1, rar: "2.1%" },
+      { item: "bug gosme", min: 1, max: 4, rar: "80%" },
+      { item: "bottle of poison", min: 1, max: 4, rar: "80%" },
+      { item: "pot of moss bug", min: 1, max: 1, rar: "19.5%" }
+    ],
     mapas: [
       { top: 20.21, left: 46.49, text: "Esquerda de Cerulean - Próximo ao pântano - (FREE)" },
       { top: 23.78, left: 57.82, text: "Floresta a direita de Saffron (FREE)" },
       { top: 23.64, left: 36.69, text: "Floresta de Viridian (FREE)" }
     ],
-    moves: [
-      { "String shot": 10 },
-      { "Headbutt": 10 },
-      { "Harden": 10 },
-      { "Bug bite": 10 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "bee sting", rar: "2.1%" },
-      { min: 1, max: 4, item: "bug gosme", rar: "80%" },
-      { min: 1, max: 4, item: "bottle of poison", rar: "80%" },
-      { min: 1, max: 1, item: "pot of moss bug", rar: "19.5%" },
-    ],
-    evoStone: "Cocoon stone",
-    boost: 15,
-    booStone: "Cocoon stone",
-    habilidades: "",
+    updatedAt: "20/03/2026, 10:22:31",
+    updateHistory: [  ]
   },
-  {
+    {
     nome: "Beedrill",
-    numero: 15,
+    numero: "15",
     level: 30,
-    clan: "Naturia, Malefic",
     tipo: "Inseto, Venenoso",
+    clan: "Naturia, Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
@@ -1048,11 +1056,10 @@ const pokesarray = [
     pricenpc: 2000,
     shiny: "yes",
     fast: "yes",
+    boost: 10,
+    booStone: "Cocoon stone",
+    habilidades: "Cut, Light ",
     preevo: "Kakuna",
-    mapas: [
-      { top: 20.12, left: 46.36, text: "Esquerda de Cerulean - Próximo ao pântano - (FREE)" },
-      { top: 23.38, left: 36.74, text: "Floresta de Viridian - (FREE)" }
-    ],
     moves: [
       { "String shot": 30 },
       { "Poison jab": 30 },
@@ -1060,28 +1067,32 @@ const pokesarray = [
       { "Fury cutter": 35 },
       { "Pin missile": 35 },
       { "Toxic spikes": 32 },
-      { "Rage": 30 },
-      { "Strafe": 38 },
-      { "Evasion": "Passiva" },
+      { Rage: 30 },
+      { Strafe: 38 },
+      { Adaptability: "Passiva" },
+      { Evasion: "Passiva" }
     ],
     loots: [
-      { min: 1, max: 1, item: "bee sting", rar: "4.3%" },
-      { min: 1, max: 6, item: "bug gosme", rar: "80%" },
-      { min: 1, max: 6, item: "bottle of poison", rar: "80%" },
-      { min: 1, max: 1, item: "Cocoon stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
-      { min: 1, max: 1, item: "pot of moss bug", rar: "22.5%" },
+      { item: "bee sting", min: 1, max: 1, rar: "4.3%" },
+      { item: "bug gosme", min: 1, max: 6, rar: "80%" },
+      { item: "bottle of poison", min: 1, max: 6, rar: "80%" },
+      { item: "pot of moss bug", min: 1, max: 1, rar: "22.5%" },
+      { item: "Venom stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Cocoon stone", min: 1, max: 1, rar: "Raro" }
     ],
-    boost: 10,
-    booStone: "Cocoon stone",
-    habilidades: "Cut",
+    mapas: [
+      { top: 20.12, left: 46.36, text: "Esquerda de Cerulean - Próximo ao pântano - (FREE)" },
+      { top: 23.38, left: 36.74, text: "Floresta de Viridian - (FREE)" }
+    ],
+    updatedAt: "20/03/2026, 10:27:17",
+    updateHistory: [ { date: "20/03/2026, 10:27:17", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Adaptability (Lv Passiva)</strong>", "✏️ <strong>habilidades</strong>: de \"Cut\" ➔ \"Cut, Light\"" ] } ]
   },
-  {
+    {
     nome: "Pidgey",
-    numero: 16,
+    numero: "16",
     level: 1,
-    clan: "Wingeon, Gardestrike",
     tipo: "Voador, Normal",
+    clan: "Wingeon, Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
@@ -1089,42 +1100,64 @@ const pokesarray = [
     pricenpc: 5,
     fast: "yes",
     evo: "Pidgeotto",
+    evoStone: "Feather stone",
+    boost: 30,
+    booStone: "Feather stone",
+    habilidades: "",
+    moves: [
+      { "Quick attack": 1 },
+      { "Sand attack": 1 },
+      { "Wing attack": 1 },
+      { "Drill peck": 1 }
+    ],
+    loots: [
+      { item: "colored feather", min: 1, max: 1, rar: "Raro" },
+      { item: "straw", min: 1, max: 4, rar: "80%" },
+      { item: "rubber ball", min: 1, max: 4, rar: "80%" },
+      { item: "feather", min: 1, max: 1, rar: "1.5%" }
+    ],
     mapas: [
       { top: 25.25, left: 49.81, text: "Floresta de Celadon - (FREE)" },
       { top: 20.68, left: 56.47, text: "Floresta de Cerulean - (FREE)" },
       { top: 23.31, left: 35.9, text: "Floresta de Viridian - (FREE)" }
     ],
-    moves: [
-      { "Quick attack": 1 },
-      { "Sand attack": 1 },
-      { "Gust": 3 },
-      { "Drill peck": 6 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "colored feather", rar: "Raro" },
-      { min: 1, max: 4, item: "straw", rar: "80%" },
-      { min: 1, max: 4, item: "rubber ball", rar: "80%" },
-      { min: 1, max: 1, item: "feather", rar: "1.5%" },
-    ],
-    evoStone: "Feather stone",
-    boost: 30,
-    booStone: "Feather stone",
-    habilidades: "",
+    updatedAt: "20/03/2026, 10:36:27",
+    updateHistory: [ { date: "20/03/2026, 10:36:27", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Wing attack (Lv 1), Drill peck (Lv 1)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 3), Drill peck (Lv 6)</strong>" ] } ]
   },
-  {
+      {
     nome: "Pidgeotto",
-    numero: 17,
+    numero: "17",
     level: 20,
-    clan: "Wingeon, Gardestrike",
     tipo: "Voador, Normal",
+    clan: "Wingeon, Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
     xpcaught: 10000,
-    pricenpc: 3000,
+    pricenpc: 1500,
     fast: "yes",
-    preevo: "Pidgey",
     evo: "Pidgeot",
+    evoStone: "Feather stone (2x)",
+    boost: 10,
+    booStone: "Feather stone",
+    habilidades: "",
+    preevo: "Pidgey",
+    moves: [
+      { "Quick attack": 20 },
+      { "Sand attack": 20 },
+      { "Drill peck": 20 },
+      { "Wing attack": 24 },
+      { Gust: 20 },
+      { Tornado: 20 }
+    ],
+    loots: [
+      { item: "colored feather", min: 1, max: 1, rar: "1.1%" },
+      { item: "straw", min: 1, max: 5, rar: "80%" },
+      { item: "rubber ball", min: 1, max: 5, rar: "80%" },
+      { item: "Heart stone", min: 1, max: 1, rar: "Raro" },
+      { item: "feather", min: 1, max: 1, rar: "6%" },
+      { item: "Feather stone", min: 1, max: 1, rar: "Raro" }
+    ],
     mapas: [
       { top: 14.94, left: 50.34, text: "Whirlwind Island - (VIP)" },
       { top: 15.24, left: 56.38, text: "Hurricane Island - (VIP)" },
@@ -1132,33 +1165,15 @@ const pokesarray = [
       { top: 58.26, left: 36.68, text: "Floresta de Shamouti - (VIP)" },
       { top: 24.69, left: 36.32, text: "Floresta de Viridian - (FREE)" }
     ],
-    moves: [
-      { "Quick attack": 20 },
-      { "Sand attack": 20 },
-      { "Gust": 22 },
-      { "Drill peck": 20 },
-      { "Wing attack": 24 },
-      { "Aeroblast": 26 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "colored feather", rar: "1.1%" },
-      { min: 1, max: 5, item: "straw", rar: "80%" },
-      { min: 1, max: 5, item: "rubber ball", rar: "80%" },
-      { min: 1, max: 1, item: "Feather stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
-      { min: 1, max: 1, item: "feather", rar: "6%" },
-    ],
-    evoStone: "Feather stone",
-    boost: 10,
-    booStone: "Feather stone",
-    habilidades: "",
+    updateHistory: [ { date: "20/03/2026, 10:45:46", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Gust (Lv 20), Tornado (Lv 20)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 22), Aeroblast (Lv 26)</strong>" ] }, { date: "20/03/2026, 10:43:12", changes: [ "✏️ <strong>pricenpc</strong>: de \"3000\" ➔ \"1500\"", "✏️ <strong>evoStone</strong>: de \"Feather stone\" ➔ \"Feather stone (2x)\"" ] } ],
+    updatedAt: "20/03/2026, 10:45:46"
   },
-  {
+    {
     nome: "Pidgeot",
-    numero: 18,
+    numero: "18",
     level: 80,
-    clan: "Wingeon, Gardestrike",
     tipo: "Voador, Normal",
+    clan: "Wingeon, Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Difícil",
@@ -1166,7 +1181,29 @@ const pokesarray = [
     pricenpc: 11500,
     shiny: "yes",
     fast: "yes",
-    preevo: "Pidgeotto",
+    boost: 3,
+    booStone: "Feather stone",
+    habilidades: "Fly, Headbutt",
+    moves: [
+      { "Quick attack": 80 },
+      { "Drill peck": 80 },
+      { "Feather dance": 80 },
+      { Whirlwind: 80 },
+      { "Wing attack": 82 },
+      { Tornado: 84 },
+      { Hurricane: 90 },
+      { "Air slash": 85 },
+      { Agility: 80 }
+    ],
+    loots: [
+      { item: "colored feather", min: 1, max: 1, rar: "4.3%" },
+      { item: "straw", min: 1, max: 19, rar: "80%" },
+      { item: "rubber ball", min: 1, max: 19, rar: "80%" },
+      { item: "bird beak", min: 1, max: 1, rar: "22.6%" },
+      { item: "feather", min: 1, max: 1, rar: "22.5%" },
+      { item: "Heart stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Feather stone", min: 1, max: 1, rar: "Raro" }
+    ],
     mapas: [
       { top: 14.83, left: 50.54, text: "Whirlwind Island (VIP)" },
       { top: 15.21, left: 56.38, text: "Hurricane Island - (VIP)" },
@@ -1174,36 +1211,15 @@ const pokesarray = [
       { top: 58.64, left: 35.71, text: "Floresta de Shamouti - (VIP)" },
       { top: 8.95, left: 14.39, text: "Outland South - Saida a direita (VIP)" }
     ],
-    moves: [
-      { "Quick attack": 80 },
-      { "Sand attack": 80 },
-      { "Whirlwind": 80 },
-      { "Drill peck": 80 },
-      { "Wing attack": 82 },
-      { "Aeroblast": 84 },
-      { "Hurricane": 90 },
-      { "Agility": 80 },
-      { "Roost": 85 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "colored feather", rar: "4.3%" },
-      { min: 1, max: 19, item: "straw", rar: "80%" },
-      { min: 1, max: 19, item: "rubber ball", rar: "80%" },
-      { min: 1, max: 1, item: "Feather stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
-      { min: 1, max: 1, item: "bird beak", rar: "22.6%" },
-      { min: 1, max: 1, item: "feather", rar: "22.5%" },
-    ],
-    boost: 3,
-    booStone: "Feather stone",
-    habilidades: "Fly",
+    updatedAt: "20/03/2026, 10:50:56",
+    updateHistory: [ { date: "20/03/2026, 10:50:56", changes: [ "🗑 <strong>preevo</strong> removido (era: \"Pidgeotto\")", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Feather dance (Lv 80), Tornado (Lv 84), Air slash (Lv 85)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Sand attack (Lv 80), Aeroblast (Lv 84), Roost (Lv 85)</strong>", "✏️ <strong>habilidades</strong>: de \"Fly\" ➔ \"Fly, Headbutt\"" ] } ]
   },
-  {
+    {
     nome: "Rattata",
-    numero: 19,
+    numero: "19",
     level: 1,
-    clan: "Gardestrike",
     tipo: "Normal",
+    clan: "Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
@@ -1211,6 +1227,21 @@ const pokesarray = [
     pricenpc: 5,
     shiny: "yes",
     evo: "Raticate",
+    evoStone: "Heart stone",
+    boost: 30,
+    booStone: "Heart stone",
+    habilidades: "",
+    moves: [
+      { "Quick attack": 1 },
+      { Bite: 1 },
+      { Scratch: 1 },
+      { "Super fang": 10 }
+    ],
+    loots: [
+      { item: "rat tail", min: 1, max: 1, rar: "Raro" },
+      { item: "rubber ball", min: 1, max: 5, rar: "80%" },
+      { item: "bitten apple", min: 1, max: 1, rar: "25.3%" }
+    ],
     mapas: [
       { top: 21.68, left: 38.92, text: "subsolo proximo a saida sul de pewter - (FREE)" },
       { top: 24.05, left: 51.95, text: "subsolo entre saffron e celadon - (FREE)" },
@@ -1218,35 +1249,40 @@ const pokesarray = [
       { top: 31.87, left: 56.64, text: "subsolo em fuchsia - (FREE)" },
       { top: 56.99, left: 36.01, text: "subsolo em shamouti - (FREE)" }
     ],
-    moves: [
-      { "Quick attack": 1 },
-      { "Bite": 1 },
-      { "Scratch": 1 },
-      { "Super fang": 10 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "rat tail", rar: "Raro" },
-      { min: 1, max: 5, item: "rubber ball", rar: "80%" },
-      { min: 1, max: 1, item: "bitten apple", rar: "25.3%" },
-    ],
-    evoStone: "Heart stone",
-    boost: 30,
-    booStone: "Heart stone",
-    habilidades: "",
+    updatedAt: "20/03/2026, 13:17:43",
+    updateHistory: [  ]
   },
-  {
+    {
     nome: "Raticate",
-    numero: 20,
+    numero: "20",
     level: 30,
-    clan: "Gardestrike",
     tipo: "Normal",
+    clan: "Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
     xpcaught: 10000,
     pricenpc: 2000,
     shiny: "yes",
+    boost: 10,
+    booStone: "Heart stone",
+    habilidades: "Dig, Cut, Headbutt",
     preevo: "Rattata",
+    moves: [
+      { "Quick attack": 30 },
+      { Bite: 30 },
+      { Scratch: 30 },
+      { Pursuit: 30 },
+      { "Super fang": 30 },
+      { "Scary face": 32 },
+      { Fury: "Passiva" }
+    ],
+    loots: [
+      { item: "rat tail", min: 1, max: 1, rar: "4.3%" },
+      { item: "rubber ball", min: 1, max: 13, rar: "80%" },
+      { item: "Heart stone", min: 1, max: 1, rar: "Raro" },
+      { item: "bitten apple", min: 1, max: 1, rar: "32.5%" }
+    ],
     mapas: [
       { top: 21.68, left: 38.92, text: "subsolo proximo a saida sul de pewter - (FREE)" },
       { top: 24.05, left: 51.95, text: "subsolo entre saffron e celadon - (FREE)" },
@@ -1254,31 +1290,15 @@ const pokesarray = [
       { top: 31.87, left: 56.64, text: "subsolo em fuchsia - (FREE)" },
       { top: 56.99, left: 36.01, text: "subsolo em shamouti - (FREE)" }
     ],
-    moves: [
-      { "Quick attack": 30 },
-      { "Bite": 30 },
-      { "Scratch": 30 },
-      { "Pursuit": 30 },
-      { "Super fang": 30 },
-      { "Scary face": 32 },
-      { "Fury": "Passiva" },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "rat tail", rar: "4.3%" },
-      { min: 1, max: 13, item: "rubber ball", rar: "80%" },
-      { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
-      { min: 1, max: 1, item: "bitten apple", rar: "32.5%" },
-    ],
-    boost: 10,
-    booStone: "Heart stone",
-    habilidades: "Dig, Cut, Headbutt",
+    updatedAt: "20/03/2026, 13:19:49",
+    updateHistory: [  ]
   },
-  {
+    {
     nome: "Spearow",
-    numero: 21,
+    numero: "21",
     level: 10,
-    clan: "Wingeon, Gardestrike",
     tipo: "Voador, Normal",
+    clan: "Wingeon, Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
@@ -1286,34 +1306,36 @@ const pokesarray = [
     pricenpc: 100,
     fast: "yes",
     evo: "Fearow",
-    mapas: [
-      { top: 22.27, left: 52.03, text: "Saída norte de saffron (FREE)" },
-      { top: 57.07, left: 37.58, text: "Lado direito de shamouti (FREE)" }
-    ],
-    moves: [
-      { "Peck": 10 },
-      { "Sand attack": 10 },
-      { "Wing attack": 12 },
-      { "Drill peck": 10 },
-      { "Agility": 10 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "red wing", rar: "Raro" },
-      { min: 1, max: 3, item: "straw", rar: "80%" },
-      { min: 1, max: 3, item: "rubber ball", rar: "80%" },
-      { min: 1, max: 1, item: "feather", rar: "28%" },
-    ],
     evoStone: "Feather stone",
     boost: 20,
     booStone: "Feather stone",
     habilidades: "",
+    moves: [
+      { Peck: 10 },
+      { "Sand attack": 10 },
+      { "Drill peck": 10 },
+      { "Wing attack": 12 },
+      { Agility: 10 }
+    ],
+    loots: [
+      { item: "red wing", min: 1, max: 1, rar: "Raro" },
+      { item: "straw", min: 1, max: 3, rar: "80%" },
+      { item: "rubber ball", min: 1, max: 3, rar: "80%" },
+      { item: "feather", min: 1, max: 1, rar: "28%" }
+    ],
+    mapas: [
+      { top: 22.27, left: 52.03, text: "Saída norte de saffron (FREE)" },
+      { top: 57.07, left: 37.58, text: "Lado direito de shamouti (FREE)" }
+    ],
+    updatedAt: "20/03/2026, 13:21:40",
+    updateHistory: [  ]
   },
-  {
+    {
     nome: "Fearow",
-    numero: 22,
+    numero: "22",
     level: 50,
-    clan: "Wingeon, Gardestrike",
     tipo: "Voador, Normal",
+    clan: "Wingeon, Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Médio",
@@ -1321,32 +1343,34 @@ const pokesarray = [
     pricenpc: 5100,
     shiny: "yes",
     fast: "yes",
+    boost: 4,
+    booStone: "Feather stone",
+    habilidades: "Fly",
     preevo: "Spearow",
+    moves: [
+      { Peck: 50 },
+      { "Sand attack": 50 },
+      { "Drill peck": 50 },
+      { Gust: 50 },
+      { "Air cutter": 50 },
+      { "Wing attack": 50 },
+      { "Aerial ace": 50 },
+      { Confide: 50 }
+    ],
+    loots: [
+      { item: "red wing", min: 1, max: 1, rar: "4.3%" },
+      { item: "straw", min: 1, max: 13, rar: "80%" },
+      { item: "rubber ball", min: 1, max: 13, rar: "80%" },
+      { item: "bird beak", min: 1, max: 1, rar: "15.1%" },
+      { item: "feather", min: 1, max: 1, rar: "15%" },
+      { item: "Feather stone", min: 1, max: 1, rar: "Raro" }
+    ],
     mapas: [
       { top: 22.27, left: 52.03, text: "Saída norte de saffron (FREE)" },
       { top: 57.07, left: 37.58, text: "Lado direito de shamouti (FREE)" }
     ],
-    moves: [
-      { "Peck": 50 },
-      { "Sand attack": 50 },
-      { "Drill peck": 50 },
-      { "Gust": 52 },
-      { "Air cutter": 50 },
-      { "Wing attack": 52 },
-      { "Aerial ace": 50 },
-      { "Agility": 50 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "red wing", rar: "4.3%" },
-      { min: 1, max: 13, item: "straw", rar: "80%" },
-      { min: 1, max: 13, item: "rubber ball", rar: "80%" },
-      { min: 1, max: 1, item: "Feather stone", rar: "Raro" },
-      { min: 1, max: 1, item: "bird beak", rar: "15.1%" },
-      { min: 1, max: 1, item: "feather", rar: "15%" },
-    ],
-    boost: 4,
-    booStone: "Feather stone",
-    habilidades: "Fly",
+    updatedAt: "20/03/2026, 13:25:41",
+    updateHistory: [ { date: "20/03/2026, 13:25:41", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Gust (Lv 50), Wing attack (Lv 50), Confide (Lv 50)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 52), Wing attack (Lv 52), Agility (Lv 50)</strong>" ] } ]
   },
   {
     nome: "Ekans",
@@ -15330,55 +15354,54 @@ const ShinysMegasArray = [
     booStone: "Leaf stone",
     habilidades: "Cut"
   },
-  {
+        {
     nome: "Shiny Venusaur",
     numero: "3-1",
     level: 100,
-    clan: "Naturia, Malefic",
     tipo: "Grama, Venenoso",
+    clan: "Naturia, Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Caught",
-    xpcaught: 500000,
-    pricenpc: "unseleable",
+    xpcaught: 200000,
+    pricenpc: "Unseleable",
     shiny: "yes",
     heavy: "yes",
-    
+    boost: 2,
+    booStone: "Leaf stone",
+    habilidades: "Rock Smash, Cut, Light, Ride, Headbutt",
+    moves: [
+      { "Acid spray": 100 },
+      { "Razor leaf": 100 },
+      { "Vine whip": 100 },
+      { Sludge: 100 },
+      { "Vine grab": 100 },
+      { "Grass pledge": 100 },
+      { "Solar beam": 100 },
+      { "Giga drain": 105 },
+      { "Petal blizzard": 100 },
+      { "Ancient armor": 100 }
+    ],
+    loots: [
+      { item: "seed", min: 1, max: 100, rar: "80.0%" },
+      { item: "leaves", min: 1, max: 1, rar: "60.0%" },
+      { item: "bulb", min: 1, max: 1, rar: "4.0%" },
+      { item: "bag of pollem", min: 1, max: 1, rar: "8.0%" },
+      { item: "Bulbasaur doll", min: 1, max: 1, rar: "1.5%" },
+      { item: "Leaf stone", min: 1, max: 1, rar: "Raro" }
+    ],
     mapas: [
       { top: 3.74, left: 17.1, text: "Outland north caminho para artefato - saída da direita (VIP)" },
       { top: 3.53, left: 16.71, text: "Outland north caminho para artefato - saída da direita (VIP)" },
       { top: 3.38, left: 19.51, text: "Outland north caminho para artefato - saída da direita (VIP)" }
     ],
-    moves: [
-      { "Tackle": 100 },
-      { "Razor leaf": 100 },
-      { "Vine whip": 100 },
-      { "Headbutt": 100 },
-      { "Leech seed": 100 },
-      { "Bullet seed": 100 },
-      { "Solar beam": 100 },
-      { "Giga drain": 105 },
-      { "Sleep powder": 100 },
-      { "Poison powder": 100 },
-      { "Leaf storm": 110 },
-      { "Thick fat": "Passiva" }
-    ],
-    loots: [
-      { min: 1, max: 1, item: "leaves", rar: "60.0%" },
-      { min: 1, max: 1, item: "bulb", rar: "4.0%" },
-      { min: 1, max: 1, item: "bag of pollem", rar: "8.0%" },
-      { min: 1, max: 1, item: "Leaf stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Bulbasaur doll", rar: "1.5%" },
-      { min: 1, max: 100, item: "seed", rar: "80.0%" }
-    ],
-    boost: 2,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Ride, Headbutt"
+    updateHistory: [ { date: "20/03/2026, 14:23:43", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 11:52:42", changes: [ "✏️ <strong>xpcaught</strong>: de \"500000\" ➔ \"200000\"", "🗑 <strong>pricenpc</strong> removido (era: \"unseleable\")", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Acid spray (Lv 100), Sludge (Lv 100), Vine grab (Lv 100), Grass pledge (Lv 100), Petal blizzard (Lv 100), Ancient armor (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Tackle (Lv 100), Headbutt (Lv 100), Leech seed (Lv 100), Bullet seed (Lv 100), Sleep powder (Lv 100), Poison powder (Lv 100), Leaf storm (Lv 110), Thick fat (Lv Passiva)</strong>", "✏️ <strong>habilidades</strong>: de \"Cut, Ride, Headbutt\" ➔ \"Rock Smash, Cut, Light, Ride, Headbutt\"" ] } ],
+    updatedAt: "20/03/2026, 14:23:43"
   },
-    {
+      {
     nome: "Mega Venusaur",
     numero: "3-2",
-    level: 80,
+    level: 100,
     tipo: "Grama, Venenoso",
     clan: "Naturia, Malefic",
     regiao: "Kanto",
@@ -15387,12 +15410,13 @@ const ShinysMegasArray = [
     shiny: "yes",
     mega: "yes",
     vip: "yes",
+    habilidades: "Rock Smash, Cut, Light, Headbutt, Ride",
     preevo: "Venusaur",
     moves: [
       { Tackle: 80 },
       { "Razor leaf": 80 },
       { "Vine whip": 80 },
-      { Headbutt: 80 },
+      { "Earth power": 80 },
       { "Leech seed": 80 },
       { Bulldoze: 80 },
       { "Solar beam": 80 },
@@ -15403,7 +15427,9 @@ const ShinysMegasArray = [
     ],
     mapas: [
       { top: 94.55, left: 80.4, text: "Embedded Tower - (VIP)" }
-    ]
+    ],
+    updatedAt: "20/03/2026, 11:55:07",
+    updateHistory: [ { date: "20/03/2026, 11:55:07", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Earth power (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Headbutt (Lv 80)</strong>", "✨ <strong>habilidades</strong> definido como: \"Rock Smash, Cut, Light, Headbutt, Ride\"" ] } ]
   },
 
 
@@ -15435,7 +15461,7 @@ const ShinysMegasArray = [
     booStone: "Fire stone",
     habilidades: "Cut"
   },
-    {
+          {
     nome: "Shiny Charizard",
     numero: "6-1",
     level: 100,
@@ -15444,42 +15470,41 @@ const ShinysMegasArray = [
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Caught",
-    xpcaught: 600000,
-    pricenpc: null,
+    xpcaught: 200000,
+    pricenpc: "Unseleable",
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
     boost: 2,
     booStone: "Fire stone",
-    habilidades: "Cut, Fly, Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Light, Fly, Headbutt ",
     moves: [
       { Ember: 100 },
       { Flamethrower: 100 },
       { Fireball: 100 },
-      { "Fire fang": 100 },
+      { "Fire punch": 100 },
       { "Flame burst": 100 },
       { "Fire blast": 100 },
-      { "Air slash": 103 },
+      { "Air slash": 100 },
       { "Wing attack": 100 },
       { "Magma storm": 100 },
-      { "Scary face": 102 },
-      { "Ancient fury": "Passiva" }
+      { "Scary face": 100 },
+      { "Ancient fury": 100 }
     ],
     loots: [
       { item: "pot of lava", min: 1, max: 1, rar: "30.0%" },
       { item: "nail", min: 1, max: 1, rar: "40.0%" },
       { item: "dragon tooth", min: 1, max: 1, rar: "20.0%" },
-      { item: "Fire stone", min: 1, max: 1, rar: "Raro" },
-      { item: "Charizard doll", min: 1, max: 1, rar: "1.5%" },
-      { item: "coal", min: 1, max: 80, rar: "80.0%" }
+      { item: "Fire stone", min: 1, max: 1, rar: "Raro" }
     ],
     mapas: [],
-    updatedAt: "19/03/2026, 19:34:40"
+    updateHistory: [ { date: "20/03/2026, 14:25:46", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 10:57:46", changes: [ "✏️ <strong>xpcaught</strong>: de \"600000\" ➔ \"200000\"", "✏️ <strong>habilidades</strong>: de \"Cut, Fly, Headbutt\" ➔ \"Dig, Rock Smash, Cut, Light, Fly, Headbutt\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Fire punch (Lv 100), Air slash (Lv 100), Scary face (Lv 100), Ancient fury (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fire fang (Lv 100), Air slash (Lv 103), Scary face (Lv 102), Ancient fury (Lv Passiva)</strong>", "❌ Loots removidos: <strong style=\"color:var(--accent)\">Charizard doll (1-1, rar: 1.5%) | coal (1-80, rar: 80.0%)</strong>" ] } ],
+    updatedAt: "20/03/2026, 14:25:51"
   },
-    {
+        {
     nome: "Mega Charizard (X)",
     numero: "6-2",
-    level: 80,
+    level: 100,
     tipo: "Fogo, Dragão",
     clan: "Volcanic",
     regiao: "Kanto",
@@ -15488,28 +15513,30 @@ const ShinysMegasArray = [
     shiny: "yes",
     mega: "yes",
     vip: "yes",
+    habilidades: ", Rock Smash, Cut, Light, Headbutt, Fly",
     preevo: "Charizard",
     moves: [
       { Ember: 80 },
       { Flamethrower: 80 },
-      { Fireball: 80 },
+      { "Thunder punch": 80 },
       { "Dragon claw": 80 },
       { "Dragon tail": 80 },
       { "Dragon flight": 80 },
-      { "Dragon breath": 82 },
-      { "Flame burst": 80 },
+      { "Dragon blast": 80 },
+      { "Dragon breath": 80 },
       { "Fire blast": 80 },
-      { Outrage: 95 },
-      { "Tough claws": "Passiva" }
+      { Outrage: 80 }
     ],
     mapas: [
       { top: 95.08, left: 79.61, text: "Embedded Tower - (VIP)" }
-    ]
+    ],
+    updateHistory: [ { date: "20/03/2026, 11:03:43", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "✏️ <strong>habilidades</strong>: de \", Rock Smash, Cut, Light, Headbutt, Fly.\" ➔ \", Rock Smash, Cut, Light, Headbutt, Fly\"" ] }, { date: "20/03/2026, 11:03:01", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Thunder punch (Lv 80), Dragon blast (Lv 80), Dragon breath (Lv 80), Outrage (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fireball (Lv 80), Dragon breath (Lv 82), Flame burst (Lv 80), Outrage (Lv 95), Tough claws (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \", Rock Smash, Cut, Light, Headbutt, Fly.\"" ] } ],
+    updatedAt: "20/03/2026, 11:03:43"
   },
-    {
+      {
     nome: "Mega Charizard (Y)",
     numero: "6-3",
-    level: 80,
+    level: 100,
     tipo: "Fogo, Voador",
     clan: "Wingeon",
     regiao: "Kanto",
@@ -15518,23 +15545,25 @@ const ShinysMegasArray = [
     shiny: "yes",
     mega: "yes",
     vip: "yes",
+    habilidades: "Dig, Rock Smash, Cut, Light, Headbutt, Fly",
     preevo: "Charizard",
     moves: [
       { Ember: 80 },
       { Flamethrower: 80 },
-      { Fireball: 80 },
-      { Whirlwind: 80 },
+      { Incinerate: 80 },
+      { "Air cutter": 80 },
       { "Flame burst": 80 },
       { "Fire blast": 80 },
-      { "Air slash": 83 },
+      { "Air slash": 80 },
       { "Solar beam": 80 },
-      { "Aerial ace": 84 },
-      { "Sunny day": 92 },
-      { Drought: "Passiva" }
+      { "Blast burn": 80 },
+      { "Sunny day": 80 }
     ],
     mapas: [
       { top: 94.76, left: 79.26, text: "Embedded Tower - (VIP)" }
-    ]
+    ],
+    updatedAt: "20/03/2026, 11:07:14",
+    updateHistory: [ { date: "20/03/2026, 11:07:14", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Incinerate (Lv 80), Air cutter (Lv 80), Air slash (Lv 80), Blast burn (Lv 80), Sunny day (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fireball (Lv 80), Whirlwind (Lv 80), Air slash (Lv 83), Aerial ace (Lv 84), Sunny day (Lv 92), Drought (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \"Dig, Rock Smash, Cut, Light, Headbutt, Fly\"" ] } ]
   },
   {
     nome: "Baby Squirtle",
@@ -15564,7 +15593,7 @@ const ShinysMegasArray = [
     booStone: "Water stone",
     habilidades: "Surf"
   },
-    {
+          {
     nome: "Shiny Blastoise",
     numero: "9-1",
     level: 100,
@@ -15573,40 +15602,40 @@ const ShinysMegasArray = [
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Caught",
-    xpcaught: 600000,
-    pricenpc: null,
+    xpcaught: 200000,
+    pricenpc: "Unseleable",
     shiny: "yes",
     vip: "yes",
     heavy: "yes",
     boost: 2,
     booStone: "Water stone",
-    habilidades: "Surf, Headbutt",
+    habilidades: "Dig, Rock Smash, Surf, Headbutt",
     moves: [
       { Headbutt: 100 },
       { Bubbles: 100 },
       { "Water gun": 100 },
-      { Waterball: 100 },
+      { "Aqua tail": 100 },
       { "Water pulse": 100 },
       { Brine: 100 },
       { "Hydro cannon": 100 },
       { "Skull bash": 105 },
-      { Hydropump: 110 },
+      { Hydropump: 100 },
       { "Ancient armor": "Passiva" }
     ],
     loots: [
       { item: "water pendant", min: 1, max: 1, rar: "40.0%" },
       { item: "Squirtle hull", min: 1, max: 1, rar: "80.0%" },
-      { item: "Water stone", min: 1, max: 1, rar: "Raro" },
       { item: "water gem", min: 1, max: 20, rar: "80.0%" },
-      { item: "Blastoise doll", min: 1, max: 1, rar: "1.5%" }
+      { item: "Water stone", min: 1, max: 1, rar: "Raro" }
     ],
     mapas: [],
-    updatedAt: "19/03/2026, 19:34:20"
+    updateHistory: [ { date: "20/03/2026, 14:26:21", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 13:09:42", changes: [ "❌ Loots removidos: <strong style=\"color:var(--accent)\">Blastoise doll (1-1, rar: 1.5%)</strong>" ] }, { date: "20/03/2026, 13:08:08", changes: [ "✏️ <strong>xpcaught</strong>: de \"600000\" ➔ \"200000\"", "✏️ <strong>habilidades</strong>: de \"Surf, Headbutt\" ➔ \"Dig, Rock Smash, Surf, Headbutt\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Aqua tail (Lv 100), Hydropump (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Waterball (Lv 100), Hydropump (Lv 110)</strong>" ] } ],
+    updatedAt: "20/03/2026, 14:26:21"
   },
-    {
+      {
     nome: "Mega Blastoise",
     numero: "9-2",
-    level: 80,
+    level: 100,
     tipo: "Água",
     clan: "Seavell",
     regiao: "Kanto",
@@ -15615,23 +15644,25 @@ const ShinysMegasArray = [
     shiny: "yes",
     mega: "yes",
     vip: "yes",
+    habilidades: "Rock Smash, Headbutt, Dig, Surf",
     preevo: "Blastoise",
     moves: [
       { Headbutt: 80 },
       { Bubbles: 80 },
+      { Bubblebeam: 100 },
       { "Hand water gun": 80 },
-      { "Giant water gun": 80 },
       { "Water pulse": 80 },
       { Brine: 80 },
+      { "Giant water gun": 100 },
       { "Hydro cannon": 80 },
-      { "Skull bash": 85 },
       { Hydropump: 90 },
-      { "Rain dance": 80 },
-      { "Mega launcher": "Passiva" }
+      { "Rain dance": 80 }
     ],
     mapas: [
       { top: 94.84, left: 78.96, text: "Embedded Tower - (VIP)" }
-    ]
+    ],
+    updatedAt: "20/03/2026, 13:13:20",
+    updateHistory: [ { date: "20/03/2026, 13:13:20", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Bubblebeam (Lv 100), Giant water gun (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Giant water gun (Lv 80), Skull bash (Lv 85), Mega launcher (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \"Rock Smash, Headbutt, Dig, Surf\"" ] } ]
   },
 
   
