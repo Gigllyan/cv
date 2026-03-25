@@ -3,13 +3,13 @@
  * Inject into index.html with: <script src="pokemap-viewer.js"></script>
  *
  * Provides:
- *   - buildMapsContent(pokemon)  → returns the HTML string for the 🗺️ Maps tab
- *   - A self-contained fullscreen map modal (injected once on load)
+ * - buildMapsContent(pokemon)  → returns the HTML string for the 🗺️ Maps tab
+ * - A self-contained fullscreen map modal (injected once on load)
  *
  * Requires:
- *   - mapa.png in the same folder
- *   - mapas_data.json in the same folder (optional – falls back to data.js mapas)
- *   - getPokemonImageUrl() already defined in index.html
+ * - mapa.png in the same folder
+ * - mapas_data.json in the same folder (optional – falls back to data.js mapas)
+ * - getPokemonImageUrl() already defined in index.html
  */
 
 // ─── Image helpers (same logic as admin/viewer) ───────────────────────────────
@@ -56,9 +56,54 @@ function getArrayKey(pokemon) {
   return n.includes('-') ? 'shinys' : 'pokes';
 }
 
+// ─── Helper: Get complete evolution family base numbers ────────────────────────
+function getFamilyBaseNumbers(startPoke) {
+  const familyNums = new Set();
+
+  function getPokeByName(name) {
+    let p = (typeof pokesarray !== 'undefined') ? pokesarray.find(x => x.nome.toLowerCase() === name.toLowerCase()) : null;
+    if (!p && typeof ShinysMegasArray !== 'undefined') {
+      p = ShinysMegasArray.find(x => x.nome.toLowerCase() === name.toLowerCase());
+    }
+    return p;
+  }
+
+  // 1. Find root of the family
+  let root = startPoke;
+  while (root.preevo) {
+    let parent = getPokeByName(root.preevo);
+    if (!parent) {
+      const baseName = root.preevo.replace(/^(Shiny|Mega|Baby)\s+/i, '').trim();
+      parent = getPokeByName(baseName);
+    }
+    if (parent) root = parent;
+    else break; 
+  }
+
+  // 2. Traverse down to get all family members
+  const queue = [root];
+  const visited = new Set();
+
+  while(queue.length > 0) {
+    const p = queue.shift();
+    if (visited.has(p.nome)) continue;
+    visited.add(p.nome);
+    
+    familyNums.add(String(p.numero).split('-')[0]);
+
+    if (p.evo) {
+      const evos = p.evo.split(',').map(e => e.trim());
+      evos.forEach(eName => {
+        const e = getPokeByName(eName);
+        if (e) queue.push(e);
+      });
+    }
+  }
+  return familyNums;
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 //  buildMapsContent(pokemon)
-//  Drop-in replacement for the mapsContent variable in renderSinglePage()
 // ─────────────────────────────────────────────────────────────────────────────
 function buildMapsContent(pokemon) {
   const mapas = (pokemon.mapas || []);
@@ -68,10 +113,7 @@ function buildMapsContent(pokemon) {
     return '<div class="info-section"><p style="text-align:center;color:#ccc">Localização desconhecida.</p></div>';
   }
 
-  // Group locations by identical name (text).
-  // Each group stores ALL indices that share that name, not just the first.
-  // Clicking cycles through all pins of the group in order.
-  const groupMap = new Map(); // text -> { indices: [], cyclePos: 0 }
+  const groupMap = new Map();
   mapas.forEach((m, i) => {
     const key = (m.text || '').trim();
     if (!groupMap.has(key)) {
@@ -81,14 +123,11 @@ function buildMapsContent(pokemon) {
     }
   });
 
-  // Cycle-counter per group (persists while the list is rendered)
   const cycleCounts = {};
   [...groupMap.keys()].forEach(k => { cycleCounts[k] = 0; });
 
-  // Build the location list — one button per unique name, cycles on repeated clicks
   const listItems = [...groupMap.entries()].map(([text, { indices }]) => {
     const count = indices.length;
-    // Use a JS expression that reads and advances the cycle counter on each click
     const onclickExpr = count === 1
       ? `pmGoToPin(${indices[0]})`
       : `pmGoToPinGroup(${JSON.stringify(indices)}, '${text.replace(/'/g,"\'")}')`;
@@ -110,7 +149,6 @@ function buildMapsContent(pokemon) {
     <div class="info-section">
       <h3>🗺️ Localização</h3>
 
-      <!-- Mini-map thumbnail -->
       <div id="pm-thumb-wrap"
            onclick="pmOpenModal()"
            style="position:relative;border-radius:10px;overflow:hidden;cursor:pointer;
@@ -122,10 +160,8 @@ function buildMapsContent(pokemon) {
         <img id="pm-thumb-img" src="https://gigllyan.github.io/cv/projetos/pokedex/mapa.png" alt="Mapa"
              style="display:block;width:100%;object-fit:cover;object-position:center;max-height:220px;pointer-events:none">
 
-        <!-- Thumbnail pins -->
         <div id="pm-thumb-pins" style="position:absolute;inset:0;pointer-events:none"></div>
 
-        <!-- Hover overlay -->
         <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
                     background:rgba(0,0,0,.42);opacity:0;transition:opacity .25s"
              id="pm-thumb-overlay">
@@ -136,13 +172,12 @@ function buildMapsContent(pokemon) {
         </div>
       </div>
 
-      <!-- Location list -->
       <ul id="pm-loc-list" style="list-style:none;padding:0">${listItems}</ul>
     </div>`;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Fullscreen modal — injected once, reused for every pokemon
+//  Fullscreen modal 
 // ─────────────────────────────────────────────────────────────────────────────
 let _modalInjected = false;
 
@@ -150,7 +185,6 @@ function pmInjectModal() {
   if (_modalInjected) return;
   _modalInjected = true;
 
-  // Styles
   const style = document.createElement('style');
   style.textContent = `
     #pm-modal{position:fixed;inset:0;z-index:9000;background:rgba(5,6,12,.97);
@@ -210,7 +244,6 @@ function pmInjectModal() {
     .pm-tt-loc{font-size:.71rem;color:#4A5168;font-style:italic;line-height:1.5;font-family:sans-serif;white-space:normal}
     .pm-tt-arr{position:absolute;bottom:-5px;left:50%;transform:translateX(-50%) rotate(45deg);
       width:8px;height:8px;background:#111520;border-right:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
-    /* info panel */
     #pm-info{position:absolute;bottom:20px;left:20px;z-index:30;
       background:rgba(13,16,24,.94);border:1px solid rgba(255,255,255,.07);border-radius:12px;
       padding:13px 15px;max-width:270px;backdrop-filter:blur(8px);
@@ -222,7 +255,6 @@ function pmInjectModal() {
       background:transparent;border:none;cursor:pointer;color:#4A5168;font-size:.8rem;
       display:flex;align-items:center;justify-content:center}
     #pm-info .pi-x:hover{color:#E8637A}
-    /* show-all buttons */
     #pm-showall-all{position:absolute;top:12px;right:14px;z-index:20;
       background:rgba(13,16,24,.88);border:1px solid rgba(255,255,255,.07);border-radius:20px;
       padding:5px 14px;font-family:monospace;font-size:.7rem;color:#4A5168;
@@ -233,7 +265,6 @@ function pmInjectModal() {
       padding:5px 14px;font-family:monospace;font-size:.7rem;color:#00D9C4;
       cursor:pointer;backdrop-filter:blur(4px);transition:color .15s,border-color .15s,background .15s;white-space:nowrap}
     #pm-showsame:hover{background:rgba(0,217,196,.15);border-color:#00D9C4}
-    /* grid overlay */
     #pm-grid{position:absolute;inset:0;pointer-events:none;
       background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
         linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
@@ -242,7 +273,6 @@ function pmInjectModal() {
   `;
   document.head.appendChild(style);
 
-  // Modal HTML
   const div = document.createElement('div');
   div.id = 'pm-modal';
   div.innerHTML = `
@@ -256,8 +286,7 @@ function pmInjectModal() {
     <div id="pm-body">
       <div id="pm-grid"></div>
       <div id="pm-canvas">
-        <img id="pm-map-img" src="https://gigllyan.github.io/cv/projetos/pokedex/mapa.png
-" alt="Mapa" draggable="false">
+        <img id="pm-map-img" src="https://gigllyan.github.io/cv/projetos/pokedex/mapa.png" alt="Mapa" draggable="false">
         <div id="pm-pins"></div>
       </div>
       <div class="pm-hud" id="pm-hud-coord">top: — · left: —</div>
@@ -269,7 +298,7 @@ function pmInjectModal() {
         <button class="pm-btn" id="pm-zf">⊡</button>
       </div>
       <button id="pm-showall-all">🗺 Ver todos</button>
-      <button id="pm-showsame" style="display:none">🔗 Mesma espécie</button>
+      <button id="pm-showsame" style="display:none">🔗 Família Evolutiva</button>
       <div id="pm-info">
         <button class="pi-x" id="pm-info-close">✕</button>
         <div class="pi-loc" id="pm-info-loc"></div>
@@ -303,9 +332,6 @@ function pmInjectModal() {
     scalePins();
   }
 
-  // Escala os pins inversamente ao zoom via CSS var --s:
-  // zoom baixo (longe) → pins maiores na tela; zoom alto (perto) → pins menores
-  // Tamanho visual alvo = 46 / zoom, travado entre 16px e 110px.
   function scalePins() {
     const target = Math.max(16, Math.min(110, 46 / zoom));
     const s = (target / 46).toFixed(4);
@@ -349,10 +375,9 @@ function pmInjectModal() {
   document.getElementById('pm-zo').onclick=()=>setZoom(zoom/1.3);
   document.getElementById('pm-zf').onclick=fitMap;
 
-  // "Ver todos" — show all pokemon that have mapas (from data.js + overrides)
+  // "Ver todos"
   document.getElementById('pm-showall-all').onclick = async () => {
     const overrides = await getMapaOverrides();
-    // gather all pokes with mapas from both arrays
     const allWithMapas = [];
     function collectArray(arr, arrKey) {
       if (!Array.isArray(arr)) return;
@@ -363,7 +388,6 @@ function pmInjectModal() {
     }
     if (typeof ShinysMegasArray !== 'undefined') collectArray(ShinysMegasArray, 'shinys');
     if (typeof pokesarray       !== 'undefined') collectArray(pokesarray,       'pokes');
-    // render all pins
     pins.innerHTML='';
     allWithMapas.forEach(({poke, mapas}) => mapas.forEach((m,i) => pins.appendChild(buildPin(m, i, poke))));
     scalePins();
@@ -372,30 +396,30 @@ function pmInjectModal() {
     document.getElementById('pm-hdr-img').src = '';
   };
 
-  // "Mesma espécie" — show all variants with same base number
+  // "Família Evolutiva"
   document.getElementById('pm-showsame').onclick = async () => {
     if (!_currentPoke) return;
-    const base = String(_currentPoke.numero).split('-')[0];
+    const familyNums = getFamilyBaseNumbers(_currentPoke);
     const overrides = await getMapaOverrides();
     const same = [];
     function collectSame(arr, arrKey) {
       if (!Array.isArray(arr)) return;
       arr.forEach(p => {
-        if (String(p.numero).split('-')[0] !== base) return;
+        if (!familyNums.has(String(p.numero).split('-')[0])) return;
         const mapas = getEffectiveMapas(p, overrides, arrKey);
         if (mapas.length) same.push({ poke:p, mapas });
       });
     }
     if (typeof ShinysMegasArray !== 'undefined') collectSame(ShinysMegasArray, 'shinys');
     if (typeof pokesarray       !== 'undefined') collectSame(pokesarray,       'pokes');
+    
     pins.innerHTML='';
     same.forEach(({poke, mapas}) => mapas.forEach((m,i) => pins.appendChild(buildPin(m, i, poke))));
     scalePins();
     const allMapas = same.flatMap(s => s.mapas);
     fitMap(); if (allMapas.length) fitPins(allMapas);
     hideInfo(); activeIdx=null;
-    const baseName = _currentPoke.nome.replace(/^(Shiny|Mega|Baby)\s+/i,'').trim();
-    document.getElementById('pm-hdr-name').textContent = `${baseName} — todas variações (${same.length})`;
+    document.getElementById('pm-hdr-name').textContent = `Família Evolutiva (${same.length} variações)`;
   };
 
   body.addEventListener('wheel',e=>{
@@ -473,7 +497,7 @@ function pmInjectModal() {
   function renderPins(poke, mapas) {
     pins.innerHTML='';
     mapas.forEach((m,i)=>pins.appendChild(buildPin(m,i,poke)));
-    scalePins(); // aplica escala inicial baseada no zoom atual
+    scalePins(); 
   }
 
   // ── Open / Close ───────────────────────────────────────────────────────────
@@ -486,24 +510,23 @@ function pmInjectModal() {
     hideInfo(); activeIdx=null;
   }
 
-  // ── PUBLIC API (attached to window) ───────────────────────────────────────
-  window._pmOpen = async function(poke) {
+  // ── PUBLIC API ─────────────────────────────────────────────────────────────
+  window._pmOpen = async function(poke, targetIdx = null) {
     _currentPoke = poke;
     const overrides = await getMapaOverrides();
     _currentMapas = getEffectiveMapas(poke, overrides, getArrayKey(poke));
 
-    // Header
     const hdrImg = document.getElementById('pm-hdr-img');
     pmSetImg(hdrImg, poke.numero);
     document.getElementById('pm-hdr-name').textContent = `#${poke.numero} ${poke.nome}`;
 
-    // Show "Mesma espécie" only if other variants of this base number exist with mapas
-    const base = String(poke.numero).split('-')[0];
+    // Family check for the "Família Evolutiva" button
+    const familyNums = getFamilyBaseNumbers(poke);
     let sameCount = 0;
     function countSame(arr, arrKey) {
       if (!Array.isArray(arr)) return;
       arr.forEach(p => {
-        if (String(p.numero).split('-')[0] !== base) return;
+        if (!familyNums.has(String(p.numero).split('-')[0])) return;
         if (getEffectiveMapas(p, overrides, arrKey).length) sameCount++;
       });
     }
@@ -516,12 +539,21 @@ function pmInjectModal() {
     document.body.style.overflow='hidden';
     hideInfo(); activeIdx=null;
 
+    const finalizeMap = () => {
+        if (targetIdx !== null) {
+            window._pmGoTo(targetIdx);
+        } else {
+            fitMap(); 
+            if(_currentMapas.length) fitPins(_currentMapas);
+        }
+    };
+
     if(mapReady){
-      setTimeout(()=>{ fitMap(); if(_currentMapas.length) fitPins(_currentMapas); },55);
+      setTimeout(finalizeMap, 55);
     } else {
-      mapImg.addEventListener('load',()=>{
-        setTimeout(()=>{ fitMap(); if(_currentMapas.length) fitPins(_currentMapas); },55);
-      },{once:true});
+      mapImg.addEventListener('load', () => {
+        setTimeout(finalizeMap, 55);
+      }, {once:true});
     }
   };
 
@@ -533,30 +565,27 @@ function pmInjectModal() {
   };
 }
 
-// ─── Thumbnail helpers (called from inline onclick in the tab HTML) ────────────
+// ─── Thumbnail helpers ─────────────────────────────────────────────────────────
 window.pmOpenModal = function() {
   const poke = window._pmCurrentPoke;
   if (poke) window._pmOpen(poke);
 };
+
+// Modificados para passar o index do Pin de forma a contornar o setTimeout do _pmOpen
 window.pmGoToPin = function(idx) {
   const poke = window._pmCurrentPoke;
   if (!poke) return;
-  window._pmOpen(poke).then ? window._pmOpen(poke).then(()=>window._pmGoTo(idx)) : window._pmGoTo(idx);
+  window._pmOpen(poke, idx);
 };
 
-// Cycles through all pins of a group each time the same button is clicked.
-// _pmGroupCycles maps groupKey -> current position in that group's indices array.
 window._pmGroupCycles = {};
 window.pmGoToPinGroup = function(indices, groupKey) {
   const poke = window._pmCurrentPoke;
   if (!poke) return;
-  // Advance cycle for this group
   const pos = (window._pmGroupCycles[groupKey] || 0) % indices.length;
   window._pmGroupCycles[groupKey] = pos + 1;
   const idx = indices[pos];
-  window._pmOpen(poke).then
-    ? window._pmOpen(poke).then(() => window._pmGoTo(idx))
-    : window._pmGoTo(idx);
+  window._pmOpen(poke, idx);
 };
 
 // ─── Thumbnail pin rendering ──────────────────────────────────────────────────
@@ -569,7 +598,6 @@ async function renderThumbPins(poke) {
   const mapas = getEffectiveMapas(poke, overrides, getArrayKey(poke));
   container.innerHTML = '';
 
-  // Wait for thumb image dimensions
   const getSize = () => new Promise(res => {
     if (thumbImg.naturalWidth) { res(); return; }
     thumbImg.addEventListener('load', res, {once:true});
@@ -592,7 +620,6 @@ async function renderThumbPins(poke) {
     container.appendChild(wrap);
   });
 
-  // Show hover overlay handler
   const tw = document.getElementById('pm-thumb-wrap');
   const ov = document.getElementById('pm-thumb-overlay');
   if (tw && ov) {
@@ -602,28 +629,23 @@ async function renderThumbPins(poke) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  HOOK INTO renderSinglePage — patches mapsContent variable after it renders
-//  We override the global buildMapsContent so renderSinglePage can call it.
+//  HOOK INTO renderSinglePage 
 // ─────────────────────────────────────────────────────────────────────────────
-// Store pokemon reference and render thumb pins when the tab becomes active
 let _origSwitchModalTab = null;
 function pmHookIntoPage() {
   pmInjectModal();
 
-  // Patch switchModalTab to trigger thumb pin rendering on maps tab activation
   if (typeof switchModalTab === 'function' && !_origSwitchModalTab) {
     _origSwitchModalTab = switchModalTab;
     window.switchModalTab = function(tabId) {
       _origSwitchModalTab(tabId);
       if (tabId === 'maps' && window._pmCurrentPoke) {
-        // slight delay to let the tab become visible first
         setTimeout(()=>renderThumbPins(window._pmCurrentPoke), 60);
       }
     };
   }
 }
 
-// Run on page load
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', pmHookIntoPage);
 } else {

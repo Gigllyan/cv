@@ -15,8 +15,8 @@ const pokesarray = [
     evo: "Ivysaur",
     evoStone: "Leaf stone",
     boost: 10,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Headbutt, Light, Strenght",
+    booStone: "Leaf Stone ou Venon Stone",
+    habilidades: "Light, Cut, Headbutt",
     moves: [
       { Tackle: 20 },
       { "Razor leaf": 20 },
@@ -99,7 +99,10 @@ const pokesarray = [
       { top: 85.57, left: 40.36, text: "Mandarin - Próximo ao deserto (FREE)" },
       { top: 26.53, left: 44.83, text: "Jungle Island - (VIP)" }
     ],
-    updatedAt: "19/03/2026, 19:45:39"
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }
+    ]
   },
       {
     nome: "Ivysaur",
@@ -115,8 +118,8 @@ const pokesarray = [
     evo: "Venusaur",
     evoStone: "Leaf stone (2x)",
     boost: 7,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Headbutt, Light, Strength",
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Light, Cut, Headbutt",
     preevo: "Bulbasaur",
     moves: [
       { Tackle: 40 },
@@ -210,7 +213,10 @@ const pokesarray = [
       { top: 33.12, left: 75.19, text: "Lost Island - (VIP)" },
       { top: 33.08, left: 74.57, text: "Lost Island - (VIP)" }
     ],
-    updatedAt: "19/03/2026, 19:45:43"
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }
+    ]
   },
         {
     nome: "Venusaur",
@@ -226,8 +232,8 @@ const pokesarray = [
     shiny: "yes",
     heavy: "yes",
     boost: 3,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Ride, Headbutt, Rock smash, Light, Strenght",
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Rock Smash, Cut, Light, Ride, Headbutt",
     preevo: "Ivysaur",
     moves: [
       { Tackle: 80 },
@@ -402,7 +408,10 @@ const pokesarray = [
       { top: 4.15, left: 12.86, text: "Outland north - saída da direita (VIP)" },
       { top: 4.08, left: 13.17, text: "Outland north - saída da direita (VIP)" }
     ],
-    updatedAt: "19/03/2026, 19:45:48"
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }
+    ]
   },
   
     {
@@ -422,14 +431,14 @@ const pokesarray = [
     evoStone: "Fire stone",
     boost: 10,
     booStone: "Fire stone",
-    habilidades: "Cut, Headbutt, Light, Strength",
+    habilidades: "Cut, Light, Headbutt",
     moves: [
       { Scratch: 20 },
       { Ember: 20 },
       { Flamethrower: 20 },
-      { Fireball: 20 },
-      { "Fire fang": 20 },
-      { "Fire blast": 20 },
+      { "Fireball": 20 },
+      { "Fire Fang": 20 },
+      { "Fire Blast": 20 },
       { Rage: 20 }
     ],
     loots: [
@@ -481,7 +490,10 @@ const pokesarray = [
       { top: 32.6, left: 40.39, text: "Cinnabar Island - (VIP)" },
       { top: 32.79, left: 39.79, text: "Cinnabar Island - (VIP)" }
     ],
-    updatedAt: "19/03/2026, 19:45:52"
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
           {
     nome: "Charmeleon",
@@ -499,16 +511,16 @@ const pokesarray = [
     evoStone: "Fire stone (2x)",
     boost: 7,
     booStone: "Fire stone",
-    habilidades: "Cut, Headbutt, Light, Strength",
+    habilidades: "Cut, Light, Headbutt",
     preevo: "Charmander",
     moves: [
       { Ember: 40 },
       { Flamethrower: 40 },
-      { Fireball: 40 },
-      { "Fire punch": 40 },
-      { "Flame burst": 40 },
-      { "Fire blast": 40 },
-      { "Scary face": 40 },
+      { "Fireball": 40 },
+      { "Fire Punch": 40 },
+      { "Flame Burst": 40 },
+      { "Fire Blast": 40 },
+      { "Scary Face": 40 },
       { Rage: 40 }
     ],
     loots: [
@@ -572,7 +584,10 @@ const pokesarray = [
       { top: 33.75, left: 39.22, text: "Cinnabar Island - (VIP)" },
       { top: 33.24, left: 38.72, text: "Cinnabar Island - (VIP)" }
     ],
-    updatedAt: "19/03/2026, 19:45:57"
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
           {
     nome: "Charizard",
@@ -588,22 +603,22 @@ const pokesarray = [
     shiny: "yes",
     vip: "yes",
     boost: 3,
-    booStone: "Fire stone",
-    habilidades: "Fly, Cut, Headbutt, Dig, Rock smash, Light, Strength",
+    booStone: "Fire Stone ou Feather Stone",
+    habilidades: "Dig, Rock Smash, Cut, Light, Fly, Headbutt",
     preevo: "Charmeleon",
     moves: [
       { Ember: 80 },
       { Flamethrower: 80 },
-      { Fireball: 80 },
-      { "Fire punch": 80 },
-      { "Flame burst": 80 },
-      { "Fire blast": 80 },
-      { "Air slash": 80 },
-      { "Wing attack": 80 },
-      { "Magma storm": 80 },
-      { "Sunny day": 80 },
-      { "Ancient fury": 80 },
-      { "Solar power": "Passiva" }
+      { "Fireball": 80 },
+      { "Fire Punch": 80 },
+      { "Flame Burst": 80 },
+      { "Fire Blast": 80 },
+      { "Air Slash": 80 },
+      { "Wing Attack": 80 },
+      { "Magma Storm": 80 },
+      { "Sunny Day": 80 },
+      { "Ancient Fury": 80 },
+      { "Solar Power": "P" }
     ],
     loots: [
       { item: "fire tail", min: 1, max: 1, rar: "4.3%" },
@@ -725,7 +740,10 @@ const pokesarray = [
       { top: 7.13, left: 10.84, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" },
       { top: 6.66, left: 11.16, text: "Outland South (saida norte) ou Outland East (Saída da esquerda) - (VIP)" }
     ],
-    updatedAt: "19/03/2026, 19:46:03"
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Squirtle",
@@ -748,11 +766,11 @@ const pokesarray = [
     moves: [
       { Headbutt: 20 },
       { Bubbles: 20 },
-      { "Water gun": 20 },
-      { Waterball: 24 },
-      { "Aqua tail": 22 },
-      { "Hidro cannon": 26 },
-      { Harden: 28 }
+      { "Water Gun": 20 },
+      { "Water Ball": 20 },
+      { "Aqua Tail": 20 },
+      { "Water Pulse": 20 },
+      { Harden: 20 }
     ],
     loots: [
       { item: "Squirtle hull", min: 1, max: 1, rar: "Raro" },
@@ -764,8 +782,9 @@ const pokesarray = [
       { top: 24.06, left: 42.29, text: "Tropical Island - (VIP)" },
       { top: 74.42, left: 54.24, text: "Kinnow Island - (VIP)" }
     ],
-    updatedAt: "20/03/2026, 00:09:12",
-    updateHistory: [  ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] },  ]
+  
   },
     {
     nome: "Wartortle",
@@ -788,11 +807,11 @@ const pokesarray = [
     moves: [
       { Headbutt: 40 },
       { Bubbles: 40 },
-      { "Water gun": 40 },
-      { Waterball: 40 },
-      { "Aqua tail": 40 },
-      { "Water pulse": 45 },
-      { "Muddy water": 48 },
+      { "Water Gun": 40 },
+      { "Water Ball": 40 },
+      { "Aqua Tail": 40 },
+      { "Water Pulse": 40 },
+      { "Muddy Water": 40 },
       { Harden: 40 }
     ],
     loots: [
@@ -806,8 +825,9 @@ const pokesarray = [
       { top: 23.65, left: 43.03, text: "Tropical Island - (VIP)" },
       { top: 75.32, left: 57.12, text: "Kinnow Island - (VIP)" }
     ],
-    updatedAt: "20/03/2026, 00:11:57",
-    updateHistory: [ { date: "20/03/2026, 00:11:57", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Water pulse (Lv 45), Muddy water (Lv 48)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Brine (Lv 45), Hidro cannon (Lv 48), Skull bash (Lv 45)</strong>" ] } ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 00:11:57", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Water pulse (Lv 45), Muddy water (Lv 48)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Brine (Lv 45), Hidro cannon (Lv 48), Skull bash (Lv 45)</strong>" ] } ]
+  
   },
       {
     nome: "Blastoise",
@@ -829,15 +849,15 @@ const pokesarray = [
     moves: [
       { Headbutt: 80 },
       { Bubbles: 80 },
-      { "Water gun": 80 },
-      { Waterball: 80 },
-      { "Water pulse": 80 },
-      { "Muddy water": 80 },
-      { "Hidro cannon": 80 },
+      { "Water Gun": 80 },
+      { "Water Ball": 80 },
+      { "Water Pulse": 80 },
+      { "Muddy Water": 80 },
+      { "Hydro Cannon": 80 },
       { Withdraw: 80 },
-      { Hydropump: 80 },
+      { "Hydro Pump": 80 },
       { Harden: 80 },
-      { Protector: "Passiva" }
+      { Protector: "P" }
     ],
     loots: [
       { item: "Squirtle hull", min: 1, max: 1, rar: "4.3%" },
@@ -851,8 +871,9 @@ const pokesarray = [
       { top: 23.12, left: 43.71, text: "Tropical Island - (VIP)" },
       { top: 74.95, left: 57.18, text: "Kinnow Island - (VIP)" }
     ],
-    updateHistory: [ { date: "20/03/2026, 10:30:33", changes: [ "✏️ <strong>habilidades</strong>: de \"Surf, Headbutt\" ➔ \"Rock Smash, Surf, Dig, Headbutt\"" ] }, { date: "20/03/2026, 00:15:57", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Muddy water (Lv 80), Withdraw (Lv 80), Hydropump (Lv 80), Protector (Lv Passiva)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Brine (Lv 80), Skull bash (Lv 85), Hydropump (Lv 90)</strong>" ] } ],
-    updatedAt: "20/03/2026, 10:30:33"
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 10:30:33", changes: [ "✏️ <strong>habilidades</strong>: de \"Surf, Headbutt\" ➔ \"Rock Smash, Surf, Dig, Headbutt\"" ] }, { date: "20/03/2026, 00:15:57", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Muddy water (Lv 80), Withdraw (Lv 80), Hydropump (Lv 80), Protector (Lv Passiva)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Brine (Lv 80), Skull bash (Lv 85), Hydropump (Lv 90)</strong>" ] } ],
+    updatedAt: "22/03/2026, 19:17:24"
+  
   },
     {
     nome: "Caterpie",
@@ -939,12 +960,12 @@ const pokesarray = [
     pricenpc: 2000,
     shiny: "yes",
     fast: "yes",
-    boost: 10,
-    booStone: "Cocoon stone",
+    boost: 8,
+    booStone: "Cocoon Stone ou Feather Stone",
     habilidades: "Light",
     preevo: "Metapod",
     moves: [
-      { "Super sonic": 30 },
+      { "Supersonic": 30 },
       { "Silver wind": 30 },
       { "Air slash": 30 },
       { Confusion: 30 },
@@ -968,8 +989,9 @@ const pokesarray = [
       { top: 86.32, left: 44.93, text: "Floresta de Mandarin - (FREE)" },
       { top: 82.93, left: 74.88, text: "Murcott Island - (VIP)" }
     ],
-    updateHistory: [ { date: "20/03/2026, 10:32:22", changes: [ "✨ <strong>habilidades</strong> definido como: \"Light\"" ] }, { date: "20/03/2026, 00:40:23", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Air slash (Lv 30), Psybeam (Lv 30), Air cutter (Lv 30), Safeguard (Lv 30)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Whirlwind (Lv 30), Psybeam (Lv 32), Air cutter (Lv 34), Safeguard (Lv 36)</strong>" ] } ],
-    updatedAt: "20/03/2026, 10:32:22"
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }, { date: "20/03/2026, 10:32:22", changes: [ "✨ <strong>habilidades</strong> definido como: \"Light\"" ] }, { date: "20/03/2026, 00:40:23", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Air slash (Lv 30), Psybeam (Lv 30), Air cutter (Lv 30), Safeguard (Lv 30)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Whirlwind (Lv 30), Psybeam (Lv 32), Air cutter (Lv 34), Safeguard (Lv 36)</strong>" ] } ],
+    updatedAt: "22/03/2026, 19:17:24"
+  
   },
     {
     nome: "Weedle",
@@ -985,7 +1007,7 @@ const pokesarray = [
     evo: "Kakuna",
     evoStone: "Cocoon stone",
     boost: 30,
-    booStone: "Cocoon stone",
+    booStone: "Cocoon Stone ou Venom Stone",
     habilidades: "",
     moves: [
       { "Horn attack": 1 },
@@ -1003,8 +1025,9 @@ const pokesarray = [
       { top: 23.47, left: 57.84, text: "Floresta a direita de Saffron (FREE)" },
       { top: 23.05, left: 36.83, text: "Floresta de Viridian (FREE)" }
     ],
-    updatedAt: "20/03/2026, 13:17:51",
-    updateHistory: [  ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler" ] },  ]
+  
   },
     {
     nome: "Kakuna",
@@ -1020,7 +1043,7 @@ const pokesarray = [
     evo: "Beedrill",
     evoStone: "Cocoon stone",
     boost: 15,
-    booStone: "Cocoon stone",
+    booStone: "Cocoon Stone ou Venom Stone",
     habilidades: "",
     preevo: "Weedle",
     moves: [
@@ -1040,8 +1063,9 @@ const pokesarray = [
       { top: 23.78, left: 57.82, text: "Floresta a direita de Saffron (FREE)" },
       { top: 23.64, left: 36.69, text: "Floresta de Viridian (FREE)" }
     ],
-    updatedAt: "20/03/2026, 10:22:31",
-    updateHistory: [  ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler" ] },  ]
+  
   },
     {
     nome: "Beedrill",
@@ -1056,21 +1080,21 @@ const pokesarray = [
     pricenpc: 2000,
     shiny: "yes",
     fast: "yes",
-    boost: 10,
-    booStone: "Cocoon stone",
-    habilidades: "Cut, Light ",
+    boost: 8,
+    booStone: "Cocoon Stone ou Venom Stone",
+    habilidades: "Light, Cut",
     preevo: "Kakuna",
     moves: [
-      { "String shot": 30 },
-      { "Poison jab": 30 },
-      { "Poison sting": 30 },
-      { "Fury cutter": 35 },
-      { "Pin missile": 35 },
-      { "Toxic spikes": 32 },
+      { "String Shot": 30 },
+      { "Poison Jab": 30 },
+      { "Poison Sting": 30 },
+      { "Fury Cutter": 30 },
+      { "Pin Missile": 30 },
+      { "Toxic Spikes": 30 },
       { Rage: 30 },
-      { Strafe: 38 },
-      { Adaptability: "Passiva" },
-      { Evasion: "Passiva" }
+      { Strafe: 30 },
+      { Adaptability: "P" },
+      { Evasion: "P" }
     ],
     loots: [
       { item: "bee sting", min: 1, max: 1, rar: "4.3%" },
@@ -1084,8 +1108,9 @@ const pokesarray = [
       { top: 20.12, left: 46.36, text: "Esquerda de Cerulean - Próximo ao pântano - (FREE)" },
       { top: 23.38, left: 36.74, text: "Floresta de Viridian - (FREE)" }
     ],
-    updatedAt: "20/03/2026, 10:27:17",
-    updateHistory: [ { date: "20/03/2026, 10:27:17", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Adaptability (Lv Passiva)</strong>", "✏️ <strong>habilidades</strong>: de \"Cut\" ➔ \"Cut, Light\"" ] } ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 10:27:17", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Adaptability (Lv Passiva)</strong>", "✏️ <strong>habilidades</strong>: de \"Cut\" ➔ \"Cut, Light\"" ] } ]
+  
   },
     {
     nome: "Pidgey",
@@ -1102,13 +1127,13 @@ const pokesarray = [
     evo: "Pidgeotto",
     evoStone: "Feather stone",
     boost: 30,
-    booStone: "Feather stone",
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "",
     moves: [
-      { "Quick attack": 1 },
-      { "Sand attack": 1 },
-      { "Wing attack": 1 },
-      { "Drill peck": 1 }
+      { "Sand Attack": 1 },
+      { "Quick Attack": 1 },
+      { "Wing Attack": 1 },
+      { "Drill Peck": 1 }
     ],
     loots: [
       { item: "colored feather", min: 1, max: 1, rar: "Raro" },
@@ -1121,8 +1146,9 @@ const pokesarray = [
       { top: 20.68, left: 56.47, text: "Floresta de Cerulean - (FREE)" },
       { top: 23.31, left: 35.9, text: "Floresta de Viridian - (FREE)" }
     ],
-    updatedAt: "20/03/2026, 10:36:27",
-    updateHistory: [ { date: "20/03/2026, 10:36:27", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Wing attack (Lv 1), Drill peck (Lv 1)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 3), Drill peck (Lv 6)</strong>" ] } ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 10:36:27", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Wing attack (Lv 1), Drill peck (Lv 1)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 3), Drill peck (Lv 6)</strong>" ] } ]
+  
   },
       {
     nome: "Pidgeotto",
@@ -1139,14 +1165,14 @@ const pokesarray = [
     evo: "Pidgeot",
     evoStone: "Feather stone (2x)",
     boost: 10,
-    booStone: "Feather stone",
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "",
     preevo: "Pidgey",
     moves: [
-      { "Quick attack": 20 },
-      { "Sand attack": 20 },
-      { "Drill peck": 20 },
-      { "Wing attack": 24 },
+      { "Quick Attack": 20 },
+      { "Sand Attack": 20 },
+      { "Drill Peck": 20 },
+      { "Wing Attack": 20 },
       { Gust: 20 },
       { Tornado: 20 }
     ],
@@ -1165,8 +1191,9 @@ const pokesarray = [
       { top: 58.26, left: 36.68, text: "Floresta de Shamouti - (VIP)" },
       { top: 24.69, left: 36.32, text: "Floresta de Viridian - (FREE)" }
     ],
-    updateHistory: [ { date: "20/03/2026, 10:45:46", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Gust (Lv 20), Tornado (Lv 20)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 22), Aeroblast (Lv 26)</strong>" ] }, { date: "20/03/2026, 10:43:12", changes: [ "✏️ <strong>pricenpc</strong>: de \"3000\" ➔ \"1500\"", "✏️ <strong>evoStone</strong>: de \"Feather stone\" ➔ \"Feather stone (2x)\"" ] } ],
-    updatedAt: "20/03/2026, 10:45:46"
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 10:45:46", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Gust (Lv 20), Tornado (Lv 20)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 22), Aeroblast (Lv 26)</strong>" ] }, { date: "20/03/2026, 10:43:12", changes: [ "✏️ <strong>pricenpc</strong>: de \"3000\" ➔ \"1500\"", "✏️ <strong>evoStone</strong>: de \"Feather stone\" ➔ \"Feather stone (2x)\"" ] } ],
+    updatedAt: "22/03/2026, 19:17:24"
+  
   },
     {
     nome: "Pidgeot",
@@ -1182,17 +1209,17 @@ const pokesarray = [
     shiny: "yes",
     fast: "yes",
     boost: 3,
-    booStone: "Feather stone",
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "Fly, Headbutt",
     moves: [
-      { "Quick attack": 80 },
-      { "Drill peck": 80 },
-      { "Feather dance": 80 },
+      { "Quick Attack": 80 },
+      { "Drill Peck": 80 },
+      { "Feather Dance": 80 },
       { Whirlwind: 80 },
-      { "Wing attack": 82 },
-      { Tornado: 84 },
-      { Hurricane: 90 },
-      { "Air slash": 85 },
+      { "Wing Attack": 80 },
+      { Tornado: 80 },
+      { Hurricane: 80 },
+      { "Air Slash": 80 },
       { Agility: 80 }
     ],
     loots: [
@@ -1211,8 +1238,9 @@ const pokesarray = [
       { top: 58.64, left: 35.71, text: "Floresta de Shamouti - (VIP)" },
       { top: 8.95, left: 14.39, text: "Outland South - Saida a direita (VIP)" }
     ],
-    updatedAt: "20/03/2026, 10:50:56",
-    updateHistory: [ { date: "20/03/2026, 10:50:56", changes: [ "🗑 <strong>preevo</strong> removido (era: \"Pidgeotto\")", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Feather dance (Lv 80), Tornado (Lv 84), Air slash (Lv 85)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Sand attack (Lv 80), Aeroblast (Lv 84), Roost (Lv 85)</strong>", "✏️ <strong>habilidades</strong>: de \"Fly\" ➔ \"Fly, Headbutt\"" ] } ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 10:50:56", changes: [ "🗑 <strong>preevo</strong> removido (era: \"Pidgeotto\")", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Feather dance (Lv 80), Tornado (Lv 84), Air slash (Lv 85)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Sand attack (Lv 80), Aeroblast (Lv 84), Roost (Lv 85)</strong>", "✏️ <strong>habilidades</strong>: de \"Fly\" ➔ \"Fly, Headbutt\"" ] } ]
+  
   },
     {
     nome: "Rattata",
@@ -1232,10 +1260,10 @@ const pokesarray = [
     booStone: "Heart stone",
     habilidades: "",
     moves: [
-      { "Quick attack": 1 },
+      { "Quick Attack": 1 },
       { Bite: 1 },
       { Scratch: 1 },
-      { "Super fang": 10 }
+      { "Super Fang": 1 }
     ],
     loots: [
       { item: "rat tail", min: 1, max: 1, rar: "Raro" },
@@ -1249,8 +1277,9 @@ const pokesarray = [
       { top: 31.87, left: 56.64, text: "subsolo em fuchsia - (FREE)" },
       { top: 56.99, left: 36.01, text: "subsolo em shamouti - (FREE)" }
     ],
-    updatedAt: "20/03/2026, 13:17:43",
-    updateHistory: [  ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] },  ]
+  
   },
     {
     nome: "Raticate",
@@ -1264,18 +1293,17 @@ const pokesarray = [
     xpcaught: 10000,
     pricenpc: 2000,
     shiny: "yes",
-    boost: 10,
+    boost: 8,
     booStone: "Heart stone",
     habilidades: "Dig, Cut, Headbutt",
     preevo: "Rattata",
     moves: [
-      { "Quick attack": 30 },
+      { "Quick Attack": 30 },
       { Bite: 30 },
       { Scratch: 30 },
       { Pursuit: 30 },
-      { "Super fang": 30 },
-      { "Scary face": 32 },
-      { Fury: "Passiva" }
+      { "Super Fang": 30 },
+      { "Scary Face": 30 }
     ],
     loots: [
       { item: "rat tail", min: 1, max: 1, rar: "4.3%" },
@@ -1290,8 +1318,9 @@ const pokesarray = [
       { top: 31.87, left: 56.64, text: "subsolo em fuchsia - (FREE)" },
       { top: 56.99, left: 36.01, text: "subsolo em shamouti - (FREE)" }
     ],
-    updatedAt: "20/03/2026, 13:19:49",
-    updateHistory: [  ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] },  ]
+  
   },
     {
     nome: "Spearow",
@@ -1307,14 +1336,14 @@ const pokesarray = [
     fast: "yes",
     evo: "Fearow",
     evoStone: "Feather stone",
-    boost: 20,
-    booStone: "Feather stone",
+    boost: 15,
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "",
     moves: [
       { Peck: 10 },
-      { "Sand attack": 10 },
-      { "Drill peck": 10 },
-      { "Wing attack": 12 },
+      { "Sand Attack": 10 },
+      { "Drill Peck": 10 },
+      { "Wing Attack": 10 },
       { Agility: 10 }
     ],
     loots: [
@@ -1327,8 +1356,9 @@ const pokesarray = [
       { top: 22.27, left: 52.03, text: "Saída norte de saffron (FREE)" },
       { top: 57.07, left: 37.58, text: "Lado direito de shamouti (FREE)" }
     ],
-    updatedAt: "20/03/2026, 13:21:40",
-    updateHistory: [  ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] },  ]
+  
   },
     {
     nome: "Fearow",
@@ -1343,8 +1373,8 @@ const pokesarray = [
     pricenpc: 5100,
     shiny: "yes",
     fast: "yes",
-    boost: 4,
-    booStone: "Feather stone",
+    boost: 5,
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "Fly",
     preevo: "Spearow",
     moves: [
@@ -1369,8 +1399,9 @@ const pokesarray = [
       { top: 22.27, left: 52.03, text: "Saída norte de saffron (FREE)" },
       { top: 57.07, left: 37.58, text: "Lado direito de shamouti (FREE)" }
     ],
-    updatedAt: "20/03/2026, 13:25:41",
-    updateHistory: [ { date: "20/03/2026, 13:25:41", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Gust (Lv 50), Wing attack (Lv 50), Confide (Lv 50)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 52), Wing attack (Lv 52), Agility (Lv 50)</strong>" ] } ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }, { date: "20/03/2026, 13:25:41", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Gust (Lv 50), Wing attack (Lv 50), Confide (Lv 50)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Gust (Lv 52), Wing attack (Lv 52), Agility (Lv 50)</strong>" ] } ]
+  
   },
   {
     nome: "Ekans",
@@ -1387,11 +1418,11 @@ const pokesarray = [
     evo: "Arbok",
     mapas: [],
     moves: [
-      { "Bite": 10 },
-      { "Poison fang": 10 },
-      { "Gunk shot": 12 },
-      { "Acid": 15 },
-      { "Fear": 18 },
+      { Bite: 10 },
+      { "Poison Fang": 10 },
+      { "Gunk Shot": 10 },
+      { Acid: 10 },
+      { Fear: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "snake tail", rar: "1.8%" },
@@ -1399,9 +1430,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "tooth", rar: "19.5%" },
     ],
     evoStone: "Venom stone",
-    boost: 15,
+    boost: 5,
     booStone: "Venom stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Arbok",
@@ -1418,14 +1453,15 @@ const pokesarray = [
     preevo: "Ekans",
     mapas: [],
     moves: [
-      { "Bite": 40 },
-      { "Poison fang": 40 },
-      { "Gunk shot": 40 },
-      { "Wrap": 40 },
-      { "Pin missile": 43 },
-      { "Acid": 40 },
-      { "Iron tail": 45 },
-      { "Poison jab": 40 },
+      { Bite: 40 },
+      { "Poison Fang": 40 },
+      { "Gunk Shot": 40 },
+      { Toxic: 40 },
+      { "Poison Tail": 40 },
+      { Wrap: 40 },
+      { "Poison Jab": 40 },
+      { Intimidate: 40 },
+      { Corrosion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "snake tail", rar: "4.3%" },
@@ -1433,50 +1469,57 @@ const pokesarray = [
       { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
       { min: 1, max: 1, item: "tooth", rar: "25.5%" },
     ],
-    boost: 8,
+    boost: 7,
     booStone: "Venom stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
-  {
+      {
     nome: "Pikachu",
-    numero: 25,
-    level: 50,
-    clan: "Raibolt",
+    numero: "25",
+    level: 60,
     tipo: "Elétrico",
+    clan: "Raibolt",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Médio",
     xpcaught: 15000,
     pricenpc: 8000,
+    vip: "yes",
     fast: "yes",
-    preevo: "Pichu",
     evo: "Raichu",
+    evoStone: "Thunder stone (2x)",
+    boost: 4,
+    booStone: "Thunder stone",
+    habilidades: "Light, Headbutt",
+    preevo: "Pichu",
+    moves: [
+      { Charm: 60 },
+      { "Quick Attack": 60 },
+      { "Thunder Shock": 60 },
+      { Thunderbolt: 60 },
+      { "Electro Ball": 60 },
+      { "Thunder Punch": 60 },
+      { Thunder: 60 },
+      { "Electric Storm": 60 },
+      { Agility: 60 },
+      { "Electric Charge": "P" }
+    ],
+    loots: [
+      { item: "electric rat tail", min: 1, max: 1, rar: "2%" },
+      { item: "screw", min: 1, max: 20, rar: "80%" },
+      { item: "Thunder stone", min: 1, max: 1, rar: "Raro" },
+      { item: "electric box", min: 1, max: 1, rar: "17%" }
+    ],
     mapas: [
       { top: 14.62, left: 77.31, text: "Lightstorm Island - (VIP)" },
       { top: 67.73, left: 27.84, text: "Zapdos Island - (VIP)" }
     ],
-    vip: "yes",
-    moves: [
-      { "Quick attack": 50 },
-      { "Thunder shock": 50 },
-      { "Thunder bolt": 50 },
-      { "Shockwave": 50 },
-      { "Thunder punch": 50 },
-      { "Thunder": 55 },
-      { "Electric storm": 58 },
-      { "Agility": 55 },
-      { "Electric charge": "Passiva" },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "electric rat tail", rar: "2%" },
-      { min: 1, max: 20, item: "screw", rar: "80%" },
-      { min: 1, max: 1, item: "Thunder stone", rar: "Raro" },
-      { min: 1, max: 1, item: "electric box", rar: "17%" },
-    ],
-    evoStone: "Thunder stone",
-    boost: 7,
-    booStone: "Thunder stone",
-    habilidades: "Light, Headbutt",
+    updateHistory: [ { date: "23/03/2026, 01:23:39", changes: [ "✏️ <strong>evoStone</strong>: de \"Thunder stone\" ➔ \"Thunder stone (2x)\"" ] }, { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] } ],
+    updatedAt: "23/03/2026, 01:23:44"
   },
   {
     nome: "Raichu",
@@ -1499,17 +1542,14 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Mega quick": 80 },
-      { "Thunder shock": 80 },
-      { "Thunder bolt": 80 },
-      { "Thunder wave": 80 },
-      { "Thunder punch": 80 },
-      { "Iron tail": 80 },
-      { "Body slam": 85 },
-      { "Thunder": 80 },
-      { "Electric storm": 90 },
-      { "Flash": 80 },
-      { "Electric charge": "Passiva" },
+      { Swift: 80 },
+      { "Thunder Shock": 80 },
+      { Thunderbolt: 80 },
+      { "Volt Tackle": 80 },
+      { "Thunder Wrath": 80 },
+      { Discharge: 80 },
+      { "Electric Storm": 80 },
+      { "Shock Wave": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "electric rat tail", rar: "4.3%" },
@@ -1519,7 +1559,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Thunder stone",
-    habilidades: "Light, Headbutt",
+    habilidades: "Dig, Rock Smash, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sandshrew",
@@ -1535,11 +1579,11 @@ const pokesarray = [
     evo: "Sandslash",
     mapas: [],
     moves: [
-      { "Sand attack": 20 },
-      { "Mud shot": 20 },
-      { "Scratch": 20 },
-      { "Rollout": 25 },
-      { "Bulldoze": 25 },
+      { "Sand Attack": 20 },
+      { "Mud Shot": 20 },
+      { Scratch: 20 },
+      { Rollout: 20 },
+      { Bulldoze: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "armadillo claw", rar: "1.3%" },
@@ -1550,11 +1594,15 @@ const pokesarray = [
     boost: 10,
     booStone: "Earth stone",
     habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sandslash",
     numero: 28,
-    level: 70,
+    level: 60,
     clan: "Orebound",
     tipo: "Terra",
     regiao: "Kanto",
@@ -1565,15 +1613,14 @@ const pokesarray = [
     preevo: "Sandshrew",
     mapas: [],
     moves: [
-      { "Sand attack": 70 },
-      { "Mud shot": 70 },
-      { "Scratch": 70 },
-      { "Rollout": 70 },
-      { "Bulldoze": 70 },
-      { "Fury cutter": 75 },
-      { "Earth power": 73 },
-      { "Earthquake": 76 },
-      { "Defense curl": 70 },
+      { Scratch: 60 },
+      { "Slashing Blow": 60 },
+      { Dig: 60 },
+      { Rollout: 60 },
+      { "Earth Power": 60 },
+      { Earthquake: 60 },
+      { Fissure: 60 },
+      { Sandstorm: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "armadillo claw", rar: "4.3%" },
@@ -1581,9 +1628,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Earth stone", rar: "Raro" },
       { min: 1, max: 1, item: "sandbag", rar: "24.5%" },
     ],
-    boost: "",
-    booStone: "",
+    boost: 4,
+    booStone: "Earth Stone",
     habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "NidoranFe",
@@ -1599,11 +1650,11 @@ const pokesarray = [
     evo: "Nidorina",
     mapas: [],
     moves: [
-      { "Quick attack": 10 },
-      { "Bite": 10 },
-      { "Horn attack": 12 },
-      { "Poison sting": 10 },
-      { "Poison fang": 15 },
+      { "Quick Attack": 10 },
+      { Bite: 10 },
+      { "Horn Attack": 10 },
+      { "Poison Sting": 10 },
+      { "Poison Fang": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "female ear", rar: "Raro" },
@@ -1611,9 +1662,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "8%" },
     ],
     evoStone: "Venom stone",
-    boost: 20,
+    boost: 15,
     booStone: "Venom stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Nidorina",
@@ -1630,13 +1685,13 @@ const pokesarray = [
     evo: "Nidoqueen",
     mapas: [],
     moves: [
-      { "Quick attack": 30 },
-      { "Horn attack": 30 },
-      { "Poison jab": 30 },
-      { "Earth power": 30 },
-      { "Dig": 32 },
-      { "Cross poison": 32 },
-      { "Agility": 30 },
+      { Charm: 30 },
+      { "Horn Attack": 30 },
+      { "Poison Jab": 30 },
+      { "Stomping Tantrum": 30 },
+      { "Earth Power": 30 },
+      { Dig: 30 },
+      { Agility: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "female ear", rar: "1.9%" },
@@ -1645,14 +1700,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "14%" },
     ],
     evoStone: "Venom stone, Earth stone",
-    boost: 9,
+    boost: 8,
     booStone: "Venom stone",
-    habilidades: "Dig, Headbutt",
+    habilidades: "Dig, Headbutt, Strength",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Nidoqueen",
     numero: 31,
-    level: 70,
+    level: 80,
     clan: "Malefic, Orebound",
     tipo: "Venenoso, Terra",
     regiao: "Kanto",
@@ -1667,15 +1726,14 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Quick attack": 70 },
-      { "Horn attack": 70 },
-      { "Sand tomb": 70 },
-      { "Poison jab": 70 },
-      { "Earth power": 70 },
-      { "Dig": 72 },
-      { "Cross poison": 72 },
-      { "Earthquake": 76 },
-      { "Agility": 70 },
+      { "Quick Attack": 80 },
+      { "Horn Attack": 80 },
+      { "Sand Tomb": 80 },
+      { "Horn Burst": 80 },
+      { "Ground Collapse": 80 },
+      { Bulldoze: 80 },
+      { Earthquake: 80 },
+      { Fissure: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "female ear", rar: "4.3%" },
@@ -1684,9 +1742,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
       { min: 1, max: 1, item: "sandbag", rar: "24.5%" },
     ],
-    boost: 4,
-    booStone: "Venom stone",
-    habilidades: "Dig, Headbutt, Rock smash",
+    boost: 3,
+    booStone: "Venom Stone ou Earth Stone",
+    habilidades: "Cut, Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "NidoranMa",
@@ -1702,11 +1764,11 @@ const pokesarray = [
     evo: "Nidorino",
     mapas: [],
     moves: [
-      { "Quick attack": 10 },
-      { "Bite": 10 },
-      { "Horn attack": 12 },
-      { "Poison sting": 10 },
-      { "Poison fang": 15 },
+      { "Quick Attack": 10 },
+      { Bite: 10 },
+      { "Horn Attack": 10 },
+      { "Poison Sting": 10 },
+      { "Poison Fang": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "male ear", rar: "Raro" },
@@ -1714,9 +1776,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "8%" },
     ],
     evoStone: "Venom stone",
-    boost: 20,
+    boost: 15,
     booStone: "Venom stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Nidorino",
@@ -1733,13 +1799,14 @@ const pokesarray = [
     evo: "Nidoking",
     mapas: [],
     moves: [
-      { "Quick attack": 30 },
-      { "Horn attack": 30 },
-      { "Poison jab": 30 },
-      { "Poison fang": 30 },
-      { "Dig": 32 },
-      { "Cross poison": 32 },
-      { "Rage": 30 },
+      { "Quick Attack": 30 },
+      { "Horn Attack": 30 },
+      { "Poison Fang": 30 },
+      { "Poison Jab": 30 },
+      { "Toxic Spikes": 30 },
+      { Dig: 30 },
+      { "Cross Poison": 30 },
+      { Rage: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "male ear", rar: "1.9%" },
@@ -1748,14 +1815,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "14%" },
     ],
     evoStone: "Venom stone, Earth stone",
-    boost: 9,
+    boost: 8,
     booStone: "Venom stone",
-    habilidades: "Dig, Headbutt",
+    habilidades: "Dig, Headbutt, Strength",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Nidoking",
     numero: 34,
-    level: 70,
+    level: 80,
     clan: "Malefic, Orebound",
     tipo: "Venenoso, Terra",
     regiao: "Kanto",
@@ -1771,15 +1842,15 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Quick attack": 70 },
-      { "Horn attack": 70 },
-      { "Poison jab": 70 },
-      { "Poison fang": 70 },
-      { "Dig": 72 },
-      { "Sludge wave": 74 },
-      { "Cross poison": 72 },
-      { "Fear": 76 },
-      { "Rage": 70 },
+      { "Quick Attack": 80 },
+      { "Horn Burst": 80 },
+      { "Poison Fang": 80 },
+      { "Poison Jab": 80 },
+      { "Poison Tail": 80 },
+      { Toxic: 80 },
+      { Venoshock: 80 },
+      { "Sludge Bomb": 80 },
+      { Rage: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "male ear", rar: "4.3%" },
@@ -1789,9 +1860,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Earth stone", rar: "Raro" },
       { min: 1, max: 1, item: "sandbag", rar: "24.5%" },
     ],
-    boost: 4,
-    booStone: "Venom stone",
-    habilidades: "Dig, Headbutt, Rock smash",
+    boost: 3,
+    booStone: "Venom Stone ou Earth Stone",
+    habilidades: "Cut, Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Clefairy",
@@ -1808,14 +1883,14 @@ const pokesarray = [
     evo: "Clefable",
     mapas: [],
     moves: [
+      { "Dazzling Gleam": 40 },
       { "Doubleslap": 40 },
-      { "Body slam": 44 },
-      { "Sing": 40 },
-      { "Multi slap": 40 },
-      { "Great love": 47 },
-      { "Healarea": 45 },
-      { "Metronome": 40 },
-      { "Defense curl": 40 },
+      { Sing: 40 },
+      { "Heart Pound": 40 },
+      { Metronome: 40 },
+      { Protection: 40 },
+      { Moonlight: 40 },
+      { "Follow Me": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "topknot", rar: "2.6%" },
@@ -1826,12 +1901,16 @@ const pokesarray = [
     evoStone: "Heart stone",
     boost: 7,
     booStone: "Heart stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Clefable",
     numero: 36,
-    level: 70,
+    level: 80,
     clan: "Psycraft",
     tipo: "Fada",
     regiao: "Kanto",
@@ -1842,14 +1921,16 @@ const pokesarray = [
     preevo: "Clefairy",
     mapas: [],
     moves: [
-      { "Doubleslap": 70 },
-      { "Multi slap": 70 },
-      { "Dazzling gleam": 74 },
-      { "Great love": 77 },
-      { "Moonblast": 76 },
-      { "Healarea": 75 },
-      { "Metronome": 70 },
-      { "Defense curl": 70 },
+      { "Dazzling Gleam": 80 },
+      { Doubleslap: 80 },
+      { "Multi-Slap": 80 },
+      { "Heart Pound": 80 },
+      { Metronome: 80 },
+      { "Great Love": 80 },
+      { "Defense Curl": 80 },
+      { Protect: 80 },
+      { "Cute Charm": "P" },
+      { Protector: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "topknot", rar: "4.3%" },
@@ -1857,9 +1938,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
       { min: 1, max: 1, item: "comb", rar: "20%" },
     ],
-    boost: 4,
+    boost: 3,
     booStone: "Heart stone",
-    habilidades: "",
+    habilidades: "Light, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Vulpix",
@@ -1875,12 +1960,13 @@ const pokesarray = [
     evo: "Ninetales",
     mapas: [],
     moves: [
-      { "Quick attack": 20 },
-      { "Iron tail": 20 },
-      { "Ember": 20 },
-      { "Flamethrower": 22 },
-      { "Flame circle": 24 },
-      { "Fire blast": 28 },
+      { "Quick Attack": 20 },
+      { "Iron Tail": 20 },
+      { Ember: 20 },
+      { Flamethrower: 20 },
+      { "Flame Circle": 20 },
+      { "Fire Blast": 20 },
+      { Agility: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "fox tail", rar: "Raro" },
@@ -1889,14 +1975,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "fur", rar: "4.5%" },
     ],
     evoStone: "Fire stone",
-    boost: 15,
+    boost: 10,
     booStone: "Fire stone",
     habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ninetales",
     numero: 38,
-    level: 80,
+    level: 100,
     clan: "Volcanic",
     tipo: "Fogo",
     regiao: "Kanto",
@@ -1912,16 +2002,15 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Quick attack": 80 },
-      { "Iron tail": 80 },
-      { "Ember": 80 },
-      { "Flamethrower": 80 },
-      { "Flame wheel": 80 },
-      { "Fireball": 80 },
-      { "Fire spin": 80 },
-      { "Fire blast": 84 },
-      { "Inferno": 90 },
-      { "Safeguard": 90 },
+      { "Quick Attack": 100 },
+      { "Iron Tail": 100 },
+      { Ember: 100 },
+      { "Flame Wheel": 100 },
+      { "Fireball": 100 },
+      { "Hellfire Storm": 100 },
+      { Inferno: 100 },
+      { "Burning Jealousy": 100 },
+      { "Nasty Plot": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "fox tail", rar: "2%" },
@@ -1930,9 +2019,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "comb", rar: "20%" },
       { min: 1, max: 1, item: "fur", rar: "19.5%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Fire stone",
-    habilidades: "Dig, Ride",
+    habilidades: "Dig, Headbutt, Ride",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Jigglypuff",
@@ -1949,15 +2042,13 @@ const pokesarray = [
     evo: "Wigglytuff",
     mapas: [],
     moves: [
-      { "Doubleslap": 40 },
-      { "Body slam": 44 },
-      { "Sing": 40 },
-      { "Hyper voice": 40 },
-      { "Multi slap": 40 },
-      { "Echoed voice": 45 },
-      { "Softboiled": 45 },
-      { "Charm": 40 },
-      { "Melody": "Passiva" },
+      { "Dazzling Gleam": 40 },
+      { "Play Rough": 40 },
+      { Sing: 40 },
+      { "Disarming Voice": 40 },
+      { "Heart Pound": 40 },
+      { "Soft-Boiled": 40 },
+      { Charm: 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "microphone", rar: "Raro" },
@@ -1968,12 +2059,16 @@ const pokesarray = [
     evoStone: "Heart stone",
     boost: 7,
     booStone: "Heart stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Wigglytuff",
     numero: 40,
-    level: 70,
+    level: 80,
     clan: "Psycraft, Gardestrike",
     tipo: "Fada, Normal",
     regiao: "Kanto",
@@ -1984,16 +2079,15 @@ const pokesarray = [
     preevo: "Jigglypuff",
     mapas: [],
     moves: [
-      { "Doubleslap": 70 },
-      { "Body slam": 74 },
-      { "Sing": 70 },
-      { "Hyper voice": 70 },
-      { "Multi slap": 70 },
-      { "Rock n roll": 74 },
-      { "Echoed voice": 75 },
-      { "Softboiled": 75 },
-      { "Charm": 70 },
-      { "Melody": "Passiva" },
+      { "Dazzling Gleam": 80 },
+      { "Play Rough": 80 },
+      { Sing: 80 },
+      { "Disarming Voice": 80 },
+      { "Heart Pound": 80 },
+      { "Heal Pulse": 80 },
+      { "Soft-Boiled": 80 },
+      { "Defense Curl": 80 },
+      { "Fairy Melody": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "microphone", rar: "4%" },
@@ -2001,9 +2095,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
       { min: 1, max: 1, item: "comb", rar: "20%" },
     ],
-    boost: 4,
+    boost: 3,
     booStone: "Heart stone",
-    habilidades: "",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Zubat",
@@ -2024,12 +2122,12 @@ const pokesarray = [
       { top: 23.29, left: 51.87, text: "subsolo entre saffron e celadon - (FREE)" }
     ],
     moves: [
-      { "Super sonic": 10 },
-      { "Bite": 10 },
-      { "Poison fang": 10 },
-      { "Absorb": 12 },
-      { "Toxic": 15 },
-      { "Lifesteal": "Passiva" },
+      { "Supersonic": 10 },
+      { Bite: 10 },
+      { "Poison Fang": 10 },
+      { "Leech Life": 10 },
+      { Toxic: 10 },
+      { Lifesteal: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bat wing", rar: "1.8%" },
@@ -2038,9 +2136,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "tooth", rar: "18%" },
     ],
     evoStone: "Venom stone",
-    boost: 20,
-    booStone: "Venom stone",
+    boost: 15,
+    booStone: "Venom Stone ou Feather Stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Golbat",
@@ -2063,14 +2165,14 @@ const pokesarray = [
       { top: 23.29, left: 51.87, text: "subsolo entre saffron e celadon - (FREE)" }
     ],
     moves: [
-      { "Super sonic": 40 },
-      { "Bite": 40 },
-      { "Poison fang": 40 },
-      { "Toxic": 40 },
-      { "Gust": 42 },
-      { "Wing attack": 40 },
-      { "Air cutter": 44 },
-      { "Lifesteal": "Passiva" },
+      { "Supersonic": 40 },
+      { "Leech Life": 40 },
+      { "Poison Fang": 40 },
+      { Toxic: 40 },
+      { Gust: 40 },
+      { "Wing Attack": 40 },
+      { "Air Cutter": 40 },
+      { Lifesteal: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bat wing", rar: "4.3%" },
@@ -2080,9 +2182,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "tooth", rar: "25.5%" },
     ],
     evoStone: "Ancient stone, Venom stone",
-    boost: 8,
-    booStone: "Venom stone",
+    boost: 7,
+    booStone: "Venom Stone ou Feather Stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Oddish",
@@ -2099,14 +2205,14 @@ const pokesarray = [
     evo: "Gloom",
     mapas: [],
     moves: [
-      { "Absorb": 7 },
-      { "Acid": 1 },
-      { "Leech seed": 1 },
-      { "Sleep powder": 9 },
-      { "Stun spore": 8 },
-      { "Poison powder": 8 },
-      { "Spores reaction": "Passiva" },
-      { "Mega drain": "Passiva" },
+      { Absorb: 1 },
+      { "Leech Seed": 1 },
+      { Acid: 1 },
+      { "Sleep Powder": 1 },
+      { "Stun Spore": 1 },
+      { "Poison Powder": 1 },
+      { "Effect Spore": "P" },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "strange flower", rar: "Raro" },
@@ -2116,8 +2222,12 @@ const pokesarray = [
     ],
     evoStone: "Leaf stone",
     boost: 30,
-    booStone: "Leaf stone",
-    habilidades: "Cut",
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   
   {
@@ -2135,16 +2245,16 @@ const pokesarray = [
     evo: "Vileplume, Bellossom",
     mapas: [],
     moves: [
-      { "Absorb": 30 },
-      { "Leech seed": 30 },
-      { "Acid": 30 },
-      { "Poison bomb": 33 },
-      { "Poison gas": 37 },
-      { "Sleep powder": 30 },
-      { "Stun spore": 30 },
-      { "Poison powder": 30 },
-      { "Spores reaction": "Passiva" },
-      { "Mega drain": "Passiva" },
+      { Absorb: 30 },
+      { "Leech Seed": 30 },
+      { Acid: 30 },
+      { "Sludge Bomb": 30 },
+      { "Poison Gas": 30 },
+      { "Sleep Powder": 30 },
+      { "Stun Spore": 30 },
+      { "Poison Powder": 30 },
+      { "Effect Spore": "P" },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "strange flower", rar: "2.1%" },
@@ -2155,14 +2265,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "bag of pollem", rar: "7.5%" },
     ],
     evoStone: "Venom stone, Leaf stone",
-    boost: 10,
-    booStone: "Leaf stone",
-    habilidades: "Cut",
+    boost: 8,
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Cut, Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   }, //44
   {
     nome: "Vileplume",
     numero: 45,
-    level: 50,
+    level: 60,
     clan: "Naturia, Malefic",
     tipo: "Grama, Venenoso",
     regiao: "Kanto",
@@ -2175,18 +2289,18 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Absorb": 50 },
-      { "Leech seed": 50 },
-      { "Acid": 50 },
-      { "Poison bomb": 50 },
-      { "Poison gas": 50 },
-      { "Petal dance": 55 },
-      { "Solar beam": 60 },
-      { "Sleep powder": 50 },
-      { "Stun spore": 50 },
-      { "Poison powder": 50 },
-      { "Spores reaction": "Passiva" },
-      { "Mega drain": "Passiva" },
+      { Absorb: 60 },
+      { "Leech Seed": 60 },
+      { Acid: 60 },
+      { "Sludge Bomb": 60 },
+      { "Poison Gas": 60 },
+      { "Petal Dance": 60 },
+      { "Solar Beam": 60 },
+      { "Sleep Powder": 60 },
+      { "Stun Spore": 60 },
+      { "Poison Powder": 60 },
+      { "Effect Spore": "P" },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "strange flower", rar: "4.3%" },
@@ -2196,8 +2310,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "bag of pollem", rar: "15%" },
     ],
     boost: 4,
-    booStone: "Leaf stone",
-    habilidades: "Cut",
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Light, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Paras",
@@ -2214,12 +2332,12 @@ const pokesarray = [
     evo: "Parasect",
     mapas: [],
     moves: [
-      { "Scratch": 1 },
-      { "Poison sting": 1 },
-      { "Slash": 1 },
-      { "Stun spore": 6 },
-      { "Poison powder": 4 },
-      { "Sleep powder": 8 },
+      { Scratch: 1 },
+      { "Poison Sting": 1 },
+      { Slash: 1 },
+      { "Stun Spore": 1 },
+      { "Poison Powder": 1 },
+      { "Sleep Powder": 1 }
     ],
     loots: [
       { min: 1, max: 1, item: "mushroom", rar: "1.4%" },
@@ -2228,8 +2346,12 @@ const pokesarray = [
     ],
     evoStone: "Cocoon stone",
     boost: 30,
-    booStone: "Cocoon stone",
-    habilidades: "Cut, Dig",
+    booStone: "Cocoon Stone ou Leaf Stone",
+    habilidades: "Light, Dig, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Parasect",
@@ -2246,18 +2368,18 @@ const pokesarray = [
     preevo: "Paras",
     mapas: [],
     moves: [
-      { "Absorb": 50 },
-      { "Leech seed": 55 },
-      { "Poison sting": 50 },
-      { "Slash": 50 },
-      { "Poison bomb": 50 },
-      { "Stun spore": 50 },
-      { "Poison powder": 50 },
-      { "Sleep powder": 50 },
-      { "Fury cutter": 56 },
-      { "X scissor": 58 },
-      { "Mega drain": "Passiva" },
-      { "Spores reaction": "Passiva" },
+      { Absorb: 50 },
+      { "Leech Life": 50 },
+      { "Bullet Seed": 50 },
+      { Slash: 50 },
+      { Lunge: 50 },
+      { "Fury Cutter": 50 },
+      { "X-Scissor": 50 },
+      { "Stun Spore": 50 },
+      { "Sleep Powder": 50 },
+      { "Poison Powder": 50 },
+      { "Bug Drain": "P" },
+      { "Effect Spore": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "mushroom", rar: "4.3%" },
@@ -2268,8 +2390,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "bag of pollem", rar: "15%" },
     ],
     boost: 5,
-    booStone: "Cocoon stone",
-    habilidades: "Dig, Cut",
+    booStone: "Cocoon Stone ou Leaf Stone",
+    habilidades: "Light, Dig, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Venonat",
@@ -2286,14 +2412,14 @@ const pokesarray = [
     evo: "Venomoth",
     mapas: [],
     moves: [
-      { "Super sonic": 20 },
-      { "Psybeam": 20 },
-      { "Silver wind": 20 },
-      { "Confusion": 20 },
-      { "Psychic": 26 },
-      { "Sleep powder": 28 },
-      { "Poison powder": 22 },
-      { "Stun spore": 24 },
+      { "Supersonic": 20 },
+      { "Leech Life": 20 },
+      { "Silver Wind": 20 },
+      { Confusion: 20 },
+      { Psychic: 20 },
+      { "Sleep Powder": 20 },
+      { "Poison Powder": 20 },
+      { "Stun Spore": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "bug antenna", rar: "4%" },
@@ -2303,13 +2429,17 @@ const pokesarray = [
     ],
     evoStone: "Venom stone, Cocoon stone",
     boost: 10,
-    booStone: "Venom stone",
-    habilidades: "Headbutt",
+    booStone: "Venom Stone ou Cocoon Stone",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Venomoth",
     numero: 49,
-    level: 50,
+    level: 60,
     clan: "Naturia, Malefic",
     tipo: "Inseto, Venenoso",
     regiao: "Kanto",
@@ -2321,15 +2451,15 @@ const pokesarray = [
     preevo: "Venonat",
     mapas: [],
     moves: [
-      { "Super sonic": 50 },
-      { "Psybeam": 50 },
-      { "Silver wind": 50 },
-      { "Confusion": 56 },
-      { "Psychic": 50 },
-      { "Signal beam": 56 },
-      { "Bug buzz": 54 },
-      { "Sleep powder": 50 },
-      { "Poison powder": 50 },
+      { Supersonic: 60 },
+      { "Leech Life": 60 },
+      { "Silver Wind": 60 },
+      { Toxic: 60 },
+      { Psychic: 60 },
+      { "Signal Beam": 60 },
+      { "Sludge Bomb": 60 },
+      { "Sleep Powder": 60 },
+      { "Quiver Dance": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "bug venom", rar: "4.3%" },
@@ -2339,9 +2469,14 @@ const pokesarray = [
       { min: 1, max: 1, item: "Cocoon stone", rar: "Raro" },
       { min: 1, max: 1, item: "bag of pollem", rar: "15%" },
     ],
-    boost: 5,
-    booStone: "Venom stone",
-    habilidades: "Fly",
+    boost: 4,
+    booStone: "Venom Stone ou Cocoon Stone",
+    habilidades: "Light, Fly",
+    updatedAt: "22/03/2026, 23:09:50",
+    updateHistory: [ { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Diglett",
@@ -2358,11 +2493,11 @@ const pokesarray = [
     evo: "Dugtrio",
     mapas: [],
     moves: [
-      { "Sand attack": 10 },
-      { "Slash": 10 },
-      { "Mud shot": 10 },
-      { "Mud slap": 12 },
-      { "Earth power": 15 },
+      { "Sand Attack": 10 },
+      { Slash: 10 },
+      { "Mud Shot": 10 },
+      { "Mud-Slap": 10 },
+      { "Earth Power": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "piece of diglett", rar: "1.8%" },
@@ -2370,9 +2505,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "8%" },
     ],
     evoStone: "Earth stone",
-    boost: 20,
+    boost: 15,
     booStone: "Earth stone",
     habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dugtrio",
@@ -2389,14 +2528,14 @@ const pokesarray = [
     preevo: "Diglett",
     mapas: [],
     moves: [
-      { "Sand attack": 40 },
-      { "Slash": 40 },
-      { "Mud shot": 40 },
-      { "Mud slap": 40 },
-      { "Earth power": 40 },
-      { "Dig": 42 },
-      { "Earthquake": 47 },
-      { "Rage": 45 },
+      { "Sand Attack": 40 },
+      { Slash: 40 },
+      { "Mud Shot": 40 },
+      { "Mud-Slap": 40 },
+      { Dig: 40 },
+      { Fissure: 40 },
+      { Earthquake: 40 },
+      { Rage: 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "piece of diglett", rar: "4.3%" },
@@ -2404,9 +2543,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Earth stone", rar: "Raro" },
       { min: 1, max: 1, item: "sandbag", rar: "15.5%" },
     ],
-    boost: 8,
+    boost: 7,
     booStone: "Earth stone",
     habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Meowth",
@@ -2425,12 +2568,12 @@ const pokesarray = [
       { top: 14, left: 31, text: "Charizard Valley - Parte externa" }
     ],
     moves: [
-      { "Slash": 20 },
-      { "Scratch": 20 },
-      { "Bite": 20 },
-      { "Night slash": 20 },
-      { "Pay day": 28 },
-      { "Fury": "Passiva" },
+      { Slash: 20 },
+      { Scratch: 20 },
+      { Bite: 20 },
+      { "Night Slash": 20 },
+      { "Pay Day": 20 },
+      { Fury: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "wool ball", rar: "10.3%" },
@@ -2439,9 +2582,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "nail", rar: "14.5%" },
     ],
     evoStone: "Heart stone",
-    boost: 15,
+    boost: 10,
     booStone: "Heart stone",
     habilidades: "Cut, Dig",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Persian",
@@ -2462,14 +2609,16 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Slash": 50 },
-      { "Scratch": 50 },
-      { "Bite": 50 },
-      { "Night slash": 50 },
-      { "Pay day": 56 },
-      { "Fear": 60 },
-      { "Torment": 55 },
-      { "Fury": "Passiva" },
+      { Slash: 50 },
+      { Scratch: 50 },
+      { Bite: 50 },
+      { "Night Slash": 50 },
+      { "Pay Day": 50 },
+      { "Power Gem": 50 },
+      { Torment: 50 },
+      { Fear: 50 },
+      { Limber: "P" },
+      { Fury: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "wool ball", rar: "24.3%" },
@@ -2477,9 +2626,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
       { min: 1, max: 1, item: "nail", rar: "19%" },
     ],
-    boost: 9,
+    boost: 5,
     booStone: "Heart stone",
     habilidades: "Cut, Dig",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Psyduck",
@@ -2495,12 +2648,12 @@ const pokesarray = [
     evo: "Golduck",
     mapas: [],
     moves: [
-      { "Water gun": 24 },
-      { "Aqua tail": 20 },
-      { "Waterball": 24 },
-      { "Confusion": 28 },
-      { "Headbutt": 20 },
-      { "Stunning confusion": "Passiva" },
+      { "Water Gun": 20 },
+      { "Aqua Tail": 20 },
+      { "Water Ball": 20 },
+      { Confusion: 20 },
+      { Headbutt: 20 },
+      { "Stunning Confusion": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "Psyduck mug", rar: "1.5%" },
@@ -2510,12 +2663,16 @@ const pokesarray = [
     evoStone: "Water stone, Enigma stone",
     boost: 10,
     booStone: "Water stone",
-    habilidades: "Headbutt",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Golduck",
     numero: 55,
-    level: 70,
+    level: 80,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -2527,14 +2684,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Water gun": 70 },
-      { "Fury swipes": 70 },
-      { "Water pulse": 70 },
-      { "Confusion": 70 },
-      { "Psychic": 70 },
-      { "Aqua jet": 70 },
-      { "Hydropump": 78 },
-      { "Stunning confusion": "Passiva" },
+      { "Fury Swipes": 80 },
+      { Bubbles: 80 },
+      { "Water Pulse": 80 },
+      { Psychic: 80 },
+      { Surf: 80 },
+      { "Stunning Confusion": 80 },
+      { "Calm Mind": 80 },
+      { Protect: 80 },
+      { "Rain Dance": 80 },
+      { "Swift Swim": "P" },
+      { Soak: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "karate duck", rar: "8.3%" },
@@ -2545,9 +2705,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "air tank", rar: "Raro" },
       { min: 1, max: 1, item: "fins", rar: "Raro" },
     ],
-    boost: 4,
+    boost: 3,
     booStone: "Water stone",
-    habilidades: "Surf, Headbutt",
+    habilidades: "Light, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Mankey",
@@ -2563,11 +2727,11 @@ const pokesarray = [
     evo: "Primeape",
     mapas: [],
     moves: [
-      { "Scratch": 10 },
-      { "Triple kick": 10 },
-      { "Karate chop": 13 },
-      { "Cross chop": 15 },
-      { "Rage": 17 },
+      { Scratch: 10 },
+      { "Triple Kick": 10 },
+      { "Karate Chop": 10 },
+      { "Cross Crop": 10 },
+      { Rage: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "iron bracelet", rar: "1.3%" },
@@ -2578,6 +2742,10 @@ const pokesarray = [
     boost: 15,
     booStone: "Punch stone",
     habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Primeape",
@@ -2594,14 +2762,14 @@ const pokesarray = [
     preevo: "Mankey",
     mapas: [],
     moves: [
-      { "Scratch": 50 },
-      { "Triple kick": 50 },
-      { "Karate chop": 50 },
-      { "Cross chop": 54 },
-      { "Mega punch": 56 },
-      { "Mega kick": 58 },
-      { "Close combat": 50 },
-      { "Rage": 50 },
+      { "Low Kick": 50 },
+      { "Mega Kick": 50 },
+      { "Karate Chop": 50 },
+      { "Close Combat": 50 },
+      { "Cross Crop": 50 },
+      { "Leap Strike": 50 },
+      { Rage: 50 },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "iron bracelet", rar: "4.3%" },
@@ -2612,6 +2780,10 @@ const pokesarray = [
     boost: 5,
     booStone: "Punch stone",
     habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Growlithe",
@@ -2630,14 +2802,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Roar": 33 },
-      { "Bite": 30 },
-      { "Ember": 30 },
-      { "Flamethrower": 30 },
-      { "Fireball": 32 },
-      { "Fire fang": 30 },
-      { "Heat wave": 34 },
-      { "War dog": 36 },
+      { Roar: 30 },
+      { Bite: 30 },
+      { Ember: 30 },
+      { Flamethrower: 30 },
+      { "Fireball": 30 },
+      { "Fire Fang": 30 },
+      { "Heat Wave": 30 },
+      { "War Dog": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "giant piece of fur", rar: "1.3%" },
@@ -2646,9 +2818,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "pot of lava", rar: "7.5%" },
     ],
     evoStone: "Crystal stone, Fire stone",
-    boost: 10,
+    boost: 8,
     booStone: "Fire stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Arcanine",
@@ -2668,16 +2844,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Roar": 110 },
-      { "Bite": 100 },
-      { "Ember": 100 },
-      { "Flamethrower": 100 },
+      { "Will-O-Wisp": 100 },
+      { Bite: 100 },
+      { Ember: 100 },
+      { "Thunder Fang": 100 },
       { "Fireball": 100 },
-      { "Fire fang": 100 },
-      { "Extremespeed": 100 },
-      { "Fire blast": 102 },
-      { "Heat wave": 104 },
-      { "War dog": 106 },
+      { "Extreme Speed": 100 },
+      { "Flare Blitz": 100 },
+      { "Burn Up": 100 },
+      { "Hellfire Storm": 100 },
+      { Intimidate: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "giant piece of fur", rar: "8.5%" },
@@ -2687,9 +2863,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "fur", rar: "25%" },
       { min: 1, max: 1, item: "pot of lava", rar: "24%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Fire stone",
-    habilidades: "Dig, Headbutt, Ride",
+    habilidades: "Dig, Rock Smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Poliwag",
@@ -2705,11 +2885,11 @@ const pokesarray = [
     evo: "Poliwhirl",
     mapas: [],
     moves: [
-      { "Doubleslap": 1 },
-      { "Bubbles": 1 },
-      { "Water gun": 6 },
-      { "Aqua tail": 3 },
-      { "Hypnosis": 8 },
+      { Doubleslap: 1 },
+      { Bubbles: 1 },
+      { "Water Gun": 1 },
+      { "Aqua Tail": 1 },
+      { Hypnosis: 1 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange thing", rar: "Raro" },
@@ -2720,6 +2900,10 @@ const pokesarray = [
     boost: 30,
     booStone: "Water stone",
     habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Poliwhirl",
@@ -2737,14 +2921,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Mud shot": 30 },
-      { "Doubleslap": 30 },
-      { "Bubblebeam": 30 },
-      { "Water gun": 30 },
-      { "Ice beam": 30 },
-      { "Brick break": 32 },
-      { "Dynamicpunch": 40 },
-      { "Hypnosis": 30 },
+      { "Mud Shot": 30 },
+      { Doubleslap: 30 },
+      { "Bubble Beam": 30 },
+      { "Water Gun": 30 },
+      { "Ice Beam": 30 },
+      { "Brick Break": 30 },
+      { "Dynamic Punch": 30 },
+      { Hypnosis: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange thing", rar: "1.6%" },
@@ -2753,14 +2937,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "22.5%" },
     ],
     evoStone: "Punch stone, Water stone",
-    boost: 10,
+    boost: 8,
     booStone: "Water stone",
     habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Poliwrath",
     numero: 62,
-    level: 70,
+    level: 80,
     clan: "Seavell, Gardestrike",
     tipo: "Água, Lutador",
     regiao: "Kanto",
@@ -2772,15 +2960,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Mud shot": 70 },
-      { "Doubleslap": 70 },
-      { "Bubblebeam": 70 },
-      { "Water gun": 70 },
-      { "Ice beam": 70 },
-      { "Brick break": 72 },
-      { "Dynamicpunch": 77 },
-      { "Focus blast": 78 },
-      { "Hypnosis": 70 },
+      { "Mud-Slap": 80 },
+      { Doubleslap: 80 },
+      { "Bubble Beam": 80 },
+      { "Water Gun": 80 },
+      { Liquidation: 80 },
+      { "Brick Break": 80 },
+      { "Dynamic Punch": 80 },
+      { Surf: 80 },
+      { "Hydro Pump": 80 },
+      { "Rain Dance": 80 },
+      { "Swift Swim": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "strange thing", rar: "8.3%" },
@@ -2789,9 +2979,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Punch stone", rar: "Raro" },
       { min: 1, max: 1, item: "water pendant", rar: "34.5%" },
     ],
-    boost: 4,
-    booStone: "Water stone",
+    boost: 3,
+    booStone: "Water Stone ou Punch Stone",
     habilidades: "Rock Smash, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Abra",
@@ -2811,10 +3005,10 @@ const pokesarray = [
       { top: 87.06, left: 33.19, text: "Deserto Mandarin - (FREE)" }
     ],
     moves: [
-      { "Restore": 15 },
-      { "Psy pulse": 10 },
-      { "Psychic": 20 },
-      { "Calm mind": 13 },
+      { Recover: 10 },
+      { "Psy Pulse": 10 },
+      { Psychic: 10 },
+      { "Calm Mind": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "psychic spoon", rar: "Raro" },
@@ -2825,50 +3019,57 @@ const pokesarray = [
     boost: 15,
     booStone: "Enigma stone",
     habilidades: "Teleport, Light, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
-  {
+    {
     nome: "Kadabra",
-    numero: 64,
-    level: 40,
-    clan: "Psycraft",
+    numero: "64",
+    level: 50,
     tipo: "Psiquico",
+    clan: "Psycraft",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Médio",
     xpcaught: 15000,
     pricenpc: 5800,
-    preevo: "Abra",
     evo: "Alakazam",
+    evoStone: "Enigma stone (2x)",
+    boost: 5,
+    booStone: "Enigma stone",
+    habilidades: "Teleport, Light, Blink",
+    preevo: "Abra",
+    moves: [
+      { Psybeam: 50 },
+      { Psywave: 50 },
+      { "Psy Pulse": 50 },
+      { Confusion: 50 },
+      { Psychic: 50 },
+      { Psyusion: 50 },
+      { "Calm Mind": 50 },
+      { Hypnosis: 50 },
+      { Reflect: 50 },
+      { Recover: 50 }
+    ],
+    loots: [
+      { item: "psychic spoon", min: 1, max: 1, rar: "2.3%" },
+      { item: "enchanted gem", min: 1, max: 23, rar: "80%" },
+      { item: "Enigma stone", min: 1, max: 1, rar: "Raro" },
+      { item: "future orb", min: 1, max: 1, rar: "23.5%" }
+    ],
     mapas: [
       { top: 25.54, left: 76.08, text: "Desert Island - (VIP)" },
       { top: 89.05, left: 33.67, text: "Deserto Mandarin - (FREE)" }
     ],
-    moves: [
-      { "Psybeam": 40 },
-      { "Psywave": 40 },
-      { "Psy pulse": 40 },
-      { "Confusion": 40 },
-      { "Psychic": 42 },
-      { "Calm mind": 40 },
-      { "Hypnosis": 40 },
-      { "Reflect": 48 },
-      { "Restore": 45 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "psychic spoon", rar: "2.3%" },
-      { min: 1, max: 23, item: "enchanted gem", rar: "80%" },
-      { min: 1, max: 1, item: "Enigma stone", rar: "Raro" },
-      { min: 1, max: 1, item: "future orb", rar: "23.5%" },
-    ],
-    evoStone: "Enigma stone",
-    boost: 8,
-    booStone: "Enigma stone",
-    habilidades: "Teleport, Light, Blink",
+    updateHistory: [ { date: "23/03/2026, 01:26:03", changes: [ "✏️ <strong>evoStone</strong>: de \"Enigma stone\" ➔ \"Enigma stone (2x)\"" ] }, { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] } ],
+    updatedAt: "23/03/2026, 01:26:03"
   },
   {
     nome: "Alakazam",
     numero: 65,
-    level: 80,
+    level: 100,
     clan: "Psycraft",
     tipo: "Psiquico",
     regiao: "Kanto",
@@ -2884,17 +3085,15 @@ const pokesarray = [
       { top: 88.04, left: 35.63, text: "Deserto Mandarin - (FREE)" }
     ],
     moves: [
-      { "Psybeam": 80 },
-      { "Psywave": 80 },
-      { "Psy pulse": 80 },
-      { "Confusion": 80 },
-      { "Psychic": 80 },
-      { "Psyusion": 95 },
-      { "Calm mind": 80 },
-      { "Hypnosis": 80 },
-      { "Reflect": 85 },
-      { "Restore": 85 },
-      { "Miracle eye": 1000 },
+      { Psybeam: 100 },
+      { "Psy Pulse": 100 },
+      { "Psy Ball": 100 },
+      { Confusion: 100 },
+      { Psychic: 100 },
+      { Kinesis: 100 },
+      { Psychokinesis: 100 },
+      { "Calm Mind": 100 },
+      { Recover: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "psychic spoon", rar: "4.3%" },
@@ -2902,9 +3101,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Enigma stone", rar: "Raro" },
       { min: 1, max: 1, item: "future orb", rar: "34%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Enigma stone",
-    habilidades: "Teleport, Light, Blink, Control Mind",
+    habilidades: "Teleport, Light, Control Minds, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Machop",
@@ -2924,11 +3127,11 @@ const pokesarray = [
       { top: 56.17, left: 30.71, text: "Esquerda de Shamouti - Ao sul do Fight Club (FREE)" }
     ],
     moves: [
-      { "Triple punch": 20 },
-      { "Mega punch": 20 },
-      { "Karate chop": 24 },
-      { "Focus blast": 28 },
-      { "Agility": 25 },
+      { "Triple Punch": 20 },
+      { "Karate Chop": 20 },
+      { "Low Kick": 20 },
+      { "Focus Blast": 20 },
+      { Agility: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "belt of champion", rar: "Raro" },
@@ -2938,43 +3141,49 @@ const pokesarray = [
     boost: 10,
     booStone: "Punch stone",
     habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
-  {
+    {
     nome: "Machoke",
-    numero: 67,
+    numero: "67",
     level: 40,
-    clan: "Gardestrike",
     tipo: "Lutador",
+    clan: "Gardestrike",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Médio",
     xpcaught: 15000,
     pricenpc: 7000,
-    preevo: "Machop",
     evo: "Machamp",
-    mapas: [ 
+    evoStone: "Punch stone (2x)",
+    boost: 7,
+    booStone: "Punch stone",
+    habilidades: "Rock smash, Headbutt",
+    preevo: "Machop",
+    moves: [
+      { "Triple Punch": 40 },
+      { "Karate Chop": 40 },
+      { "Low Kick": 40 },
+      { "Vital Throw": 40 },
+      { "Focus Blast": 40 },
+      { "Arm Thrust": 40 },
+      { Agility: 40 }
+    ],
+    loots: [
+      { item: "belt of champion", min: 1, max: 1, rar: "Raro" },
+      { item: "band aid", min: 1, max: 23, rar: "80%" },
+      { item: "Punch stone", min: 1, max: 1, rar: "Raro" }
+    ],
+    mapas: [
       { top: 19.77, left: 61.87, text: "Direita de Cerulean - Ultimo andar do Rock Tunel na parte aberta ao norte (VIP)" },
       { top: 25.25, left: 33.62, text: "Esquerda de Viridian - (Subterrâneo) Ao norte do Coliseum (VIP)" },
       { top: 56.17, left: 30.71, text: "Esquerda de Shamouti - Ao sul do Fight Club (FREE)" }
     ],
-    moves: [
-      { "Triple punch": 42 },
-      { "Mega punch": 40 },
-      { "Mega kick": 44 },
-      { "Karate chop": 40 },
-      { "Focus blast": 40 },
-      { "Arm thrust": 45 },
-      { "Agility": 48 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "belt of champion", rar: "Raro" },
-      { min: 1, max: 23, item: "band aid", rar: "80%" },
-      { min: 1, max: 1, item: "Punch stone", rar: "Raro" },
-    ],
-    evoStone: "Punch stone",
-    boost: 6,
-    booStone: "Punch stone",
-    habilidades: "Rock smash, Headbutt",
+    updateHistory: [ { date: "23/03/2026, 01:26:45", changes: [ "✏️ <strong>evoStone</strong>: de \"Punch stone\" ➔ \"Punch stone (2x)\"" ] }, { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] } ],
+    updatedAt: "23/03/2026, 01:26:45"
   },
   {
     nome: "Machamp",
@@ -2998,15 +3207,15 @@ const pokesarray = [
       { top: 56.17, left: 30.71, text: "Esquerda de Shamouti - Ao sul do Fight Club (FREE)" }
     ],
     moves: [
-      { "Triple punch": 80 },
-      { "Karate chop": 80 },
-      { "Revenge": 92 },
-      { "Focus blast": 80 },
-      { "Arm thrust": 86 },
-      { "Vital throw": 88 },
-      { "Dynamicpunch": 90 },
-      { "Agility": 48 },
-      { "Foresight": "Passiva" },
+      { "Triple Punch": 80 },
+      { "Karate Chop": 80 },
+      { "Low Kick": 80 },
+      { "Focus Blast": 80 },
+      { "Arm Thrust": 80 },
+      { "Vacuum Wave": 80 },
+      { "Dynamic Punch": 80 },
+      { Agility: 80 },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "belt of champion", rar: "1.5%" },
@@ -3015,7 +3224,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Punch stone",
-    habilidades: "Rock smash, Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Bellsprout",
@@ -3031,10 +3244,10 @@ const pokesarray = [
     evo: "Weepinbell",
     mapas: [],
     moves: [
-      { "Razor leaf": 6 },
-      { "Vine whip": 8 },
-      { "Acid": 4 },
-      { "Slash": 1 },
+      { "Razor Leaf": 1 },
+      { "Vine Whip": 1 },
+      { Acid: 1 },
+      { Slash: 1 }
     ],
     loots: [
       { min: 1, max: 1, item: "plant tail", rar: "Raro" },
@@ -3044,51 +3257,57 @@ const pokesarray = [
     ],
     evoStone: "Leaf stone",
     boost: 30,
-    booStone: "Leaf stone",
-    habilidades: "Cut",
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
-  {
+    {
     nome: "Weepinbell",
-    numero: 70,
+    numero: "70",
     level: 30,
-    clan: "Naturia, Malefic",
     tipo: "Grama, Venenoso",
+    clan: "Naturia, Malefic",
     regiao: "Kanto",
     geracao: "1",
     dificuldade: "Fácil",
     xpcaught: 10000,
     pricenpc: 2250,
-    preevo: "Bellsprout",
     evo: "Victreebel",
-    mapas: [],
+    evoStone: "Leaf stone (2x)",
+    boost: 8,
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Light, Cut",
+    preevo: "Bellsprout",
     moves: [
-      { "Razor leaf": 30 },
-      { "Vine whip": 30 },
-      { "Magical leaf": 30 },
-      { "Poison bomb": 30 },
-      { "Stun spore": 30 },
-      { "Poison powder": 30 },
-      { "Sleep powder": 34 },
-      { "Leaf storm": 38 },
-      { "Growth": 36 },
+      { "Razor Leaf": 30 },
+      { "Vine Whip": 30 },
+      { "Magical Leaf": 30 },
+      { "Giga Drain": 30 },
+      { "Poison Powder": 30 },
+      { "Sleep Powder": 30 },
+      { "Stun Spore": 30 },
+      { "Leaf Storm": 30 },
+      { Growth: 30 }
     ],
     loots: [
-      { min: 1, max: 1, item: "plant tail", rar: "2.1%" },
-      { min: 1, max: 6, item: "seed", rar: "80%" },
-      { min: 1, max: 6, item: "bottle of poison", rar: "80%" },
-      { min: 1, max: 1, item: "Leaf stone", rar: "Raro" },
-      { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
-      { min: 1, max: 1, item: "leaves", rar: "27.5%" },
+      { item: "plant tail", min: 1, max: 1, rar: "2.1%" },
+      { item: "seed", min: 1, max: 6, rar: "80%" },
+      { item: "bottle of poison", min: 1, max: 6, rar: "80%" },
+      { item: "Leaf stone", min: 1, max: 1, rar: "Raro" },
+      { item: "Venom stone", min: 1, max: 1, rar: "Raro" },
+      { item: "leaves", min: 1, max: 1, rar: "27.5%" }
     ],
-    evoStone: "Leaf stone",
-    boost: 10,
-    booStone: "Leaf stone",
-    habilidades: "Cut",
+    mapas: [],
+    updateHistory: [ { date: "23/03/2026, 01:27:22", changes: [ "✏️ <strong>evoStone</strong>: de \"Leaf stone\" ➔ \"Leaf stone (2x)\"" ] }, { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] } ],
+    updatedAt: "23/03/2026, 01:27:22"
   },
   {
     nome: "Victreebel",
     numero: 71,
-    level: 70,
+    level: 60,
     clan: "Naturia, Malefic",
     tipo: "Grama, Venenoso",
     regiao: "Kanto",
@@ -3100,16 +3319,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Razor leaf": 70 },
-      { "Vine whip": 70 },
-      { "Magical leaf": 70 },
-      { "Poison bomb": 70 },
-      { "Stun spore": 70 },
-      { "Poison powder": 70 },
-      { "Sleep powder": 75 },
-      { "Leaf storm": 77 },
-      { "Giga drain": 75 },
-      { "Growth": 76 },
+      { "Razor Leaf": 60 },
+      { "Vine Whip": 60 },
+      { "Magical Leaf": 60 },
+      { "Giga Drain": 60 },
+      { "Poison Powder": 60 },
+      { "Sleep Powder": 60 },
+      { "Leaf Storm": 60 },
+      { "Leaf Tornado": 60 },
+      { Growth: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "plant tail", rar: "8.3%" },
@@ -3120,8 +3338,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "leaves", rar: "35%" },
     ],
     boost: 4,
-    booStone: "Leaf stone",
-    habilidades: "Cut",
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Tentacool",
@@ -3138,12 +3360,12 @@ const pokesarray = [
     evo: "Tentacruel",
     mapas: [],
     moves: [
-      { "Super sonic": 16 },
-      { "Wrap": 10 },
-      { "Bubbles": 10 },
-      { "Poison jab": 10 },
-      { "Acid": 10 },
-      { "Waterball": 10 },
+      { "Supersonic": 10 },
+      { Wrap: 10 },
+      { Bubbles: 10 },
+      { "Poison Jab": 10 },
+      { Acid: 10 },
+      { "Water Ball": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "giant ruby", rar: "Raro" },
@@ -3153,8 +3375,12 @@ const pokesarray = [
     ],
     evoStone: "Water stone, Venom stone",
     boost: 15,
-    booStone: "Water stone",
+    booStone: "Water Stone ou Venom Stone",
     habilidades: "Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Tentacruel",
@@ -3171,17 +3397,17 @@ const pokesarray = [
     preevo: "Tentacool",
     mapas: [],
     moves: [
-      { "Super sonic": 80 },
-      { "Wrap": 80 },
-      { "Bubbles": 80 },
-      { "Poison jab": 80 },
-      { "Waterball": 80 },
-      { "Bubblebeam": 80 },
-      { "Acid": 80 },
-      { "Water pulse": 80 },
-      { "Mortal gas": 88 },
-      { "Hydropump": 90 },
-      { "Liquid ooze": "Passiva" },
+      { Wrap: 80 },
+      { Bubbles: 80 },
+      { "Bubble Beam": 80 },
+      { "Water Pulse": 80 },
+      { "Water Ball": 80 },
+      { "Venomous Sting": 80 },
+      { "Acid Armor": 80 },
+      { "Hydro Pump": 80 },
+      { Surf: 80 },
+      { Screech: 80 },
+      { "Liquid Ooze": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "giant ruby", rar: "4.3%" },
@@ -3196,13 +3422,17 @@ const pokesarray = [
       { min: 1, max: 1, item: "Tentacruel tentacle", rar: "Raro" },
     ],
     boost: 3,
-    booStone: "Water stone",
-    habilidades: "Surf, Control Mind",
+    booStone: "Water Stone ou Venom Stone",
+    habilidades: "Surf, Control Minds",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Geodude",
     numero: 74,
-    level: 10,
+    level: 1,
     clan: "Orebound",
     tipo: "Pedra, Terra",
     regiao: "Kanto",
@@ -3213,11 +3443,10 @@ const pokesarray = [
     evo: "Graveler",
     mapas: [],
     moves: [
-      { "Rock throw": 10 },
-      { "Rock slide": 10 },
-      { "Stone edge": 13 },
-      { "Earth power": 15 },
-      { "Harden": 15 },
+      { Tackle: 1 },
+      { "Rock Throw": 1 },
+      { "Rock Slide": 1 },
+      { "Earth Power": 1 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange rock", rar: "Raro" },
@@ -3226,9 +3455,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "stone orb", rar: "14.5%" },
     ],
     evoStone: "Rock stone",
-    boost: 15,
-    booStone: "Rock stone",
+    boost: 30,
+    booStone: "Rock Stone ou Earth Stone",
     habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Graveler",
@@ -3246,13 +3479,13 @@ const pokesarray = [
     evo: "Golem",
     mapas: [],
     moves: [
-      { "Rock throw": 40 },
-      { "Rock slide": 40 },
-      { "Stone edge": 40 },
-      { "Earth power": 40 },
-      { "Falling rocks": 50 },
-      { "Harden": 45 },
-      { "Selfdestruction": 52 },
+      { "Rock Throw": 40 },
+      { "Rock Slide": 40 },
+      { "Stone Edge": 40 },
+      { "Earth Power": 40 },
+      { "Falling Rocks": 40 },
+      { Harden: 40 },
+      { Selfdestruction: 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange rock", rar: "2.4%" },
@@ -3264,13 +3497,17 @@ const pokesarray = [
     ],
     evoStone: "Rock stone",
     boost: 7,
-    booStone: "Rock stone",
+    booStone: "Rock Stone ou Earth Stone",
     habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Golem",
     numero: 76,
-    level: 70,
+    level: 80,
     clan: "Orebound",
     tipo: "Pedra, Terra",
     regiao: "Kanto",
@@ -3287,14 +3524,15 @@ const pokesarray = [
       { top: 58.4, left: 35.32, text: "Subsolo de shamouti" }
     ],
     moves: [
-      { "Rock throw": 70 },
-      { "Rock slide": 70 },
-      { "Stone edge": 70 },
-      { "Earth power": 70 },
-      { "Falling rocks": 75 },
-      { "Harden": 70 },
-      { "Rollout": 70 },
-      { "Selfdestruction": 75 },
+      { "Rock Throw": 80 },
+      { "Rock Slide": 80 },
+      { "Ancient Power": 80 },
+      { "Rock Wrecker": 80 },
+      { "Falling Rocks": 80 },
+      { Harden: 80 },
+      { Rollout: 80 },
+      { Swagger: 80 },
+      { Selfdestruction: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange rock", rar: "4.3%" },
@@ -3304,9 +3542,14 @@ const pokesarray = [
       { min: 1, max: 1, item: "Earth stone", rar: "Raro" },
       { min: 1, max: 1, item: "stone orb", rar: "31%" },
     ],
-    boost: 4,
-    booStone: "Rock stone",
+    boost: 3,
+    booStone: "Rock Stone ou Earth Stone",
     habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 23:09:50",
+    updateHistory: [ { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Ponyta",
@@ -3324,11 +3567,11 @@ const pokesarray = [
     evo: "Rapidash",
     mapas: [],
     moves: [
-      { "Quick attack": 20 },
-      { "Ember": 20 },
-      { "Flamethrower": 26 },
-      { "Fireball": 23 },
-      { "Stomp": 28 },
+      { "Quick Attack": 20 },
+      { Ember: 20 },
+      { Flamethrower: 20 },
+      { "Fireball": 20 },
+      { Stomp: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "fire horse foot", rar: "1.3%" },
@@ -3338,12 +3581,16 @@ const pokesarray = [
     evoStone: "Fire stone",
     boost: 10,
     booStone: "Fire stone",
-    habilidades: "Ride, Headbutt",
+    habilidades: "Light, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Rapidash",
     numero: 78,
-    level: 100,
+    level: 80,
     clan: "Volcanic",
     tipo: "Fogo",
     regiao: "Kanto",
@@ -3356,15 +3603,16 @@ const pokesarray = [
     preevo: "Ponyta",
     mapas: [],
     moves: [
-      { "Lightning horn": 100 },
-      { "Ember": 100 },
-      { "Flamethrower": 106 },
-      { "Incinerate": 100 },
-      { "Flare blitz": 110 },
-      { "Wild charge": 105 },
-      { "Tail whip": 100 },
-      { "Morning sun": 100 },
-      { "Blue flames": 110 },
+      { "Smart Strike": 80 },
+      { Ember: 80 },
+      { Flamethrower: 80 },
+      { "Flame Charge": 80 },
+      { "Flare Blitz": 80 },
+      { "Fire Spin": 80 },
+      { "Tail Whip": 80 },
+      { Megahorn: 80 },
+      { Confide: 80 },
+      { Protect: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "fire horse foot", rar: "8.3%" },
@@ -3374,7 +3622,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Fire stone",
-    habilidades: "Ride, Headbutt",
+    habilidades: "Light, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Slowpoke",
@@ -3390,12 +3642,12 @@ const pokesarray = [
     evo: "Slowbro, Slowking",
     mapas: [],
     moves: [
-      { "Aqua tail": 10 },
-      { "Headbutt": 10 },
-      { "Iron tail": 10 },
-      { "Waterball": 13 },
-      { "Water gun": 15 },
-      { "Confusion": 18 },
+      { "Aqua Tail": 10 },
+      { Headbutt: 10 },
+      { "Iron Tail": 10 },
+      { "Water Ball": 10 },
+      { "Water Gun": 10 },
+      { Confusion: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "slow tail", rar: "5%" },
@@ -3405,13 +3657,17 @@ const pokesarray = [
     ],
     evoStone: "Water stone, Ancient stone",
     boost: 15,
-    booStone: "Water stone",
+    booStone: "Water Stone ou Enigma Stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Slowbro",
     numero: 80,
-    level: 50,
+    level: 60,
     clan: "Seavell, Psycraft",
     tipo: "Água, Psiquico",
     regiao: "Kanto",
@@ -3423,15 +3679,17 @@ const pokesarray = [
     preevo: "Slowpoke",
     mapas: [],
     moves: [
-      { "Aqua tail": 50 },
-      { "Headbutt": 50 },
-      { "Iron tail": 50 },
-      { "Waterball": 50 },
-      { "Water pulse": 50 },
-      { "Confusion": 50 },
-      { "Psychic": 57 },
-      { "Yawn": 50 },
-      { "Amnesia": "Passiva" },
+      { "Aqua Tail": 60 },
+      { "Water Pulse": 60 },
+      { "Water Gun": 60 },
+      { Confusion: 60 },
+      { Psychic: 60 },
+      { Surf: 60 },
+      { "Heal Pulse": 60 },
+      { "Slack Off": 60 },
+      { Yawn: 60 },
+      { Amnesia: "P" },
+      { "Own Tempo": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "slow tail", rar: "8.9%" },
@@ -3440,9 +3698,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Water stone", rar: "Raro" },
       { min: 1, max: 1, item: "water pendant", rar: "28.5%" },
     ],
-    boost: 7,
-    booStone: "Water stone",
-    habilidades: "Headbutt, Teleport",
+    boost: 4,
+    booStone: "Water Stone ou Enigma Stone",
+    habilidades: "Light, Dig, Rock Smash, Headbutt, Teleport",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   }, //80
 
   {
@@ -3459,11 +3721,11 @@ const pokesarray = [
     evo: "Magneton",
     mapas: [],
     moves: [
-      { "Super sonic": 10 },
-      { "Thunder shock": 10 },
-      { "Spark": 10 },
-      { "Electro ball": 10 },
-      { "Sonicboom": 15 },
+      { "Supersonic": 10 },
+      { "Thunder Shock": 10 },
+      { Spark: 10 },
+      { "Electro Ball": 10 },
+      { Sonicboom: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "magnet", rar: "3.6%" },
@@ -3475,6 +3737,10 @@ const pokesarray = [
     boost: 15,
     booStone: "Thunder stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//81
   {
     nome: "Magneton",
@@ -3492,14 +3758,14 @@ const pokesarray = [
     evo: "Magnezone",
     mapas: [],
     moves: [
-      { "Super sonic": 80 },
-      { "Thunder shock": 80 },
-      { "Spark": 80 },
-      { "Tri attack": 95 },
-      { "Thunder": 88 },
-      { "Electric storm": 92 },
-      { "Electro ball": 80 },
-      { "Flash cannon": 88 },
+      { "Iron Spiner": 80 },
+      { "Thunder Shock": 80 },
+      { "Scrap Throw": 80 },
+      { "Tri-Attack": 80 },
+      { "Gyro Ball": 80 },
+      { "Magnet Pull": 80 },
+      { "Heavy Metal": 80 },
+      { Gravity: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "magnet", rar: "9.3%" },
@@ -3512,6 +3778,10 @@ const pokesarray = [
     boost: 3,
     booStone: "Thunder stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Farfetchd",
@@ -3528,14 +3798,14 @@ const pokesarray = [
     fast: "yes",
     mapas: [],
     moves: [
-      { "Sand attack": 50 },
-      { "Drill peck": 50 },
-      { "Stickmerang": 52 },
-      { "Stickslash": 51 },
-      { "Stick throw": 54 },
-      { "Night slash": 50 },
-      { "Air slash": 53 },
-      { "Agility": 50 },
+      { "Sand Attack": 50 },
+      { "Drill Peck": 50 },
+      { Stickmerang: 50 },
+      { Stickslash: 50 },
+      { "Stick Throw": 50 },
+      { "Night Slash": 50 },
+      { "Air Slash": 50 },
+      { Agility: 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "Farfetchd stick", rar: "4.3%" },
@@ -3544,9 +3814,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Feather stone", rar: "Raro" },
       { min: 1, max: 1, item: "feather", rar: "37.0%" },
     ],
-    booStone: "Feather stone",
-    boost: 7,
+    booStone: "Feather Stone ou Heart Stone",
+    boost: 5,
     habilidades: "Cut, Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Doduo",
@@ -3563,11 +3837,11 @@ const pokesarray = [
     evo: "Dodrio",
     mapas: [],
     moves: [
-      { "Sand attack": 10 },
-      { "Peck": 10 },
-      { "Drill peck": 10 },
-      { "Rage": 15 },
-      { "Agility": 15 },
+      { "Sand Attack": 10 },
+      { Peck: 10 },
+      { "Drill Peck": 10 },
+      { Rage: 10 },
+      { Agility: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "dodrio feather", rar: "1.4%" },
@@ -3577,13 +3851,17 @@ const pokesarray = [
     ],
     evoStone: "Feather stone",
     boost: 15,
-    booStone: "Feather stone",
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "Ride",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dodrio",
     numero: 85,
-    level: 50,
+    level: 60,
     clan: "Wingeon, Gardestrike",
     tipo: "Voador, Normal",
     regiao: "Kanto",
@@ -3596,14 +3874,16 @@ const pokesarray = [
     preevo: "Doduo",
     mapas: [],
     moves: [
-      { "Sand attack": 50 },
-      { "Peck": 50 },
-      { "Drill peck": 50 },
-      { "Pluck": 55 },
-      { "Tri attack": 58 },
-      { "Roost": 55 },
-      { "Rage": 50 },
-      { "Agility": 50 },
+      { "Sand Attack": 60 },
+      { Peck: 60 },
+      { "Drill Peck": 60 },
+      { Pluck: 60 },
+      { "Tri-Attack": 60 },
+      { Roost: 60 },
+      { "Aerial Ace": 60 },
+      { Rage: 60 },
+      { Agility: 60 },
+      { "Early Bird": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dodrio feather", rar: "4.3%" },
@@ -3613,9 +3893,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
       { min: 1, max: 1, item: "bird beak", rar: "13.6%" },
     ],
-    boost: 7,
-    booStone: "Feather stone",
+    boost: 4,
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "Ride",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Seel",
@@ -3632,12 +3916,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Headbutt": 20 },
-      { "Aqua tail": 20 },
-      { "Ice shards": 20 },
-      { "Ice beam": 24 },
-      { "Icy wind": 26 },
-      { "Aurora beam": 28 },
+      { Headbutt: 20 },
+      { "Aqua Tail": 20 },
+      { "Ice Shard": 20 },
+      { "Ice Beam": 20 },
+      { "Icy Wind": 20 },
+      { "Aurora Beam": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "seal tail", rar: "1.3%" },
@@ -3649,6 +3933,10 @@ const pokesarray = [
     boost: 10,
     booStone: "Water stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dewgong",
@@ -3666,16 +3954,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Aqua tail": 60 },
-      { "Headbutt": 60 },
-      { "Brine": 60 },
-      { "Ice shards": 60 },
-      { "Ice beam": 60 },
-      { "Icy wind": 60 },
-      { "Aurora beam": 64 },
-      { "Blizzard": 66 },
-      { "Rest": 66 },
-      { "Safeguard": 65 },
+      { Headbutt: 60 },
+      { "Aqua Tail": 60 },
+      { Brine: 60 },
+      { "Ice Shard": 60 },
+      { "Ice Beam": 60 },
+      { "Icy Wind": 60 },
+      { "Aurora Beam": 60 },
+      { Blizzard: 60 },
+      { "Aqua Ring": 60 },
+      { Growl: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "seal tail", rar: "1.3%" },
@@ -3690,8 +3978,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "goggles", rar: "Raro" },
     ],
     boost: 4,
-    booStone: "Ice stone",
+    booStone: "Water Stone ou Ice Stone",
     habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Grimer",
@@ -3708,12 +4000,12 @@ const pokesarray = [
     evo: "Muk",
     mapas: [],
     moves: [
-      { "Mud shot": 10 },
-      { "Acid": 10 },
-      { "Sludge": 10 },
-      { "Mud bomb": 13 },
-      { "Poison bomb": 15 },
-      { "Harden": 17 },
+      { "Mud Shot": 10 },
+      { Acid: 10 },
+      { Sludge: 10 },
+      { "Mud Bomb": 10 },
+      { "Poison Bomb": 10 },
+      { Harden: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "gosme", rar: "5.0%" },
@@ -3723,6 +4015,10 @@ const pokesarray = [
     boost: 15,
     booStone: "Venom stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Muk",
@@ -3742,15 +4038,15 @@ const pokesarray = [
       { top: 58.32, left: 34.94, text: "Shamouti - Subterrâneo, entrada no buraco a direita do CP Externo (VIP)" }
     ],
     moves: [
-      { "Mud shot": 80 },
-      { "Acid": 80 },
-      { "Sludge": 80 },
-      { "Mud bomb": 80 },
-      { "Poison bomb": 80 },
-      { "Venoshock": 92 },
-      { "Sludge wave": 80 },
-      { "Harden": 90 },
-      { "Acid armor": 88 },
+      { "Mud Shot": 80 },
+      { Acid: 80 },
+      { Sludge: 80 },
+      { Toxic: 80 },
+      { "Sludge Bomb": 80 },
+      { "Mortal Gas": 80 },
+      { "Swamp Mist": 80 },
+      { Harden: 80 },
+      { "Poison Touch": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "sticky hand", rar: "8.1%" },
@@ -3759,7 +4055,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Venom stone",
-    habilidades: "",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shellder",
@@ -3775,12 +4075,12 @@ const pokesarray = [
     evo: "Cloyster",
     mapas: [],
     moves: [
-      { "Lick": 10 },
-      { "Super sonic": 17 },
-      { "Bubbles": 14 },
-      { "Clamp": 18 },
-      { "Ice beam": 15 },
-      { "Harden": 16 },
+      { Lick: 10 },
+      { "Supersonic": 10 },
+      { Bubbles: 10 },
+      { Clamp: 10 },
+      { "Ice Beam": 10 },
+      { Harden: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "locksmith of shell", rar: "4.3%" },
@@ -3790,9 +4090,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "3.0%" },
     ],
     evoStone: "Ice stone",
-    boost: 20,
+    boost: 15,
     booStone: "Water stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Cloyster",
@@ -3810,14 +4114,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Lick": 60 },
-      { "Super sonic": 60 },
-      { "Bubbles": 60 },
-      { "Clamp": 60 },
-      { "Ice beam": 60 },
-      { "Aurora beam": 64 },
-      { "Blizzard": 68 },
-      { "Harden": 62 },
+      { Supersonic: 60 },
+      { "Icicle Spear": 60 },
+      { Clamp: 60 },
+      { Whirlpool: 60 },
+      { "Ice Beam": 60 },
+      { "Aurora Beam": 60 },
+      { Blizzard: 60 },
+      { Withdraw: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange spike", rar: "4.3%" },
@@ -3829,8 +4133,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "26.0%" },
     ],
     boost: 4,
-    booStone: "Ice stone",
+    booStone: "Water Stone ou Ice Stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 23:09:50",
+    updateHistory: [ { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Gastly",
@@ -3847,13 +4156,12 @@ const pokesarray = [
     evo: "Haunter",
     mapas: [],
     moves: [
-      { "Lick": 20 },
-      { "Shadow ball": 20 },
-      { "Night shade": 26 },
-      { "Invisible": 24 },
-      { "Hypnosis": 28 },
-      { "Fear": 30 },
-      { "Levitate": "Passiva" },
+      { Lick: 20 },
+      { "Shadow Ball": 20 },
+      { "Night Shade": 20 },
+      { Hypnosis: 20 },
+      { Fear: 20 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "traces of ghost", rar: "Raro" },
@@ -3862,13 +4170,17 @@ const pokesarray = [
     ],
     evoStone: "Darkness stone",
     boost: 10,
-    booStone: "Darkness stone",
+    booStone: "Darkness Stone ou Venom Stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Haunter",
     numero: 93,
-    level: 40,
+    level: 50,
     clan: "Malefic",
     tipo: "Fantasma, Venenoso",
     regiao: "Kanto",
@@ -3881,16 +4193,14 @@ const pokesarray = [
     evo: "Gengar",
     mapas: [],
     moves: [
-      { "Lick": 40 },
-      { "Shadow ball": 40 },
-      { "Night shade": 40 },
-      { "Shadow storm": 55 },
-      { "Invisible": 40 },
-      { "Nightmare": 45 },
-      { "Hypnosis": 40 },
-      { "Fear": 40 },
-      { "Dark accurate": 1000 },
-      { "Levitate": "Passiva" },
+      { Lick: 50 },
+      { "Shadow Ball": 50 },
+      { "Night Shade": 50 },
+      { "Shadow Storm": 50 },
+      { Invisible: 50 },
+      { Nightmare: 50 },
+      { Hypnosis: 50 },
+      { Fear: 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "traces of ghost", rar: "2.3%" },
@@ -3900,14 +4210,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
     ],
     evoStone: "Darkness stone",
-    boost: 6,
-    booStone: "Darkness stone",
-    habilidades: "Control mind",
+    boost: 5,
+    booStone: "Darkness Stone ou Venom Stone",
+    habilidades: "Control Minds",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Gengar",
     numero: 94,
-    level: 80,
+    level: 100,
     clan: "Malefic",
     tipo: "Fantasma, Venenoso",
     regiao: "Kanto",
@@ -3919,17 +4233,15 @@ const pokesarray = [
     preevo: "Haunter",
     mapas: [],
     moves: [
-      { "Lick": 80 },
-      { "Shadow ball": 80 },
-      { "Shadow punch": 84 },
-      { "Night shade": 80 },
-      { "Shadow storm": 86 },
-      { "Invisible": 80 },
-      { "Nightmare": 80 },
-      { "Hypnosis": 80 },
-      { "Fear": 80 },
-      { "Dark accurate": 1000 },
-      { "Levitate": "Passiva" },
+      { "Creepy Lick": 100 },
+      { "Shadow Ball": 100 },
+      { "Shadow Punch": 100 },
+      { Astonish: 100 },
+      { "Shadow Storm": 100 },
+      { Nightmare: 100 },
+      { Hypnosis: 100 },
+      { "Shadow Claw": 100 },
+      { "Scare Master": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "traces of ghost", rar: "5.3%" },
@@ -3938,14 +4250,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "Darkness stone", rar: "Raro" },
       { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
     ],
-    boost: 3,
-    booStone: "Darkness stone",
-    habilidades: "Levitate, Control mind",
+    boost: 2,
+    booStone: "Darkness Stone ou Venom Stone",
+    habilidades: "Levitate, Dark Portal, Control Minds",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Onix",
     numero: 95,
-    level: 50,
+    level: 60,
     clan: "Orebound",
     tipo: "Pedra, Terra",
     regiao: "Kanto",
@@ -3958,14 +4274,14 @@ const pokesarray = [
     evo: "Steelix",
     mapas: [],
     moves: [
-      { "Sand attack": 50 },
-      { "Iron tail": 50 },
-      { "Rock throw": 50 },
-      { "Rock slide": 50 },
-      { "Earth power": 50 },
-      { "Falling rocks": 55 },
-      { "Earthquake": 58 },
-      { "Harden": 50 },
+      { "Sand Attack": 60 },
+      { "Iron Tail": 60 },
+      { "Rock Throw": 60 },
+      { "Rock Slide": 60 },
+      { "Earth Power": 60 },
+      { "Falling Rocks": 60 },
+      { Harden: 60 },
+      { "Wide Guard": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "Onix tail", rar: "4.3%" },
@@ -3976,9 +4292,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "stone orb", rar: "25.0%" },
     ],
     evoStone: "Metal stone",
-    boost: 5,
-    booStone: "Rock stone",
+    boost: 4,
+    booStone: "Rock Stone ou Earth Stone",
     habilidades: "Dig, Rock smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Drowzee",
@@ -3995,12 +4315,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Headbutt": 30 },
-      { "Psybeam": 30 },
-      { "Confusion": 30 },
-      { "Dream eater": 32 },
-      { "Hypnosis": 32 },
-      { "Nasty plot": 38 },
+      { Headbutt: 30 },
+      { Psywave: 30 },
+      { Psybeam: 30 },
+      { Confusion: 30 },
+      { "Dream Eater": 30 },
+      { Hypnosis: 30 },
+      { "Nasty Splot": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "linearly guided hypnose", rar: "2.0%" },
@@ -4008,14 +4329,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "future orb", rar: "17.5%" },
     ],
     evoStone: "Enigma stone",
-    boost: 10,
+    boost: 8,
     booStone: "Enigma stone",
     habilidades: "Teleport, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hypno",
     numero: 97,
-    level: 50,
+    level: 60,
     clan: "Psycraft",
     tipo: "Psiquico",
     regiao: "Kanto",
@@ -4028,15 +4353,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Psy pulse": 50 },
-      { "Psywave": 50 },
-      { "Psybeam": 50 },
-      { "Confusion": 50 },
-      { "Psychic": 53 },
-      { "Dream eater": 56 },
-      { "Hypnosis": 55 },
-      { "Nasty plot": 55 },
-      { "Miracle eye": 1000 },
+      { "Psy Pulse": 60 },
+      { Psywave: 60 },
+      { Psybeam: 60 },
+      { Confusion: 60 },
+      { Synchronoise: 60 },
+      { Psychic: 60 },
+      { "Dream Eater": 60 },
+      { Hypnosis: 60 },
+      { "Nasty Plot": 60 },
+      { Insomnia: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "linearly guided hypnose", rar: "4.3%" },
@@ -4046,7 +4372,11 @@ const pokesarray = [
     ],
     boost: 4,
     booStone: "Enigma stone",
-    habilidades: "Teleport, Light, Headbutt, Blink",
+    habilidades: "Teleport, Light, Blink, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Krabby",
@@ -4063,11 +4393,11 @@ const pokesarray = [
     evo: "Kingler",
     mapas: [],
     moves: [
-      { "Bubbles": 10 },
-      { "Bubblebeam": 12 },
-      { "Mud shot": 10 },
-      { "Crabhammer": 15 },
-      { "Harden": 13 },
+      { "Mud Shot": 10 },
+      { Bubbles: 10 },
+      { "Bubble Beam": 10 },
+      { Crabhammer: 10 },
+      { Harden: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "crab claw", rar: "1.3%" },
@@ -4075,14 +4405,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "18.0%" },
     ],
     evoStone: "Water stone",
-    boost: 20,
+    boost: 15,
     booStone: "Water stone",
     habilidades: "Dig, Rock Smash, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Kingler",
     numero: 99,
-    level: 40,
+    level: 60,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -4094,15 +4428,15 @@ const pokesarray = [
     preevo: "Krabby",
     mapas: [],
     moves: [
-      { "Bubbles": 40 },
-      { "Bubblebeam": 40 },
-      { "Mud shot": 40 },
-      { "Crabhammer": 40 },
-      { "Metal claw": 45 },
-      { "Brine": 40 },
-      { "Hyper beam": 46 },
-      { "Guillotine": 48 },
-      { "Harden": 40 },
+      { "Mud Shot": 60 },
+      { Bubbles: 60 },
+      { "Bubble Beam": 60 },
+      { Guillotine: 60 },
+      { Crabhammer: 60 },
+      { "Razor Shell": 60 },
+      { "Hyper Beam": 60 },
+      { Harden: 60 },
+      { "Swords Dance": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "crab claw", rar: "4.3%" },
@@ -4110,9 +4444,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Water stone", rar: "Raro" },
       { min: 1, max: 1, item: "water pendant", rar: "27.0%" },
     ],
-    boost: 7,
+    boost: 4,
     booStone: "Water stone",
     habilidades: "Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Voltorb",
@@ -4129,25 +4467,29 @@ const pokesarray = [
     evo: "Electrode",
     mapas: [],
     moves: [
-      { "Thunder shock": 10 },
-      { "Spark": 10 },
-      { "Thunder wave": 12 },
-      { "Rollout": 15 },
-      { "Selfdestruction": 20 },
+      { "Thunder Shock": 10 },
+      { Spark: 10 },
+      { "Thunder Wave": 10 },
+      { Rollout: 10 },
+      { Selfdestruction: 10 }
     ],
     loots: [
       { min: 1, max: 5, item: "screw", rar: "80%" },
       { min: 1, max: 1, item: "electric box", rar: "8.0%" },
     ],
     evoStone: "Thunder stone",
-    boost: 20,
+    boost: 15,
     booStone: "Thunder stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Electrode",
     numero: 101,
-    level: 40,
+    level: 50,
     clan: "Raibolt",
     tipo: "Elétrico",
     regiao: "Kanto",
@@ -4159,22 +4501,27 @@ const pokesarray = [
     preevo: "Voltorb",
     mapas: [],
     moves: [
-      { "Thunder shock": 40 },
-      { "Spark": 40 },
-      { "Thunder wave": 40 },
-      { "Rollout": 40 },
-      { "Charge beam": 40 },
-      { "Electric storm": 45 },
-      { "Selfdestruction": 40 },
+      { Charge: 50 },
+      { "Thunder Shock": 50 },
+      { Spark: 50 },
+      { Rollout: 50 },
+      { "Electro Ball": 50 },
+      { "Charge Beam": 50 },
+      { Discharge: 50 },
+      { Selfdestruction: 50 }
     ],
     loots: [
       { min: 1, max: 5, item: "screw", rar: "80%" },
       { min: 1, max: 1, item: "Thunder stone", rar: "Raro" },
       { min: 1, max: 1, item: "electric box", rar: "8.0%" },
     ],
-    boost: 8,
+    boost: 5,
     booStone: "Thunder stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Exeggcute",
@@ -4191,10 +4538,10 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Hypnosis": 14 },
-      { "Leech seed": 10 },
-      { "Egg bomb": 10 },
-      { "Confusion": 16 },
+      { Hypnosis: 10 },
+      { "Leech Seed": 10 },
+      { "Egg Bomb": 10 },
+      { Confusion: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "plant foot", rar: "Raro" },
@@ -4203,9 +4550,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "leaves", rar: "28.0%" },
     ],
     evoStone: "Leaf stone, Enigma stone",
-    boost: 20,
-    booStone: "Leaf stone",
-    habilidades: "",
+    boost: 15,
+    booStone: "Leaf Stone ou Enigma Stone",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Exeggutor",
@@ -4223,15 +4574,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Seed bomb": 100 },
-      { "Egg bomb": 100 },
-      { "Leaf blade": 100 },
-      { "Confusion": 100 },
-      { "Psyshock": 108 },
-      { "Wood hammer": 100 },
-      { "Solar beam": 104 },
-      { "Leaf storm": 115 },
-      { "Hypnosis": 100 },
+      { "Seed Bomb": 100 },
+      { "Egg Bomb": 100 },
+      { "Leaf Blade": 100 },
+      { Confusion: 100 },
+      { Psyshock: 100 },
+      { "Wood Hammer": 100 },
+      { "Solar Beam": 100 },
+      { "Leaf Storm": 100 },
+      { Hypnosis: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "plant foot", rar: "8.3%" },
@@ -4240,9 +4591,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Leaf stone", rar: "Raro" },
       { min: 1, max: 1, item: "leaves", rar: "41.5%" },
     ],
-    boost: 3,
-    booStone: "Leaf stone",
-    habilidades: "Cut, Teleport, Blink",
+    boost: 2,
+    booStone: "Leaf Stone ou Enigma Stone",
+    habilidades: "Light, Headbutt, Teleport, Cut, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Cubone",
@@ -4263,11 +4618,11 @@ const pokesarray = [
       { top: 49.28, left: 35.33, text: "Magma Island - Parte Norte da ilha (VIP)" }
     ],
     moves: [
-      { "Headbutt": 20 },
-      { "Bonemerang": 20 },
-      { "Bone club": 22 },
-      { "Bone rush": 25 },
-      { "Rage": 26 },
+      { Headbutt: 20 },
+      { Bonemerang: 20 },
+      { "Bone club": 20 },
+      { "Bone Rush": 20 },
+      { Rage: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "bone", rar: "1.5%" },
@@ -4277,7 +4632,11 @@ const pokesarray = [
     evoStone: "Earth stone",
     boost: 10,
     booStone: "Earth stone",
-    habilidades: "Dig, Rock smash, Headbutt, Cut",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Marowak",
@@ -4299,16 +4658,14 @@ const pokesarray = [
       { top: 49.36, left: 35.98, text: "Magma Island - Parte Norte da ilha (VIP)" }
     ],
     moves: [
-      { "Mud shot": 50 },
-      { "Headbutt": 50 },
-      { "Bonemerang": 50 },
+      { "Mud Shot": 50 },
+      { Headbutt: 50 },
+      { Bonemerang: 50 },
       { "Bone club": 50 },
-      { "Bone rush": 50 },
-      { "Earth power": 54 },
-      { "Bulldoze": 56 },
-      { "Rage": 55 },
-      { "Smack down": 58 },
-      { "Bone spin": "Passiva" },
+      { "Bone Rush": 50 },
+      { "Earth Power": 50 },
+      { Bulldoze: 50 },
+      { Rage: 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "bone", rar: "4.3%" },
@@ -4318,7 +4675,11 @@ const pokesarray = [
     ],
     boost: 5,
     booStone: "Earth stone",
-    habilidades: "Dig, Rock smash, Headbutt, Cut",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hitmonlee",
@@ -4335,13 +4696,14 @@ const pokesarray = [
     preevo: "Tyrogue",
     mapas: [],
     moves: [
-      { "Triple kick lee": 60 },
-      { "Mega kick": 60 },
-      { "Hi jump kick": 65 },
-      { "Furious legs": 60 },
-      { "Demon kicker": "Passiva" },
-      { "Evasion": "Passiva" },
-      { "Foresight": "Passiva" },
+      { "Triple Kick Lee": 60 },
+      { "Mega Kick": 60 },
+      { "Hi Jump Kick": 60 },
+      { "Furious Legs": 60 },
+      { "Demon Kicker": "P" },
+      { Evasion: "P" },
+      { Foresight: "P" },
+      { Limber: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "kick machine", rar: "4.3%" },
@@ -4352,6 +4714,10 @@ const pokesarray = [
     boost: 4,
     booStone: "Punch stone",
     habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hitmonchan",
@@ -4368,14 +4734,16 @@ const pokesarray = [
     preevo: "Tyrogue",
     mapas: [],
     moves: [
-      { "Triple punch": 60 },
-      { "Mega punch": 60 },
-      { "Focus punch": 65 },
-      { "Ultimate champion": 60 },
-      { "Elemental hands": 60 },
-      { "Demon puncher": "Passiva" },
-      { "Evasion": "Passiva" },
-      { "Foresight": "Passiva" },
+      { "Triple Punch": 60 },
+      { "Mega Punch": 60 },
+      { "Focus Punch": 60 },
+      { "Ultimate Champion": 60 },
+      { "Elemental Hands": 60 },
+      { Detect: 60 },
+      { Revenge: 60 },
+      { "Demon Puncher": "P" },
+      { Evasion: "P" },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "punch machine", rar: "4.3%" },
@@ -4386,6 +4754,10 @@ const pokesarray = [
     boost: 4,
     booStone: "Punch stone",
     habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lickitung",
@@ -4403,24 +4775,30 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Lick": 60 },
-      { "Shadow ball": 60 },
-      { "Slam": 60 },
-      { "Body slam": 64 },
-      { "Mega punch": 60 },
-      { "Iron tail": 60 },
-      { "Squishy licking": 65 },
-      { "Super sonic": 60 },
-      { "Defense curl": 60 },
+      { Lick: 60 },
+      { "Shadow Ball": 60 },
+      { Slam: 60 },
+      { "Body Slam": 60 },
+      { "Iron Tail": 60 },
+      { "Squishy Licking": 60 },
+      { "Supersonic": 60 },
+      { "Tongue Hook": 60 },
+      { "Belly Drum": 60 },
+      { Protect: 60 },
+      { "Own Tempo": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "tongue", rar: "4.3%" },
       { min: 1, max: 28, item: "rubber ball", rar: "80%" },
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
     ],
-    boost: 5,
+    boost: 4,
     booStone: "Heart stone",
-    habilidades: "Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Koffing",
@@ -4436,14 +4814,13 @@ const pokesarray = [
     evo: "Weezing",
     mapas: [],
     moves: [
-      { "Mud shot": 10 },
-      { "Acid": 10 },
-      { "Headbutt": 10 },
-      { "Mud bomb": 13 },
-      { "Poison bomb": 15 },
-      { "Poison gas": 15 },
-      { "Selfdestruction": 20 },
-      { "Levitate": "Passiva" },
+      { "Mud Shot": 10 },
+      { Acid: 10 },
+      { Headbutt: 10 },
+      { "Mud Bomb": 10 },
+      { "Poison Bomb": 10 },
+      { "Poison Gas": 10 },
+      { Selfdestruction: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "venom flute", rar: "1.8%" },
@@ -4452,12 +4829,16 @@ const pokesarray = [
     evoStone: "Venom stone",
     boost: 15,
     booStone: "Venom stone",
-    habilidades: "Headbutt",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Weezing",
     numero: 110,
-    level: 50,
+    level: 60,
     clan: "Malefic",
     tipo: "Venenoso",
     regiao: "Kanto",
@@ -4468,24 +4849,29 @@ const pokesarray = [
     preevo: "Koffing",
     mapas: [],
     moves: [
-      { "Mud shot": 50 },
-      { "Acid": 50 },
-      { "Headbutt": 50 },
-      { "Mud bomb": 52 },
-      { "Poison bomb": 55 },
-      { "Poison gas": 50 },
-      { "Mortal gas": 56 },
-      { "Selfdestruction": 58 },
-      { "Levitate": "Passiva" },
+      { Acid: 60 },
+      { Sludge: 60 },
+      { "Poison Gas": 60 },
+      { "Sludge Bomb": 60 },
+      { Venoshock: 60 },
+      { "Mortal Gas": 60 },
+      { Smog: 60 },
+      { "Clear Smog": 60 },
+      { Selfdestruction: 60 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "venom flute", rar: "1.8%" },
       { min: 1, max: 8, item: "bottle of poison", rar: "80%" },
       { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
     ],
-    boost: 8,
+    boost: 4,
     booStone: "Venom stone",
-    habilidades: "Headbutt",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Rhyhorn",
@@ -4503,12 +4889,12 @@ const pokesarray = [
     evo: "Rhydon, Rhyperior",
     mapas: [],
     moves: [
-      { "Horn attack": 30 },
-      { "Stone edge": 30 },
-      { "Rock throw": 30 },
-      { "Dig": 32 },
-      { "Bulldoze": 33 },
-      { "Drill run": 37 },
+      { "Horn Attack": 30 },
+      { "Stone Edge": 30 },
+      { "Rock Throw": 30 },
+      { Dig: 30 },
+      { Bulldoze: 30 },
+      { "Drill Run": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "horn drill", rar: "1.9%" },
@@ -4518,9 +4904,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "stone orb", rar: "9.0%" },
     ],
     evoStone: "Earth stone, Rock stone",
-    boost: 9,
+    boost: 8,
     booStone: "Earth stone",
     habilidades: "Dig, Rock Smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Rhydon",
@@ -4539,15 +4929,14 @@ const pokesarray = [
     evo: "Rhyperior",
     mapas: [],
     moves: [
-      { "Horn attack": 80 },
-      { "Stone edge": 80 },
-      { "Rock throw": 80 },
-      { "Dig": 82 },
-      { "Horn drill": 80 },
-      { "Bulldoze": 83 },
-      { "Hammer arm": 80 },
-      { "Fissure": 90 },
-      { "Drill run": 87 },
+      { "Horn Attack": 80 },
+      { "Horn Drill": 80 },
+      { "Horn Burst": 80 },
+      { "Earth Power": 80 },
+      { "Ground Collapse": 80 },
+      { Bulldoze: 80 },
+      { Fissure: 80 },
+      { "Scary Face": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "horn drill", rar: "4.3%" },
@@ -4560,8 +4949,12 @@ const pokesarray = [
     ],
     evoStone: "Protector",
     boost: 3,
-    booStone: "Earth stone",
+    booStone: "Earth Stone ou Rock Stone",
     habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Chansey",
@@ -4578,12 +4971,14 @@ const pokesarray = [
     mapas: [],
     moves: [
       { "Doubleslap": 60 },
-      { "Egg bomb": 60 },
-      { "Great love": 68 },
-      { "Sing": 60 },
-      { "Healarea": 60 },
-      { "Protection": 66 },
-      { "Egg rain": 66 },
+      { "Egg Bomb": 60 },
+      { "Great Love": 60 },
+      { Captivate: 60 },
+      { "Healing Wish": 60 },
+      { "Emergency Call": 60 },
+      { Protection: 60 },
+      { "Egg Rain": 60 },
+      { "Helping Hand": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "Chansey egg", rar: "2.0%" },
@@ -4593,6 +4988,10 @@ const pokesarray = [
     boost: 4,
     booStone: "Heart stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Tangela",
@@ -4609,14 +5008,14 @@ const pokesarray = [
     evo: "Tangrowth",
     mapas: [],
     moves: [
-      { "Absorb": 50 },
-      { "Leech seed": 50 },
-      { "Vine whip": 50 },
-      { "Power whip": 57 },
-      { "Poison powder": 50 },
-      { "Sleep powder": 55 },
-      { "Stun spore": 50 },
-      { "Mega drain": "Passiva" },
+      { "Seed Bomb": 50 },
+      { "Leech Seed": 50 },
+      { "Vine Whip": 50 },
+      { "Power Whip": 50 },
+      { "Poison Powder": 50 },
+      { "Sleep Powder": 50 },
+      { "Stun Spore": 50 },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "blue vines", rar: "9.3%" },
@@ -4626,7 +5025,11 @@ const pokesarray = [
     evoStone: "Gaia Tentacles",
     boost: 5,
     booStone: "Leaf stone",
-    habilidades: "Cut, Headbutt",
+    habilidades: "Light, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Kangaskhan",
@@ -4644,16 +5047,18 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 80 },
-      { "Dizzy punch": 80 },
-      { "Headbutt": 80 },
-      { "Mega punch": 80 },
-      { "Crunch": 80 },
-      { "Sucker punch": 83 },
-      { "Comet punch": 80 },
-      { "Epicenter": 94 },
-      { "Rage": 80 },
-      { "Groundshock": "Passiva" },
+      { Bite: 80 },
+      { "Dizzy Punch": 80 },
+      { Headbutt: 80 },
+      { "Mega Punch": 80 },
+      { Crunch: 80 },
+      { "Sucker Punch": 80 },
+      { "Comet Punch": 80 },
+      { Epicenter: 80 },
+      { Rage: 80 },
+      { Groundshock: "P" },
+      { "Early Bird": "P" },
+      { Scrappy: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "kanga ear", rar: "8.3%" },
@@ -4663,7 +5068,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Heart stone",
-    habilidades: "Rock smash, Headbutt",
+    habilidades: "Cut, Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Horsea",
@@ -4680,25 +5089,29 @@ const pokesarray = [
     evo: "Seadra, Kingdra",
     mapas: [],
     moves: [
-      { "Mud shot": 10 },
-      { "Bubbles": 10 },
-      { "Bubblebeam": 15 },
-      { "Water gun": 12 },
-      { "Water ball": 10 },
+      { "Mud Shot": 10 },
+      { Bubbles: 10 },
+      { "Bubble Beam": 10 },
+      { "Water Gun": 10 },
+      { "Water Ball": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "seahorse tail", rar: "Raro" },
       { min: 1, max: 5, item: "water gem", rar: "80%" },
     ],
     evoStone: "Water stone",
-    boost: 20,
+    boost: 15,
     booStone: "Water stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Seadra",
     numero: 117,
-    level: 40,
+    level: 50,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -4711,15 +5124,15 @@ const pokesarray = [
     evo: "Kingdra",
     mapas: [],
     moves: [
-      { "Mud shot": 40 },
-      { "Smokescreen": 40 },
-      { "Water pulse": 40 },
-      { "Bubbles": 40 },
-      { "Bubblebeam": 40 },
-      { "Water gun": 40 },
-      { "Dragon pulse": 45 },
-      { "Hydro cannon": 48 },
-      { "Dragon rage": "Passiva" },
+      { "Mud Shot": 50 },
+      { Smokescreen: 50 },
+      { "Water Gun": 50 },
+      { Bubbles: 50 },
+      { "Bubble Beam": 50 },
+      { "Water Pulse": 50 },
+      { "Dragon Pulse": 50 },
+      { "Hydro Cannon": 50 },
+      { "Dragon Rage": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "seahorse tail", rar: "2.0%" },
@@ -4730,9 +5143,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "fins", rar: "Raro" },
     ],
     evoStone: "Crystal stone, Water stone",
-    boost: 6,
+    boost: 5,
     booStone: "Water stone",
     habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Goldeen",
@@ -4749,12 +5166,12 @@ const pokesarray = [
     evo: "Seaking",
     mapas: [],
     moves: [
-      { "Super sonic": 18 },
-      { "Horn attack": 10 },
-      { "Poison sting": 10 },
-      { "Water gun": 12 },
-      { "Water pulse": 15 },
-      { "Aqua tail": 12 },
+      { "Supersonic": 10 },
+      { "Horn Attack": 10 },
+      { "Aqua Tail": 10 },
+      { "Water Pulse": 10 },
+      { "Water Gun": 10 },
+      { "Horn Drill": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "fish fin", rar: "1.2%" },
@@ -4762,14 +5179,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "horn", rar: "3.5%" },
     ],
     evoStone: "Water stone",
-    boost: 20,
+    boost: 15,
     booStone: "Water stone",
     habilidades: "Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Seaking",
     numero: 119,
-    level: 40,
+    level: 50,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -4780,14 +5201,15 @@ const pokesarray = [
     preevo: "Goldeen",
     mapas: [],
     moves: [
-      { "Super sonic": 40 },
-      { "Horn attack": 40 },
-      { "Waterfall": 45 },
-      { "Water gun": 40 },
-      { "Water pulse": 40 },
-      { "Aqua tail": 40 },
-      { "Horn drill": 48 },
-      { "Aqua ring": 40 },
+      { Supersonic: 50 },
+      { "Horn Attack": 50 },
+      { "Aqua Tail": 50 },
+      { "Water Pulse": 50 },
+      { Soak: 50 },
+      { Waterfall: 50 },
+      { "Horn Drill": 50 },
+      { "Aqua Ring": 50 },
+      { "Water Veil": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "fish fin", rar: "4.3%" },
@@ -4798,9 +5220,14 @@ const pokesarray = [
       { min: 1, max: 1, item: "air tank", rar: "Raro" },
       { min: 1, max: 1, item: "fins", rar: "Raro" },
     ],
-    boost: 8,
+    boost: 5,
     booStone: "Water stone",
     habilidades: "Surf",
+    updatedAt: "22/03/2026, 23:09:50",
+    updateHistory: [ { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Staryu",
@@ -4817,13 +5244,13 @@ const pokesarray = [
     evo: "Starmie",
     mapas: [],
     moves: [
-      { "Swift": 20 },
-      { "Water gun": 20 },
-      { "Bubblebeam": 23 },
-      { "Psyshock": 28 },
-      { "Psychic": 20 },
-      { "Harden": 20 },
-      { "Recover": 25 },
+      { Swift: 20 },
+      { "Water Gun": 20 },
+      { "Bubble Beam": 20 },
+      { Psyshock: 20 },
+      { Psychic: 20 },
+      { Harden: 20 },
+      { Recover: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "gem star", rar: "1.9%" },
@@ -4831,9 +5258,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "ruby", rar: "4.5%" },
     ],
     evoStone: "Water stone",
-    boost: 15,
+    boost: 10,
     booStone: "Water stone",
-    habilidades: "Surf",
+    habilidades: "Light, Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//120
   
     {
@@ -4852,15 +5283,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Swift": 80 },
-      { "Water gun": 80 },
-      { "Power gem": 80 },
-      { "Bubblebeam": 80 },
-      { "Rapid spin": 88 },
-      { "Psychic": 80 },
-      { "Calm mind": 80 },
-      { "Hydropump": 85 },
-      { "Recover": 85 },
+      { Swift: 80 },
+      { "Psy Ball": 80 },
+      { "Bubble Beam": 80 },
+      { Thunderbolt: 80 },
+      { Psychic: 80 },
+      { "Rapid Spin": 80 },
+      { Psyshock: 80 },
+      { "Hydro Pump": 80 },
+      { Recover: 80 },
+      { Analytic: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "gem star", rar: "4.3%" },
@@ -4871,13 +5303,17 @@ const pokesarray = [
       { min: 1, max: 1, item: "ruby", rar: "10.5%" },
     ],
     boost: 3,
-    booStone: "Water stone",
-    habilidades: "Surf",
+    booStone: "Water Stone ou Enigma Stone",
+    habilidades: "Light, Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//121
   {
     nome: "Mr Mime",
     numero: 122,
-    level: 70,
+    level: 80,
     clan: "Psycraft",
     tipo: "Psiquico, Fada",
     regiao: "Kanto",
@@ -4888,15 +5324,14 @@ const pokesarray = [
     shiny: "yes",
     vip: "yes",
     moves: [
-      { "Ice punch": 70 },
-      { "Psywave": 70 },
-      { "Dazzling gleam": 74 },
-      { "Confusion": 70 },
-      { "Psychic": 70 },
-      { "Psyusion": 78 },
-      { "Reflect": 70 },
-      { "Mimic wall": 70 },
-      { "Miracle eye": 1000 },
+      { "Play Rough": 80 },
+      { "Dazzling Gleam": 80 },
+      { Confusion: 80 },
+      { Psychic: 80 },
+      { Synchronoise: 80 },
+      { Psyusion: 80 },
+      { "Mimic Wall": 80 },
+      { "Expanding Force": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "mimic clothes", rar: "4.3%" },
@@ -4904,9 +5339,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Enigma stone", rar: "Raro" },
       { min: 1, max: 1, item: "future orb", rar: "28.0%" },
     ],
-    boost: 4,
-    booStone: "Enigma stone",
+    boost: 3,
+    booStone: "Enigma Stone ou Heart Stone",
     habilidades: "Teleport, Light, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Scyther",
@@ -4928,17 +5367,18 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Quick attack": 100 },
-      { "Night slash": 100 },
-      { "Wing attack": 100 },
-      { "Fury cutter": 105 },
-      { "Shredder team": 115 },
-      { "Air slash": 103 },
-      { "Agility": 100 },
-      { "Team slice": 115 },
-      { "Swords dance": 108 },
-      { "Counter helix": "Passiva" },
-      { "Evasion": "Passiva" },
+      { "Quick Attack": 100 },
+      { "X-Scissor": 100 },
+      { "Wing Attack": 100 },
+      { "Fury Cutter": 100 },
+      { "Shredder Team": 100 },
+      { "Air Slash": 100 },
+      { Agility: 100 },
+      { "Team Slice": 100 },
+      { "Swords Dance": 100 },
+      { "Quick Guard": 100 },
+      { "Counter Helix": "P" },
+      { Evasion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "scythe", rar: "Raro" },
@@ -4949,14 +5389,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "pot of moss bug", rar: "39.0%" },
     ],
     evoStone: "Metal stone",
-    boost: 3,
-    booStone: "Cocoon stone",
-    habilidades: "Cut, Headbutt",
+    boost: 2,
+    booStone: "Cocoon Stone ou Feather Stone",
+    habilidades: "Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Jynx",
     numero: 124,
-    level: 80,
+    level: 100,
     clan: "Seavell, Psycraft",
     tipo: "Gelo, Psiquico",
     regiao: "Kanto",
@@ -4969,16 +5413,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Lovely kiss": 80 },
-      { "Draining kiss": 80 },
-      { "Psywave": 80 },
-      { "Psy pulse": 80 },
-      { "Ice ball": 80 },
-      { "Ice beam": 80 },
-      { "Icy wind": 80 },
-      { "Aurora beam": 84 },
-      { "Blizzard": 86 },
-      { "Heart stamp": 88 },
+      { "Lovely Kiss": 100 },
+      { "Draining Kiss": 100 },
+      { Psywave: 100 },
+      { "Psy Pulse": 100 },
+      { "Ice Punch": 100 },
+      { "Ice Beam": 100 },
+      { Psychic: 100 },
+      { Psychock: 100 },
+      { Blizzard: 100 },
+      { "Heart Stamp": 100 },
+      { "Mean Look": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "ice bra", rar: "Raro" },
@@ -4992,9 +5437,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "snow skis", rar: "Raro" },
       { min: 1, max: 1, item: "goggles", rar: "Raro" },
     ],
-    boost: 3,
-    booStone: "Ice stone",
-    habilidades: "Teleport, Blink",
+    boost: 2,
+    booStone: "Ice Stone ou Enigma Stone",
+    habilidades: "Teleport, Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Electabuzz",
@@ -5013,15 +5462,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Low kick": 100 },
-      { "Electroweb": 100 },
-      { "Thunder punch": 100 },
-      { "Thunder shock": 100 },
-      { "Thunder bolt": 100 },
-      { "Focus blast": 100 },
-      { "Thunder": 106 },
-      { "Mamaragan": 110 },
-      { "Static": "Passiva" },
+      { Swift: 100 },
+      { Thunderbolt: 100 },
+      { "Thunder Punch": 100 },
+      { "Thunder Shock": 100 },
+      { "Thunder Wrath": 100 },
+      { Electrify: 100 },
+      { Discharge: 100 },
+      { Mamaragan: 100 },
+      { "Vital Spirit": 100 },
+      { Static: "P" },
+      { "Spiky Fur": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "electric tail", rar: "Raro" },
@@ -5030,9 +5481,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "electric box", rar: "29.0%" },
     ],
     evoStone: "Electirizer",
-    boost: 3,
+    boost: 2,
     booStone: "Thunder stone",
     habilidades: "Rock smash, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Magmar",
@@ -5051,16 +5506,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Scratch": 100 },
-      { "Smog": 100 },
-      { "Fire punch": 100 },
-      { "Ember": 100 },
-      { "Flamethrower": 100 },
+      { Scratch: 100 },
+      { Smog: 100 },
+      { "Fire Punch": 100 },
+      { Ember: 100 },
       { "Fireball": 100 },
-      { "Fire blast": 100 },
-      { "Magma storm": 108 },
-      { "Sunny day": 112 },
-      { "Flame body": "Passiva" },
+      { "Lava Plume": 100 },
+      { "Hellfire Storm": 100 },
+      { "Sunny Day": 100 },
+      { "Clear Smog": 100 },
+      { "Flame Body": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "magma foot", rar: "1.5%" },
@@ -5069,9 +5524,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "pot of lava", rar: "34.0%" },
     ],
     evoStone: "Magmarizer",
-    boost: 3,
+    boost: 2,
     booStone: "Fire stone",
-    habilidades: "Rock smash, Headbutt",
+    habilidades: "Light, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Pinsir",
@@ -5088,17 +5547,18 @@ const pokesarray = [
     fast: "yes",
     mapas: [],
     moves: [
-      { "Crunch": 100 },
-      { "Brick break": 100 },
-      { "Bind": 100 },
-      { "Bulldoze": 100 },
-      { "Fury cutter": 108 },
-      { "Guillotine": 110 },
-      { "Revenge": 112 },
-      { "Harden": 102 },
-      { "Swords dance": 108 },
-      { "Bug instinct": "Passiva" },
-      { "Seismic toss": "Passiva" },
+      { Crunch: 100 },
+      { Guillotine: 100 },
+      { Bind: 100 },
+      { "Fury Cutter": 100 },
+      { "Focus Blast": 100 },
+      { Revenge: 100 },
+      { "Brick Break": 100 },
+      { Harden: 100 },
+      { "Swords Dance": 100 },
+      { "Bug Instinct": "P" },
+      { "Seismic Toss": "P" },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "Pinsir horn", rar: "10.3%" },
@@ -5106,14 +5566,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "pot of moss bug", rar: "28.5%" },
       { min: 1, max: 1, item: "Cocoon stone", rar: "Raro" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Cocoon stone",
-    habilidades: "Cut, Rock smash, Headbutt",
+    habilidades: "Dig, Cut, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Tauros",
     numero: 128,
-    level: 50,
+    level: 60,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Kanto",
@@ -5125,14 +5589,15 @@ const pokesarray = [
     fast: "yes",
     mapas: [],
     moves: [
-      { "Headbutt": 50 },
-      { "Quick attack": 50 },
-      { "Horn attack": 50 },
-      { "Hyper beam": 55 },
-      { "Thrash": 56 },
-      { "Rage": 50 },
-      { "Rest": 55 },
-      { "Scary face": 52 },
+      { "Horn Attack": 60 },
+      { "Take Down": 60 },
+      { Pursuit: 60 },
+      { Thrash: 60 },
+      { "Hyper Beam": 60 },
+      { "Giga Impact": 60 },
+      { Rage: 60 },
+      { Rest: 60 },
+      { "Scary Face": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "bull tail", rar: "4.3%" },
@@ -5140,9 +5605,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "horn", rar: "14.0%" },
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
     ],
-    boost: 6,
+    boost: 4,
     booStone: "Heart stone",
     habilidades: "Rock smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Magikarp",
@@ -5185,17 +5654,16 @@ const pokesarray = [
     preevo: "Magikarp",
     mapas: [],
     moves: [
-      { "Roar": 110 },
-      { "Dragon tail": 100 },
-      { "Ice fang": 100 },
-      { "Waterball": 100 },
-      { "Twister": 104 },
-      { "Hydro cannon": 100 },
-      { "Dragon breath": 100 },
-      { "Hyper beam": 100 },
-      { "Hydropump": 108 },
-      { "Rain dance": 100 },
-      { "Dragon rage": "Passiva" },
+      { "Ice Fang": 100 },
+      { Crunch: 100 },
+      { "Dragon Tail": 100 },
+      { "Aqua Tail": 100 },
+      { Splash: 100 },
+      { "Dragon Breath": 100 },
+      { "Hydro Cannon": 100 },
+      { "Hydro Pump": 100 },
+      { Surf: 100 },
+      { "Dragon Rage": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "Gyarados tail", rar: "2.3%" },
@@ -5208,9 +5676,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "air tank", rar: "Raro" },
       { min: 1, max: 1, item: "fins", rar: "Raro" },
     ],
-    boost: 3,
-    booStone: "Water stone",
-    habilidades: "Surf, Headbutt",
+    boost: 2,
+    booStone: "Water Stone ou Feather Stone",
+    habilidades: "Rock Smash, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lapras",
@@ -5227,17 +5699,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Ice beam": 100 },
-      { "Ice shards": 100 },
-      { "Water gun": 100 },
-      { "Waterball": 100 },
-      { "Powder snow": 100 },
-      { "Aurora beam": 100 },
-      { "Blizzard": 108 },
-      { "Hydropump": 110 },
-      { "Sing": 100 },
-      { "Safeguard": 110 },
-      { "Follow me": 100 },
+      { "Body Slam": 100 },
+      { "Ice Beam": 100 },
+      { "Ice Shards": 100 },
+      { "Powder Snow": 100 },
+      { "Frost Power": 100 },
+      { "Ice Storm": 100 },
+      { Blizzard: 100 },
+      { Sing: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "giant fin", rar: "4.3%" },
@@ -5251,9 +5720,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "snow skis", rar: "Raro" },
       { min: 1, max: 1, item: "goggles", rar: "Raro" },
     ],
-    boost: 3,
-    booStone: "Ice stone",
+    boost: 2,
+    booStone: "Ice Stone ou Water Stone",
     habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ditto",
@@ -5291,12 +5764,12 @@ const pokesarray = [
     evo: "Vaporeon, Jolteon, Flareon, Espeon, Umbreon",
     mapas: [],
     moves: [
-      { "Sand attack": 20 },
-      { "Quick attack": 20 },
-      { "Bite": 20 },
-      { "Headbutt": 20 },
-      { "Iron tail": 26 },
-      { "Great love": 28 },
+      { "Sand Attack": 20 },
+      { "Quick Attack": 20 },
+      { Bite: 20 },
+      { Headbutt: 20 },
+      { "Iron Tail": 20 },
+      { "Great Love": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "fur", rar: "100.0%" },
@@ -5305,14 +5778,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "Diamond dust", rar: "Raro" },
     ],
     evoStone: "Water stone, Thunder stone, Fire stone, Enigma stone, Darkness stone",
-    boost: 10,
+    boost: 8,
     booStone: "Heart stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Vaporeon",
     numero: 134,
-    level: 60,
+    level: 80,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -5325,15 +5802,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 60 },
-      { "Bite": 60 },
-      { "Water gun": 60 },
-      { "Bubblebeam": 60 },
-      { "Water pulse": 60 },
-      { "Muddy water": 60 },
-      { "Aurora beam": 64 },
-      { "Hydro cannon": 68 },
-      { "Aqua ring": 60 },
+      { Tackle: 80 },
+      { "Water Gun": 80 },
+      { "Bubble Beam": 80 },
+      { "Water Ball": 80 },
+      { "Water Pulse": 80 },
+      { Surf: 80 },
+      { "Hydro Pump": 80 },
+      { "Flip Turn": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "water pendant", rar: "50.0%" },
@@ -5350,14 +5826,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "leafeon bag", rar: "Raro" },
       { min: 1, max: 1, item: "sylveon bag", rar: "Raro" },
     ],
-    boost: 4,
+    boost: 3,
     booStone: "Water stone",
-    habilidades: "Dig, Surf, Headbutt",
+    habilidades: "Dig, Rock Smash, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Jolteon",
     numero: 135,
-    level: 60,
+    level: 80,
     clan: "Raibolt",
     tipo: "Elétrico",
     regiao: "Kanto",
@@ -5370,15 +5850,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 60 },
-      { "Thunder bolt": 60 },
-      { "Thunder fang": 60 },
-      { "Pin missile": 62 },
-      { "Last resort": 60 },
-      { "Thunder": 65 },
-      { "Electric storm": 68 },
-      { "Volt fang": 64 },
-      { "Agility": 60 },
+      { Charge: 80 },
+      { "Light Screen": 80 },
+      { Thunderbolt: 80 },
+      { "Pin Missile": 80 },
+      { Copycat: 80 },
+      { Thunder: 80 },
+      { Discharge: 80 },
+      { "Baton Pass": 80 },
+      { Agility: 80 },
+      { "Stunning Speed": "P" },
+      { "Spiky Fur": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "electric box", rar: "50.0%" },
@@ -5395,14 +5877,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "leafeon bag", rar: "Raro" },
       { min: 1, max: 1, item: "sylveon bag", rar: "Raro" },
     ],
-    boost: 4,
+    boost: 3,
     booStone: "Thunder stone",
-    habilidades: "Dig, Light, Headbutt",
+    habilidades: "Dig, Rock Smash, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Flareon",
     numero: 136,
-    level: 60,
+    level: 80,
     clan: "Volcanic",
     tipo: "Fogo",
     regiao: "Kanto",
@@ -5415,14 +5901,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 60 },
-      { "Bite": 60 },
-      { "Flamethrower": 60 },
-      { "Sacred fire": 60 },
-      { "Blaze kick": 60 },
-      { "Flame burst": 60 },
-      { "Overheat": 64 },
-      { "Fire blast": 68 },
+      { "Quick Attack": 80 },
+      { Ember: 80 },
+      { Incinerate: 80 },
+      { "Blaze Kick": 80 },
+      { "Flame Circle": 80 },
+      { "Lava Plume": 80 },
+      { "Burning Jealousy": 80 },
+      { "Hellfire Storm": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "pot of lava", rar: "50.0%" },
@@ -5439,9 +5925,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "leafeon bag", rar: "Raro" },
       { min: 1, max: 1, item: "sylveon bag", rar: "Raro" },
     ],
-    boost: 4,
+    boost: 3,
     booStone: "Fire stone",
-    habilidades: "Dig, Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Porygon",
@@ -5458,20 +5948,27 @@ const pokesarray = [
     evo: "Porygon2",
     mapas: [],
     moves: [
-      { "Super sonic": 40 },
-      { "Psybeam": 40 },
-      { "Psycho cut": 48 },
-      { "Psychic": 40 },
-      { "Zap cannon": 44 },
-      { "Focus energy": 48 },
-      { "Magic coat": 46 },
-      { "Restore": 40 },
+      { "Cyber Wave": 40 },
+      { "Cyber Pulse": 40 },
+      { "Zap Cannon": 40 },
+      { "Tri-Attack": 40 },
+      { Psychic: 40 },
+      { "Cyber World": 40 },
+      { "Shadow Ball": 40 },
+      { Recover: 40 },
+      { "Conversion 2": 40 },
+      { Conversion: "P" },
+      { Analytic: "P" }
     ],
     loots: [],
     evoStone: "Ancient stone, Crystal stone",
     boost: 7,
     booStone: "Heart stone",
     habilidades: "Teleport, Light, Fly, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Omanyte",
@@ -5488,14 +5985,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 20 },
-      { "Rock throw": 20 },
-      { "Waterball": 20 },
-      { "Water gun": 20 },
-      { "Mud shot": 20 },
-      { "Brine": 25 },
-      { "Harden": 26 },
-      { "Ancient power": 30 },
+      { Bite: 20 },
+      { "Rock Throw": 20 },
+      { "Rock Blast": 20 },
+      { "Water Gun": 20 },
+      { "Mud Shot": 20 },
+      { Brine: 20 },
+      { Harden: 20 },
+      { "Ancient Power": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "helix fossil", rar: "Raro" },
@@ -5505,8 +6002,12 @@ const pokesarray = [
     ],
     evoStone: "Rock stone, Crystal stone",
     boost: 10,
-    booStone: "Water stone",
+    booStone: "Water Stone ou Rock Stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Omastar",
@@ -5523,15 +6024,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 80 },
-      { "Rock throw": 80 },
-      { "Stone edge": 80 },
-      { "Rock slide": 80 },
-      { "Rock blast": 80 },
-      { "Rollout": 90 },
-      { "Ancient power": 95 },
-      { "Hydropump": 88 },
-      { "Harden": 90 },
+      { "Rock Throw": 80 },
+      { "Rock Slide": 80 },
+      { Rollout: 80 },
+      { "Ancient Power": 80 },
+      { "Falling Rocks": 80 },
+      { "Rock Wrecker": 80 },
+      { "Rain Dance": 80 },
+      { Harden: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "helix fossil", rar: "Raro" },
@@ -5542,8 +6042,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "stone orb", rar: "34.0%" },
     ],
     boost: 3,
-    booStone: "Water stone",
+    booStone: "Water Stone ou Rock Stone",
     habilidades: "Dig, Headbutt, Rock smash, Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Kabuto",
@@ -5560,14 +6064,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Scratch": 20 },
-      { "Bubbles": 20 },
-      { "Slash": 20 },
-      { "Mud shot": 20 },
-      { "Night slash": 20 },
-      { "Harden": 28 },
-      { "Ancient power": 26 },
-      { "Mega drain": "Passiva" },
+      { Scratch: 20 },
+      { "Rock Throw": 20 },
+      { Slash: 20 },
+      { "Stone Edge": 20 },
+      { "Mud Shot": 20 },
+      { Liquidation: 20 },
+      { Harden: 20 },
+      { "Ancient Power": 20 },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dome fossil", rar: "Raro" },
@@ -5577,8 +6082,12 @@ const pokesarray = [
     ],
     evoStone: "Crystal stone, Rock stone",
     boost: 10,
-    booStone: "Water stone",
+    booStone: "Rock Stone ou Water Stone",
     habilidades: "Cut, Dig",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Kabutops",
@@ -5595,15 +6104,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Ancient absorb": 80 },
-      { "Slash": 85 },
-      { "Rock throw": 80 },
-      { "Rock slide": 80 },
-      { "Mud shot": 85 },
-      { "Night slash": 80 },
-      { "Rock tomb": 80 },
-      { "Ancient power": 95 },
-      { "Fossilized shell": "Passiva" },
+      { "Ancient Absorb": 80 },
+      { "Leech Life": 80 },
+      { "Rock Throw": 80 },
+      { "Aqua Jet": 80 },
+      { "Mud Shot": 80 },
+      { "X-Scissor": 80 },
+      { Liquidation: 80 },
+      { "Ancient Power": 80 },
+      { "Impervious Shell": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dome fossil", rar: "Raro" },
@@ -5614,13 +6123,17 @@ const pokesarray = [
       { min: 1, max: 1, item: "stone orb", rar: "34.0%" },
     ],
     boost: 3,
-    booStone: "Rock stone",
+    booStone: "Rock Stone ou Water Stone",
     habilidades: "Rock smash, Dig, Cut, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Aerodactyl",
     numero: 142,
-    level: 150,
+    level: 100,
     clan: "Orebound, Wingeon",
     tipo: "Pedra, Voador",
     regiao: "Kanto",
@@ -5632,17 +6145,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Roar": 160 },
-      { "Super sonic": 150 },
-      { "Bite": 150 },
-      { "Crunch": 150 },
-      { "Rock throw": 150 },
-      { "Rock slide": 150 },
-      { "Air cutter": 158 },
-      { "Wing attack": 150 },
-      { "Falling rocks": 155 },
-      { "Hyper beam": 160 },
-      { "Ancient power": 165 },
+      { Roar: 100 },
+      { "Supersonic": 100 },
+      { "Rock Throw": 100 },
+      { "Rock Slide": 100 },
+      { "Stone Edge": 100 },
+      { "Ice Fang": 100 },
+      { "Wing Attack": 100 },
+      { "Ancient Power": 100 },
+      { "Falling Rocks": 100 },
+      { "Hyper Beam": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "old amber", rar: "Raro" },
@@ -5655,6 +6167,10 @@ const pokesarray = [
     boost: 30,
     booStone: "Ancient stone",
     habilidades: "Fly, Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Snorlax",
@@ -5671,15 +6187,15 @@ const pokesarray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Lick": 100 },
-      { "Bite": 100 },
-      { "Crunch": 100 },
-      { "Mega punch": 100 },
-      { "Body slam": 104 },
-      { "Giga impact": 105 },
-      { "Hyper beam": 105 },
-      { "Crusher stomp": 110 },
-      { "Rest": 106 },
+      { Lick: 100 },
+      { Bite: 100 },
+      { Crunch: 100 },
+      { "Ice Punch": 100 },
+      { "Body Slam": 100 },
+      { "Giga Impact": 100 },
+      { "Hyper Beam": 100 },
+      { "Crusher Stomp": 100 },
+      { Rest: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "bitten apple", rar: "20.0%" },
@@ -5688,14 +6204,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "hamburguer", rar: "30.0%" },
       { min: 1, max: 1, item: "hotdog", rar: "30.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Heart stone",
     habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Articuno",
     numero: 144,
-    level: 200,
+    level: 300,
     clan: "Seavell, Wingeon",
     tipo: "Gelo, Voador",
     regiao: "Kanto",
@@ -5709,28 +6229,32 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Peck": 200 },
-      { "Ice shards": 200 },
-      { "Ice beam": 200 },
-      { "Drill peck": 200 },
-      { "Ancient power": 200 },
-      { "Frost breath": 200 },
-      { "Air cutter": 200 },
-      { "Pluck": 200 },
-      { "Powder snow": 200 },
-      { "Aerial ace": 200 },
-      { "Aurora beam": 200 },
-      { "Blizzard": 200 },
-      { "Iceshock": 200 },
-      { "Frost tornado": 200 },
+      { Peck: 300 },
+      { "Ice Shard": 300 },
+      { "Ice Beam": 300 },
+      { "Drill Peck": 300 },
+      { "Ancient Power": 300 },
+      { "Frost Breath": 300 },
+      { "Air Cutter": 300 },
+      { Pluck: 300 },
+      { "Powder Snow": 300 },
+      { "Aerial Ace": 300 },
+      { "Aurora Beam": 300 },
+      { Blizzard: 300 },
+      { Iceshock: 300 },
+      { "Frost Tornado": 300 }
     ],
     loots: [],
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Zapdos",
     numero: 145,
-    level: 200,
+    level: 300,
     clan: "Raibolt, Wingeon",
     tipo: "Elétrico, Voador",
     regiao: "Kanto",
@@ -5744,28 +6268,32 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Peck": 200 },
-      { "Thunder shock": 200 },
-      { "Thunder bolt": 200 },
-      { "Drill peck": 200 },
-      { "Ancient power": 200 },
-      { "Thunder wave": 200 },
-      { "Wing attack": 200 },
-      { "Charge beam": 200 },
-      { "Electro ball": 200 },
-      { "Aerial ace": 200 },
-      { "Thunder": 200 },
-      { "Electric storm": 200 },
-      { "Electro field": 200 },
-      { "Lightning hell": 200 },
+      { Peck: 300 },
+      { "Thunder Shock": 300 },
+      { Thunderbolt: 300 },
+      { "Drill Peck": 300 },
+      { "Ancient Power": 300 },
+      { "Thunder Wave": 300 },
+      { "Wing Attack": 300 },
+      { "Charge Beam": 300 },
+      { "Electro Ball": 300 },
+      { "Aerial Ace": 300 },
+      { Thunder: 300 },
+      { "Electric Storm": 300 },
+      { "Electro Field": 300 },
+      { "Lightning Hell": 300 }
     ],
     loots: [],
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Moltres",
     numero: 146,
-    level: 200,
+    level: 300,
     clan: "Volcanic, Wingeon",
     tipo: "Fogo, Voador",
     regiao: "Kanto",
@@ -5779,23 +6307,27 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Peck": 200 },
-      { "Ember": 200 },
-      { "Flamethrower": 200 },
-      { "Drill peck": 200 },
-      { "Ancient power": 200 },
-      { "Air slash": 200 },
-      { "Eruption": 200 },
-      { "Solar beam": 200 },
-      { "Aerial ace": 200 },
-      { "Fire blast": 200 },
-      { "Blast burn": 200 },
-      { "Magma storm": 200 },
-      { "Inferno": 200 },
-      { "Hell fire": 200 },
+      { Peck: 300 },
+      { Ember: 300 },
+      { Flamethrower: 300 },
+      { "Drill Peck": 300 },
+      { "Ancient Power": 300 },
+      { "Air Slash": 300 },
+      { Eruption: 300 },
+      { "Solar Beam": 300 },
+      { "Aerial Ace": 300 },
+      { "Fire Blast": 300 },
+      { "Blast Burn": 300 },
+      { "Magma Storm": 300 },
+      { Inferno: 300 },
+      { "Hell Fire": 300 }
     ],
     loots: [],
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dratini",
@@ -5813,13 +6345,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Aqua tail": 30 },
-      { "Thunder wave": 30 },
-      { "Slam": 30 },
-      { "Twister": 31 },
-      { "Hyper beam": 38 },
-      { "Dragon breath": 35 },
-      { "Dragon rage": "Passiva" },
+      { "Aqua Tail": 30 },
+      { "Thunder Wave": 30 },
+      { Slam: 30 },
+      { Twister: 30 },
+      { "Hyper Beam": 30 },
+      { "Dragon Breath": 30 },
+      { "Dragon Rage": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dragon tail", rar: "Raro" },
@@ -5830,11 +6362,15 @@ const pokesarray = [
     boost: 50,
     booStone: "Crystal stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dragonair",
     numero: 148,
-    level: 60,
+    level: 80,
     clan: "Wingeon",
     tipo: "Dragão",
     regiao: "Kanto",
@@ -5848,15 +6384,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Aqua tail": 60 },
-      { "Thunder wave": 60 },
-      { "Slam": 60 },
-      { "Wrap": 60 },
-      { "Dragon tail": 60 },
-      { "Dragon breath": 62 },
-      { "Twister": 64 },
-      { "Hyper beam": 68 },
-      { "Dragon rage": "Passiva" },
+      { Swift: 80 },
+      { "Scale Shot": 80 },
+      { "Dragon Tail": 80 },
+      { Wrap: 80 },
+      { "Aqua Tail": 80 },
+      { "Dragon Blast": 80 },
+      { Twister: 80 },
+      { "Draco Meteor": 80 },
+      { "Rain Dance": 80 },
+      { "Shed Skin": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dragon tail", rar: "2.4%" },
@@ -5870,7 +6407,11 @@ const pokesarray = [
     evoStone: "Crystal stone",
     boost: 50,
     booStone: "Crystal stone",
-    habilidades: "Fly, Headbutt",
+    habilidades: "Light, Fly, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dragonite",
@@ -5888,16 +6429,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Aqua tail": 100 },
-      { "Thunder wave": 100 },
-      { "Slam": 100 },
-      { "Dragon claw": 100 },
-      { "Dragon breath": 102 },
-      { "Twister": 104 },
-      { "Wing attack": 106 },
-      { "Hyper beam": 108 },
-      { "Draco meteor": 115 },
-      { "Dragon rage": "Passiva" },
+      { "Scale Shot": 100 },
+      { "Dragon Claw": 100 },
+      { Slam: 100 },
+      { "Dragon Tail": 100 },
+      { "Dragon Flight": 100 },
+      { Twister: 100 },
+      { "Draco Meteor": 100 },
+      { Outrage: 100 },
+      { "Inner Focus": 100 },
+      { Multiscale: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dragon tail", rar: "2.4%" },
@@ -5911,7 +6452,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Crystal stone",
-    habilidades: "Fly, Rock smash, Headbutt",
+    habilidades: "Cut, Fly, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   
   {
@@ -5929,25 +6474,30 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Swift": 500 },
-      { "Shadow ball": 500 },
-      { "Psybeam": 500 },
-      { "Psywave": 500 },
-      { "Confusion": 500 },
-      { "Psychic": 500 },
-      { "Psystrike": 500 },
-      { "Recover": 500 },
-      { "Barrier": 500 },
-      { "Fear": 500 },
-      { "Reflect": 500 },
-      { "Miracle eye": 500 },
+      { Swift: 500 },
+      { "Shadow Ball": 500 },
+      { Psybeam: 500 },
+      { Psywave: 500 },
+      { Confusion: 500 },
+      { Psychic: 500 },
+      { Psystrike: 500 },
+      { Recover: 500 },
+      { Barrier: 500 },
+      { Fear: 500 },
+      { Reflect: 500 },
+      { "Tri-Vision": "P" },
+      { "Miracle Eye": 500 }
     ],
     loots: [
       { min: 1, max: 1, item: "future orb", rar: "100.0%" },
       { min: 1, max: 1, item: "Mewtwo helmet", rar: "Raro" },
       { min: 1, max: 1, item: "Enigma stone", rar: "10.0%" },
     ],
-    habilidades: "",
+    habilidades: "Rock Smash, Teleport, Cut, Light, Fly, Blink e Control Minds",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Mew",
@@ -5964,25 +6514,28 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Shadow ball": 200 },
-      { "Brine": 200 },
-      { "Flamethrower": 200 },
-      { "Thunder bolt": 200 },
-      { "Psychic": 200 },
-      { "Instant teleportation": 200 },
-      { "Hydro cannon": 200 },
-      { "Solar beam": 200 },
-      { "Ancient power": 200 },
-      { "Metronome": 200 },
-      { "Barrier": 200 },
-      { "Reflect": 200 },
-      { "Recover": 200 },
+      { "Shadow Ball": 200 },
+      { Brine: 200 },
+      { Flamethrower: 200 },
+      { Thunderbolt: 200 },
+      { Psychic: 200 },
+      { "Instant Teleportation": 200 },
+      { "Hydro Cannon": 200 },
+      { "Solar Beam": 200 },
+      { "Ancient Power": 200 },
+      { Metronome: 200 },
+      { Barrier: 200 },
+      { Reflect: 200 }
     ],
     loots: [
       { min: 1, max: 1, item: "future orb", rar: "100.0%" },
       { min: 1, max: 1, item: "Enigma stone", rar: "100.0%" },
     ],
-    habilidades: "",
+    habilidades: "Rock Smash, Teleport, Cut, Light, Fly, Blink e Control Minds",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//151
   
   
@@ -6002,14 +6555,14 @@ const pokesarray = [
     evo: "Bayleef",
     mapas: [],
     moves: [
-      { "Body slam": 20 },
-      { "Razor leaf": 20 },
-      { "Magical leaf": 20 },
-      { "Synthesis": 25 },
-      { "Solar beam": 26 },
-      { "Sleep powder": 28 },
-      { "Poison powder": 20 },
-      { "Aromatherapy": 20 },
+      { "Razor Leaf": 20 },
+      { "Magical Leaf": 20 },
+      { Headbutt: 20 },
+      { Synthesis: 20 },
+      { "Solar Beam": 20 },
+      { "Sleep Powder": 20 },
+      { "Poison Powder": 20 },
+      { "Light Screen": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "great petal", rar: "Raro" },
@@ -6020,7 +6573,11 @@ const pokesarray = [
     evoStone: "Leaf stone",
     boost: 10,
     booStone: "Leaf stone",
-    habilidades: "Headbutt",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//152
   {
     nome: "Bayleef",
@@ -6037,15 +6594,14 @@ const pokesarray = [
     evo: "Meganium",
     mapas: [],
     moves: [
-      { "Body slam": 40 },
-      { "Razor leaf": 40 },
-      { "Magical leaf": 40 },
-      { "Petal dance": 45 },
-      { "Synthesis": 40 },
-      { "Leaf tornado": 48 },
-      { "Sleep powder": 44 },
-      { "Poison powder": 40 },
-      { "Light screen": 40 },
+      { "Razor Leaf": 40 },
+      { "Magical Leaf": 40 },
+      { "Body Slam": 40 },
+      { "Petal Dance": 40 },
+      { "Sweet Scent": 40 },
+      { Protection: 40 },
+      { Synthesis: 40 },
+      { "Sleep Powder": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "great petal", rar: "2.0%" },
@@ -6057,7 +6613,11 @@ const pokesarray = [
     evoStone: "Leaf stone",
     boost: 7,
     booStone: "Leaf stone",
-    habilidades: "Ride, Headbutt",
+    habilidades: "Light, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Meganium",
@@ -6075,14 +6635,15 @@ const pokesarray = [
     preevo: "Bayleef",
     mapas: [],
     moves: [
-      { "Razor leaf": 80 },
-      { "Magical leaf": 80 },
-      { "Petal dance": 80 },
-      { "Leaf tornado": 90 },
-      { "Ingrain": 90 },
-      { "Sleep powder": 80 },
-      { "Light screen": 80 },
-      { "Aromatherapy": 84 },
+      { "Razor Leaf": 80 },
+      { "Magical Leaf": 80 },
+      { "Petal Bullets": 80 },
+      { "Petal Dance": 80 },
+      { Ingrain: 80 },
+      { "Sweet Scent": 80 },
+      { Protection: 80 },
+      { "Emergency Call": 80 },
+      { Reflect: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "great petal", rar: "4.3%" },
@@ -6093,7 +6654,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Leaf stone",
-    habilidades: "Cut, Ride, Headbutt",
+    habilidades: "Light, Rock Smash, Cut, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Cyndaquil",
@@ -6110,13 +6675,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 20 },
-      { "Swift": 22 },
-      { "Ember": 20 },
-      { "Flamethrower": 20 },
-      { "Smokescreen": 24 },
-      { "Eruption": 26 },
-      { "Defense curl": 25 },
+      { "Quick Attack": 20 },
+      { Swift: 20 },
+      { Ember: 20 },
+      { Flamethrower: 20 },
+      { Smokescreen: 20 },
+      { Overheat: 20 },
+      { "Defense Curl": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "hot fur", rar: "Raro" },
@@ -6127,7 +6692,11 @@ const pokesarray = [
     evoStone: "Fire stone",
     boost: 10,
     booStone: "Fire stone",
-    habilidades: "Dig, Cut, Headbutt",
+    habilidades: "Dig, Cut, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Quilava",
@@ -6145,14 +6714,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 40 },
-      { "Swift": 40 },
-      { "Ember": 40 },
-      { "Flamethrower": 40 },
-      { "Flame circle": 40 },
-      { "Smokescreen": 40 },
-      { "Eruption": 45 },
-      { "Defense curl": 40 },
+      { "Quick Attack": 40 },
+      { Swift: 40 },
+      { Ember: 40 },
+      { Flamethrower: 40 },
+      { "Flame Circle": 40 },
+      { Smokescreen: 40 },
+      { "Lava Plume": 40 },
+      { "Defense Curl": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "hot fur", rar: "2.0%" },
@@ -6164,7 +6733,11 @@ const pokesarray = [
     evoStone: "Fire stone",
     boost: 7,
     booStone: "Fire stone",
-    habilidades: "Dig, Cut, Headbutt",
+    habilidades: "Dig, Cut, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Typhlosion",
@@ -6182,16 +6755,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 80 },
-      { "Swift": 80 },
-      { "Ember": 80 },
-      { "Flamethrower": 80 },
-      { "Flame circle": 80 },
-      { "Smokescreen": 80 },
-      { "Eruption": 80 },
-      { "Lava plume": 85 },
-      { "Inferno": 90 },
-      { "Defense curl": 80 },
+      { "Quick Attack": 80 },
+      { Swift: 80 },
+      { Ember: 80 },
+      { "Fire Punch": 80 },
+      { "Flame Circle": 80 },
+      { Smokescreen: 80 },
+      { Eruption: 80 },
+      { "Lava Plume": 80 },
+      { Inferno: 80 },
+      { "Defense Curl": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "hot fur", rar: "6.0%" },
@@ -6202,7 +6775,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Fire stone",
-    habilidades: "Dig, Rock smash, Cut, Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Totodile",
@@ -6219,13 +6796,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 20 },
-      { "Crunch": 20 },
-      { "Water gun": 20 },
-      { "Ice fang": 24 },
-      { "Aqua tail": 22 },
-      { "Waterfall": 26 },
-      { "Agility": 28 },
+      { Crunch: 20 },
+      { "Aqua Tail": 20 },
+      { "Water Gun": 20 },
+      { "Ice Fang": 20 },
+      { Waterfall: 20 },
+      { "Hydro Cannon": 20 },
+      { Agility: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "red scale", rar: "Raro" },
@@ -6237,6 +6814,10 @@ const pokesarray = [
     boost: 10,
     booStone: "Water stone",
     habilidades: "Surf, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Croconaw",
@@ -6254,16 +6835,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 40 },
-      { "Crunch": 40 },
-      { "Bubbles": 40 },
-      { "Water gun": 40 },
-      { "Ice fang": 40 },
-      { "Water pulse": 40 },
-      { "Hydro cannon": 48 },
-      { "Waterfall": 45 },
-      { "Scary face": 42 },
-      { "Agility": 40 },
+      { Crunch: 40 },
+      { Bubbles: 40 },
+      { "Water Gun": 40 },
+      { "Ice Fang": 40 },
+      { "Water Pulse": 40 },
+      { "Hydro Cannon": 40 },
+      { Waterfall: 40 },
+      { "Scary Face": 40 },
+      { Agility: 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "red scale", rar: "2.0%" },
@@ -6276,6 +6856,10 @@ const pokesarray = [
     boost: 7,
     booStone: "Water stone",
     habilidades: "Surf, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Feraligatr",
@@ -6293,16 +6877,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Crunch": 80 },
-      { "Bubbles": 80 },
-      { "Water pulse": 80 },
-      { "Ice fang": 80 },
-      { "Trash": 80 },
-      { "Hydro cannon": 80 },
-      { "Waterfall": 80 },
-      { "Water spout": 90 },
-      { "Scary face": 82 },
-      { "Agility": 80 },
+      { Crunch: 80 },
+      { Bubbles: 80 },
+      { "Water Pulse": 80 },
+      { "Ice Fang": 80 },
+      { Thrash: 80 },
+      { "Hydro Cannon": 80 },
+      { Waterfall: 80 },
+      { "Water Spout": 80 },
+      { "Scary Face": 80 },
+      { Agility: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "red scale", rar: "4.3%" },
@@ -6313,7 +6897,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Water stone",
-    habilidades: "Surf, Cut, Headbutt",
+    habilidades: "Surf, Rock Smash, Cut, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sentret",
@@ -6330,11 +6918,11 @@ const pokesarray = [
     evo: "Furret",
     mapas: [],
     moves: [
-      { "Quick attack": 10 },
-      { "Scratch": 10 },
-      { "Fury swipes": 10 },
-      { "Hyper voice": 13 },
-      { "Rest": 17 },
+      { "Quick Attack": 10 },
+      { Scratch: 10 },
+      { "Fure Swipes": 10 },
+      { "Hyper Voice": 10 },
+      { Rest: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "squirrel tail", rar: "1.9%" },
@@ -6345,6 +6933,10 @@ const pokesarray = [
     boost: 15,
     booStone: "Heart stone",
     habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Furret",
@@ -6360,12 +6952,13 @@ const pokesarray = [
     preevo: "Sentret",
     mapas: [],
     moves: [
-      { "Quick attack": 40 },
-      { "Scratch": 40 },
-      { "Fury swipes": 40 },
-      { "Hyper voice": 40 },
-      { "Sucker punch": 43 },
-      { "Rest": 43 },
+      { "Quick Attack": 40 },
+      { Scratch: 40 },
+      { "Fury Swipes": 40 },
+      { "Hyper Voice": 40 },
+      { "Sucker Punch": 40 },
+      { Rest: 40 },
+      { Coil: 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "squirrel tail", rar: "4.3%" },
@@ -6373,14 +6966,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
       { min: 1, max: 1, item: "fur", rar: "11.5%" },
     ],
-    boost: 8,
+    boost: 7,
     booStone: "Heart stone",
     habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hoothoot",
     numero: 163,
-    level: 20,
+    level: 1,
     clan: "Gardestrike, Wingeon",
     tipo: "Normal, Voador",
     regiao: "Johto",
@@ -6391,13 +6988,12 @@ const pokesarray = [
     evo: "Noctowl",
     mapas: [],
     moves: [
-      { "Quick attack": 20 },
-      { "Peck": 20 },
-      { "Confusion": 20 },
-      { "Drill peck": 20 },
-      { "Dream eater": 25 },
-      { "Hypnosis": 25 },
-      { "Roost": 25 },
+      { "Quick Attack": 1 },
+      { Peck: 1 },
+      { "Drill Peck": 1 },
+      { Confusion: 1 },
+      { "Dream Eater": 1 },
+      { Hypnosis: 1 }
     ],
     loots: [
       { min: 1, max: 1, item: "owl feather", rar: "1.3%" },
@@ -6406,9 +7002,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "feather", rar: "31.0%" },
     ],
     evoStone: "Feather stone",
-    boost: 10,
-    booStone: "Feather stone",
-    habilidades: "",
+    boost: 30,
+    booStone: "Feather Stone ou Heart Stone",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Noctowl",
@@ -6430,15 +7030,16 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Quick attack": 60 },
-      { "Peck": 60 },
-      { "Drill peck": 60 },
-      { "Confusion": 60 },
-      { "Echoed voice": 65 },
-      { "Air slash": 63 },
-      { "Dream eater": 60 },
-      { "Hypnosis": 60 },
-      { "Roost": 65 },
+      { Extrasensory: 60 },
+      { Peck: 60 },
+      { "Feather Dance": 60 },
+      { Confusion: 60 },
+      { "Sky Attack": 60 },
+      { "Air Slash": 60 },
+      { "Dream Eater": 60 },
+      { Hypnosis: 60 },
+      { Roost: 60 },
+      { Insomnia: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "owl feather", rar: "4.3%" },
@@ -6450,7 +7051,11 @@ const pokesarray = [
     ],
     boost: 4,
     booStone: "Feather stone",
-    habilidades: "Fly",
+    habilidades: "Light, Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ledyba",
@@ -6468,12 +7073,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 10 },
-      { "Super sonic": 10 },
-      { "Swift": 10 },
-      { "Silver wind": 13 },
-      { "Agility": 17 },
-      { "Evasion": "Passiva" },
+      { Swift: 10 },
+      { "Silver Wind": 10 },
+      { "Supersonic": 10 },
+      { "Struggle Bug": 10 },
+      { Agility: 10 },
+      { Evasion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "ladybug wing", rar: "1.9%" },
@@ -6485,6 +7090,10 @@ const pokesarray = [
     boost: 15,
     booStone: "Cocoon stone",
     habilidades: "Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ledian",
@@ -6501,15 +7110,16 @@ const pokesarray = [
     preevo: "Ledyba",
     mapas: [],
     moves: [
-      { "Quick attack": 40 },
-      { "Super sonic": 40 },
-      { "Swift": 40 },
-      { "Silver wind": 40 },
-      { "Struggle bug": 48 },
-      { "Bug buzz": 42 },
-      { "Reflect": 48 },
-      { "Agility": 42 },
-      { "Evasion": "Passiva" },
+      { "Quick Attack": 40 },
+      { "Silver Wind": 40 },
+      { "Supersonic": 40 },
+      { "Struggle Bug": 40 },
+      { Roost: 40 },
+      { "Air Slash": 40 },
+      { "Bug Buzz": 40 },
+      { Agility: 40 },
+      { "Early Bird": "P" },
+      { Evasion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "ladybug wing", rar: "4.3%" },
@@ -6518,9 +7128,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Cocoon stone", rar: "Raro" },
       { min: 1, max: 1, item: "pot of moss bug", rar: "25.5%" },
     ],
-    boost: 8,
+    boost: 7,
     booStone: "Cocoon stone",
     habilidades: "Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Spinarak",
@@ -6537,10 +7151,10 @@ const pokesarray = [
     evo: "Ariados",
     mapas: [],
     moves: [
-      { "String shot": 10 },
-      { "Poison sting": 10 },
-      { "Fury swipes": 10 },
-      { "Poison jab": 15 },
+      { "String Shot": 10 },
+      { "Poison Sting": 10 },
+      { "Fury Swipes": 10 },
+      { "Poison Jab": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "spider leg", rar: "1.2%" },
@@ -6549,9 +7163,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "pot of moss bug", rar: "18.0%" },
     ],
     evoStone: "Cocoon stone",
-    boost: 20,
+    boost: 15,
     booStone: "Cocoon stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ariados",
@@ -6568,14 +7186,14 @@ const pokesarray = [
     preevo: "Spinarak",
     mapas: [],
     moves: [
-      { "String shot": 40 },
-      { "Bug bite": 40 },
-      { "Poison sting": 40 },
-      { "Fury swipes": 40 },
-      { "Poison jab": 40 },
-      { "Pin missile": 43 },
-      { "Spider web": 50 },
-      { "Psychic": 47 },
+      { "String Shot": 40 },
+      { "Bug Bite": 40 },
+      { "Poison Sting": 40 },
+      { "Fury Swipes": 40 },
+      { "Poison Jab": 40 },
+      { "Cross Poison": 40 },
+      { "Pin Missile": 40 },
+      { "Spider Web": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "spider leg", rar: "8.3%" },
@@ -6584,9 +7202,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Cocoon stone", rar: "Raro" },
       { min: 1, max: 1, item: "pot of moss bug", rar: "25.5%" },
     ],
-    boost: 8,
+    boost: 7,
     booStone: "Cocoon stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Crobat",
@@ -6605,16 +7227,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 80 },
-      { "Bite": 80 },
-      { "Poison fang": 80 },
-      { "Toxic": 80 },
-      { "Air slash": 83 },
-      { "Wing attack": 80 },
-      { "Air cutter": 88 },
-      { "Cross poison": 84 },
-      { "Venom gale": 95 },
-      { "Lifesteal": "Passiva" },
+      { "Supersonic": 80 },
+      { "Leech Life": 80 },
+      { "Wind Swirl": 80 },
+      { Toxic: 80 },
+      { "Air Slash": 80 },
+      { "Wing Attack": 80 },
+      { "Dual Wingbeat": 80 },
+      { "Sky Attack": 80 },
+      { Fly: 80 },
+      { Lifesteal: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "giant bat wing", rar: "4.3%" },
@@ -6625,8 +7247,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "tooth", rar: "39.0%" },
     ],
     boost: 3,
-    booStone: "Venom stone",
-    habilidades: "Fly",
+    booStone: "Venom Stone ou Feather Stone",
+    habilidades: "Fly, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Chinchou",
@@ -6643,11 +7269,11 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 15 },
-      { "Bubbles": 10 },
-      { "Spark": 10 },
-      { "Water gun": 10 },
-      { "Thunder wave": 13 },
+      { "Supersonic": 10 },
+      { Bubbles: 10 },
+      { Spark: 10 },
+      { "Water Gun": 10 },
+      { "Thunder Wave": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "point of light", rar: "1.3%" },
@@ -6656,10 +7282,14 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "19.5%" },
       { min: 1, max: 1, item: "electric box", rar: "4.5%" },
     ],
-    evoStone: ["Water stone", "Thunder stone"], // Corrigido
+    evoStone: "Water stone, Thunder stone", // Corrigido
     boost: 15,
     booStone: "Water stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lanturn",
@@ -6677,16 +7307,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 80 },
-      { "Bubbles": 80 },
-      { "Bubblebeam": 80 },
-      { "Spark": 80 },
-      { "Thunder wave": 80 },
-      { "Water pulse": 80 },
-      { "Surf": 85 },
-      { "Wild charge": 85 },
-      { "Hydropump": 90 },
-      { "Bright light": 90 },
+      { Soak: 80 },
+      { Bubbles: 80 },
+      { "Bubble Beam": 80 },
+      { Spark: 80 },
+      { Thunderbolt: 80 },
+      { Thunder: 80 },
+      { Surf: 80 },
+      { Discharge: 80 },
+      { "Aqua Ring": 80 },
+      { Illuminate: 80 },
+      { "Water Absorb": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "point of light", rar: "8.3%" },
@@ -6702,7 +7333,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Thunder stone",
-    habilidades: "Light",
+    habilidades: "Surf, Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Pichu",
@@ -6719,14 +7354,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 20 },
-      { "Thunder shock": 20 },
-      { "Thunder bolt": 22 },
-      { "Thunder wave": 24 },
-      { "Iron tail": 26 },
-      { "Thunder": 26 },
-      { "Agility": 28 },
-      { "Electric charge": "Passiva" },
+      { Charm: 20 },
+      { "Quick Attack": 20 },
+      { "Thunder Shock": 20 },
+      { Thunderbolt: 20 },
+      { "Thunder Wave": 20 },
+      { Thunder: 20 },
+      { Agility: 20 },
+      { "Electric Charge": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "electric rat tail", rar: "Raro" },
@@ -6737,6 +7372,10 @@ const pokesarray = [
     boost: 10,
     booStone: "Thunder stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Cleffa",
@@ -6752,11 +7391,11 @@ const pokesarray = [
     evo: "Clefairy",
     mapas: [],
     moves: [
+      { "Dazzling Gleam": 20 },
       { "Doubleslap": 20 },
-      { "Body slam": 24 },
-      { "Sing": 30 },
-      { "Multi slap": 22 },
-      { "Metronome": 30 },
+      { Sing: 20 },
+      { "Multi-Slap": 20 },
+      { Metronome: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "topknot", rar: "1.3%" },
@@ -6766,7 +7405,11 @@ const pokesarray = [
     evoStone: "Heart stone",
     boost: 10,
     booStone: "Heart stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Igglybuff",
@@ -6783,12 +7426,12 @@ const pokesarray = [
     evoStone: "Heart stone",
     mapas: [],
     moves: [
-      { "Doubleslap": 20 },
-      { "Body slam": 24 },
-      { "Sing": 20 },
-      { "Hyper voice": 20 },
-      { "Softboiled": 25 },
-      { "Charm": 20 },
+      { "Dazzling Gleam": 20 },
+      { "Play Rough": 20 },
+      { Sing: 20 },
+      { "Disarming Voice": 20 },
+      { "Soft-Boiled": 20 },
+      { Charm: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "microphone", rar: "Raro" },
@@ -6797,7 +7440,11 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Heart stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Togepi",
@@ -6814,12 +7461,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Lovely kiss": 1 },
-      { "Charm": 11 },
-      { "Doubleslap": 1 },
-      { "Softboiled": 1 },
-      { "Last resort": 6 },
-      { "Metronome": 11 },
+      { Charm: 1 },
+      { "Lovely Kiss": 1 },
+      { Doubleslap: 1 },
+      { "Soft-Boiled": 1 },
+      { "Last Resort": 1 },
+      { Metronome: 1 }
     ],
     loots: [
       { min: 1, max: 1, item: "eggshell", rar: "Raro" },
@@ -6827,9 +7474,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "feather", rar: "26.5%" },
     ],
     evoStone: "Heart stone",
-    boost: 10,
+    boost: 30,
     booStone: "Heart stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Togetic",
@@ -6847,15 +7498,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Lovely kiss": 80 },
-      { "Charm": 80 },
-      { "Doubleslap": 80 },
-      { "Fairy wind": 88 },
-      { "Softboiled": 90 },
-      { "Great love": 87 },
-      { "Last resort": 85 },
-      { "Ancient power": 95 },
-      { "Metronome": 80 },
+      { Charm: 80 },
+      { "Dazzling Gleam": 80 },
+      { "Play Rough": 80 },
+      { "Draining Kiss": 80 },
+      { "Great Love": 80 },
+      { "Heart Pound": 80 },
+      { "Floral Storm": 80 },
+      { Metronome: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "eggshell", rar: "4.3%" },
@@ -6867,8 +7517,12 @@ const pokesarray = [
     ],
     evoStone: "Shiny stone",
     boost: 3,
-    booStone: "Feather stone",
-    habilidades: "",
+    booStone: "Heart Stone ou Feather Stone",
+    habilidades: "Light, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Natu",
@@ -6884,12 +7538,12 @@ const pokesarray = [
     evo: "Xatu",
     mapas: [],
     moves: [
-      { "Peck": 30 },
-      { "Feather dance": 30 },
-      { "Confuse ray": 30 },
-      { "Psy pulse": 30 },
-      { "Night shade": 34 },
-      { "Psychic": 36 },
+      { Peck: 30 },
+      { "Feather Dance": 30 },
+      { "Confuse Ray": 30 },
+      { "Psy Pulse": 30 },
+      { "Night Shade": 30 },
+      { Psychic: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange wing", rar: "1.5%" },
@@ -6897,10 +7551,14 @@ const pokesarray = [
       { min: 1, max: 6, item: "enchanted gem", rar: "80.0%" },
       { min: 1, max: 1, item: "feather", rar: "32.5%" },
     ],
-    evoStone: ["Feather stone", "Enigma stone"], // Corrigido
-    boost: 10,
+    evoStone: "Feather stone, Enigma stone", // Corrigido
+    boost: 8,
     booStone: "Feather stone",
     habilidades: "Teleport, Light, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Xatu",
@@ -6921,15 +7579,15 @@ const pokesarray = [
       { top: 89.34, left: 33.77, text: "Deserto de Mandarim - Subterrâneo (FREE)" }
     ],
     moves: [
-      { "Peck": 80 },
-      { "Feather dance": 80 },
-      { "Confuse ray": 82 },
-      { "Shadow ball": 80 },
-      { "Night shade": 85 },
-      { "Astonish": 80 },
-      { "Tailwind": 80 },
-      { "Predict": 85 },
-      { "Double team": 82 },
+      { Peck: 80 },
+      { "Psy Ball": 80 },
+      { "Psy Pulse": 80 },
+      { Psychic: 80 },
+      { "Stored Power": 80 },
+      { "Expanding Force": 80 },
+      { Predict: 80 },
+      { "Calm Mind": 80 },
+      { Tailwind: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange wing", rar: "4.3%" },
@@ -6941,7 +7599,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Feather stone",
-    habilidades: "Teleport, Light, Fly, Blink",
+    habilidades: "Teleport, Light, Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Mareep",
@@ -6957,14 +7619,13 @@ const pokesarray = [
     evo: "Flaaffy",
     mapas: [],
     moves: [
-      { "Charge": 28 },
-      { "Tackle": 20 },
-      { "Fire punch": 20 },
-      { "Cotton spore": 22 },
-      { "Thunder shock": 20 },
-      { "Thunder bolt": 22 },
-      { "Thunder punch": 24 },
-      { "Signal beam": 26 },
+      { Charge: 20 },
+      { Tackle: 20 },
+      { "Cotton Spore": 20 },
+      { Thunderbolt: 20 },
+      { "Thunder Shock": 20 },
+      { "Electro Ball": 20 },
+      { Thunder: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "sheep wool", rar: "Raro" },
@@ -6975,42 +7636,47 @@ const pokesarray = [
     boost: 10,
     booStone: "Thunder stone",
     habilidades: "Light, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
-  {
+    {
     nome: "Flaaffy",
-    numero: 180,
+    numero: "180",
     level: 40,
-    clan: "Raibolt",
     tipo: "Elétrico",
+    clan: "Raibolt",
     regiao: "Johto",
     geracao: "2",
     dificuldade: "Médio",
     xpcaught: 15000,
     pricenpc: 8000,
-    preevo: "Mareep",
     evo: "Ampharos",
-    mapas: [],
-    moves: [
-      { "Charge": 40 },
-      { "Tackle": 40 },
-      { "Fire punch": 40 },
-      { "Cotton spore": 40 },
-      { "Thunder shock": 40 },
-      { "Thunder bolt": 40 },
-      { "Thunder punch": 44 },
-      { "Thunder": 48 },
-      { "Signal beam": 46 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "sheep wool", rar: "2.0%" },
-      { min: 1, max: 20, item: "screw", rar: "80.0%" },
-      { min: 1, max: 1, item: "Thunder stone", rar: "Raro" },
-      { min: 1, max: 1, item: "electric box", rar: "17.0%" },
-    ],
-    evoStone: "Thunder stone",
+    evoStone: "Thunder stone (2x)",
     boost: 7,
     booStone: "Thunder stone",
     habilidades: "Light, Headbutt",
+    preevo: "Mareep",
+    moves: [
+      { Charge: 40 },
+      { "Thunder Punch": 40 },
+      { "Cotton Spore": 40 },
+      { Thunderbolt: 40 },
+      { "Thunder Shock": 40 },
+      { "Fire Punch": 40 },
+      { Thunder: 40 },
+      { Discharge: 40 }
+    ],
+    loots: [
+      { item: "sheep wool", min: 1, max: 1, rar: "2.0%" },
+      { item: "screw", min: 1, max: 20, rar: "80.0%" },
+      { item: "Thunder stone", min: 1, max: 1, rar: "Raro" },
+      { item: "electric box", min: 1, max: 1, rar: "17.0%" }
+    ],
+    mapas: [],
+    updateHistory: [ { date: "23/03/2026, 01:21:49", changes: [ "✏️ <strong>evoStone</strong>: de \"Thunder stone\" ➔ \"Thunder stone (2x)\"" ] }, { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] } ],
+    updatedAt: "23/03/2026, 01:21:49"
   },
   {
     nome: "Ampharos",
@@ -7027,17 +7693,16 @@ const pokesarray = [
     preevo: "Flaaffy",
     mapas: [],
     moves: [
-      { "Charge": 80 },
-      { "Dragon tail": 80 },
-      { "Cotton spore": 80 },
-      { "Thunder bolt": 80 },
-      { "Thunder shock": 80 },
-      { "Confuse ray": 82 },
-      { "Fire punch": 80 },
-      { "Dragon pulse": 85 },
-      { "Electro field": 90 },
-      { "Signal beam": 80 },
-      { "Cotton guard": 80 },
+      { "Defense curl": 80 },
+      { Swift: 80 },
+      { "Thunder Punch": 80 },
+      { Thunderbolt: 80 },
+      { "Thunder Wrath": 80 },
+      { "Electro Field": 80 },
+      { "Eletric Storm": 80 },
+      { Protect: 80 },
+      { "Water Compaction": "P" },
+      { Protector: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "sheep wool", rar: "4.3%" },
@@ -7047,12 +7712,16 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Thunder stone",
-    habilidades: "Light, Headbutt",
+    habilidades: "Rock Smash, Dig, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Bellossom",
     numero: 182,
-    level: 50,
+    level: 60,
     clan: "Naturia",
     tipo: "Grama",
     regiao: "Johto",
@@ -7063,18 +7732,17 @@ const pokesarray = [
     preevo: "Gloom",
     mapas: [],
     moves: [
-      { "Absorb": 50 },
-      { "Leech seed": 50 },
-      { "Leaf blade": 50 },
-      { "Magical leaf": 50 },
-      { "Poison gas": 50 },
-      { "Petal dance": 55 },
-      { "Leaf storm": 58 },
-      { "Sleep powder": 50 },
-      { "Stun spore": 50 },
-      { "Poison powder": 50 },
-      { "Spores reaction": "Passiva" },
-      { "Mega drain": "Passiva" },
+      { Absorb: 60 },
+      { "Leech Seed": 60 },
+      { "Petal Bullets": 60 },
+      { "Magical Leaf": 60 },
+      { "Petal Dance": 60 },
+      { "Sweet Scent": 60 },
+      { "Petal Blizzard": 60 },
+      { "Grassy Terrain": 60 },
+      { "Sleep Powder": 60 },
+      { "Mega Drain": "P" },
+      { "Effect Spore": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "strange flower", rar: "4.3%" },
@@ -7084,10 +7752,14 @@ const pokesarray = [
     ],
     boost: 4,
     booStone: "Leaf stone",
-    habilidades: "Cut",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Maril",
+    nome: "Marill",
     numero: 183,
     level: 20,
     clan: "Seavell, Psycraft",
@@ -7101,13 +7773,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Tackle": 20 },
-      { "Aqua tail": 20 },
-      { "Water gun": 20 },
-      { "Waterfall": 24 },
-      { "Bubblebeam": 26 },
-      { "Rain dance": 22 },
-      { "Defense curl": 28 },
+      { Tackle: 20 },
+      { Bubbles: 20 },
+      { "Bubble Beam": 20 },
+      { "Aqua Tail": 20 },
+      { Waterfall: 20 },
+      { "Rain Dance": 20 },
+      { "Defense Curl": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "blue ball", rar: "1.3%" },
@@ -7115,14 +7787,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "21.0%" },
     ],
     evoStone: "Water stone",
-    boost: 10,
+    boost: 8,
     booStone: "Water stone",
     habilidades: "Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Azumarill",
     numero: 184,
-    level: 60,
+    level: 80,
     clan: "Seavell, Psycraft",
     tipo: "Água, Fada",
     regiao: "Johto",
@@ -7130,19 +7806,20 @@ const pokesarray = [
     dificuldade: "Médio",
     xpcaught: 100000,
     pricenpc: 13000,
-    preevo: "Maril",
+    preevo: "Marill",
     mapas: [],
     vip: "yes",
     moves: [
-      { "Play rough": 60 },
-      { "Aqua tail": 60 },
-      { "Water gun": 60 },
-      { "Water ball": 60 },
-      { "Waterfall": 65 },
-      { "Bubblebeam": 60 },
-      { "Hydropump": 68 },
-      { "Rain dance": 60 },
-      { "Defense curl": 60 },
+      { "Play Rough": 80 },
+      { Bubbles: 80 },
+      { "Bubble Beam": 80 },
+      { "Aqua Tail": 80 },
+      { Waterfall: 80 },
+      { "Water Pulse": 80 },
+      { Surf: 80 },
+      { Whirlpool: 80 },
+      { "Defense Curl": 80 },
+      { "Huge Power": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "blue ball", rar: "4.3%" },
@@ -7150,9 +7827,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Water stone", rar: "Raro" },
       { min: 1, max: 1, item: "water pendant", rar: "34.5%" },
     ],
-    boost: 4,
+    boost: 3,
     booStone: "Water stone",
-    habilidades: "Surf",
+    habilidades: "Dig, Rock Smash, Headbutt, Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sudowoodo",
@@ -7167,16 +7848,15 @@ const pokesarray = [
     pricenpc: 120000,
     mapas: [],
     moves: [
-      { "Rock throw": 100 },
-      { "Rock slide": 100 },
-      { "Rock tomb": 100 },
-      { "Stone edge": 100 },
-      { "Low kick": 100 },
-      { "Sucker punch": 102 },
-      { "Mimic": 105 },
-      { "Rock wrecker": 105 },
-      { "Hammer arm": 100 },
-      { "Sturdy": "Passiva" },
+      { "Rock Slide": 100 },
+      { "Stone Edge": 100 },
+      { "Wood Hammer": 100 },
+      { "Head Smash": 100 },
+      { "Rock Blast": 100 },
+      { "Rock Wrecker": 100 },
+      { "Rock Polish": 100 },
+      { Confinde: 100 },
+      { Protect: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "branch of stone", rar: "4.3%" },
@@ -7184,14 +7864,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "Rock stone", rar: "Raro" },
       { min: 1, max: 1, item: "stone orb", rar: "34.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Rock stone",
     habilidades: "Dig, Rock smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Politoed",
     numero: 186,
-    level: 70,
+    level: 60,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Johto",
@@ -7203,15 +7887,14 @@ const pokesarray = [
     preevo: "Poliwhirl",
     mapas: [],
     moves: [
-      { "Mud shot": 70 },
-      { "Doubleslap": 70 },
-      { "Bubblebeam": 70 },
-      { "Water gun": 70 },
-      { "Hyper voice": 70 },
-      { "Whirlpool": 72 },
-      { "Tongue hook": 75 },
-      { "Tongue grap": 78 },
-      { "Hypnosis": 70 },
+      { "Doubleslap": 60 },
+      { "Bubble Beam": 60 },
+      { "Water Pulse": 60 },
+      { Whirlpool: 60 },
+      { "Tongue Hook": 60 },
+      { "Hydro Pump": 60 },
+      { "Tongue Grap": 60 },
+      { "Rain Dance": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange thing", rar: "8.3%" },
@@ -7222,6 +7905,10 @@ const pokesarray = [
     boost: 4,
     booStone: "Water stone",
     habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hoppip",
@@ -7237,14 +7924,14 @@ const pokesarray = [
     evo: "Skiploom",
     mapas: [],
     moves: [
-      { "Tackle": 1 },
-      { "Leech seed": 1 },
-      { "U turn": 5 },
-      { "Synthesis": 10 },
-      { "Sleep powder": 7 },
-      { "Cotton spore": 8 },
-      { "Poison powder": 1 },
-      { "Mega drain": "Passiva" },
+      { Tackle: 1 },
+      { "Leech Seed": 1 },
+      { "U-Turn": 1 },
+      { Synthesis: 1 },
+      { "Sleep Powder": 1 },
+      { "Cotton Spore": 1 },
+      { "Poioson Powder": 1 },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "yellow flower", rar: "Raro" },
@@ -7255,7 +7942,11 @@ const pokesarray = [
     evoStone: "Leaf stone",
     boost: 30,
     booStone: "Leaf stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Skiploom",
@@ -7272,15 +7963,15 @@ const pokesarray = [
     evo: "Jumpluff",
     mapas: [],
     moves: [
-      { "Tackle": 30 },
-      { "Leech seed": 30 },
-      { "U turn": 30 },
-      { "Synthesis": 33 },
-      { "Bullet seed": 36 },
-      { "Sleep powder": 30 },
-      { "Cotton spore": 30 },
-      { "Poison powder": 30 },
-      { "Mega drain": "Passiva" },
+      { Tackle: 30 },
+      { "Leech Seed": 30 },
+      { "U-Turn": 30 },
+      { Synthesis: 30 },
+      { "Bullet Seed": 30 },
+      { "Sleep Powder": 30 },
+      { "Cotton Spore": 30 },
+      { "Poison Powder": 30 },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "yellow flower", rar: "2.1%" },
@@ -7289,9 +7980,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "bag of pollem", rar: "7.5%" },
     ],
     evoStone: "Leaf stone",
-    boost: 10,
+    boost: 8,
     booStone: "Leaf stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Jumpluff",
@@ -7307,16 +8002,17 @@ const pokesarray = [
     preevo: "Skiploom",
     mapas: [],
     moves: [
-      { "Tackle": 50 },
-      { "Leech seed": 50 },
-      { "U turn": 50 },
-      { "Synthesis": 55 },
-      { "Bullet seed": 50 },
-      { "Giga drain": 60 },
-      { "Sleep powder": 50 },
-      { "Cotton spore": 50 },
-      { "Poison powder": 50 },
-      { "Mega drain": "Passiva" },
+      { Tackle: 50 },
+      { "Leech Seed": 50 },
+      { "U-Turn": 50 },
+      { Synthesis: 50 },
+      { "Bullet Seed": 50 },
+      { "Giga Drain": 50 },
+      { "Cotton Guard": 50 },
+      { "Sleep Powder": 50 },
+      { "Cotton Spore": 50 },
+      { "Poison Powder": 50 },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "yellow flower", rar: "4.3%" },
@@ -7325,9 +8021,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Leaf stone", rar: "Raro" },
       { min: 1, max: 1, item: "bag of pollem", rar: "7.5%" },
     ],
-    boost: 4,
+    boost: 5,
     booStone: "Leaf stone",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Aipom",
@@ -7342,13 +8042,14 @@ const pokesarray = [
     pricenpc: 8000,
     mapas: [],
     moves: [
-      { "Sand attack": 40 },
-      { "Doubleslap": 40 },
-      { "Scratch": 40 },
-      { "Swift": 40 },
-      { "Fury swipes": 44 },
-      { "Last resort": 46 },
-      { "Agility": 45 },
+      { "Sand Attack": 40 },
+      { Scratch: 40 },
+      { Swift: 40 },
+      { "Fury Swipes": 40 },
+      { "Last Resort": 40 },
+      { "Double Hit": 40 },
+      { Agility: 40 },
+      { "Double Team": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "monkey paw", rar: "4.3%" },
@@ -7358,39 +8059,47 @@ const pokesarray = [
     boost: 7,
     booStone: "Heart stone",
     habilidades: "Dig, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
-  {
+    {
     nome: "Sunkern",
-    numero: 191,
+    numero: "191",
     level: 1,
-    clan: "Naturia",
     tipo: "Grama",
+    clan: "Naturia",
     regiao: "Johto",
     geracao: "2",
     dificuldade: "Fácil",
     xpcaught: 500,
     pricenpc: 5,
     evo: "Sunflora",
-    mapas: [],
-    moves: [
-      { "Headbutt": 1 },
-      { "Leech seed": 1 },
-      { "Razor leaf": 1 },
-    ],
-    loots: [
-      { min: 1, max: 1, item: "helicopter leave", rar: "1.4%" },
-      { min: 1, max: 5, item: "seed", rar: "80.0%" },
-      { min: 1, max: 1, item: "leaves", rar: "20.3%" },
-    ],
     evoStone: "Leaf stone",
     boost: 30,
     booStone: "Leaf stone",
     habilidades: "",
+    moves: [
+      { "Leech Seed": 1 },
+      { "Razor Leaf": 1 },
+      { Absorb: 1 },
+      { "Grass Knot": 1 },
+      { "Mega Drain": "P" }
+    ],
+    loots: [
+      { item: "helicopter leave", min: 1, max: 1, rar: "1.4%" },
+      { item: "seed", min: 1, max: 5, rar: "80.0%" },
+      { item: "leaves", min: 1, max: 1, rar: "20.3%" }
+    ],
+    mapas: [],
+    updateHistory: [ { date: "23/03/2026, 01:02:54", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Absorb (Lv 1)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Absorv (Lv 1)</strong>" ] }, { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] }, { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] } ],
+    updatedAt: "23/03/2026, 01:02:54"
   },
   {
     nome: "Sunflora",
     numero: 192,
-    level: 30,
+    level: 40,
     clan: "Naturia",
     tipo: "Grama",
     regiao: "Johto",
@@ -7401,13 +8110,14 @@ const pokesarray = [
     preevo: "Sunkern",
     mapas: [],
     moves: [
-      { "Leech seed": 30 },
-      { "Razor leaf": 30 },
-      { "Petal dance": 32 },
-      { "Bullet seed": 34 },
-      { "Sunny day": 36 },
-      { "Solar beam": 38 },
-      { "Mega drain": "Passiva" },
+      { "Leech Seed": 40 },
+      { "Razor Leaf": 40 },
+      { "Petal Dance": 40 },
+      { "Bullet Seed": 40 },
+      { "Sunny Day": 40 },
+      { "Solar Beam": 40 },
+      { "Giga Drain": 40 },
+      { "Mega Drain": "P" }
     ],
 
 
@@ -7417,9 +8127,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Leaf stone", rar: "Raro" },
       { min: 1, max: 1, item: "leaves", rar: "29.0%" },
     ],
-    boost: 9,
+    boost: 7,
     booStone: "Leaf stone",
     habilidades: "Cut, Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Yanma",
@@ -7436,14 +8150,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 50 },
-      { "Tackle": 50 },
-      { "Quick attack": 50 },
-      { "U turn": 50 },
-      { "Double team": 52 },
-      { "Wing attack": 50 },
-      { "Air slash": 58 },
-      { "Bug buzz": 56 },
+      { "Quick Attack": 50 },
+      { "Bug Bite": 50 },
+      { "Supersonic": 50 },
+      { "Struggle Bug": 50 },
+      { "Wing Attack": 50 },
+      { "Air Slash": 50 },
+      { "Bug Buzz": 50 },
+      { "Double Team": 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "insect tail", rar: "4.3%" },
@@ -7454,7 +8168,11 @@ const pokesarray = [
     ],
     boost: 5,
     booStone: "Cocoon stone",
-    habilidades: "Cut",
+    habilidades: "Cut, Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Wooper",
@@ -7471,14 +8189,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Slam": 20 },
-      { "Mud shot": 20 },
-      { "Aqua tail": 20 },
-      { "Water gun": 20 },
-      { "Waterball": 24 },
-      { "Muddy water": 28 },
-      { "Earthquake": 30 },
-      { "Amnesia": "Passiva" },
+      { Slam: 20 },
+      { "Mud Shot": 20 },
+      { "Aqua Tail": 20 },
+      { "Water Gun": 20 },
+      { "Stomping Tantrum": 20 },
+      { "Muddy Water": 20 },
+      { Earthquake: 20 },
+      { Amnesia: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "wooper horn", rar: "1.3%" },
@@ -7490,7 +8208,11 @@ const pokesarray = [
     evoStone: "Water stone, Earth stone",
     boost: 10,
     booStone: "Earth stone",
-    habilidades: "Dig, Rock smash, Cut, Headbutt",
+    habilidades: "Dig, Rock Smash, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Quagsire",
@@ -7507,15 +8229,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Slam": 60 },
-      { "Mud shot": 60 },
-      { "Aqua tail": 60 },
-      { "Water gun": 60 },
-      { "Waterball": 60 },
-      { "Sand tomb": 62 },
-      { "Muddy water": 65 },
-      { "Earthquake": 66 },
-      { "Amnesia": "Passiva" },
+      { Slam: 60 },
+      { "Sand Attack": 60 },
+      { "Aqua Tail": 60 },
+      { "Water Gun": 60 },
+      { "Muddy Water": 60 },
+      { Surf: 60 },
+      { "Rain Dance": 60 },
+      { Earthquake: 60 },
+      { Amnesia: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "wooper horn", rar: "8.3%" },
@@ -7529,11 +8251,15 @@ const pokesarray = [
     boost: 4,
     booStone: "Earth stone",
     habilidades: "Dig, Rock smash, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Espeon",
     numero: 196,
-    level: 60,
+    level: 80,
     clan: "Psycraft",
     tipo: "Psiquico",
     regiao: "Johto",
@@ -7545,15 +8271,13 @@ const pokesarray = [
     preevo: "Eevee",
     mapas: [],
     moves: [
-      { "Swift": 60 },
-      { "Bite": 60 },
-      { "Psywave": 60 },
-      { "Psybeam": 60 },
-      { "Psy pulse": 60 },
-      { "Confusion": 60 },
-      { "Psychic": 64 },
-      { "Psyshock": 68 },
-      { "Miracle eye": 1000 },
+      { Swift: 80 },
+      { Bite: 80 },
+      { "Psy Pulse": 80 },
+      { Confusion: 80 },
+      { Psychic: 80 },
+      { Psyshock: 80 },
+      { "Trick Room": 80 }
     ],
     loots: [
       { min: 1, max: 60, item: "enchanted gem", rar: "80.0%" },
@@ -7568,14 +8292,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "leafeon bag", rar: "Raro" },
       { min: 1, max: 1, item: "sylveon bag", rar: "Raro" },
     ],
-    boost: 5,
+    boost: 3,
     booStone: "Enigma stone",
-    habilidades: "Dig, Teleport, Headbutt, Blink",
+    habilidades: "Light, Dig, Teleport, Headbutt, Rock Smash, Cut, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Umbreon",
     numero: 197,
-    level: 60,
+    level: 80,
     clan: "Malefic",
     tipo: "Noturno",
     regiao: "Johto",
@@ -7587,14 +8315,15 @@ const pokesarray = [
     preevo: "Eevee",
     mapas: [],
     moves: [
-      { "Quick attack": 60 },
-      { "Bite": 60 },
-      { "Shadowave": 60 },
-      { "Pursuit": 60 },
-      { "Dark pulse": 60 },
-      { "Confuse ray": 64 },
-      { "Last resort": 60 },
-      { "Night daze": 66 },
+      { Attract: 80 },
+      { Bite: 80 },
+      { "Dark Pulse": 80 },
+      { "Cursed Hollow": 80 },
+      { "Helping Hand": 80 },
+      { "Tail Whip": 80 },
+      { Protection: 80 },
+      { "Night Daze": 80 },
+      { Moonlight: 80 }
     ],
     loots: [
       { min: 1, max: 60, item: "dark gem", rar: "80.0%" },
@@ -7609,9 +8338,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "leafeon bag", rar: "Raro" },
       { min: 1, max: 1, item: "sylveon bag", rar: "Raro" },
     ],
-    boost: 5,
+    boost: 3,
     booStone: "Darkness stone",
-    habilidades: "Dig, Headbutt, Blink",
+    habilidades: "Light, Cut, Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   
     {
@@ -7629,14 +8362,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Peck": 50 },
-      { "Pursuit": 50 },
-      { "Night shade": 50 },
-      { "Wing attack": 53 },
-      { "Sucker punch": 57 },
-      { "Tailwind": 50 },
-      { "Dark pulse": 50 },
-      { "Torment": 55 },
+      { Peck: 50 },
+      { Pursuit: 50 },
+      { Flatter: 50 },
+      { "Wing Attack": 50 },
+      { "Dark Pulse": 50 },
+      { "Sucker Punch": 50 },
+      { Assurance: 50 },
+      { Torment: 50 },
+      { Tailwind: 50 },
+      { Insomnia: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dark beak", rar: "4.3%" },
@@ -7648,6 +8383,10 @@ const pokesarray = [
     boost: 5,
     booStone: "Darkness stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//198
   {
     nome: "Slowking",
@@ -7664,17 +8403,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Waterball": 100 },
-      { "Water pulse": 100 },
-      { "Psy ball": 100 },
-      { "Confusion": 100 },
-      { "Surf": 105 },
-      { "Psy impact": 115 },
-      { "Calm mind": 105 },
-      { "Future sight": 110 },
-      { "Nasty plot": 100 },
-      { "Miracle eye": 1000 },
-      { "Zen mind": "Passiva" },
+      { "Psybeam": 100 },
+      { "Chilling Water": 100 },
+      { "Psy Noise": 100 },
+      { Confusion: 100 },
+      { Psychic: 100 },
+      { "Psy Impact": 100 },
+      { "Calm Mind": 100 },
+      { Surf: 100 },
+      { "Chilly Reception": 100 },
+      { Oblivious: "P" },
+      { "Own Tempo": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "slow tail", rar: "14.3%" },
@@ -7686,7 +8425,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Ancient stone",
-    habilidades: "Teleport, Light, Blink, Headbutt, Control mind",
+    habilidades: "Teleport, Blink, Headbutt, Light, Control Minds",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Misdreavus",
@@ -7702,18 +8445,19 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Shadow ball": 100 },
-      { "Dark pulse": 100 },
-      { "Cursed hollow": 100 },
-      { "Black blow": 100 },
-      { "Black box": 100 },
-      { "Night daze": 106 },
-      { "Fear": 100 },
-      { "Dark accurate": 1020 },
-      { "Illusion": "Passiva" },
-      { "Ghost trick": "Passiva" },
-      { "Fear lust": "Passiva" },
-      { "Levitate": "Passiva" },
+      { "Shadow Ball": 100 },
+      { "Emergency Call": 100 },
+      { "Confuse Ray": 100 },
+      { "Black Box": 100 },
+      { Hex: 100 },
+      { "Shadow Storm": 100 },
+      { "Pain Split": 100 },
+      { Spite: 100 },
+      { Growl: 100 },
+      { "Mean Look": 100 },
+      { "Ghost Trick": "P" },
+      { "Dark Accurate": 100 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "miss trace", rar: "4.1%" },
@@ -7721,9 +8465,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Darkness stone", rar: "Raro" },
       { min: 1, max: 1, item: "future orb", rar: "34.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Darkness stone",
-    habilidades: "Teleport, Dark portal",
+    habilidades: "Light, Teleport",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Unown",
@@ -7739,14 +8487,18 @@ const pokesarray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Invisible": 10 },
-      { "Hidden power": 15 },
-      { "Levitate": "Passiva" },
+      { Invisible: 10 },
+      { "Hidden Power": 10 },
+      { Levitate: "P" }
     ],
     loots: [],
-    boost: 20,
+    boost: 15,
     booStone: "Enigma stone",
     habilidades: "Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Wobbuffet",
@@ -7766,10 +8518,13 @@ const pokesarray = [
       { top: 87.15, left: 38.41, text: "Deserto Mandarin - (FREE)" }
     ],
     moves: [
-      { "Destiny bond": 100 },
-      { "Safeguard": 110 },
-      { "Mirror coat": "Passiva" },
-      { "Stunning confusion": "Passiva" },
+      { Charm: 100 },
+      { "Mirror Coat": 100 },
+      { Psychic: 100 },
+      { Encore: 100 },
+      { Couterstrike: 100 },
+      { "Stunning Confusion": 100 },
+      { Immunity: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "strange tail", rar: "4.3%" },
@@ -7777,9 +8532,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Enigma stone", rar: "Raro" },
       { min: 1, max: 1, item: "future orb", rar: "34.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Enigma stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Girafarig",
@@ -7795,15 +8554,17 @@ const pokesarray = [
     fast: "yes",
     mapas: [],
     moves: [
-      { "Tackle": 80 },
-      { "Crunch": 80 },
-      { "Shadow ball": 80 },
-      { "Shockwave": 80 },
-      { "Astonish": 80 },
-      { "Psychic": 80 },
-      { "Assurance": 85 },
-      { "Nasty plot": 95 },
-      { "Agility": 80 },
+      { "Psychic Fangs": 80 },
+      { Crunch: 80 },
+      { "Shadow Ball": 80 },
+      { "Foul Play": 80 },
+      { "Shock Wave": 80 },
+      { Astonish: 80 },
+      { Assurance: 80 },
+      { "Nasty Plot": 80 },
+      { Reflect: 80 },
+      { Agility: 80 },
+      { "Early Bird": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "strange antenna", rar: "4.3%" },
@@ -7815,7 +8576,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Enigma stone",
-    habilidades: "Teleport, Ride, Light, Headbutt",
+    habilidades: "Teleport, Rock Smash, Light, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Pineco",
@@ -7832,12 +8597,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Tackle": 10 },
-      { "Bug bite": 10 },
-      { "Toxic spikes": 10 },
-      { "Gyro ball": 18 },
-      { "Harden": 12 },
-      { "Selfdestruction": 10 },
+      { Tackle: 10 },
+      { "Bug Bite": 10 },
+      { "Toxic Spikes": 10 },
+      { "Pin Missile": 10 },
+      { Harden: 10 },
+      { Selfdestruction: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "piece of shell", rar: "Raro" },
@@ -7848,6 +8613,10 @@ const pokesarray = [
     boost: 15,
     booStone: "Cocoon stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Forretress",
@@ -7865,14 +8634,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 80 },
-      { "Bug bite": 80 },
-      { "Pin missile": 85 },
-      { "Heavy slam": 80 },
-      { "Spikes": 90 },
-      { "Stealth rock": 90 },
-      { "Follow me": 80 },
-      { "Harden": 82 },
+      { "Iron Head": 80 },
+      { "Bug Bite": 80 },
+      { "Toxic Spikes": 80 },
+      { "Heavy Slam": 80 },
+      { Spikes: 80 },
+      { "Stealth Rock": 80 },
+      { "Follow Me": 80 },
+      { Harden: 80 },
+      { "Rapid Spin": 80 },
+      { Overcoat: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "piece of shell", rar: "8.3%" },
@@ -7884,6 +8655,10 @@ const pokesarray = [
     boost: 3,
     booStone: "Cocoon stone",
     habilidades: "Dig, Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dunsparce",
@@ -7898,21 +8673,25 @@ const pokesarray = [
     pricenpc: 3000,
     mapas: [],
     moves: [
-      { "Yawn": 30 },
-      { "Pursuit": 30 },
-      { "Take down": 30 },
-      { "Ancient power": 42 },
-      { "Roost": 35 },
-      { "Rage": 32 },
-      { "Defense curl": 32 },
+      { Yawn: 30 },
+      { Pursuit: 30 },
+      { "Take Down": 30 },
+      { "Ancient Power": 30 },
+      { Roost: 30 },
+      { Rage: 30 },
+      { "Defense Curl": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "small wing", rar: "4.3%" },
       { min: 1, max: 15, item: "rubber ball", rar: "80.0%" },
     ],
-    boost: 9,
+    boost: 8,
     booStone: "Heart stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Gligar",
@@ -7930,15 +8709,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Sand attack": 40 },
-      { "Slash": 40 },
-      { "Dig": 42 },
-      { "U turn": 40 },
-      { "X scissor": 45 },
-      { "Fury cutter": 48 },
-      { "Guillotine": 50 },
-      { "Harden": 42 },
-      { "Shadow slice": "Passiva" },
+      { "Sand Attack": 40 },
+      { Slash: 40 },
+      { "Dual Wingbeat": 40 },
+      { Dig: 40 },
+      { Guillotine: 40 },
+      { "Aerial Ace": 40 },
+      { Harden: 40 },
+      { "Hyper Cutter": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "Gligar claw", rar: "4.3%" },
@@ -7950,6 +8728,10 @@ const pokesarray = [
     boost: 7,
     booStone: "Earth stone",
     habilidades: "Rock smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Steelix",
@@ -7968,16 +8750,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron tail": 100 },
-      { "Iron head": 100 },
-      { "Sand tomb": 102 },
-      { "Rock tomb": 100 },
-      { "Stone edge": 100 },
-      { "Earth power": 105 },
-      { "Fissure": 110 },
-      { "Earthquake": 107 },
-      { "Harden": 100 },
-      { "Iron defense": 104 },
+      { "Iron Tail": 100 },
+      { "Iron Head": 100 },
+      { "Sand Tomb": 100 },
+      { "Rock Tomb": 100 },
+      { "Stone Edge": 100 },
+      { "Earth Power": 100 },
+      { "Sand Eruption": 100 },
+      { Fissure: 100 },
+      { Harden: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "steelix tail", rar: "Raro" },
@@ -7989,7 +8770,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Metal stone",
-    habilidades: "Ride, Strenght",
+    habilidades: "Cut, Dig, Rock Smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Snubbull",
@@ -8005,22 +8790,26 @@ const pokesarray = [
     evo: "Granbull",
     mapas: [],
     moves: [
-      { "Lick": 30 },
-      { "Bite": 30 },
-      { "Crunch": 30 },
-      { "Play rough": 30 },
-      { "Fire fang": 32 },
-      { "Ice fang": 34 },
-      { "Rage": 30 },
+      { Lick: 30 },
+      { Bite: 30 },
+      { Crunch: 30 },
+      { "Play Rough": 30 },
+      { "Fire Fang": 30 },
+      { "Ice Fang": 30 },
+      { Rage: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "dog ear", rar: "2.0%" },
       { min: 1, max: 15, item: "rubber ball", rar: "80.0%" },
     ],
     evoStone: "Heart stone",
-    boost: 9,
+    boost: 8,
     booStone: "Heart stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Granbull",
@@ -8036,25 +8825,29 @@ const pokesarray = [
     preevo: "Snubbull",
     mapas: [],
     moves: [
-      { "Tackle": 80 },
-      { "Ice fang": 82 },
-      { "Dazzling gleam": 84 },
-      { "Play rough": 80 },
-      { "Close combat": 80 },
-      { "Take down": 80 },
-      { "Hyper beam": 85 },
-      { "War dog": 86 },
-      { "Rest": 88 },
-      { "Pixilate": "Passiva" },
+      { Tackle: 80 },
+      { "Dazzling Gleam": 80 },
+      { "Play Rough": 80 },
+      { "Take Down": 80 },
+      { "Hyper Beam": 80 },
+      { "Heart Pound": 80 },
+      { "Floral Storm": 80 },
+      { "Scary Face": 80 },
+      { Pixilate: "P" },
+      { "Quick Feet": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dog ear", rar: "8.1%" },
       { min: 1, max: 33, item: "rubber ball", rar: "80.0%" },
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
     ],
-    boost: 4,
+    boost: 3,
     booStone: "Heart stone",
-    habilidades: "Headbutt, Rock smash",
+    habilidades: "Headbutt, Dig, Rock Smash",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Qwilfish",
@@ -8071,14 +8864,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Tackle": 50 },
-      { "Poison sting": 50 },
-      { "Toxic spikes": 52 },
-      { "Water gun": 50 },
-      { "Aqua tail": 50 },
-      { "Harden": 54 },
-      { "Minimize": 58 },
-      { "Spike skin": "Passiva" },
+      { Bubbles: 50 },
+      { "Bubble Beam": 50 },
+      { "Toxic Spikes": 50 },
+      { "Poison Tail": 50 },
+      { Toxic: 50 },
+      { Minimize: 50 },
+      { "Barb Barrage": 50 },
+      { Corrosion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "small tail", rar: "4.3%" },
@@ -8094,6 +8887,10 @@ const pokesarray = [
     boost: 5,
     booStone: "Water stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Scizor",
@@ -8113,17 +8910,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 100 },
-      { "Iron head": 100 },
-      { "Wing blade": 100 },
-      { "Red fury": 104 },
-      { "Shredder team": 110 },
-      { "X scissor": 100 },
-      { "Agility": 100 },
-      { "Team claw": 115 },
-      { "Swords dance": 108 },
-      { "Counter claw": "Passiva" },
-      { "Evasion": "Passiva" },
+      { "Quick Attack": 100 },
+      { "Iron Head": 100 },
+      { "Wing Attack": 100 },
+      { "Red Fury": 100 },
+      { "Shredder Team": 100 },
+      { "Compass Slash": 100 },
+      { "Metal Claw": 100 },
+      { "Team Claw": 100 },
+      { "Swords Dance": 100 },
+      { "Counter Claw": "P" },
+      { Evasion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "scizor claw", rar: "Raro" },
@@ -8136,6 +8933,10 @@ const pokesarray = [
     boost: 30,
     booStone: "Metal stone",
     habilidades: "Rock smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shuckle",
@@ -8151,12 +8952,13 @@ const pokesarray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Bug bite": 40 },
-      { "Wrap": 40 },
-      { "Shell attack": 40 },
-      { "Struggle bug": 48 },
-      { "Safeguard": 40 },
-      { "Rest": 44 },
+      { "Bug Bite": 40 },
+      { Wrap: 40 },
+      { "Shell Attack": 40 },
+      { "Struggle Bug": 40 },
+      { "Power Trick": 40 },
+      { Withdraw: 40 },
+      { "Guard Split": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "small shell", rar: "4.3%" },
@@ -8164,9 +8966,13 @@ const pokesarray = [
       { min: 1, max: 8, item: "small stone", rar: "80.0%" },
       { min: 1, max: 1, item: "pot of moss bug", rar: "24.0%" },
     ],
-    boost: 9,
+    boost: 7,
     booStone: "Cocoon stone",
     habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Heracross",
@@ -8183,16 +8989,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Low kick": 100 },
-      { "Horn attack": 100 },
-      { "Arm thrust": 106 },
-      { "Mega punch": 100 },
-      { "Close combat": 100 },
-      { "Revenge": 112 },
-      { "Megahorn": 107 },
-      { "Bug fighter": 110 },
-      { "Foresight": "Passiva" },
-      { "Swarm": "Passiva" },
+      { "Low Kick": 100 },
+      { "Horn Attack": 100 },
+      { "Arm Thrust": 100 },
+      { "Mega Punch": 100 },
+      { "Close Combat": 100 },
+      { Revenge: 100 },
+      { Megahorn: 100 },
+      { "Bug Figther": 100 },
+      { Foresight: "P" },
+      { Swarm: "P" },
+      { "Bug Anticipation": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "insect claw", rar: "10.1%" },
@@ -8202,9 +9009,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Punch stone", rar: "Raro" },
       { min: 1, max: 1, item: "pot of moss bug", rar: "39.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Cocoon stone",
-    habilidades: "Rock smash, Cut, Fly, Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Fly, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sneasel",
@@ -8220,15 +9031,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Scratch": 50 },
-      { "Bite": 50 },
-      { "Faint attack": 50 },
-      { "Ice shards": 50 },
-      { "Icy wind": 55 },
-      { "Metal claw": 57 },
-      { "Shadow claw": 50 },
-      { "Agility": 50 },
-      { "Evasion": "Passiva" },
+      { Scratch: 50 },
+      { "Ice Shard": 50 },
+      { "Feint Attack": 50 },
+      { "Ice Wind": 50 },
+      { Pursuit: 50 },
+      { "Metal Claw": 50 },
+      { "Shadow Claw": 50 },
+      { Agility: 50 },
+      { Evasion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "cat ear", rar: "4.3%" },
@@ -8242,6 +9053,10 @@ const pokesarray = [
     boost: 5,
     booStone: "Ice stone",
     habilidades: "Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Teddiursa",
@@ -8257,13 +9072,14 @@ const pokesarray = [
     evo: "Ursaring",
     mapas: [],
     moves: [
-      { "Scratch": 30 },
-      { "Slash": 30 },
-      { "Hammer arm": 32 },
-      { "Fury swipes": 30 },
-      { "Body slam": 34 },
-      { "Scary face": 34 },
-      { "Rest": 40 },
+      { Scratch: 30 },
+      { Slash: 30 },
+      { "Hammer Arm": 30 },
+      { "Fury Swipes": 30 },
+      { "Cross Chop": 30 },
+      { "Body Slam": 30 },
+      { "Scary Face": 30 },
+      { Charm: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "bear paw", rar: "Raro" },
@@ -8271,9 +9087,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "fur", rar: "7.0%" },
     ],
     evoStone: "Ancient stone, Heart stone",
-    boost: 10,
+    boost: 8,
     booStone: "Heart stone",
-    habilidades: "Rock smash, Cut, Headbutt",
+    habilidades: "Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ursaring",
@@ -8289,15 +9109,16 @@ const pokesarray = [
     preevo: "Teddiursa",
     mapas: [],
     moves: [
-      { "Scratch": 100 },
-      { "Slash": 100 },
-      { "Hammer arm": 100 },
-      { "Fury swipes": 100 },
-      { "Body slam": 104 },
-      { "Thrash": 105 },
-      { "Hyper beam": 105 },
-      { "Magnitude": 110 },
-      { "Quick feet": "Passiva" },
+      { Scratch: 100 },
+      { Slash: 100 },
+      { "Hammer Arm": 100 },
+      { "Fury Swipes": 100 },
+      { "Secret Power": 100 },
+      { "Focus Blast": 100 },
+      { "Hyper Beam": 100 },
+      { Magnitude: 100 },
+      { "Fake Tears": 100 },
+      { "Quick Feet": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bear paw", rar: "4.3%" },
@@ -8306,9 +9127,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Ancient stone", rar: "Raro" },
       { min: 1, max: 1, item: "fur", rar: "28.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Heart stone",
-    habilidades: "Rock smash, Cut, Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Slugma",
@@ -8328,12 +9153,12 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Ember": 10 },
-      { "Flamethrower": 12 },
-      { "Rock throw": 10 },
-      { "Rock slide": 10 },
-      { "Harden": 15 },
-      { "Yawn": 15 },
+      { Ember: 10 },
+      { "Rock Throw": 10 },
+      { "Rock Slide": 10 },
+      { Flamethrower: 10 },
+      { Harden: 10 },
+      { Yawn: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "fire ear", rar: "2.0%" },
@@ -8344,6 +9169,10 @@ const pokesarray = [
     boost: 15,
     booStone: "Fire stone",
     habilidades: "Rock smash",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Magcargo",
@@ -8364,17 +9193,18 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Ember": 80 },
-      { "Rock throw": 80 },
-      { "Rock slide": 80 },
-      { "Flamethrower": 80 },
-      { "Flame burst": 80 },
-      { "Stone edge": 80 },
-      { "Ancient power": 88 },
-      { "Inferno": 90 },
-      { "Harden": 80 },
-      { "Yawn": 86 },
-      { "Amnesia": "Passiva" },
+      { Ember: 80 },
+      { "Rock Throw": 80 },
+      { "Rock Slide": 80 },
+      { Flamethrower: 80 },
+      { "Flame Burst": 80 },
+      { Incinerate: 80 },
+      { "Fire Blast": 80 },
+      { Inferno: 80 },
+      { Harden: 80 },
+      { "Sunny Day": 80 },
+      { Amnesia: "P" },
+      { "Magmar Armor": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "fire ear", rar: "8.3%" },
@@ -8386,7 +9216,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Fire stone",
-    habilidades: "Rock smash, Headbutt",
+    habilidades: "Rock Smash, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Swinub",
@@ -8403,13 +9237,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Tackle": 10 },
-      { "Mud slap": 10 },
-      { "Mud bomb": 10 },
-      { "Ice fang": 10 },
-      { "Icy wind": 15 },
-      { "Frost breath": 18 },
-      { "Amnesia": "Passiva" },
+      { Tackle: 10 },
+      { "Mud-Slap": 10 },
+      { "Mud Bomb": 10 },
+      { "Ice Fang": 10 },
+      { "Ice Wind": 10 },
+      { "Frost Breath": 10 },
+      { Amnesia: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "tusk", rar: "Raro" },
@@ -8422,6 +9256,10 @@ const pokesarray = [
     boost: 15,
     booStone: "Earth stone",
     habilidades: "Dig, Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Piloswine",
@@ -8441,16 +9279,16 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Mud slap": 80 },
-      { "Mud bomb": 80 },
-      { "Ice fang": 80 },
-      { "Icy wind": 80 },
-      { "Powder snow": 80 },
-      { "Frost breath": 82 },
-      { "Bulldoze": 80 },
-      { "Earthquake": 90 },
-      { "Blizzard": 88 },
-      { "Amnesia": "Passiva" },
+      { "Mud Sport": 80 },
+      { "Ice Fang": 80 },
+      { "Ice Wind": 80 },
+      { "Powder Snow": 80 },
+      { "Frost Breath": 80 },
+      { "Stomping Tantrum": 80 },
+      { Bulldoze: 80 },
+      { Earthquake: 80 },
+      { Fissure: 80 },
+      { Amnesia: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "tusk", rar: "4.3%" },
@@ -8467,6 +9305,10 @@ const pokesarray = [
     boost: 3,
     booStone: "Earth stone",
     habilidades: "Dig, Rock smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Corsola",
@@ -8482,14 +9324,14 @@ const pokesarray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Tackle": 50 },
-      { "Bubbles": 50 },
-      { "Bubblebeam": 50 },
-      { "Rock blast": 50 },
-      { "Power gem": 50 },
-      { "Ancient power": 58 },
-      { "Recover": 55 },
-      { "Harden": 55 },
+      { Tackle: 50 },
+      { Bubbles: 50 },
+      { "Bubble Beam": 50 },
+      { "Rock Blast": 50 },
+      { "Power Gem": 50 },
+      { "Ancient Power": 50 },
+      { Recover: 50 },
+      { Harden: 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "piece of coral", rar: "4.3%" },
@@ -8505,6 +9347,10 @@ const pokesarray = [
     boost: 5,
     booStone: "Water stone",
     habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Remoraid",
@@ -8520,11 +9366,11 @@ const pokesarray = [
     evo: "Octillery",
     mapas: [],
     moves: [
-      { "Aqua tail": 12 },
-      { "Ice beam": 10 },
-      { "Water gun": 12 },
-      { "Water ball": 10 },
-      { "Bubblebeam": 16 },
+      { "Water Gun": 10 },
+      { Bubbles: 10 },
+      { "Bubble Beam": 10 },
+      { "Water Ball": 10 },
+      { "Ice Beam": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "tentacle", rar: "Raro" },
@@ -8532,14 +9378,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "18.0%" },
     ],
     evoStone: "Water stone",
-    boost: 20,
+    boost: 15,
     booStone: "Water stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Octillery",
     numero: 224,
-    level: 70,
+    level: 60,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Johto",
@@ -8551,14 +9401,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Swift": 70 },
-      { "Bubblebeam": 70 },
-      { "Water gun": 70 },
-      { "Water ball": 70 },
-      { "Muddy water": 70 },
-      { "Hyper beam": 76 },
-      { "Scald": 72 },
-      { "Octazooka": 74 },
+      { Swift: 60 },
+      { Bubbles: 60 },
+      { "Bubble Beam": 60 },
+      { "Water Pulse": 60 },
+      { "Muddy Water": 60 },
+      { "Giant Water Gun": 60 },
+      { Octazooka: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "tentacle", rar: "4.3%" },
@@ -8572,11 +9421,15 @@ const pokesarray = [
     boost: 4,
     booStone: "Water stone",
     habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Delibird",
     numero: 225,
-    level: 40,
+    level: 50,
     clan: "Seavell, Wingeon",
     tipo: "Gelo, Voador",
     regiao: "Johto",
@@ -8588,13 +9441,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Present": 40 },
-      { "Doubleslap": 40 },
-      { "Pluck": 45 },
-      { "Frost breath": 42 },
-      { "Ice beam": 40 },
-      { "Blizzard": 50 },
-      { "Rest": 45 },
+      { "Drill Peck": 50 },
+      { Present: 50 },
+      { Pluck: 50 },
+      { "Ice Shard": 50 },
+      { "Frost Breath": 50 },
+      { "Ice Beam": 50 },
+      { Blizzard: 50 },
+      { Rest: 50 },
+      { Agility: 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "gift bag", rar: "4.3%" },
@@ -8602,9 +9457,13 @@ const pokesarray = [
       { min: 1, max: 10, item: "straw", rar: "80.0%" },
       { min: 1, max: 1, item: "ice orb", rar: "20.0%" },
     ],
-    boost: 7,
+    boost: 5,
     booStone: "Ice stone",
-    habilidades: "",
+    habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Mantine",
@@ -8622,16 +9481,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Headbutt": 100 },
-      { "Aqua tail": 100 },
-      { "Bubblebeam": 102 },
-      { "Wing attack": 105 },
-      { "Air slash": 103 },
-      { "Air cutter": 108 },
-      { "Bounce": 102 },
-      { "Aerial ace": 104 },
-      { "Aqua ring": 100 },
-      { "Green guard": "Passiva" },
+      { Headbutt: 100 },
+      { "Wind Swirl": 100 },
+      { "Bubble Beam": 100 },
+      { "Wing Attack": 100 },
+      { "Air Slash": 100 },
+      { "Air Cutter": 100 },
+      { Bounce: 100 },
+      { "Aerial Ace": 100 },
+      { "Aqua Ring": 100 },
+      { "Green Guard": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "streak tail", rar: "4.3%" },
@@ -8643,9 +9502,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "air tank", rar: "Raro" },
       { min: 1, max: 1, item: "fins", rar: "Raro" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Water stone",
     habilidades: "Cut, Headbutt, Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Skarmory",
@@ -8662,15 +9525,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Peck": 100 },
-      { "Iron head": 100 },
-      { "Metal burst": 100 },
-      { "Metal claw": 107 },
-      { "Air slash": 103 },
-      { "Sky attack": 110 },
-      { "Steel wing": 108 },
-      { "Flash cannon": 108 },
-      { "Brave bird": 100 },
+      { "Drill Peck": 100 },
+      { "Iron Head": 100 },
+      { "Metal Burst": 100 },
+      { "Metal Claw": 100 },
+      { "Air Slash": 100 },
+      { "Sky Attack": 100 },
+      { "Steel Wing": 100 },
+      { "Flash Cannon": 100 },
+      { "Brave Bird": 100 },
+      { "Armored Wings": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "steel wing", rar: "4.3%" },
@@ -8682,7 +9546,11 @@ const pokesarray = [
     ],
     boost: 2,
     booStone: "Feather stone",
-    habilidades: "Cut, Fly",
+    habilidades: "Light, Cut, Rock Smash, Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Houndour",
@@ -8702,14 +9570,14 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Roar": 23 },
-      { "Bite": 20 },
-      { "Crunch": 20 },
-      { "Ember": 20 },
-      { "Faint attack": 22 },
-      { "Shadowave": 20 },
-      { "Flamethrower": 24 },
-      { "Incinerate": 26 },
+      { Roar: 20 },
+      { Bite: 20 },
+      { Crunch: 20 },
+      { Ember: 20 },
+      { "Feint Attack": 20 },
+      { Shadowave: 20 },
+      { Flamethrower: 20 },
+      { Incinerate: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange bone", rar: "Raro" },
@@ -8721,6 +9589,10 @@ const pokesarray = [
     boost: 10,
     booStone: "Darkness stone",
     habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Houndoom",
@@ -8741,16 +9613,16 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Roar": 110 },
-      { "Bite": 100 },
-      { "Crunch": 100 },
-      { "Ember": 100 },
-      { "Faint attack": 100 },
-      { "Shadowave": 100 },
-      { "Flamethrower": 100 },
-      { "Incinerate": 100 },
-      { "Fire blast": 102 },
-      { "Inferno": 110 },
+      { Roar: 100 },
+      { Bite: 100 },
+      { Crunch: 100 },
+      { Ember: 100 },
+      { "Feint Attack": 100 },
+      { Shadowave: 100 },
+      { Flamethrower: 100 },
+      { Incinerate: 100 },
+      { "Fire Blast": 100 },
+      { Inferno: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange bone", rar: "8.3%" },
@@ -8760,9 +9632,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Darkness stone", rar: "Raro" },
       { min: 1, max: 1, item: "pot of lava", rar: "34.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Darkness stone",
-    habilidades: "Dig, Headbutt, Ride",
+    habilidades: "Dig, Ride, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Kingdra",
@@ -8779,16 +9655,16 @@ const pokesarray = [
     preevo: "Seadra",
     mapas: [],
     moves: [
-      { "Mud shot": 100 },
-      { "Smokescreen": 100 },
-      { "Bubbles": 100 },
-      { "Bubblebeam": 100 },
-      { "Scald": 102 },
-      { "Water pulse": 100 },
-      { "Twister": 104 },
-      { "Dragon pulse": 105 },
-      { "Surf": 105 },
-      { "Dragon dance": 106 },
+      { Bubbles: 100 },
+      { "Bubble Beam": 100 },
+      { Liquidation: 100 },
+      { Brine: 100 },
+      { "Water Pulse": 100 },
+      { "Dragon Pulse": 100 },
+      { Twister: 100 },
+      { Surf: 100 },
+      { Endure: 100 },
+      { "Focus Energy": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "seahorse tail", rar: "4.3%" },
@@ -8804,6 +9680,10 @@ const pokesarray = [
     boost: 30,
     booStone: "Crystal stone",
     habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Phanpy",
@@ -8820,11 +9700,11 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Tackle": 20 },
-      { "Take down": 24 },
-      { "Horn attack": 20 },
-      { "Rollout": 26 },
-      { "Defense curl": 28 },
+      { Tackle: 20 },
+      { "Take Down": 20 },
+      { "Stomping Tantrum": 20 },
+      { Rollout: 20 },
+      { "Defense Curl": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "elephant foot", rar: "Raro" },
@@ -8835,6 +9715,10 @@ const pokesarray = [
     boost: 10,
     booStone: "Earth stone",
     habilidades: "Dig, Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Donphan",
@@ -8852,15 +9736,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Mud slap": 80 },
-      { "Fire fang": 82 },
-      { "Horn attack": 80 },
-      { "Rollout": 80 },
-      { "Cannon ball": 80 },
-      { "Bulldoze": 80 },
-      { "Scary face": 82 },
-      { "Earthquake": 86 },
-      { "Defense curl": 86 },
+      { "Mud-Slap": 80 },
+      { "Fire Fang": 80 },
+      { "Horn Attack": 80 },
+      { Rollout: 80 },
+      { "Cannon Ball": 80 },
+      { Bulldoze: 80 },
+      { "Scary Face": 80 },
+      { Earthquake: 80 },
+      { "Defense Curl": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "elephant foot", rar: "4.3%" },
@@ -8871,6 +9755,10 @@ const pokesarray = [
     boost: 3,
     booStone: "Earth stone",
     habilidades: "Dig, Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Porygon2",
@@ -8886,22 +9774,27 @@ const pokesarray = [
     preevo: "Porygon",
     mapas: [],
     moves: [
-      { "Ice beam": 80 },
-      { "Electroweb": 80 },
-      { "Zap cannon": 84 },
-      { "Lock on": 80 },
-      { "Thunder bolt": 80 },
-      { "Hyper beam": 90 },
-      { "Discharge": 85 },
-      { "Tri attack": 95 },
-      { "Magic coat": 88 },
-      { "Restore": 80 },
-      { "Gravity": "Passiva" },
+      { Thunderbolt: 80 },
+      { Electroweb: 80 },
+      { "Zap Cannon": 80 },
+      { "Lock-On": 80 },
+      { "Ice Beam": 80 },
+      { "Hyper Beam": 80 },
+      { Discharge: 80 },
+      { "Tri-Attack": 80 },
+      { "Magic Coat": 80 },
+      { "Conversion 2": 80 },
+      { Conversion: "P" },
+      { Analytic: "P" }
     ],
     loots: [],
-    boost: 3,
+    boost: 2,
     booStone: "Heart stone",
     habilidades: "Teleport, Light, Fly, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Stantler",
@@ -8918,14 +9811,14 @@ const pokesarray = [
     fast: "yes",
     mapas: [],
     moves: [
-      { "Sand attack": 50 },
-      { "Tackle": 50 },
-      { "Stomp": 58 },
-      { "Take down": 50 },
-      { "Confuse ray": 54 },
-      { "Calm mind": 50 },
-      { "Jump kick": 56 },
-      { "Last resort": 56 },
+      { "Shadow Ball": 50 },
+      { Tackle: 50 },
+      { Stomp: 50 },
+      { "Take Down": 50 },
+      { "Confuse Ray": 50 },
+      { Astonish: 50 },
+      { "Last Resort": 50 },
+      { Intimidate: 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "reindeer horn", rar: "4.3%" },
@@ -8934,12 +9827,16 @@ const pokesarray = [
     ],
     boost: 5,
     booStone: "Heart stone",
-    habilidades: "Ride, Headbutt",
+    habilidades: "Light, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Smeargle",
     numero: 235,
-    level: "1-100",
+    level: 1,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Johto",
@@ -8956,9 +9853,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "brush", rar: "4.3%" },
       { min: 1, max: 20, item: "rubber ball", rar: "80.0%" },
     ],
-    boost: "",
-    booStone: "",
+    boost: 8,
+    booStone: "Heart Stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }
+    ]
   },
   {
     nome: "Tyrogue",
@@ -8974,22 +9875,26 @@ const pokesarray = [
     evo: "Hitmonlee, Hitmonchan, Hitmontop",
     mapas: [],
     moves: [
-      { "Triple punch": 30 },
-      { "Mega punch": 32 },
-      { "Focus punch": 36 },
-      { "Triple kick": 30 },
-      { "Mega kick": 32 },
-      { "Hi jump kick": 36 },
-      { "Evasion": "Passiva" },
-      { "Foresight": "Passiva" },
+      { "Triple Kick": 30 },
+      { "Low Kick": 30 },
+      { "Focus Punch": 30 },
+      { "Mega Punch": 30 },
+      { "Mega Kick": 30 },
+      { "Hi Jump Kick": 30 },
+      { Evasion: "P" },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 15, item: "band aid", rar: "80.0%" },
     ],
     evoStone: "Kicking CD, Punching CD, Spinning CD",
-    boost: 9,
+    boost: 8,
     booStone: "Punch stone",
     habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hitmontop",
@@ -9006,12 +9911,13 @@ const pokesarray = [
     preevo: "Tyrogue",
     mapas: [],
     moves: [
-      { "Triple kick": 60 },
-      { "Rolling kick": 65 },
-      { "Revenge": 60 },
-      { "Focus energy": 67 },
-      { "Counter spin": "Passiva" },
-      { "Foresight": "Passiva" },
+      { "Triple Kick": 60 },
+      { "Low Kick": 60 },
+      { "Jump Kick": 60 },
+      { "Counter Spin": 60 },
+      { "Bulk Up": 60 },
+      { "Rolling Kick": 60 },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "spin machine", rar: "4.3%" },
@@ -9022,6 +9928,10 @@ const pokesarray = [
     boost: 4,
     booStone: "Punch stone",
     habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Smoochum",
@@ -9038,13 +9948,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Lovely kiss": 30 },
-      { "Draining kiss": 30 },
-      { "Psywave": 30 },
-      { "Psy pulse": 30 },
-      { "Ice ball": 30 },
-      { "Ice beam": 30 },
-      { "Icy wind": 34 },
+      { "Lovely Kiss": 30 },
+      { "Draining Kiss": 30 },
+      { Psywave: 30 },
+      { "Frost Breath": 30 },
+      { "Ice Punch": 30 },
+      { "Ice Beam": 30 },
+      { "Ice Wind": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "ice bra", rar: "Raro" },
@@ -9053,9 +9963,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "ice orb", rar: "17.0%" },
     ],
     evoStone: "Ancient stone",
-    boost: 9,
+    boost: 8,
     booStone: "Ice stone",
-    habilidades: "Teleport, Blink",
+    habilidades: "Light, Teleport",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Elekid",
@@ -9072,13 +9986,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 30 },
-      { "Thunder punch": 30 },
-      { "Thunder shock": 30 },
-      { "Thunder bolt": 30 },
-      { "Thunder wave": 30 },
-      { "Thunder": 36 },
-      { "Electricity": "Passiva" },
+      { "Quick Attack": 30 },
+      { "Thunder Punch": 30 },
+      { "Thunder Shock": 30 },
+      { Thunderbolt: 30 },
+      { "Thunder Wave": 30 },
+      { Thunder: 30 },
+      { Electricity: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "electric tail", rar: "Raro" },
@@ -9086,9 +10000,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "electric box", rar: "14.0%" },
     ],
     evoStone: "Ancient stone",
-    boost: 9,
+    boost: 8,
     booStone: "Thunder stone",
     habilidades: "Rock smash, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Magby",
@@ -9105,13 +10023,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Scratch": 30 },
-      { "Fire punch": 32 },
-      { "Ember": 30 },
-      { "Flamethrower": 30 },
+      { Scratch: 30 },
+      { "Fire Punch": 30 },
+      { Ember: 30 },
+      { Flamethrower: 30 },
       { "Fireball": 30 },
-      { "Fire blast": 36 },
-      { "Lava counter": "Passiva" },
+      { "Fire Blast": 30 },
+      { "Lava Counter": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "magma foot", rar: "Raro" },
@@ -9119,9 +10037,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "pot of lava", rar: "19.0%" },
     ],
     evoStone: "Ancient stone",
-    boost: 9,
+    boost: 8,
     booStone: "Fire stone",
-    habilidades: "Headbutt",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//240
   
     {
@@ -9137,15 +10059,16 @@ const pokesarray = [
     pricenpc: 120000,
     mapas: [],
     moves: [
-      { "Tackle": 80 },
-      { "Body slam": 85 },
-      { "Stomp": 85 },
-      { "Rollout": 80 },
-      { "Cannon ball": 80 },
-      { "Milk drink": 80 },
-      { "Heal bell": 80 },
-      { "Defense curl": 80 },
-      { "Thick fat": "Passiva" },
+      { Attract: 80 },
+      { "Body Slam": 80 },
+      { Stomp: 80 },
+      { Rollout: 80 },
+      { "Rock Tomb": 80 },
+      { "Milk Drink": 80 },
+      { "Heal Bell": 80 },
+      { "Defense Curl": 80 },
+      { "Cannon Ball": 80 },
+      { "Thick Fat": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "cow tail", rar: "8.1%" },
@@ -9154,7 +10077,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Heart stone",
-    habilidades: "Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//241
   {
     nome: "Blissey",
@@ -9170,16 +10097,16 @@ const pokesarray = [
     preevo: "Chansey",
     mapas: [],
     moves: [
-      { "Doubleslap": 100 },
-      { "Egg bomb": 100 },
-      { "Great love": 108 },
-      { "Sing": 100 },
-      { "Healing wish": 102 },
-      { "Emergency call": 100 },
-      { "Protection": 106 },
-      { "Egg rain": 110 },
-      { "Helping hand": 100 },
-      { "Follow me": 100 },
+      { Doubleslap: 100 },
+      { "Egg Bomb": 100 },
+      { "Great Love": 100 },
+      { Captivate: 100 },
+      { "Healing Wish": 100 },
+      { "Emergency Call": 100 },
+      { Protection: 100 },
+      { "Egg Rain": 100 },
+      { "Helping Hand": 100 },
+      { Attract: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "Chansey egg", rar: "2.0%" },
@@ -9188,6 +10115,10 @@ const pokesarray = [
     boost: 2,
     booStone: "Heart stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Raikou",
@@ -9206,25 +10137,25 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Roar": 210 },
-      { "Thunder shock": 200 },
-      { "Thunder bolt": 200 },
-      { "Bite": 200 },
-      { "Quick attack": 200 },
-      { "Thunder wave": 200 },
-      { "Thunder fang": 200 },
-      { "Charge beam": 200 },
-      { "Electro ball": 200 },
-      { "Crunch": 200 },
-      { "Thunder": 200 },
-      { "Electric storm": 200 },
-      { "Electro field": 200 },
-      { "Calm mind": 200 },
+      { "Thunder Shock": 200 },
+      { Bite: 200 },
+      { "Thunder Fang": 200 },
+      { "Thunder Wave": 200 },
+      { Flash: 200 },
+      { Thunder: 200 },
+      { "Wild Charge": 200 },
+      { Discharge: 200 },
+      { "Electro Field": 200 },
+      { "Extreme Speed": 200 }
     ],
     loots: [],
     boost: "",
     booStone: "",
-    habilidades: "",
+    habilidades: "dig, rock smash e light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Entei",
@@ -9243,25 +10174,26 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Roar": 210 },
-      { "Ember": 200 },
-      { "Flamethrower": 200 },
-      { "Bite": 200 },
-      { "Ancient power": 200 },
-      { "Lava plume": 200 },
-      { "Eruption": 200 },
-      { "Stomp": 205 },
-      { "Crunch": 200 },
-      { "Fire blast": 200 },
-      { "Blast burn": 215 },
-      { "Magma storm": 200 },
-      { "Inferno": 210 },
-      { "Calm mind": 200 },
+      { Roar: 200 },
+      { Ember: 200 },
+      { "Fireball": 200 },
+      { Incinerate: 200 },
+      { "Sacred Fire": 200 },
+      { "Flame Wheel": 200 },
+      { "Flame Circle": 200 },
+      { Inferno: 200 },
+      { "Magma Storm": 200 },
+      { Eruption: 200 },
+      { "Extreme Speed": 200 }
     ],
     loots: [],
     boost: "",
     booStone: "",
-    habilidades: "",
+    habilidades: "dig e rock smash",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Suicune",
@@ -9280,25 +10212,26 @@ const pokesarray = [
     ],
     vip: "yes",
     moves: [
-      { "Rain dance": 200 },
-      { "Ice shards": 200 },
-      { "Ice beam": 200 },
-      { "Bite": 200 },
-      { "Waterfall": 200 },
-      { "Frost breath": 200 },
-      { "Ice fang": 204 },
-      { "Bubblebeam": 200 },
-      { "Powder snow": 200 },
-      { "Hydropump": 210 },
-      { "Aurora beam": 200 },
-      { "Blizzard": 200 },
-      { "Iceshock": 200 },
-      { "Calm mind": 200 },
+      { Bubbles: 200 },
+      { "Bubble Beam": 200 },
+      { "Water Ball": 200 },
+      { "Water Pulse": 200 },
+      { Waterfall: 200 },
+      { "Hyper Beam": 200 },
+      { "Hydro Pump": 200 },
+      { "Water Spout": 200 },
+      { "Heavy Rain": 200 },
+      { "Aqua Ring": 200 },
+      { "Extreme Speed": 200 }
     ],
     loots: [],
     boost: "",
     booStone: "",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Larvitar",
@@ -9316,13 +10249,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 30 },
-      { "Crunch": 30 },
-      { "Dark pulse": 30 },
-      { "Rock slide": 30 },
-      { "Stone edge": 30 },
-      { "Hyper beam": 38 },
-      { "Sandstorm": 35 },
+      { Bite: 30 },
+      { Crunch: 30 },
+      { "Dark Pulse": 30 },
+      { "Rock Slide": 30 },
+      { "Stone Edge": 30 },
+      { "Hyper Beam": 30 },
+      { Sandstorm: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "lizard tail", rar: "Raro" },
@@ -9332,9 +10265,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "6.0%" },
     ],
     evoStone: "Ancient stone",
-    boost: 10,
+    boost: 8,
     booStone: "Earth stone",
-    habilidades: "Dig,Rock smash,Cut,Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Pupitar",
@@ -9353,14 +10290,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 60 },
-      { "Crunch": 60 },
-      { "Dark pulse": 60 },
-      { "Rock slide": 60 },
-      { "Stone edge": 60 },
-      { "Earthquake": 65 },
-      { "Ancient power": 68 },
-      { "Sandstorm": 60 },
+      { Bite: 60 },
+      { Crunch: 60 },
+      { "Dark Pulse": 60 },
+      { "Rock Slide": 60 },
+      { "Stone Edge": 60 },
+      { Earthquake: 60 },
+      { "Ancient Power": 60 },
+      { Sandstorm: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "lizard tail", rar: "1.3%" },
@@ -9374,7 +10311,11 @@ const pokesarray = [
     evoStone: "Ancient stone (x4)",
     boost: 4,
     booStone: "Earth stone",
-    habilidades: "Dig,Rock smash,Cut,Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Tyranitar",
@@ -9392,16 +10333,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 100 },
-      { "Shadowave": 100 },
-      { "Dark pulse": 100 },
-      { "Rock tomb": 100 },
-      { "Rock slide": 100 },
-      { "Stone edge": 100 },
-      { "Ancient power": 115 },
-      { "Hyper beam": 108 },
-      { "Assurance": 108 },
-      { "Sandstorm": 100 },
+      { Bite: 100 },
+      { "Dragon Claw": 100 },
+      { "Rock Tomb": 100 },
+      { "Rock Slide": 100 },
+      { "Stone Edge": 100 },
+      { "Rock Blast": 100 },
+      { "Ancient Power": 100 },
+      { "Falling Rocks": 100 },
+      { Sandstorm: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "lizard tail", rar: "4.3%" },
@@ -9414,12 +10354,16 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Ancient stone",
-    habilidades: "Dig,Rock smash,Cut,Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lugia",
     numero: 249,
-    level: 200,
+    level: 400,
     clan: "Psycraft, Wingeon",
     tipo: "Psiquico, Voador",
     regiao: "Johto",
@@ -9429,16 +10373,35 @@ const pokesarray = [
     pricenpc: "unseleable",
     mapas: [],
     vip: "yes",
-    moves: [],
+    moves: [
+      { "Giant Gust": 400 },
+      { Extrasensory: 400 },
+      { "Aerial Ace": 400 },
+      { "Ancient Power": 400 },
+      { "Sky Attack": 400 },
+      { Psychic: 400 },
+      { "Hydro Pump": 400 },
+      { Hurricane: 400 },
+      { Aeroblast: 400 },
+      { "Rain Dance": 400 },
+      { Recover: 400 },
+      { "Calm Mind": 400 },
+      { Barrier: 400 },
+      { Safeguard: 400 }
+    ],
     loots: [],
     boost: "",
     booStone: "",
-    habilidades: "",
+    habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Ho-Oh",
+    nome: "Ho-oh",
     numero: 250,
-    level: 200,
+    level: 400,
     clan: "Volcanic, Wingeon",
     tipo: "Fogo, Voador",
     regiao: "Johto",
@@ -9448,11 +10411,30 @@ const pokesarray = [
     pricenpc: "unseleable",
     mapas: [],
     vip: "yes",
-    moves: [],
+    moves: [
+      { Swift: 400 },
+      { Ember: 400 },
+      { Whirlwind: 400 },
+      { Flamethrower: 400 },
+      { Punishment: 400 },
+      { "Ancient Power": 400 },
+      { "Sky Attack": 400 },
+      { "Fire Blast": 400 },
+      { "Sacred Fire": 400 },
+      { "Brave Bird": 400 },
+      { "Sunny Day": 400 },
+      { Recover: 400 },
+      { "Calm Mind": 400 },
+      { Safeguard: 400 }
+    ],
     loots: [],
     boost: "",
     booStone: "",
-    habilidades: "",
+    habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Celebi",
@@ -9488,12 +10470,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 20 },
-      { "Leaf blade": 20 },
-      { "Fury cutter": 25 },
-      { "X scissor": 20 },
-      { "Giga drain": 26 },
-      { "Agility": 20 },
+      { "Quick Attack": 20 },
+      { "Bullet Seed": 20 },
+      { "Grass Knot": 20 },
+      { "Magical Leaf": 20 },
+      { Leafage: 20 },
+      { "Giga Drain": 20 },
+      { Agility: 20 }
     ],
     loots: [
       { min: 1, max: 10, item: "seed", rar: "80.0%" },
@@ -9503,7 +10486,11 @@ const pokesarray = [
     evoStone: "Leaf stone",
     boost: 10,
     booStone: "Leaf stone",
-    habilidades: "Rock smash,Headbutt,Cut",
+    habilidades: "Light, Rock Smash, cut e headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Grovyle",
@@ -9522,15 +10509,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 40 },
-      { "Leaf blade": 40 },
-      { "Magical leaf": 40 },
-      { "Fury cutter": 45 },
-      { "Pursuit": 40 },
-      { "Night slash": 40 },
-      { "X scissor": 40 },
-      { "Giga drain": 45 },
-      { "Agility": 40 },
+      { "Quick Attack": 40 },
+      { "Bullet Seed": 40 },
+      { "Leaf Blade": 40 },
+      { "Magical Leaf": 40 },
+      { Leafage: 40 },
+      { "Giga Drain": 40 },
+      { "Leaf Storm": 40 },
+      { Agility: 40 }
     ],
     loots: [
       { min: 1, max: 20, item: "seed", rar: "80.0%" },
@@ -9541,7 +10527,11 @@ const pokesarray = [
     evoStone: "Leaf stone (x2)",
     boost: 7,
     booStone: "Leaf stone",
-    habilidades: "Rock smash,Headbutt,Cut",
+    habilidades: "Light, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sceptile",
@@ -9560,16 +10550,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 80 },
-      { "Leaf blade": 80 },
-      { "Magical leaf": 80 },
-      { "Fury cutter": 85 },
-      { "Pursuit": 80 },
-      { "Night slash": 80 },
-      { "X scissor": 80 },
-      { "Dual chop": 80 },
-      { "Frenzy plant": 90 },
-      { "Agility": 80 },
+      { "Leaf Guard": 80 },
+      { "Leaf Blade": 80 },
+      { "Magical Leaf": 80 },
+      { "Night Slash": 80 },
+      { Leafage: 80 },
+      { "Frenzy Plant": 80 },
+      { "Leaf Storm": 80 },
+      { "Swords Dance": 80 }
     ],
     loots: [
       { min: 1, max: 43, item: "seed", rar: "80.0%" },
@@ -9579,7 +10567,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Leaf stone",
-    habilidades: "Rock smash,Headbutt,Cut",
+    habilidades: "Light, Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Torchic",
@@ -9596,12 +10588,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 20 },
-      { "Ember": 20 },
-      { "Flamethrower": 20 },
-      { "Drill peck": 25 },
-      { "Overheat": 26 },
-      { "Double team": 22 },
+      { "Quick Attack": 20 },
+      { Ember: 20 },
+      { Flamethrower: 20 },
+      { "Feather Dance": 20 },
+      { "Fire Spin": 20 },
+      { Overheat: 20 },
+      { Agility: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "fire feather", rar: "Raro" },
@@ -9611,7 +10604,11 @@ const pokesarray = [
     evoStone: "Fire stone",
     boost: 10,
     booStone: "Fire stone",
-    habilidades: "Cut,Headbutt",
+    habilidades: "Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Combusken",
@@ -9629,14 +10626,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 40 },
-      { "Ember": 40 },
-      { "Mega kick": 40 },
-      { "Fire punch": 40 },
-      { "Blaze kick": 40 },
-      { "Flare blitz": 48 },
-      { "Sky uppercut": 46 },
-      { "Bulk up": 40 },
+      { "Quick Attack": 40 },
+      { Ember: 40 },
+      { Flamethrower: 40 },
+      { "Fire Punch": 40 },
+      { "Blaze Kick": 40 },
+      { "Flare Blitz": 40 },
+      { "Sky Uppercut": 40 },
+      { "Bulk Up": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "fire feather", rar: "2.0%" },
@@ -9648,8 +10645,12 @@ const pokesarray = [
     ],
     evoStone: "Fire stone,Punch stone",
     boost: 7,
-    booStone: "Fire stone",
-    habilidades: "Dig,Rock smash,Headbutt,Cut",
+    booStone: "Punch Stone and Fire Stone",
+    habilidades: "Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Blaziken",
@@ -9668,17 +10669,18 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Low kick": 80 },
-      { "Ember": 80 },
-      { "Mega kick": 80 },
-      { "Double kick": 80 },
-      { "Blaze kick": 80 },
-      { "Hi jump kick": 80 },
-      { "Sky uppercut": 88 },
-      { "Blast burn": 95 },
-      { "Flare blitz": 90 },
-      { "Bulk up": 80 },
-      { "Evasion": "Passiva" },
+      { "Low Kick": 80 },
+      { Ember: 80 },
+      { "Mega Kick": 80 },
+      { "Double Kick": 80 },
+      { "Blaze Kick": 80 },
+      { "Hi Jump Kick": 80 },
+      { "Sky Uppercut": 80 },
+      { "Close Combat": 80 },
+      { "Flare Blitz": 80 },
+      { "Bulk Up": 80 },
+      { Blaze: "P" },
+      { Evasion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "fire feather", rar: "4.3%" },
@@ -9689,8 +10691,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "pot of lava", rar: "45.5%" },
     ],
     boost: 3,
-    booStone: "Punch stone",
-    habilidades: "Dig,Rock smash,Cut,Headbutt",
+    booStone: "Punch Stone ou Fire Stone",
+    habilidades: "Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Mudkip",
@@ -9707,12 +10713,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Aqua tail": 20 },
-      { "Mud slap": 20 },
-      { "Water gun": 20 },
-      { "Waterball": 22 },
-      { "Hydropump": 26 },
-      { "Protect": 20 },
+      { Tackle: 20 },
+      { "Mud-Slap": 20 },
+      { "Water Gun": 20 },
+      { "Aqua Tail": 20 },
+      { "Water Ball": 20 },
+      { "Water Pulse": 20 },
+      { "Earth Power": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "black fins", rar: "Raro" },
@@ -9721,7 +10728,11 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Water stone",
-    habilidades: "Dig,Headbutt",
+    habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Marshtomp",
@@ -9739,13 +10750,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Mud slap": 40 },
-      { "Water gun": 40 },
-      { "Waterball": 40 },
-      { "Aqua tail": 40 },
-      { "Muddy water": 40 },
-      { "Hydropump": 48 },
-      { "Protect": 40 },
+      { "Aqua Tail": 40 },
+      { "Mud-Slap": 40 },
+      { "Water Gun": 40 },
+      { "Water Ball": 40 },
+      { "Muddy Water": 40 },
+      { "Hydro Pump": 40 },
+      { Protect: 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "black fins", rar: "2.0%" },
@@ -9758,8 +10769,12 @@ const pokesarray = [
     ],
     evoStone: "Water stone,Earth stone",
     boost: 7,
-    booStone: "Water stone",
-    habilidades: "Rock smash,Dig,Headbutt",
+    booStone: "Earth Stone ou Water Stone",
+    habilidades: "Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Swampert",
@@ -9777,16 +10792,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Aqua tail": 80 },
-      { "Mud slap": 80 },
-      { "Water gun": 80 },
-      { "Waterball": 80 },
-      { "Hammer arm": 80 },
-      { "Muddy water": 80 },
-      { "Earth power": 80 },
-      { "Earthquake": 87 },
-      { "Hydropump": 90 },
-      { "Protect": 80 },
+      { "Aqua Tail": 80 },
+      { "Mud-Slap": 80 },
+      { "Water Gun": 80 },
+      { "Water Ball": 80 },
+      { "Hammer Arm": 80 },
+      { "Muddy Water": 80 },
+      { "Earth Power": 80 },
+      { Earthquake: 80 },
+      { "Hydro Pump": 80 },
+      { Protect: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "black fins", rar: "4.3%" },
@@ -9798,8 +10813,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "22.8%" },
     ],
     boost: 3,
-    booStone: "Earth stone",
-    habilidades: "Rock smash,Dig,Headbutt,Surf",
+    booStone: "Earth Stone ou Water Stone",
+    habilidades: "Rock Smash, Dig, Headbutt, Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Poochyena",
@@ -9816,22 +10835,26 @@ const pokesarray = [
     evo: "Mightyena",
     mapas: [],
     moves: [
-      { "Roar": 40 },
-      { "Bite": 30 },
-      { "Crunch": 30 },
-      { "Shadow claw": 30 },
-      { "Night slash": 30 },
+      { Roar: 30 },
+      { Bite: 30 },
+      { Crunch: 30 },
+      { "Shadow Claw": 30 },
+      { "Night Slash": 30 }
     ],
     loots: [],
     evoStone: "Mirror stone (x10)",
-    boost: 10,
-    booStone: "Mirror stone",
+    boost: 8,
+    booStone: "Darkness Stone",
     habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Mightyena",
     numero: 262,
-    level: 80,
+    level: 100,
     clan: "Malefic",
     tipo: "Noturno",
     regiao: "Hoenn",
@@ -9843,21 +10866,24 @@ const pokesarray = [
     preevo: "Poochyena",
     mapas: [],
     moves: [
-      { "Roar": 90 },
-      { "Bite": 80 },
-      { "Crunch": 80 },
-      { "Take down": 80 },
-      { "Shadow claw": 80 },
-      { "Astonish": 80 },
-      { "Night slash": 80 },
-      { "Night daze": 86 },
-      { "Taunt": 80 },
-      { "Snarl": "Passiva" },
+      { Snarl: 100 },
+      { Tackle: 100 },
+      { Bite: 100 },
+      { Crunch: 100 },
+      { "Dark Pulse": 100 },
+      { "Night Daze": 100 },
+      { Payback: 100 },
+      { "Nasty Plot": 100 },
+      { Howl: 100 }
     ],
     loots: [],
-    boost: 5,
-    booStone: "Mirror stone",
-    habilidades: "Dig",
+    boost: 2,
+    booStone: "Darkness Stone",
+    habilidades: "Rock Smash, Dig, Ride e Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lotad",
@@ -9874,13 +10900,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Absorb": 20 },
-      { "Fury swipes": 20 },
-      { "Bubblebeam": 20 },
-      { "Scald": 28 },
-      { "Rain dance": 25 },
-      { "Mega drain": "Passiva" },
-      { "Swift swim": "Passiva" },
+      { Absorb: 20 },
+      { "Fury Swipes": 20 },
+      { "Bubble Beam": 20 },
+      { Scald: 20 },
+      { "Rain Dance": 20 },
+      { "Mega Drain": "P" },
+      { "Swift Swim": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "water plant", rar: "1.1%" },
@@ -9891,8 +10917,12 @@ const pokesarray = [
     ],
     evoStone: "Water stone",
     boost: 10,
-    booStone: "Leaf stone",
-    habilidades: "Headbutt",
+    booStone: "Leaf Stone ou Water Stone",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lombre",
@@ -9910,16 +10940,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Absorb": 100 },
-      { "Fury swipes": 100 },
-      { "Water pulse": 100 },
-      { "Bubblebeam": 100 },
-      { "Waterfall": 100 },
-      { "Scald": 102 },
-      { "Hydropump": 102 },
-      { "Rain dance": 100 },
-      { "Energy ball": 100 },
-      { "Swift swim": "Passiva" },
+      { Absorb: 50 },
+      { "Fury Swipes": 50 },
+      { "Water Pulse": 50 },
+      { "Bubble Beam": 50 },
+      { Waterfall: 50 },
+      { Scald: 50 },
+      { "Rain Dance": 50 },
+      { "Mega Drain": "P" },
+      { "Swift Swim": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "water plant", rar: "2.2%" },
@@ -9931,9 +10960,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Water stone", rar: "Raro" },
     ],
     evoStone: "Leaf stone,Water stone",
-    boost: 7,
+    boost: 5,
     booStone: "Leaf stone",
-    habilidades: "Surf",
+    habilidades: "Light, surf e headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ludicolo",
@@ -9950,18 +10983,18 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Absorb": 80 },
-      { "Fury swipes": 80 },
-      { "Water pulse": 80 },
-      { "Bubblebeam": 80 },
-      { "Waterfall": 80 },
-      { "Scald": 82 },
-      { "Hydropump": 88 },
-      { "Rain dance": 80 },
-      { "Energy ball": 80 },
-      { "Swift swim": "Passiva" },
-      { "Water sport": "Passiva" },
-      { "Rain dish": "Passiva" },
+      { Absorb: 100 },
+      { "Fury Swipes": 100 },
+      { "Water Pulse": 100 },
+      { "Bubble Beam": 100 },
+      { "Chilling Water": 100 },
+      { Scald: 100 },
+      { "Hydro Pump": 100 },
+      { "Rain Dance": 100 },
+      { "Energy Ball": 100 },
+      { "Swift Swin": "P" },
+      { "Water Sport": "P" },
+      { "Rain Dish": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "water plant", rar: "4.5%" },
@@ -9972,9 +11005,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Leaf stone", rar: "Raro" },
       { min: 1, max: 1, item: "Water stone", rar: "Raro" },
     ],
-    boost: 3,
-    booStone: "Leaf stone",
-    habilidades: "Rock smash,Headbutt,Surf",
+    boost: 2,
+    booStone: "Leaf Stone ou Water Stone",
+    habilidades: "Light, Rock Smash, Headbutt, Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Seedot",
@@ -9991,11 +11028,11 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Leech seed": 10 },
-      { "Pound": 10 },
-      { "Razor leaf": 10 },
-      { "Dark pulse": 10 },
-      { "Faint attack": 10 },
+      { "Leech Seed": 10 },
+      { Pound: 10 },
+      { "Razor Leaf": 10 },
+      { "Dark Pulse": 10 },
+      { "Feint Attack": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "big seed", rar: "1.1%" },
@@ -10003,9 +11040,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "leaves", rar: "26.0%" },
     ],
     evoStone: "Leaf stone",
-    boost: 10,
+    boost: 15,
     booStone: "Leaf stone",
-    habilidades: "Cut,Headbutt",
+    habilidades: "Light, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Nuzleaf",
@@ -10023,13 +11064,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Pound": 30 },
-      { "Razor leaf": 30 },
-      { "Dark pulse": 30 },
-      { "Faint attack": 30 },
-      { "Bamboo spikes": 40 },
-      { "Sunny day": 42 },
-      { "Chlorophyll": "Passiva" },
+      { Pound: 30 },
+      { "Razor Leaf": 30 },
+      { "Dark Pulse": 30 },
+      { "Feint Attack": 30 },
+      { Assurance: 30 },
+      { "Sunny Day": 30 },
+      { Chlorophyll: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "big seed", rar: "2.2%" },
@@ -10039,9 +11080,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Darkness stone", rar: "Raro" },
     ],
     evoStone: "Leaf stone,Darkness stone",
-    boost: 7,
-    booStone: "Darkness stone",
-    habilidades: "Cut,Headbutt",
+    boost: 8,
+    booStone: "Leaf Stone ou Darkness Stone",
+    habilidades: "Light, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shiftry",
@@ -10058,15 +11103,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Pound": 80 },
-      { "Razor leaf": 80 },
-      { "Dark pulse": 80 },
-      { "Faint attack": 80 },
-      { "Bamboo spikes": 90 },
-      { "Grassy terrain": 90 },
-      { "Leaf tornado": 90 },
-      { "Sunny day": 92 },
-      { "Chlorophyll": "Passiva" },
+      { "Shadow Ball": 80 },
+      { "Knock Off": 80 },
+      { "Sucker Punch": 80 },
+      { "Beat Up": 80 },
+      { "Leaf Blade": 80 },
+      { Payback: 80 },
+      { "Solar Blade": 80 },
+      { "Sunny Day": 80 },
+      { Chlorophyll: "P" },
+      { "Wind Rider": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "sharp leaves", rar: "4.5%" },
@@ -10077,8 +11123,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "Darkness stone", rar: "Raro" },
     ],
     boost: 3,
-    booStone: "Darkness stone",
-    habilidades: "Cut,Headbutt",
+    booStone: "Leaf Stone ou Darkness Stone",
+    habilidades: "Light, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Taillow",
@@ -10095,12 +11145,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Peck": 30 },
-      { "Pluck": 30 },
-      { "Feather dance": 30 },
-      { "Air slash": 33 },
-      { "Tailwind": 30 },
-      { "Roost": 35 },
+      { Peck: 30 },
+      { Pluck: 30 },
+      { "Feather Dance": 30 },
+      { "Air Slash": 30 },
+      { Tailwind: 30 },
+      { Roost: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "crimson feather", rar: "1.1%" },
@@ -10110,9 +11160,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "bird beak", rar: "6.0%" },
     ],
     evoStone: "Feather stone (x2)",
-    boost: 10,
-    booStone: "Feather stone",
+    boost: 8,
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Swellow",
@@ -10129,16 +11183,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Peck": 80 },
-      { "Feather dance": 80 },
-      { "Pluck": 85 },
-      { "Wing attack": 82 },
-      { "Air slash": 83 },
-      { "Boomburst": 95 },
-      { "Sky attack": 90 },
-      { "Tailwind": 80 },
-      { "Brave bird": 80 },
-      { "Guts": "Passiva" },
+      { Peck: 80 },
+      { "Feather Dance": 80 },
+      { Pluck: 80 },
+      { "Air Slash": 80 },
+      { Bloomburst: 80 },
+      { "Aerial Ace": 80 },
+      { "Sky Attack": 80 },
+      { "Brave Bird": 80 },
+      { "Quick Guard": 80 },
+      { Guts: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "crimson feather", rar: "4.5%" },
@@ -10150,8 +11204,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
     ],
     boost: 3,
-    booStone: "Feather stone",
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Wingull",
@@ -10167,18 +11225,22 @@ const pokesarray = [
     evo: "Pelipper",
     mapas: [],
     moves: [
-      { "Super sonic": 30 },
-      { "Gust": 32 },
-      { "Bubbles": 35 },
-      { "Wing attack": 32 },
-      { "Scald": 32 },
-      { "Rain dance": 30 },
+      { "Supersonic": 30 },
+      { Gust: 30 },
+      { Bubbles: 30 },
+      { "Wing Attack": 30 },
+      { Scald: 30 },
+      { "Rain Dance": 30 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x10)",
-    boost: 10,
-    booStone: "Dimensional stone",
+    boost: 8,
+    booStone: "Water Stone ou Feather Stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Pelipper",
@@ -10194,21 +11256,26 @@ const pokesarray = [
     preevo: "Wingull",
     mapas: [],
     moves: [
-      { "Super sonic": 80 },
-      { "Gust": 82 },
-      { "Wing attack": 82 },
-      { "Fly": 82 },
-      { "Scald": 82 },
-      { "Surf": 85 },
-      { "Swallow": 83 },
-      { "Stockpile": 83 },
-      { "Rain dance": 80 },
-      { "Protect": 80 },
+      { "Supersonic": 80 },
+      { Gust: 80 },
+      { "Feather Dance": 80 },
+      { Surf: 80 },
+      { Swallow: 80 },
+      { Stockpile: 80 },
+      { Protection: 80 },
+      { "Helping Hand": 80 },
+      { Hurricane: 80 },
+      { Drizzle: "P" },
+      { "Clear Pile": "P" }
     ],
     loots: [],
-    boost: 5,
-    booStone: "Dimensional stone",
+    boost: 3,
+    booStone: "Water Stone ou Feather Stone",
     habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ralts",
@@ -10225,13 +11292,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Charm": 30 },
-      { "Dazzling gleam": 34 },
-      { "Instant teleportation": 30 },
-      { "Confusion": 32 },
-      { "Psychic": 35 },
-      { "Healing wish": 32 },
-      { "Miracle eye": 1000 },
+      { Charm: 30 },
+      { "Dazzling Gleam": 30 },
+      { "Instant Teleportation": 30 },
+      { Confusion: 30 },
+      { "Heart Pound": 30 },
+      { "Healing Wish": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "cure flower", rar: "Raro" },
@@ -10240,9 +11306,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "future orb", rar: "20.0%" },
     ],
     evoStone: "Enigma stone",
-    boost: 10,
-    booStone: "Enigma stone",
-    habilidades: "Teleport,Blink",
+    boost: 8,
+    booStone: "Enigma Stone ou Heart Stone",
+    habilidades: "Teleport, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//280
   
   
@@ -10267,14 +11337,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Charm": 60 },
-      { "Dazzling gleam": 64 },
-      { "Instant teleportation": 60 },
-      { "Confusion": 60 },
-      { "Psychic": 60 },
-      { "Healing wish": 62 },
-      { "Draining kiss": 60 },
-      { "Miracle eye": 1000 },
+      { Charm: 60 },
+      { "Dazzling Gleam": 60 },
+      { "Instant Teleportation": 60 },
+      { Confusion: 60 },
+      { "Heart Pound": 60 },
+      { "Healing Wish": 60 },
+      { "Draining Kiss": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "cure flower", rar: "2.0%" },
@@ -10284,9 +11353,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Enigma stone", rar: "Raro" },
     ],
     evoStone: "Crystal stone,Enigma stone",
-    boost: 5,
-    booStone: "Enigma stone",
-    habilidades: "Teleport,Blink",
+    boost: 4,
+    booStone: "Enigma Stone ou Heart Stone",
+    habilidades: "Teleport, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//281
   {
     nome: "Gardevoir",
@@ -10304,15 +11377,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Charm": 100 },
-      { "Dazzling gleam": 104 },
-      { "Instant teleportation": 100 },
-      { "Confusion": 100 },
-      { "Psychic": 100 },
-      { "Stored power": 110 },
-      { "Healing wish": 102 },
-      { "Moonblast": 112 },
-      { "Miracle eye": 1010 },
+      { Charm: 100 },
+      { "Dazzling Gleam": 100 },
+      { "Instant Teleportation": 100 },
+      { Confusion: 100 },
+      { Psychic: 100 },
+      { "Stored Power": 100 },
+      { "Healing Wish": 100 },
+      { Moonblast: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "cure flower", rar: "4.3%" },
@@ -10324,7 +11396,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Crystal stone",
-    habilidades: "Teleport,Blink",
+    habilidades: "Teleport, Light, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shroomish",
@@ -10340,18 +11416,23 @@ const pokesarray = [
     evo: "Breloom",
     mapas: [],
     moves: [
-      { "Leech seed": 20 },
-      { "Seed bomb": 20 },
-      { "Energy ball": 20 },
-      { "Growth": 20 },
-      { "Poison powder": 27 },
-      { "Sleep powder": 28 },
+      { "Seed Bomb": 20 },
+      { "Leech Seed": 20 },
+      { "Grass Knot": 20 },
+      { "Energy Ball": 20 },
+      { Growth: 20 },
+      { "Sleep Powder": 20 },
+      { "Poison Powder": 20 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x10)",
     boost: 10,
     booStone: "Dimensional stone",
-    habilidades: "Cut",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Breloom",
@@ -10367,21 +11448,25 @@ const pokesarray = [
     preevo: "Shroomish",
     mapas: [],
     moves: [
-      { "Leech seed": 80 },
-      { "Bullet seed": 80 },
-      { "Energy ball": 80 },
-      { "Force palm": 80 },
-      { "Sky uppercut": 88 },
-      { "Dynamicpunch": 80 },
-      { "Sleep plague": 80 },
-      { "Giga drain": 85 },
-      { "Growth": 80 },
-      { "Spores reaction": "Passiva" },
+      { "Seed bomb": 80 },
+      { "Worry Seed": 80 },
+      { "Grass Knot": 80 },
+      { "Bullet Seed": 80 },
+      { "Sky Uppercut": 80 },
+      { "Giga Drain": 80 },
+      { "Mind Reader": 80 },
+      { "Energy Ball": 80 },
+      { "Effect Spore": "P" },
+      { "Mega Drain": "P" }
     ],
     loots: [],
     boost: 5,
     booStone: "Dimensional stone",
-    habilidades: "Rock smash,Headbutt,Cut",
+    habilidades: "Light, Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Slakoth",
@@ -10398,12 +11483,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Yawn": 40 },
-      { "Scratch": 40 },
-      { "Hammer arm": 40 },
-      { "Fury swipes": 40 },
-      { "Focus punch": 40 },
-      { "Focus blast": 40 },
+      { Yawn: 40 },
+      { Scratch: 40 },
+      { "Hammer Arm": 40 },
+      { "Fury Swipes": 40 },
+      { "Focus Punch": 40 },
+      { "Focus Blast": 40 },
+      { "Slack Off": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "fur ball", rar: "1.3%" },
@@ -10413,12 +11499,16 @@ const pokesarray = [
     evoStone: "Heart stone (x2)",
     boost: 7,
     booStone: "Heart stone",
-    habilidades: "Cut,Headbutt",
+    habilidades: "Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Vigoroth",
     numero: 288,
-    level: 70,
+    level: 60,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Hoenn",
@@ -10431,13 +11521,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Yawn": 70 },
-      { "Scratch": 70 },
-      { "Faint attack": 70 },
-      { "Hammer arm": 70 },
-      { "Fury swipes": 70 },
-      { "Focus punch": 70 },
-      { "Focus blast": 70 },
+      { Yawn: 60 },
+      { Scratch: 60 },
+      { "Feint Attack": 60 },
+      { "Fury Swipes": 60 },
+      { "Dynamic Punch": 60 },
+      { Reversal: 60 },
+      { "Focus Energy": 60 },
+      { "Vital Spirit": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "fur ball", rar: "5.0%" },
@@ -10448,12 +11539,16 @@ const pokesarray = [
     evoStone: "Power banana (x10)",
     boost: 4,
     booStone: "Heart stone",
-    habilidades: "Rock smash,Cut,Headbutt",
+    habilidades: "Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Slaking",
     numero: 289,
-    level: 150,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Hoenn",
@@ -10465,15 +11560,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Slash": 150 },
-      { "Scratch": 150 },
-      { "Faint attack": 150 },
-      { "Hammer arm": 150 },
-      { "Fury swipes": 150 },
-      { "Focus punch": 150 },
-      { "Focus blast": 150 },
-      { "Slack off": 155 },
-      { "Truant": "Passiva" },
+      { Scratch: 100 },
+      { "Fury Swipes": 100 },
+      { "Rock Slide": 100 },
+      { "Sucker Punch": 100 },
+      { "Hammer Arm": 100 },
+      { "Giga Impact": 100 },
+      { Earthquake: 100 },
+      { "Slack Off": 100 },
+      { Truant: "P" }
     ],
     loots: [
       { min: 1, max: 80, item: "rubber ball", rar: "90.0%" },
@@ -10483,7 +11578,11 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Mystic star",
-    habilidades: "Rock smash,Headbutt,Cut",
+    habilidades: "Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Nincada",
@@ -10499,11 +11598,11 @@ const pokesarray = [
     evo: "Ninjask,Shedinja",
     mapas: [],
     moves: [
-      { "Sand attack": 10 },
-      { "Leech life": 15 },
-      { "Fury swipes": 10 },
-      { "Mud slap": 12 },
-      { "Dig": 12 },
+      { "Sand Attack": 10 },
+      { "Leech Life": 10 },
+      { "Fury Swipes": 10 },
+      { "Mud-Slap": 10 },
+      { Dig: 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "bug legs", rar: "1.1%" },
@@ -10513,9 +11612,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "13.0%" },
     ],
     evoStone: "Ancient stone (x2)=Ninjask,Darkness stone (x2)=Shedinja",
-    boost: 10,
-    booStone: "Cocoon stone",
-    habilidades: "Dig,Cut",
+    boost: 15,
+    booStone: "Cocoon Stone ou Earth Stone",
+    habilidades: "Light, Dig, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ninjask",
@@ -10533,16 +11636,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bug bite": 80 },
-      { "Silver wind": 80 },
-      { "Fury swipes": 80 },
-      { "X scissor": 84 },
-      { "Swords dance": 86 },
-      { "Substitute": 80 },
-      { "Baton pass": 90 },
-      { "Evasion": "Passiva" },
-      { "Speed boost": "Passiva" },
-      { "Ninja slice": "Passiva" },
+      { "Silver Wind": 80 },
+      { "Leech Life": 80 },
+      { "X-Scissor": 80 },
+      { "Dual Wingbeat": 80 },
+      { "Swords Dance": 80 },
+      { Substitute: 80 },
+      { Protect: 80 },
+      { "Baton Pass": 80 },
+      { Evasion: "P" },
+      { "Speed Boost": "P" },
+      { "Ninja Slice": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bug legs", rar: "4.5%" },
@@ -10554,8 +11658,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "Ancient stone", rar: "Raro" },
     ],
     boost: 3,
-    booStone: "Cocoon stone",
-    habilidades: "Cut",
+    booStone: "Cocoon Stone ou Feather Stone",
+    habilidades: "Light, Dig, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shedinja",
@@ -10572,13 +11680,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Leech life": 65 },
-      { "Silver wind": 60 },
-      { "Shadow ball": 60 },
-      { "Confuse ray": 60 },
-      { "Bug buzz": 66 },
-      { "Shadow counter": "Passiva" },
-      { "Wonder guard": "Passiva" },
+      { "Leech Life": 60 },
+      { "Shadow Ball": 60 },
+      { "Confuse Ray": 60 },
+      { "Struggle Bug": 60 },
+      { "Shadow Claw": 60 },
+      { "Phantom Force": 60 },
+      { "Shadow Counter": "P" },
+      { "Wonder Guard": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bug legs", rar: "3.0%" },
@@ -10589,8 +11698,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "Darkness stone", rar: "Raro" },
     ],
     boost: 4,
-    booStone: "Cocoon stone",
-    habilidades: "Cut",
+    booStone: "Cocoon Stone ou Darkness Stone",
+    habilidades: "Dig, Cut, Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Whismur",
@@ -10607,12 +11720,11 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 20 },
-      { "Tackle": 20 },
-      { "Pound": 20 },
-      { "Hyper voice": 20 },
-      { "Hyper beam": 26 },
-      { "Uproar": "Passiva" },
+      { Bite: 20 },
+      { Pound: 20 },
+      { Supersonic: 20 },
+      { "Echoed Voice": 20 },
+      { "Hyper Voice": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "cute ball", rar: "2.0%" },
@@ -10623,6 +11735,11 @@ const pokesarray = [
     boost: 10,
     booStone: "Heart stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 23:09:50",
+    updateHistory: [ { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Loudred",
@@ -10640,12 +11757,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 50 },
-      { "Bite": 50 },
-      { "Crunch": 50 },
-      { "Hyper voice": 50 },
-      { "Hyper beam": 50 },
-      { "Uproar": "Passiva" },
+      { Bite: 50 },
+      { Crunch: 50 },
+      { Supersonic: 50 },
+      { "Echoed Voice": 50 },
+      { "Hyper Voice": 50 },
+      { "Hyper Beam": 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "cute ball", rar: "4.0%" },
@@ -10657,12 +11774,17 @@ const pokesarray = [
     evoStone: "Heart stone (x2)",
     boost: 5,
     booStone: "Heart stone",
-    habilidades: "Dig,Headbutt,Rock smash",
+    habilidades: "Dig, Headbutt, Rock Smash",
+    updatedAt: "22/03/2026, 23:09:50",
+    updateHistory: [ { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Exploud",
     numero: 295,
-    level: 80,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Hoenn",
@@ -10674,17 +11796,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 80 },
-      { "Bite": 80 },
-      { "Crunch": 80 },
-      { "Pound": 80 },
-      { "Fire fang": 80 },
-      { "Echoed voice": 85 },
-      { "Boomburst": 95 },
-      { "Hyper voice": 80 },
-      { "Hyper beam": 90 },
-      { "Uproar": "Passiva" },
-      { "Leftovers": "Passiva" },
+      { Bite: 100 },
+      { Crunch: 100 },
+      { "Fire Fang": 100 },
+      { "Take Down": 100 },
+      { Boomburst: 100 },
+      { "Echoed Voice": 100 },
+      { "Hyper Voice": 100 },
+      { "Hyper Beam": 100 },
+      { "Sound Monster": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "cute ball", rar: "8.5%" },
@@ -10693,9 +11813,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
       { min: 1, max: 1, item: "nail", rar: "50.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Heart stone",
-    habilidades: "Dig,Headbutt,Rock smash",
+    habilidades: "Dig, Headbutt, Rock Smash",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Makuhita",
@@ -10712,23 +11836,27 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Tackle": 40 },
-      { "Low kick": 40 },
-      { "Leap strike": 45 },
-      { "Cross chop": 44 },
-      { "Close combat": 40 },
-      { "Arm thrust": 46 },
-      { "Smellingsalt": 40 },
-      { "Foresight": "Passiva" },
+      { Tackle: 40 },
+      { "Low Kick": 40 },
+      { "Leap Strike": 40 },
+      { "Cross Chop": 40 },
+      { "Close Combat": 40 },
+      { "Arm Thrust": 40 },
+      { SmellingSalt: 40 },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "samurai hair", rar: "1.3%" },
       { min: 1, max: 10, item: "band aid", rar: "80.0%" },
     ],
     evoStone: "Punch stone (x2)",
-    boost: 8,
+    boost: 7,
     booStone: "Punch stone",
-    habilidades: "Rock smash,Cut,Headbutt",
+    habilidades: "Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hariyama",
@@ -10745,17 +11873,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Tackle": 100 },
-      { "Low kick": 100 },
-      { "Leap strike": 105 },
-      { "Rock tomb": 100 },
-      { "Stone edge": 100 },
-      { "Close combat": 100 },
-      { "Arm thrust": 106 },
-      { "Vital throw": 108 },
-      { "Smellingsalt": 100 },
-      { "Foresight": "Passiva" },
-      { "Thick fat": "Passiva" },
+      { "Low Kick": 100 },
+      { "Smelling Salts": 100 },
+      { "Leap Strike": 100 },
+      { "Knock Off": 100 },
+      { "Arm Thrust": 100 },
+      { "Vital Throw": 100 },
+      { "Force Palm": 100 },
+      { Reversal: 100 },
+      { Detect: 100 },
+      { Foresight: "P" },
+      { "Thick Fat": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "samurai hair", rar: "5.0%" },
@@ -10766,7 +11894,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Ancient stone",
-    habilidades: "Rock smash,Cut,Headbutt",
+    habilidades: "Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Nosepass",
@@ -10782,19 +11914,23 @@ const pokesarray = [
     evo: "Probopass",
     mapas: [],
     moves: [
-      { "Iron head": 40 },
-      { "Tackle": 40 },
-      { "Rock throw": 40 },
-      { "Stone edge": 40 },
-      { "Power gem": 40 },
-      { "Rock blast": 40 },
-      { "Harden": 40 },
+      { "Rock Throw": 40 },
+      { "Stone Edge": 40 },
+      { Thunderbolt: 40 },
+      { Spark: 40 },
+      { "Power Gem": 40 },
+      { "Rock Blast": 40 },
+      { Harden: 40 }
     ],
     loots: [],
     evoStone: "Mirror stone (x10)",
     boost: 8,
     booStone: "Mirror stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sableye",
@@ -10811,14 +11947,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Scratch": 60 },
-      { "Fury swipes": 60 },
-      { "Shadow sphere": 60 },
-      { "Faint attack": 60 },
-      { "Night shade": 60 },
-      { "Shadow claw": 60 },
-      { "Agility": 60 },
-      { "Recover": 65 },
+      { "Fury Swipes": 60 },
+      { "Shadow Ball": 60 },
+      { "Shadow Sphere": 60 },
+      { "Feint Attack": 60 },
+      { "Night Shade": 60 },
+      { "Shadow Claw": 60 },
+      { "Shadow Sneak": 60 },
+      { Recover: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "big crystal", rar: "1.7%" },
@@ -10826,9 +11962,13 @@ const pokesarray = [
       { min: 1, max: 39, item: "ghost essence", rar: "80.0%" },
       { min: 1, max: 1, item: "Darkness stone", rar: "Raro" },
     ],
-    boost: 5,
+    boost: 4,
     booStone: "Darkness stone",
-    habilidades: "Cut",
+    habilidades: "Light, Dig, Rock Smash, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Mawile",
@@ -10845,16 +11985,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 80 },
-      { "Bite": 80 },
-      { "Play rough": 80 },
-      { "Impale": 83 },
-      { "Flash cannon": 88 },
-      { "Spit up": 83 },
-      { "Swallow": 83 },
-      { "Stockpile": 83 },
-      { "Fake tears": 86 },
-      { "Clear pile": "Passiva" },
+      { "Iron Head": 80 },
+      { Bite: 80 },
+      { "Play Rough": 80 },
+      { Impale: 80 },
+      { "Flash Cannon": 80 },
+      { "Spit Up": 80 },
+      { Swallow: 80 },
+      { Stockpile: 80 },
+      { "Fake Tears": 80 },
+      { "Clear Pile": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "metal jaw", rar: "5.7%" },
@@ -10863,7 +12003,11 @@ const pokesarray = [
     ],
     boost: 50,
     booStone: "Metal stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Aron",
@@ -10880,12 +12024,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 30 },
-      { "Mud slap": 30 },
-      { "Stone edge": 30 },
-      { "Metal burst": 30 },
-      { "Metal claw": 34 },
-      { "Harden": 30 },
+      { "Iron Head": 30 },
+      { "Iron Tail": 30 },
+      { "Metal Burst": 30 },
+      { "Stone Edge": 30 },
+      { "Metal Claw": 30 },
+      { Harden: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "metal hull", rar: "Raro" },
@@ -10894,9 +12038,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "stone orb", rar: "20.0%" },
     ],
     evoStone: "Rock stone",
-    boost: 10,
+    boost: 8,
     booStone: "Rock stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lairon",
@@ -10915,14 +12063,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 60 },
-      { "Iron tail": 60 },
-      { "Mud slap": 60 },
-      { "Stone edge": 60 },
-      { "Metal burst": 60 },
-      { "Metal claw": 67 },
-      { "Meteor mash": 60 },
-      { "Harden": 60 },
+      { "Iron Head": 60 },
+      { "Iron Tail": 60 },
+      { "Metal Burst": 60 },
+      { "Stone Edge": 60 },
+      { "Metal Claw": 60 },
+      { "Meteor Mash": 60 },
+      { "Flash Cannon": 60 },
+      { Protect: 60 },
+      { Sandstorm: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "metal hull", rar: "2.5%" },
@@ -10932,9 +12081,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "stone orb", rar: "35.0%" },
     ],
     evoStone: "Metal stone,Rock stone",
-    boost: 5,
+    boost: 4,
     booStone: "Rock stone",
-    habilidades: "Ride,Rock smash,Headbutt",
+    habilidades: "Ride, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Aggron",
@@ -10953,16 +12106,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 100 },
-      { "Iron tail": 100 },
-      { "Mud slap": 100 },
-      { "Stone edge": 100 },
-      { "Metal burst": 100 },
-      { "Metal claw": 107 },
-      { "Meteor mash": 100 },
-      { "Flash cannon": 108 },
-      { "Harden": 100 },
-      { "Sturdy": "Passiva" },
+      { "Iron Head": 100 },
+      { "Iron Tail": 100 },
+      { "Metal Burst": 100 },
+      { "Stone Edge": 100 },
+      { "Metal Claw": 100 },
+      { "Meteor Mash": 100 },
+      { "Flash Cannon": 100 },
+      { Harden: 100 },
+      { Sandstorm: 100 },
+      { Sturdy: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "metal hull", rar: "4.3%" },
@@ -10975,7 +12128,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Metal stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Cut, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Meditite",
@@ -10992,12 +12149,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Low kick": 30 },
-      { "Mega kick": 30 },
-      { "Drain punch": 30 },
-      { "Confusion": 30 },
-      { "Psychic": 30 },
-      { "Hi jump kick": 35 },
+      { "Low Kick": 30 },
+      { "Mega Kick": 30 },
+      { "Drain Punch": 30 },
+      { Confusion: 30 },
+      { Psychic: 30 },
+      { "Hi Jump Kick": 30 },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "mediling", rar: "Raro" },
@@ -11006,9 +12164,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "future orb", rar: "20.0%" },
     ],
     evoStone: "Punch stone,Enigma stone",
-    boost: 10,
-    booStone: "Punch stone",
-    habilidades: "Rock smash",
+    boost: 8,
+    booStone: "Punch Stone ou Enigma Stone",
+    habilidades: "Light, Rock Smash",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Medicham",
@@ -11025,17 +12187,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Low kick": 80 },
-      { "Mega kick": 80 },
-      { "Drain punch": 80 },
-      { "Confusion": 80 },
-      { "Psychic": 80 },
+      { "Low Kick": 80 },
+      { "Thunder Punch": 80 },
+      { "Zen Headbutt": 80 },
+      { "Low Sweep": 80 },
+      { Psychic: 80 },
       { "Hi jump kick": 80 },
-      { "Meditate": 90 },
-      { "Focus energy": 90 },
-      { "Miracle eye": 1000 },
-      { "Evasion": "Passiva" },
-      { "Foresight": "Passiva" },
+      { Meditate: 80 },
+      { "Focus Energy": 80 },
+      { Evasion: "P" },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "mediling", rar: "4.3%" },
@@ -11046,8 +12207,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "Enigma stone", rar: "Raro" },
     ],
     boost: 3,
-    booStone: "Punch stone",
-    habilidades: "Rock smash",
+    booStone: "Punch Stone ou Enigma Stone",
+    habilidades: "Light, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Electrike",
@@ -11065,13 +12230,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Swift": 30 },
-      { "Bite": 30 },
-      { "Thunder wave": 30 },
-      { "Spark": 30 },
-      { "Thunder fang": 30 },
-      { "Thunder": 40 },
-      { "Charge": "Passiva" },
+      { Swift: 30 },
+      { Bite: 30 },
+      { "Thunder Wave": 30 },
+      { Spark: 30 },
+      { "Thunder Fang": 30 },
+      { Thunder: 30 },
+      { Charge: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "shock topknot", rar: "Raro" },
@@ -11079,9 +12244,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "electric box", rar: "20.0%" },
     ],
     evoStone: "Thunder stone (x2)",
-    boost: 10,
+    boost: 8,
     booStone: "Thunder stone",
-    habilidades: "Light,Dig",
+    habilidades: "Light, Dig",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Manectric",
@@ -11100,15 +12269,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Roar": 90 },
-      { "Swift": 80 },
-      { "Bite": 80 },
-      { "Spark": 80 },
-      { "Thunder fang": 80 },
-      { "Thunder": 80 },
-      { "Discharge": 85 },
-      { "Wild charge": 85 },
-      { "Magnetic flux": 80 },
+      { "Quick Attack": 80 },
+      { Swift: 80 },
+      { Bite: 80 },
+      { Spark: 80 },
+      { "Thunder Fang": 80 },
+      { Thunder: 80 },
+      { "Rising Voltage": 80 },
+      { Discharge: 80 },
+      { "Electric Terrain": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "shock topknot", rar: "4.3%" },
@@ -11118,7 +12287,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Thunder stone",
-    habilidades: "Light,Dig,Ride",
+    habilidades: "Dig, Cut, Light, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Plusle",
@@ -11135,19 +12308,23 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Sweet kiss": 30 },
-      { "Spark": 30 },
-      { "Thunder wrath": 38 },
-      { "Wish": 30 },
+      { "Sweet Kiss": 30 },
+      { Spark: 30 },
+      { "Thunder Wrath": 30 },
+      { Wish: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "electric rat tail", rar: "2.0%" },
       { min: 1, max: 20, item: "screw", rar: "80.0%" },
       { min: 1, max: 1, item: "electric box", rar: "17.0%" },
     ],
-    boost: 9,
+    boost: 8,
     booStone: "Thunder stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Minun",
@@ -11163,25 +12340,29 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Spark": 30 },
-      { "Nuzzle": 35 },
-      { "Helping hand": 30 },
-      { "Fake tears": 36 },
-      { "Wish": 30 },
+      { Spark: 30 },
+      { Nuzzle: 30 },
+      { "Helping Hand": 30 },
+      { "Fake Tears": 30 },
+      { Wish: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "electric rat tail", rar: "2.0%" },
       { min: 1, max: 20, item: "screw", rar: "80.0%" },
       { min: 1, max: 1, item: "electric box", rar: "17.0%" },
     ],
-    boost: 9,
+    boost: 8,
     booStone: "Thunder stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Roselia",
     numero: 315,
-    level: 70,
+    level: 50,
     clan: "Naturia, Malefic",
     tipo: "Grama, Venenoso",
     regiao: "Hoenn",
@@ -11191,19 +12372,22 @@ const pokesarray = [
     pricenpc: "Unseleable",
     mapas: [],
     moves: [
-      { "Magical leaf": 70 },
-      { "Petal dance": 70 },
-      { "Toxic": 70 },
-      { "Leaf tornado": 80 },
-      { "Synthesis": 70 },
-      { "Petal blizzard": 70 },
-      { "Grass whistle": 70 },
-      { "Growth": 70 },
+      { "Razor Leaf": 50 },
+      { "Magical Leaf": 50 },
+      { "Poison Jab": 50 },
+      { Synthesis: 50 },
+      { "Solar Beam": 50 },
+      { "Petal Blizzard": 50 },
+      { "Grass Whistle": 50 }
     ],
     loots: [],
     boost: 7,
     booStone: "Mirror stone",
-    habilidades: "Cut",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Numel",
@@ -11220,12 +12404,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Volcano shot": 30 },
-      { "Ember": 30 },
-      { "Rock slide": 30 },
-      { "Flame burst": 30 },
-      { "Lava plume": 36 },
-      { "Scary face": 32 },
+      { "Volcano Shot": 30 },
+      { Ember: 30 },
+      { "Rock Slide": 30 },
+      { "Flame Burst": 30 },
+      { "Lava Plume": 30 },
+      { "Scary Face": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "Nu ball", rar: "1.1%" },
@@ -11234,9 +12418,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "13.0%" },
     ],
     evoStone: "Fire stone,Earth stone",
-    boost: 10,
-    booStone: "Earth stone",
-    habilidades: "Rock smash,Dig,Headbutt",
+    boost: 8,
+    booStone: "Fire Stone ou Earth Stone",
+    habilidades: "Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Camerupt",
@@ -11255,15 +12443,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Volcano shot": 80 },
-      { "Ember": 80 },
-      { "Mud bomb": 80 },
-      { "Flame burst": 80 },
-      { "Lava plume": 82 },
-      { "Earthquake": 90 },
-      { "Fissure": 90 },
-      { "Scary face": 82 },
-      { "Solid rock": "Passiva" },
+      { "Volcano Shot": 80 },
+      { Ember: 80 },
+      { "Mud Bomb": 80 },
+      { "Flame Burst": 80 },
+      { "Lava Plume": 80 },
+      { "Fire Blast": 80 },
+      { Eruption: 80 },
+      { "Scary Face": 80 },
+      { "Solid Rock": "P" },
+      { "Magma Armor": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "Nu ball", rar: "4.5%" },
@@ -11276,8 +12465,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "mini volcano", rar: "Raro" },
     ],
     boost: 3,
-    booStone: "Earth stone",
-    habilidades: "Rock smash,Dig,Ride,Headbutt",
+    booStone: "Fire Stone ou Earth Stone",
+    habilidades: "Dig, Rock Smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Torkoal",
@@ -11293,15 +12486,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Ember": 100 },
-      { "Flamethrower": 100 },
-      { "Withdraw": 104 },
-      { "Smokescreen": 100 },
-      { "White smoke": 100 },
-      { "Fireball": 100 },
-      { "Inferno": 110 },
-      { "Heat wave": 104 },
-      { "Heatzone": 110 },
+      { Ember: 100 },
+      { Flamethrower: 100 },
+      { Withdraw: 100 },
+      { Smokescreen: 100 },
+      { "White Smoke": 100 },
+      { Eruption: 100 },
+      { "Lava Plume": 100 },
+      { "Heat Wave": 100 },
+      { Heatzone: 100 },
+      { Drought: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "black hull", rar: "10.0%" },
@@ -11312,12 +12506,16 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Ancient stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Spoink",
     numero: 325,
-    level: 30,
+    level: 20,
     clan: "Psycraft",
     tipo: "Psiquico",
     regiao: "Hoenn",
@@ -11329,12 +12527,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Headbutt": 30 },
-      { "Psywave": 30 },
-      { "Psy pulse": 30 },
-      { "Psychic": 30 },
-      { "Confuse ray": 34 },
-      { "Magic coat": 38 },
+      { Headbutt: 20 },
+      { Psywave: 20 },
+      { "Psy Pulse": 20 },
+      { Psychic: 20 },
+      { "Confuse Ray": 20 },
+      { "Magic Coat": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "springs", rar: "1.3%" },
@@ -11345,6 +12543,10 @@ const pokesarray = [
     boost: 10,
     booStone: "Enigma stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Grumpig",
@@ -11362,16 +12564,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Headbutt": 80 },
-      { "Shadowave": 80 },
-      { "Psy pulse": 80 },
-      { "Psychic": 80 },
-      { "Teeter dance": 85 },
-      { "Power gem": 80 },
-      { "Bulldoze": 80 },
-      { "Rest": 86 },
-      { "Miracle eye": 1000 },
-      { "Thick fat": "Passiva" },
+      { Headbutt: 80 },
+      { "Shadow Ball": 80 },
+      { "Power Gem": 80 },
+      { "Teeter Dance": 80 },
+      { Psychic: 80 },
+      { Payback: 80 },
+      { Bulldoze: 80 },
+      { "Calm Mind": 80 },
+      { "Magic Coat": 80 },
+      { "Thick Fat": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "springs", rar: "5.0%" },
@@ -11381,7 +12583,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Enigma stone",
-    habilidades: "Teleport,Light",
+    habilidades: "Dig, Teleport, Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//326
 
   {
@@ -11399,12 +12605,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Sand attack": 20 },
-      { "Bite": 20 },
-      { "Mud shot": 20 },
-      { "Mud slap": 22 },
-      { "Dig": 25 },
-      { "Earth power": 25 },
+      { "Sand Attack": 20 },
+      { Bite: 20 },
+      { "Mud Shot": 20 },
+      { "Mud-Slap": 20 },
+      { Dig: 20 },
+      { "Earth Power": 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange ball", rar: "Raro" },
@@ -11414,7 +12620,11 @@ const pokesarray = [
     evoStone: "Earth stone",
     boost: 10,
     booStone: "Earth stone",
-    habilidades: "Dig,Rock smash",
+    habilidades: "Dig, Rock Smash",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Vibrava",
@@ -11433,12 +12643,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 50 },
-      { "Rock slide": 50 },
-      { "Sand tomb": 52 },
-      { "Bulldoze": 50 },
-      { "Earthquake": 56 },
-      { "Levitate": "Passiva" },
+      { Supersonic: 50 },
+      { "Sand Attack": 50 },
+      { "Sand Tomb": 50 },
+      { Bulldoze: 50 },
+      { Earthquake: 50 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "sand tail", rar: "2.0%" },
@@ -11450,12 +12660,17 @@ const pokesarray = [
     evoStone: "Crystal stone,Earth stone",
     boost: 5,
     booStone: "Earth stone",
-    habilidades: "Dig,Rock smash",
+    habilidades: "Dig, Rock Smash",
+    updatedAt: "22/03/2026, 23:09:50",
+    updateHistory: [ { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Flygon",
     numero: 330,
-    level: 80,
+    level: 100,
     clan: "Orebound,Wingeon",
     tipo: "Terra,Dragão",
     regiao: "Hoenn",
@@ -11468,15 +12683,18 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 80 },
-      { "Rock slide": 80 },
-      { "Sand tomb": 82 },
-      { "Dragon flight": 80 },
-      { "Dragon breath": 82 },
-      { "Fissure": 90 },
-      { "Hyper beam": 88 },
-      { "Earthquake": 90 },
-      { "Levitate": "Passiva" },
+      { Supersonic: 100 },
+      { "Sand Attack": 100 },
+      { "Sand Tomb": 100 },
+      { "Dragon Flight": 100 },
+      { Bulldoze: 100 },
+      { Fissure: 100 },
+      { "Hyper Beam": 100 },
+      { Earthquake: 100 },
+      { Sandstorm: 100 },
+      { Screech: 100 },
+      { Levitate: "P" },
+      { "Smack Down": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "sand tail", rar: "4.3%" },
@@ -11488,12 +12706,17 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Crystal stone",
-    habilidades: "Fly,Dig,Rock smash",
+    habilidades: "Fly, Dig, Rock Smash",
+    updatedAt: "22/03/2026, 23:09:50",
+    updateHistory: [ { date: "22/03/2026, 23:09:50", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Swablu",
     numero: 333,
-    level: 30,
+    level: 40,
     clan: "Gardestrike,Wingeon",
     tipo: "Normal,Voador",
     regiao: "Hoenn",
@@ -11505,14 +12728,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Peck": 30 },
-      { "Pluck": 30 },
-      { "Sing": 30 },
-      { "Dragon breath": 30 },
-      { "Dragon mist": 32 },
-      { "Roost": 36 },
-      { "Tailwind": 30 },
-      { "Safeguard": 38 },
+      { Peck: 40 },
+      { Pluck: 40 },
+      { Sing: 40 },
+      { "Dragon Breath": 40 },
+      { "Dragon Mist": 40 },
+      { "Dragon Pulse": 40 },
+      { Roost: 40 },
+      { Tailwind: 40 },
+      { "Natural Cure": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "cloud", rar: "Raro" },
@@ -11521,9 +12745,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "feather", rar: "13.0%" },
     ],
     evoStone: "Crystal stone,Feather stone",
-    boost: 10,
-    booStone: "Feather stone",
+    boost: 7,
+    booStone: "Feather Stone ou Heart Stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Altaria",
@@ -11541,17 +12769,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Attract": 80 },
-      { "Pluck": 85 },
-      { "Sing": 80 },
-      { "Dragon breath": 82 },
-      { "Dragon mist": 85 },
-      { "Sky attack": 90 },
-      { "Roost": 85 },
-      { "Tailwind": 80 },
-      { "Safeguard": 90 },
-      { "Mirror move": 86 },
-      { "Cloud nine": "Passiva" },
+      { Attract: 80 },
+      { Pluck: 80 },
+      { Sing: 80 },
+      { "Dragon Breath": 80 },
+      { "Dragon Mist": 80 },
+      { "Sky Attack": 80 },
+      { Roost: 80 },
+      { Tailwind: 80 },
+      { "Mirror Move": 80 },
+      { "Natural Cure": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "cloud", rar: "4.3%" },
@@ -11564,11 +12791,15 @@ const pokesarray = [
     boost: 3,
     booStone: "Feather stone",
     habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Zangoose",
     numero: 335,
-    level: 80,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Hoenn",
@@ -11580,17 +12811,18 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 80 },
-      { "Slash": 80 },
-      { "Dig": 82 },
-      { "Pursuit": 80 },
-      { "Razor wind": 88 },
-      { "Fury swipes": 80 },
-      { "Last resort": 85 },
-      { "Swords dance": 88 },
-      { "Taunt": 80 },
-      { "Toxic boost": "Passiva" },
-      { "Immunity": "Passiva" },
+      { Scratch: 100 },
+      { Slash: 100 },
+      { "Mud-Slap": 100 },
+      { Dig: 100 },
+      { "Crush Claw": 100 },
+      { Pursuit: 100 },
+      { "Fury Swipes": 100 },
+      { "Shadow Claw": 100 },
+      { "Swords Dance": 100 },
+      { Taunt: 100 },
+      { "Toxic Boost": "P" },
+      { Immunity: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "tribe mark", rar: "4.3%" },
@@ -11598,14 +12830,18 @@ const pokesarray = [
       { min: 1, max: 43, item: "rubber ball", rar: "80.0%" },
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Heart stone",
-    habilidades: "Dig,Rock smash,Headbutt,Cut",
+    habilidades: "Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Seviper",
     numero: 336,
-    level: 80,
+    level: 100,
     clan: "Malefic",
     tipo: "Venenoso",
     regiao: "Hoenn",
@@ -11616,15 +12852,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 80 },
-      { "Poison tail": 80 },
-      { "Acid": 80 },
-      { "Toxic": 80 },
-      { "Gastro acid": 82 },
-      { "Venomous gale": 85 },
-      { "Venoshock": 80 },
-      { "Shed skin": "Passiva" },
-      { "Vipers fang": "Passiva" },
+      { "Poison Fang": 100 },
+      { "Iron Tail": 100 },
+      { Bite: 100 },
+      { Acid: 100 },
+      { Toxic: 100 },
+      { "Poison Tail": 100 },
+      { "Venomous Gale": 100 },
+      { "Acid Rain": 100 },
+      { "Shed Skin": "P" },
+      { "Viper's Fang": "P" },
+      { Corrosion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "poisonous tail", rar: "4.3%" },
@@ -11632,9 +12870,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
       { min: 1, max: 1, item: "tooth", rar: "60.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Venom stone",
-    habilidades: "Dig,Headbutt",
+    habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Corphish",
@@ -11651,13 +12893,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bubbles": 35 },
-      { "Bubblebeam": 30 },
-      { "Crabhammer": 30 },
-      { "Dark pulse": 30 },
-      { "Night slash": 38 },
-      { "Harden": 40 },
-      { "Swords dance": 38 },
+      { Bubbles: 30 },
+      { "Bubble Beam": 30 },
+      { "Dark Pulse": 30 },
+      { Crabhammer: 30 },
+      { "Night Slash": 30 },
+      { Harden: 30 },
+      { "Swords Dance": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "lobster claw", rar: "Raro" },
@@ -11665,9 +12907,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "21.0%" },
     ],
     evoStone: "Water stone,Darkness stone",
-    boost: 10,
+    boost: 8,
     booStone: "Water stone",
-    habilidades: "Dig,Rock smash,Cut",
+    habilidades: "Dig, Rock Smash, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Crawdaunt",
@@ -11684,15 +12930,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bubbles": 85 },
-      { "Bubblebeam": 80 },
-      { "Dark pulse": 80 },
-      { "Dig": 82 },
-      { "Crabhammer": 80 },
-      { "Guillotine": 82 },
-      { "Night slash": 80 },
-      { "Swords dance": 88 },
-      { "Protect": 80 },
+      { "Hone Claws": 80 },
+      { "Bubble Beam": 80 },
+      { Crunch: 80 },
+      { Crabhammer: 80 },
+      { "Void Sphere": 80 },
+      { "Night Slash": 80 },
+      { Payback: 80 },
+      { Protect: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "lobster claw", rar: "4.3%" },
@@ -11703,8 +12948,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "45.0%" },
     ],
     boost: 3,
-    booStone: "Water stone",
-    habilidades: "Dig,Rock smash,Cut,Surf",
+    booStone: "Water Stone ou Darkness Stone",
+    habilidades: "Dig, Rock Smash, Cut, Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Baltoy",
@@ -11721,13 +12970,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Mud slap": 30 },
-      { "Extrasensory": 30 },
-      { "Psybeam": 30 },
-      { "Psychic": 30 },
-      { "Earth power": 33 },
-      { "Guard split": 30 },
-      { "Levitate": "Passiva" },
+      { "Mud-Slap": 30 },
+      { Extrasensory: 30 },
+      { Psybeam: 30 },
+      { Psychic: 30 },
+      { "Earth Power": 30 },
+      { "Guard Split": 30 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "pawn", rar: "Raro" },
@@ -11737,9 +12986,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "13.0%" },
     ],
     evoStone: "Earth stone,Enigma stone",
-    boost: 10,
-    booStone: "Earth stone",
-    habilidades: "Rock smash,Dig,Headbutt",
+    boost: 8,
+    booStone: "Earth Stone ou Enigma Stone",
+    habilidades: "Light, Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Claydol",
@@ -11757,17 +13010,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Mud sport": 80 },
-      { "Extrasensory": 80 },
-      { "Psybeam": 80 },
-      { "Psyshock": 88 },
-      { "Earth power": 83 },
-      { "Earthquake": 86 },
-      { "Sandstorm": 80 },
-      { "Heal block": 80 },
-      { "Guard split": 80 },
-      { "Protect": 80 },
-      { "Levitate": "Passiva" },
+      { "Mud Sport": 80 },
+      { Extrasensory: 80 },
+      { Psybeam: 80 },
+      { Psychic: 80 },
+      { "Earth Power": 80 },
+      { Earthquake: 80 },
+      { Sandstorm: 80 },
+      { "Heal Block": 80 },
+      { "Guard Split": 80 },
+      { Protect: 80 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "pawn", rar: "4.3%" },
@@ -11779,8 +13032,12 @@ const pokesarray = [
       { min: 1, max: 1, item: "Earth stone", rar: "Raro" },
     ],
     boost: 3,
-    booStone: "Earth stone",
-    habilidades: "Rock smash,Dig,Headbutt,Teleport",
+    booStone: "Earth Stone ou Enigma Stone",
+    habilidades: "Light, Rock Smash, Dig, Headbutt, Teleport",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lileep",
@@ -11796,18 +13053,23 @@ const pokesarray = [
     evo: "Cradily",
     mapas: [],
     moves: [
-      { "Grass knot": 20 },
-      { "Bind": 20 },
-      { "Energy ball": 20 },
-      { "Rock tomb": 20 },
-      { "Giga drain": 25 },
-      { "Barrier": 30 },
+      { "Bullet Seed": 20 },
+      { Wrap: 20 },
+      { "Grass Knot": 20 },
+      { "Rock Tomb": 20 },
+      { "Energy Ball": 20 },
+      { "Giga Drain": 20 },
+      { Barrier: 20 }
     ],
     loots: [],
     evoStone: "Mirror stone (x25)",
     boost: 10,
-    booStone: "Mirror stone",
-    habilidades: "Rock smash,Headbutt",
+    booStone: "Rock Stone ou Leaf Stone",
+    habilidades: "Light, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Cradily",
@@ -11823,21 +13085,26 @@ const pokesarray = [
     preevo: "Lileep",
     mapas: [],
     moves: [
-      { "Wring out": 100 },
-      { "Bind": 100 },
-      { "Energy ball": 100 },
-      { "Grass knot": 100 },
-      { "Rock tomb": 100 },
-      { "Solar beam": 100 },
-      { "Giga drain": 105 },
-      { "Frenzy plant": 110 },
-      { "Magic coat": 106 },
-      { "Barrier": 120 },
+      { "Bullet Seed": 100 },
+      { Wrap: 100 },
+      { "Grass Knot": 100 },
+      { "Ancient Power": 100 },
+      { "Solar Beam": 100 },
+      { "Giga Drain": 100 },
+      { "Frenzy Plant": 100 },
+      { "Magic Coat": 100 },
+      { Barrier: 100 },
+      { "Storm Drain": "P" },
+      { "Suction Cups": "P" }
     ],
     loots: [],
     boost: 3,
     booStone: "Mirror stone",
-    habilidades: "Dig,Rock smash,Cut,Headbutt",
+    habilidades: "Light, Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Anorith",
@@ -11854,13 +13121,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Rock throw": 20 },
-      { "Rock slide": 20 },
-      { "Rock tomb": 20 },
-      { "Fury cutter": 25 },
-      { "Stone edge": 20 },
-      { "Hunter mark": 20 },
-      { "X scissor": 25 },
+      { "Rock Throw": 20 },
+      { "Rock Slide": 20 },
+      { "Stone Edge": 20 },
+      { "X-Scissor": 20 },
+      { "Crush Claw": 20 },
+      { "Fury Cutter": 20 },
+      { "Rock Blast": 20 }
     ],
     loots: [
       { min: 1, max: 12, item: "bug gosme", rar: "80.0%" },
@@ -11871,13 +13138,17 @@ const pokesarray = [
     ],
     evoStone: "Rock stone,Crystal stone",
     boost: 10,
-    booStone: "Cocoon stone",
-    habilidades: "Dig,Rock smash,Cut",
+    booStone: "Cocoon Stone ou Rock Stone",
+    habilidades: "Dig, Rock Smash, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Armaldo",
     numero: 348,
-    level: 80,
+    level: 100,
     clan: "Orebound,Naturia",
     tipo: "Pedra,Inseto",
     regiao: "Hoenn",
@@ -11889,16 +13160,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Rock throw": 100 },
-      { "Rock slide": 100 },
-      { "Rock tomb": 100 },
-      { "Fury cutter": 105 },
-      { "Crush claw": 100 },
-      { "Stone edge": 100 },
-      { "Hunter mark": 100 },
-      { "X scissor": 105 },
-      { "Rock blast": 100 },
-      { "Protect": 100 },
+      { "Rock Throw": 100 },
+      { "Rock Slide": 100 },
+      { "Stone Edge": 100 },
+      { "X-Scissor": 100 },
+      { "Crush Claw": 100 },
+      { "Ancient Power": 100 },
+      { "Falling Rocks": 100 },
+      { "Hunter Mark": 100 },
+      { Sandstorm: 100 },
+      { "Stealth Rock": 100 },
+      { "Battle Armor": "P" }
     ],
     loots: [
       { min: 1, max: 20, item: "bug gosme", rar: "80.0%" },
@@ -11909,9 +13181,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "pot of moss bug", rar: "39.0%" },
       { min: 1, max: 1, item: "claw fossil", rar: "Raro" },
     ],
-    boost: 3,
-    booStone: "Cocoon stone",
-    habilidades: "Dig,Rock smash,Cut,Headbutt",
+    boost: 2,
+    booStone: "Cocoon Stone ou Rock Stone",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Feebas",
@@ -11935,14 +13211,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "water pendant", rar: "21.0%" },
     ],
     evoStone: "Prism scale (x10)",
-    boost: 20,
+    boost: 15,
     booStone: "Water stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler" ] }
+    ]
   },
   {
     nome: "Milotic",
     numero: 350,
-    level: 150,
+    level: 100,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Hoenn",
@@ -11955,15 +13235,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Aqua tail": 150 },
-      { "Wrap": 150 },
-      { "Water gun": 150 },
-      { "Water pulse": 150 },
-      { "Twister": 154 },
-      { "Waterfall": 150 },
-      { "Hydropump": 158 },
-      { "Rain dance": 150 },
-      { "Aqua ring": 150 },
+      { "Aqua Tail": 100 },
+      { Wrap: 100 },
+      { "Water Gun": 100 },
+      { "Water Pulse": 100 },
+      { Twister: 100 },
+      { Waterfall: 100 },
+      { "Hydro Pump": 100 },
+      { "Rain Dance": 100 },
+      { "Aqua Ring": 100 }
     ],
     loots: [
       { min: 1, max: 80, item: "water gem", rar: "90.0%" },
@@ -11974,6 +13254,10 @@ const pokesarray = [
     boost: 10,
     booStone: "Mystic star",
     habilidades: "Surf",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Castform",
@@ -11990,7 +13274,7 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Forecast": "Passiva" },
+      { Forecast: 100 }
     ],
     loots: [
       { min: 1, max: 20, item: "essence of fire", rar: "80.0%" },
@@ -12005,7 +13289,11 @@ const pokesarray = [
     ],
     boost: 50,
     booStone: "Mystic star",
-    habilidades: "",
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Kecleon",
@@ -12021,15 +13309,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Lick": 80 },
-      { "Shadow ball": 80 },
-      { "Fury swipes": 80 },
-      { "Sucker punch": 83 },
-      { "Camouflage": 80 },
-      { "Shadow sneak": 85 },
-      { "Shadow claw": 80 },
-      { "Ancient power": 95 },
-      { "Color change": "Passiva" },
+      { Lick: 80 },
+      { "Shadow Ball": 80 },
+      { "Foul Play": 80 },
+      { "Sucker Punch": 80 },
+      { Camouflage: 80 },
+      { "Feint Attack": 80 },
+      { Astonish: 80 },
+      { "Ancient Power": 80 },
+      { "Color Change": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bitten apple", rar: "80.0%" },
@@ -12040,7 +13328,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Heart stone",
-    habilidades: "Dig,Headbutt,Cut",
+    habilidades: "Light, Dig, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shuppet",
@@ -12057,21 +13349,24 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Shadow ball": 30 },
-      { "Shadow sphere": 30 },
-      { "Faint attack": 30 },
-      { "Night shade": 35 },
-      { "Invisible": 30 },
-      { "Dark accurate": 1000 },
+      { "Shadow Ball": 30 },
+      { "Shadow Sphere": 30 },
+      { "Feint Attack": 30 },
+      { "Night Shade": 30 },
+      { Invisible: 30 }
     ],
     loots: [
       { min: 1, max: 10, item: "ghost essence", rar: "80.0%" },
       { min: 1, max: 1, item: "doll star", rar: "1.5%" },
     ],
     evoStone: "Darkness stone (x2)",
-    boost: 10,
+    boost: 8,
     booStone: "Darkness stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Banette",
@@ -12088,17 +13383,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Shadow ball": 80 },
-      { "Shadow sphere": 80 },
-      { "Shadow punch": 84 },
-      { "Ominous wind": 85 },
-      { "Shadow storm": 86 },
-      { "Invisible": 80 },
-      { "Curse": 86 },
-      { "Torment": 85 },
-      { "Dark accurate": 1000 },
-      { "Cursed body": "Passiva" },
-      { "Insomnia": "Passiva" },
+      { "Shadow Ball": 80 },
+      { "Shadow Sphere": 80 },
+      { "Shadow Punch": 80 },
+      { "Ominous Wind": 80 },
+      { Astonish: 80 },
+      { "Shadow Claw": 80 },
+      { "Shadow Storm": 80 },
+      { Torment: 80 },
+      { "Cursed Body": "P" }
     ],
     loots: [
       { min: 1, max: 43, item: "ghost essence", rar: "80.0%" },
@@ -12108,6 +13401,10 @@ const pokesarray = [
     boost: 3,
     booStone: "Darkness stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Duskull",
@@ -12124,11 +13421,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Shadow ball": 40 },
-      { "Shadow punch": 44 },
-      { "Night shade": 40 },
-      { "Confuse ray": 40 },
-      { "Dark accurate": 1000 },
+      { "Shadow Ball": 40 },
+      { "Ominous Wind": 40 },
+      { "Night Shade": 40 },
+      { "Confuse Ray": 40 },
+      { Astonish: 40 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 20, item: "ghost essence", rar: "80.0%" },
@@ -12137,12 +13435,16 @@ const pokesarray = [
     evoStone: "Darkness stone",
     boost: 7,
     booStone: "Darkness stone",
-    habilidades: "Headbutt",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dusclops",
     numero: 356,
-    level: 70,
+    level: 100,
     clan: "Malefic",
     tipo: "Fantasma",
     regiao: "Hoenn",
@@ -12155,13 +13457,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Shadow ball": 70 },
-      { "Shadow punch": 74 },
-      { "Night shade": 70 },
-      { "Confuse ray": 70 },
-      { "Hex": 75 },
-      { "Curse": 76 },
-      { "Dark accurate": 1000 },
+      { Curse: 100 },
+      { "Shadow Ball": 100 },
+      { "Shadow Punch": 100 },
+      { "Ominous Wind": 100 },
+      { "Hollow Wind": 100 },
+      { Hex: 100 },
+      { "Shadow Blast": 100 },
+      { Confide: 100 },
+      { Protector: "P" }
     ],
     loots: [
       { min: 1, max: 43, item: "ghost essence", rar: "80.0%" },
@@ -12170,9 +13474,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "creepy eye", rar: "Raro" },
     ],
     evoStone: "Reaper cloth (x10)",
-    boost: 4,
-    booStone: "Darkness stone",
-    habilidades: "Headbutt",
+    boost: 2,
+    booStone: "Darkness",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Tropius",
@@ -12189,15 +13497,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Seed bomb": 100 },
-      { "Body slam": 100 },
-      { "Razor leaf": 100 },
-      { "Magical leaf": 100 },
-      { "Air slash": 103 },
-      { "Stomp": 105 },
-      { "Leaf tornado": 110 },
-      { "Leaf storm": 110 },
-      { "Growth": 100 },
+      { "Body Slam": 100 },
+      { "Razor Leaf": 100 },
+      { "Magical Leaf": 100 },
+      { Leafage: 100 },
+      { Stomp: 100 },
+      { "Leaf Tornado": 100 },
+      { "Leaf Storm": 100 },
+      { Growth: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "palm leaves", rar: "4.3%" },
@@ -12211,7 +13518,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Ancient stone",
-    habilidades: "Rock smash,Cut,Headbutt,Fly",
+    habilidades: "Light, Rock Smash, Cut, Headbutt, Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Absol",
@@ -12228,17 +13539,18 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 100 },
-      { "Shadowave": 100 },
-      { "Pursuit": 100 },
-      { "Dark pulse": 100 },
-      { "Night slash": 100 },
-      { "Sucker punch": 103 },
-      { "Razor wind": 108 },
-      { "Assurance": 108 },
-      { "Swords dance": 108 },
-      { "Taunt": 100 },
-      { "Justified": "Passiva" },
+      { "Quick Attack": 100 },
+      { "Knock Off": 100 },
+      { Pursuit: 100 },
+      { "Foul Play": 100 },
+      { "Night Slash": 100 },
+      { "Sucker Punch": 100 },
+      { "Razor Wind": 100 },
+      { Assurance: 100 },
+      { "Swords Dance": 100 },
+      { Taunt: 100 },
+      { Justified: "P" },
+      { "Super Luck": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dark moon", rar: "Raro" },
@@ -12248,12 +13560,16 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Ancient stone",
-    habilidades: "Rock smash,Dig,Headbutt,Cut,Ride",
+    habilidades: "Rock Smash, Dig, Cut, Light, Headbutt, Ride",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Wynaut",
     numero: 360,
-    level: 70,
+    level: 20,
     clan: "Psycraft",
     tipo: "Psiquico",
     regiao: "Hoenn",
@@ -12264,14 +13580,19 @@ const pokesarray = [
     evo: "Woobuffet",
     mapas: [],
     moves: [
-      { "Safeguard": 80 },
-      { "Stunning confusion": "Passiva" },
+      { Charm: 20 },
+      { "Stunning Confusion": 20 },
+      { Encore: 20 }
     ],
     loots: [],
     evoStone: "Ancient stone (x2)",
-    boost: 7,
+    boost: 10,
     booStone: "Mirror stone",
-    habilidades: "Headbutt,Blink",
+    habilidades: "Headbutt, Blink",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Snorunt",
@@ -12288,12 +13609,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 30 },
-      { "Ice shards": 30 },
-      { "Ice fang": 30 },
-      { "Icy wind": 30 },
-      { "Ice beam": 32 },
-      { "Frost power": 36 },
+      { Bite: 30 },
+      { "Ice Shards": 30 },
+      { "Ice Fang": 30 },
+      { "Ice Wind": 30 },
+      { "Ice Beam": 30 },
+      { "Frost Power": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "ice blocks", rar: "Raro" },
@@ -12301,9 +13622,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "ice orb", rar: "10.0%" },
     ],
     evoStone: "Ice stone (x2)=Glalie,Dawn stone=Froslass",
-    boost: 10,
+    boost: 8,
     booStone: "Ice stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Glalie",
@@ -12321,15 +13646,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 80 },
-      { "Ice shards": 80 },
-      { "Ice fang": 80 },
-      { "Icy wind": 80 },
-      { "Powder snow": 80 },
-      { "Frost power": 80 },
-      { "Sheer cold": 90 },
-      { "Blizzard": 86 },
-      { "Absolute zero": "Passiva" },
+      { Bite: 80 },
+      { Crunch: 80 },
+      { "Ice Shard": 80 },
+      { "Ice Fang": 80 },
+      { "Powder Snow": 80 },
+      { "Frost Power": 80 },
+      { Blizzard: 80 },
+      { "Glacial Spikes": 80 },
+      { "Absolute Zero": "P" },
+      { "Frozen Armor": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "ice blocks", rar: "4.3%" },
@@ -12340,6 +13666,10 @@ const pokesarray = [
     boost: 3,
     booStone: "Ice stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Spheal",
@@ -12356,13 +13686,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Ice shards": 30 },
-      { "Ice fang": 30 },
-      { "Ice beam": 30 },
-      { "Ice ball": 30 },
-      { "Frost breath": 32 },
-      { "Powder snow": 38 },
-      { "Defense curl": 30 },
+      { "Ice Shards": 30 },
+      { "Ice Fang": 30 },
+      { "Ice Beam": 30 },
+      { "Ice Ball": 30 },
+      { "Frost Breath": 30 },
+      { "Powder Snow": 30 },
+      { "Defense Curl": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "seal mustache", rar: "Raro" },
@@ -12373,9 +13703,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "nail", rar: "20.0%" },
     ],
     evoStone: "Ice stone",
-    boost: 10,
-    booStone: "Ice stone",
+    boost: 8,
+    booStone: "Ice Stone ou Water Stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sealeo",
@@ -12393,15 +13727,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Ice shards": 60 },
-      { "Ice fang": 60 },
-      { "Ice beam": 60 },
-      { "Ice ball": 60 },
-      { "Frost breath": 62 },
-      { "Powder snow": 60 },
-      { "Aurora beam": 64 },
-      { "Hail": 65 },
-      { "Defense curl": 60 },
+      { "Ice Shards": 60 },
+      { "Ice Fang": 60 },
+      { "Ice Beam": 60 },
+      { "Ice Ball": 60 },
+      { "Frost Breath": 60 },
+      { "Powder Snow": 60 },
+      { "Aurora Beam": 60 },
+      { Hail: 60 },
+      { "Defense Curl": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "seal mustache", rar: "2.0%" },
@@ -12414,9 +13748,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "nail", rar: "35.0%" },
     ],
     evoStone: "Crystal stone,Ice stone",
-    boost: 5,
-    booStone: "Ice stone",
-    habilidades: "Surf,Headbutt",
+    boost: 4,
+    booStone: "Ice Stone ou Water Stone",
+    habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Walrein",
@@ -12434,15 +13772,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Ice shards": 100 },
-      { "Ice fang": 100 },
-      { "Ice beam": 100 },
-      { "Ice ball": 100 },
-      { "Frost breath": 102 },
-      { "Powder snow": 100 },
-      { "Aurora beam": 104 },
-      { "Hail": 108 },
-      { "Rest": 106 },
+      { "Ice Shard": 100 },
+      { "Ice Fang": 100 },
+      { "Ice Beam": 100 },
+      { "Ice Ball": 100 },
+      { "Frost Breath": 100 },
+      { "Powder Snow": 100 },
+      { "Aurora Beam": 100 },
+      { Hail: 100 },
+      { Growl: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "seal mustache", rar: "4.3%" },
@@ -12456,7 +13794,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Crystal stone",
-    habilidades: "Surf,Headbutt",
+    habilidades: "Rock Smash, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Bagon",
@@ -12473,13 +13815,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 40 },
-      { "Crunch": 40 },
-      { "Dragon tail": 40 },
-      { "Dragon claw": 40 },
-      { "Dragon breath": 42 },
-      { "Dragon pulse": 45 },
-      { "Scary face": 42 },
+      { Tackle: 40 },
+      { Headbutt: 40 },
+      { "Dragon Tail": 40 },
+      { "Dragon Claw": 40 },
+      { "Dragon Breath": 40 },
+      { "Dragon Pulse": 40 },
+      { "Scary Face": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "mini wings", rar: "Raro" },
@@ -12489,11 +13831,15 @@ const pokesarray = [
     boost: 50,
     booStone: "Crystal stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shelgon",
     numero: 372,
-    level: 70,
+    level: 60,
     clan: "Wingeon",
     tipo: "Dragão",
     regiao: "Hoenn",
@@ -12507,13 +13853,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 70 },
-      { "Crunch": 70 },
-      { "Dragon tail": 70 },
-      { "Dragon claw": 70 },
-      { "Dragon breath": 72 },
-      { "Dragon pulse": 74 },
-      { "Draco meteor": 76 },
+      { Tackle: 60 },
+      { Headbutt: 60 },
+      { "Scale Shot": 60 },
+      { "Dragon Claw": 60 },
+      { "Dragon Breath": 60 },
+      { "Draco Meteor": 60 },
+      { "Focus Energy": 60 },
+      { Protect: 60 },
+      { "Scary Face": 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "mini wings", rar: "Raro" },
@@ -12523,12 +13871,16 @@ const pokesarray = [
     evoStone: "Bloody wing (x10)",
     boost: 50,
     booStone: "Crystal stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Salamence",
     numero: 373,
-    level: 150,
+    level: 100,
     clan: "Wingeon",
     tipo: "Dragão,Voador",
     regiao: "Hoenn",
@@ -12542,15 +13894,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 150 },
-      { "Crunch": 150 },
-      { "Dragon tail": 150 },
-      { "Dragon claw": 150 },
-      { "Dragon breath": 152 },
-      { "Dragon pulse": 155 },
-      { "Hyper beam": 158 },
-      { "Draco meteor": 165 },
-      { "Outrage": 165 },
+      { Roar: 100 },
+      { "Fire Fang": 100 },
+      { "Dragon Tail": 100 },
+      { "Dragon Claw": 100 },
+      { "Dragon Breath": 100 },
+      { "Dragon Pulse": 100 },
+      { "Scary Face": 100 },
+      { Intimidate: 100 },
+      { "Draco Meteor": 100 },
+      { "Dragon Dance": 100 },
+      { Moxie: "P" }
     ],
     loots: [
       { min: 1, max: 80, item: "dragon scale", rar: "80.0%" },
@@ -12561,7 +13915,11 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Mystic star",
-    habilidades: "Rock smash,Cut,Headbutt,Fly",
+    habilidades: "Rock Smash, Cut, Headbutt, Fly",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//373
   
   
@@ -12581,7 +13939,7 @@ const pokesarray = [
     {
     nome: "Beldum",
     numero: 374,
-    level: 50,
+    level: 20,
     clan: "Ironhard,Psycraft",
     tipo: "Metal,Psiquico",
     regiao: "Hoenn",
@@ -12593,20 +13951,24 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 50 },
-      { "Psy pulse": 50 },
-      { "Hammer arm": 50 },
-      { "Psychic": 50 },
-      { "Metal claw": 57 },
+      { "Iron Head": 20 },
+      { "Psy Pulse": 20 },
+      { "Hammer Arm": 20 },
+      { "Metal Claw": 20 },
+      { Psychic: 20 }
     ],
     loots: [
       { min: 1, max: 1, item: "tech ball", rar: "Raro" },
       { min: 1, max: 10, item: "piece of steel", rar: "80.0%" },
     ],
     evoStone: "Metal stone,Enigma stone",
-    boost: 5,
+    boost: 10,
     booStone: "Enigma stone",
-    habilidades: "Rock smash,Headbutt,Teleport",
+    habilidades: "Rock Smash, Headbutt, Teleport",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//374
   {
     nome: "Metang",
@@ -12624,16 +13986,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 80 },
-      { "Psy pulse": 80 },
-      { "Hammer arm": 80 },
-      { "Confusion": 80 },
-      { "Psychic": 80 },
-      { "Metal claw": 87 },
-      { "Meteor mash": 80 },
-      { "Flash cannon": 88 },
-      { "Iron defense": 84 },
-      { "Miracle eye": 1000 },
+      { "Iron Head": 80 },
+      { "Psy Pulse": 80 },
+      { "Scrap Shot": 80 },
+      { "Metal Claw": 80 },
+      { "Heavy Slam": 80 },
+      { "Gyro Ball": 80 },
+      { "Meteor Mash": 80 },
+      { "Heavy Metal": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "tech ball", rar: "Raro" },
@@ -12644,12 +14004,16 @@ const pokesarray = [
     evoStone: "Metal coat (x10)",
     boost: 3,
     booStone: "Enigma stone",
-    habilidades: "Rock smash,Teleport,Headbutt,Cut",
+    habilidades: "Light, Rock Smash, Teleport, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Metagross",
     numero: 376,
-    level: 150,
+    level: 100,
     clan: "Ironhard,Psycraft",
     tipo: "Metal,Psiquico",
     regiao: "Hoenn",
@@ -12662,16 +14026,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 150 },
-      { "Psy pulse": 150 },
-      { "Hammer arm": 150 },
-      { "Confusion": 150 },
-      { "Psychic": 150 },
-      { "Metal claw": 157 },
-      { "Meteor mash": 150 },
-      { "Flash cannon": 158 },
-      { "Iron defense": 154 },
-      { "Miracle eye": 1000 },
+      { "Iron Head": 100 },
+      { "Psychic Fangs": 100 },
+      { Confusion: 100 },
+      { "Metal Claw": 100 },
+      { Psychic: 100 },
+      { "Meteor Mash": 100 },
+      { "Flash Cannon": 100 },
+      { "Iron Defense": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "tech ball", rar: "90.0%" },
@@ -12682,12 +14044,16 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Mystic star",
-    habilidades: "Rock smash,Dig,Cut,Teleport,Headbutt,Ride",
+    habilidades: "Light, Rock Smash, Cut, Teleport, Dig, Headbutt, Ride",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Regirock",
     numero: 377,
-    level: 500,
+    level: 400,
     clan: "Orebound",
     tipo: "Pedra",
     regiao: "Hoenn",
@@ -12698,24 +14064,28 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Rock throw": 500 },
-      { "Rock slide": 500 },
-      { "Rock tomb": 500 },
-      { "Stone edge": 500 },
-      { "Hammer arm": 500 },
-      { "Ancient power": 515 },
-      { "Rock wrecker": 505 },
-      { "Hyper beam": 510 },
-      { "Harden": 500 },
-      { "Groundshock": "Passiva" },
+      { "Rock Throw": 400 },
+      { "Rock Slide": 400 },
+      { "Rock Tomb": 400 },
+      { "Stone Edge": 400 },
+      { "Hammer Arm": 400 },
+      { "Ancient Power": 400 },
+      { "Rock Wrecker": 400 },
+      { "Hyper Beam": 400 },
+      { Harden: 400 },
+      { Groundshock: "P" }
     ],
     loots: [],
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Regice",
     numero: 378,
-    level: 500,
+    level: 400,
     clan: "Seavell",
     tipo: "Gelo",
     regiao: "Hoenn",
@@ -12725,14 +14095,28 @@ const pokesarray = [
     pricenpc: "unseleable",
     mapas: [],
     vip: "yes",
-    moves: [],
+    moves: [
+      { "Ice Shard": 400 },
+      { "Icy Wind": 400 },
+      { "Ice Beam": 400 },
+      { "Hammer Arm": 400 },
+      { "Ancient Power": 400 },
+      { Blizzard: 400 },
+      { "Hyper Beam": 400 },
+      { Strafe: 400 },
+      { "Absolute Zero": "P" }
+    ],
     loots: [],
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Registeel",
     numero: 379,
-    level: 500,
+    level: 400,
     clan: "Ironhard",
     tipo: "Metal",
     regiao: "Hoenn",
@@ -12743,20 +14127,24 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron spiner": 500 },
-      { "Iron head": 500 },
-      { "Iron tail": 500 },
-      { "Hammer arm": 500 },
-      { "Ancient power": 515 },
-      { "Metal burst": 500 },
-      { "Metal claw": 507 },
-      { "Meteor mash": 500 },
-      { "Flash cannon": 508 },
-      { "Hyper beam": 510 },
-      { "Harden": 500 },
+      { "Iron Spinner": 400 },
+      { "Iron Head": 400 },
+      { "Iron Tail": 400 },
+      { "Hammer Arm": 400 },
+      { "Ancient Power": 400 },
+      { "Metal Burst": 400 },
+      { "Metal Claw": 400 },
+      { "Meteor Mash": 400 },
+      { "Flash Cannon": 400 },
+      { "Hyper Beam": 400 },
+      { Harden: 400 }
     ],
     loots: [],
     habilidades: "",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Torterra",
@@ -12772,22 +14160,28 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Bite": 100 },
-      { "Grass knot": 100 },
-      { "Razor leaf": 100 },
-      { "Rock tomb": 100 },
-      { "Synthesis": 100 },
-      { "Wood hammer": 100 },
-      { "Ground colapse": 103 },
-      { "Giga drain": 105 },
-      { "Earthquake": 107 },
-      { "Frenzy plant": 110 },
-      { "Fossilized shell": "Passiva" },
+      { Bite: 100 },
+      { "Razor Leaf": 100 },
+      { "Rock Tomb": 100 },
+      { "Grass Knot": 100 },
+      { "Wood Hammer": 100 },
+      { Bulldoze: 100 },
+      { Synthesis: 100 },
+      { Earthquake: 100 },
+      { "Giga Drain": 100 },
+      { "Frenzy Plant": 100 },
+      { "Shell Armor": "P" },
+      { "Impervious Shell": "P" },
+      { Overgrow: "P" }
     ],
     loots: [],
     boost: 2,
-    booStone: "Earth stone",
-    habilidades: "Dig,Rock smash,Cut,Headbutt",
+    booStone: "Earth Stone ou Leaf Stone",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Infernape",
@@ -12803,21 +14197,26 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Low kick": 100 },
-      { "Ember": 100 },
-      { "Fire punch": 100 },
-      { "Close combat": 100 },
-      { "Acrobatics": 105 },
-      { "Mach punch": 100 },
-      { "Magma fist": 100 },
-      { "Focus blast": 100 },
-      { "Flare blitz": 110 },
-      { "Evasion": "Passiva" },
+      { "Low Kick": 100 },
+      { Ember: 100 },
+      { "Fire Punch": 100 },
+      { "Close Combat": 100 },
+      { Backflip: 100 },
+      { "Mach Punch": 100 },
+      { "Magma Fist": 100 },
+      { "Focus Blast": 100 },
+      { "Flare Blitz": 100 },
+      { Evasion: "P" },
+      { "Jungle Fury": "P" }
     ],
     loots: [],
     boost: 2,
-    booStone: "Punch stone",
-    habilidades: "Rock smash,Dig,Cut,Headbutt",
+    booStone: "Punch Stone ou Fire Stone",
+    habilidades: "Rock Smash, Cut, Light, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Empoleon",
@@ -12833,22 +14232,26 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 100 },
-      { "Bubbles": 100 },
-      { "Bubblebeam": 100 },
-      { "Metal claw": 100 },
-      { "Impale": 103 },
-      { "Scald": 102 },
-      { "Aqua jet": 100 },
-      { "Flash cannon": 108 },
-      { "Hydropump": 100 },
-      { "Swords dance": 100 },
-      { "Water sport": "Passiva" },
+      { "Mud Spot": 100 },
+      { Bubbles: 100 },
+      { "Bubble Beam": 100 },
+      { "Water Pulse": 100 },
+      { "Aqua Jet": 100 },
+      { "Wave Crash": 100 },
+      { "Flash Cannon": 100 },
+      { "Hydro Pump": 100 },
+      { "Swords Dance": 100 },
+      { "Water Sport": "P" },
+      { Torrent: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Water stone",
-    habilidades: "Surf,Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Luxray",
@@ -12865,21 +14268,26 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Roar": 110 },
-      { "Spark": 100 },
-      { "Bite": 100 },
-      { "Ice fang": 100 },
-      { "Shredder team": 110 },
-      { "Volt kiten": 100 },
-      { "Raigoh": 105 },
-      { "Volt fang": 115 },
-      { "Charge": 100 },
-      { "Guts": "Passiva" },
+      { Roar: 100 },
+      { "Play Rough": 100 },
+      { Spark: 100 },
+      { "Ice Fang": 100 },
+      { "Shredder Team": 100 },
+      { "Volt Kiten": 100 },
+      { Raigoh: 100 },
+      { "Volt Fang": 100 },
+      { Leer: 100 },
+      { Intimidate: 100 },
+      { Guts: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Light,Ride,Dig,Headbutt",
+    habilidades: "Light, Ride, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Cranidos",
@@ -12895,8 +14303,8 @@ const pokesarray = [
     vip: "yes",
     evo: "Rampardos",
     BooStone: "Rock stone",
-    boost: "8",
-    habilidades: "",
+    boost: 7,
+    habilidades: "Dig, Headbutt",
     moves: [
       { Headbutt: 40 },
       { "Rock slide": 40 },
@@ -12907,8 +14315,10 @@ const pokesarray = [
     ],
     loots: [],
     mapas: [],
-    updatedAt: "19/03/2026, 23:16:05",
-    updateHistory: [ { date: "19/03/2026, 23:16:05", changes: [ "✏️ <strong>level</strong>: de \"30\" ➔ \"40\"", "✏️ <strong>xpcaught</strong>: de \"0\" ➔ \"200000\"", "✏️ <strong>pricenpc</strong>: de \"0\" ➔ \"30000\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Headbutt (Lv 40), Rock slide (Lv 40), Rock tomb (Lv 40), Stone edge (Lv 40), Ancient power (Lv 40), Head smash (Lv 40)</strong>", "✨ <strong>BooStone</strong> definido como: \"Rock stone\"", "✨ <strong>boost</strong> definido como: \"8\"" ] } ]
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }, { date: "19/03/2026, 23:16:05", changes: [ "✏️ <strong>level</strong>: de \"30\" ➔ \"40\"", "✏️ <strong>xpcaught</strong>: de \"0\" ➔ \"200000\"", "✏️ <strong>pricenpc</strong>: de \"0\" ➔ \"30000\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Headbutt (Lv 40), Rock slide (Lv 40), Rock tomb (Lv 40), Stone edge (Lv 40), Ancient power (Lv 40), Head smash (Lv 40)</strong>", "✨ <strong>BooStone</strong> definido como: \"Rock stone\"", "✨ <strong>boost</strong> definido como: \"8\"" ] } ],
+    booStone: "Rock Stone"
+  
   },
         {
     nome: "Rampardos",
@@ -12926,17 +14336,17 @@ const pokesarray = [
     heavy: "yes",
     boost: 2,
     booStone: "Rock stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
     preevo: "Cranidos",
     moves: [
       { Headbutt: 100 },
-      { "Rock slide": 100 },
-      { "Stone edge": 100 },
-      { "Hammer arm": 100 },
-      { "Falling rocks": 100 },
-      { "Head smash": 105 },
-      { "Rock wrecker": 105 },
-      { "Ancient power": 115 }
+      { "Rock Slide": 100 },
+      { "Stone Edge": 100 },
+      { "Head Smash": 100 },
+      { "Falling Rocks": 100 },
+      { "Rock Wrecker": 100 },
+      { "Ancient Power": 100 },
+      { "Focus Energy": 100 }
     ],
     loots: [
       { item: "big stone", min: 1, max: 10, rar: "80.0%" },
@@ -12946,13 +14356,14 @@ const pokesarray = [
       { item: "cyan nightmare gem", min: 1, max: 1, rar: "Raro" }
     ],
     mapas: [],
-    updateHistory: [ { date: "19/03/2026, 23:31:07", changes: [ "✏️ <strong>xpcaught</strong>: de \"0\" ➔ \"2000000\"", "✏️ <strong>pricenpc</strong>: de \"0\" ➔ \"300000\"" ] }, { date: "19/03/2026, 23:17:05", changes: [ "✨ <strong>shiny</strong> definido como: \"yes\"" ] } ],
-    updatedAt: "19/03/2026, 23:31:07"
+    updateHistory: [ { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }, { date: "19/03/2026, 23:31:07", changes: [ "✏️ <strong>xpcaught</strong>: de \"0\" ➔ \"2000000\"", "✏️ <strong>pricenpc</strong>: de \"0\" ➔ \"300000\"" ] }, { date: "19/03/2026, 23:17:05", changes: [ "✨ <strong>shiny</strong> definido como: \"yes\"" ] } ],
+    updatedAt: "22/03/2026, 19:17:24"
+  
   },
   {
     nome: "Shieldon",
     numero: 410,
-    level: 30,
+    level: 40,
     clan: "Orebound,Ironhard",
     tipo: "Pedra,Metal",
     regiao: "Sinnoh",
@@ -12964,12 +14375,12 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 30 },
-      { "Stone edge": 30 },
-      { "Meteor mash": 30 },
-      { "Heavy slam": 30 },
-      { "Rock blast": 35 },
-      { "Rock wrecker": 40 },
+      { "Iron Head": 40 },
+      { "Rock Slide": 40 },
+      { "Meteor Mash": 40 },
+      { "Heavy Slam": 40 },
+      { "Rock Blast": 40 },
+      { "Rock Wrecker": 40 }
     ],
     loots: [
       { min: 1, max: 21, item: "piece of steel", rar: "100.0%" },
@@ -12978,9 +14389,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "armor fossil", rar: "Raro" },
     ],
     evoStone: "Metal stone,Crystal stone",
-    boost: 9,
+    boost: 7,
     booStone: "Rock stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:17:24",
+    updateHistory: [
+      { date: "22/03/2026, 19:17:24", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Bastiodon",
@@ -12997,15 +14412,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron head": 100 },
-      { "Stone edge": 100 },
-      { "Meteor mash": 100 },
-      { "Heavy slam": 100 },
-      { "Rock slide": 100 },
-      { "Rock blast": 100 },
-      { "Rock wrecker": 105 },
-      { "Stealth rock": 110 },
-      { "Shield": "Passiva" },
+      { "Iron Head": 100 },
+      { "Rock Slide": 100 },
+      { "Stone Edge": 100 },
+      { "Earth Power": 100 },
+      { "Ancient Power": 100 },
+      { "Rock Blast": 100 },
+      { "Rock Wrecker": 100 },
+      { "Stealth Rock": 100 },
+      { Shield: 100 },
+      { Heatproof: "P" },
+      { Sturdy: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bone shield", rar: "Raro" },
@@ -13016,9 +14433,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Metal stone", rar: "Raro" },
       { min: 1, max: 1, item: "armor fossil", rar: "Raro" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Rock stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Wormadam",
@@ -13035,14 +14456,14 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Shadow ball": 80 },
-      { "Razor leaf": 80 },
-      { "Grass knot": 80 },
-      { "Signal beam": 80 },
-      { "Solar beam": 80 },
-      { "Leaf storm": 90 },
-      { "Infestation": 87 },
-      { "Quiver dance": 87 },
+      { Growth: 80 },
+      { "Razor Leaf": 80 },
+      { "Grass Knot": 80 },
+      { "Solar Beam": 80 },
+      { "Leaf Storm": 80 },
+      { "Secret Power": 80 },
+      { Infestation: 80 },
+      { "Quiver Dance": 80 }
     ],
     loots: [
       { min: 1, max: 10, item: "pile of seeds", rar: "80.0%" },
@@ -13054,7 +14475,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Leaf stone",
-    habilidades: "",
+    habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Pachirisu",
@@ -13070,32 +14495,36 @@ const pokesarray = [
     fast: "yes",
     mapas: [],
     moves: [
-      { "Ion deluge": 100 },
-      { "Charm": 100 },
-      { "Spark": 100 },
-      { "Swift": 100 },
-      { "Nuzzle": 105 },
-      { "Grass knot": 100 },
-      { "Shockwave": 100 },
-      { "Super fang": 100 },
-      { "Charge": 100 },
-      { "Volt switch": 100 },
-      { "Volt absorb": "Passiva" },
-      { "Magnet rise": "Passiva" },
+      { "Ion Deluge": 100 },
+      { Charm: 100 },
+      { Spark: 100 },
+      { Swift: 100 },
+      { Nuzzle: 100 },
+      { "Grass Knot": 100 },
+      { Discharge: 100 },
+      { "Super Fang": 100 },
+      { Charge: 100 },
+      { "Follow Me": 100 },
+      { "Volt Absorb": "P" },
+      { "Magnet Rise": "P" }
     ],
     loots: [
       { min: 1, max: 43, item: "piece of steel", rar: "80.0%" },
       { min: 1, max: 1, item: "Thunder stone", rar: "1.0%" },
       { min: 1, max: 1, item: "electric box", rar: "90.5%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Dig,Light",
+    habilidades: "Dig, Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ambipom",
     numero: 424,
-    level: 80,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Sinnoh",
@@ -13107,20 +14536,24 @@ const pokesarray = [
     preevo: "Aipom",
     mapas: [],
     moves: [
-      { "Sand attack": 80 },
-      { "Doubleslap": 80 },
-      { "Swift": 80 },
-      { "Pursuit": 80 },
-      { "Last resort": 80 },
-      { "Double hit": 82 },
-      { "Fury swipes": 80 },
-      { "Agility": 80 },
-      { "Double team": 82 },
+      { "Shadow Ball": 100 },
+      { "Foul Play": 100 },
+      { "Knock Off": 100 },
+      { Fling: 100 },
+      { Astonish: 100 },
+      { "Shadow Claw": 100 },
+      { Payback: 100 },
+      { "Nasty Plot": 100 },
+      { "Double Team": 100 }
     ],
     loots: [],
-    boost: 5,
+    boost: 3,
     booStone: "Mirror stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Cut, Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Buneary",
@@ -13136,19 +14569,24 @@ const pokesarray = [
     evo: "Lopunny",
     mapas: [],
     moves: [
-      { "Quick attack": 30 },
-      { "Charm": 30 },
-      { "Dizzy punch": 30 },
-      { "Healing wish": 32 },
-      { "Double hit": 32 },
-      { "Agility": 30 },
-      { "Double team": 32 },
+      { Charm: 30 },
+      { "Quick Attack": 30 },
+      { "Dizzy Punch": 30 },
+      { "Healing Wish": 30 },
+      { "Double Hit": 30 },
+      { Agility: 30 },
+      { "Double Team": 30 },
+      { Foresight: "P" }
     ],
     loots: [],
     evoStone: "Heart stone (x2)",
-    boost: 10,
+    boost: 8,
     booStone: "Heart stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lopunny",
@@ -13165,27 +14603,34 @@ const pokesarray = [
     preevo: "Buneary",
     mapas: [],
     moves: [
-      { "Charm": 80 },
-      { "Dizzy punch": 80 },
-      { "Hi jump kick": 80 },
-      { "Ice punch": 80 },
-      { "Teeter dance": 85 },
-      { "Double hit": 82 },
-      { "Healing wish": 82 },
-      { "Agility": 80 },
-      { "Double team": 82 },
+      { Charm: 80 },
+      { Entrainment: 80 },
+      { "Sweet Kiss": 80 },
+      { "Hyper Voice": 80 },
+      { "Ice Punch": 80 },
+      { "Helping Hand": 80 },
+      { "Baby-Doll Eyes": 80 },
+      { Agility: 80 },
+      { "Magic Coat": 80 },
+      { "Baton Pass": 80 },
+      { Limber: "P" },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "Easter coin", rar: "3.0%" },
     ],
     boost: 3,
     booStone: "Heart stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Mismagius",
     numero: 429,
-    level: 400,
+    level: 100,
     clan: "Malefic",
     tipo: "Fantasma",
     regiao: "Sinnoh",
@@ -13196,20 +14641,25 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Shadow ball": 400 },
-      { "Dark pulse": 400 },
-      { "Cursed hollow": 400 },
-      { "Black blow": 400 },
-      { "Black box": 400 },
-      { "Night daze": 406 },
-      { "Fear": 400 },
-      { "Mystical fire": 410 },
-      { "Double team": 402 },
-      { "Dark accurate": 1320 },
-      { "Seismic toss": "Passiva" },
+      { "Shadow Ball": 100 },
+      { "Magical Leaf": 100 },
+      { "Will-O-Wisp": 100 },
+      { "Illusion Burst": 100 },
+      { "Ominous Wind": 100 },
+      { "Shadow Storm": 100 },
+      { "Illusion Yield": 100 },
+      { "Black Box": 100 },
+      { "Lucky Chant": 100 },
+      { Levitate: "P" }
     ],
     loots: [],
-    habilidades: "Teleport,Blink",
+    habilidades: "Light, Teleport",
+    boost: 30,
+    booStone: "Ancient Stone",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Honchkrow",
@@ -13227,22 +14677,26 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Peck": 100 },
-      { "Pursuit": 100 },
-      { "Night shade": 100 },
-      { "Wing attack": 103 },
-      { "Sucker punch": 107 },
-      { "Dark pulse": 100 },
-      { "Assurance": 105 },
-      { "Torment": 105 },
-      { "Crow swarm": 105 },
-      { "Tailwind": 100 },
-      { "Insomnia": "Passiva" },
+      { Peck: 100 },
+      { Haze: 100 },
+      { "Night Shade": 100 },
+      { "Wing Attack": 100 },
+      { "Dark Pulse": 100 },
+      { "Sucker Punch": 100 },
+      { Assurance: 100 },
+      { Torment: 100 },
+      { "Crow Swarm": 100 },
+      { Tailwind: 100 },
+      { Insomnia: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Darkness stone",
     habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Glameow",
@@ -13258,18 +14712,22 @@ const pokesarray = [
     evo: "Purugly",
     mapas: [],
     moves: [
-      { "Hone claws": 30 },
-      { "Faint attack": 30 },
-      { "Fury swipes": 34 },
-      { "Bite": 30 },
-      { "Last resort": 30 },
-      { "Sucker punch": 33 },
+      { "Hone Claws": 30 },
+      { "Feint Attack": 30 },
+      { "Fury Swipes": 30 },
+      { Bite: 30 },
+      { "Last Resort": 30 },
+      { "Sucker Punch": 30 }
     ],
     loots: [],
     evoStone: "Heart stone (x2)",
-    boost: 10,
+    boost: 8,
     booStone: "Heart stone",
     habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Purugly",
@@ -13286,20 +14744,24 @@ const pokesarray = [
     preevo: "Glameow",
     mapas: [],
     moves: [
-      { "Scratch": 80 },
-      { "Faint attack": 80 },
-      { "Bite": 80 },
-      { "Body slam": 84 },
-      { "Payback": 80 },
-      { "Fury swipes": 80 },
-      { "Last resort": 85 },
-      { "Assurance": 88 },
-      { "Own tempo": "Passiva" },
+      { Scratch: 80 },
+      { "Feint Attack": 80 },
+      { Bite: 80 },
+      { "Body Slam": 80 },
+      { "Fury Swipes": 80 },
+      { "Last Resort": 80 },
+      { Assurance: 80 },
+      { Payback: 80 },
+      { "Own Tempo": "P" }
     ],
     loots: [],
     boost: 3,
     booStone: "Heart stone",
-    habilidades: "Dig,Headbutt",
+    habilidades: "Cut, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Bronzor",
@@ -13316,25 +14778,29 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron spiner": 30 },
-      { "Extrasensory": 30 },
-      { "Heavy slam": 30 },
-      { "Psychic": 30 },
-      { "Levitate": "Passiva" },
+      { "Iron Spiner": 30 },
+      { Extrasensory: 30 },
+      { "Heavy Slam": 30 },
+      { Psychic: 30 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "tech ball", rar: "Raro" },
       { min: 1, max: 10, item: "piece of steel", rar: "80.0%" },
     ],
     evoStone: "Enigma stone (x2)",
-    boost: 5,
+    boost: 8,
     booStone: "Enigma stone",
-    habilidades: "Teleport,Blink",
+    habilidades: "Light, Teleport, Blink",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Bronzong",
     numero: 437,
-    level: 80,
+    level: 100,
     clan: "Ironhard,Psycraft",
     tipo: "Metal,Psiquico",
     regiao: "Sinnoh",
@@ -13348,14 +14814,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Iron spiner": 80 },
-      { "Extrasensory": 80 },
-      { "Heavy slam": 80 },
-      { "Psychic": 80 },
-      { "Metal sound": 110 },
-      { "Psy impact": 90 },
-      { "Levitate": "Passiva" },
-      { "Iron body": "Passiva" },
+      { "Psy Pulse": 100 },
+      { "Iron Spinner": 100 },
+      { "Meteor Mash": 100 },
+      { "Heavy Slam": 100 },
+      { "Metal Sound": 100 },
+      { "Gyro Ball": 100 },
+      { "Heavy Metal": 100 },
+      { Levitate: "P" },
+      { "Iron Body": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "tech ball", rar: "Raro" },
@@ -13363,14 +14830,18 @@ const pokesarray = [
       { min: 1, max: 1, item: "Metal stone", rar: "Raro" },
       { min: 1, max: 1, item: "Enigma stone", rar: "Raro" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Enigma stone",
-    habilidades: "Teleport,Light,Blink",
+    habilidades: "Rock Smash, Teleport, Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Riolu",
     numero: 447,
-    level: 50,
+    level: 30,
     clan: "Gardestrike",
     tipo: "Lutador",
     regiao: "Sinnoh",
@@ -13383,23 +14854,26 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Low kick": 50 },
-      { "Quick attack": 50 },
-      { "Iron head": 50 },
-      { "Close combat": 50 },
-      { "Focus blast": 50 },
-      { "Bullet punch": 50 },
-      { "Evasion": "Passiva" },
-      { "Superpower": "Passiva" },
+      { "Iron Head": 30 },
+      { "Low Kick": 30 },
+      { "Vacuum Wave": 30 },
+      { "Close Combat": 30 },
+      { "Bullet Punch": 30 },
+      { Evasion: "P" },
+      { "Counter Punch": "P" }
     ],
     loots: [
       { min: 1, max: 13, item: "band aid", rar: "80.0%" },
       { min: 1, max: 13, item: "piece of steel", rar: "80.0%" },
     ],
     evoStone: "Metal stone,Punch stone",
-    boost: 5,
+    boost: 8,
     booStone: "Punch stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lucario",
@@ -13418,17 +14892,19 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Quick attack": 80 },
-      { "Iron head": 80 },
-      { "Close combat": 80 },
-      { "Metal claw": 80 },
-      { "Bullet punch": 80 },
-      { "Bone rush": 80 },
-      { "Aura sphere": 80 },
-      { "Swords dance": 80 },
-      { "Evasion": "Passiva" },
-      { "Superpower": "Passiva" },
-      { "Foresight": "Passiva" },
+      { "Iron Head": 80 },
+      { "Extreme Speed": 80 },
+      { "Aura Sphere": 80 },
+      { "Metal Claw": 80 },
+      { "Bullet Punch": 80 },
+      { "Meteor Mash": 80 },
+      { "Metal Sound": 80 },
+      { "Bulk Up": 80 },
+      { Detect: 80 },
+      { Agility: 80 },
+      { Evasion: "P" },
+      { "Counter Punch": "P" },
+      { "Aura Shield": "P" }
     ],
     loots: [
       { min: 1, max: 21, item: "band aid", rar: "80.0%" },
@@ -13439,7 +14915,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Punch stone",
-    habilidades: "Rock smash,Light,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hippopotas",
@@ -13455,18 +14935,22 @@ const pokesarray = [
     evo: "Hippowdon",
     mapas: [],
     moves: [
-      { "Sand attack": 30 },
-      { "Iron tail": 30 },
-      { "Sand tomb": 32 },
-      { "Dig": 32 },
-      { "Earth power": 30 },
-      { "Earthquake": 38 },
+      { "Sand Attack": 30 },
+      { "Stomping Tantrum": 30 },
+      { "Sand Tomb": 30 },
+      { Dig: 30 },
+      { "Earth Power": 30 },
+      { Earthquake: 30 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x10)",
-    boost: 7,
+    boost: 8,
     booStone: "Dimensional stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Hippowdon",
@@ -13482,22 +14966,25 @@ const pokesarray = [
     preevo: "Hippopotas",
     mapas: [],
     moves: [
-      { "Body slam": 104 },
-      { "Stone edge": 100 },
-      { "Sand tomb": 102 },
-      { "Dig": 102 },
-      { "Sand field": 110 },
-      { "Fissure": 110 },
-      { "Earthquake": 107 },
-      { "Slack off": 105 },
-      { "Sandstorm": 100 },
-      { "Sand force": "Passiva" },
-      { "Sand stream": "Passiva" },
+      { "Ice Fang": 100 },
+      { "Stomping Tantrum": 100 },
+      { "Sand Tomb": 100 },
+      { Dig: 100 },
+      { "Sand Field": 100 },
+      { Fissure: 100 },
+      { Earthquake: 100 },
+      { "Slack Off": 100 },
+      { Sandstorm: 100 },
+      { Sandstream: "P" }
     ],
     loots: [],
     boost: 3,
     booStone: "Dimensional stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Skorupi",
@@ -13513,19 +15000,23 @@ const pokesarray = [
     evo: "Drapion",
     mapas: [],
     moves: [
-      { "Bite": 50 },
-      { "Poison tail": 50 },
-      { "Acid": 50 },
-      { "Poison fang": 50 },
-      { "Poison bomb": 55 },
-      { "Pin missile": 52 },
-      { "Cross poison": 54 },
+      { Bite: 50 },
+      { "Poison Sting": 50 },
+      { "Poison Fang": 50 },
+      { "Poison Tail": 50 },
+      { Toxic: 50 },
+      { "Pin Missile": 50 },
+      { "Cross Poison": 50 }
     ],
     loots: [],
     evoStone: "Mirror stone (x10)",
-    boost: 10,
+    boost: 7,
     booStone: "Mirror stone",
     habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Drapion",
@@ -13542,19 +15033,24 @@ const pokesarray = [
     preevo: "Skorupi",
     mapas: [],
     moves: [
-      { "Hone claws": 100 },
-      { "Bite": 100 },
-      { "Crunch": 100 },
-      { "Poison fang": 100 },
-      { "Night slash": 100 },
-      { "Cross poison": 104 },
-      { "Belch": 107 },
-      { "Deadly spikes": 100 },
+      { "Hone Claws": 100 },
+      { Crunch: 100 },
+      { Bite: 100 },
+      { "Knock Off": 100 },
+      { "Night Slash": 100 },
+      { "Cross Poison": 100 },
+      { Leer: 100 },
+      { "Deadly Spikes": 100 },
+      { Snarl: 100 }
     ],
     loots: [],
     boost: 3,
     booStone: "Mirror stone",
-    habilidades: "Dig,Headbutt",
+    habilidades: "Cut, Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//452
 
   {
@@ -13572,21 +15068,27 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Mud bomb": 40 },
-      { "Poison jab": 40 },
-      { "Drain punch": 40 },
-      { "Focus blast": 40 },
-      { "Croak hook": 45 },
-      { "Revenge": 48 },
+      { "Low Kick": 40 },
+      { "Mud Bomb": 40 },
+      { "Poison Jab": 40 },
+      { "Drain Punch": 40 },
+      { "Focus Blast": 40 },
+      { "Brick Break": 40 },
+      { Revenge: 40 },
+      { "Croak Hook": 40 }
     ],
     loots: [
       { min: 1, max: 25, item: "bottle of poison", rar: "100.0%" },
       { min: 1, max: 25, item: "band aid", rar: "100.0%" },
     ],
     evoStone: "Crystal stone,Venom stone",
-    boost: 5,
+    boost: 7,
     booStone: "Venom stone",
-    habilidades: "Rock smash,Dig",
+    habilidades: "Rock Smash, Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Toxicroak",
@@ -13603,16 +15105,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Low kick": 100 },
-      { "Gunk shot": 100 },
-      { "Poison jab": 100 },
-      { "Drain punch": 100 },
-      { "Focus blast": 100 },
-      { "Vacuum wave": 115 },
-      { "Swamp mist": 100 },
-      { "Croak hook": 105 },
-      { "Revenge": 112 },
-      { "Anticipation": "Passiva" },
+      { "Low Kick": 100 },
+      { "Gunk Shot": 100 },
+      { "Poison Jab": 100 },
+      { "Drain Punch": 100 },
+      { "Cross Chop": 100 },
+      { "Vacuum Wave": 100 },
+      { "Sludge Bomb": 100 },
+      { "Croak Hook": 100 },
+      { "Focus Blast": 100 },
+      { "Dry Skin": "P" }
     ],
     loots: [
       { min: 1, max: 35, item: "bottle of poison", rar: "100.0%" },
@@ -13623,7 +15125,11 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Venom stone",
-    habilidades: "Rock smash,Cut,Headbutt",
+    habilidades: "Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Snover",
@@ -13640,13 +15146,13 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Razor leaf": 40 },
-      { "Ice shards": 40 },
-      { "Icy wind": 40 },
-      { "Ice punch": 40 },
-      { "Powder snow": 40 },
-      { "Wood hammer": 40 },
-      { "Grass whistle": 40 },
+      { "Razor Leaf": 40 },
+      { "Ice Shard": 40 },
+      { "Icy Wind": 40 },
+      { "Powder Snow": 40 },
+      { "Wood Hammer": 40 },
+      { Blizzard: 40 },
+      { "Grass Whistle": 40 }
     ],
     loots: [
       { min: 1, max: 21, item: "seed", rar: "80.0%" },
@@ -13656,9 +15162,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "nail", rar: "90.0%" },
     ],
     evoStone: "Ice stone (x2)",
-    boost: 5,
+    boost: 7,
     booStone: "Ice stone",
-    habilidades: "Dig,Headbutt,Rock smash",
+    habilidades: "Dig, Headbutt, Rock Smash",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Abomasnow",
@@ -13676,15 +15186,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Icicle crash": 100 },
-      { "Ice shards": 100 },
-      { "Rock slide": 100 },
-      { "Ice punch": 100 },
-      { "Powder snow": 100 },
-      { "Wood hammer": 100 },
-      { "Grass whistle": 100 },
-      { "Blizzard": 108 },
-      { "Snow warning": "Passiva" },
+      { "Icicle Crash": 100 },
+      { "Ice Shard": 100 },
+      { "Ice Punch": 100 },
+      { "Powder Snow": 100 },
+      { "Wood Hammer": 100 },
+      { Blizzard: 100 },
+      { "Grass Whistle": 100 },
+      { Growth: 100 },
+      { Hail: 100 },
+      { "Frozen Armor": "P" },
+      { "Snow Warning": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "seal mustache", rar: "82.5%" },
@@ -13696,9 +15208,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Leaf stone", rar: "3.1%" },
       { min: 1, max: 1, item: "nail", rar: "60.0%" },
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Ice stone",
-    habilidades: "Dig,Headbutt,Rock smash",
+    habilidades: "Dig, Headbutt, Rock Smash",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Magnezone",
@@ -13716,16 +15232,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Super sonic": 100 },
-      { "Thunder shock": 100 },
-      { "Spark": 100 },
-      { "Thunder wave": 100 },
-      { "Magnet bomb": 115 },
-      { "Tri attack": 115 },
-      { "Flash cannon": 108 },
-      { "Magnet field": "Passiva" },
-      { "Magnet rise": "Passiva" },
-      { "Tri vision": "Passiva" },
+      { "Supersonic": 100 },
+      { "Scrap Throw": 100 },
+      { "Scrap Shot": 100 },
+      { "Thunder Wave": 100 },
+      { "Magnet Bomb": 100 },
+      { "Tri-Attack": 100 },
+      { "Flash Cannon": 100 },
+      { "Magnet Field": "P" },
+      { "Magnet Rise": "P" },
+      { "Tri-Vision": "P" }
     ],
     loots: [
       { min: 1, max: 43, item: "piece of steel", rar: "80.0%" },
@@ -13737,7 +15253,11 @@ const pokesarray = [
     ],
     boost: 30,
     booStone: "Metal stone",
-    habilidades: "Fly,Light,Headbutt",
+    habilidades: "Fly, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lickilicky",
@@ -13754,26 +15274,33 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Lick": 100 },
-      { "Shadow ball": 100 },
-      { "Power whip": 108 },
-      { "Toxic": 100 },
-      { "Body slam": 104 },
-      { "Iron tail": 100 },
-      { "Squishy licking": 105 },
-      { "Tongue hook": 105 },
-      { "Gyro ball": 108 },
-      { "Defense curl": 100 },
+      { "Soaked Kiss": 100 },
+      { "Shadow Ball": 100 },
+      { "Power Whip": 100 },
+      { Toxic: 100 },
+      { "Iron Tail": 100 },
+      { "Squishy Licking": 100 },
+      { Belch: 100 },
+      { "Tongue Hook": 100 },
+      { "Gyro Ball": 100 },
+      { "Defense Curl": 100 },
+      { "Cloud Nine": "P" },
+      { "Own Tempo": "P" },
+      { "Poisonous Tongue": "P" }
     ],
     loots: [],
     boost: 3,
     booStone: "Mirror stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Rhyperior",
     numero: 464,
-    level: 150,
+    level: 100,
     clan: "Orebound",
     tipo: "Terra,Pedra",
     regiao: "Sinnoh",
@@ -13785,16 +15312,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Horn attack": 150 },
-      { "Stone edge": 150 },
-      { "Rock throw": 150 },
-      { "Rock tomb": 150 },
-      { "Bulldoze": 153 },
-      { "Earthquake": 157 },
-      { "Rock wrecker": 155 },
-      { "Drill run": 157 },
-      { "Scary face": 152 },
-      { "Solid rock": "Passiva" },
+      { "Horn Attack": 100 },
+      { "Stone Edge": 100 },
+      { "Rock Throw": 100 },
+      { "Rock Tomb": 100 },
+      { Bulldoze: 100 },
+      { Earthquake: 100 },
+      { "Rock Wrecker": 100 },
+      { "Drill Run": 100 },
+      { "Scary Face": 100 },
+      { "Solid Rock": "P" }
     ],
     loots: [
       { min: 1, max: 42, item: "small stone", rar: "90.0%" },
@@ -13806,12 +15333,16 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Mystic star",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Tangrowth",
     numero: 465,
-    level: 150,
+    level: 100,
     clan: "Naturia",
     tipo: "Grama",
     regiao: "Sinnoh",
@@ -13824,14 +15355,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Leech seed": 150 },
-      { "Vine whip": 150 },
-      { "Power whip": 158 },
-      { "Ancient power": 165 },
-      { "Giga drain": 155 },
-      { "Poison powder": 150 },
-      { "Sleep powder": 155 },
-      { "Stun spore": 150 },
+      { "Leaf Guard": 100 },
+      { "Knock off": 100 },
+      { "Vine Whip": 100 },
+      { Bind: 100 },
+      { Fling: 100 },
+      { "Gloomy Vines": 100 },
+      { "Ancient Power": 100 },
+      { "Giga Drain": 100 },
+      { "Sunny Day": 100 },
+      { "Grassy Terrain": 100 },
+      { Chlorophyll: "P" }
     ],
     loots: [
       { min: 1, max: 80, item: "seed", rar: "90.0%" },
@@ -13842,12 +15376,16 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Mystic star",
-    habilidades: "Cut,Headbutt",
+    habilidades: "Light, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Electivire",
     numero: 466,
-    level: 150,
+    level: 100,
     clan: "Raibolt",
     tipo: "Elétrico",
     regiao: "Sinnoh",
@@ -13859,16 +15397,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Swift": 150 },
-      { "Low kick": 150 },
-      { "Thunder punch": 150 },
-      { "Wake up slap": 150 },
-      { "Lightning axe": 150 },
-      { "Hammer arm": 150 },
-      { "Cross chop": 154 },
-      { "Focus blast": 150 },
-      { "Earthquake": 160 },
-      { "Magnet rise": "Passiva" },
+      { Swift: 100 },
+      { "Low Kick": 100 },
+      { "Karate Chop": 100 },
+      { "Shock Wave": 100 },
+      { "Focus Punch": 100 },
+      { "Brick Break": 100 },
+      { "Focus Blast": 100 },
+      { Reversal: 100 },
+      { "Vital Spirit": 100 },
+      { "Motor Drive": "P" },
+      { "Magnet Rise": "P" }
     ],
     loots: [
       { min: 1, max: 80, item: "screw", rar: "90.0%" },
@@ -13879,12 +15418,16 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Mystic star",
-    habilidades: "Rock smash,Light,Headbutt",
+    habilidades: "Rock Smash, Dig, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Magmortar",
     numero: 467,
-    level: 150,
+    level: 100,
     clan: "Volcanic",
     tipo: "Fogo",
     regiao: "Sinnoh",
@@ -13896,17 +15439,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Volcano shot": 150 },
-      { "Ember": 150 },
-      { "Flamethrower": 150 },
-      { "Smokescreen": 150 },
-      { "Fireball": 150 },
-      { "Fire blast": 150 },
-      { "Magma storm": 155 },
-      { "Hyper beam": 160 },
-      { "Sunny day": 162 },
-      { "Flame body": "Passiva" },
-      { "Double cannon": "Passiva" },
+      { "Volcano Shot": 100 },
+      { Ember: 100 },
+      { Flamethrower: 100 },
+      { Smokescreen: 100 },
+      { Thunderbolt: 100 },
+      { "Fire Blast": 100 },
+      { "Magma Storm": 100 },
+      { "Focus Blast": 100 },
+      { "Sunny Day": 100 },
+      { "Flame Body": "P" },
+      { "Double Cannon": "P" }
     ],
     loots: [
       { min: 1, max: 80, item: "essence of fire", rar: "90.0%" },
@@ -13916,7 +15459,11 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Mystic star",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Light, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Togekiss",
@@ -13933,17 +15480,17 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Charm": 100 },
-      { "Dazzling gleam": 104 },
-      { "Aura sphere": 100 },
-      { "Fairy wind": 108 },
-      { "Extremespeed": 100 },
-      { "Great love": 107 },
-      { "Sky attack": 110 },
-      { "Metronome": 100 },
-      { "Safeguard": 110 },
-      { "Serene Happiness": "Passiva" },
-      { "Leftovers": "Passiva" },
+      { Charm: 100 },
+      { "Dazzling Gleam": 100 },
+      { "Aura Sphere": 100 },
+      { "Fairy Wind": 100 },
+      { Moonblast: 100 },
+      { "Air Slash": 100 },
+      { "Sky Attack": 100 },
+      { Metronome: 100 },
+      { Safeguard: 100 },
+      { "Serene Grace": "P" },
+      { Leftovers: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "eggshell", rar: "4.3%" },
@@ -13955,12 +15502,16 @@ const pokesarray = [
     ],
     boost: 2,
     booStone: "Feather stone",
-    habilidades: "Fly",
+    habilidades: "Light, Fly, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Leafeon",
     numero: 470,
-    level: 60,
+    level: 80,
     clan: "Naturia",
     tipo: "Grama",
     regiao: "Sinnoh",
@@ -13972,25 +15523,30 @@ const pokesarray = [
     preevo: "Eevee",
     mapas: [],
     moves: [
-      { "Leech seed": 60 },
-      { "Leaf blade": 60 },
-      { "X scissor": 64 },
-      { "Grassy terrain": 70 },
-      { "Grass whistle": 60 },
-      { "Hyper voice": 60 },
-      { "Leaf tornado": 70 },
-      { "Synthesis": 60 },
-      { "Protect": 60 },
+      { "Leaf Guard": 80 },
+      { "Quick Attack": 80 },
+      { "Magical Leaf": 80 },
+      { "Leaf Blade": 80 },
+      { "Leaf Storm": 80 },
+      { "Solar Blade": 80 },
+      { "Swords Dance": 80 },
+      { Swagger: 80 },
+      { Protect: 80 },
+      { Protector: "P" }
     ],
     loots: [],
-    boost: 7,
+    boost: 5,
     booStone: "Mirror stone",
-    habilidades: "Dig",
+    habilidades: "Light, Headbutt, Rock Smash, Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Glaceon",
     numero: 471,
-    level: 60,
+    level: 80,
     clan: "Seavell",
     tipo: "Gelo",
     regiao: "Sinnoh",
@@ -14002,24 +15558,29 @@ const pokesarray = [
     preevo: "Eevee",
     mapas: [],
     moves: [
-      { "Swift": 60 },
-      { "Ice shards": 60 },
-      { "Ice fang": 60 },
-      { "Avalanche": 60 },
-      { "Frost power": 60 },
-      { "Blizzard": 66 },
-      { "Hail": 68 },
-      { "Ice body": "Passiva" },
+      { Swift: 80 },
+      { "Ice Shard": 80 },
+      { "Ice Fang": 80 },
+      { Snowscape: 80 },
+      { "Helping Hand": 80 },
+      { "Tail Whip": 80 },
+      { Blizzard: 80 },
+      { Wish: 80 },
+      { "Ice Body": "P" }
     ],
     loots: [],
-    boost: 7,
+    boost: 5,
     booStone: "Mirror stone",
-    habilidades: "Dig",
+    habilidades: "Rock Smash, Headbutt, Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Gliscor",
     numero: 472,
-    level: 80,
+    level: 100,
     clan: "Orebound,Wingeon",
     tipo: "Terra,Voador",
     regiao: "Sinnoh",
@@ -14032,18 +15593,18 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Guillotine": 84 },
-      { "Wing attack": 80 },
-      { "Air cutter": 88 },
-      { "Fire fang": 80 },
-      { "Sky attack": 90 },
-      { "Aerial ace": 84 },
-      { "Sky uppercut": 88 },
-      { "Swords dance": 86 },
-      { "Agility": 86 },
-      { "Protect": 80 },
-      { "Evasion": "Passiva" },
-      { "Shadow slice": "Passiva" },
+      { Guillotine: 100 },
+      { "Wing Attack": 100 },
+      { "Air Cutter": 100 },
+      { "Ice Fang": 100 },
+      { "Sky Attack": 100 },
+      { "Aerial Ace": 100 },
+      { Acrobatics: 100 },
+      { "Swords Dance": 100 },
+      { Agility: 100 },
+      { Screech: 100 },
+      { Evasion: "P" },
+      { "Hyper Cutter": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "Gligar claw", rar: "4.3%" },
@@ -14054,9 +15615,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "sandbag", rar: "17.0%" },
       { min: 1, max: 1, item: "tooth", rar: "12.0%" },
     ],
-    boost: 3,
-    booStone: "Earth stone",
-    habilidades: "Dig,Rock smash,Headbutt,Cut",
+    boost: 2,
+    booStone: "Earth Stone ou Feather Stone",
+    habilidades: "Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Gallade",
@@ -14073,26 +15638,28 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Psycho cut": 108 },
-      { "Low kick": 100 },
-      { "Close combat": 100 },
-      { "Zen headbutt": 100 },
-      { "Brick break": 100 },
-      { "Focus blast": 100 },
-      { "Revenge": 112 },
-      { "Double team": 102 },
-      { "Power up punch": 100 },
-      { "Miracle eye": 1010 },
+      { "Psycho Cut": 100 },
+      { "Low Kick": 100 },
+      { "Close Combat": 100 },
+      { "Focus Punch": 100 },
+      { "Drain Punch": 100 },
+      { "Focus Blast": 100 },
+      { Revenge: 100 },
+      { "Power-Up Punch": 100 }
     ],
     loots: [],
     boost: 2,
     booStone: "Enigma stone",
-    habilidades: "Teleport,Cut,Headbutt,Blink",
+    habilidades: "Teleport, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Probopass",
     numero: 476,
-    level: 80,
+    level: 100,
     clan: "Orebound,Ironhard",
     tipo: "Pedra,Metal",
     regiao: "Sinnoh",
@@ -14103,28 +15670,32 @@ const pokesarray = [
     preevo: "Nosepass",
     mapas: [],
     moves: [
-      { "Iron head": 80 },
-      { "Tackle": 80 },
-      { "Rock throw": 80 },
-      { "Stone edge": 80 },
-      { "Power gem": 80 },
-      { "Bulldoze": 80 },
-      { "Rock blast": 80 },
-      { "Heavy slam": 80 },
-      { "Iron defense": 84 },
-      { "Stealth rock": 90 },
-      { "Magnet pull": "Passiva" },
+      { "Rock Throw": 100 },
+      { "Stone Edge": 100 },
+      { "Zap Cannon": 100 },
+      { Spark: 100 },
+      { "Power Gem": 100 },
+      { "Magnet Pull": 100 },
+      { Discharge: 100 },
+      { "Stealth Rock": 100 },
+      { "Iron Defense": 100 },
+      { "Magnetic Flux": 100 },
+      { Block: 100 }
     ],
     loots: [],
     evoStone: "Mirror stone (x10)",
     boost: 5,
     booStone: "Mirror stone",
-    habilidades: "Rock smash,Headbutt,Dig",
+    habilidades: "Rock Smash, Headbutt, Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dusknoir",
     numero: 477,
-    level: 150,
+    level: 100,
     clan: "Malefic",
     tipo: "Fantasma",
     regiao: "Sinnoh",
@@ -14137,15 +15708,16 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Destiny bond": 150 },
-      { "Shadow ball": 150 },
-      { "Shadow punch": 154 },
-      { "Ominous wind": 150 },
-      { "Shadow sneak": 155 },
-      { "Hex": 155 },
-      { "Curse": 156 },
-      { "Dark accurate": 1000 },
-      { "Spirit world": "Passiva" },
+      { Curse: 100 },
+      { "Shadow Ball": 100 },
+      { "Shadow Punch": 100 },
+      { "Ominous Wind": 100 },
+      { "Shadow Sneak": 100 },
+      { Hex: 100 },
+      { "Shadow Cannon": 100 },
+      { "Shadow Blast": 100 },
+      { "Shadow Panic": 100 },
+      { "Spirit Bomb": "P" }
     ],
     loots: [
       { min: 1, max: 80, item: "ghost essence", rar: "90.0%" },
@@ -14155,7 +15727,11 @@ const pokesarray = [
     ],
     boost: 10,
     booStone: "Mystic star",
-    habilidades: "Control mind",
+    habilidades: "Light, Control Mind",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Froslass",
@@ -14172,16 +15748,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Destiny bond": 80 },
-      { "Shadow ball": 80 },
-      { "Cursed hollow": 80 },
-      { "Powder snow": 80 },
-      { "Frost breath": 82 },
-      { "Avalanche": 80 },
-      { "Ice slider": 80 },
-      { "Dimensional wall": 82 },
-      { "Ice block": 80 },
-      { "Spirit world": "Passiva" },
+      { "Shadow Ball": 80 },
+      { "Ice Shards": 80 },
+      { "Frost Breath": 80 },
+      { "Ice Fang": 80 },
+      { "Powder Snow": 80 },
+      { Blizzard: 80 },
+      { Hail: 80 },
+      { "Aurora Veil": 80 },
+      { "Frozen Armor": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "ice blocks", rar: "4.3%" },
@@ -14193,6 +15768,10 @@ const pokesarray = [
     boost: 3,
     booStone: "Ice stone",
     habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Rotom",
@@ -14209,15 +15788,15 @@ const pokesarray = [
     mapas: [],
     vip: "yes",
     moves: [
-      { "Thunder shock": 100 },
-      { "Shadow ball": 100 },
-      { "Shadow sphere": 100 },
-      { "Shockwave": 100 },
-      { "Substitute": 100 },
-      { "Assurance": 105 },
-      { "Shadow storm": 106 },
-      { "Morph": 100 },
-      { "Levitate": "Passiva" },
+      { "Shadow Ball": 100 },
+      { "Shadow Sphere": 100 },
+      { "Ominous Wind": 100 },
+      { "Shock Wave": 100 },
+      { "Shadow Cannon": 100 },
+      { Substitute: 100 },
+      { "Shadow Storm": 100 },
+      { Morph: 100 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 40, item: "screw", rar: "100.0%" },
@@ -14228,11 +15807,15 @@ const pokesarray = [
     boost: 50,
     booStone: "Mystic star",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Heatran",
     numero: 485,
-    level: 150,
+    level: 100,
     clan: "Volcanic,Ironhard",
     tipo: "Fogo,Metal",
     regiao: "Sinnoh",
@@ -14242,20 +15825,26 @@ const pokesarray = [
     pricenpc: "unseleable",
     mapas: [],
     moves: [
-      { "Volcano shot": 150 },
-      { "Iron head": 150 },
-      { "Crunch": 150 },
-      { "Stone edge": 150 },
-      { "Ancient power": 150 },
-      { "Rock slide": 150 },
-      { "Magma storm": 150 },
-      { "Heat wave": 150 },
-      { "Hyper beam": 150 },
-      { "Flash cannon": 150 },
-      { "Flash fire": "Passiva" },
+      { "Volcano Shot": 100 },
+      { "Iron Head": 100 },
+      { Crunch: 100 },
+      { "Earth Power": 100 },
+      { "Rock Slide": 100 },
+      { "Stone Edge": 100 },
+      { "Ancient Power": 100 },
+      { "Heat Wave": 100 },
+      { "Magma Storm": 100 },
+      { "Flash Cannon": 100 },
+      { "Flash Fire": "P" }
     ],
     loots: [],
-    habilidades: "Dig,Rock smash,Light,Headbutt",
+    habilidades: "Dig, Rock Smash, Light, Headbutt",
+    boost: 2,
+    booStone: "Mirror Stone",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
           {
     nome: "Simisear",
@@ -14271,29 +15860,32 @@ const pokesarray = [
     vip: "yes",
     boost: 3,
     booStone: "Fire stone",
-    habilidades: "",
+    habilidades: "Dig, Rock Smash, Cut",
     moves: [
-      { "Fury swipes": 80 },
-      { "Fire spin": 80 },
-      { "Grass knot": 80 },
-      { "Nature power": 80 },
-      { "Focus blast": 80 },
-      { "Solar beam": 80 },
+      { "Fury Swipes": 80 },
+      { "Fire Spin": 80 },
+      { "Grass Knot": 80 },
+      { "Nature Power": 80 },
+      { "Focus Blast": 80 },
+      { "Solar Beam": 80 },
       { Leer: 80 },
       { Protect: 80 },
-      { "Sunny day": 80 },
-      { Gluttony: 80 }
+      { "Sunny Day": 80 },
+      { Gluttony: "P" }
     ],
     loots: [
       { item: "Compressed fire", min: 1, max: 10, rar: "80%" }
     ],
     mapas: [],
-    updatedAt: "19/03/2026, 20:16:46"
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Blitzle",
     numero: 522,
-    level: 60,
+    level: 50,
     clan: "Raibolt",
     tipo: "Elétrico",
     regiao: "Unova",
@@ -14304,19 +15896,23 @@ const pokesarray = [
     evo: "Zebstrika",
     mapas: [],
     moves: [
-      { "Quick attack": 60 },
-      { "Thunder bolt": 60 },
-      { "Shockwave": 60 },
-      { "Flame charge": 60 },
-      { "Stomp": 65 },
-      { "Thunder": 65 },
-      { "Wild charge": 65 },
+      { Charge: 50 },
+      { Thunderbolt: 50 },
+      { "Shock Wave": 50 },
+      { "Flame Charge": 50 },
+      { Stomp: 50 },
+      { "Wild Charge": 50 },
+      { Discharge: 50 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x25)",
     boost: 3,
     booStone: "Dimensional stone",
     habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Zebstrika",
@@ -14332,20 +15928,25 @@ const pokesarray = [
     preevo: "Blitzle",
     mapas: [],
     moves: [
-      { "Lightning horn": 100 },
-      { "Double kick": 100 },
-      { "Shockwave": 100 },
-      { "Flame charge": 100 },
-      { "Overheat": 100 },
-      { "Flare blitz": 110 },
-      { "Thrash": 105 },
-      { "Rain dance": 100 },
-      { "Volt switch": 100 },
+      { "Lightning Horn": 100 },
+      { "Double Kick": 100 },
+      { "Shock Wave": 100 },
+      { "Flame Charge": 100 },
+      { Overheat: 100 },
+      { "Flare Blitz": 100 },
+      { "Signal Beam": 100 },
+      { "Sunny Day": 100 },
+      { "Volt Switch": 100 },
+      { "Sap Sipper": "P" }
     ],
     loots: [],
     boost: 3,
     booStone: "Dimensional stone",
-    habilidades: "Dig,Ride",
+    habilidades: "Light, Rock Smash, Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Drilbur",
@@ -14361,19 +15962,25 @@ const pokesarray = [
     evo: "Excadrill",
     mapas: [],
     moves: [
-      { "Mud shot": 50 },
-      { "Fury swipes": 50 },
-      { "Dig": 52 },
-      { "Metal claw": 57 },
-      { "Drill run": 57 },
-      { "Earthquake": 57 },
-      { "Sandstorm": 50 },
+      { "Mud Shot": 50 },
+      { "Fury Swipes": 50 },
+      { Dig: 50 },
+      { "Metal Claw": 50 },
+      { "Drill Run": 50 },
+      { Earthquake: 50 },
+      { Sandstorm: 50 },
+      { "Sand Rush": "P" },
+      { "Mold Breaker": "P" }
     ],
     loots: [],
     evoStone: "Mirror stone (x25)",
-    boost: 10,
+    boost: 7,
     booStone: "Mirror stone",
-    habilidades: "Dig,Rock smash",
+    habilidades: "Dig, Rock Smash",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Excadrill",
@@ -14389,21 +15996,27 @@ const pokesarray = [
     preevo: "Drilbur",
     mapas: [],
     moves: [
-      { "Mud sport": 100 },
-      { "Fury swipes": 100 },
-      { "Iron head": 100 },
-      { "Dig": 102 },
-      { "Metal claw": 107 },
-      { "Drill run": 107 },
-      { "Earthquake": 107 },
-      { "Sandstorm": 100 },
-      { "Sand rush": "Passiva" },
-      { "Sand force": "Passiva" },
+      { "Mud Sport": 100 },
+      { "Iron Head": 100 },
+      { "Rock Slide": 100 },
+      { Dig: 100 },
+      { "Crush Claw": 100 },
+      { "Horn Drill": 100 },
+      { Earthquake: 100 },
+      { "Drill Run": 100 },
+      { Sandstorm: 100 },
+      { "Sand Rush": "P" },
+      { "Sand Force": "P" },
+      { "Mold Breaker": "P" }
     ],
     loots: [],
     boost: 3,
     booStone: "Mirror stone",
-    habilidades: "Dig,Rock smash,Headbutt",
+    habilidades: "Dig, Cut, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Timburr",
@@ -14419,17 +16032,22 @@ const pokesarray = [
     evo: "Gurdurr",
     mapas: [],
     moves: [
-      { "Rock slide": 20 },
-      { "Stone edge": 23 },
-      { "Hammer arm": 20 },
-      { "Wake up slap": 20 },
-      { "Bulk up": 20 },
+      { "Rock Throw": 20 },
+      { "Drain Punch": 20 },
+      { "Stone Edge": 20 },
+      { "Hammer Arm": 20 },
+      { "Wake-Up Slap": 20 },
+      { "Bulk Up": 20 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x2)",
     boost: 10,
     booStone: "Dimensional stone",
     habilidades: "Rock smash",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Gurdurr",
@@ -14446,24 +16064,30 @@ const pokesarray = [
     evo: "Conkeldurr",
     mapas: [],
     moves: [
-      { "Rock throw": 60 },
-      { "Rock slide": 60 },
-      { "Stone edge": 63 },
-      { "Rock tomb": 60 },
-      { "Hammer arm": 60 },
-      { "Wake up slap": 60 },
-      { "Bulk up": 60 },
+      { "Rock Throw": 60 },
+      { "Drain Punch": 60 },
+      { "Rock Tomb": 60 },
+      { "Stone Edge": 60 },
+      { "Hammer Arm": 60 },
+      { "Wake-Up Slap": 60 },
+      { "Dynamic Punch": 60 },
+      { "Bulk Up": 60 }
     ],
     loots: [],
     evoStone: "Power stone",
-    boost: 4,
+    boost: 6,
     booStone: "Dimensional stone",
     habilidades: "Rock smash",
+    updatedAt: "22/03/2026, 22:50:06",
+    updateHistory: [ { date: "22/03/2026, 22:50:06", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Conkeldurr",
     numero: 534,
-    level: 150,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Lutador",
     regiao: "Unova",
@@ -14474,21 +16098,27 @@ const pokesarray = [
     preevo: "Gurdurr",
     mapas: [],
     moves: [
-      { "Rock throw": 150 },
-      { "Drain punch": 150 },
-      { "Rock tomb": 150 },
-      { "Stone edge": 150 },
-      { "Hammer arm": 150 },
-      { "Brick break": 150 },
-      { "Wake up slap": 150 },
-      { "Chip away": 150 },
-      { "Force palm": 150 },
-      { "Bulk up": 150 },
+      { "Rock Throw": 100 },
+      { "Drain Punch": 100 },
+      { "Stone Edge": 100 },
+      { "Rock Tomb": 100 },
+      { "Hammer Arm": 100 },
+      { "Wake-Up Slap": 100 },
+      { "Dynamic Punch": 100 },
+      { "Chip Away": 100 },
+      { "Bulk Up": 100 },
+      { "Iron Fist": "P" },
+      { Guts: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Dimensional stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 22:50:06",
+    updateHistory: [ { date: "22/03/2026, 22:50:06", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },//534
   
   
@@ -14507,19 +16137,23 @@ const pokesarray = [
     evo: "Darmanitan",
     mapas: [],
     moves: [
-      { "Tackle": 50 },
-      { "Headbutt": 50 },
-      { "Fire punch": 50 },
-      { "Hammer arm": 50 },
-      { "Incinerate": 50 },
-      { "Flare blitz": 60 },
-      { "Rage": 50 },
+      { Headbutt: 50 },
+      { "Fire Punch": 50 },
+      { "Fire Fang": 50 },
+      { "Hammer Arm": 50 },
+      { Incinerate: 50 },
+      { "Flare Blitz": 50 },
+      { "Work Up": 50 }
     ],
     loots: [],
     evoStone: "Mirror stone (x10)",
     boost: 7,
     booStone: "Mirror stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },//554
   {
     nome: "Darmanitan",
@@ -14535,22 +16169,25 @@ const pokesarray = [
     preevo: "Darumaka",
     mapas: [],
     moves: [
-      { "Headbutt": 100 },
-      { "Fire punch": 100 },
-      { "Flamethrower": 100 },
-      { "Hammer arm": 100 },
-      { "Incinerate": 100 },
-      { "Overheat": 100 },
-      { "Focus blast": 100 },
-      { "Strenght": 100 },
-      { "Flare blitz": 110 },
-      { "Belly drum": 100 },
-      { "Zen mode": "Passiva" },
+      { Headbutt: 100 },
+      { "Fire Punch": 100 },
+      { "Fire Fang": 100 },
+      { Incinerate: 100 },
+      { Strength: 100 },
+      { Overheat: 100 },
+      { "Flare Blitz": 100 },
+      { "Work Up": 100 },
+      { "Belly Drum": 100 },
+      { "Zen Mode": "P" }
     ],
     loots: [],
     boost: 3,
     booStone: "Mirror stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Dwebble",
@@ -14566,17 +16203,21 @@ const pokesarray = [
     evo: "Crustle",
     mapas: [],
     moves: [
-      { "Rock throw": 20 },
-      { "Rock slide": 20 },
-      { "Stone edge": 23 },
-      { "Rock blast": 20 },
-      { "Harden": 25 },
+      { "Rock Throw": 20 },
+      { "Rock Slide": 20 },
+      { "Stone Edge": 20 },
+      { "Rock Blast": 20 },
+      { Harden: 20 }
     ],
     loots: [],
     evoStone: "Mirror stone (x10)",
-    boost: 8,
+    boost: 10,
     booStone: "Mirror stone",
-    habilidades: "Dig,Cut",
+    habilidades: "Dig, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Crustle",
@@ -14592,21 +16233,26 @@ const pokesarray = [
     preevo: "Dwebble",
     mapas: [],
     moves: [
-      { "Slash": 85 },
-      { "Rock slide": 80 },
-      { "Rock tomb": 80 },
-      { "X scissor": 80 },
-      { "Spikes": 90 },
-      { "Stone edge": 80 },
-      { "Rock blast": 80 },
-      { "Rock wrecker": 85 },
-      { "Shell smash": 80 },
-      { "Withdraw": 84 },
+      { Slash: 80 },
+      { "Rock Slide": 80 },
+      { "Rock Tomb": 80 },
+      { "X-Scissor": 80 },
+      { Spikes: 80 },
+      { "Stone Edge": 80 },
+      { "Rock Blast": 80 },
+      { "Rock Wrecker": 80 },
+      { "Shell Smash": 80 },
+      { Withdraw: 80 },
+      { "Shell Armor": "P" }
     ],
     loots: [],
     boost: 5,
     booStone: "Mirror stone",
-    habilidades: "Dig",
+    habilidades: "Cut, Rock Smash, Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Emolga",
@@ -14621,19 +16267,23 @@ const pokesarray = [
     pricenpc: 100000,
     mapas: [],
     moves: [
-      { "Charm": 80 },
-      { "Feather dance": 80 },
-      { "Pursuit": 80 },
-      { "Air slash": 83 },
-      { "Nuzzle": 85 },
-      { "Roost": 85 },
-      { "Aerial ace": 84 },
-      { "Light screen": 80 },
+      { Charge: 80 },
+      { Charm: 80 },
+      { "Feather Dance": 80 },
+      { "Dual Wingbeat": 80 },
+      { "Air Slash": 80 },
+      { "Shock Wave": 80 },
+      { Acrobatics: 80 },
+      { "Aerial Ace": 80 }
     ],
     loots: [],
     boost: 5,
     booStone: "Mirror stone",
-    habilidades: "",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Joltik",
@@ -14649,17 +16299,21 @@ const pokesarray = [
     evo: "Galvantula",
     mapas: [],
     moves: [
-      { "Bug bite": 20 },
-      { "Electroweb": 20 },
-      { "Thunder fang": 20 },
-      { "Shockwave": 20 },
-      { "Electro ball": 20 },
+      { "Bug Bite": 20 },
+      { Electroweb: 20 },
+      { "Thunder Fang": 20 },
+      { "Shock Wave": 20 },
+      { "Electro Ball": 20 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x10)",
     boost: 10,
     booStone: "Dimensional stone",
-    habilidades: "Dig,Cut",
+    habilidades: "Dig, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Galvantula",
@@ -14677,24 +16331,29 @@ const pokesarray = [
     preevo: "Joltik",
     mapas: [],
     moves: [
-      { "Bug bite": 80 },
-      { "Electroweb": 80 },
-      { "Thunder fang": 80 },
-      { "Fury cutter": 80 },
-      { "Shockwave": 80 },
-      { "Electro ball": 80 },
-      { "Electro field": 80 },
-      { "Discharge": 80 },
+      { "Bug Bite": 80 },
+      { Electroweb: 80 },
+      { "Thunder Fang": 80 },
+      { Thunderbolt: 80 },
+      { "Fury Cutter": 80 },
+      { "Shock Wave": 80 },
+      { "Electro Ball": 80 },
+      { "Electro Field": 80 },
+      { Discharge: 80 }
     ],
     loots: [],
     boost: 5,
     booStone: "Dimensional stone",
-    habilidades: "Dig,Cut,Light",
+    habilidades: "Dig, Cut, Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ferroseed",
     numero: 597,
-    level: 60,
+    level: 40,
     clan: "Naturia,Ironhard",
     tipo: "Grama,Metal",
     regiao: "Unova",
@@ -14705,24 +16364,27 @@ const pokesarray = [
     evo: "Ferrothorn",
     mapas: [],
     moves: [
-      { "Iron head": 60 },
-      { "Leech seed": 60 },
-      { "Seed bomb": 60 },
-      { "Spikes": 70 },
-      { "Flash cannon": 68 },
-      { "Bullet seed": 60 },
-      { "Solar beam": 60 },
+      { "Iron Head": 40 },
+      { "Leech Seed": 40 },
+      { Spikes: 40 },
+      { "Gyro Ball": 40 },
+      { "Flash Cannon": 40 },
+      { Harden: 40 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x25)",
-    boost: 7,
+    boost: 8,
     booStone: "Dimensional stone",
-    habilidades: "Rock smash,Dig,Headbutt",
+    habilidades: "Light, Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Ferrothorn",
     numero: 598,
-    level: 100,
+    level: 80,
     clan: "Naturia,Ironhard",
     tipo: "Grama,Metal",
     regiao: "Unova",
@@ -14733,21 +16395,24 @@ const pokesarray = [
     preevo: "Ferroseed",
     mapas: [],
     moves: [
-      { "Iron head": 100 },
-      { "Leech seed": 100 },
-      { "Grass knot": 100 },
-      { "Power whip": 108 },
-      { "Thunder bolt": 100 },
-      { "Spikes": 110 },
-      { "Bullet seed": 100 },
-      { "Giga drain": 105 },
-      { "Solar beam": 100 },
-      { "Iron barbs": "Passiva" },
+      { "Iron Head": 80 },
+      { "Mirror Shot": 80 },
+      { "Grass Knot": 80 },
+      { "Power Whip": 80 },
+      { Ingrain: 80 },
+      { "Knock Off": 80 },
+      { "Gyro Ball": 80 },
+      { "Flash Cannon": 80 },
+      { Attract: 80 }
     ],
     loots: [],
     boost: 3,
     booStone: "Dimensional stone",
-    habilidades: "",
+    habilidades: "Rock Smash, Cut, Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Litwick",
@@ -14763,17 +16428,22 @@ const pokesarray = [
     evo: "Lampent",
     mapas: [],
     moves: [
-      { "Shadow ball": 20 },
-      { "Fire spin": 20 },
-      { "Incinerate": 20 },
-      { "Astonish": 20 },
-      { "Invisible": 20 },
+      { Ember: 20 },
+      { "Shadow Ball": 20 },
+      { "Will-O-Wisp": 20 },
+      { Incinerate: 20 },
+      { Astonish: 20 },
+      { Invisible: 20 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x2)",
     boost: 10,
     booStone: "Dimensional stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Lampent",
@@ -14790,19 +16460,24 @@ const pokesarray = [
     evo: "Chandelure",
     mapas: [],
     moves: [
-      { "Shadow ball": 50 },
-      { "Fire spin": 50 },
-      { "Incinerate": 50 },
-      { "Flame burst": 50 },
-      { "Astonish": 50 },
-      { "Invisible": 50 },
-      { "Inferno": 60 },
+      { Ember: 50 },
+      { "Shadow Ball": 50 },
+      { "Fire Spin": 50 },
+      { Incinerate: 50 },
+      { "Flame Burst": 50 },
+      { Invisible: 50 },
+      { Inferno: 50 },
+      { "Flame Body": "P" }
     ],
     loots: [],
     evoStone: "Dimensional stone (x10)",
     boost: 7,
     booStone: "Dimensional stone",
     habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Chandelure",
@@ -14818,20 +16493,25 @@ const pokesarray = [
     preevo: "Lampent",
     mapas: [],
     moves: [
-      { "Ember": 80 },
-      { "Fire spin": 80 },
-      { "Flame burst": 80 },
-      { "Incinerate": 80 },
-      { "Astonish": 80 },
-      { "Hex": 85 },
-      { "Curse": 86 },
-      { "Inferno": 90 },
-      { "Flame body": "Passiva" },
+      { Ember: 80 },
+      { "Shadow Ball": 80 },
+      { "Will-O-Wisp": 80 },
+      { Incinerate: 80 },
+      { Hex: 80 },
+      { "Mystical Fire": 80 },
+      { "Cursed Fire": 80 },
+      { Inferno: 80 },
+      { "Flame Body": "P" },
+      { Infiltrator: "P" }
     ],
     loots: [],
     boost: 5,
     booStone: "Dimensional stone",
-    habilidades: "",
+    habilidades: "Light e Dark Portal",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Axew",
@@ -14847,18 +16527,22 @@ const pokesarray = [
     evo: "Fraxure",
     mapas: [],
     moves: [
-      { "Dragon claw": 20 },
-      { "Guillotine": 30 },
-      { "Dual chop": 20 },
-      { "Twister": 21 },
-      { "Dragon breath": 25 },
-      { "Lightning axe": 20 },
+      { "Dragon Claw": 20 },
+      { Guillotine: 20 },
+      { "Dual Chop": 20 },
+      { Twister: 20 },
+      { "Dragon Breath": 20 },
+      { "Lightning Axe": 20 }
     ],
     loots: [],
     evoStone: "Mirror stone (x10)",
     boost: 10,
     booStone: "Mirror stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Fraxure",
@@ -14875,18 +16559,22 @@ const pokesarray = [
     evo: "Haxorus",
     mapas: [],
     moves: [
-      { "Hone claws": 50 },
-      { "Dragon claw": 50 },
-      { "Guillotine": 60 },
-      { "Dual chop": 50 },
-      { "Twister": 54 },
-      { "Bulldoze": 50 },
-      { "Lightning axe": 50 },
+      { "Hone Claws": 50 },
+      { "Dragon Claw": 50 },
+      { "Breaking Swipe": 50 },
+      { "Dual Chop": 50 },
+      { Guillotine: 50 },
+      { "Dragon Pulse": 50 },
+      { "Dragon Breath": 50 }
     ],
     loots: [],
     boost: 7,
     booStone: "Mirror stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Haxorus",
@@ -14902,25 +16590,29 @@ const pokesarray = [
     preevo: "Fraxure",
     mapas: [],
     moves: [
-      { "Hone claws": 100 },
-      { "Dragon claw": 100 },
-      { "Guillotine": 110 },
-      { "Dual chop": 100 },
-      { "Razor wind": 108 },
-      { "Twister": 104 },
-      { "Bulldoze": 100 },
-      { "Lightning axe": 100 },
-      { "Earthquake": 107 },
+      { Snarl: 100 },
+      { "Dragon Claw": 100 },
+      { "Breaking Swipe": 100 },
+      { "Dual Chop": 100 },
+      { Guillotine: 100 },
+      { "Dragon Rage": 100 },
+      { "Draco Meteor": 100 },
+      { Outrage: 100 },
+      { "Swords Dance": 100 }
     ],
     loots: [],
     boost: 3,
     booStone: "Mirror stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Cut, Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Cubchoo",
     numero: 613,
-    level: 50,
+    level: 40,
     clan: "Seavell",
     tipo: "Gelo",
     regiao: "Unova",
@@ -14931,23 +16623,27 @@ const pokesarray = [
     evo: "Beartic",
     mapas: [],
     moves: [
-      { "Slash": 50 },
-      { "Ice punch": 50 },
-      { "Icicle crash": 50 },
-      { "Powder snow": 50 },
-      { "Avalanche": 50 },
-      { "Blizzard": 56 },
+      { Slash: 40 },
+      { "Ice Punch": 40 },
+      { "Icicle Crash": 40 },
+      { "Powder Snow": 40 },
+      { Avalanche: 40 },
+      { Blizzard: 40 }
     ],
     loots: [],
     evoStone: "Dimensional stone (x10)",
-    boost: 10,
+    boost: 8,
     booStone: "Dimensional stone",
     habilidades: "",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Beartic",
     numero: 614,
-    level: 80,
+    level: 100,
     clan: "Seavell",
     tipo: "Gelo",
     regiao: "Unova",
@@ -14958,20 +16654,25 @@ const pokesarray = [
     preevo: "Cubchoo",
     mapas: [],
     moves: [
-      { "Slash": 80 },
-      { "Ice punch": 80 },
-      { "Ice fang": 80 },
-      { "Icicle crash": 80 },
-      { "Powder snow": 80 },
-      { "Avalanche": 80 },
-      { "Blizzard": 86 },
-      { "Hail": 88 },
-      { "Snow cloak": "Passiva" },
+      { Slash: 100 },
+      { "Ice Punch": 100 },
+      { "Icicle Spear": 100 },
+      { "Ice Storm": 100 },
+      { "Frenzy Snow": 100 },
+      { "Icicle Crash": 100 },
+      { Hail: 100 },
+      { Snowscape: 100 },
+      { "Frozen Armor": "P" },
+      { "Slush Rush": "P" }
     ],
     loots: [],
-    boost: 5,
+    boost: 3,
     booStone: "Dimensional stone",
-    habilidades: "Rock smash",
+    habilidades: "Dig, Rock Smash, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Pawniard",
@@ -14987,17 +16688,21 @@ const pokesarray = [
     evo: "Bisharp",
     mapas: [],
     moves: [
-      { "Iron head": 40 },
-      { "Sucker punch": 43 },
-      { "Night slash": 40 },
-      { "Metal burst": 40 },
-      { "Shadow claw": 40 },
-      { "Swords dance": 48 },
+      { "Iron Head": 40 },
+      { "Sucker Punch": 40 },
+      { "Night Slash": 40 },
+      { "Four Play": 40 },
+      { "Shadow Claw": 40 },
+      { "Swords Dance": 40 }
     ],
     loots: [],
     boost: 8,
     booStone: "Mirror stone",
-    habilidades: "Rock smash,Cut,Headbutt",
+    habilidades: "Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Bisharp",
@@ -15013,21 +16718,25 @@ const pokesarray = [
     preevo: "Pawniard",
     mapas: [],
     moves: [
-      { "Hone claws": 80 },
-      { "Iron head": 80 },
-      { "Sucker punch": 80 },
-      { "Compass slash": 80 },
-      { "Night slash": 80 },
-      { "Metal burst": 80 },
-      { "Shadow claw": 80 },
-      { "Dual chop": 80 },
-      { "Assurance": 88 },
-      { "Swords dance": 88 },
+      { "Hone Claws": 80 },
+      { "Iron Head": 80 },
+      { "Sucker Punch": 80 },
+      { "Dark Pulse": 80 },
+      { "Foul Play": 80 },
+      { "Night Slash": 80 },
+      { "Metal Burst": 80 },
+      { Payback: 80 },
+      { Assurance: 80 },
+      { "Swords Dance": 80 }
     ],
     loots: [],
     boost: 5,
     booStone: "Mirror stone",
-    habilidades: "Rock smash,Headbutt",
+    habilidades: "Rock Smash, Cut, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Heatmor",
@@ -15042,21 +16751,26 @@ const pokesarray = [
     pricenpc: 100000,
     mapas: [],
     moves: [
-      { "Fire spin": 80 },
-      { "Sucker punch": 83 },
-      { "Flamethrower": 80 },
-      { "Incinerate": 80 },
-      { "Shadow claw": 80 },
-      { "Night slash": 80 },
-      { "Swallow": 83 },
-      { "Stockpile": 83 },
-      { "Inferno": 90 },
-      { "Taunt": 80 },
+      { Attract: 80 },
+      { Incinerate: 80 },
+      { Flamethrower: 80 },
+      { "Fire Lash": 80 },
+      { Inferno: 80 },
+      { "Sunny Day": 80 },
+      { Swallow: 80 },
+      { Stockpile: 80 },
+      { Protect: 80 },
+      { "Blue flames": 80 },
+      { "Clear Pile": "P" }
     ],
     loots: [],
     boost: 5,
     booStone: "Dimensional stone",
-    habilidades: "Headbutt",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Bunnelby",
@@ -15073,12 +16787,12 @@ const pokesarray = [
     evo: "Diggersby",
     mapas: [],
     moves: [
-      { "Quick attack": 30 },
-      { "Bite": 30 },
-      { "Super fang": 30 },
-      { "Dig": 32 },
-      { "Double team": 32 },
-      { "Agility": 30 },
+      { "Quick Attack": 30 },
+      { Bite: 30 },
+      { "Super Fang": 30 },
+      { Dig: 30 },
+      { "Double Team": 30 },
+      { Agility: 30 }
     ],
     loots: [
       { min: 1, max: 13, item: "rubber ball", rar: "80.0%" },
@@ -15087,9 +16801,13 @@ const pokesarray = [
       { min: 1, max: 1, item: "Golden easter egg", rar: "4.3%" },
     ],
     evoStone: "Heart stone (x2)",
-    boost: 10,
+    boost: 8,
     booStone: "Heart stone",
-    habilidades: "",
+    habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Diggersby",
@@ -15105,15 +16823,15 @@ const pokesarray = [
     preevo: "Bunnelby",
     mapas: [],
     moves: [
-      { "Quick attack": 80 },
-      { "Super fang": 80 },
-      { "Rock tomb": 80 },
-      { "Dig": 82 },
-      { "Bulldoze": 80 },
-      { "Hammer arm": 80 },
-      { "Leap strike": 85 },
-      { "Earthquake": 86 },
-      { "Swords dance": 88 },
+      { "Mud-Slap": 80 },
+      { "Stomping Tantrum": 80 },
+      { "Hammer Arm": 80 },
+      { Dig: 80 },
+      { "Earth Power": 80 },
+      { "Ground Collapse": 80 },
+      { Bulldoze: 80 },
+      { "Swords Dance": 80 },
+      { Sandstorm: 80 }
     ],
     loots: [
       { min: 1, max: 40, item: "rubber ball", rar: "80.0%" },
@@ -15125,12 +16843,16 @@ const pokesarray = [
     ],
     boost: 3,
     booStone: "Heart stone",
-    habilidades: "Dig,Headbutt",
+    habilidades: "Cut, Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Sylveon",
     numero: 700,
-    level: 60,
+    level: 80,
     clan: "Psycraft",
     tipo: "Fada",
     regiao: "Kalos",
@@ -15142,18 +16864,24 @@ const pokesarray = [
     preevo: "Eevee",
     mapas: [],
     moves: [
-      { "Charm": 60 },
-      { "Draining kiss": 60 },
-      { "Swift": 60 },
-      { "Take down": 60 },
-      { "Last resort": 60 },
-      { "Great love": 68 },
-      { "Moonblast": 66 },
+      { Charm: 80 },
+      { "Quick Attack": 80 },
+      { Swift: 80 },
+      { "Dazzling Geam": 80 },
+      { "Heart Pound": 80 },
+      { "Love Spell": 80 },
+      { "Floral Storm": 80 },
+      { "Focus Energy": 80 },
+      { Pixilate: "P" }
     ],
     loots: [],
-    boost: 7,
+    boost: 5,
     booStone: "Mirror stone",
-    habilidades: "Dig",
+    habilidades: "Light, Cut, Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   }
 ];
 
@@ -15340,11 +17068,12 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Tackle": 6 },
-      { "Razor leaf": 6 },
-      { "Vine whip": 6 },
-      { "Leech seed": 7 },
-      { "Poison powder": 8 }
+      { Tackle: 1 },
+      { "Razor Leaf": 1 },
+      { "Vine Whip": 1 },
+      { "Leech Seed": 1 },
+      { "Sleep Powder": 1 },
+      { "Poison Powder": 1 }
     ],
     loots: [
       { min: 1, max: 1, item: "seed", rar: "80%" },
@@ -15352,7 +17081,11 @@ const ShinysMegasArray = [
     ],
     boost: 15,
     booStone: "Leaf stone",
-    habilidades: "Cut"
+    habilidades: "",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
         {
     nome: "Shiny Venusaur",
@@ -15368,19 +17101,19 @@ const ShinysMegasArray = [
     shiny: "yes",
     heavy: "yes",
     boost: 2,
-    booStone: "Leaf stone",
+    booStone: "Leaf Stone ou Venom Stone",
     habilidades: "Rock Smash, Cut, Light, Ride, Headbutt",
     moves: [
-      { "Acid spray": 100 },
-      { "Razor leaf": 100 },
-      { "Vine whip": 100 },
+      { "Acid Spray": 100 },
+      { "Razor Leaf": 100 },
+      { "Vine Whip": 100 },
       { Sludge: 100 },
-      { "Vine grab": 100 },
-      { "Grass pledge": 100 },
-      { "Solar beam": 100 },
-      { "Giga drain": 105 },
-      { "Petal blizzard": 100 },
-      { "Ancient armor": 100 }
+      { "Vine Grab": 100 },
+      { "Grass Pledge": 100 },
+      { "Solar Beam": 100 },
+      { "Giga Drain": 100 },
+      { "Petal Blizzard": 100 },
+      { "Ancient Armor": 100 }
     ],
     loots: [
       { item: "seed", min: 1, max: 100, rar: "80.0%" },
@@ -15395,8 +17128,9 @@ const ShinysMegasArray = [
       { top: 3.53, left: 16.71, text: "Outland north caminho para artefato - saída da direita (VIP)" },
       { top: 3.38, left: 19.51, text: "Outland north caminho para artefato - saída da direita (VIP)" }
     ],
-    updateHistory: [ { date: "20/03/2026, 14:23:43", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 11:52:42", changes: [ "✏️ <strong>xpcaught</strong>: de \"500000\" ➔ \"200000\"", "🗑 <strong>pricenpc</strong> removido (era: \"unseleable\")", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Acid spray (Lv 100), Sludge (Lv 100), Vine grab (Lv 100), Grass pledge (Lv 100), Petal blizzard (Lv 100), Ancient armor (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Tackle (Lv 100), Headbutt (Lv 100), Leech seed (Lv 100), Bullet seed (Lv 100), Sleep powder (Lv 100), Poison powder (Lv 100), Leaf storm (Lv 110), Thick fat (Lv Passiva)</strong>", "✏️ <strong>habilidades</strong>: de \"Cut, Ride, Headbutt\" ➔ \"Rock Smash, Cut, Light, Ride, Headbutt\"" ] } ],
-    updatedAt: "20/03/2026, 14:23:43"
+    updateHistory: [ { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 14:23:43", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 11:52:42", changes: [ "✏️ <strong>xpcaught</strong>: de \"500000\" ➔ \"200000\"", "🗑 <strong>pricenpc</strong> removido (era: \"unseleable\")", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Acid spray (Lv 100), Sludge (Lv 100), Vine grab (Lv 100), Grass pledge (Lv 100), Petal blizzard (Lv 100), Ancient armor (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Tackle (Lv 100), Headbutt (Lv 100), Leech seed (Lv 100), Bullet seed (Lv 100), Sleep powder (Lv 100), Poison powder (Lv 100), Leaf storm (Lv 110), Thick fat (Lv Passiva)</strong>", "✏️ <strong>habilidades</strong>: de \"Cut, Ride, Headbutt\" ➔ \"Rock Smash, Cut, Light, Ride, Headbutt\"" ] } ],
+    updatedAt: "22/03/2026, 19:53:39"
+  
   },
       {
     nome: "Mega Venusaur",
@@ -15413,23 +17147,24 @@ const ShinysMegasArray = [
     habilidades: "Rock Smash, Cut, Light, Headbutt, Ride",
     preevo: "Venusaur",
     moves: [
-      { Tackle: 80 },
-      { "Razor leaf": 80 },
-      { "Vine whip": 80 },
-      { "Earth power": 80 },
-      { "Leech seed": 80 },
-      { Bulldoze: 80 },
-      { "Solar beam": 80 },
-      { Earthquake: 80 },
-      { "Sunny day": 92 },
-      { "Leaf storm": 90 },
-      { "Thick fat": "Passiva" }
+      { Tackle: 100 },
+      { "Razor Leaf": 100 },
+      { "Vine Whip": 100 },
+      { "Earth Power": 100 },
+      { "Leech Seed": 100 },
+      { Bulldoze: 100 },
+      { "Solar Beam": 100 },
+      { Earthquake: 100 },
+      { "Sunny Day": 100 },
+      { "Leaf Storm": 100 },
+      { "Thick Fat": "P" }
     ],
     mapas: [
       { top: 94.55, left: 80.4, text: "Embedded Tower - (VIP)" }
     ],
-    updatedAt: "20/03/2026, 11:55:07",
-    updateHistory: [ { date: "20/03/2026, 11:55:07", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Earth power (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Headbutt (Lv 80)</strong>", "✨ <strong>habilidades</strong> definido como: \"Rock Smash, Cut, Light, Headbutt, Ride\"" ] } ]
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [ { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 11:55:07", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Earth power (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Headbutt (Lv 80)</strong>", "✨ <strong>habilidades</strong> definido como: \"Rock Smash, Cut, Light, Headbutt, Ride\"" ] } ]
+  
   },
 
 
@@ -15447,11 +17182,11 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Scratch": 6 },
-      { "Ember": 6 },
-      { "Flamethrower": 8 },
-      { "Fireball": 6 },
-      { "Rage": 7 }
+      { Scratch: 1 },
+      { Ember: 1 },
+      { Flamethrower: 1 },
+      { "Fireball": 1 },
+      { Rage: 1 }
     ],
     loots: [
       { min: 1, max: 1, item: "pot of lava", rar: "50%" },
@@ -15459,7 +17194,11 @@ const ShinysMegasArray = [
     ],
     boost: 15,
     booStone: "Fire stone",
-    habilidades: "Cut"
+    habilidades: "",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
           {
     nome: "Shiny Charizard",
@@ -15476,20 +17215,20 @@ const ShinysMegasArray = [
     vip: "yes",
     heavy: "yes",
     boost: 2,
-    booStone: "Fire stone",
-    habilidades: "Dig, Rock Smash, Cut, Light, Fly, Headbutt ",
+    booStone: "Fire Stone ou Feather Stone",
+    habilidades: "Dig, Rock Smash, Cut, Light, Fly e Headbutt",
     moves: [
       { Ember: 100 },
       { Flamethrower: 100 },
-      { Fireball: 100 },
-      { "Fire punch": 100 },
-      { "Flame burst": 100 },
-      { "Fire blast": 100 },
-      { "Air slash": 100 },
-      { "Wing attack": 100 },
-      { "Magma storm": 100 },
-      { "Scary face": 100 },
-      { "Ancient fury": 100 }
+      { "Fireball": 100 },
+      { "Fire Punch": 100 },
+      { "Flame Burst": 100 },
+      { "Fire Blast": 100 },
+      { "Air Slash": 100 },
+      { "Wing Attack": 100 },
+      { "Magma Storm": 100 },
+      { "Scary Face": 100 },
+      { "Ancient Fury": 100 }
     ],
     loots: [
       { item: "pot of lava", min: 1, max: 1, rar: "30.0%" },
@@ -15498,8 +17237,9 @@ const ShinysMegasArray = [
       { item: "Fire stone", min: 1, max: 1, rar: "Raro" }
     ],
     mapas: [],
-    updateHistory: [ { date: "20/03/2026, 14:25:46", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 10:57:46", changes: [ "✏️ <strong>xpcaught</strong>: de \"600000\" ➔ \"200000\"", "✏️ <strong>habilidades</strong>: de \"Cut, Fly, Headbutt\" ➔ \"Dig, Rock Smash, Cut, Light, Fly, Headbutt\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Fire punch (Lv 100), Air slash (Lv 100), Scary face (Lv 100), Ancient fury (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fire fang (Lv 100), Air slash (Lv 103), Scary face (Lv 102), Ancient fury (Lv Passiva)</strong>", "❌ Loots removidos: <strong style=\"color:var(--accent)\">Charizard doll (1-1, rar: 1.5%) | coal (1-80, rar: 80.0%)</strong>" ] } ],
-    updatedAt: "20/03/2026, 14:25:51"
+    updateHistory: [ { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 14:25:46", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 10:57:46", changes: [ "✏️ <strong>xpcaught</strong>: de \"600000\" ➔ \"200000\"", "✏️ <strong>habilidades</strong>: de \"Cut, Fly, Headbutt\" ➔ \"Dig, Rock Smash, Cut, Light, Fly, Headbutt\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Fire punch (Lv 100), Air slash (Lv 100), Scary face (Lv 100), Ancient fury (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fire fang (Lv 100), Air slash (Lv 103), Scary face (Lv 102), Ancient fury (Lv Passiva)</strong>", "❌ Loots removidos: <strong style=\"color:var(--accent)\">Charizard doll (1-1, rar: 1.5%) | coal (1-80, rar: 80.0%)</strong>" ] } ],
+    updatedAt: "22/03/2026, 19:53:39"
+  
   },
         {
     nome: "Mega Charizard (X)",
@@ -15513,25 +17253,26 @@ const ShinysMegasArray = [
     shiny: "yes",
     mega: "yes",
     vip: "yes",
-    habilidades: ", Rock Smash, Cut, Light, Headbutt, Fly",
+    habilidades: "Dig, Rock Smash, Cut, Light, Headbutt, Fly",
     preevo: "Charizard",
     moves: [
-      { Ember: 80 },
-      { Flamethrower: 80 },
-      { "Thunder punch": 80 },
-      { "Dragon claw": 80 },
-      { "Dragon tail": 80 },
-      { "Dragon flight": 80 },
-      { "Dragon blast": 80 },
-      { "Dragon breath": 80 },
-      { "Fire blast": 80 },
-      { Outrage: 80 }
+      { Ember: 100 },
+      { Flamethrower: 100 },
+      { "Thunder Punch": 100 },
+      { "Dragon Claw": 100 },
+      { "Dragon Tail": 100 },
+      { "Dragon Flight": 100 },
+      { "Dragon Blast": 100 },
+      { "Dragon Breath": 100 },
+      { "Fire Blast": 100 },
+      { Outrage: 100 }
     ],
     mapas: [
       { top: 95.08, left: 79.61, text: "Embedded Tower - (VIP)" }
     ],
-    updateHistory: [ { date: "20/03/2026, 11:03:43", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "✏️ <strong>habilidades</strong>: de \", Rock Smash, Cut, Light, Headbutt, Fly.\" ➔ \", Rock Smash, Cut, Light, Headbutt, Fly\"" ] }, { date: "20/03/2026, 11:03:01", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Thunder punch (Lv 80), Dragon blast (Lv 80), Dragon breath (Lv 80), Outrage (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fireball (Lv 80), Dragon breath (Lv 82), Flame burst (Lv 80), Outrage (Lv 95), Tough claws (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \", Rock Smash, Cut, Light, Headbutt, Fly.\"" ] } ],
-    updatedAt: "20/03/2026, 11:03:43"
+    updateHistory: [ { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 11:03:43", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "✏️ <strong>habilidades</strong>: de \", Rock Smash, Cut, Light, Headbutt, Fly.\" ➔ \", Rock Smash, Cut, Light, Headbutt, Fly\"" ] }, { date: "20/03/2026, 11:03:01", changes: [ "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Thunder punch (Lv 80), Dragon blast (Lv 80), Dragon breath (Lv 80), Outrage (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fireball (Lv 80), Dragon breath (Lv 82), Flame burst (Lv 80), Outrage (Lv 95), Tough claws (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \", Rock Smash, Cut, Light, Headbutt, Fly.\"" ] } ],
+    updatedAt: "22/03/2026, 19:53:39"
+  
   },
       {
     nome: "Mega Charizard (Y)",
@@ -15548,22 +17289,23 @@ const ShinysMegasArray = [
     habilidades: "Dig, Rock Smash, Cut, Light, Headbutt, Fly",
     preevo: "Charizard",
     moves: [
-      { Ember: 80 },
-      { Flamethrower: 80 },
-      { Incinerate: 80 },
-      { "Air cutter": 80 },
-      { "Flame burst": 80 },
-      { "Fire blast": 80 },
-      { "Air slash": 80 },
-      { "Solar beam": 80 },
-      { "Blast burn": 80 },
-      { "Sunny day": 80 }
+      { Ember: 100 },
+      { Flamethrower: 100 },
+      { Incinerate: 100 },
+      { "Air Cutter": 100 },
+      { "Flame Burst": 100 },
+      { "Fire Blast": 100 },
+      { "Air Slash": 100 },
+      { "Solar Beam": 100 },
+      { "Blast Burn": 100 },
+      { "Sunny Day": 100 }
     ],
     mapas: [
       { top: 94.76, left: 79.26, text: "Embedded Tower - (VIP)" }
     ],
-    updatedAt: "20/03/2026, 11:07:14",
-    updateHistory: [ { date: "20/03/2026, 11:07:14", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Incinerate (Lv 80), Air cutter (Lv 80), Air slash (Lv 80), Blast burn (Lv 80), Sunny day (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fireball (Lv 80), Whirlwind (Lv 80), Air slash (Lv 83), Aerial ace (Lv 84), Sunny day (Lv 92), Drought (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \"Dig, Rock Smash, Cut, Light, Headbutt, Fly\"" ] } ]
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [ { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 11:07:14", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Incinerate (Lv 80), Air cutter (Lv 80), Air slash (Lv 80), Blast burn (Lv 80), Sunny day (Lv 80)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Fireball (Lv 80), Whirlwind (Lv 80), Air slash (Lv 83), Aerial ace (Lv 84), Sunny day (Lv 92), Drought (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \"Dig, Rock Smash, Cut, Light, Headbutt, Fly\"" ] } ]
+  
   },
   {
     nome: "Baby Squirtle",
@@ -15579,11 +17321,11 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Headbutt": 6 },
-      { "Bubbles": 6 },
-      { "Water gun": 8 },
-      { "Waterball": 6 },
-      { "Harden": 7 }
+      { Headbutt: 1 },
+      { Bubbles: 1 },
+      { "Water Gun": 1 },
+      { "Water Ball": 1 },
+      { Harden: 1 }
     ],
     loots: [
       { min: 1, max: 3, item: "water gem", rar: "80%" },
@@ -15591,7 +17333,11 @@ const ShinysMegasArray = [
     ],
     boost: 15,
     booStone: "Water stone",
-    habilidades: "Surf"
+    habilidades: "",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
           {
     nome: "Shiny Blastoise",
@@ -15613,14 +17359,14 @@ const ShinysMegasArray = [
     moves: [
       { Headbutt: 100 },
       { Bubbles: 100 },
-      { "Water gun": 100 },
-      { "Aqua tail": 100 },
-      { "Water pulse": 100 },
+      { "Water Gun": 100 },
+      { "Aqua Tail": 100 },
+      { "Water Pulse": 100 },
       { Brine: 100 },
-      { "Hydro cannon": 100 },
-      { "Skull bash": 105 },
-      { Hydropump: 100 },
-      { "Ancient armor": "Passiva" }
+      { "Hydro Cannon": 100 },
+      { "Skull Bash": 100 },
+      { "Hydro Pump": 100 },
+      { "Ancient Armor": 100 }
     ],
     loots: [
       { item: "water pendant", min: 1, max: 1, rar: "40.0%" },
@@ -15629,8 +17375,9 @@ const ShinysMegasArray = [
       { item: "Water stone", min: 1, max: 1, rar: "Raro" }
     ],
     mapas: [],
-    updateHistory: [ { date: "20/03/2026, 14:26:21", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 13:09:42", changes: [ "❌ Loots removidos: <strong style=\"color:var(--accent)\">Blastoise doll (1-1, rar: 1.5%)</strong>" ] }, { date: "20/03/2026, 13:08:08", changes: [ "✏️ <strong>xpcaught</strong>: de \"600000\" ➔ \"200000\"", "✏️ <strong>habilidades</strong>: de \"Surf, Headbutt\" ➔ \"Dig, Rock Smash, Surf, Headbutt\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Aqua tail (Lv 100), Hydropump (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Waterball (Lv 100), Hydropump (Lv 110)</strong>" ] } ],
-    updatedAt: "20/03/2026, 14:26:21"
+    updateHistory: [ { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 14:26:21", changes: [ "✨ <strong>pricenpc</strong> definido como: \"Unseleable\"" ] }, { date: "20/03/2026, 13:09:42", changes: [ "❌ Loots removidos: <strong style=\"color:var(--accent)\">Blastoise doll (1-1, rar: 1.5%)</strong>" ] }, { date: "20/03/2026, 13:08:08", changes: [ "✏️ <strong>xpcaught</strong>: de \"600000\" ➔ \"200000\"", "✏️ <strong>habilidades</strong>: de \"Surf, Headbutt\" ➔ \"Dig, Rock Smash, Surf, Headbutt\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Aqua tail (Lv 100), Hydropump (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Waterball (Lv 100), Hydropump (Lv 110)</strong>" ] } ],
+    updatedAt: "22/03/2026, 19:53:39"
+  
   },
       {
     nome: "Mega Blastoise",
@@ -15647,22 +17394,23 @@ const ShinysMegasArray = [
     habilidades: "Rock Smash, Headbutt, Dig, Surf",
     preevo: "Blastoise",
     moves: [
-      { Headbutt: 80 },
-      { Bubbles: 80 },
-      { Bubblebeam: 100 },
-      { "Hand water gun": 80 },
-      { "Water pulse": 80 },
-      { Brine: 80 },
-      { "Giant water gun": 100 },
-      { "Hydro cannon": 80 },
-      { Hydropump: 90 },
-      { "Rain dance": 80 }
+      { Headbutt: 100 },
+      { Bubbles: 100 },
+      { "Bubble Beam": 100 },
+      { "Hand Water Gun": 100 },
+      { "Water Pulse": 100 },
+      { Brine: 100 },
+      { "Giant Water Gun": 100 },
+      { "Hydro Cannon": 100 },
+      { "Hydro Pump": 100 },
+      { "Rain Dance": 100 }
     ],
     mapas: [
       { top: 94.84, left: 78.96, text: "Embedded Tower - (VIP)" }
     ],
-    updatedAt: "20/03/2026, 13:13:20",
-    updateHistory: [ { date: "20/03/2026, 13:13:20", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Bubblebeam (Lv 100), Giant water gun (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Giant water gun (Lv 80), Skull bash (Lv 85), Mega launcher (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \"Rock Smash, Headbutt, Dig, Surf\"" ] } ]
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [ { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }, { date: "20/03/2026, 13:13:20", changes: [ "✏️ <strong>level</strong>: de \"80\" ➔ \"100\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Bubblebeam (Lv 100), Giant water gun (Lv 100)</strong>", "❌ Moves removidos: <strong style=\"color:var(--accent)\">Giant water gun (Lv 80), Skull bash (Lv 85), Mega launcher (Lv Passiva)</strong>", "✨ <strong>habilidades</strong> definido como: \"Rock Smash, Headbutt, Dig, Surf\"" ] } ]
+  
   },
 
   
@@ -15670,7 +17418,7 @@ const ShinysMegasArray = [
 {
     nome: "Shiny Butterfree",
     numero: "12-1",
-    level: 60,
+    level: 80,
     clan: "Naturia, Wingeon",
     tipo: "Inseto, Voador",
     regiao: "Kanto",
@@ -15681,30 +17429,34 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Super sonic": 60 },
-      { "Silver wind": 60 },
-      { "Whirlwind": 62 },
-      { "Confusion": 64 },
-      { "Psybeam": 66 },
-      { "Air cutter": 68 },
-      { "Sleep powder": 60 },
-      { "Safeguard": 70 },
-      { "Poison powder": 60 }
+      { "Supersonic": 80 },
+      { "Silver Wind": 80 },
+      { "Air Slash": 80 },
+      { Gust: 80 },
+      { Psybeam: 80 },
+      { "Air Cutter": 80 },
+      { "Sleep Powder": 80 },
+      { Hurricane: 80 },
+      { Safeguard: 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "pot of moss bug", rar: "40.0%" },
       { min: 1, max: 1, item: "bag of pollem", rar: "40.0%" },
       { min: 1, max: 1, item: "Cocoon Stone", rar: "10.3%" }
     ],
-    boost: 4,
-    booStone: "Cocoon stone",
-    habilidades: "Flash"
+    boost: 3,
+    booStone: "Cocoon Stone ou Feather Stone",
+    habilidades: "light, fly e headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Beedrill",
     numero: "15-1",
-    level: 60,
+    level: 80,
     clan: "Naturia, Malefic",
     tipo: "Inseto, Venenoso",
     regiao: "Kanto",
@@ -15715,24 +17467,30 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "String shot": 60 },
-      { "Poison jab": 60 },
-      { "Poison sting": 60 },
-      { "Fury cutter": 65 },
-      { "Pin missile": 65 },
-      { "Toxic spikes": 62 },
-      { "Rage": 60 },
-      { "Strafe": 68 },
-      { "Evasion": "Passiva" }
+      { "String Shot": 80 },
+      { "Bug Bite": 80 },
+      { "U-Turn": 80 },
+      { "Pin Missile": 80 },
+      { "Fell Sting": 80 },
+      { Twineedle: 80 },
+      { "Savage Spirit": 80 },
+      { Swagger: 80 },
+      { "Swords Dance": 80 },
+      { Evasion: "P" },
+      { Adaptability: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "pot of moss bug", rar: "20.0%" },
       { min: 1, max: 1, item: "bag of pollem", rar: "20.0%" },
       { min: 1, max: 1, item: "Cocoon Stone", rar: "10.3%" }
     ],
-    boost: 4,
-    booStone: "Cocoon stone",
-    habilidades: "Cut"
+    boost: 3,
+    booStone: "Cocoon Stone ou Venom Stone",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -15751,15 +17509,15 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Quick attack": 100 },
-      { "Sand attack": 100 },
-      { "Whirlwind": 100 },
-      { "Drill peck": 100 },
-      { "Aeroblast": 104 },
-      { "Hurricane": 110 },
-      { "Hyper beam": 110 },
-      { "Agility": 100 },
-      { "Roost": 105 }
+      { "Quick Attack": 100 },
+      { "Sand Attack": 100 },
+      { "Drill Peck": 100 },
+      { "Wing Attack": 100 },
+      { Tornado: 100 },
+      { Hurricane: 100 },
+      { "Air Slash": 100 },
+      { Agility: 100 },
+      { Roost: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "feather", rar: "50.0%" },
@@ -15769,8 +17527,12 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Pidgeot doll", rar: "Raro" }
     ],
     boost: 2,
-    booStone: "Feather stone",
-    habilidades: "Fly, Headbutt"
+    booStone: "Feather Stone ou Heart Stone",
+    habilidades: "Headbutt, Fly",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -15787,21 +17549,24 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Quick attack": 10 },
-      { "Bite": 10 },
-      { "Scratch": 10 },
-      { "Pursuit": 10 },
-      { "Super fang": 10 },
-      { "Scary face": 12 },
-      { "Fury": "Passiva" }
+      { "Quick Attack": 10 },
+      { Bite: 10 },
+      { Scratch: 10 },
+      { Pursuit: 10 },
+      { "Super Fang": 10 },
+      { "Scary Face": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "bitten apple", rar: "25.0%" }
     ],
-    boost: 20,
+    boost: 15,
     evo: "Shiny Raticate",
     booStone: "Heart stone",
-    habilidades: "Headbutt"
+    habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -15818,14 +17583,14 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Quick attack": 60 },
-      { "Bite": 60 },
-      { "Scratch": 60 },
-      { "Pursuit": 60 },
-      { "Sucker punch": 63 },
-      { "Super fang": 60 },
-      { "Scary face": 62 },
-      { "Fury": "Passiva" }
+      { "Quick Attack": 60 },
+      { Bite: 60 },
+      { Crunch: 60 },
+      { Pursuit: 60 },
+      { "Sucker Punch": 60 },
+      { "Super Fang": 60 },
+      { "Scary Face": 60 },
+      { Fury: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bitten apple", rar: "25.0%" },
@@ -15833,15 +17598,19 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" }
     ],
     preevo: "Shiny Rattata",
-    boost: 8,
+    boost: 4,
     booStone: "Heart stone",
-    habilidades: "Dig, Cut, Headbutt"
+    habilidades: "Dig, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Fearow",
     numero: "22-1",
-    level: 120,
+    level: 100,
     clan: "Wingeon",
     tipo: "Normal, Voador",
     regiao: "Kanto",
@@ -15853,19 +17622,25 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Peck": 120 },
-      { "Feather dance": 120 },
-      { "Drill peck": 120 },
-      { "Air cutter": 120 },
-      { "Sky attack": 130 },
-      { "Air vortex": 120 },
-      { "Aerial ace": 120 },
-      { "Agility": 120 }
+      { Peck: 100 },
+      { "Feather Dance": 100 },
+      { "Drill Peck": 100 },
+      { "Wing Attack": 100 },
+      { Whirlwind: 100 },
+      { "Sky Attack": 100 },
+      { "Air Vortex": 100 },
+      { "Aerial Ace": 100 },
+      { Confide: 100 },
+      { Aerilate: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Feather stone",
-    habilidades: "Fly"
+    habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -15882,15 +17657,15 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Bite": 80 },
-      { "Fire fang": 80 },
-      { "Poison fang": 80 },
-      { "Poison bomb": 80 },
-      { "Gastro acid": 82 },
-      { "Gunk shot": 80 },
-      { "Sludge wave": 80 },
-      { "Intimidate": 86 },
-      { "Scary face": 84 }
+      { Bite: 80 },
+      { "Fire Fang": 80 },
+      { "Gunk Shot": 80 },
+      { Toxic: 80 },
+      { "Poison Tail": 80 },
+      { "Serpent Wrap": 80 },
+      { "Acid Rain": 80 },
+      { Intimidate: 80 },
+      { "Snake Sense": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "snake tail", rar: "4.3%" },
@@ -15898,9 +17673,13 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Venom stone", rar: "Raro" },
       { min: 1, max: 1, item: "tooth", rar: "25.5%" }
     ],
-    boost: 3,
-    booStone: "Venom stone",
-    habilidades: "Cut"
+    boost: 5,
+    booStone: "Dimensional Stone",
+    habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -15920,16 +17699,15 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Mega kick": 100 },
-      { "Thunder shock": 100 },
-      { "Thunder bolt": 100 },
-      { "Thunder wave": 100 },
-      { "Thunder punch": 100 },
-      { "Iron tail": 100 },
-      { "Body slam": 105 },
-      { "Thunder": 100 },
-      { "Electric storm": 110 },
-      { "Electric charge": "Passiva" }
+      { "Mega Kick": 100 },
+      { "Thunder Shock": 100 },
+      { Thunderbolt: 100 },
+      { "Volt Tackle": 100 },
+      { "Iron Tail": 100 },
+      { "Thunder Wrath": 100 },
+      { "Charge Beam": 100 },
+      { Discharge: 100 },
+      { "Focus Blast": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "electric box", rar: "35.0%" },
@@ -15939,13 +17717,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Light, Headbutt"
+    habilidades: "Dig, Rock Smash, Light e Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Nidoking",
     numero: "34-1",
-    level: 120,
+    level: 100,
     clan: "Malefic",
     tipo: "Venenoso, Terra",
     regiao: "Kanto",
@@ -15957,27 +17739,32 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Quick attack": 120 },
-      { "Horn attack": 120 },
-      { "Poison fang": 120 },
-      { "Poison jab": 120 },
-      { "Toxic spikes": 120 },
-      { "Sludge wave": 120 },
-      { "Venoshock": 120 },
-      { "Cross poison": 120 },
-      { "Fear": 120 },
-      { "Rage": 120 }
+      { "Quick Attack": 100 },
+      { "Horn Attack": 100 },
+      { "Poison Fang": 100 },
+      { "Poison Jab": 100 },
+      { "Toxic Spikes": 100 },
+      { Toxic: 100 },
+      { "Venom Drench": 100 },
+      { "Cross Poison": 100 },
+      { Fear: 100 },
+      { Rage: 100 },
+      { "Poison Point": "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Venom stone",
-    habilidades: "Dig, Rock smash, Headbutt"
+    habilidades: "Dig, Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Ninetales",
     numero: "38-1",
-    level: 150,
+    level: 100,
     clan: "Volcanic",
     tipo: "Fogo",
     regiao: "Kanto",
@@ -15991,16 +17778,16 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Quick attack": 150 },
-      { "Iron tail": 150 },
-      { "Ember": 150 },
-      { "Flamethrower": 150 },
-      { "Flame wheel": 150 },
-      { "Fireball": 150 },
-      { "Fire spin": 150 },
-      { "Fire blast": 154 },
-      { "Inferno": 160 },
-      { "Safeguard": 160 }
+      { "Quick Attack": 100 },
+      { "Iron Tail": 100 },
+      { Ember: 100 },
+      { Flamethrower: 100 },
+      { "Flame Wheel": 100 },
+      { "Fireball": 100 },
+      { "Fire Spin": 100 },
+      { "Fire Blast": 100 },
+      { Inferno: 100 },
+      { Safeguard: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "fox tail", rar: "10.0%" },
@@ -16011,13 +17798,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Fire stone",
-    habilidades: "Dig, Ride"
+    habilidades: "Dig, Ride, Strength, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Zubat",
     numero: "41-1",
-    level: 10,
+    level: 20,
     clan: "Malefic, Wingeon",
     tipo: "Venenoso, Voador",
     regiao: "Kanto",
@@ -16029,23 +17820,27 @@ const ShinysMegasArray = [
     evo: "Shiny Golbat",
     mapas: [],
     moves: [
-      { "Super sonic": 20 },
+      { "Supersonic": 20 },
       { "Bite": 20 },
       { "Poison fang": 20 },
       { "Toxic": 20 },
-      { "Whirlwind": 20 },
+      { "Air Slash": 20 },
       { "Wing attack": 20 },
-      { "Air cutter": 24 },
-      { "Lifesteal": "Passiva" }
+      { "Air cutter": 20 },
+      { Lifesteal: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "tooth", rar: "15.0%" },
       { min: 1, max: 1, item: "bat wing", rar: "8.0%" },
       { min: 1, max: 3, item: "bottle of poison", rar: "80.0%" }
     ],
-    boost: 10,
-    booStone: "Venom stone",
-    habilidades: ""
+    boost: 8,
+    booStone: "Venom Stone ou Feather Stone",
+    habilidades: "",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -16064,16 +17859,16 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Super sonic": 60 },
-      { "Bite": 60 },
-      { "Poison fang": 60 },
-      { "Toxic": 60 },
-      { "Gust": 62 },
-      { "Wing attack": 60 },
-      { "Air cutter": 68 },
-      { "Cross poison": 64 },
-      { "Venom gale": 75 },
-      { "Lifesteal": "Passiva" }
+      { Supersonic: 60 },
+      { "Leech Life": 60 },
+      { "Poison Fang": 60 },
+      { Toxic: 60 },
+      { Gust: 60 },
+      { "Wing Attack": 60 },
+      { "Air Cutter": 60 },
+      { "Cross Poison": 60 },
+      { "Venom Gale": 60 },
+      { Lifesteal: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bat wing", rar: "25.0%" },
@@ -16082,8 +17877,13 @@ const ShinysMegasArray = [
       { min: 1, max: 4, item: "bottle of poison", rar: "80.0%" }
     ],
     boost: 4,
-    booStone: "Venom stone",
-    habilidades: "Fly"
+    booStone: "Venom Stone ou Feather Stone",
+    habilidades: "Fly",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   
   
@@ -16101,20 +17901,25 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Absorb": 10 },
-      { "Leech seed": 10 },
-      { "Acid": 10 },
-      { "Poison bomb": 13 },
-      { "Poison gas": 17 },
-      { "Sleep powder": 10 },
-      { "Stun spore": 10 },
-      { "Poison powder": 10 },
-      { "Spores reaction": "Passiva" }
+      { Absorb: 10 },
+      { "Leech Seed": 10 },
+      { Acid: 10 },
+      { "Poison Bomb": 10 },
+      { "Poison Gas": 10 },
+      { "Sleep Powder": 10 },
+      { "Stun Spore": 10 },
+      { "Poison Powder": 10 },
+      { "Effect Spore": "P" },
+      { "Mega Drain": "P" }
     ],
     loots: [],
     boost: 15,
-    booStone: "Leaf stone",
-    habilidades: "Cut"
+    booStone: "Leaf Stone ou Venom Stone",
+    habilidades: "Light, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
 
@@ -16122,7 +17927,7 @@ const ShinysMegasArray = [
   {
     nome: "Shiny Vileplume",
     numero: "45-1",
-    level: 120,
+    level: 100,
     clan: "Naturia",
     tipo: "Grama",
     regiao: "Kanto",
@@ -16134,18 +17939,19 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Seed bomb": 120 },
-      { "Leech seed": 120 },
-      { "Magical leaf": 120 },
-      { "Leaf blade": 120 },
-      { "Petal dance": 120 },
-      { "Petal blizzard": 120 },
-      { "Sleep powder": 120 },
-      { "Sunny day": 120 },
-      { "Chlorophyll": "Passiva" },
-      { "Poison spore": "Passiva" },
-      { "Spores reaction": "Passiva" },
-      { "Mega drain": "Passiva" }
+      { "Seed Bomb": 100 },
+      { "Leech Seed": 100 },
+      { "Razor Leaf": 100 },
+      { "Magical Leaf": 100 },
+      { "Leaf Blade": 100 },
+      { "Petal Dance": 100 },
+      { "Petal Blizzard": 100 },
+      { "Sleep Powder": 100 },
+      { "Sunny Day": 100 },
+      { Chlorophyll: "P" },
+      { "Poison Spore": "P" },
+      { "Effect Spore": "P" },
+      { "Mega Drain": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "leaves", rar: "20.0%" },
@@ -16154,7 +17960,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Leaf stone",
-    habilidades: "Cut"
+    habilidades: "Light, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -16172,12 +17982,12 @@ const ShinysMegasArray = [
     evo: "Shiny Parasect", 
     mapas: [],
     moves: [
-      { "Scratch": 10 },
-      { "Poison sting": 10 },
-      { "Slash": 10 },
-      { "Stun spore": 15 },
-      { "Poison powder": 13 },
-      { "Sleep powder": 17 }
+      { Scratch: 10 },
+      { "Poison Sting": 10 },
+      { Slash: 10 },
+      { "Stun Spore": 10 },
+      { "Poison Powder": 10 },
+      { "Sleep Powder": 10 }
     ],
     loots: [
       { min: 1, max: 1, item: "mushroom", rar: "5.0%" },
@@ -16185,14 +17995,19 @@ const ShinysMegasArray = [
       { min: 1, max: 18, item: "seed", rar: "80.0%" }
     ],
     boost: 15,
-    booStone: "Cocoon stone",
-    habilidades: "Dig, Cut"
+    booStone: "Cocoon Stone ou Leaf Stone",
+    habilidades: "Light, Dig, Cut",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
     nome: "Shiny Parasect",
     numero: "47-1",
-    level: 60,
+    level: 80,
     clan: "Naturia",
     tipo: "Inseto, Grama",
     regiao: "Kanto",
@@ -16204,18 +18019,15 @@ const ShinysMegasArray = [
     preevo: "Shiny Paras", 
     mapas: [],
     moves: [
-      { "Absorb": 60 },
-      { "Leech life": 65 },
-      { "Poison sting": 60 },
-      { "Slash": 60 },
-      { "Poison bomb": 60 },
-      { "Stun spore": 60 },
-      { "Poison powder": 60 },
-      { "Sleep powder": 60 },
-      { "Fury cutter": 66 },
-      { "X scissor": 68 },
-      { "Mega drain": "Passiva" },
-      { "Spores reaction": "Passiva" }
+      { Absorb: 80 },
+      { "Leech Life": 80 },
+      { "Poison Sting": 80 },
+      { "Fury Cutter": 80 },
+      { "Cutting Blades": 80 },
+      { "Struggle Bug": 80 },
+      { "Compass Slash": 80 },
+      { Growth: 80 },
+      { "Sleep Powder": 80 }
     ],
     loots: [
       { min: 1, max: 1, item: "mushroom", rar: "30.0%" },
@@ -16223,15 +18035,19 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Cocoon stone", rar: "Raro" },
       { min: 1, max: 55, item: "seed", rar: "80.0%" }
     ],
-    boost: 4,
-    booStone: "Cocoon stone",
-    habilidades: "Dig, Cut"
+    boost: 3,
+    booStone: "Cocoon Stone ou Leaf Stone",
+    habilidades: "dig, rock smash, cut, light e headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Venonat",
     numero: "48-1",
-    level: 20,
+    level: 40,
     clan: "Naturia, Malefic",
     tipo: "Inseto, Venenoso",
     regiao: "Kanto",
@@ -16243,24 +18059,28 @@ const ShinysMegasArray = [
     evo: "Shiny Venomoth",
     mapas: [],
     moves: [
-      { "Super sonic": 20 },
-      { "Psybeam": 20 },
-      { "Silver wind": 20 },
-      { "Confusion": 26 },
-      { "Psychic": 20 },
-      { "Signal beam": 26 },
-      { "Bug buzz": 24 },
-      { "Sleep powder": 20 },
-      { "Poison powder": 20 }
+      { "Supersonic": 40 },
+      { "Leech Life": 40 },
+      { "Silver Wind": 40 },
+      { Confusion: 40 },
+      { Psychic: 40 },
+      { "Signal Beam": 40 },
+      { "Sludge Bomb": 40 },
+      { "Sleep Powder": 40 },
+      { "Poison Powder": 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "tooth", rar: "15.0%" },
       { min: 1, max: 1, item: "bug antenna", rar: "5.0%" },
       { min: 1, max: 22, item: "seed", rar: "80.0%" }
     ],
-    boost: 8,
-    booStone: "Venom stone",
-    habilidades: "Headbutt"
+    boost: 7,
+    booStone: "Venom Stone ou Cocoon Stone",
+    habilidades: "Light, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -16279,16 +18099,15 @@ const ShinysMegasArray = [
     preevo: "Shiny Venonat",
     mapas: [],
     moves: [
-      { "Super sonic": 100 },
-      { "Leech life": 105 },
-      { "Silver wind": 100 },
-      { "Confusion": 100 },
-      { "Psychic": 100 },
-      { "Signal beam": 100 },
-      { "Gust": 102 },
-      { "Bug buzz": 106 },
-      { "Sleep powder": 100 },
-      { "Poison powder": 100 }
+      { "Supersonic": 100 },
+      { "Leech Life": 100 },
+      { "Silver Wind": 100 },
+      { Confusion: 100 },
+      { Psychic: 100 },
+      { "Signal Beam": 100 },
+      { "Sludge Bomb": 100 },
+      { "Sleep Powder": 100 },
+      { "Air Slash": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "tooth", rar: "15.0%" },
@@ -16297,14 +18116,18 @@ const ShinysMegasArray = [
       { min: 1, max: 50, item: "seed", rar: "80.0%" }
     ],
     boost: 2,
-    booStone: "Venom stone",
-    habilidades: "Fly"
+    booStone: "Venom Stone ou Cocoon Stone",
+    habilidades: "Light, Fly",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Champion Primeape",
     numero: "57-1",
-    level: 100,
+    level: 80,
     clan: "Gardestrike",
     tipo: "Lutador",
     regiao: "Kanto",
@@ -16318,26 +18141,30 @@ const ShinysMegasArray = [
       { top: 20.07, left: 52.88, text: "Dimensional Zone - (VIP)" }
     ],
     moves: [
-      { "Triple kick": 100 },
-      { "Karate chop": 100 },
-      { "Revenge": 112 },
-      { "Cross chop": 104 },
-      { "Focus energy": 107 },
-      { "Final gambit": 105 },
-      { "Dynamicpunch": 110 },
-      { "Bulk up": 100 },
-      { "Foresight": "Passiva" }
+      { "Low Kick": 80 },
+      { "Mega Kick": 80 },
+      { "Karate Chop": 80 },
+      { "Anger Release": 80 },
+      { "Cross Chop": 80 },
+      { "Final Gambit": 80 },
+      { "Focus Energy": 80 },
+      { Rage: 80 },
+      { Foresight: "P" }
     ],
     loots: [],
-    boost: 3,
+    boost: 5,
     booStone: "Mirror stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Growlithe",
     numero: "58-1",
-    level: 30,
+    level: 50,
     clan: "Volcanic",
     tipo: "Fogo",
     regiao: "Kanto",
@@ -16350,15 +18177,16 @@ const ShinysMegasArray = [
     evo: "Shiny Arcanine",
     mapas: [],
     moves: [
-      { "Roar": 40 },
-      { "Bite": 30 },
-      { "Ember": 30 },
-      { "Flamethrower": 30 },
-      { "Fireball": 30 },
-      { "Fire fang": 30 },
-      { "Extremespeed": 30 },
-      { "Fire blast": 32 },
-      { "Heat wave": 34 }
+      { Roar: 50 },
+      { Bite: 50 },
+      { Ember: 50 },
+      { Flamethrower: 50 },
+      { "Fireball": 50 },
+      { "Fire Fang": 50 },
+      { "Extreme Speed": 50 },
+      { "Fire Blast": 50 },
+      { "Heat Wave": 50 },
+      { "War Dog": 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "pot of lava", rar: "10.0%" },
@@ -16366,9 +18194,14 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "fur", rar: "8.0%" },
       { min: 1, max: 12, item: "essence of fire", rar: "80.0%" }
     ],
-    boost: 8,
+    boost: 5,
     booStone: "Fire stone",
-    habilidades: "Dig, Headbutt"
+    habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
@@ -16388,16 +18221,16 @@ const ShinysMegasArray = [
     preevo: "Shiny Growlithe",
     mapas: [],
     moves: [
-      { "Roar": 110 },
-      { "Bite": 100 },
-      { "Ember": 100 },
-      { "Flamethrower": 100 },
+      { Roar: 100 },
+      { Bite: 100 },
+      { Ember: 100 },
+      { Flamethrower: 100 },
       { "Fireball": 100 },
-      { "Fire fang": 100 },
-      { "Extremespeed": 100 },
-      { "Fire blast": 102 },
-      { "Heat wave": 104 },
-      { "War dog": 106 }
+      { "Extreme Speed": 100 },
+      { "Fire Blast": 100 },
+      { "Hellfire Storm": 100 },
+      { "Run Over": 100 },
+      { "War Dog": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "pot of lava", rar: "20.0%" },
@@ -16408,13 +18241,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Fire stone",
-    habilidades: "Dig, Ride, Headbutt"
+    habilidades: "Dig, Ride, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Dark Abra",
     numero: "63-1",
-    level: 120,
+    level: 100,
     clan: "Malefic, Psycraft",
     tipo: "Fantasma, Psiquico",
     regiao: "Kanto",
@@ -16429,27 +18266,33 @@ const ShinysMegasArray = [
       { top: 23.57, left: 80.2, text: "Agatha Quest Area - (VIP)" }
     ],
     moves: [
-      { "Shadow ball": 120 },
-      { "Shadowave": 120 },
-      { "Shadow sphere": 120 },
-      { "Night shade": 120 },
-      { "Astonish": 120 },
-      { "Invisible": 120 },
-      { "Nightmare": 120 },
-      { "Hypnosis": 120 },
-      { "Reflect": 120 },
-      { "Morph": 120 }
+      { "Foul Play": 100 },
+      { "Shadow Ball": 100 },
+      { Shadowave: 100 },
+      { Flatter: 100 },
+      { "Dark Pulse": 100 },
+      { Vanish: 100 },
+      { Nightmare: 100 },
+      { Hypnosis: 100 },
+      { Reflect: 100 },
+      { Switcheroo: 100 },
+      { Morph: 100 },
+      { "Magic Guard": "P" }
     ],
     loots: [],
     boost: 2,
-    booStone: "Darkness stone",
-    habilidades: "Teleport, Light, Blink"
+    booStone: "Darkness Stone ou Enigma Stone",
+    habilidades: "Teleport, Light, Blink",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Light Abra",
     numero: "63-2",
-    level: 120,
+    level: 100,
     clan: "Malefic, Psycraft",
     tipo: "Fantasma, Psiquico",
     regiao: "Kanto",
@@ -16464,23 +18307,28 @@ const ShinysMegasArray = [
       { top: 24.2, left: 80.22, text: "Agatha Quest Area - (VIP)" }
     ],
     moves: [
-      { "Psy ball": 120 },
-      { "Psywave": 120 },
-      { "Psy pulse": 120 },
-      { "Confusion": 120 },
-      { "Psychic": 120 },
-      { "Invisible": 120 },
-      { "Dream eater": 120 },
-      { "Hypnosis": 120 },
-      { "Reflect": 120 },
-      { "Restore": 120 },
-      { "Morph": 120 }
+      { "Psy Pulse": 100 },
+      { "Shadow Ball": 100 },
+      { Psywave: 100 },
+      { Confusion: 100 },
+      { Psychic: 100 },
+      { Vanish: 100 },
+      { "Dream Eater": 100 },
+      { Hypnosis: 100 },
+      { Reflect: 100 },
+      { "Ally Switch": 100 },
+      { Morph: 100 },
+      { "Magic Guard": "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Light stone",
-    habilidades: "Teleport, Light, Blink"
-},
+    habilidades: "Teleport, Light, Blink",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  },
 
   {
     nome: "Shiny Alakazam",
@@ -16498,17 +18346,15 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Psybeam": 100 },
-      { "Psywave": 100 },
-      { "Psy pulse": 100 },
-      { "Confusion": 100 },
-      { "Psychic": 100 },
-      { "Psyusion": 115 },
-      { "Calm mind": 100 },
-      { "Hypnosis": 100 },
-      { "Reflect": 105 },
-      { "Restore": 105 },
-      { "Miracle eye": 100 }
+      { Psywave: 100 },
+      { "Psy Pulse": 100 },
+      { "Psy Ball": 100 },
+      { Psychic: 100 },
+      { Kinesis: 100 },
+      { Psychokinesis: 100 },
+      { Trick: 100 },
+      { Reflect: 100 },
+      { "Magic Guard": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "future orb", rar: "45.0%" },
@@ -16517,13 +18363,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Enigma stone",
-    habilidades: "Teleport, Light, Control mind, Blink"
+    habilidades: "Teleport, Light, Control Minds, Blink",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
     {
     nome: "Mega Alakazam",
     numero: "65-2",
-    level: 80,
+    level: 100,
     tipo: "Psiquico",
     clan: "Psycraft",
     regiao: "Kanto",
@@ -16534,18 +18384,23 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo: "Alakazam",
     moves: [
-      { Psybeam: 80 },
-      { "Psy pulse": 80 },
-      { Kinesis: 80 },
-      { Confusion: 80 },
-      { Psychic: 80 },
-      { "Future sight": 90 },
-      { "Instant teleportation": 80 },
-      { Reflect: 85 },
-      { Restore: 85 }
+      { Psybeam: 100 },
+      { "Psy Pulse": 100 },
+      { Kinesis: 100 },
+      { Confusion: 100 },
+      { Psychic: 100 },
+      { "Future Sight": 100 },
+      { "Instant Teleportation": 100 },
+      { Reflect: 100 },
+      { Recover: 100 }
     ],
     mapas: [
       { top: 95.34, left: 79.35, text: "Embedded tower" }
+    ],
+    habilidades: "Teleport, Light, Blink, Control Minds",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
     ]
   },
   
@@ -16566,15 +18421,15 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Triple punch": 100 },
-      { "Karate chop": 100 },
-      { "Revenge": 112 },
-      { "Focus blast": 100 },
-      { "Arm thrust": 106 },
-      { "Vital throw": 108 },
-      { "Dynamicpunch": 110 },
-      { "Agility": 100 },
-      { "Foresight": "Passiva" }
+      { "Triple Punch": 100 },
+      { "Karate Chop": 100 },
+      { Revenge: 100 },
+      { "Focus Blast": 100 },
+      { "Arm Thrust": 100 },
+      { "Vital Throw": 100 },
+      { "Dynamic Punch": 100 },
+      { Agility: 100 },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "belt of champion", rar: "Raro" },
@@ -16583,13 +18438,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Punch stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Tentacool",
     numero: "72-1",
-    level: 20,
+    level: 30,
     clan: "Seavell, Malefic",
     tipo: "Água, Venenoso",
     regiao: "Kanto",
@@ -16601,16 +18460,16 @@ const ShinysMegasArray = [
     evo: "Shiny Tentacruel",
     mapas: [],
     moves: [
-      { "Super sonic": 20 },
-      { "Wrap": 20 },
-      { "Bubbles": 20 },
-      { "Poison jab": 20 },
-      { "Waterball": 20 },
-      { "Bubblebeam": 20 },
-      { "Acid": 20 },
-      { "Poison bomb": 20 },
-      { "Mortal gas": 28 },
-      { "Hydropump": 30 }
+      { "Supersonic": 30 },
+      { Wrap: 30 },
+      { Bubbles: 30 },
+      { "Poison Jab": 30 },
+      { "Water Ball": 30 },
+      { "Bubble Beam": 30 },
+      { Acid: 30 },
+      { "Poison Bomb": 30 },
+      { "Mortal Gas": 30 },
+      { "Hydro Pump": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "water pendant", rar: "5.0%" },
@@ -16618,8 +18477,13 @@ const ShinysMegasArray = [
       { min: 1, max: 2, item: "water gem", rar: "80.0%" }
     ],
     boost: 10,
-    booStone: "Water stone",
-    habilidades: "Surf"
+    booStone: "Water Stone ou Venom Stone",
+    habilidades: "Surf",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
@@ -16638,17 +18502,17 @@ const ShinysMegasArray = [
     preevo: "Shiny Tentacool",
     mapas: [],
     moves: [
-      { "Super sonic": 100 },
-      { "Wrap": 100 },
-      { "Bubbles": 100 },
-      { "Poison jab": 100 },
-      { "Waterball": 100 },
-      { "Bubblebeam": 100 },
-      { "Acid": 100 },
-      { "Poison bomb": 100 },
-      { "Mortal gas": 110 },
-      { "Hydropump": 105 },
-      { "Liquid ooze": "Passiva" }
+      { Wrap: 100 },
+      { "Water Gun": 100 },
+      { "Bubble Beam": 100 },
+      { "Water Pulse": 100 },
+      { Acid: 100 },
+      { "Venomous Sting": 100 },
+      { "Sludge Wave": 100 },
+      { "Mortal Gas": 100 },
+      { Surf: 100 },
+      { Screech: 100 },
+      { "Liquid Ooze": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "water pendant", rar: "60.0%" },
@@ -16657,14 +18521,18 @@ const ShinysMegasArray = [
       { min: 1, max: 15, item: "water gem", rar: "80.0%" }
     ],
     boost: 2,
-    booStone: "Water stone",
-    habilidades: "Surf, Control mind"
+    booStone: "Water Stone ou Venom Stone",
+    habilidades: "Surf, Control Minds",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Golem",
     numero: "76-1",
-    level: 120,
+    level: 100,
     clan: "Orebound",
     tipo: "Pedra, Terra",
     regiao: "Kanto",
@@ -16676,20 +18544,23 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Rock throw": 120 },
-      { "Rock slide": 120 },
-      { "Stone edge": 120 },
-      { "Rock blast": 120 },
-      { "Rock wrecker": 125 },
-      { "Falling rocks": 120 },
-      { "Harden": 120 },
-      { "Rollout": 120 },
-      { "Explosion": 120 }
+      { "Rock Throw": 100 },
+      { "Rock Slide": 100 },
+      { "Ancient Power": 100 },
+      { "Rock Wrecker": 100 },
+      { "Falling Rocks": 100 },
+      { Harden: 100 },
+      { Rollout: 100 },
+      { Steamroller: 100 }
     ],
     loots: [],
     boost: 2,
     booStone: "Rock stone",
-    habilidades: "Dig, Rock smash, Headbutt"
+    habilidades: "Dig, Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -16709,25 +18580,29 @@ const ShinysMegasArray = [
       { top: 19.95, left: 53.2, text: "Dimensional Zone - (VIP)" }
     ],
     moves: [
-      { "Quick attack": 60 },
-      { "Ember": 60 },
-      { "Flamethrower": 66 },
-      { "Incinerate": 60 },
-      { "Flare blitz": 70 },
-      { "Hypnosis": 60 },
-      { "Stomp": 68 },
-      { "Morning sun": 60 }
+      { "Quick Attack": 60 },
+      { Ember: 60 },
+      { Stomp: 60 },
+      { "Flame Charge": 60 },
+      { Overheat: 60 },
+      { "Flare Blitz": 60 },
+      { Hypnosis: 60 },
+      { "Morning Sun": 60 }
     ],
     loots: [],
-    boost: 7,
+    boost: 6,
     booStone: "Mirror stone",
-    habilidades: "Ride, Headbutt"
+    habilidades: "Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
     {
     nome: "Mega Slowbro",
     numero: "80-1",
-    level: 80,
+    level: 100,
     tipo: "Água, Psiquico",
     clan: "Seavell, Psycraft",
     regiao: "Kanto",
@@ -16738,27 +18613,32 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo: "Slowbro",
     moves: [
-      { "Aqua tail": 80 },
-      { "Water gun": 80 },
-      { Withdraw: 84 },
-      { Scald: 82 },
-      { "Zen headbutt": 80 },
-      { Surf: 85 },
-      { "Calm mind": 80 },
-      { "Dream eater": 80 },
-      { Yawn: 86 },
-      { Amnesia: "Passiva" },
-      { Regenerator: "Passiva" }
+      { "Aqua Tail": 100 },
+      { "Water Pulse": 100 },
+      { Withdraw: 100 },
+      { Scald: 100 },
+      { "Zen Headbutt": 100 },
+      { Surf: 100 },
+      { "Calm Mind": 100 },
+      { "Dream Eater": 100 },
+      { Yawn: 100 },
+      { Amnesia: "P" },
+      { Regenerator: "P" }
     ],
     mapas: [
       { top: 19.87, left: 53.48, text: "Dimensional Zone - (VIP)" }
+    ],
+    habilidades: "Light, Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
     ]
   },
 
   {
     nome: "Shiny Magneton",
     numero: "82-1",
-    level: 150,
+    level: 100,
     clan: "Raibolt, Ironhard",
     tipo: "Elétrico, Metal",
     regiao: "Kanto",
@@ -16771,14 +18651,16 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Super sonic": 150 },
-      { "Thunder shock": 150 },
-      { "Spark": 150 },
-      { "Tri attack": 165 },
-      { "Thunder": 158 },
-      { "Electric storm": 162 },
-      { "Electro ball": 150 },
-      { "Flash cannon": 158 }
+      { "Supersonic": 100 },
+      { "Thunder Shock": 100 },
+      { Thunderbolt: 100 },
+      { "Electro Ball": 100 },
+      { Thunder: 100 },
+      { "Tri-Attack": 100 },
+      { "Flash Cannon": 100 },
+      { Discharge: 100 },
+      { "Magnet Pull": 100 },
+      { "Tri-Vision": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "magnet", rar: "100.0%" },
@@ -16789,7 +18671,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Light"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -16806,14 +18692,15 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Sand attack": 100 },
-      { "Drill peck": 100 },
-      { "Stickmerang": 104 },
-      { "Slash": 100 },
-      { "Stick throw": 106 },
-      { "Night slash": 100 },
-      { "Air slash": 103 },
-      { "Brave bird": 100 }
+      { "Sand Attack": 100 },
+      { "Drill Peck": 100 },
+      { Stickmerang: 100 },
+      { Slash: 100 },
+      { "Stick Throw": 100 },
+      { "Night Slash": 100 },
+      { "Air Slash": 100 },
+      { "Brave Bird": 100 },
+      { "Dual Wingbeat": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "feather", rar: "50.0%" },
@@ -16821,14 +18708,19 @@ const ShinysMegasArray = [
       { min: 1, max: 25, item: "straw", rar: "80.0%" }
     ],
     boost: 2,
-    booStone: "Feather stone",
-    habilidades: "Cut, Fly"
+    booStone: "Feather Stone ou Heart Stone",
+    habilidades: "Cut, Fly",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
     nome: "Shiny Dodrio",
     numero: "85-1",
-    level: 150,
+    level: 100,
     clan: "Wingeon",
     tipo: "Normal, Voador",
     regiao: "Kanto",
@@ -16843,16 +18735,17 @@ const ShinysMegasArray = [
       { top: 72.8, left: 36.06, text: "Sky Island - (VIP)" }
     ],
     moves: [
-      { "Peck": 150 },
-      { "Pluck": 155 },
-      { "Pursuit": 150 },
-      { "Trash": 155 },
-      { "Tri attack": 165 },
-      { "Double hit": 152 },
-      { "Sky attack": 160 },
-      { "Agility": 150 },
-      { "Taunt": 150 },
-      { "Uproar": "Passiva" }
+      { Uproar: 100 },
+      { Peck: 100 },
+      { "Drill Peck": 100 },
+      { "Knock Off": 100 },
+      { "Tri-Attack": 100 },
+      { "Jump Kick": 100 },
+      { Stampede: 100 },
+      { "Sky Attack": 100 },
+      { "Brave Bird": 100 },
+      { Growl: 100 },
+      { "Early Bird": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "dodrio feather", rar: "100.0%" },
@@ -16863,13 +18756,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Feather stone",
-    habilidades: "Ride"
+    habilidades: "Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Grimer",
     numero: "88-1",
-    level: 20,
+    level: 30,
     clan: "Malefic",
     tipo: "Venenoso",
     regiao: "Kanto",
@@ -16881,22 +18778,26 @@ const ShinysMegasArray = [
     evo: "Shiny Muk",
     mapas: [],
     moves: [
-      { "Mud shot": 20 },
-      { "Acid": 20 },
-      { "Sludge": 20 },
-      { "Mud bomb": 20 },
-      { "Poison bomb": 20 },
-      { "Venoshock": 32 },
-      { "Sludge wave": 20 },
-      { "Harden": 35 }
+      { "Mud Shot": 30 },
+      { Acid: 30 },
+      { Sludge: 30 },
+      { "Mud Bomb": 30 },
+      { "Poison Bomb": 30 },
+      { Venoshock: 30 },
+      { "Sludge Wave": 30 },
+      { Harden: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "gosme", rar: "10.0%" },
       { min: 1, max: 4, item: "bottle of poison", rar: "80.0%" }
     ],
-    boost: 10,
+    boost: 8,
     booStone: "Venom stone",
-    habilidades: ""
+    habilidades: "",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -16915,15 +18816,17 @@ const ShinysMegasArray = [
     preevo: "Shiny Grimer",
     mapas: [],
     moves: [
-      { "Mud shot": 100 },
-      { "Acid": 100 },
-      { "Sludge": 100 },
-      { "Mud bomb": 100 },
-      { "Poison bomb": 100 },
-      { "Venoshock": 112 },
-      { "Sludge wave": 100 },
-      { "Harden": 155 },
-      { "Acid armor": 108 }
+      { "Gunk Shot": 100 },
+      { Acid: 100 },
+      { Sludge: 100 },
+      { Toxic: 100 },
+      { "Sludge Wave": 100 },
+      { "Acid Rain": 100 },
+      { "Sludge Bomb": 100 },
+      { Stench: 100 },
+      { "Acid Armor": 100 },
+      { Memento: 100 },
+      { "Poison Body": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "gosme", rar: "30.0%" },
@@ -16932,7 +18835,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Venom stone",
-    habilidades: ""
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -16953,19 +18860,24 @@ const ShinysMegasArray = [
       { top: 19.07, left: 53.3, text: "Nightmare World - (VIP)" }
     ],
     moves: [
-      { "Bite": 100 },
-      { "Acid armor": 100 },
-      { "Crunch": 100 },
-      { "Gunk shot": 100 },
-      { "Sludge wave": 100 },
-      { "Poison fang": 100 },
-      { "Venoshock": 100 },
-      { "Toxic thread": 100 }
+      { "Poison Jab": 100 },
+      { Acid: 100 },
+      { Sludge: 100 },
+      { Toxic: 100 },
+      { "Mortal Gas": 100 },
+      { "Acid Rain": 100 },
+      { "Swamp Mist": 100 },
+      { Harden: 100 },
+      { "Poison Touch": 100 }
     ],
     loots: [],
     boost: 2,
-    booStone: "Darkness stone",
-    habilidades: ""
+    booStone: "Darkness Stone ou Venom Stone",
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   
 {
@@ -16983,25 +18895,30 @@ const ShinysMegasArray = [
     evo: "Shiny Haunter",
     mapas: [],
     moves: [
-      { "Lick": 30 },
-      { "Shadow ball": 30 },
-      { "Night shade": 36 },
-      { "Shadow storm": 45 },
-      { "Invisible": 34 },
-      { "Hypnosis": 38 },
-      { "Fear": 40 },
-      { "Levitate": "Passiva" }
+      { Lick: 30 },
+      { "Shadow Ball": 30 },
+      { "Night Shade": 30 },
+      { "Shadow Storm": 30 },
+      { Invisible: 30 },
+      { Hypnosis: 30 },
+      { Fear: 30 },
+      { Levitate: "P" }
     ],
     loots: [],
-    boost: 6,
-    booStone: "Darkness stone",
-    habilidades: ""
+    boost: 8,
+    booStone: "Darkness Stone ou Venom Stone",
+    habilidades: "",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
     nome: "Shiny Haunter",
     numero: "93-1",
-    level: 60,
+    level: 80,
     clan: "Malefic",
     tipo: "Fantasma, Venenoso",
     regiao: "Kanto",
@@ -17013,21 +18930,26 @@ const ShinysMegasArray = [
     preevo: "Shiny Gastly",
     mapas: [],
     moves: [
-      { "Lick": 60 },
-      { "Shadow ball": 60 },
-      { "Night shade": 60 },
-      { "Shadow storm": 75 },
-      { "Invisible": 60 },
-      { "Nightmare": 65 },
-      { "Hypnosis": 60 },
-      { "Fear": 60 },
-      { "Dark accurate": 1020 },
-      { "Levitate": "Passiva" }
+      { "Creepy Lick": 80 },
+      { "Shadow Ball": 80 },
+      { "Shadow Punch": 80 },
+      { Invisible: 80 },
+      { Curse: 80 },
+      { "Night Shade": 80 },
+      { "Shadow Storm": 80 },
+      { "Shadow Claw": 80 },
+      { Hypnosis: 80 },
+      { "Dark Accurate": "P" },
+      { Levitate: "P" }
     ],
     loots: [],
-    boost: 5,
-    booStone: "Darkness stone",
-    habilidades: ""
+    boost: 3,
+    booStone: "Darkness Stone ou Venom Stone",
+    habilidades: "control minds",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -17046,17 +18968,15 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Lick": 100 },
-      { "Shadow ball": 100 },
-      { "Shadow punch": 103 },
-      { "Snatch": 102 },
-      { "Shadow storm": 106 },
-      { "Invisible": 100 },
-      { "Nightmare": 100 },
-      { "Hypnosis": 100 },
-      { "Fear": 100 },
-      { "Dark accurate": 1000 },
-      { "Levitate": "Passiva" }
+      { "Creepy Lick": 100 },
+      { "Shadow Ball": 100 },
+      { "Night Shade": 100 },
+      { Astonish: 100 },
+      { "Shadow Storm": 100 },
+      { Hex: 100 },
+      { "Sucker Punch": 100 },
+      { "Will-O-Wisp": 100 },
+      { "Phantom Ambush": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "traces of ghost", rar: "47.3%" },
@@ -17066,8 +18986,12 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Venom stone", rar: "Raro" }
     ],
     boost: 2,
-    booStone: "Darkness stone",
-    habilidades: "Levitate, Control mind"
+    booStone: "Darkness Stone ou Venom Stone",
+    habilidades: "Levitate, Dark Portal, Control Minds",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   
   
@@ -17082,7 +19006,7 @@ const ShinysMegasArray = [
     {
     nome: "Mega Gengar",
     numero: "94-2",
-    level: 80,
+    level: 100,
     tipo: "Fantasma, Venenoso",
     clan: "Malefic",
     regiao: "Kanto",
@@ -17093,26 +19017,29 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo: "Gengar",
     moves: [
-      { "Sucker punch": 83 },
-      { "Shadow punch": 84 },
-      { "Night shade": 80 },
-      { "Scary face": 82 },
-      { "Shadow storm": 86 },
-      { Hex: 85 },
-      { Nightmare: 80 },
-      { Hypnosis: 80 },
-      { "Shadow tag": 80 },
-      { Levitate: "Passiva" }
+      { "Dark Pulse": 100 },
+      { "Shadow Ball": 100 },
+      { "Night Shade": 100 },
+      { "Scary Face": 100 },
+      { "Shadow Storm": 100 },
+      { Hex: 100 },
+      { Nightmare: 100 },
+      { Hypnosis: 100 },
+      { "Shadow Tag": 100 }
     ],
     mapas: [
       { top: 95.16, left: 79.92, text: "Embedded Tower - (VIP)" }
+    ],
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
     ]
   },
 
   {
     nome: "Crystal Onix",
     numero: "95-1",
-    level: 150,
+    level: 100,
     clan: "Ironhard, Orebound",
     tipo: "Crystal",
     regiao: "Kanto",
@@ -17127,15 +19054,15 @@ const ShinysMegasArray = [
       { top: 23.37, left: 63.8, text: "Crystal Cave - (VIP)" }
     ],
     moves: [
-      { "Sand attack": 100 },
-      { "Iron tail": 100 },
-      { "Rock throw": 100 },
-      { "Rock slide": 100 },
-      { "Earth power": 100 },
-      { "Falling rocks": 100 },
-      { "Earthquake": 100 },
-      { "Harden": 100 },
-      { "Camouflage": 104 }
+      { Tackle: 100 },
+      { "Mud Sludge": 100 },
+      { "Rock Throw": 100 },
+      { "Rock Slide": 100 },
+      { "Earth Power": 100 },
+      { "Falling Rocks": 100 },
+      { Earthquake: 100 },
+      { Harden: 100 },
+      { Camouflage: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "stone orb", rar: "15.0%" },
@@ -17146,7 +19073,12 @@ const ShinysMegasArray = [
     ],
     boost: 30,
     booStone: "Crystal stone",
-    habilidades: "Dig, Rock smash, Ride, Headbutt"
+    habilidades: "Dig, Rock Smash, Surf, Ride, Headbutt",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
@@ -17166,26 +19098,32 @@ const ShinysMegasArray = [
       { top: 19.21, left: 53.85, text: "Dimensional Zone - (VIP)" }
     ],
     moves: [
-      { "Slam": 100 },
-      { "Rock throw": 100 },
-      { "Rock slide": 100 },
-      { "Rock blast": 100 },
-      { "Sand tomb": 102 },
-      { "Earthquake": 110 },
-      { "Harden": 100 },
-      { "Stone pulse": "Passiva" },
-      { "Giant force": "Passiva" }
+      { Tackle: 100 },
+      { "Rock Throw": 100 },
+      { "Rock Slide": 100 },
+      { "Rock Blast": 100 },
+      { "Earth Power": 100 },
+      { "Falling Rocks": 100 },
+      { Harden: 100 },
+      { "Wide Guard": 100 },
+      { Sandstorm: 100 },
+      { "Giant Force": "P" },
+      { Protector: "P" }
     ],
     loots: [],
     boost: 3,
     booStone: "Dimensional stone",
-    habilidades: "Dig, Rock smash, Ride, Headbutt"
+    habilidades: "Dig, Rock smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Hypno",
     numero: "97-1",
-    level: 120,
+    level: 100,
     clan: "Psycraft",
     tipo: "Psiquico",
     regiao: "Kanto",
@@ -17197,29 +19135,33 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Psy pulse": 120 },
-      { "Psywave": 120 },
-      { "Psybeam": 120 },
-      { "Confusion": 120 },
-      { "Synchronoise": 120 },
-      { "Psyshock": 120 },
-      { "Warping reality": 120 },
-      { "Dream eater": 120 },
-      { "Hypnosis": 120 },
-      { "Nasty plot": 120 },
-      { "Miracle eye": 1000 },
-      { "Hypnotist": "Passiva" }
+      { "Psy Pulse": 100 },
+      { Psywave: 100 },
+      { Psybeam: 100 },
+      { Synchronoise: 100 },
+      { "Focus Blast": 100 },
+      { Psychic: 100 },
+      { Meditate: 100 },
+      { "Dream Eater": 100 },
+      { Hypnosis: 100 },
+      { "Psych Up": 100 },
+      { Insomnia: "P" },
+      { "Miracle Eye": 100 }
     ],
     loots: [],
     boost: 2,
     booStone: "Enigma stone",
-    habilidades: "Teleport, Light, Blink, Headbutt"
+    habilidades: "Teleport, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Krabby",
     numero: "98-1",
-    level: 10,
+    level: 30,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -17231,29 +19173,34 @@ const ShinysMegasArray = [
     evo: "Shiny Kingler",
     mapas: [],
     moves: [
-      { "Bubbles": 10 },
-      { "Bubblebeam": 10 },
-      { "Mud shot": 10 },
-      { "Crabhammer": 10 },
-      { "Metal claw": 15 },
-      { "Brine": 10 },
-      { "Hyper beam": 19 },
-      { "Guillotine": 20 },
-      { "Harden": 10 }
+      { "Mud Shot": 30 },
+      { Bubbles: 30 },
+      { "Bubble Beam": 30 },
+      { Guillotine: 30 },
+      { Crabhammer: 30 },
+      { Brine: 30 },
+      { "Hyper Beam": 30 },
+      { Harden: 30 },
+      { "Swords Dance": 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "crab claw", rar: "10.0%" },
       { min: 1, max: 2, item: "water gem", rar: "80.0%" }
     ],
-    boost: 10,
+    boost: 8,
     booStone: "Water stone",
-    habilidades: "Dig, Rock smash, Cut"
+    habilidades: "Dig, Rock smash, Cut",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
     nome: "Shiny Kingler",
     numero: "99-1",
-    level: 60,
+    level: 100,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -17265,30 +19212,34 @@ const ShinysMegasArray = [
     preevo: "Shiny Krabby",
     mapas: [],
     moves: [
-      { "Bubbles": 60 },
-      { "Bubblebeam": 60 },
-      { "Mud shot": 60 },
-      { "Crabhammer": 60 },
-      { "Metal claw": 67 },
-      { "Brine": 60 },
-      { "Hyper beam": 69 },
-      { "Guillotine": 62 },
-      { "Harden": 60 }
+      { "Mud Shot": 100 },
+      { Bubbles: 100 },
+      { "Bubble Beam": 100 },
+      { Guillotine: 100 },
+      { "Water Pulse": 100 },
+      { "Razor Shell": 100 },
+      { Crabhammer: 100 },
+      { "Aqua Impact": 100 },
+      { "Swords Dance": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "crab claw", rar: "10.0%" },
       { min: 1, max: 1, item: "Water stone", rar: "Raro" },
       { min: 1, max: 5, item: "water gem", rar: "80.0%" }
     ],
-    boost: 5,
+    boost: 2,
     booStone: "Water stone",
-    habilidades: "Dig, Rock smash, Headbutt, Cut"
+    habilidades: "Dig, Rock smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Voltorb",
     numero: "100-1",
-    level: 20,
+    level: 30,
     clan: "Raibolt",
     tipo: "Elétrico",
     regiao: "Kanto",
@@ -17300,13 +19251,13 @@ const ShinysMegasArray = [
     evo: "Shiny Electrode",
     mapas: [],
     moves: [
-      { "Thunder shock": 10 },
-      { "Spark": 10 },
-      { "Thunder wave": 10 },
-      { "Rollout": 10 },
-      { "Charge beam": 10 },
-      { "Electric storm": 15 },
-      { "Selfdestruction": 10 }
+      { "Thunder Shock": 30 },
+      { Spark: 30 },
+      { "Thunder Wave": 30 },
+      { Rollout: 30 },
+      { "Charge Beam": 30 },
+      { "Electric Storm": 30 },
+      { Explosion: 30 }
     ],
     loots: [
       { min: 1, max: 1, item: "electric box", rar: "8.0%" },
@@ -17314,13 +19265,17 @@ const ShinysMegasArray = [
     ],
     boost: 10,
     booStone: "Thunder stone",
-    habilidades: "Light"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Electrode",
     numero: "101-1",
-    level: 80,
+    level: 100,
     clan: "Raibolt",
     tipo: "Elétrico",
     regiao: "Kanto",
@@ -17332,30 +19287,34 @@ const ShinysMegasArray = [
     preevo: "Shiny Voltorb",
     mapas: [],
     moves: [
-      { "Magic coat": 80 },
-      { "Thunder shock": 80 },
-      { "Spark": 80 },
-      { "Thunder wave": 80 },
-      { "Rollout": 80 },
-      { "Charge beam": 84 },
-      { "Electro ball": 80 },
-      { "Electric storm": 88 },
-      { "Selfdestruction": 80 }
+      { Charge: 100 },
+      { "Thunder Shock": 100 },
+      { Spark: 100 },
+      { Rollout: 100 },
+      { "Thunder Wrath": 100 },
+      { "Thunder Sphere": 100 },
+      { "Electric Storm": 100 },
+      { Discharge: 100 },
+      { Explosion: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "electric box", rar: "16.0%" },
       { min: 1, max: 1, item: "Thunder stone", rar: "Raro" },
       { min: 1, max: 16, item: "screw", rar: "80.0%" }
     ],
-    boost: 3,
+    boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Light"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Cubone",
     numero: "104-1",
-    level: 20,
+    level: 40,
     clan: "Orebound",
     tipo: "Terra",
     regiao: "Kanto",
@@ -17367,25 +19326,28 @@ const ShinysMegasArray = [
     evo: "Shiny Marowak",
     mapas: [],
     moves: [
-      { "Mud shot": 20 },
-      { "Headbutt": 20 },
-      { "Bonemerang": 20 },
-      { "Bone club": 20 },
-      { "Bone rush": 20 },
-      { "Earth power": 24 },
-      { "Bulldoze": 26 },
-      { "Rage": 30 },
-      { "Smack down": 30 },
-      { "Bone spin": "Passiva" }
+      { "Mud Shot": 40 },
+      { Headbutt: 40 },
+      { Bonemerang: 40 },
+      { "Bone Club": 40 },
+      { "Bone Rush": 40 },
+      { "Earth Power": 40 },
+      { Bulldoze: 40 },
+      { Rage: 40 },
+      { "Bone Spin": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bone", rar: "50.0%" },
       { min: 1, max: 22, item: "small stone", rar: "80.0%" },
       { min: 1, max: 1, item: "Cubone doll", rar: "Raro" }
     ],
-    boost: 9,
+    boost: 7,
     booStone: "Earth stone",
-    habilidades: "Dig, Rock smash, Cut, Headbutt"
+    habilidades: "Dig, Rock smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -17404,16 +19366,15 @@ const ShinysMegasArray = [
     preevo: "Shiny Cubone",
     mapas: [],
     moves: [
-      { "Mud sport": 100 },
-      { "Headbutt": 100 },
-      { "Bonemerang": 100 },
-      { "Bone club": 100 },
-      { "Bone rush": 100 },
-      { "Earth power": 104 },
-      { "Bulldoze": 106 },
-      { "Rage": 100 },
-      { "Smack down": 110 },
-      { "Bone spin": "Passiva" }
+      { "Mud Sport": 100 },
+      { Headbutt: 100 },
+      { Bonemerang: 100 },
+      { "Bone Club": 100 },
+      { "Bone Rush": 100 },
+      { "Earth Power": 100 },
+      { Bulldoze: 100 },
+      { Rage: 100 },
+      { "Bone Spin": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "bone", rar: "80.0%" },
@@ -17423,13 +19384,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Earth stone",
-    habilidades: "Dig, Rock smash, Cut, Headbutt"
+    habilidades: "Dig, Rock smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Elite Hitmonlee",
     numero: "106-1",
-    level: 120,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Lutador",
     regiao: "Kanto",
@@ -17442,25 +19407,31 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Triple kick lee": 120 },
-      { "Mega kick": 120 },
-      { "Hi jump kick": 120 },
-      { "Flash kick": 125 },
-      { "Low sweep": 120 },
-      { "Demon kicker": "Passiva" },
-      { "Evasion": "Passiva" },
-      { "Foresight": "Passiva" }
+      { "Triple Kick Lee": 100 },
+      { "Mega Kick": 100 },
+      { "Hi jump kick": 100 },
+      { "Jump Kick": 100 },
+      { "Demoniac Sweep": 100 },
+      { "Mind Reader": 100 },
+      { "Demon Kicker": "P" },
+      { Evasion: "P" },
+      { Foresight: "P" },
+      { Limber: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Punch stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Elite Hitmonchan",
     numero: "107-1",
-    level: 120,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Lutador",
     regiao: "Kanto",
@@ -17473,26 +19444,30 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Triple punch": 120 },
-      { "Mega punch": 120 },
-      { "Focus punch": 120 },
-      { "Ultimate champion": 120 },
-      { "Elemental hands": 120 },
-      { "Detect": 120 },
-      { "Quick guard": 125 },
-      { "Demon puncher": "Passiva" },
-      { "Foresight": "Passiva" }
+      { "Triple Punch": 100 },
+      { "Mega Punch": 100 },
+      { "Focus Punch": 100 },
+      { "Ultimate Champion": 100 },
+      { "Elemental Hands": 100 },
+      { Detect: 100 },
+      { "Quick Guard": 100 },
+      { "Demon Puncher": "P" },
+      { Foresight: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Punch stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   }, 
   
 {
     nome: "Shiny Rhydon",
     numero: "112-1",
-    level: 150,
+    level: 100,
     clan: "Orebound",
     tipo: "Terra, Pedra",
     regiao: "Kanto",
@@ -17507,15 +19482,15 @@ const ShinysMegasArray = [
       { top: 88.09, left: 60.87, text: "Rock Tunnel Deep - (VIP)" }
     ],
     moves: [
-      { "Horn attack": 150 },
-      { "Stone edge": 150 },
-      { "Rock throw": 150 },
-      { "Dig": 152 },
-      { "Horn drill": 150 },
-      { "Bulldoze": 153 },
-      { "Hammer arm": 150 },
-      { "Fissure": 160 },
-      { "Drill run": 157 }
+      { "Horn Attack": 100 },
+      { "Stomping Tantrum": 100 },
+      { "Horn Burst": 100 },
+      { Dig: 100 },
+      { "Horn Drill": 100 },
+      { Bulldoze: 100 },
+      { "Hammer Arm": 100 },
+      { Fissure: 100 },
+      { "Drill Run": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "horn drill", rar: "100.0%" },
@@ -17527,7 +19502,12 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Earth stone",
-    habilidades: "Dig, Rock smash, Headbutt"
+    habilidades: "Dig, Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
@@ -17546,16 +19526,15 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Absorb": 100 },
-      { "Leech seed": 100 },
-      { "Vine whip": 100 },
-      { "Power whip": 108 },
-      { "Wrap": 100 },
-      { "Vine grap": 108 },
-      { "Poison powder": 100 },
-      { "Stun spore": 100 },
-      { "Mega drain": "Passiva" },
-      { "Spores reaction": "Passiva" }
+      { "Grass Knot": 100 },
+      { "Nature Power": 100 },
+      { "Bullet Seed": 100 },
+      { "Vine Whip": 100 },
+      { "Power Whip": 100 },
+      { "Vine Maze": 100 },
+      { "Leaf Storm": 100 },
+      { "Sunny Day": 100 },
+      { Chlorophyll: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "blue vines", rar: "2.0%" },
@@ -17564,13 +19543,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Leaf stone",
-    habilidades: "Cut"
+    habilidades: "Rock Smash, Cut, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
     {
     nome: "Mega Kangaskhan",
     numero: "115-1",
-    level: 80,
+    level: 100,
     tipo: "Normal",
     clan: "Gardestrike",
     regiao: "Kanto",
@@ -17581,27 +19564,32 @@ const ShinysMegasArray = [
     vip: "yes",
     preeevo: "Kangaskhan",
     moves: [
-      { Bite: 80 },
-      { "Dizzy punch": 80 },
-      { Headbutt: 80 },
-      { "Mega punch": 80 },
-      { Crunch: 80 },
-      { "Sucker punch": 83 },
-      { "Comet punch": 80 },
-      { Epicenter: 94 },
-      { Rage: 80 },
-      { Groundshock: "Passiva" },
-      { "Parental bond": "Passiva" }
+      { Bite: 100 },
+      { "Dizzy Punch": 100 },
+      { Headbutt: 100 },
+      { "Mega Punch": 100 },
+      { Crunch: 100 },
+      { "Sucker Punch": 100 },
+      { "Comet Punch": 100 },
+      { Epicenter: 100 },
+      { Rage: 100 },
+      { Groundshock: "P" },
+      { "Parental Bond": "P" }
     ],
     mapas: [
       { top: 95.1, left: 79.22, text: "Embedded Tower - (VIP)" }
+    ],
+    habilidades: "Cut, Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
     ]
   },
 
   {
     nome: "Shiny Horsea",
     numero: "116-1",
-    level: 10,
+    level: 20,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -17613,22 +19601,25 @@ const ShinysMegasArray = [
     evo: "Shiny Seadra",
     mapas: [],
     moves: [
-      { "Mud shot": 10 },
-      { "Smokescreen": 10 },
-      { "Quick attack": 10 },
-      { "Bubbles": 10 },
-      { "Bubblebeam": 10 },
-      { "Water gun": 10 },
-      { "Dragon pulse": 15 },
-      { "Hydro cannon": 20 },
-      { "Dragon rage": "Passiva" }
+      { "Mud Shot": 20 },
+      { Smokescreen: 20 },
+      { "Water Gun": 20 },
+      { Bubbles: 20 },
+      { "Bubble Beam": 20 },
+      { "Dragon Pulse": 20 },
+      { "Hydro Cannon": 20 },
+      { "Dragon Rage": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "water pendant", rar: "5.0%" }
     ],
     boost: 10,
     booStone: "Water stone",
-    habilidades: "Headbutt"
+    habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -17646,15 +19637,16 @@ const ShinysMegasArray = [
     preevo: "Shiny Horsea",
     mapas: [],
     moves: [
-      { "Mud shot": 60 },
-      { "Smokescreen": 60 },
-      { "Quick attack": 60 },
-      { "Bubbles": 60 },
-      { "Bubblebeam": 60 },
-      { "Water gun": 60 },
-      { "Dragon pulse": 65 },
-      { "Hydro cannon": 65 },
-      { "Dragon rage": "Passiva" }
+      { "Mud Shot": 60 },
+      { Smokescreen: 60 },
+      { "Water Gun": 60 },
+      { Bubbles: 60 },
+      { "Bubble Beam": 60 },
+      { Twister: 60 },
+      { "Dragon Pulse": 60 },
+      { "Hydro Cannon": 60 },
+      { "Focus Energy": 60 },
+      { "Dragon Rage": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "water pendant", rar: "10.0%" },
@@ -17663,13 +19655,17 @@ const ShinysMegasArray = [
     ],
     boost: 4,
     booStone: "Water stone",
-    habilidades: "Surf, Headbutt"
+    habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Goldeen",
     numero: "118-1",
-    level: 40,
+    level: 30,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -17680,29 +19676,34 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Super sonic": 40 },
-      { "Horn attack": 40 },
-      { "Waterfall": 45 },
-      { "Water gun": 40 },
-      { "Water pulse": 40 },
-      { "Aqua tail": 40 },
-      { "Horn drill": 48 },
-      { "Aqua ring": 40 }
+      { "Supersonic": 30 },
+      { "Horn Attack": 30 },
+      { "Aqua Tail": 30 },
+      { "Water Pulse": 30 },
+      { "Water Gun": 30 },
+      { Waterfall: 30 },
+      { "Horn Drill": 30 },
+      { "Aqua Ring": 30 }
     ],
     loots: [
       { min: 1, max: 4, item: "fish fin", rar: "9.0%" },
       { min: 1, max: 39, item: "water gem", rar: "80.0%" },
       { min: 1, max: 1, item: "blue fish fin", rar: "100.0%" }
     ],
-    boost: 10,
+    boost: 8,
     booStone: "Water stone",
-    habilidades: "Surf"
+    habilidades: "Surf",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
     nome: "Shiny Staryu",
     numero: "120-1",
-    level: 50,
+    level: 40,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -17713,22 +19714,27 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Swift": 50 },
-      { "Water gun": 50 },
-      { "Bubblebeam": 53 },
-      { "Psyshock": 58 },
-      { "Psychic": 50 },
-      { "Harden": 50 },
-      { "Recover": 55 }
+      { Swift: 40 },
+      { "Water Gun": 40 },
+      { "Bubble Beam": 40 },
+      { "Water Pulse": 40 },
+      { "Hydro Pump": 40 },
+      { Harden: 40 },
+      { Recover: 40 }
     ],
     loots: [
       { min: 1, max: 1, item: "blue gem star", rar: "100.0%" },
       { min: 1, max: 49, item: "water gem", rar: "80.0%" },
       { min: 1, max: 1, item: "ruby", rar: "55.0%" }
     ],
-    boost: 10,
+    boost: 7,
     booStone: "Water stone",
-    habilidades: "Surf"
+    habilidades: "Light, Surf",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
@@ -17748,16 +19754,14 @@ const ShinysMegasArray = [
     preevo: "Mr.mime",
     mapas: [],
     moves: [
-      { "Play rough": 100 },
-      { "Psywave": 100 },
-      { "Dazzling gleam": 104 },
-      { "Confusion": 100 },
-      { "Psychic": 100 },
-      { "Psyusion": 115 },
-      { "Reflect": 100 },
-      { "Mimic wall": 100 },
-      { "Barrier": 120 },
-      { "Miracle eye": 1000 }
+      { "Play Rough": 100 },
+      { Psywave: 100 },
+      { "Dazzling Gleam": 100 },
+      { Confusion: 100 },
+      { Synchronoise: 100 },
+      { Psyusion: 100 },
+      { "Mimic Wall": 100 },
+      { Barrier: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "mimic clothes", rar: "14.3%" },
@@ -17767,7 +19771,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Enigma stone",
-    habilidades: "Teleport, Light, Blink"
+    habilidades: "Teleport, Light, Headbutt, Blink",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -17787,17 +19795,17 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Quick attack": 100 },
-      { "Night slash": 100 },
-      { "Wing attack": 100 },
-      { "Fury cutter": 105 },
-      { "Shredder team": 115 },
-      { "Air slash": 103 },
-      { "Agility": 100 },
-      { "Team slice": 118 },
-      { "Swords dance": 108 },
-      { "Counter helix": "Passiva" },
-      { "Evasion": "Passiva" }
+      { "Bug Bite": 100 },
+      { "U-Turn": 100 },
+      { Lunge: 100 },
+      { "X-Scissor": 100 },
+      { "Shredder Team": 100 },
+      { "Compass Slash": 100 },
+      { "Swords Dance": 100 },
+      { "Team Slice": 100 },
+      { "Fury Cutter": 100 },
+      { "Hunter Instinct": 100 },
+      { "Counter Helix": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "scythe", rar: "Raro" },
@@ -17805,8 +19813,12 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Cocoon stone", rar: "Raro" }
     ],
     boost: 2,
-    booStone: "Cocoon stone",
-    habilidades: "Cut, Fly, Headbutt"
+    booStone: "Cocoon Stone ou Feather Stone",
+    habilidades: "Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -17826,16 +19838,16 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Lovely kiss": 100 },
-      { "Draining kiss": 100 },
-      { "Psywave": 100 },
-      { "Psy pulse": 100 },
-      { "Ice ball": 100 },
-      { "Ice beam": 100 },
-      { "Icy wind": 100 },
-      { "Aurora beam": 104 },
-      { "Blizzard": 106 },
-      { "Heart stamp": 108 }
+      { "Lovely Kiss": 100 },
+      { "Draining Kiss": 100 },
+      { Psywave: 100 },
+      { "Psy Pulse": 100 },
+      { "Ice Punch": 100 },
+      { "Ice Beam": 100 },
+      { "Icy Wind": 100 },
+      { "Aurora Beam": 100 },
+      { Blizzard: 100 },
+      { "Heart Stamp": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "ice orb", rar: "40.0%" },
@@ -17843,8 +19855,12 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Ice stone", rar: "Raro" }
     ],
     boost: 2,
-    booStone: "Ice stone",
-    habilidades: "Teleport, Blink"
+    booStone: "Ice Stone ou Enigma Stone",
+    habilidades: "Teleport, Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -17864,15 +19880,15 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Low kick": 100 },
-      { "Electroweb": 100 },
-      { "Thunder punch": 100 },
-      { "Thunder shock": 100 },
-      { "Thunder bolt": 100 },
-      { "Focus blast": 100 },
-      { "Thunder": 100 },
-      { "Mamaragan": 110 },
-      { "Static": "Passiva" }
+      { "Quick Attack": 100 },
+      { Electroweb: 100 },
+      { "Thunder Punch": 100 },
+      { "Thunder Shock": 100 },
+      { Thunderbolt: 100 },
+      { "Lightning Fist": 100 },
+      { Thunder: 100 },
+      { Mamaragan: 100 },
+      { Static: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "electric box", rar: "35.0%" },
@@ -17882,7 +19898,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Rock smash, Light, Headbutt"
+    habilidades: "Rock smash, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   }, 
   
 
@@ -17903,16 +19923,16 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Scratch": 100 },
-      { "Smog": 100 },
-      { "Fire punch": 100 },
-      { "Ember": 100 },
-      { "Fire spin": 100 },
-      { "Focus blast": 100 },
-      { "Fire blast": 100 },
-      { "Magma fist": 100 },
-      { "Magma storm": 105 },
-      { "Flame body": "Passiva" }
+      { Scratch: 100 },
+      { Smog: 100 },
+      { "Fire Punch": 100 },
+      { Ember: 100 },
+      { "Fire Spin": 100 },
+      { Overheat: 100 },
+      { "Fire Blast": 100 },
+      { "Magma Fist": 100 },
+      { "Magma Storm": 100 },
+      { "Flame Body": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "magma foot", rar: "6.0%" },
@@ -17922,7 +19942,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Fire stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Light, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -17941,24 +19965,28 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Crunch": 100 },
-      { "Brick break": 100 },
-      { "Bind": 100 },
-      { "Bulldoze": 100 },
-      { "Fury cutter": 108 },
-      { "Guillotine": 110 },
-      { "Revenge": 112 },
-      { "Harden": 102 },
-      { "Swords dance": 108 },
-      { "Bug instinct": "Passiva" },
-      { "Seismic toss": "Passiva" }
+      { "Bug Bite": 100 },
+      { "Vital Throw": 100 },
+      { Bind: 100 },
+      { "Fury cutter": 100 },
+      { Guillotine: 100 },
+      { "X-Scissor": 100 },
+      { "Savage Spirit": 100 },
+      { "Secret Power": 100 },
+      { "Bug Instinct": "P" },
+      { "Seismic Toss": "P" },
+      { Foresight: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "Pinsir horn", rar: "80.0%" }
     ],
     boost: 2,
     booStone: "Cocoon stone",
-    habilidades: "Cut, Rock smash, Headbutt"
+    habilidades: "Dig, Cut, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -17977,16 +20005,16 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Horn attack": 100 },
-      { "Take down": 100 },
-      { "Pursuit": 100 },
-      { "Thrash": 105 },
-      { "Giga impact": 105 },
-      { "Hyper beam": 110 },
-      { "Stampede": 105 },
-      { "Scary face": 106 },
-      { "Rage": 100 },
-      { "Rest": 110 }
+      { "Horn Attack": 100 },
+      { "Take Down": 100 },
+      { Pursuit: 100 },
+      { Thrash: 100 },
+      { "Hyper Beam": 100 },
+      { Stampede: 100 },
+      { Leer: 100 },
+      { "Focus Energy": 100 },
+      { Concentrate: 100 },
+      { "Anger Point": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "Heart stone", rar: "Raro" },
@@ -17996,7 +20024,12 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Heart stone",
-    habilidades: "Rock smash, Ride, Headbutt"
+    habilidades: "Rock smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
@@ -18018,7 +20051,13 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Magikarp fin", rar: "80.0%" },
       { min: 1, max: 1, item: "water gem", rar: "80.0%" }
     ],
-    habilidades: ""
+    habilidades: "",
+    boost: 30,
+    booStone: "Water Stone",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }
+    ]
   },
 
   {
@@ -18041,7 +20080,13 @@ const ShinysMegasArray = [
     loots: [
       { min: 1, max: 10, item: "Magikarp fin", rar: "80.0%" }
     ],
-    habilidades: ""
+    habilidades: "",
+    boost: 10,
+    booStone: "Water Stone",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }
+    ]
   },
 
   {
@@ -18064,7 +20109,13 @@ const ShinysMegasArray = [
     loots: [
       { min: 1, max: 30, item: "Magikarp fin", rar: "80.0%" }
     ],
-    habilidades: ""
+    habilidades: "",
+    boost: 7,
+    booStone: "Water Stone",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler" ] }
+    ]
   },
 
   {
@@ -18088,15 +20139,19 @@ const ShinysMegasArray = [
     loots: [
       { min: 1, max: 5, item: "Shiny magikarp fin", rar: "80.0%" }
     ],
-    boost: 20,
+    boost: 10,
     booStone: "Water stone",
-    habilidades: ""
+    habilidades: "",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Giant Magikarp",
     numero: "129-5",
-    level: 60,
+    level: 100,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -18108,28 +20163,31 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Aqua tail": 60 },
-      { "Waterball": 60 },
-      { "Splash": 60 },
-      { "Water pulse": 60 },
-      { "Whirlpool": 70 },
-      { "Hydropump": 70 },
-      { "Surf": 100 },
-      { "Rain dance": 80 },
-      { "Dragon rage": "Passiva" }
+      { Splash: 100 },
+      { "Aqua Tail": 100 },
+      { "Water Ball": 100 },
+      { "Water Pulse": 100 },
+      { "Hydro Pump": 100 },
+      { Surf: 100 },
+      { "Rain Dance": 100 },
+      { Rattled: "P" }
     ],
     loots: [
       { min: 1, max: 10, item: "Shiny magikarp fin", rar: "80.0%" }
     ],
-    boost: 5,
+    boost: 2,
     booStone: "Water stone",
-    habilidades: "Surf"
+    habilidades: "Surf",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Gyarados",
     numero: "130-1",
-    level: 120,
+    level: 100,
     clan: "Seavell, Wingeon",
     tipo: "Água, Voador",
     regiao: "Kanto",
@@ -18142,16 +20200,16 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Roar": 130 },
-      { "Dragon tail": 120 },
-      { "Aqua tail": 120 },
-      { "Waterball": 120 },
-      { "Twister": 124 },
-      { "Hydro cannon": 120 },
-      { "Dragon breath": 122 },
-      { "Hyper beam": 120 },
-      { "Hydropump": 128 },
-      { "Dragon dance": 126 }
+      { Roar: 100 },
+      { Bind: 100 },
+      { "Dragon Tail": 100 },
+      { "Aqua Tail": 100 },
+      { "Water Ball": 100 },
+      { "Dragon Pulse": 100 },
+      { "Hydro Cannon": 100 },
+      { "Dragon Breath": 100 },
+      { "Hyper Beam": 100 },
+      { "Hydro Pump": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "water pendant", rar: "100.0%" },
@@ -18160,9 +20218,13 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Crystal stone", rar: "Raro" },
       { min: 1, max: 15, item: "water gem", rar: "80.0%" }
     ],
-    boost: 10,
+    boost: 30,
     booStone: "Crystal stone",
-    habilidades: "Surf, Headbutt"
+    habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -18188,7 +20250,7 @@ const ShinysMegasArray = [
   {
     nome: "Shiny Eevee",
     numero: "133-1",
-    level: 70,
+    level: 60,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Kanto",
@@ -18199,25 +20261,31 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Sweet kiss": 70 },
-      { "Quick attack": 70 },
-      { "Bite": 70 },
-      { "Headbutt": 70 },
-      { "Iron tail": 76 },
-      { "Great love": 78 },
-      { "Fake tears": 76 },
-      { "Wish": 70 }
+      { "Sweet Kiss": 60 },
+      { "Quick Attack": 60 },
+      { Bite: 60 },
+      { Swift: 60 },
+      { "Iron Tail": 60 },
+      { "Great Love": 60 },
+      { "Fake Tears": 60 },
+      { "Double Team": 60 },
+      { "Helping Hand": 60 },
+      { "Lovely Wish": "P" }
     ],
     loots: [],
     boost: 6,
     booStone: "Dimensional stone",
-    habilidades: "Dig"
+    habilidades: "dig e headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Vaporeon",
     numero: "134-1",
-    level: 120,
+    level: 100,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Kanto",
@@ -18229,26 +20297,30 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Quick attack": 120 },
-      { "Water gun": 120 },
-      { "Bubblebeam": 120 },
-      { "Water pulse": 120 },
-      { "Muddy water": 120 },
-      { "Aurora beam": 120 },
-      { "Hydropump": 120 },
-      { "Acid armor": 120 },
-      { "Aqua ring": 120 }
+      { Tackle: 100 },
+      { "Water Gun": 100 },
+      { "Bubble Beam": 100 },
+      { "Water Ball": 100 },
+      { "Water Pulse": 100 },
+      { Surf: 100 },
+      { "Hydro Pump": 100 },
+      { "Flip Turn": 100 },
+      { "Acid Armor": 100 }
     ],
     loots: [],
     boost: 2,
     booStone: "Water stone",
-    habilidades: "Dig, Surf, Headbutt"
+    habilidades: "Rock Smash, Dig, Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Jolteon",
     numero: "135-1",
-    level: 120,
+    level: 100,
     clan: "Raibolt",
     tipo: "Elétrico",
     regiao: "Kanto",
@@ -18260,26 +20332,31 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Quick attack": 120 },
-      { "Thunder bolt": 120 },
-      { "Thunder fang": 120 },
-      { "Pin missile": 120 },
-      { "Last resort": 120 },
-      { "Thunder": 120 },
-      { "Electric storm": 120 },
-      { "Volt fang": 120 },
-      { "Agility": 120 }
+      { Charge: 100 },
+      { Spark: 100 },
+      { Thunderbolt: 100 },
+      { "Pin Missile": 100 },
+      { "Electro Ball": 100 },
+      { Thunder: 100 },
+      { Discharge: 100 },
+      { "Volt Fang": 100 },
+      { Agility: 100 },
+      { "Spiky Fur": "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Dig, Light, Headbutt"
+    habilidades: "Rock Smash, Dig, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Flareon",
     numero: "136-1",
-    level: 120,
+    level: 100,
     clan: "Volcanic",
     tipo: "Fogo",
     regiao: "Kanto",
@@ -18291,20 +20368,23 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Quick attack": 120 },
-      { "Bite": 120 },
-      { "Flamethrower": 120 },
-      { "Sacred fire": 120 },
-      { "Blaze kick": 120 },
-      { "Flame burst": 120 },
-      { "Overheat": 120 },
-      { "Fire blast": 120 },
-      { "Magma storm": 120 }
+      { Ember: 100 },
+      { Incinerate: 100 },
+      { "Fire Spin": 100 },
+      { "Fireball": 100 },
+      { "Flame Charge": 100 },
+      { "Will-O-Wisp": 100 },
+      { Overheat: 100 },
+      { "Hellfire Storm": 100 }
     ],
     loots: [],
     boost: 2,
     booStone: "Fire stone",
-    habilidades: "Dig, Headbutt"
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -18321,27 +20401,31 @@ const ShinysMegasArray = [
     heavy: "yes",
     vip: "yes",
     moves: [
-      { "Super sonic": 200 },
-      { "Psybeam": 200 },
-      { "Psycho cut": 208 },
-      { "Psychic": 200 },
-      { "Zap cannon": 204 },
-      { "Hyper beam": 210 },
-      { "Tri attack": 215 },
-      { "Focus energy": 210 },
-      { "Magic coat": 208 },
-      { "Restore": 200 },
-      { "Illusion": 200 }
-    
+      { "Supersonic": 200 },
+      { Psybeam: 200 },
+      { "Psycho Cut": 200 },
+      { Psychic: 200 },
+      { "Zap Cannon": 200 },
+      { "Hyper Beam": 200 },
+      { "Tri-Attack": 200 },
+      { "Focus Energy": 200 },
+      { "Magic Coat": 200 },
+      { Recover: 200 },
+      { Illusion: 200 }
     ],
     loots: [],
-    habilidades: "Teleport, Light, Fly, Blink"
+    habilidades: "Teleport, Light, Fly, Blink",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
     nome: "Shiny Snorlax",
     numero: "143-1",
-    level: 200,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Kanto",
@@ -18354,15 +20438,16 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Lick": 200 },
-      { "Bite": 200 },
-      { "Crunch": 200 },
-      { "Mega punch": 200 },
-      { "Body slam": 204 },
-      { "Giga impact": 205 },
-      { "Hyper beam": 205 },
-      { "Crusher stomp": 210 },
-      { "Eating grapefruit": 206 }
+      { Tackle: 100 },
+      { Headbutt: 100 },
+      { Crunch: 100 },
+      { Covet: 100 },
+      { "Body Slam": 100 },
+      { "Pulverizing Pancake": 100 },
+      { "Hyper Beam": 100 },
+      { "Crusher Stomp": 100 },
+      { Rest: 100 },
+      { Snore: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "bitten apple", rar: "20.0%" },
@@ -18374,13 +20459,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Heart stone",
-    habilidades: "Rock smash, Surf, Headbutt"
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Dratini",
     numero: "147-1",
-    level: 40,
+    level: 50,
     clan: "Wingeon",
     tipo: "Dragão",
     regiao: "Kanto",
@@ -18392,22 +20481,27 @@ const ShinysMegasArray = [
     evo: "Shiny Dragonair",
     mapas: [],
     moves: [
-      { "Aqua tail": 40 },
-      { "Thunder wave": 40 },
-      { "Slam": 40 },
-      { "Wrap": 40 },
-      { "Dragon tail": 40 },
-      { "Dragon breath": 42 },
-      { "Twister": 44 },
-      { "Hyper beam": 48 },
-      { "Dragon rage": "Passiva" }
+      { "Aqua Tail": 50 },
+      { "Thunder Wave": 50 },
+      { Slam: 50 },
+      { Wrap: 50 },
+      { "Dragon Tail": 50 },
+      { "Dragon Breath": 50 },
+      { Twister: 50 },
+      { "Hyper Beam": 50 },
+      { "Dragon Rage": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "water pendant", rar: "10.0%" }
     ],
     boost: 50,
     booStone: "Crystal stone",
-    habilidades: "Headbutt"
+    habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
@@ -18426,24 +20520,28 @@ const ShinysMegasArray = [
     preevo: "Shiny Dratini",
     mapas: [],
     moves: [
-      { "Iron tail": 100 },
-      { "Thunder wave": 100 },
-      { "Slam": 100 },
-      { "Wrap": 100 },
-      { "Dragon tail": 100 },
-      { "Dragon breath": 102 },
-      { "Twister": 104 },
-      { "Hyper beam": 108 },
-      { "Draco meteor": 115 },
-      { "Dragon rage": "Passiva" }
+      { Swift: 100 },
+      { Slam: 100 },
+      { "Dragon Tail": 100 },
+      { Wrap: 100 },
+      { Twister: 100 },
+      { "Dragon Breath": 100 },
+      { "Dragon Flight": 100 },
+      { "Dragon Pulse": 100 },
+      { "Draco Meteor": 100 },
+      { "Dragon Dance": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "water pendant", rar: "30.0%" },
       { min: 1, max: 1, item: "Crystal stone", rar: "Raro" }
     ],
-    boost: 50,
+    boost: 30,
     booStone: "Crystal stone",
-    habilidades: "Fly, Headbutt"
+    habilidades: "Light, Fly, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   
   
@@ -18471,14 +20569,16 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Razor leaf": 100 },
-      { "Magical leaf": 100 },
-      { "Petal dance": 100 },
-      { "Leaf tornado": 110 },
-      { "Ingrain": 110 },
-      { "Sleep plague": 100 },
-      { "Light screen": 100 },
-      { "Aromatherapy": 104 }
+      { "Razor Leaf": 100 },
+      { "Magical Leaf": 100 },
+      { "Petal Bullets": 100 },
+      { "Petal Dance": 100 },
+      { "Natural Gift": 100 },
+      { "Sweet Scent": 100 },
+      { "Light Screen": 100 },
+      { Aromatherapy: 100 },
+      { Reflect: 100 },
+      { "Naturial Guardian": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "great petal", rar: "97.0%" },
@@ -18489,7 +20589,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Leaf stone",
-    habilidades: "Cut, Ride, Headbutt"
+    habilidades: "Light, Cut, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -18509,15 +20613,16 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Quick attack": 100 },
-      { "Swift": 100 },
-      { "Ember": 100 },
-      { "Flamethrower": 100 },
-      { "Flame circle": 100 },
-      { "Smokescreen": 100 },
-      { "Eruption": 100 },
-      { "Flare blitz": 110 },
-      { "Inferno": 110 }
+      { "Quick Attack": 100 },
+      { "Fire Punch": 100 },
+      { Ember: 100 },
+      { "Flame Wheel": 100 },
+      { "Fire Spin": 100 },
+      { Smokescreen: 100 },
+      { Eruption: 100 },
+      { "Burn Up": 100 },
+      { Inferno: 100 },
+      { "Defense Curl": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "hot fur", rar: "100.0%" },
@@ -18528,7 +20633,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Fire stone",
-    habilidades: "Dig, Rock smash, Cut, Headbutt"
+    habilidades: "Dig, Rock smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -18548,16 +20657,16 @@ const ShinysMegasArray = [
     
     mapas: [],
     moves: [
-      { "Crunch": 100 },
-      { "Bubbles": 100 },
-      { "Water pulse": 100 },
-      { "Ice fang": 100 },
-      { "Thrash": 100 },
-      { "Hydro cannon": 100 },
-      { "Waterfall": 100 },
-      { "Water spout": 110 },
-      { "Scary face": 102 },
-      { "Agility": 100 }
+      { Crunch: 100 },
+      { "Aqua Jet": 100 },
+      { Liquidation: 100 },
+      { "Ice Fang": 100 },
+      { "Aqua Tail": 100 },
+      { "Hydro Cannon": 100 },
+      { Waterfall: 100 },
+      { "Water Spout": 100 },
+      { "Scary Face": 100 },
+      { Agility: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "red scale", rar: "100.0%" },
@@ -18568,13 +20677,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Water stone",
-    habilidades: "Surf, Cut, Headbutt"
+    habilidades: "Surf, Rock Smash, Cut, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Noctowl",
     numero: "164-1",
-    level: 80,
+    level: 100,
     clan: "Gardestrike, Wingeon",
     tipo: "Normal, Voador",
     regiao: "Johto",
@@ -18587,25 +20700,33 @@ const ShinysMegasArray = [
       { top: 19.95, left: 53.12, text: "Dimensional Zone - (VIP)" }
     ],
     moves: [
-      { "Quick attack": 80 },
-      { "Peck": 80 },
-      { "Fly": 82 },
-      { "Echoed voice": 85 },
-      { "Air slash": 83 },
-      { "Hurricane": 90 },
-      { "Dream eater": 80 },
-      { "Hypnosis": 80 }
+      { "Quick Attack": 100 },
+      { Peck: 100 },
+      { "Feather Dance": 100 },
+      { "Air Slash": 100 },
+      { "Sky Attack": 100 },
+      { Uproar: 100 },
+      { Hypnosis: 100 },
+      { "Calm Mind": 100 },
+      { Protect: 100 },
+      { Aerilate: "P" },
+      { Protector: "P" },
+      { Insomnia: "P" }
     ],
     loots: [],
-    boost: 5,
+    boost: 3,
     booStone: "Dimensional stone",
-    habilidades: "Fly"
+    habilidades: "Light, Fly",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Ariados",
     numero: "168-1",
-    level: 150,
+    level: 100,
     clan: "Naturia",
     tipo: "Inseto, Venenoso",
     regiao: "Johto",
@@ -18620,16 +20741,16 @@ const ShinysMegasArray = [
       { top: 57.69, left: 35.14, text: "Jungle Island Deep - (VIP)" }
     ],
     moves: [
-      { "String shot": 150 },
-      { "Bug bite": 150 },
-      { "Poison sting": 150 },
-      { "Fury swipes": 150 },
-      { "X scissor": 160 },
-      { "Psychic": 157 },
-      { "Pin missile": 153 },
-      { "Spider web": 150 },
-      { "Signal beam": 150 },
-      { "Web rain": 160 }
+      { "String Shot": 100 },
+      { "Bug Bite": 100 },
+      { "Poison Sting": 100 },
+      { "Fury Swipes": 100 },
+      { "X-Scissor": 100 },
+      { Psychic: 100 },
+      { "Pin Missile": 100 },
+      { "Spider Web": 100 },
+      { "Signal Beam": 100 },
+      { "Web Rain": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "spider leg", rar: "100.0%" },
@@ -18640,13 +20761,18 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Cocoon stone",
-    habilidades: ""
+    habilidades: "Light, Cut, Dig",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
     nome: "Shiny Crobat",
     numero: "169-1",
-    level: 80,
+    level: 100,
     clan: "Malefic, Wingeon",
     tipo: "Venenoso, Voador",
     regiao: "Johto",
@@ -18661,16 +20787,16 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Super sonic": 80 },
-      { "Bite": 80 },
-      { "Poison fang": 80 },
-      { "Toxic": 80 },
-      { "Air slash": 83 },
-      { "Wing attack": 80 },
-      { "Air cutter": 88 },
-      { "Cross poison": 84 },
-      { "Venom gale": 95 },
-      { "Lifesteal": "Passiva" }
+      { "Supersonic": 100 },
+      { "Leech Life": 100 },
+      { Pluck: 100 },
+      { Toxic: 100 },
+      { "Air Slash": 100 },
+      { "Wing Attack": 100 },
+      { "Air Cutter": 100 },
+      { "Sky Attack": 100 },
+      { "Cross Poison": 100 },
+      { Lifesteal: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "giant bat wing", rar: "17.0%" },
@@ -18681,7 +20807,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Venom stone",
-    habilidades: "Fly"
+    habilidades: "Fly, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -18699,16 +20829,16 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Super sonic": 100 },
-      { "Bubbles": 100 },
-      { "Bubblebeam": 100 },
-      { "Spark": 100 },
-      { "Thunder wave": 100 },
-      { "Water pulse": 100 },
-      { "Surf": 105 },
-      { "Wild charge": 105 },
-      { "Hydropump": 110 },
-      { "Bright light": 110 }
+      { "Supersonic": 100 },
+      { Bubbles: 100 },
+      { "Bubble Beam": 100 },
+      { Spark: 100 },
+      { "Thunder Wave": 100 },
+      { "Water Pulse": 100 },
+      { Surf: 100 },
+      { "Electro Ball": 100 },
+      { "Hydro Pump": 100 },
+      { Illuminate: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "point of light", rar: "84.3%" },
@@ -18723,8 +20853,12 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "fins", rar: "Raro" }
     ],
     boost: 2,
-    booStone: "Water stone",
-    habilidades: "Light"
+    booStone: "Water Stone ou Thunder Stone",
+    habilidades: "Surf e Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -18742,15 +20876,16 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Peck": 100 },
-      { "Feather dance": 100 },
-      { "Confuse ray": 102 },
-      { "Shadow ball": 100 },
-      { "Night shade": 105 },
-      { "Astonish": 100 },
-      { "Tailwind": 100 },
-      { "Predict": 105 },
-      { "Double team": 102 }
+      { Peck: 100 },
+      { "Shadow Sphere": 100 },
+      { "Confuse Ray": 100 },
+      { "Shadow Ball": 100 },
+      { "Night Shade": 100 },
+      { Astonish: 100 },
+      { Tailwind: 100 },
+      { Predict: 100 },
+      { "Double Team": 100 },
+      { Fearless: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "strange wing", rar: "100.0%" },
@@ -18761,7 +20896,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Enigma stone",
-    habilidades: "Teleport, Light, Blink"
+    habilidades: "Teleport, Light, Blink, Fly",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -18781,16 +20920,15 @@ const ShinysMegasArray = [
     preevo: "Ampharos",
     mapas: [],
     moves: [
-      { "Charge": 100 },
-      { "Fire punch": 100 },
-      { "Cotton spore": 100 },
-      { "Thunder bolt": 100 },
-      { "Thunder shock": 100 },
-      { "Thunder wave": 100 },
-      { "Thunder punch": 100 },
-      { "Thunder": 100 },
-      { "Electro field": 110 },
-      { "Signal beam": 100 }
+      { Charge: 100 },
+      { "Thunder Punch": 100 },
+      { "Power Gem": 100 },
+      { Thunderbolt: 100 },
+      { "Thunder Shock": 100 },
+      { "Electro Ball": 100 },
+      { "Heal Bell": 100 },
+      { Discharge: 100 },
+      { "Electro Field": 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "sheep wool", rar: "100.0%" },
@@ -18800,13 +20938,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Light, Headbutt"
+    habilidades: "Light, Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
-    {
+      {
     nome: "Mega Ampharos",
     numero: "181-2",
-    level: 80,
+    level: 100,
     tipo: "Elétrico, Dragão",
     clan: "Raibolt, Wingeon",
     regiao: "Johto",
@@ -18815,27 +20957,31 @@ const ShinysMegasArray = [
     shiny: "yes",
     mega: "yes",
     vip: "yes",
+    habilidades: "Headbutt, Rock Smash, Dig",
+    preevo: "Ampharos",
     moves: [
-      { Charge: 80 },
-      { "Dragon tail": 80 },
-      { "Cotton spore": 80 },
-      { "Thunder bolt": 80 },
-      { "Thunder shock": 80 },
-      { "Power gem": 80 },
-      { "Dragon mist": 85 },
-      { "Dragon pulse": 85 },
-      { "Electro field": 90 },
-      { Outrage: 95 }
+      { Charge: 100 },
+      { "Dragon Tail": 100 },
+      { "Cotton Spore": 100 },
+      { Thunderbolt: 100 },
+      { "Thunder Shock": 100 },
+      { "Power Gem": 100 },
+      { "Dragon Mist": 100 },
+      { "Dragon Pulse": 100 },
+      { "Light Screen": 100 },
+      { Outrage: 100 }
     ],
     mapas: [
       { top: 95.32, left: 79.93, text: "Embedded Tower - (VIP)" }
-    ]
+    ],
+    updateHistory: [ { date: "23/03/2026, 01:20:26", changes: [ "✨ <strong>preevo</strong> definido como: \"Ampharos\"" ] }, { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] } ],
+    updatedAt: "23/03/2026, 01:20:26"
   },
 
   {
     nome: "Shiny Politoed",
     numero: "186-1",
-    level: 150,
+    level: 100,
     clan: "Seavell",
     tipo: "Água",
     regiao: "Johto",
@@ -18850,16 +20996,16 @@ const ShinysMegasArray = [
       { top: 53.19, left: 23.55, text: "Deep Sea - (VIP)" }
     ],
     moves: [
-      { "Mud shot": 150 },
-      { "Doubleslap": 150 },
-      { "Bubblebeam": 150 },
-      { "Water gun": 150 },
-      { "Hyper voice": 150 },
-      { "Whirlpool": 152 },
-      { "Tongue hook": 155 },
-      { "Tongue grap": 158 },
-      { "Hydropump": 160 },
-      { "Hypnosis": 150 }
+      { "Mud Shot": 100 },
+      { Doubleslap: 100 },
+      { "Bubble Beam": 100 },
+      { "Water Gun": 100 },
+      { "Hyper Voice": 100 },
+      { Whirlpool: 100 },
+      { "Tongue Hook": 100 },
+      { "Tongue Grap": 100 },
+      { "Hydro Pump": 100 },
+      { Hypnosis: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "strange thing", rar: "100.0%" },
@@ -18869,13 +21015,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Water stone",
-    habilidades: "Surf, Headbutt"
+    habilidades: "Surf, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Espeon",
     numero: "196-1",
-    level: 150,
+    level: 100,
     clan: "Psycraft",
     tipo: "Psiquico",
     regiao: "Johto",
@@ -18890,16 +21040,16 @@ const ShinysMegasArray = [
       { top: 40, left: 60, text: "Psychic Tower - (VIP)" }
     ],
     moves: [
-      { "Charm": 150 },
-      { "Swift": 150 },
-      { "Bite": 150 },
-      { "Psywave": 150 },
-      { "Psy pulse": 150 },
-      { "Confusion": 150 },
-      { "Psychic": 154 },
-      { "Psyshock": 158 },
-      { "Psyusion": 165 },
-      { "Miracle eye": 1000 }
+      { Charm: 100 },
+      { Swift: 100 },
+      { Bite: 100 },
+      { Psywave: 100 },
+      { "Psy Pulse": 100 },
+      { Confusion: 100 },
+      { Psychic: 100 },
+      { Psychock: 100 },
+      { Psyusion: 100 },
+      { Reflect: 100 }
     ],
     loots: [
       { min: 1, max: 99, item: "enchanted gem", rar: "100.0%" },
@@ -18907,13 +21057,17 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Enigma stone",
-    habilidades: "Dig, Teleport, Headbutt, Blink"
+    habilidades: "Light, Dig, Teleport, Cut, Rock Smash, Headbutt, Blink",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Umbreon",
     numero: "197-1",
-    level: 150,
+    level: 100,
     clan: "Malefic",
     tipo: "Noturno",
     regiao: "Johto",
@@ -18926,15 +21080,15 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Bite": 150 },
-      { "Faint attack": 150 },
-      { "Shadowave": 150 },
-      { "Dark pulse": 150 },
-      { "Pursuit": 150 },
-      { "Confuse ray": 154 },
-      { "Last resort": 150 },
-      { "Assurance": 158 },
-      { "Night daze": 156 }
+      { Bite: 100 },
+      { "Feint Attack": 100 },
+      { Shadowave: 100 },
+      { "Dark Pulse": 100 },
+      { Persuit: 100 },
+      { "Confused Ray": 100 },
+      { "Last Resort": 100 },
+      { Assurance: 100 },
+      { "Night Daze": 100 }
     ],
     loots: [
       { min: 1, max: 99, item: "dark gem", rar: "100.0%" },
@@ -18942,13 +21096,18 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Darkness stone",
-    habilidades: "Dig, Headbutt, Blink"
+    habilidades: "Light, Cut, Rock Smash, Dig, Headbutt, Blink",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
-    nome: "Legion Unown",
+    nome: "Unown Legion",
     numero: "201-1",
-    level: 150,
+    level: 100,
     clan: "Psycraft",
     tipo: "Psiquico",
     regiao: "Johto",
@@ -18961,18 +21120,25 @@ const ShinysMegasArray = [
       { top: 88.71, left: 37.16, text: "Ruins of Alph - (VIP)" }
     ],
     moves: [
-      { "Dark pulse": 150 },
-      { "Hidden power": 150 },
-      { "Psychic": 150 },
-      { "Split": 150 },
-      { "Warping reality": 150 },
-      { "Metronome": 150 },
-      { "Unown strike": 150 },
-      { "Phantom force": 150 },
-      { "Levitate": "Passiva" }
+      { "Dark Pulse": 100 },
+      { "Psy Ball": 100 },
+      { "Hidden Power": 100 },
+      { Psychic: 100 },
+      { Split: 100 },
+      { "Heal Pulse": 100 },
+      { Metronome: 100 },
+      { "Unown Strike": 100 },
+      { Barrier: 100 },
+      { Levitate: "P" }
     ],
     loots: [],
-    habilidades: "Teleport, Blink"
+    habilidades: "Teleport, Blink",
+    boost: 10,
+    booStone: "Mystic Star",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
     {
@@ -18988,26 +21154,31 @@ const ShinysMegasArray = [
     mega: "yes",
     vip: "yes",
     moves: [
-      { Roar: 110 },
-      { "Iron tail": 100 },
-      { "Iron head": 100 },
-      { Bind: 100 },
+      { Roar: 100 },
+      { "Iron Tail": 100 },
+      { "Iron Head": 100 },
+      { "High Horsepower": 100 },
       { Autotomize: 100 },
-      { "Earth power": 105 },
-      { Fissure: 110 },
-      { Earthquake: 107 },
+      { "Earth Power": 100 },
+      { Fissure: 100 },
+      { Earthquake: 100 },
       { Sandstorm: 100 },
-      { "Stealth rock": 110 }
+      { "Stealth Rock": 100 }
     ],
     mapas: [
       { top: 20.03, left: 53.04, text: "Dimensional Zone - (VIP)" }
+    ],
+    habilidades: "Dig, Cut, Rock Smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
     ]
   },
 
   {
     nome: "Shiny Qwilfish",
     numero: "211-1",
-    level: 80,
+    level: 100,
     clan: "Malefic",
     tipo: "Água, Venenoso",
     regiao: "Johto",
@@ -19018,23 +21189,28 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Tackle": 80 },
-      { "Poison sting": 80 },
-      { "Toxic spikes": 82 },
-      { "Toxic": 80 },
-      { "Venoshock": 80 },
-      { "Harden": 84 },
-      { "Minimize": 88 },
-      { "Spike skin": "Passiva" }
+      { Tackle: 100 },
+      { "Poison Sting": 100 },
+      { "Toxic Spikes": 100 },
+      { "Poison Tail": 100 },
+      { Toxic: 100 },
+      { "Mortal Gas": 100 },
+      { "Barb Barrage": 100 },
+      { Minimize: 100 },
+      { Corrosion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "pink small tail", rar: "4.3%" },
       { min: 1, max: 49, item: "bottle of poison", rar: "80.0%" },
       { min: 1, max: 1, item: "Venom stone", rar: "1.2%" }
     ],
-    boost: 5,
+    boost: 2,
     booStone: "Venom stone",
-    habilidades: "Headbutt"
+    habilidades: "Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
     {
@@ -19051,15 +21227,16 @@ const ShinysMegasArray = [
     vip: "yes",
     moves: [
       { Swift: 100 },
-      { "Iron head": 100 },
-      { "Compass slash": 100 },
-      { "Metal claw": 107 },
-      { "Bullet punch": 100 },
-      { Pursuit: 100 },
-      { "X scissor": 105 },
-      { "Steel wing": 108 },
-      { "Iron defense": 104 },
-      { Evasion: "Passiva" }
+      { "Iron Head": 100 },
+      { "U-Turn": 100 },
+      { "Metal Claw": 100 },
+      { "Bullet Punch": 100 },
+      { "Compass Slash": 100 },
+      { "Air Slash": 100 },
+      { "Steel Wing": 100 },
+      { "False Swipe": 100 },
+      { "Iron Defense": 100 },
+      { Evasion: "P" }
     ],
     loots: [
       { item: "scizor claw", min: 1, max: 1, rar: "Raro" },
@@ -19070,13 +21247,18 @@ const ShinysMegasArray = [
       { item: "pot of moss bug", min: 1, max: 1, rar: "90.0%" },
       { item: "Scizorite", min: 1, max: 1, rar: "Raro" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Shuckle",
     numero: "213-1",
-    level: 40,
+    level: 100,
     clan: "Orebound, Naturia",
     tipo: "Pedra, Inseto",
     regiao: "Johto",
@@ -19087,17 +21269,25 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Bug bite": 40 },
-      { "Wrap": 40 },
-      { "Shell attack": 40 },
-      { "Struggle bug": 48 },
-      { "Safeguard": 40 },
-      { "Rest": 44 }
+      { "Bug Bite": 100 },
+      { Wrap: 100 },
+      { "Rock Throw": 100 },
+      { "Shell Attack": 100 },
+      { "Struggle Bug": 100 },
+      { Withdraw: 100 },
+      { "Defense Curl": 100 },
+      { Sandstorm: 100 },
+      { Gluttony: "P" },
+      { Protector: "P" }
     ],
     loots: [],
-    boost: 5,
+    boost: 2,
     booStone: "Cocoon stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -19116,17 +21306,18 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Ember": 100 },
-      { "Rock throw": 100 },
-      { "Rock slide": 100 },
-      { "Flamethrower": 100 },
-      { "Flame burst": 100 },
-      { "Stone edge": 100 },
-      { "Ancient power": 108 },
-      { "Blast burn": 115 },
-      { "Harden": 100 },
-      { "Yawn": 106 },
-      { "Amnesia": "Passiva" }
+      { Ember: 100 },
+      { "Rock Throw": 100 },
+      { "Rock Slide": 100 },
+      { Flamethrower: 100 },
+      { "Flame Burst": 100 },
+      { "Lava Plume": 100 },
+      { "Ancient Power": 100 },
+      { Inferno: 100 },
+      { Harden: 100 },
+      { Yawn: 100 },
+      { Amnesia: "P" },
+      { "Magmar Armor": "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "fire ear", rar: "4.3%" },
@@ -19138,7 +21329,11 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Fire stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
@@ -19155,14 +21350,14 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Tackle": 60 },
-      { "Bubbles": 60 },
-      { "Bubblebeam": 60 },
-      { "Rock blast": 60 },
-      { "Power gem": 60 },
-      { "Ancient power": 68 },
-      { "Recover": 65 },
-      { "Harden": 65 }
+      { Tackle: 60 },
+      { Bubbles: 60 },
+      { "Bubble Beam": 60 },
+      { "Rock Blast": 60 },
+      { "Power Gem": 60 },
+      { "Ancient Power": 60 },
+      { Recover: 60 },
+      { Harden: 60 }
     ],
     loots: [
       { min: 1, max: 1, item: "green piece of coral", rar: "100.0%" },
@@ -19173,13 +21368,17 @@ const ShinysMegasArray = [
     ],
     boost: 5,
     booStone: "Water stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Rock smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Delibird",
     numero: "225-1",
-    level: 70,
+    level: 80,
     clan: "Seavell, Wingeon",
     tipo: "Gelo, Voador",
     regiao: "Johto",
@@ -19190,25 +21389,30 @@ const ShinysMegasArray = [
     shiny: "yes",
     mapas: [],
     moves: [
-      { "Present": 70 },
-      { "Doubleslap": 70 },
-      { "Pluck": 75 },
-      { "Frost breath": 72 },
-      { "Healing wish": 72 },
-      { "Blizzard": 80 },
-      { "Rock n roll": 74 },
-      { "Egg rain": 80 }
+      { "Drill Peck": 80 },
+      { Present: 80 },
+      { "Ice Punch": 80 },
+      { "Ice Shards": 80 },
+      { "Frost Breath": 80 },
+      { "Aurora Beam": 80 },
+      { Blizzard: 80 },
+      { "Present Rain": 80 },
+      { Agility: 80 }
     ],
     loots: [],
-    boost: 6,
+    boost: 5,
     booStone: "Dimensional stone",
-    habilidades: ""
+    habilidades: "Fly",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
   {
     nome: "Shiny Stantler",
     numero: "234-1",
-    level: 150,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Normal",
     regiao: "Johto",
@@ -19223,16 +21427,17 @@ const ShinysMegasArray = [
       { top: 84, left: 35, text: "Safari Zone Deep - (VIP)" }
     ],
     moves: [
-      { "Attract": 150 },
-      { "Tackle": 150 },
-      { "Stomp": 158 },
-      { "Last resort": 155 },
-      { "Confuse ray": 154 },
-      { "Take down": 150 },
-      { "Jump kick": 156 },
-      { "Calm mind": 150 },
-      { "Stampede": 155 },
-      { "Intimidate": "Passiva" }
+      { Attract: 100 },
+      { Tackle: 100 },
+      { Stomp: 100 },
+      { "Shadow Ball": 100 },
+      { "Confuse Ray": 100 },
+      { Astonish: 100 },
+      { Stampede: 100 },
+      { Nightmare: 100 },
+      { Hypnosis: 100 },
+      { Intimidate: 100 },
+      { Illusion: "P" }
     ],
     loots: [
       { min: 1, max: 1, item: "reindeer horn", rar: "100.0%" },
@@ -19241,7 +21446,12 @@ const ShinysMegasArray = [
     ],
     boost: 2,
     booStone: "Heart stone",
-    habilidades: "Rock smash, Ride, Headbutt"
+    habilidades: "Light, Rock Smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
 
   {
@@ -19430,7 +21640,7 @@ const ShinysMegasArray = [
   {
     nome: "Elite Hitmontop",
     numero: "237-1",
-    level: 120,
+    level: 100,
     clan: "Gardestrike",
     tipo: "Lutador",
     regiao: "Johto",
@@ -19442,23 +21652,30 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Triple kick": 120 },
-      { "Rolling kick": 120 },
-      { "Revenge": 120 },
-      { "Focus energy": 127 },
-      { "Detect": 120 },
-      { "Counter spin": "Passiva" },
-      { "Foresight": "Passiva" }
+      { Tackle: 100 },
+      { "Triple Kick": 100 },
+      { "Low Kick": 100 },
+      { "Close Combat": 100 },
+      { "Bulk Up": 100 },
+      { "Jump Kick": 100 },
+      { Superpower: 100 },
+      { "Rolling Kick": 100 },
+      { Foresight: "P" },
+      { "Tough Spirit": "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Punch stone",
-    habilidades: "Rock smash, Headbutt"
+    habilidades: "Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shiny Larvitar",
     numero: "246-1",
-    level: 40,
+    level: 50,
     clan: "Orebound",
     tipo: "Terrestre, Pedra",
     regiao: "Johto",
@@ -19470,14 +21687,14 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Bite": 40 },
-      { "Crunch": 40 },
-      { "Dark pulse": 40 },
-      { "Rock slide": 40 },
-      { "Stone edge": 40 },
-      { "Earthquake": 45 },
-      { "Hyper beam": 47 },
-      { "Sandstorm": 40 }
+      { Bite: 50 },
+      { Crunch: 50 },
+      { "Dark Pulse": 50 },
+      { "Rock Slide": 50 },
+      { "Stone Edge": 50 },
+      { Earthquake: 50 },
+      { "Hyper Beam": 50 },
+      { Sandstorm: 50 }
     ],
     loots: [
       { min: 1, max: 1, item: "lizard tail", rar: "10.0%" },
@@ -19488,7 +21705,11 @@ const ShinysMegasArray = [
     ],
     boost: 50,
     booStone: "Ancient stone",
-    habilidades: "Dig, Rock smash, Cut, Headbutt"
+    habilidades: "Dig, Rock smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shiny Pupitar",
@@ -19506,15 +21727,15 @@ const ShinysMegasArray = [
     mapas: [],
     moves: [
       { "Rock tomb": 100 },
-      { "Dark pulse": 100 },
-      { "Rock slide": 100 },
-      { "Stone edge": 100 },
-      { "Bulldoze": 106 },
-      { "Ancient power": 115 },
-      { "Magnitude": 106 },
-      { "Hyper beam": 108 },
-      { "Sandstorm": 100 },
-      { "Scary face": 102 }
+      { "Dark Pulse": 100 },
+      { "Rock Slide": 100 },
+      { "Stone Edge": 100 },
+      { "Sand Tomb": 100 },
+      { "Hyper Beam": 100 },
+      { "Ancient Power": 100 },
+      { Magnitude: 100 },
+      { Earthquake: 100 },
+      { Sandstorm: 100 }
     ],
     loots: [
       { min: 1, max: 1, item: "lizard tail", rar: "82.5%" },
@@ -19525,9 +21746,14 @@ const ShinysMegasArray = [
       { min: 1, max: 1, item: "Ancient stone", rar: "10.1%" },
       { min: 1, max: 1, item: "Rock stone", rar: "10.1%" }
     ],
-    boost: 50,
+    boost: 30,
     booStone: "Ancient stone",
-    habilidades: "Dig, Rock smash, Cut, Headbutt"
+    habilidades: "Dig, Rock smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
     {
     nome: "Mega Tyranitar",
@@ -19544,24 +21770,30 @@ const ShinysMegasArray = [
     preevo1: "Tyranitar",
     moves: [
       { Bite: 100 },
-      { "Shadow wave": 100 },
       { Crunch: 100 },
-      { "Dark pulse": 100 },
-      { "Rock slide": 100 },
-      { "Stone edge": 100 },
-      { Assurance: 108 },
-      { "Hyper beam": 110 },
-      { Epicenter: 114 },
-      { Sandstorm: 100 }
+      { "Dark Pulse": 100 },
+      { "Rock Slide": 100 },
+      { Fling: 100 },
+      { Shadowave: 100 },
+      { Assurance: 100 },
+      { "Hyper Beam": 100 },
+      { Epicenter: 100 },
+      { Sandstorm: 100 },
+      { "Giant Force": "P" }
     ],
     mapas: [
       { top: 95.27, left: 79.16, text: "Embedded Tower - (VIP)" }
+    ],
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
     ]
   },
     {
     nome: "Mega Sceptile",
     numero: "254-1",
-    level: 80,
+    level: 100,
     tipo: "Grama, Dragão",
     clan: "Naturia, Wingeon",
     regiao: "Hoenn",
@@ -19572,16 +21804,16 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Sceptile",
     moves: [
-      { "Leaf blade": 80 },
-      { "Magical leaf": 80 },
-      { "Fury cutter": 85 },
-      { "Dragon claw": 80 },
-      { Bulldoze: 83 },
-      { "X scissor": 80 },
-      { "Dual chop": 80 },
-      { Outrage: 95 },
-      { "Frenzy plant": 90 },
-      { Agility: 80 }
+      { "Dragon Claw": 100 },
+      { "Magical Leaf": 100 },
+      { "Leaf Blade": 100 },
+      { "Dual Chop": 100 },
+      { Bulldoze: 100 },
+      { "Dragon Pulse": 100 },
+      { "Leaf Storm": 100 },
+      { Outrage: 100 },
+      { "Frenzy Plant": 100 },
+      { Screech: 100 }
     ],
     loots: [
       { item: "seed", min: 1, max: 43, rar: "100.0%" },
@@ -19590,12 +21822,17 @@ const ShinysMegasArray = [
       { item: "greens", min: 1, max: 1, rar: "21.3%" },
       { item: "Sceptilite", min: 1, max: 1, rar: "Raro" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Light, Dig, Rock Smash, Headbutt, Cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Mega Blaziken",
     numero: "257-1",
-    level: 80,
+    level: 100,
     tipo: "Fogo, Lutador",
     clan: "Volcanic, Gardestrike",
     regiao: "Hoenn",
@@ -19606,17 +21843,18 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Blaziken",
     moves: [
-      { "Low kick": 80 },
-      { Ember: 80 },
-      { "Mega kick": 80 },
-      { "Fire fist": 80 },
-      { "Blaze kick": 80 },
-      { "Hi jump kick": 80 },
-      { "Sky uppercut": 88 },
-      { "Blast burn": 95 },
-      { "Flare blitz": 90 },
-      { "Bulk up": 80 },
-      { Evasion: "Passiva" }
+      { "Low Kick": 100 },
+      { Ember: 100 },
+      { "Mega Kick": 100 },
+      { "Fire Fist": 100 },
+      { "Blaze Kick": 100 },
+      { "Hi Jump Kick": 100 },
+      { "Sky Uppercut": 100 },
+      { "Blast Burn": 100 },
+      { "Flare Blitz": 100 },
+      { "Bulk Up": 100 },
+      { Blaze: "P" },
+      { Evasion: "P" }
     ],
     loots: [
       { item: "fire feather", min: 1, max: 1, rar: "59.5%" },
@@ -19627,12 +21865,17 @@ const ShinysMegasArray = [
       { item: "pot of lava", min: 1, max: 1, rar: "100.0%" },
       { item: "Blazikenite", min: 1, max: 1, rar: "Raro" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Dig, Rock Smash, Cut, Light, HeadbuttMega Stone: Blazikenite",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Mega Swampert",
     numero: "260-1",
-    level: 80,
+    level: 100,
     tipo: "Água, Terrestre",
     clan: "Seavell, Orebound",
     regiao: "Hoenn",
@@ -19643,17 +21886,17 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Swampert",
     moves: [
-      { "Mega punch": 80 },
-      { "Water gun": 80 },
-      { Waterball: 80 },
-      { "Aqua tail": 80 },
-      { Bulldoze: 83 },
-      { "Earth power": 80 },
-      { "Hammer arm": 80 },
-      { Magnitude: 90 },
-      { Hydropump: 90 },
-      { "Rain dance": 80 },
-      { "Swift swim": "Passiva" }
+      { "Aqua Tail": 100 },
+      { "Mud Sludge": 100 },
+      { "Water Gun": 100 },
+      { "Stomping Tantrum": 100 },
+      { Bulldoze: 100 },
+      { "Earth Power": 100 },
+      { Earthquake: 100 },
+      { Magnitude: 100 },
+      { Surf: 100 },
+      { "Rain Dance": 100 },
+      { "Swift Swim": "P" }
     ],
     loots: [
       { item: "black fins", min: 1, max: 1, rar: "21.3%" },
@@ -19664,7 +21907,12 @@ const ShinysMegasArray = [
       { item: "Earth stone", min: 1, max: 1, rar: "Raro" },
       { item: "Swampertite", min: 1, max: 1, rar: "Raro" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Rock Smash, Headbutt, Surf",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Mega Gardevoir",
@@ -19681,15 +21929,15 @@ const ShinysMegasArray = [
     preevo1: "Gardevoir",
     moves: [
       { Charm: 100 },
-      { "Dazzling gleam": 104 },
-      { "Instant teleportation": 100 },
-      { "Disarming voice": 100 },
-      { Psychic: 100 },
-      { "Stored power": 110 },
-      { "Healing wish": 102 },
-      { Moonblast: 112 },
-      { "Misty terrain": 100 },
-      { "Miracle eye": 101 }
+      { "Dazzling Gleam": 100 },
+      { "Instant Teleportation": 100 },
+      { "Hyper Voice": 100 },
+      { Moonblast: 100 },
+      { "Stored Power": 100 },
+      { "Healing Wish": 100 },
+      { "Misty Explosion": 100 },
+      { "Psychic Terrain": 100 },
+      { Pixilate: "P" }
     ],
     loots: [
       { item: "cure flower", min: 1, max: 1, rar: "63.8%" },
@@ -19700,12 +21948,17 @@ const ShinysMegasArray = [
       { item: "Crystal stone", min: 1, max: 1, rar: "Raro" },
       { item: "Gardevoirite", min: 1, max: 1, rar: "Raro" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Teleport, light, Blink",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Mega Sableye",
     numero: "302-1",
-    level: 80,
+    level: 100,
     tipo: "Noturno, Fantasma",
     clan: "Malefic",
     regiao: "Hoenn",
@@ -19716,14 +21969,16 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Sableye",
     moves: [
-      { "Shadow ball": 80 },
-      { "Fury swipes": 80 },
-      { "Shadow sphere": 80 },
-      { "Sucker punch": 83 },
-      { "Night shade": 80 },
-      { Astonish: 80 },
-      { "Dark pulse": 80 },
-      { "Shadow claw": 80 }
+      { "Fury Swipes": 100 },
+      { "Shadow Ball": 100 },
+      { "Shadow Sphere": 100 },
+      { "Ominous Wind": 100 },
+      { "Night Shade": 100 },
+      { "Power Gem": 100 },
+      { Astonish: 100 },
+      { "Magic Bounce": 100 },
+      { "Shadow Claw": 100 },
+      { "Mean Look": 100 }
     ],
     loots: [
       { item: "big crystal", min: 1, max: 1, rar: "6.5%" },
@@ -19731,12 +21986,17 @@ const ShinysMegasArray = [
       { item: "Darkness stone", min: 1, max: 1, rar: "Raro" },
       { item: "Sablenite", min: 1, max: 1, rar: "Raro" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Light, Cut, Rock Smash, Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Mega Mawile",
     numero: "303-1",
-    level: 80,
+    level: 100,
     tipo: "Aço, Fada",
     clan: "Ironhard, Psycraft",
     regiao: "Hoenn",
@@ -19747,19 +22007,25 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Mawile",
     moves: [
-      { Bite: 80 },
-      { "Fairy wind": 88 },
-      { "Play rough": 80 },
-      { Impale: 83 },
-      { "Flash cannon": 88 },
-      { "Spit up": 83 },
-      { Swallow: 83 },
-      { Stockpile: 83 },
-      { "Fake tears": 86 },
-      { "Clear pile": "Passiva" }
+      { Slam: 100 },
+      { "Fairy Wind": 100 },
+      { "Play Rough": 100 },
+      { Impale: 100 },
+      { "Hyper Beam": 100 },
+      { "Spit Up": 100 },
+      { Swallow: 100 },
+      { Stockpile: 100 },
+      { "Fake Tears": 100 },
+      { "Clear Pile": "P" },
+      { Pixilate: "P" }
     ],
     mapas: [
       { top: 95.1, left: 79.77, text: "Embedded Tower - (VIP)" }
+    ],
+    habilidades: "Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
     ]
   },
     {
@@ -19776,24 +22042,29 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Aggron",
     moves: [
-      { "Iron head": 100 },
-      { "Iron tail": 100 },
-      { "Mud slap": 100 },
-      { "Stone edge": 100 },
-      { "Metal burst": 100 },
-      { "Metal claw": 107 },
-      { "Meteor mash": 100 },
-      { "Flash cannon": 108 },
+      { "Iron Head": 100 },
+      { Crunch: 100 },
+      { "Metal Sound": 100 },
+      { "Smart Strike": 100 },
+      { "Metal Claw": 100 },
+      { "Meteor Mash": 100 },
+      { "Flash Cannon": 100 },
       { Harden: 100 },
-      { Sturdy: "Passiva" }
+      { Sandstorm: 100 },
+      { Filter: "P" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Dig, Rock Smash, Cut, Headbutt, Strength",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
 
     {
     nome: "Mega Manectric",
     numero: "310-1",
-    level: 80,
+    level: 100,
     tipo: "Elétrico",
     clan: "Raibolt",
     regiao: "Hoenn",
@@ -19804,15 +22075,15 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Manectric",
     moves: [
-      { Roar: 90 },
-      { Spark: 80 },
-      { Swift: 80 },
-      { "Thunder fang": 80 },
-      { "Electro ball": 80 },
-      { Shockwave: 80 },
-      { "Hyper beam": 88 },
-      { Discharge: 85 },
-      { "Electric terrain": 80 }
+      { "Ice Fang": 100 },
+      { Swift: 100 },
+      { "Electro Ball": 100 },
+      { Spark: 100 },
+      { "Fire Fang": 100 },
+      { "Shock Wave": 100 },
+      { "Rising Voltage": 100 },
+      { Discharge: 100 },
+      { "Electric Terrain": 100 }
     ],
     loots: [
       { item: "shock topknot", min: 1, max: 1, rar: "21.3%" },
@@ -19821,7 +22092,12 @@ const ShinysMegasArray = [
       { item: "Thunder stone", min: 1, max: 1, rar: "Raro" },
       { item: "Manectite", min: 1, max: 1, rar: "Raro" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Dig, Cut, Light, Headbutt, Ride",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   
   
@@ -19840,26 +22116,29 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Sweet kiss": 100 },
-      { "Spark": 100 },
-      { "Nuzzle": 105 },
-      { "Thunder wrath": 112 },
-      { "Split": 100 },
-      { "Helping hand": 100 },
-      { "Fake tears": 106 },
-      { "Wish": 100 },
-      { "Flash": 100 },
-      { "Afraid of needles": "Passiva" }
+      { "Sweet Kiss": 100 },
+      { Spark: 100 },
+      { Nuzzle: 100 },
+      { "Thunder Wrath": 100 },
+      { Split: 100 },
+      { "Helping Hand": 100 },
+      { Protection: 100 },
+      { Wish: 100 },
+      { "Afraid of Needles": "P" }
     ],
     loots: [],
-    boost: 3,
+    boost: 2,
     booStone: "Thunder stone",
-    habilidades: "Flash"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Mega Camerupt",
     numero: "323-1",
-    level: 80,
+    level: 100,
     tipo: "Fogo, Terrestre",
     clan: "Volcanic, Orebound",
     regiao: "Hoenn",
@@ -19870,17 +22149,18 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Camerupt",
     moves: [
-      { "Volcano shot": 80 },
-      { "Body slam": 84 },
-      { "Mud bomb": 80 },
-      { Bulldoze: 80 },
-      { Eruption: 80 },
-      { Earthquake: 90 },
-      { Fissure: 90 },
-      { "Solar beam": 80 },
-      { "Scary face": 82 },
-      { "Focus energy": 87 },
-      { "Solid rock": "Passiva" }
+      { "Mud Sport": 100 },
+      { "Mud Sludge": 100 },
+      { Ember: 100 },
+      { Bulldoze: 100 },
+      { "Earth Power": 100 },
+      { Earthquake: 100 },
+      { Fissure: 100 },
+      { "Sand Eruption": 100 },
+      { Sandstorm: 100 },
+      { "Focus Energy": 100 },
+      { "Solid Rock": "P" },
+      { "Magma Armor": "P" }
     ],
     loots: [
       { item: "Cameruptite", min: 1, max: 1, rar: "Raro" },
@@ -19888,12 +22168,17 @@ const ShinysMegasArray = [
       { item: "earth ball", min: 1, max: 25, rar: "100.0%" },
       { item: "pot of lava", min: 1, max: 1, rar: "80.0%" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Dig, Rock Smash, Ride, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Mega Altaria",
     numero: "334-1",
-    level: 80,
+    level: 100,
     tipo: "Dragão, Fada",
     clan: "Wingeon, Psycraft",
     regiao: "Hoenn",
@@ -19904,22 +22189,28 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Altaria",
     moves: [
-      { Attract: 80 },
-      { "Dazzling gleam": 84 },
-      { "Dragon claw": 80 },
-      { "Dragon breath": 82 },
-      { "Dragon mist": 85 },
-      { "Dragon pulse": 85 },
-      { Mist: 90 },
-      { Tailwind: 80 },
-      { "Draco meteor": 95 },
-      { Safeguard: 90 },
-      { "Cloud nine": "Passiva" }
+      { "Dragon Claw": 100 },
+      { "Dazzling Gleam": 100 },
+      { "Breaking Swipe": 100 },
+      { "Disarming Voice": 100 },
+      { "Dragon Breath": 100 },
+      { "Secret Power": 100 },
+      { "Cotton Guard": 100 },
+      { Moonblast: 100 },
+      { "Sky Camouflage": 100 },
+      { Mist: 100 },
+      { Pixilate: "P" },
+      { "Natural Cure": "P" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "FlyMega Stone: Altarianite",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Fire Castform",
+    nome: "Castform Fire",
     numero: "351-1",
     level: 100,
     clan: "Volcanic",
@@ -19933,15 +22224,16 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Shadow ball": 100 },
-      { "Ember": 100 },
-      { "Flamethrower": 100 },
+      { Ember: 100 },
+      { Flamethrower: 100 },
       { "Fireball": 100 },
-      { "Eruption": 100 },
-      { "Fire blast": 100 },
-      { "Magma storm": 110 },
-      { "Solar beam": 100 },
-      { "Forecast": "Passiva" }
+      { "Solar Beam": 100 },
+      { "Weather Ball": 100 },
+      { Eruption: 100 },
+      { "Fire Blast": 100 },
+      { "Magma Storm": 100 },
+      { Safeguard: 100 },
+      { Forecast: "P" }
     ],
     loots: [
       { min: 1, max: 99, item: "essence of fire", rar: "80.0%" },
@@ -19956,10 +22248,14 @@ const ShinysMegasArray = [
     ],
     boost: 50,
     booStone: "Mystic star",
-    habilidades: "Flash"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Water Castform",
+    nome: "Castform Water",
     numero: "351-2",
     level: 100,
     clan: "Seavell",
@@ -19973,15 +22269,16 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Thunder shock": 100 },
-      { "Bubbles": 100 },
-      { "Water gun": 100 },
-      { "Electro ball": 100 },
-      { "Thunder bolt": 100 },
-      { "Thunder": 100 },
-      { "Electro field": 110 },
-      { "Solar beam": 100 },
-      { "Forecast": "Passiva" }
+      { "Thunder Shock": 100 },
+      { Bubbles: 100 },
+      { Thunderbolt: 100 },
+      { "Thunder Sphere": 100 },
+      { "Weather Ball": 100 },
+      { "Electro Ball": 100 },
+      { Discharge: 100 },
+      { "Lightning Strike": 100 },
+      { Safeguard: 100 },
+      { Forecast: "P" }
     ],
     loots: [
       { min: 1, max: 99, item: "essence of fire", rar: "80.0%" },
@@ -19996,10 +22293,14 @@ const ShinysMegasArray = [
     ],
     boost: 50,
     booStone: "Mystic star",
-    habilidades: "Surf"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Ice Castform",
+    nome: "Castform Ice",
     numero: "351-3",
     level: 100,
     clan: "Seavell",
@@ -20013,16 +22314,17 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Feather dance": 100 },
-      { "Ice shards": 100 },
-      { "Ice beam": 100 },
-      { "Icy wind": 100 },
-      { "Powder snow": 100 },
-      { "Aurora beam": 104 },
-      { "Blizzard": 106 },
-      { "Solar beam": 100 },
-      { "Frozen armor": 100 },
-      { "Forecast": "Passiva" }
+      { "Ice Shard": 100 },
+      { "Icy Wind": 100 },
+      { "Powder Snow": 100 },
+      { "Shock Wave": 100 },
+      { "Weather Ball": 100 },
+      { "Freeze-Dry": 100 },
+      { "Ice Storm": 100 },
+      { Blizzard: 100 },
+      { Safeguard: 100 },
+      { Forecast: "P" },
+      { "Frozen Armor": "P" }
     ],
     loots: [
       { min: 1, max: 99, item: "essence of fire", rar: "80.0%" },
@@ -20037,7 +22339,11 @@ const ShinysMegasArray = [
     ],
     boost: 50,
     booStone: "Mystic star",
-    habilidades: "Flash"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
           {
     nome: "Shiny Rampardos",
@@ -20054,7 +22360,7 @@ const ShinysMegasArray = [
     heavy: "yes",
     boost: 2,
     booStone: "Rock stone",
-    habilidades: "Headbutt, Rock smash",
+    habilidades: "Dig, Rock Smash, Cut, Headbutt",
     moves: [
       { Headbutt: 100 },
       { "Iron head": 100 },
@@ -20068,14 +22374,15 @@ const ShinysMegasArray = [
     ],
     loots: [],
     mapas: [],
-    updateHistory: [ { date: "19/03/2026, 23:28:41", changes: [ "✏️ <strong>level</strong>: de \"1\" ➔ \"100\"", "✏️ <strong>dificuldade</strong>: de \"Normal\" ➔ \"Sem sistema\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Headbutt (Lv 100), Iron head (Lv 100), Rock slide (Lv 100), Stone edge (Lv 100), Head smash (Lv 100), Falling rocks (Lv 100), Rock wrecker (Lv 100), Ancient power (Lv 100), Shadow rush (Lv 100)</strong>" ] }, { date: "19/03/2026, 23:22:32", changes: [ "✏️ <strong>regiao</strong>: de \"Sinoh\" ➔ \"Sinnoh\"", "🗑 <strong>pricenpc</strong> removido (era: \"0\")", "✏️ <strong>shiny</strong>: de \"no\" ➔ \"yes\"", "✏️ <strong>boost</strong>: de \"10\" ➔ \"2\"", "✨ <strong>booStone</strong> definido como: \"Rock stone\"", "✨ <strong>habilidades</strong> definido como: \"Headbutt, Rock smash\"", "✨ <strong>heavy</strong> definido como: \"yes\"" ] }, { date: "19/03/2026, 23:19:26", changes: [ "✏️ <strong>regiao</strong>: de \"5\" ➔ \"Sinoh\"", "✏️ <strong>geracao</strong>: de \"1\" ➔ \"4\"" ] }, { date: "19/03/2026, 23:18:31", changes: [ "✨ Pokémon recém-criado" ] } ],
-    updatedAt: "19/03/2026, 23:28:56"
+    updateHistory: [ { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler" ] }, { date: "19/03/2026, 23:28:41", changes: [ "✏️ <strong>level</strong>: de \"1\" ➔ \"100\"", "✏️ <strong>dificuldade</strong>: de \"Normal\" ➔ \"Sem sistema\"", "➕ Moves adicionados: <strong style=\"color:var(--teal)\">Headbutt (Lv 100), Iron head (Lv 100), Rock slide (Lv 100), Stone edge (Lv 100), Head smash (Lv 100), Falling rocks (Lv 100), Rock wrecker (Lv 100), Ancient power (Lv 100), Shadow rush (Lv 100)</strong>" ] }, { date: "19/03/2026, 23:22:32", changes: [ "✏️ <strong>regiao</strong>: de \"Sinoh\" ➔ \"Sinnoh\"", "🗑 <strong>pricenpc</strong> removido (era: \"0\")", "✏️ <strong>shiny</strong>: de \"no\" ➔ \"yes\"", "✏️ <strong>boost</strong>: de \"10\" ➔ \"2\"", "✨ <strong>booStone</strong> definido como: \"Rock stone\"", "✨ <strong>habilidades</strong> definido como: \"Headbutt, Rock smash\"", "✨ <strong>heavy</strong> definido como: \"yes\"" ] }, { date: "19/03/2026, 23:19:26", changes: [ "✏️ <strong>regiao</strong>: de \"5\" ➔ \"Sinoh\"", "✏️ <strong>geracao</strong>: de \"1\" ➔ \"4\"" ] }, { date: "19/03/2026, 23:18:31", changes: [ "✨ Pokémon recém-criado" ] } ],
+    updatedAt: "22/03/2026, 19:53:39"
+  
   }
 ,
   {
-    nome: "Earth Wormadam",
+    nome: "Wormadam Ground",
     numero: "413-1",
-    level: 80,
+    level: 100,
     clan: "Naturia",
     tipo: "Inseto, Terrestre",
     regiao: "Sinnoh",
@@ -20087,21 +22394,29 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Bug bite": 80 },
-      { "Rock throw": 80 },
-      { "Bulldoze": 80 },
-      { "Quiver dance": 85 },
-      { "Earth power": 90 }
+      { "Shadow Ball": 100 },
+      { "Mud Sludge": 100 },
+      { Bulldoze: 100 },
+      { "Earth Power": 100 },
+      { Fissure: 100 },
+      { Earthquake: 100 },
+      { Infestation: 100 },
+      { "Quiver Dance": 100 },
+      { Safeguard: 100 }
     ],
     loots: [],
-    boost: 10,
-    booStone: "Earth stone",
-    habilidades: "Dig, Cut"
+    boost: 2,
+    booStone: "Cocoon Stone ou Earth Stone",
+    habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Steel Wormadam",
+    nome: "Wormadam Steel",
     numero: "413-2",
-    level: 80,
+    level: 100,
     clan: "Ironhard",
     tipo: "Inseto, Aço",
     regiao: "Sinnoh",
@@ -20113,16 +22428,25 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Iron head": 80 },
-      { "Bug bite": 80 },
-      { "Flash cannon": 85 },
-      { "Quiver dance": 85 },
-      { "Mirror shot": 80 }
+      { "Iron Head": 100 },
+      { "Scrap Throw": 100 },
+      { "Metal Burst": 100 },
+      { "Mirror Shot": 100 },
+      { "Heavy Metal": 100 },
+      { "Flash Cannon": 100 },
+      { "Gyro Ball": 100 },
+      { "Quiver Dance": 100 },
+      { Safeguard: 100 },
+      { Overcoat: "P" }
     ],
     loots: [],
-    boost: 10,
-    booStone: "Metal stone",
-    habilidades: "Rock smash, Cut"
+    boost: 2,
+    booStone: "Cocoon Stone",
+    habilidades: "Dig",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>boost</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shiny Bronzong",
@@ -20140,26 +22464,32 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Psy pulse": 100 },
-      { "Extrasensory": 100 },
-      { "Meteor mash": 100 },
-      { "Psychic": 100 },
-      { "Metal sound": 130 },
-      { "Psy impact": 110 },
-      { "Dream eater": 100 },
-      { "Hypnosis": 100 },
-      { "Iron defense": 104 },
-      { "Miracle eye": 95 }
+      { "Psy Pulse": 100 },
+      { Extrasensory: 100 },
+      { "Meteor Mash": 100 },
+      { Psychic: 100 },
+      { "Metal Song": 100 },
+      { "Psy Impact": 100 },
+      { "Dream Eater": 100 },
+      { Hypnosis: 100 },
+      { "Iron Defense": 100 },
+      { Heatproof: "P" },
+      { "Iron Body": "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Dimensional stone",
-    habilidades: "Teleport, Flash"
+    habilidades: "Rock Smash, Teleport, Light",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   },
   {
     nome: "Shiny Lucario",
     numero: "448-1",
-    level: 120,
+    level: 100,
     clan: "Ironhard",
     tipo: "Aço, Lutador",
     regiao: "Sinnoh",
@@ -20171,27 +22501,34 @@ const ShinysMegasArray = [
     heavy: "yes",
     mapas: [],
     moves: [
-      { "Quick attack": 120 },
-      { "Iron head": 120 },
-      { "Close combat": 120 },
-      { "Metal claw": 120 },
-      { "Bullet punch": 120 },
-      { "Bone rush": 120 },
-      { "Aura sphere": 120 },
-      { "Swords dance": 120 },
-      { "Evasion": "Passiva" },
-      { "Superpower": "Passiva" },
-      { "Foresight": "Passiva" }
+      { "Iron Head": 100 },
+      { "Extreme Speed": 100 },
+      { "Vacuum Wave": 100 },
+      { "Drain Punch": 100 },
+      { "Bone Rush": 100 },
+      { "Aura Sphere": 100 },
+      { "Dragon Pulse": 100 },
+      { "Focus Blast": 100 },
+      { "Double Team": 100 },
+      { "Mind Reader": 100 },
+      { Evasion: "P" },
+      { "Counter Punch": "P" },
+      { "Aura Vision": "P" },
+      { Justified: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Punch stone",
-    habilidades: "Rock smash, Flash, Headbutt"
+    habilidades: "Dig, Rock Smash, Light, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
     {
     nome: "Mega Lucario",
     numero: "448-2",
-    level: 80,
+    level: 100,
     tipo: "Aço, Lutador",
     clan: "Ironhard, Gardestrike",
     regiao: "Sinnoh",
@@ -20202,22 +22539,28 @@ const ShinysMegasArray = [
     vip: "yes",
     preevo1: "Lucario",
     moves: [
-      { "Iron head": 80 },
-      { Extremespeed: 80 },
-      { "Circle throw": 80 },
-      { "Metal claw": 80 },
-      { "Bullet punch": 80 },
-      { "Aura sphere": 80 },
-      { "Vacuum wave": 95 },
-      { "Mind reader": 80 },
-      { Evasion: "Passiva" },
-      { Superpower: "Passiva" },
-      { Foresight: "Passiva" }
+      { "Iron Head": 100 },
+      { "Extreme Speed": 100 },
+      { "Circle Throw": 100 },
+      { "Metal Claw": 100 },
+      { "Bullet Punch": 100 },
+      { "Aura Sphere": 100 },
+      { "Flash Cannon": 100 },
+      { "Mind Reader": 100 },
+      { Evasion: "P" },
+      { "Counter Punch": "P" },
+      { "Aura Shield": "P" },
+      { Foresight: "P" }
     ],
     loots: [
       { item: "Lucarionite", min: 1, max: 1, rar: "Raro" }
     ],
-    mapas: []
+    mapas: [],
+    habilidades: "Dig, Rock Smash, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>level</strong> atualizado pelo crawler", "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shiny Leafeon",
@@ -20234,20 +22577,25 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Leech seed": 100 },
-      { "Leaf blade": 100 },
-      { "X scissor": 104 },
-      { "Grassy terrain": 110 },
-      { "Hyper voice": 100 },
-      { "Grass whistle": 100 },
-      { "Substitute": 100 },
-      { "Synthesis": 100 },
-      { "Protect": 100 }
+      { Swift: 100 },
+      { "Razor Leaf": 100 },
+      { "Magical Leaf": 100 },
+      { "Bullet Seed": 100 },
+      { "Leaf Blade": 100 },
+      { Substitute: 100 },
+      { "Solar Blade": 100 },
+      { "Sunny Day": 100 },
+      { Reflect: 100 },
+      { Chlorophyll: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Mirror stone",
-    habilidades: "Cut, Dig"
+    habilidades: "Light, Rock Smash, Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shiny Glaceon",
@@ -20264,25 +22612,28 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Swift": 100 },
-      { "Ice shards": 100 },
-      { "Ice fang": 100 },
-      { "Ice beam": 100 },
-      { "Frost breath": 102 },
-      { "Tail whip": 100 },
-      { "Blizzard": 106 },
-      { "Hail": 108 },
-      { "Magic coat": 106 },
-      { "Barrier": 120 },
-      { "Ice body": "Passiva" }
+      { Swift: 100 },
+      { "Ice Shard": 100 },
+      { "Icicle Spear": 100 },
+      { "Icy Wind": 100 },
+      { "Froth Breath": 100 },
+      { "Ice Beam": 100 },
+      { Blizzard: 100 },
+      { Hailstorm: 100 },
+      { "Frenzy Snow": 100 },
+      { Barrier: 100 }
     ],
     loots: [],
     boost: 2,
     booStone: "Mirror stone",
-    habilidades: "Dig, Flash"
+    habilidades: "Dig, Headbutt",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Water Rotom",
+    nome: "Rotom Water",
     numero: "479-1",
     level: 100,
     clan: "Raibolt",
@@ -20296,16 +22647,15 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Thunder shock": 100 },
-      { "Bubbles": 100 },
-      { "Waterball": 100 },
-      { "Shockwave": 100 },
-      { "Brine": 100 },
-      { "Substitute": 100 },
-      { "Hydro cannon": 100 },
-      { "Surf": 105 },
-      { "Morph": 100 },
-      { "Levitate": "Passiva" }
+      { Bubbles: 100 },
+      { "Water Ball": 100 },
+      { "Water Pulse": 100 },
+      { "Shock Wave": 100 },
+      { "Hydro Cannon": 100 },
+      { Substitute: 100 },
+      { Surf: 100 },
+      { Morph: 100 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 40, item: "screw", rar: "100.0%" },
@@ -20316,10 +22666,14 @@ const ShinysMegasArray = [
     ],
     boost: 5,
     booStone: "Thunder stone",
-    habilidades: "Surf, Flash"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Fire Rotom",
+    nome: "Rotom Fire",
     numero: "479-2",
     level: 100,
     clan: "Raibolt",
@@ -20333,16 +22687,15 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Thunder shock": 100 },
-      { "Ember": 100 },
+      { Ember: 100 },
       { "Fireball": 100 },
-      { "Shockwave": 100 },
-      { "Flame burst": 100 },
-      { "Substitute": 100 },
-      { "Fire blast": 100 },
-      { "Blast burn": 115 },
-      { "Morph": 100 },
-      { "Levitate": "Passiva" }
+      { Overheat: 100 },
+      { "Shock Wave": 100 },
+      { "Fire Blast": 100 },
+      { Substitute: 100 },
+      { "Blast Burn": 100 },
+      { Morph: 100 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 40, item: "screw", rar: "100.0%" },
@@ -20353,10 +22706,14 @@ const ShinysMegasArray = [
     ],
     boost: 5,
     booStone: "Thunder stone",
-    habilidades: "Flash"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Grass Rotom",
+    nome: "Rotom Grass",
     numero: "479-3",
     level: 100,
     clan: "Raibolt",
@@ -20370,16 +22727,15 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Thunder shock": 100 },
-      { "Razor leaf": 100 },
-      { "Leaf blade": 100 },
-      { "Shockwave": 100 },
-      { "Bullet seed": 100 },
-      { "Substitute": 100 },
-      { "Solar beam": 100 },
-      { "Petal blizzard": 100 },
-      { "Morph": 100 },
-      { "Levitate": "Passiva" }
+      { "Razor Leaf": 100 },
+      { "Grass Knot": 100 },
+      { "Leaf Blade": 100 },
+      { "Shock Wave": 100 },
+      { "Solar Beam": 100 },
+      { Substitute: 100 },
+      { "Petal Blizzard": 100 },
+      { Morph: 100 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 40, item: "screw", rar: "100.0%" },
@@ -20390,10 +22746,14 @@ const ShinysMegasArray = [
     ],
     boost: 5,
     booStone: "Thunder stone",
-    habilidades: "Cut, Flash"
+    habilidades: "Light, cut",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Flying Rotom",
+    nome: "Rotom Fly",
     numero: "479-4",
     level: 100,
     clan: "Raibolt",
@@ -20407,16 +22767,15 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Thunder shock": 100 },
-      { "Feather dance": 100 },
-      { "Air cutter": 108 },
-      { "Shockwave": 100 },
-      { "Air slash": 103 },
-      { "Substitute": 100 },
-      { "Sky attack": 110 },
-      { "Aerial ace": 104 },
-      { "Morph": 100 },
-      { "Levitate": "Passiva" }
+      { "Wind Swirl": 100 },
+      { "Air Cutter": 100 },
+      { "Air Slash": 100 },
+      { "Shock Wave": 100 },
+      { "Sky Attack": 100 },
+      { Substitute: 100 },
+      { "Aerial Ace": 100 },
+      { Morph: 100 },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 40, item: "screw", rar: "100.0%" },
@@ -20427,10 +22786,14 @@ const ShinysMegasArray = [
     ],
     boost: 5,
     booStone: "Thunder stone",
-    habilidades: "Fly, Flash"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
-    nome: "Ice Rotom",
+    nome: "Rotom Ice",
     numero: "479-5",
     level: 100,
     clan: "Raibolt",
@@ -20444,16 +22807,16 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Ice shards": 100 },
-      { "Powder snow": 100 },
-      { "Shockwave": 100 },
-      { "Icy wind": 100 },
-      { "Substitute": 100 },
-      { "Aurora beam": 104 },
-      { "Blizzard": 108 },
-      { "Frozen armor": 100 },
-      { "Morph": 100 },
-      { "Levitate": "Passiva" }
+      { "Ice Shards": 100 },
+      { "Icicle Spear": 100 },
+      { "Icy Wind": 100 },
+      { "Shock Wave": 100 },
+      { "Aurora Beam": 100 },
+      { Substitute: 100 },
+      { Blizzard: 100 },
+      { Morph: 100 },
+      { "Frozen Armor": "P" },
+      { Levitate: "P" }
     ],
     loots: [
       { min: 1, max: 40, item: "screw", rar: "100.0%" },
@@ -20464,7 +22827,11 @@ const ShinysMegasArray = [
     ],
     boost: 5,
     booStone: "Thunder stone",
-    habilidades: "Flash"
+    habilidades: "Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Giant Galvantula",
@@ -20482,21 +22849,25 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Bug bite": 100 },
-      { "Electroweb": 100 },
-      { "Leech life": 105 },
-      { "X scissor": 105 },
-      { "Fury cutter": 106 },
-      { "Struggle bug": 108 },
-      { "Signal beam": 100 },
-      { "Spider web": 110 },
-      { "Web rain": 110 },
-      { "Compound eyes": "Passiva" }
+      { "Sticky Web": 100 },
+      { "Bug Bite": 100 },
+      { "Leech Life": 100 },
+      { Lunge: 100 },
+      { "Fury Cutter": 100 },
+      { "X-Scissor": 100 },
+      { "Signal Beam": 100 },
+      { "Spider Web": 100 },
+      { "Bug Buzz": 100 },
+      { "Compound Eyes": "P" }
     ],
     loots: [],
     boost: 2,
-    booStone: "Dimensional stone",
-    habilidades: "Cut, Flash"
+    booStone: "Mirror Stone",
+    habilidades: "Dig, Cut, Light",
+    updatedAt: "22/03/2026, 19:53:39",
+    updateHistory: [
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "✏️ <strong>booStone</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
   },
   {
     nome: "Shiny Sylveon",
@@ -20513,20 +22884,25 @@ const ShinysMegasArray = [
     vip: "yes",
     mapas: [],
     moves: [
-      { "Charm": 100 },
-      { "Draining kiss": 100 },
-      { "Swift": 100 },
-      { "Disarming voice": 100 },
-      { "Take down": 100 },
-      { "Fairy wind": 100 },
-      { "Last resort": 100 },
-      { "Great love": 108 },
-      { "Baby doll eyes": 112 }
+      { Swift: 100 },
+      { "Dazzling Gleam": 100 },
+      { "Fairy Wind": 100 },
+      { "Disarming Voice": 100 },
+      { "Heart Pound": 100 },
+      { "Baby-Doll Eyes": 100 },
+      { "Floral Storm": 100 },
+      { Moonlight: 100 },
+      { Pixilate: "P" }
     ],
     loots: [],
     boost: 2,
     booStone: "Mirror stone",
-    habilidades: "Flash"
+    habilidades: "Light, Cut, Rock Smash, Dig",
+    updatedAt: "22/03/2026, 22:24:57",
+    updateHistory: [ { date: "22/03/2026, 22:24:57", changes: [ "🤖 Moves atualizados pelo crawler" ] },
+      { date: "22/03/2026, 19:53:39", changes: [ "✏️ <strong>habilidades</strong> atualizado pelo crawler", "🤖 Moves atualizados pelo crawler" ] }
+    ]
+  
   }
   
     ];
@@ -20537,7 +22913,7 @@ const ShinysMegasArray = [
 const movesArray = [
 
     
-     { move: "Solar power", type: "Fogo", desc: "O pokemon é imune ao efeito de slow, está habilidade não afeta pokemon selvagem.", 
+     { move: "Solar power", type: "Fogo", desc: "O pokemon é imune ao efeito de slow, esta habilidade não afeta pokemon selvagem.", 
    aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "",
    nevermiss: "", paralyze: "", passive: "yes", poison: "", self: "yes", slow: "", stun: "", target: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
@@ -20736,10 +23112,7 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Hydropump", type: "Água", desc: "causa dano em uma grande área ao redor do pokemon, sendo possível acertar mais de uma vez o mesmo oponente.", 
-   aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Hydro Pump", type: "Água", desc: "causa dano em uma grande área ao redor do pokemon, sendo possível acertar mais de uma vez o mesmo oponente.", aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "String shot", type: "Inseto", desc: "aplica o efeito paralyze por 5 segundos.", 
    aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
@@ -20751,10 +23124,7 @@ const movesArray = [
    nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "yes", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Super sonic", type: "Normal", desc: "aplica o efeito confusion por 10 segundos.", 
-   aoe: "", blind: "", buff: "", burn: "", confusion: "yes", damage: "", debuff: "", lifesteal: "", 
-   nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "yes", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+    { move: "Supersonic", type: "Normal", desc: "aplica o efeito confusion por 10 segundos.", aoe: "", blind: "", buff: "", burn: "", confusion: "yes", damage: "", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Silver wind", type: "Inseto", desc: "causa dano ao oponente e em uma área ao redor dele.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -20931,15 +23301,9 @@ const movesArray = [
    target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Thunder bolt", type: "Elétrico", desc: "causa varios danos consecutivos ao oponente.", 
-   aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Thunderbolt", type: "Elétrico", desc: "causa varios danos consecutivos ao oponente.", aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
- { move: "Shockwave", type: "Elétrico", desc: "uma série de pulsos que duram 2 segundos e causam paralize por 6 segundos nos oponentes afetados.", 
-   aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "yes", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Shock Wave", type: "Elétrico", desc: "uma série de pulsos que duram 2 segundos e causam paralize por 6 segundos nos oponentes afetados.", aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", nevermiss: "", paralyze: "yes", passive: "", poison: "", self: "", slow: "", stun: "", target: "", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Thunder punch", type: "Elétrico", desc: "causa dano ao oponente, só pode ser usado a curta distância.", 
    aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -21166,10 +23530,7 @@ const movesArray = [
    target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "X scissor", type: "Inseto", desc: "causa dano em uma área frontal.", 
-   aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "X-Scissor", type: "Inseto", desc: "causa dano em uma área frontal.", aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Psychic", type: "Psiquico", desc: "causa dano em uma grande área ao redor do pokemon.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -21186,10 +23547,7 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "yes", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Mud slap", type: "Terra", desc: "ataque a distância que cega os oponentes e aplica efeito slow por 10 segundos.", 
-   aoe: "", blind: "yes", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "yes", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Mud-Slap", type: "Terra", desc: "ataque a distância que cega os oponentes e aplica efeito slow por 10 segundos.", aoe: "", blind: "yes", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "yes", stun: "", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Night slash", type: "Noturno", desc: "desfere dois ataques causando dano em uma área ao redor do pokemon.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -21266,10 +23624,7 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "", poison: "", self: "yes", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Extremespeed", type: "Normal", desc: "causa dano ao oponente, deixando o usuário invisível por 1,7 segundos.", 
-   aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "yes", nevermiss: "yes", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Extreme Speed", type: "Normal", desc: "causa dano ao oponente, deixando o usuário invisível por 1,7 segundos.", aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "yes", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Hypnosis", type: "Psiquico", desc: "aplica o efeito stun por 5 segundos.", 
    aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
@@ -21291,10 +23646,7 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "yes", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Dynamicpunch", type: "Lutador", desc: "causa dano em uma área progressivamente ao redor do pokemon, sendo possível acertar mais de uma vez o mesmo oponente, aplica efeito confusion por 8 segundos.", 
-   aoe: "yes", blind: "", buff: "", burn: "", confusion: "yes", damage: "yes", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Dynamic Punch", type: "Lutador", desc: "causa dano em uma área progressivamente ao redor do pokemon, sendo possível acertar mais de uma vez o mesmo oponente, aplica efeito confusion por 8 segundos.", aoe: "yes", blind: "", buff: "", burn: "", confusion: "yes", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Focus blast", type: "Lutador", desc: "causa dano em uma área frontal, sendo possível atingir mais de uma vez o mesmo oponente.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -21471,10 +23823,7 @@ const movesArray = [
    target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Tri attack", type: "Normal", desc: "causa vários danos consecutivos ao oponente.", 
-   aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Tri-Attack", type: "Normal", desc: "causa vários danos consecutivos ao oponente.", aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Flash cannon", type: "Metal", desc: "causa dano em uma grande área frontal.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -22316,10 +24665,7 @@ const movesArray = [
    target: "yes", nevermiss: "yes", paralyze: "", poison: "", self: "", slow: "", stun: "yes", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "U turn", type: "Inseto", desc: "causa dano ao oponente, o usuário fica invunerável a danos por 1 segundo.", 
-   aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "U-Turn", type: "Inseto", desc: "causa dano ao oponente, o usuário fica invunerável a danos por 1 segundo.", aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Shadowave", type: "Noturno", desc: "causa dano em uma área frontal.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -22561,10 +24907,7 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Lock on", type: "Normal", desc: "o usuário move-se até o oponente causando dano e aplicando efeito stun por 2,5 segundos.", 
-   aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "yes", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Lock-On", type: "Normal", desc: "o usuário move-se até o oponente causando dano e aplicando efeito stun por 2,5 segundos.", aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "yes", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Discharge", type: "Elétrico", desc: "causa dano em uma grande área ao redor do pokemon.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -22819,10 +25162,7 @@ const movesArray = [
    target: "yes", nevermiss: "yes", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Smellingsalt", type: "Normal", desc: "causa dano ao oponente, aplicando efeito paralyze por 8 segundos, só pode ser usado a curta distância.", 
-   aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "yes", nevermiss: "", paralyze: "yes", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Smelling Salts", type: "Normal", desc: "causa dano ao oponente, aplicando efeito paralyze por 8 segundos, só pode ser usado a curta distância.", aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "yes", passive: "", poison: "", self: "", slow: "", stun: "", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Shadow sphere", type: "Fantasma", desc: "causa dano ao oponente e em uma grande área ao redor dele.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -22984,10 +25324,7 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "yes", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Vipers fang", type: "Venenoso", desc: "possibilita o pokemon atacar de longa distância, além de seus ataques físicos poderem aplicar efeito poison (x5).", 
-   aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "", poison: "yes", self: "", slow: "", stun: "", passive: "yes", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Viper's Fang", type: "Venenoso", desc: "possibilita o pokemon atacar de longa distância, além de seus ataques físicos poderem aplicar efeito poison (x5).", aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "yes", poison: "yes", self: "", slow: "", stun: "", target: "", healing: "", silence: "", freeze: "", knockback: "" },
  
  { move: "Extrasensory", type: "Psiquico", desc: "causa dano em uma grande área ao redor do pokemon.", 
    aoe: "yes", blind: "", buff: "", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
@@ -23271,16 +25608,10 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "yes", stun: "", passive: "yes", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Tri vision", type: "Normal", desc: "o seu pokemon seleciona automaticamente até dois alvos adicionais, fazendo com que ele ataque até 3 oponentes em ataques físicos ou com alvo.", 
-   aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "yes", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Tri-Vision", type: "Normal", desc: "o seu pokemon seleciona automaticamente até dois alvos adicionais, fazendo com que ele ataque até 3 oponentes em ataques físicos ou com alvo.", aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "yes", poison: "", self: "", slow: "", stun: "", target: "", healing: "", silence: "", freeze: "", knockback: "" },
  
  ////////
- { move: "Wake up slap", type: "Lutador", desc: "", 
-   aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", }, // electivire ou timburr, ou gurdurr ou conkeldurr
+  { move: "Wake-Up Slap", type: "Lutador", desc: "", aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "", healing: "", silence: "", freeze: "", knockback: "" }, // electivire ou timburr, ou gurdurr ou conkeldurr
  ////////
  
  ////////
@@ -23314,10 +25645,7 @@ const movesArray = [
    target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "yes", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", },
  
- { move: "Power up punch", type: "Lutador", desc: "o usuário move-se até o oponente causando dano e aplicando efeito slow por 3 segundos. depois de usado concede bônus ao próximo ataque.", 
-   aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "yes", nevermiss: "", paralyze: "", poison: "", self: "", slow: "yes", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", },
+  { move: "Power-Up Punch", type: "Lutador", desc: "o usuário move-se até o oponente causando dano e aplicando efeito slow por 3 segundos. depois de usado concede bônus ao próximo ataque.", aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "yes", stun: "", target: "yes", healing: "", silence: "", freeze: "", knockback: "" },
  
  /////////
  { move: "Magnet pull", type: "Metal", desc: "", 
@@ -23378,10 +25706,7 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
    healing: "", silence: "", freeze: "", knockback: "", }, // hippowdon
  
- { move: "Sand stream", type: "Terra", desc: "", 
-   aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "", freeze: "", knockback: "", }, // hippowdon
+  { move: "Sandstream", type: "Terra", desc: "", aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "", healing: "", silence: "", freeze: "", knockback: "" }, // hippowdon
  
  { move: "Chip away", type: "Lutador", desc: "", 
    aoe: "", blind: "", buff: "", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
@@ -23625,10 +25950,7 @@ const movesArray = [
    target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "yes", 
    healing: "", silence: "", freeze: "", knockback: "", }, 
  
- { move: "Baby doll eyes", type: "Fada", desc: "causa dano em uma grande área ao redor do pokemon, aplicando efeito silence por 8 segundos. ao ser utilizado, aumenta a velocidade de movimento do pokemon por 12 segundos.", 
-   aoe: "yes", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", 
-   target: "", nevermiss: "", paralyze: "", poison: "", self: "", slow: "", stun: "", passive: "", 
-   healing: "", silence: "yes", freeze: "", knockback: "", }, 
+  { move: "Baby-Doll Eyes", type: "Fada", desc: "causa dano em uma grande área ao redor do pokemon, aplicando efeito silence por 8 segundos. ao ser utilizado, aumenta a velocidade de movimento do pokemon por 12 segundos.", aoe: "yes", blind: "", buff: "yes", burn: "", confusion: "", damage: "yes", debuff: "", lifesteal: "", nevermiss: "", paralyze: "", passive: "", poison: "", self: "", slow: "", stun: "", target: "", healing: "", silence: "yes", freeze: "", knockback: "" }, 
  
  { move: "Rain dish", type: "Água", desc: "Ao utilizar o ataque Rain dance o usuário irá curar 33% do HP total", 
    aoe: "", blind: "", buff: "yes", burn: "", confusion: "", damage: "", debuff: "", lifesteal: "", 
