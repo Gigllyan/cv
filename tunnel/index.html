@@ -14,34 +14,42 @@
 
     <div class="spinner"></div>
     <h2>Sincronizando com o Servidor Mobile...</h2>
-    <p style="opacity:0.6;">Aguarde alguns instantes enquanto estabelecemos a conexão segura.</p>
+    <p id="status-text" style="opacity:0.6;">Aguarde alguns instantes enquanto estabelecemos a conexão segura.</p>
 
     <script>
-        // Caminho do seu arquivo TXT bruto no GitHub
-        // Se o seu repositório for público, você pode usar a URL do raw.githubusercontent
-        const urlDoTxt = 'https://raw.githubusercontent.com/Gigllyan/cv/main/tunel/tunnel_url.txt';
+        // 🌟 CORREÇÃO CRÍTICA: Lendo o arquivo usando o mesmo domínio do GitHub Pages
+        // Isso evita o erro de CORS (bloqueio do navegador)
+        const urlDoTxt = 'https://gigllyan.github.io/cv/tunnel/tunnel_url.txt';
 
         async function redirecionar() {
             try {
-                // Busca o conteúdo do arquivo de texto (adicionando um timestamp para evitar o cache do navegador)
+                // O '?t=' + new Date().getTime() força o navegador a pegar o link novo e ignorar o cache antigo
                 const resposta = await fetch(urlDoTxt + '?t=' + new Date().getTime());
+                
+                if (!resposta.ok) {
+                    throw new Error("Arquivo não encontrado no servidor do GitHub");
+                }
+
                 const urlTunnel = await resposta.text();
                 
-                // Valida se o texto baixado realmente é a URL da Cloudflare
+                // Valida se o texto baixado realmente contém o padrão da Cloudflare
                 if (urlTunnel.includes('trycloudflare.com')) {
+                    document.getElementById('status-text').innerText = "Conexão estabelecida! Redirecionando...";
                     window.location.href = urlTunnel.trim();
                 } else {
                     document.querySelector('h2').innerText = "Servidor Offline";
-                    document.querySelector('p').innerText = "O painel móvel não está ativo no momento.";
+                    document.getElementById('status-text').innerText = "O painel móvel não está ativo ou o link expirou.";
                 }
             } catch (erro) {
                 console.error("Erro ao buscar a URL:", erro);
-                document.querySelector('h2').innerText = "Erro de Conexão";
+                document.querySelector('h2').innerText = "Aguardando Sincronização";
+                document.getElementById('status-text').innerText = "Verificando arquivos na nuvem... Atualize a página em 5 segundos.";
             }
         }
 
-        // Executa a função após carregar a página
+        // Executa a função imediatamente ao abrir a página
         redirecionar();
     </script>
 </body>
 </html>
+ 
